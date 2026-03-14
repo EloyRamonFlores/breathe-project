@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* BREATHE Design System — docs/DESIGN.md */
+:root {
+  /* Primary (Dark Theme) */
+  --bg-primary: #0A0F1C;
+  --bg-secondary: #111827;
+  --bg-tertiary: #1F2937;
+  --text-primary: #F9FAFB;
+  --text-secondary: #9CA3AF;
+  --text-muted: #6B7280;
+
+  /* Accent Colors (Semantic) */
+  --color-safe: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-critical: #DC2626;
+  --color-unknown: #4B5563;
+  --color-accent: #3B82F6;
+
+  /* Map Colors */
+  --map-banned-removal: #059669;
+  --map-banned: #10B981;
+  --map-partial: #F59E0B;
+  --map-no-ban: #EF4444;
+  --map-producer: #991B1B;
+  --map-no-data: #374151;
+}
+
+@theme inline {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-tertiary: var(--bg-tertiary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-safe: var(--color-safe);
+  --color-warning: var(--color-warning);
+  --color-danger: var(--color-danger);
+  --color-critical: var(--color-critical);
+  --color-unknown: var(--color-unknown);
+  --color-accent: var(--color-accent);
+  --color-map-banned-removal: var(--map-banned-removal);
+  --color-map-banned: var(--map-banned);
+  --color-map-partial: var(--map-partial);
+  --color-map-no-ban: var(--map-no-ban);
+  --color-map-producer: var(--map-producer);
+  --color-map-no-data: var(--map-no-data);
+  --font-sans: var(--font-dm-sans);
+  --font-serif: var(--font-instrument-serif);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+}

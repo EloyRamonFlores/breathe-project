@@ -1,0 +1,28 @@
+{
+  "country_factor": {
+    "no_ban_at_construction": 0.9,
+    "partial_ban_at_construction": 0.6,
+    "full_ban_at_construction": 0.2,
+    "unknown": 0.5
+  },
+  "era_factor": {
+    "pre_1940": 0.7,
+    "1940_1960": 0.9,
+    "1960_1980": 1.0,
+    "1980_2000": 0.5,
+    "post_2000": 0.2
+  },
+  "building_factor": {
+    "residential": 1.0,
+    "apartment": 0.9,
+    "school": 1.1,
+    "office": 0.8,
+    "factory": 1.2
+  },
+  "thresholds": {
+    "low": [0, 0.3],
+    "moderate": [0.3, 0.6],
+    "high": [0.6, 0.8],
+    "critical": [0.8, 1.0]
+  }
+}

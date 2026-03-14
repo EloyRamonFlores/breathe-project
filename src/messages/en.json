@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "locale": "en",
+    "language": "English"
+  },
+  "nav": {
+    "map": "Map",
+    "check": "Check Risk",
+    "learn": "Learn",
+    "language": "Language"
+  },
+  "home": {
+    "title": "BREATHE",
+    "subtitle": "The first citizen early-warning system for invisible toxic substances",
+    "counter": "{count} countries still have NO ban on asbestos",
+    "deaths": "~255,000 people die from asbestos exposure every year",
+    "cta": "Check Your Risk"
+  },
+  "check": {
+    "title": "Asbestos Risk Checker",
+    "step1_label": "Where?",
+    "step1_description": "Select your country",
+    "step2_label": "When was it built?",
+    "step2_description": "Select the construction decade",
+    "step3_label": "What type of property?",
+    "step3_description": "Select your building type",
+    "submit": "Check Risk",
+    "result_title": "Your Risk Assessment",
+    "materials_title": "Materials Likely Present",
+    "what_to_do": "What To Do",
+    "share": "Share Your Result",
+    "check_another": "Check Another Property"
+  },
+  "country": {
+    "title": "Country Profile",
+    "ban_status": "Ban Status",
+    "ban_year": "Year of Ban",
+    "timeline": "Regulatory Timeline",
+    "materials": "Common Materials",
+    "what_to_do": "What To Do If You Live Here",
+    "sources": "Sources"
+  },
+  "learn": {
+    "title": "Learn About Asbestos",
+    "what_is": "What is Asbestos?",
+    "where_hides": "Where Does Asbestos Hide in Your Home?",
+    "history": "The History: How Industry Hid the Truth",
+    "found_it": "What To Do If You Find Asbestos",
+    "numbers": "Asbestos by the Numbers"
+  },
+  "risk_levels": {
+    "low": "Low",
+    "moderate": "Moderate",
+    "high": "High",
+    "critical": "Critical"
+  },
+  "ban_status": {
+    "full_ban": "Full Ban",
+    "partial_ban": "Partial Ban",
+    "no_ban": "No Ban",
+    "de_facto_ban": "De Facto Ban",
+    "unknown": "Unknown"
+  },
+  "building_types": {
+    "residential": "House",
+    "apartment": "Apartment",
+    "school": "School",
+    "office": "Office",
+    "factory": "Factory"
+  },
+  "eras": {
+    "pre_1940": "Before 1940",
+    "1940_1960": "1940–1960",
+    "1960_1980": "1960–1980",
+    "1980_2000": "1980–2000",
+    "post_2000": "After 2000"
+  },
+  "disclaimer": "This assessment is based on general data about construction practices and regulations. It is NOT a substitute for professional asbestos inspection. The only way to confirm the presence of asbestos is through laboratory testing by a certified professional.",
+  "footer": {
+    "about": "BREATHE is a citizen-powered awareness platform. All data sourced from public records.",
+    "disclaimer": "Information aggregated from public sources. Not legal or medical advice.",
+    "sources": "Data Sources"
+  }
+}

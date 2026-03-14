@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "locale": "es",
+    "language": "Español"
+  },
+  "nav": {
+    "map": "Mapa",
+    "check": "Evaluar Riesgo",
+    "learn": "Aprender",
+    "language": "Idioma"
+  },
+  "home": {
+    "title": "BREATHE",
+    "subtitle": "El primer sistema ciudadano de alerta temprana para sustancias tóxicas invisibles",
+    "counter": "{count} países aún NO prohíben el asbesto",
+    "deaths": "~255,000 personas mueren por exposición al asbesto cada año",
+    "cta": "Evalúa Tu Riesgo"
+  },
+  "check": {
+    "title": "Evaluador de Riesgo de Asbesto",
+    "step1_label": "¿Dónde?",
+    "step1_description": "Selecciona tu país",
+    "step2_label": "¿Cuándo se construyó?",
+    "step2_description": "Selecciona la década de construcción",
+    "step3_label": "¿Qué tipo de propiedad?",
+    "step3_description": "Selecciona el tipo de edificio",
+    "submit": "Evaluar Riesgo",
+    "result_title": "Tu Evaluación de Riesgo",
+    "materials_title": "Materiales Probablemente Presentes",
+    "what_to_do": "Qué Hacer",
+    "share": "Comparte Tu Resultado",
+    "check_another": "Evaluar Otra Propiedad"
+  },
+  "country": {
+    "title": "Perfil de País",
+    "ban_status": "Estado de Prohibición",
+    "ban_year": "Año de Prohibición",
+    "timeline": "Cronología Regulatoria",
+    "materials": "Materiales Comunes",
+    "what_to_do": "Qué Hacer Si Vives Aquí",
+    "sources": "Fuentes"
+  },
+  "learn": {
+    "title": "Aprende Sobre el Asbesto",
+    "what_is": "¿Qué es el Asbesto?",
+    "where_hides": "¿Dónde Se Esconde el Asbesto en Tu Hogar?",
+    "history": "La Historia: Cómo la Industria Ocultó la Verdad",
+    "found_it": "Qué Hacer Si Encuentras Asbesto",
+    "numbers": "El Asbesto en Números"
+  },
+  "risk_levels": {
+    "low": "Bajo",
+    "moderate": "Moderado",
+    "high": "Alto",
+    "critical": "Crítico"
+  },
+  "ban_status": {
+    "full_ban": "Prohibición Total",
+    "partial_ban": "Prohibición Parcial",
+    "no_ban": "Sin Prohibición",
+    "de_facto_ban": "Prohibición de Facto",
+    "unknown": "Desconocido"
+  },
+  "building_types": {
+    "residential": "Casa",
+    "apartment": "Departamento",
+    "school": "Escuela",
+    "office": "Oficina",
+    "factory": "Fábrica"
+  },
+  "eras": {
+    "pre_1940": "Antes de 1940",
+    "1940_1960": "1940–1960",
+    "1960_1980": "1960–1980",
+    "1980_2000": "1980–2000",
+    "post_2000": "Después de 2000"
+  },
+  "disclaimer": "Esta evaluación se basa en datos generales sobre prácticas de construcción y regulaciones. NO sustituye una inspección profesional de asbesto. La única manera de confirmar la presencia de asbesto es mediante análisis de laboratorio por un profesional certificado.",
+  "footer": {
+    "about": "BREATHE es una plataforma ciudadana de concientización. Todos los datos provienen de registros públicos.",
+    "disclaimer": "Información recopilada de fuentes públicas. No es asesoría legal ni médica.",
+    "sources": "Fuentes de Datos"
+  }
+}

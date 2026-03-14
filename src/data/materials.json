@@ -1,0 +1,102 @@
+[
+  {
+    "id": "cement-roofing",
+    "name": "Asbestos-Cement Roofing Sheets",
+    "description": "Corrugated or flat cement sheets containing 10-15% asbestos fibers. Very common in developing countries. Gray, rigid sheets often used for roofing and wall cladding.",
+    "era_start": 1930,
+    "era_end": 2000,
+    "peak_decade": "1950s-1970s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "high",
+    "risk_when_disturbed": "critical",
+    "friability": "non-friable",
+    "location": ["roof", "exterior_walls"],
+    "building_types": ["residential", "commercial", "industrial", "school"],
+    "recommendation_intact": "Monitor condition annually. Do not power-wash or drill.",
+    "recommendation_damaged": "Do not touch. Contact a certified asbestos removal company.",
+    "recommendation_renovation": "Professional asbestos inspection required before ANY work on or near these materials.",
+    "prevalence_regions": ["global"],
+    "sources": [
+      {
+        "name": "EPA Building Materials",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "vinyl-floor-tiles-9x9",
+    "name": "Vinyl-Asbestos Floor Tiles (9×9 inch)",
+    "description": "9×9 inch floor tiles are a strong indicator of asbestos content. Common in homes, schools, and offices built between 1950-1980. Often dark-colored with a slightly waxy feel.",
+    "era_start": 1950,
+    "era_end": 1980,
+    "peak_decade": "1960s-1970s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "moderate",
+    "risk_when_disturbed": "high",
+    "friability": "non-friable",
+    "location": ["floor"],
+    "building_types": ["residential", "commercial", "school", "office"],
+    "recommendation_intact": "Safe if undamaged. Do not sand, scrape, or remove yourself.",
+    "recommendation_damaged": "Avoid disturbing. Cover with new flooring if possible. Consult professional for removal.",
+    "recommendation_renovation": "Professional inspection required. Do NOT remove tiles yourself — the adhesive (mastic) may also contain asbestos.",
+    "prevalence_regions": ["north_america", "europe"],
+    "sources": [
+      {
+        "name": "EPA Floor Tiles Guidance",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "pipe-insulation",
+    "name": "Pipe and Boiler Insulation",
+    "description": "White or gray chalky insulation wrapped around pipes, boilers, and ducts. Often found in basements and utility rooms. Extremely dangerous when deteriorating — fibers become airborne easily.",
+    "era_start": 1920,
+    "era_end": 1980,
+    "peak_decade": "1940s-1960s",
+    "risk_when_intact": "moderate",
+    "risk_when_damaged": "critical",
+    "risk_when_disturbed": "critical",
+    "friability": "friable",
+    "location": ["basement", "utility_room", "walls"],
+    "building_types": ["residential", "commercial", "industrial", "school"],
+    "recommendation_intact": "Have a professional assess condition. Do not touch or disturb.",
+    "recommendation_damaged": "DANGER: Do not enter area without protection. Contact certified asbestos removal immediately.",
+    "recommendation_renovation": "Mandatory professional removal before any work in the area.",
+    "prevalence_regions": ["global"],
+    "sources": [
+      {
+        "name": "EPA Asbestos in Your Home",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "popcorn-ceiling",
+    "name": "Textured Ceiling Coating (Popcorn Ceiling)",
+    "description": "Sprayed-on textured ceiling coating popular from 1950s-1980s. Bumpy, cottage-cheese-like texture. May contain up to 10% asbestos. Common in North American homes.",
+    "era_start": 1950,
+    "era_end": 1985,
+    "peak_decade": "1960s-1970s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "high",
+    "risk_when_disturbed": "critical",
+    "friability": "friable",
+    "location": ["ceiling"],
+    "building_types": ["residential", "apartment"],
+    "recommendation_intact": "Do not scrape, sand, or drill into ceiling. Monitor for water damage.",
+    "recommendation_damaged": "Do not disturb. If water-damaged, contain area and contact professional.",
+    "recommendation_renovation": "Professional testing required before any ceiling work. Never scrape or remove without certified abatement.",
+    "prevalence_regions": ["north_america", "europe"],
+    "sources": [
+      {
+        "name": "EPA Asbestos in Your Home",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  }
+]

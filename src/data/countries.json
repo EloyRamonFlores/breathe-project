@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "united-states",
+    "name": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "region": "North America",
+    "ban_status": "full_ban",
+    "ban_year": 2024,
+    "ban_details": "EPA final rule banning chrysotile asbestos effective 2024, with phased compliance",
+    "exceptions": [],
+    "timeline": [
+      {
+        "year": 1989,
+        "event": "EPA issues Asbestos Ban and Phase-Out Rule (later overturned by court in 1991)",
+        "type": "ban",
+        "source_url": "https://www.epa.gov/asbestos"
+      },
+      {
+        "year": 2024,
+        "event": "EPA issues final rule banning ongoing uses of chrysotile asbestos",
+        "type": "ban",
+        "source_url": "https://www.epa.gov/asbestos"
+      }
+    ],
+    "peak_usage_era": "1950s-1970s",
+    "common_materials": ["floor tiles", "pipe insulation", "ceiling texture", "roof shingles", "cement siding"],
+    "estimated_buildings_at_risk": "~30 million",
+    "mesothelioma_rate": 10.2,
+    "mesothelioma_source_year": 2020,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      },
+      {
+        "name": "EPA Asbestos",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "india",
+    "name": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "region": "South Asia",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No national ban. World's largest importer of asbestos. Chrysotile widely used in construction.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1980s-present",
+    "common_materials": ["cement roofing sheets", "brake linings", "gaskets", "cement pipes"],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "mexico",
+    "name": "Mexico",
+    "iso2": "MX",
+    "iso3": "MEX",
+    "region": "Latin America",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No federal ban. Asbestos-cement products widely used in construction, especially roofing.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": ["cement roofing", "floor tiles", "pipe insulation", "water tanks"],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  }
+]
