@@ -2,6 +2,14 @@ import type { Country, Material, Era, BuildingType, RiskLevel, RiskResult, RiskM
 import riskMatrixData from "@/data/risk-matrix.json";
 import materialsData from "@/data/materials.json";
 
+const buildingTypeForMaterials: Record<BuildingType, string> = {
+  residential: "residential",
+  apartment: "apartment",
+  school: "school",
+  office: "office",
+  factory: "industrial",
+};
+
 const riskMatrix = riskMatrixData as RiskMatrix;
 const materials = materialsData as Material[];
 
@@ -54,7 +62,8 @@ function getMatchingMaterials(
   return materials
     .filter((m) => {
       const inEra = m.era_start <= constructionYear && constructionYear <= m.era_end;
-      const inBuilding = m.building_types.includes(buildingType);
+      const materialBuildingType = buildingTypeForMaterials[buildingType];
+      const inBuilding = m.building_types.includes(materialBuildingType);
       const inRegion =
         m.prevalence_regions.includes("global") ||
         m.prevalence_regions.some((r) => countryRegion.toLowerCase().includes(r));

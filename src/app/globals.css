@@ -18,6 +18,9 @@
   --color-unknown: #4B5563;
   --color-accent: #3B82F6;
 
+  /* Font fallback (Instrument Serif loaded via <link> in layout) */
+  --font-instrument-serif: "Instrument Serif", Georgia, serif;
+
   /* Map Colors */
   --map-banned-removal: #059669;
   --map-banned: #10B981;
@@ -54,5 +57,39 @@
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+}
+
+/* Page transitions */
+@keyframes page-fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-down {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Leaflet tooltip overrides */
+.breathe-tooltip {
+  background: #111827 !important;
+  border: 1px solid #1F2937 !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+}
+.breathe-tooltip::before {
+  border-top-color: #111827 !important;
+}
+.leaflet-container {
   font-family: var(--font-dm-sans), system-ui, sans-serif;
 }

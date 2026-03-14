@@ -70,6 +70,57 @@ export interface RiskMatrix {
   thresholds: Record<RiskLevel, [number, number]>;
 }
 
+// ─── Learn Section Types ──────────────────────────────────────────────────────
+
+export interface FiberTypeData {
+  key: string;
+  name: string;
+  color_label: string;
+  description: string;
+  danger_level: "high" | "critical";
+  source: string;
+}
+
+export interface DiseaseData {
+  key: string;
+  name: string;
+  description: string;
+  severity: "high" | "critical";
+}
+
+export type HistoryEventType =
+  | "discovery"
+  | "coverup"
+  | "regulation"
+  | "legal"
+  | "science"
+  | "tragedy";
+
+export interface HistoryEventData {
+  year: number;
+  type: HistoryEventType;
+  event: string;
+  source_url: string;
+}
+
+export interface ScenarioData {
+  title: string;
+  steps: string[];
+}
+
+export interface RegionBanData {
+  region: string;
+  full_ban: number;
+  partial_ban: number;
+  no_ban: number;
+  unknown: number;
+}
+
+export interface DistributionEntry {
+  status: string;
+  count: number;
+}
+
 export interface RiskResult {
   score: number;
   level: RiskLevel;

@@ -10,13 +10,21 @@
     "language": "Language"
   },
   "home": {
+    "meta_title": "Asbestos Risk Map — 200 Countries",
+    "meta_description": "Explore asbestos regulations across 200 countries. Interactive map, risk checker, and data on 255,000 annual deaths from asbestos exposure.",
     "title": "BREATHE",
     "subtitle": "The first citizen early-warning system for invisible toxic substances",
     "counter": "{count} countries still have NO ban on asbestos",
     "deaths": "~255,000 people die from asbestos exposure every year",
-    "cta": "Check Your Risk"
+    "cta": "Check Your Risk",
+    "cta_title": "Is your home at risk?",
+    "cta_description": "Find out if your building may contain asbestos based on its country, age, and type.",
+    "map_loading": "Loading global map...",
+    "map_legend_title": "Asbestos Ban Status"
   },
   "check": {
+    "meta_title": "Asbestos Risk Checker — Is Your Home at Risk?",
+    "meta_description": "Check if your home may contain asbestos. Enter your country and construction year to get a personalized risk assessment. Free, instant results.",
     "title": "Asbestos Risk Checker",
     "step1_label": "Where?",
     "step1_description": "Select your country",
@@ -29,7 +37,32 @@
     "materials_title": "Materials Likely Present",
     "what_to_do": "What To Do",
     "share": "Share Your Result",
-    "check_another": "Check Another Property"
+    "check_another": "Check Another Property",
+    "step_counter": "Step {current} of {total}",
+    "next": "Next",
+    "back": "Back",
+    "search_country": "Search country...",
+    "no_country_found": "No country found",
+    "country_placeholder": "Type to search 195 countries",
+    "era_hint_peak": "Peak asbestos use",
+    "era_hint_high": "High use",
+    "era_hint_moderate": "Moderate use",
+    "era_hint_low": "Low use",
+    "era_hint_minimal": "Minimal use",
+    "score_label": "Risk Score",
+    "context_ban_no_ban": "No ban",
+    "context_ban_full_ban": "Full ban",
+    "context_ban_partial": "Partial ban",
+    "context_ban_unknown": "Unknown status",
+    "context_at_construction": "at time of construction",
+    "materials_none": "No specific materials identified for this profile",
+    "material_when_damaged": "When damaged:",
+    "share_copied": "Link copied!",
+    "disclaimer_note": "This assessment is for awareness only. It is NOT a substitute for professional asbestos inspection.",
+    "actions_low": ["Conduct an annual visual inspection", "No immediate action needed if materials are undisturbed", "Keep records of any known or suspected asbestos materials"],
+    "actions_moderate": ["Schedule a professional asbestos survey before any renovation", "Do not sand, drill, or disturb suspected materials", "Keep records of building condition", "Contact a licensed professional if you find damaged materials"],
+    "actions_high": ["Contact a licensed asbestos assessor for a full inspection", "Do not perform any drilling, sanding, or renovation", "Seal off any visibly damaged areas temporarily", "Professional inspection is strongly advised"],
+    "actions_critical": ["Contact a certified asbestos abatement contractor immediately", "Do not disturb any building materials", "Seek professional air quality testing", "Consult local health authorities for guidance"]
   },
   "country": {
     "title": "Country Profile",
@@ -38,15 +71,344 @@
     "timeline": "Regulatory Timeline",
     "materials": "Common Materials",
     "what_to_do": "What To Do If You Live Here",
-    "sources": "Sources"
+    "sources": "Sources",
+    "mesothelioma_rate": "Mesothelioma Rate",
+    "mesothelioma_per_million": "{rate} deaths per million/year ({year})",
+    "buildings_at_risk": "Buildings at Risk",
+    "ban_year_label": "Year Banned",
+    "no_ban_year": "No ban in place",
+    "peak_usage": "Peak Usage Era",
+    "common_materials_intro": "Materials commonly found in buildings from this era:",
+    "timeline_empty": "Detailed regulatory history coming soon.",
+    "more_info_coming": "Detailed information for this country is being compiled. Check back soon.",
+    "cta_title": "Check Your Property",
+    "cta_description": "Enter your building's age and type for a personalized asbestos risk assessment.",
+    "cta_button": "Check My Property's Risk",
+    "page_disclaimer": "Information aggregated from public sources including IBAS, EPA, and WHO. Not legal or medical advice.",
+    "what_to_do_full_ban": [
+      "Your country has banned asbestos, but older buildings may still contain legacy materials.",
+      "Buildings built before the ban year may contain asbestos-containing materials.",
+      "Hire a certified asbestos surveyor before any renovation or demolition work.",
+      "Do not disturb older building materials without professional testing."
+    ],
+    "what_to_do_no_ban": [
+      "Asbestos is still legally used in your country.",
+      "New and older construction alike may contain asbestos-containing materials.",
+      "Consult a certified professional before any renovation work.",
+      "Advocate for stronger asbestos regulations in your region."
+    ],
+    "what_to_do_partial_ban": [
+      "Some uses of asbestos are still permitted in your country.",
+      "Older and some newer buildings may contain asbestos materials.",
+      "Always consult a certified professional before renovating.",
+      "Check local regulations for specific exemptions in your area."
+    ],
+    "what_to_do_unknown": [
+      "Regulatory status in your country is unclear.",
+      "Exercise caution with all older buildings.",
+      "Consult a certified professional before any renovation work.",
+      "Verify local regulations with your national health authority."
+    ],
+    "timeline_type_ban": "Legislation",
+    "timeline_type_regulation": "Regulation",
+    "timeline_type_court_ruling": "Court Ruling",
+    "timeline_type_other": "Event",
+    "not_found": "Country not found",
+    "not_found_description": "This country profile is not in our database.",
+    "region": "Region",
+    "last_updated": "Last updated",
+    "stat_unknown": "Data not available"
   },
   "learn": {
     "title": "Learn About Asbestos",
+    "subtitle": "Understand the risk, recognize the materials, know what to do.",
+    "page_description": "Information aggregated from public sources including EPA, WHO, and IBAS. Not legal or medical advice.",
     "what_is": "What is Asbestos?",
     "where_hides": "Where Does Asbestos Hide in Your Home?",
     "history": "The History: How Industry Hid the Truth",
     "found_it": "What To Do If You Find Asbestos",
-    "numbers": "Asbestos by the Numbers"
+    "numbers": "Asbestos by the Numbers",
+    "cards": {
+      "what_is": {
+        "title": "What is Asbestos?",
+        "description": "Understand the fiber types, why asbestos is dangerous, and how it causes disease.",
+        "cta": "Read →"
+      },
+      "where_hides": {
+        "title": "Where Does It Hide?",
+        "description": "Find out which building materials may contain asbestos, organized by location.",
+        "cta": "Explore →"
+      },
+      "history": {
+        "title": "How Industry Hid the Truth",
+        "description": "The documented history of how the asbestos industry suppressed evidence for decades.",
+        "cta": "Read the history →"
+      },
+      "what_to_do": {
+        "title": "What To Do If You Find Asbestos",
+        "description": "Step-by-step guidance: suspicion, professional visit, and confirmed finds.",
+        "cta": "See the guide →"
+      },
+      "numbers": {
+        "title": "Asbestos by the Numbers",
+        "description": "Global statistics, regional data, and the scale of the ongoing crisis.",
+        "cta": "See the data →"
+      }
+    },
+    "what_is_page": {
+      "title": "What is Asbestos?",
+      "meta_description": "Learn what asbestos is, the three main fiber types, why it is dangerous, and the diseases it causes.",
+      "intro": "Asbestos is a group of naturally occurring silicate minerals made of long, thin fibrous crystals. For much of the 20th century, it was valued for its heat resistance, tensile strength, and low cost. Its fibers are invisible to the naked eye — and that is what makes them deadly.",
+      "fiber_types_heading": "The Three Main Fiber Types",
+      "fiber_types": [
+        {
+          "key": "chrysotile",
+          "name": "Chrysotile (White Asbestos)",
+          "color_label": "White",
+          "description": "Accounts for about 95% of all asbestos ever used commercially. Curly, flexible fibers. Found in roofing, brake pads, insulation, and floor tiles. Still legally used in about 60 countries.",
+          "danger_level": "high",
+          "source": "WHO Asbestos Fact Sheet"
+        },
+        {
+          "key": "amosite",
+          "name": "Amosite (Brown Asbestos)",
+          "color_label": "Brown",
+          "description": "Straight, needle-like fibers. Primarily used in thermal insulation boards and ceiling tiles. More brittle than chrysotile — breaks into smaller, sharper particles. Associated with higher mesothelioma risk.",
+          "danger_level": "critical",
+          "source": "EPA Asbestos Overview"
+        },
+        {
+          "key": "crocidolite",
+          "name": "Crocidolite (Blue Asbestos)",
+          "color_label": "Blue",
+          "description": "The most hazardous type. Very thin, straight fibers penetrate deep into lung tissue. Used in spray-on insulation and some cement products. Most countries banned its use first.",
+          "danger_level": "critical",
+          "source": "IARC Monographs Vol. 100C"
+        }
+      ],
+      "why_dangerous_heading": "Why Is It Dangerous?",
+      "why_dangerous_intro": "Two properties make asbestos uniquely dangerous among industrial minerals:",
+      "friability_heading": "Friability",
+      "friability_body": "When disturbed, asbestos-containing materials crumble and release microscopic fibers into the air. These fibers are 700 times thinner than a human hair. They are invisible, odorless, and tasteless — you cannot detect an exposure as it happens.",
+      "biopersistence_heading": "Biopersistence",
+      "biopersistence_body": "Once inhaled, asbestos fibers lodge in lung tissue and stay there permanently. The human body cannot break them down. A single exposure event can trigger disease 20 to 50 years later — which is why asbestos deaths are still rising in countries that banned it decades ago.",
+      "mechanism_heading": "How It Causes Disease",
+      "mechanism_body": "When the immune system detects a fiber it cannot destroy, it repeatedly attacks it in a process called frustrated phagocytosis. This chronic inflammation scars the lung tissue and, over years, can cause genetic damage in surrounding cells — the starting point for mesothelioma and other cancers.",
+      "diseases_heading": "Diseases Caused by Asbestos",
+      "diseases": [
+        {
+          "key": "mesothelioma",
+          "name": "Mesothelioma",
+          "description": "A rare, aggressive cancer of the membrane lining the lungs, abdomen, or heart. Virtually always caused by asbestos. Median survival after diagnosis: 12–21 months. No cure.",
+          "severity": "critical"
+        },
+        {
+          "key": "asbestosis",
+          "name": "Asbestosis",
+          "description": "Chronic scarring of lung tissue caused by long-term asbestos exposure. Causes progressive shortness of breath. Irreversible. Can lead to respiratory failure.",
+          "severity": "high"
+        },
+        {
+          "key": "lung_cancer",
+          "name": "Lung Cancer",
+          "description": "Asbestos is a proven cause of lung cancer, independent of smoking. Risk multiplies dramatically when combined with tobacco. Heavy smokers with asbestos exposure face a 50× higher risk than the general population.",
+          "severity": "high"
+        }
+      ],
+      "disclaimer": "Information aggregated from WHO, EPA, and IARC public sources. Not medical advice.",
+      "cta_heading": "Use the Risk Checker",
+      "cta_body": "Find out if your building may contain asbestos based on its country, age, and type.",
+      "cta_button": "Check My Risk"
+    },
+    "where_hides_page": {
+      "title": "Where Does Asbestos Hide in Your Home?",
+      "meta_description": "Identify which building materials may contain asbestos, organized by room and building location.",
+      "intro": "Asbestos was used in over 3,000 different products. It does not have a distinctive look. The only way to confirm its presence is professional laboratory testing. This guide helps you know which materials deserve extra caution.",
+      "risk_badge_label": "Risk if disturbed",
+      "friable_label": "Friable",
+      "non_friable_label": "Non-friable",
+      "friable_warning": "Friable materials release fibers more easily when touched or damaged.",
+      "location_labels": {
+        "roof": "Roof",
+        "exterior_walls": "Exterior Walls",
+        "walls": "Walls & Interior Surfaces",
+        "ceiling": "Ceiling",
+        "floor": "Floor",
+        "basement": "Basement",
+        "utility_room": "Utility Room",
+        "underground": "Underground / Water Supply"
+      },
+      "intact_label": "If intact",
+      "damaged_label": "If damaged",
+      "renovation_label": "Before renovation",
+      "era_label": "Era of use",
+      "era_range": "{start}–{end}",
+      "cta_heading": "Not sure about your building?",
+      "cta_body": "Use the Risk Checker to get a personalized assessment based on your country and building age.",
+      "cta_button": "Check My Risk",
+      "disclaimer": "Material data sourced from EPA and WHO. Presence in any specific building can only be confirmed by professional sampling and laboratory analysis."
+    },
+    "history_page": {
+      "title": "How Industry Hid the Truth",
+      "meta_description": "The documented history of how the asbestos industry suppressed evidence of harm from 1906 to today.",
+      "intro": "This is not a story about ignorance. By the 1930s, the asbestos industry had internal studies proving their product killed workers. What followed was one of the most consequential cover-ups in industrial history.",
+      "timeline_aria_label": "Timeline of asbestos industry history",
+      "source_label": "Source",
+      "type_labels": {
+        "discovery": "Discovery",
+        "coverup": "Cover-up",
+        "regulation": "Regulation",
+        "legal": "Legal",
+        "science": "Science",
+        "tragedy": "Event"
+      },
+      "events": [
+        {
+          "year": 1906,
+          "type": "discovery",
+          "event": "French factory inspector Auribault reports 50 deaths in an asbestos weaving factory. It is one of the first documented accounts of asbestos-related occupational death.",
+          "source_url": "https://www.who.int/news-room/fact-sheets/detail/asbestos"
+        },
+        {
+          "year": 1930,
+          "type": "coverup",
+          "event": "Johns-Manville, the world's largest asbestos company, commissions the Lanza Report — internal research confirming asbestosis in workers. The company suppresses publication and alters findings before any limited release.",
+          "source_url": "https://www.ewg.org/research/asbestos-history"
+        },
+        {
+          "year": 1943,
+          "type": "regulation",
+          "event": "Germany becomes the first country in the world to recognize mesothelioma as an occupational disease caused by asbestos and compensates affected workers.",
+          "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1142775/"
+        },
+        {
+          "year": 1955,
+          "type": "science",
+          "event": "British epidemiologist Richard Doll publishes the landmark study linking asbestos exposure directly to lung cancer, with a 10× elevated risk for textile workers.",
+          "source_url": "https://www.bmj.com/content/2/4932/81"
+        },
+        {
+          "year": 1964,
+          "type": "science",
+          "event": "Dr. Irving Selikoff presents landmark research at a New York Academy of Sciences conference: insulation workers face catastrophically elevated cancer risk. The study cannot be ignored.",
+          "source_url": "https://www.ncbi.nlm.nih.gov"
+        },
+        {
+          "year": 1973,
+          "type": "coverup",
+          "event": "Internal Bendix Corporation memo: 'We doubt that we will be able to be competitive if we have to remove asbestos from our products.' The company continues using asbestos.",
+          "source_url": "https://www.ewg.org/research/asbestos-history"
+        },
+        {
+          "year": 1989,
+          "type": "regulation",
+          "event": "The U.S. EPA issues the Asbestos Ban and Phase-Out Rule — intended to ban most asbestos products. The most sweeping domestic asbestos regulation in American history.",
+          "source_url": "https://www.epa.gov/asbestos/asbestos-ban-and-phase-out-federal-register-notices"
+        },
+        {
+          "year": 1991,
+          "type": "legal",
+          "event": "The Fifth Circuit Court of Appeals overturns most of the 1989 EPA ban, ruling the agency did not adequately weigh economic costs. Asbestos remains legal in the U.S. for most uses.",
+          "source_url": "https://law.justia.com/cases/federal/appellate-courts/F2/947/1201/357798/"
+        },
+        {
+          "year": 2002,
+          "type": "regulation",
+          "event": "The World Health Organization calls for a global ban on all forms of asbestos, citing an estimated 90,000 deaths per year from occupational exposure alone.",
+          "source_url": "https://www.who.int/news-room/fact-sheets/detail/asbestos"
+        },
+        {
+          "year": 2024,
+          "type": "regulation",
+          "event": "The U.S. EPA finalizes the Chrysotile Asbestos Rule under TSCA, banning the last commercial use of asbestos in the United States — 33 years after the 1991 court setback.",
+          "source_url": "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/final-rule-ban-chrysotile-asbestos"
+        }
+      ],
+      "closing_heading": "The crisis is not over",
+      "closing_body": "Even in countries with complete bans, asbestos installed before the ban year remains in place in millions of buildings. Legacy exposure is now the dominant cause of new mesothelioma diagnoses in high-income countries. In countries without bans, the first wave of occupational deaths is still to come.",
+      "disclaimer": "All events sourced from peer-reviewed literature, government publications, and court records."
+    },
+    "what_to_do_page": {
+      "title": "What To Do If You Find Asbestos",
+      "meta_description": "Step-by-step guide for three scenarios: suspecting asbestos, getting a professional assessment, and confirmed asbestos finds.",
+      "intro": "The most important rule: do not panic, and do not touch. Intact asbestos-containing materials that are left undisturbed pose minimal immediate risk. The danger comes from disturbance.",
+      "scenarios_heading": "Three Scenarios",
+      "scenario_suspect": {
+        "title": "Scenario 1: I Suspect Asbestos",
+        "steps": [
+          "Stop any work in the area immediately. Do not drill, sand, cut, or disturb the material.",
+          "Identify the material and note its location, condition (intact or damaged), and estimated age of the building.",
+          "Do not take samples yourself. Collecting samples without professional equipment can release fibers.",
+          "If the material is damaged and you see visible dust or crumbling, leave the room and close the door.",
+          "Contact a certified asbestos surveyor for a professional assessment. Ask for an accredited lab analysis."
+        ]
+      },
+      "scenario_professional": {
+        "title": "Scenario 2: A Professional Is Coming",
+        "steps": [
+          "Make sure the surveyor is licensed. Ask for their accreditation number before they start.",
+          "Keep the area clear. Remove people and pets from the room being assessed.",
+          "Ask for a written report with specific material locations, condition ratings, and lab results.",
+          "Request a risk classification: is the material 'manage in place', 'encapsulate', or 'remove'?",
+          "Keep all reports permanently. Disclose findings to future buyers or tenants."
+        ]
+      },
+      "scenario_confirmed": {
+        "title": "Scenario 3: Asbestos Has Been Confirmed",
+        "steps": [
+          "Read the surveyor's recommendation carefully: not all confirmed asbestos requires removal.",
+          "If the recommendation is 'manage in place', schedule annual inspections and keep records.",
+          "If removal is required, hire a licensed asbestos abatement contractor — not a general contractor.",
+          "Do not re-enter the work area during removal. Ensure the contractor uses proper containment and air monitoring.",
+          "Request a clearance certificate after removal, including air quality test results.",
+          "Dispose of waste through licensed hazardous waste channels. Never put asbestos debris in regular trash."
+        ]
+      },
+      "do_not_heading": "Never Do These Things",
+      "do_not_items": [
+        "Do NOT sand, grind, drill, or cut suspected materials",
+        "Do NOT use a household vacuum or broom to clean up asbestos debris",
+        "Do NOT remove asbestos-containing materials yourself — even with a dust mask",
+        "Do NOT put asbestos waste in regular household garbage",
+        "Do NOT ignore damaged or crumbling materials in older buildings",
+        "Do NOT allow children to play near visibly damaged ceiling tiles, walls, or floor tiles in old buildings"
+      ],
+      "when_to_call_heading": "When To Call a Professional Immediately",
+      "when_to_call_items": [
+        "You see crumbling, damaged, or water-stained materials in a pre-1990 building",
+        "You are planning any renovation, drilling, or structural work in a building built before 1990",
+        "A child or family member has been exposed to visible dust from building materials",
+        "You are buying, selling, or renting a building constructed before 1990"
+      ],
+      "disclaimer": "This guide provides general awareness information only. Always consult a certified asbestos professional for your specific situation. BREATHE is not responsible for actions taken based on this guide."
+    },
+    "numbers_page": {
+      "title": "Asbestos by the Numbers",
+      "meta_description": "Global statistics on asbestos deaths, bans, and exposure. Data from WHO, IBAS, and EPA.",
+      "intro": "The numbers behind the global asbestos crisis. All statistics sourced from WHO, IBAS, and peer-reviewed epidemiological research.",
+      "stat_deaths_value": "255,000",
+      "stat_deaths_label": "people die each year from asbestos-related diseases",
+      "stat_deaths_source": "WHO Global Cancer Observatory, 2020",
+      "stat_banned_value": "72",
+      "stat_banned_label": "countries have a full or effective ban on asbestos",
+      "stat_banned_source": "IBAS International Ban Asbestos Secretariat, 2024",
+      "stat_no_ban_label": "countries still have no comprehensive asbestos ban",
+      "stat_no_ban_source": "Computed from IBAS data",
+      "stat_roofing_value": "125,000",
+      "stat_roofing_label": "km² of asbestos-cement roofing still in use worldwide",
+      "stat_roofing_unit": "km²",
+      "stat_roofing_source": "WHO Environmental Health Report, 2018",
+      "chart_region_heading": "Ban Status by World Region",
+      "chart_region_description": "Number of countries with and without a comprehensive asbestos ban, grouped by region.",
+      "chart_legend_banned": "Full or Effective Ban",
+      "chart_legend_partial": "Partial Ban",
+      "chart_legend_no_ban": "No Ban",
+      "chart_legend_unknown": "Unknown Status",
+      "chart_distribution_heading": "Global Distribution of Asbestos Regulations",
+      "chart_distribution_description": "Share of countries by regulatory status, as of 2024.",
+      "source_label": "Source",
+      "disclaimer": "Statistics compiled from WHO, IBAS, and U.S. EPA public databases. Country-level regulatory data may have a lag of 12–24 months."
+    }
   },
   "risk_levels": {
     "low": "Low",
@@ -79,6 +441,12 @@
   "footer": {
     "about": "BREATHE is a citizen-powered awareness platform. All data sourced from public records.",
     "disclaimer": "Information aggregated from public sources. Not legal or medical advice.",
-    "sources": "Data Sources"
+    "sources": "Data Sources",
+    "built_by": "Built by"
+  },
+  "nav_aria": {
+    "menu_open": "Open menu",
+    "menu_close": "Close menu",
+    "main_nav": "Main navigation"
   }
 }

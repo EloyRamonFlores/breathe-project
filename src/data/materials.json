@@ -98,5 +98,430 @@
         "accessed": "2026-03-13"
       }
     ]
+  },
+  {
+    "id": "asbestos-cement-flat-sheets",
+    "name": "Asbestos-Cement Flat Sheets",
+    "description": "Flat rigid sheets of cement reinforced with asbestos fibers. Used extensively for interior and exterior wall cladding, ceiling panels, and soffits. Extremely widespread globally in mid-20th century construction.",
+    "era_start": 1930,
+    "era_end": 2000,
+    "peak_decade": "1960s-1970s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "high",
+    "risk_when_disturbed": "critical",
+    "friability": "non-friable",
+    "location": ["walls", "ceiling", "exterior_walls"],
+    "building_types": ["residential", "commercial", "industrial", "school"],
+    "recommendation_intact": "Do not drill, cut, or abrade. Annual visual inspection recommended.",
+    "recommendation_damaged": "Isolate the area. Do not attempt self-removal. Contact certified asbestos professional.",
+    "recommendation_renovation": "Mandatory professional asbestos survey before any cutting, drilling, or demolition work.",
+    "prevalence_regions": ["global"],
+    "sources": [
+      {
+        "name": "EPA Asbestos Building Materials",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      },
+      {
+        "name": "WHO Asbestos Fact Sheet",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "asbestos-cement-water-pipes",
+    "name": "Asbestos-Cement Water Pipes",
+    "description": "Underground water and sewer pipes manufactured from cement mixed with chrysotile asbestos fibers. Widely used in municipal water supply and drainage systems from the 1930s to 1990s. Estimated 500,000+ km installed worldwide.",
+    "era_start": 1930,
+    "era_end": 1990,
+    "peak_decade": "1950s-1960s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "moderate",
+    "risk_when_disturbed": "critical",
+    "friability": "non-friable",
+    "location": ["underground", "utility"],
+    "building_types": ["residential", "commercial", "industrial"],
+    "recommendation_intact": "Drinking water risk is low if pipes are intact and not corroded. Test water quality if pipes are aging.",
+    "recommendation_damaged": "Do not cut or drill. Contact utility authority or licensed contractor for assessment.",
+    "recommendation_renovation": "All underground AC pipe excavation requires licensed asbestos contractor and proper disposal protocols.",
+    "prevalence_regions": ["global"],
+    "sources": [
+      {
+        "name": "EPA Asbestos-Cement Pipe",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      },
+      {
+        "name": "WHO Asbestos Fact Sheet",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "vinyl-floor-tiles-12x12",
+    "name": "Vinyl-Asbestos Floor Tiles (12×12 inch)",
+    "description": "12×12 inch vinyl composition tiles common in commercial buildings, schools, and offices from the 1960s onward. May contain up to 12% asbestos. The larger size compared to 9×9 tiles is a distinguishing feature.",
+    "era_start": 1960,
+    "era_end": 1986,
+    "peak_decade": "1970s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "moderate",
+    "risk_when_disturbed": "high",
+    "friability": "non-friable",
+    "location": ["floor"],
+    "building_types": ["commercial", "school", "office", "industrial"],
+    "recommendation_intact": "Do not sand, scrape, or buff aggressively. Cover with new flooring rather than removing.",
+    "recommendation_damaged": "Restrict access to damaged area. Consult licensed asbestos professional before any work.",
+    "recommendation_renovation": "Both the tiles AND the black mastic adhesive beneath may contain asbestos — test both before any removal.",
+    "prevalence_regions": ["north_america", "europe", "latin_america"],
+    "sources": [
+      {
+        "name": "EPA Resilient Floor Coverings",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "floor-tile-adhesive-mastic",
+    "name": "Floor Tile Adhesive (Black Mastic)",
+    "description": "Black or dark brown adhesive used to bond vinyl floor tiles to subfloor. Extremely common beneath 9×9 and 12×12 inch floor tiles in buildings constructed before the mid-1980s. Often overlooked during renovations — a major source of asbestos exposure during DIY tile removal.",
+    "era_start": 1950,
+    "era_end": 1985,
+    "peak_decade": "1960s-1970s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "high",
+    "risk_when_disturbed": "critical",
+    "friability": "friable",
+    "location": ["floor"],
+    "building_types": ["residential", "commercial", "school", "office"],
+    "recommendation_intact": "Do not disturb. If covered by intact tiles, risk is minimal.",
+    "recommendation_damaged": "Do not scrape or sand the black adhesive under any circumstances. Contact asbestos professional.",
+    "recommendation_renovation": "Even if tiles are asbestos-free, the mastic adhesive beneath tiles installed before 1985 must be tested before removal.",
+    "prevalence_regions": ["north_america", "europe"],
+    "sources": [
+      {
+        "name": "EPA Floor Tile Guidance",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "joint-compound",
+    "name": "Joint Compound (Drywall Taping Mud)",
+    "description": "Asbestos was added to joint compound and drywall tape to improve workability and fire resistance. Used to finish drywall seams and texture walls. Highly friable when dry — sanding releases large quantities of fine asbestos fibers. Common in homes built between 1945 and 1977.",
+    "era_start": 1945,
+    "era_end": 1977,
+    "peak_decade": "1960s-1970s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "high",
+    "risk_when_disturbed": "critical",
+    "friability": "friable",
+    "location": ["walls", "ceiling"],
+    "building_types": ["residential", "commercial", "office"],
+    "recommendation_intact": "Painted, intact joint compound poses minimal risk. Do not sand or scrape.",
+    "recommendation_damaged": "Crumbling compound must not be disturbed. Wet the area and contact a professional.",
+    "recommendation_renovation": "ANY sanding of walls in pre-1977 construction must follow asbestos-safe procedures or professional testing first.",
+    "prevalence_regions": ["north_america"],
+    "sources": [
+      {
+        "name": "EPA Asbestos in Your Home",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "acoustic-ceiling-tiles",
+    "name": "Acoustic Ceiling Tiles",
+    "description": "Suspended or glued-on ceiling tiles designed to absorb sound. Often porous and easily crumbled — a very friable asbestos-containing material. Common in schools, offices, and commercial buildings from the late 1950s through 1980. May contain up to 15% asbestos.",
+    "era_start": 1958,
+    "era_end": 1980,
+    "peak_decade": "1970s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "high",
+    "risk_when_disturbed": "critical",
+    "friability": "friable",
+    "location": ["ceiling"],
+    "building_types": ["commercial", "school", "office"],
+    "recommendation_intact": "Do not puncture, break, or disturb tiles. Water damage significantly increases risk.",
+    "recommendation_damaged": "Seal off area. Do not sweep up debris. Contact certified removal company immediately.",
+    "recommendation_renovation": "All suspended ceiling tiles in commercial buildings built before 1985 should be tested before any overhead work.",
+    "prevalence_regions": ["north_america", "europe"],
+    "sources": [
+      {
+        "name": "EPA Asbestos in Buildings",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "thermal-insulation-board",
+    "name": "Thermal Insulation Board (Marinite / Monokote)",
+    "description": "Rigid boards used for fire and thermal insulation around boilers, ovens, fireplaces, and structural elements. Brands include Marinite and Monokote. Used extensively in industrial, commercial, and naval applications. Contains up to 40% asbestos in some formulations.",
+    "era_start": 1935,
+    "era_end": 1978,
+    "peak_decade": "1950s-1960s",
+    "risk_when_intact": "moderate",
+    "risk_when_damaged": "critical",
+    "risk_when_disturbed": "critical",
+    "friability": "friable",
+    "location": ["walls", "ceiling", "utility_room"],
+    "building_types": ["industrial", "commercial", "residential"],
+    "recommendation_intact": "Do not disturb. High asbestos content makes any damage extremely hazardous.",
+    "recommendation_damaged": "Evacuate area. Do not attempt any cleanup without full PPE and professional guidance.",
+    "recommendation_renovation": "Mandatory removal by licensed contractor before any adjacent renovation or demolition work.",
+    "prevalence_regions": ["north_america", "europe", "latin_america"],
+    "sources": [
+      {
+        "name": "EPA Asbestos Industrial Materials",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "spray-applied-fireproofing",
+    "name": "Spray-Applied Fireproofing (SFRM)",
+    "description": "Sprayed fireproofing material applied to structural steel beams and columns in high-rise buildings and public structures. Extremely friable — fibers become airborne with minimal disturbance. Widely used from 1958 to 1978. The World Trade Center towers contained this material.",
+    "era_start": 1958,
+    "era_end": 1978,
+    "peak_decade": "1960s-1970s",
+    "risk_when_intact": "moderate",
+    "risk_when_damaged": "critical",
+    "risk_when_disturbed": "critical",
+    "friability": "friable",
+    "location": ["ceiling", "walls"],
+    "building_types": ["commercial", "industrial"],
+    "recommendation_intact": "Restrict access to areas with exposed spray-applied material. Regular inspection required.",
+    "recommendation_damaged": "Immediately restrict area. Contact licensed asbestos abatement contractor. Do not attempt any cleanup.",
+    "recommendation_renovation": "All structural work in commercial buildings built 1958–1978 requires asbestos survey before proceeding.",
+    "prevalence_regions": ["north_america", "europe", "latin_america"],
+    "sources": [
+      {
+        "name": "EPA Spray-Applied Fireproofing",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "asbestos-rope-gaskets",
+    "name": "Asbestos Rope and Gaskets (Industrial)",
+    "description": "Woven asbestos rope used to seal boiler doors, furnaces, and industrial equipment. Asbestos gaskets used in piping flanges, valves, and engines. Historically the primary sealing material for high-temperature industrial applications. Still in use in some countries with no ban.",
+    "era_start": 1920,
+    "era_end": 1990,
+    "peak_decade": "1950s-1960s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "high",
+    "risk_when_disturbed": "critical",
+    "friability": "friable",
+    "location": ["utility_room", "basement"],
+    "building_types": ["industrial", "commercial"],
+    "recommendation_intact": "Wear gloves when handling. Avoid disturbing. Note location for future maintenance records.",
+    "recommendation_damaged": "Do not remove or handle without respiratory protection. Contact professional for replacement.",
+    "recommendation_renovation": "All industrial equipment maintenance in facilities built before 1990 should assume gaskets may contain asbestos.",
+    "prevalence_regions": ["global"],
+    "sources": [
+      {
+        "name": "EPA Asbestos Gaskets",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "brake-linings-friction",
+    "name": "Brake Linings and Friction Products",
+    "description": "Asbestos was the dominant material in vehicle brake pads, brake shoes, clutch facings, and industrial friction materials due to its heat resistance. Generates asbestos dust during normal wear and especially during brake servicing. Still manufactured in countries without asbestos bans.",
+    "era_start": 1920,
+    "era_end": 2000,
+    "peak_decade": "1970s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "high",
+    "risk_when_disturbed": "critical",
+    "friability": "friable",
+    "location": ["utility_room", "basement"],
+    "building_types": ["industrial", "commercial"],
+    "recommendation_intact": "Avoid blowing out brake assemblies with compressed air. Use wet methods or vacuum with HEPA filter.",
+    "recommendation_damaged": "Do not handle worn brake components without respiratory protection. Dispose of as hazardous waste.",
+    "recommendation_renovation": "When servicing older vehicles, assume brake and clutch components may contain asbestos. Use wet suppression methods.",
+    "prevalence_regions": ["global"],
+    "sources": [
+      {
+        "name": "EPA Asbestos Friction Products",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      },
+      {
+        "name": "WHO Asbestos Fact Sheet",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "asbestos-insulating-board-aib",
+    "name": "Asbestos Insulating Board (AIB)",
+    "description": "Semi-rigid boards made primarily of asbestos fiber and calcium silicate. Used extensively in the UK and Europe for fire protection, partition walls, ceiling tiles, and fire doors. Contains 16–40% asbestos. Commonly found in buildings constructed 1930–1980. Among the highest-risk materials found in commercial buildings.",
+    "era_start": 1930,
+    "era_end": 1980,
+    "peak_decade": "1960s-1970s",
+    "risk_when_intact": "moderate",
+    "risk_when_damaged": "critical",
+    "risk_when_disturbed": "critical",
+    "friability": "friable",
+    "location": ["walls", "ceiling", "utility_room"],
+    "building_types": ["commercial", "industrial", "school", "residential"],
+    "recommendation_intact": "Do not drill, cut, or sand. Even minor disturbance releases significant fiber concentrations.",
+    "recommendation_damaged": "Evacuate and restrict access immediately. This is a licensed contractor job — no DIY options.",
+    "recommendation_renovation": "AIB is the most frequently encountered high-risk asbestos material in UK/European commercial demolition.",
+    "prevalence_regions": ["europe", "north_america"],
+    "sources": [
+      {
+        "name": "HSE Asbestos Insulating Board",
+        "url": "https://www.hse.gov.uk/asbestos/index.htm",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "roof-felt-underlayment",
+    "name": "Roof Felt and Bitumen Underlayment",
+    "description": "Asbestos-reinforced bitumen felt used as roofing underlayment beneath tiles, slates, or metal roofing. Also used as damp-proof membranes in walls and floors. Commonly found in buildings from 1940–1980. Risk is low when intact but increases significantly when cut or torn.",
+    "era_start": 1940,
+    "era_end": 1980,
+    "peak_decade": "1960s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "moderate",
+    "risk_when_disturbed": "high",
+    "friability": "non-friable",
+    "location": ["roof"],
+    "building_types": ["residential", "commercial", "industrial"],
+    "recommendation_intact": "If hidden under tiles and intact, no immediate action required. Record location.",
+    "recommendation_damaged": "Do not tear or cut damaged felt. Wet the area before any handling. Contact professional.",
+    "recommendation_renovation": "All roofing work on buildings built before 1985 should include asbestos survey for felt underlayment.",
+    "prevalence_regions": ["europe", "north_america", "latin_america"],
+    "sources": [
+      {
+        "name": "HSE Asbestos Roofing Materials",
+        "url": "https://www.hse.gov.uk/asbestos/index.htm",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "asbestos-cement-corrugated-roofing",
+    "name": "Asbestos-Cement Corrugated Roofing Sheets",
+    "description": "Corrugated asbestos-cement sheets widely used for industrial, agricultural, and low-cost residential roofing worldwide. Visually identical to modern fiber-cement products — age and provenance are the primary indicators. Billions of square meters remain in use globally, predominantly in Asia and Africa.",
+    "era_start": 1940,
+    "era_end": 2000,
+    "peak_decade": "1970s-1980s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "high",
+    "risk_when_disturbed": "critical",
+    "friability": "non-friable",
+    "location": ["roof"],
+    "building_types": ["residential", "industrial", "commercial"],
+    "recommendation_intact": "Do not walk on, drill, or power-wash. Apply sealant coat to reduce surface weathering.",
+    "recommendation_damaged": "Weathered sheets release fibers continuously. Do not sweep or blow debris. Wet and contain.",
+    "recommendation_renovation": "Removal requires full PPE, wetting, and disposal as asbestos waste. Never break sheets.",
+    "prevalence_regions": ["global"],
+    "sources": [
+      {
+        "name": "WHO Asbestos Fact Sheet",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/asbestos",
+        "accessed": "2026-03-13"
+      },
+      {
+        "name": "USGS Asbestos Statistics",
+        "url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "expansion-joints-caulk",
+    "name": "Expansion Joints and Asbestos Caulk",
+    "description": "Asbestos-containing caulk and sealants used around window frames, door frames, expansion joints, and exterior building joints. Often found as a gray or white rubbery compound in buildings from 1940–1980. Becomes friable and crumbly with age, releasing fibers as it deteriorates.",
+    "era_start": 1940,
+    "era_end": 1980,
+    "peak_decade": "1960s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "high",
+    "risk_when_disturbed": "critical",
+    "friability": "friable",
+    "location": ["exterior_walls", "walls"],
+    "building_types": ["residential", "commercial", "industrial"],
+    "recommendation_intact": "Do not pick at, scrape, or remove. If fully encapsulated and stable, monitor annually.",
+    "recommendation_damaged": "Crumbling caulk must be professionally encapsulated or removed. Do not vacuum with standard vacuum.",
+    "recommendation_renovation": "Window replacement and facade work in pre-1980 buildings must include testing for asbestos caulk.",
+    "prevalence_regions": ["north_america", "europe", "latin_america"],
+    "sources": [
+      {
+        "name": "EPA Asbestos Sealants",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "laboratory-bench-tops",
+    "name": "Laboratory Bench Tops and Fume Hood Liners",
+    "description": "Compressed asbestos board used as work surfaces in school and university science laboratories, and as liner panels in fume hoods, due to heat and chemical resistance. Common in educational institutions built 1950–1985. A significant exposure risk for science teachers and students.",
+    "era_start": 1950,
+    "era_end": 1985,
+    "peak_decade": "1960s-1970s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "high",
+    "risk_when_disturbed": "critical",
+    "friability": "friable",
+    "location": ["walls", "utility_room"],
+    "building_types": ["school", "commercial"],
+    "recommendation_intact": "Do not sand or abrade. Cover damaged surfaces with appropriate sealant until professional can assess.",
+    "recommendation_damaged": "Remove students and staff from area. Contact school facilities manager and asbestos professional.",
+    "recommendation_renovation": "School laboratory refurbishment must include full asbestos survey before bench removal or modification.",
+    "prevalence_regions": ["north_america", "europe"],
+    "sources": [
+      {
+        "name": "EPA Asbestos in Schools",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
+  },
+  {
+    "id": "fire-blankets-textiles",
+    "name": "Fireproof Blankets and Asbestos Textiles",
+    "description": "Woven asbestos fabric used for fire blankets, protective clothing, theater fire curtains, and electrical insulation. Very high asbestos content (up to 100% in some woven products). Fibers are released by handling or flexing the material. Common in industrial kitchens, foundries, and theaters until the 1980s.",
+    "era_start": 1920,
+    "era_end": 1985,
+    "peak_decade": "1950s-1960s",
+    "risk_when_intact": "moderate",
+    "risk_when_damaged": "critical",
+    "risk_when_disturbed": "critical",
+    "friability": "friable",
+    "location": ["utility_room", "basement"],
+    "building_types": ["industrial", "commercial", "residential"],
+    "recommendation_intact": "Do not shake, fold, or flex old fire blankets. If suspected asbestos, do not use — replace immediately.",
+    "recommendation_damaged": "Handle with extreme care using full PPE. Place in sealed container. Dispose as asbestos waste.",
+    "recommendation_renovation": "Old fire blankets, curtains, and protective clothing found in industrial settings must be tested before handling.",
+    "prevalence_regions": ["global"],
+    "sources": [
+      {
+        "name": "HSE Asbestos Textiles",
+        "url": "https://www.hse.gov.uk/asbestos/index.htm",
+        "accessed": "2026-03-13"
+      },
+      {
+        "name": "WHO Asbestos Fact Sheet",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ]
   }
 ]

@@ -7,24 +7,45 @@
     "region": "North America",
     "ban_status": "full_ban",
     "ban_year": 2024,
-    "ban_details": "EPA final rule banning chrysotile asbestos effective 2024, with phased compliance",
-    "exceptions": [],
+    "ban_details": "EPA final rule banning chrysotile asbestos effective 2024 under TSCA Section 6(a), with phased compliance timelines",
+    "exceptions": [
+      "legacy uses under phase-out schedule"
+    ],
     "timeline": [
       {
         "year": 1989,
-        "event": "EPA issues Asbestos Ban and Phase-Out Rule (later overturned by court in 1991)",
+        "event": "EPA issues Asbestos Ban and Phase-Out Rule under TSCA — later overturned by 5th Circuit Court (1991)",
         "type": "ban",
         "source_url": "https://www.epa.gov/asbestos"
       },
       {
+        "year": 2016,
+        "event": "Frank R. Lautenberg Chemical Safety Act reforms TSCA, giving EPA new authority over existing chemicals including asbestos",
+        "type": "regulation",
+        "source_url": "https://www.epa.gov/asbestos"
+      },
+      {
+        "year": 2019,
+        "event": "EPA Significant New Use Rule (SNUR) prevents reintroduction of asbestos products discontinued since 1989",
+        "type": "regulation",
+        "source_url": "https://www.epa.gov/asbestos"
+      },
+      {
         "year": 2024,
-        "event": "EPA issues final rule banning ongoing uses of chrysotile asbestos",
+        "event": "EPA Final Rule: comprehensive ban on ongoing uses of chrysotile asbestos under TSCA Section 6(a)",
         "type": "ban",
         "source_url": "https://www.epa.gov/asbestos"
       }
     ],
     "peak_usage_era": "1950s-1970s",
-    "common_materials": ["floor tiles", "pipe insulation", "ceiling texture", "roof shingles", "cement siding"],
+    "common_materials": [
+      "vinyl-asbestos floor tiles",
+      "pipe insulation",
+      "textured ceiling coating",
+      "joint compound",
+      "roof felt underlayment",
+      "cement siding"
+    ],
     "estimated_buildings_at_risk": "~30 million",
     "mesothelioma_rate": 10.2,
     "mesothelioma_source_year": 2020,
@@ -48,14 +69,253 @@
     "name": "India",
     "iso2": "IN",
     "iso3": "IND",
-    "region": "South Asia",
+    "region": "Asia",
     "ban_status": "no_ban",
     "ban_year": null,
-    "ban_details": "No national ban. World's largest importer of asbestos. Chrysotile widely used in construction.",
+    "ban_details": "No national ban. World's largest asbestos importer, primarily chrysotile for asbestos-cement roofing and construction products.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 1983,
+        "event": "WHO publishes evidence on chrysotile health hazards; India continues large-scale asbestos imports",
+        "type": "other",
+        "source_url": "https://www.who.int/news-room/fact-sheets/detail/asbestos"
+      },
+      {
+        "year": 2011,
+        "event": "Collegium Ramazzini files Supreme Court petition requesting a national asbestos ban; case remains pending",
+        "type": "court_ruling",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2013,
+        "event": "Chrysotile institute lobbying intensifies; India-Russia trade in chrysotile fibers grows significantly",
+        "type": "other",
+        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+      },
+      {
+        "year": 2018,
+        "event": "Indian government formally declines to ban chrysotile, citing economic concerns in cement and construction industry",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2023,
+        "event": "India remains world's largest asbestos importer at approximately 300,000 metric tons per year; no ban timeline announced",
+        "type": "other",
+        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+      }
+    ],
     "peak_usage_era": "1980s-present",
-    "common_materials": ["cement roofing sheets", "brake linings", "gaskets", "cement pipes"],
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "brake linings",
+      "gaskets",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      },
+      {
+        "name": "USGS Asbestos",
+        "url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "china",
+    "name": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "region": "Asia",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No comprehensive national ban. Chrysotile used extensively in cement products, friction materials, and construction. Domestic production in Xinjiang province.",
+    "exceptions": [],
+    "timeline": [
+      {
+        "year": 1970,
+        "event": "Rapid industrialization drives large-scale asbestos-cement construction across all provinces",
+        "type": "other",
+        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+      },
+      {
+        "year": 2001,
+        "event": "Some provinces begin restricting sprayed asbestos applications in public buildings",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2012,
+        "event": "China becomes world's top chrysotile consumer; Xinjiang province produces chrysotile domestically",
+        "type": "other",
+        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+      },
+      {
+        "year": 2019,
+        "event": "Partial import restrictions on amphibole fibers (crocidolite, amosite) introduced; chrysotile remains unrestricted",
+        "type": "partial_ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2024,
+        "event": "No comprehensive ban in place; chrysotile still used in friction products, cement goods, and construction",
+        "type": "other",
+        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+      }
+    ],
+    "peak_usage_era": "1970s-present",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "brake linings",
+      "friction materials",
+      "asbestos gaskets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      },
+      {
+        "name": "USGS Asbestos",
+        "url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "russia",
+    "name": "Russia",
+    "iso2": "RU",
+    "iso3": "RUS",
+    "region": "Europe",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No ban on chrysotile asbestos. World's largest producer via Uralasbest (Asbest, Ural region). Russia actively promotes 'controlled use' internationally.",
+    "exceptions": [],
+    "timeline": [
+      {
+        "year": 1950,
+        "event": "Soviet-era expansion of chrysotile mining in Ural mountains; Uralasbest becomes world's largest asbestos mine",
+        "type": "other",
+        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+      },
+      {
+        "year": 1990,
+        "event": "Russia inherits world's largest chrysotile reserves and production infrastructure after USSR dissolution",
+        "type": "other",
+        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+      },
+      {
+        "year": 2012,
+        "event": "Russian chrysotile industry launches international 'controlled use' lobbying campaign to oppose global bans",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2019,
+        "event": "Russia exports approximately 300,000 metric tons per year, primarily targeting Southeast Asia, Middle East, and Africa",
+        "type": "other",
+        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+      },
+      {
+        "year": 2024,
+        "event": "No ban in place; Uralasbest remains operational as world's largest open-pit chrysotile mine",
+        "type": "other",
+        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+      }
+    ],
+    "peak_usage_era": "1950s-present",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "asbestos-cement roofing sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes",
+      "asbestos gaskets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      },
+      {
+        "name": "USGS Asbestos",
+        "url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "brazil",
+    "name": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "region": "Latin America",
+    "ban_status": "full_ban",
+    "ban_year": 2017,
+    "ban_details": "Federal Supreme Court (STF) ruled chrysotile use unconstitutional in 2017, establishing a nationwide prohibition enforced through federal and state legislation.",
+    "exceptions": [],
+    "timeline": [
+      {
+        "year": 1995,
+        "event": "Sao Paulo state legislature passes first state-level restrictions on chrysotile use and manufacture",
+        "type": "partial_ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2001,
+        "event": "Federal Supreme Court affirms state authority to ban asbestos; six states implement bans",
+        "type": "court_ruling",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2012,
+        "event": "STF consolidates multiple asbestos ban cases; chrysotile industry files constitutional challenge to state bans",
+        "type": "court_ruling",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2017,
+        "event": "Federal Supreme Court rules chrysotile asbestos violates constitutional right to health — nationwide prohibition",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2023,
+        "event": "Federal enforcement strengthened; Eternit plant closures completed; chrysotile imports cease",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      }
+    ],
+    "peak_usage_era": "1960s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes",
+      "brake linings"
+    ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
@@ -77,15 +337,6128 @@
     "region": "Latin America",
     "ban_status": "no_ban",
     "ban_year": null,
-    "ban_details": "No federal ban. Asbestos-cement products widely used in construction, especially roofing.",
+    "ban_details": "No comprehensive federal ban on chrysotile. Crocidolite and amosite banned in 2004. Chrysotile still legally imported for friction products. Occupational exposure limits set in 2007.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 1990,
+        "event": "Asbestos use declines due to economic shifts and reduced domestic construction activity",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2004,
+        "event": "Crocidolite (blue asbestos) and amosite (brown asbestos) formally prohibited; chrysotile remains legal",
+        "type": "partial_ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2007,
+        "event": "NOM-010-STPS regulations establish occupational exposure limits for asbestos fibers in workplaces",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2016,
+        "event": "Updated environmental regulations tighten asbestos handling, transport, and disposal requirements",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2024,
+        "event": "No comprehensive ban on chrysotile; small quantities still imported for automotive friction products",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      }
+    ],
     "peak_usage_era": "1960s-1990s",
-    "common_materials": ["cement roofing", "floor tiles", "pipe insulation", "water tanks"],
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles",
+      "brake linings"
+    ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
     "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "indonesia",
+    "name": "Indonesia",
+    "iso2": "ID",
+    "iso3": "IDN",
+    "region": "Asia",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No national ban. Asbestos-cement roofing sheets remain widely used in residential and agricultural construction across rural areas.",
+    "exceptions": [],
+    "timeline": [
+      {
+        "year": 1975,
+        "event": "Asbestos-cement sheet manufacturing established; corrugated roofing becomes dominant construction material",
+        "type": "other",
+        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+      },
+      {
+        "year": 1990,
+        "event": "Asbestos-cement sheets estimated to cover 60-70% of rural housing roofing nationwide",
+        "type": "other",
+        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+      },
+      {
+        "year": 2006,
+        "event": "No national regulatory framework; Ministry of Health begins internal review of asbestos health impacts",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2015,
+        "event": "WHO Indonesia office publishes health burden estimate; government acknowledges occupational exposure issue",
+        "type": "other",
+        "source_url": "https://www.who.int/news-room/fact-sheets/detail/asbestos"
+      },
+      {
+        "year": 2024,
+        "event": "No ban in place; Indonesia remains one of Southeast Asia's largest asbestos consumers",
+        "type": "other",
+        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+      }
+    ],
+    "peak_usage_era": "1975-present",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      },
+      {
+        "name": "USGS Asbestos",
+        "url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "united-kingdom",
+    "name": "United Kingdom",
+    "iso2": "GB",
+    "iso3": "GBR",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1999,
+    "ban_details": "Complete ban on all asbestos including chrysotile under Control of Asbestos at Work Regulations 1999. Updated and consolidated under Control of Asbestos Regulations 2012.",
+    "exceptions": [],
+    "timeline": [
+      {
+        "year": 1969,
+        "event": "Asbestos Regulations 1969 establish first occupational safety requirements for asbestos workers",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 1985,
+        "event": "Crocidolite (blue asbestos) banned from import and use in the UK",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 1988,
+        "event": "Amosite (brown asbestos) banned; all amphibole asbestos fibers fully prohibited",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 1999,
+        "event": "Control of Asbestos at Work Regulations extended to include chrysotile — complete UK ban on all asbestos",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2012,
+        "event": "Control of Asbestos Regulations 2012 consolidates all prior regulations; mandatory duty-to-manage for commercial buildings",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      }
+    ],
+    "peak_usage_era": "1950s-1970s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "asbestos-cement flat sheets",
+      "vinyl-asbestos floor tiles",
+      "roof felt underlayment"
+    ],
+    "estimated_buildings_at_risk": "~1.5 million commercial buildings",
+    "mesothelioma_rate": 20.5,
+    "mesothelioma_source_year": 2020,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "australia",
+    "name": "Australia",
+    "iso2": "AU",
+    "iso3": "AUS",
+    "region": "Oceania",
+    "ban_status": "full_ban",
+    "ban_year": 2004,
+    "ban_details": "Complete ban on the manufacture, use, reuse, import, transport, storage, and sale of all forms of asbestos effective January 1, 2004.",
+    "exceptions": [],
+    "timeline": [
+      {
+        "year": 1978,
+        "event": "Wittenoom crocidolite mine (Western Australia) closes after over 5,000 worker illness cases documented",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 1986,
+        "event": "Crocidolite (blue asbestos) banned nationwide; major mining operations cease",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2003,
+        "event": "Safe Work Australia phases out remaining asbestos product categories ahead of full ban",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2004,
+        "event": "Complete ban effective January 1, 2004: all asbestos manufacture, import, use, and sale prohibited",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2014,
+        "event": "Asbestos Safety and Eradication Agency (ASEA) established with dedicated federal mandate for remediation",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      }
+    ],
+    "peak_usage_era": "1950s-1980s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles",
+      "asbestos insulating board"
+    ],
+    "estimated_buildings_at_risk": "~1 in 3 Australian homes built before 1990",
+    "mesothelioma_rate": 31.0,
+    "mesothelioma_source_year": 2020,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "japan",
+    "name": "Japan",
+    "iso2": "JP",
+    "iso3": "JPN",
+    "region": "Asia",
+    "ban_status": "full_ban",
+    "ban_year": 2006,
+    "ban_details": "Complete ban on all asbestos including chrysotile effective 2006 under the Industrial Safety and Health Act. Following the Kubota Shock (2005), aggressive removal programs launched.",
+    "exceptions": [],
+    "timeline": [
+      {
+        "year": 1975,
+        "event": "Ministry of Labour restricts sprayed asbestos applications in construction",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 1995,
+        "event": "Crocidolite and amosite banned; chrysotile still in widespread use across construction sector",
+        "type": "partial_ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2004,
+        "event": "Near-total ban enacted under Industrial Safety and Health Act, with narrow exceptions",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2006,
+        "event": "Complete ban on all asbestos products including chrysotile; all exceptions removed",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2008,
+        "event": "Kubota Shock aftermath: landmark corporate liability ruling drives nationwide asbestos removal programs",
+        "type": "court_ruling",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      }
+    ],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "asbestos-cement roofing sheets",
+      "spray-applied fireproofing",
+      "pipe insulation",
+      "asbestos insulating board"
+    ],
+    "estimated_buildings_at_risk": "~280,000 buildings",
+    "mesothelioma_rate": 9.1,
+    "mesothelioma_source_year": 2020,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "south-korea",
+    "name": "South Korea",
+    "iso2": "KR",
+    "iso3": "KOR",
+    "region": "Asia",
+    "ban_status": "full_ban",
+    "ban_year": 2009,
+    "ban_details": "Complete ban on all asbestos effective January 1, 2009 under amendments to the Industrial Safety and Health Act. Asbestos Safety Management Act enacted in 2011.",
+    "exceptions": [],
+    "timeline": [
+      {
+        "year": 1990,
+        "event": "Occupational Safety and Health Act sets first asbestos exposure limits for workers",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 1997,
+        "event": "Crocidolite and amosite banned; restrictions on chrysotile significantly tightened",
+        "type": "partial_ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2007,
+        "event": "Government announces full phase-out timeline for all remaining chrysotile asbestos uses",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2009,
+        "event": "Complete ban on all asbestos products effective January 1, 2009",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2011,
+        "event": "Asbestos Safety Management Act establishes national registry of asbestos-containing buildings",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      }
+    ],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "asbestos-cement roofing sheets",
+      "brake linings",
+      "friction materials",
+      "pipe insulation"
+    ],
+    "estimated_buildings_at_risk": "~200,000 buildings",
+    "mesothelioma_rate": 4.3,
+    "mesothelioma_source_year": 2020,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "germany",
+    "name": "Germany",
+    "iso2": "DE",
+    "iso3": "DEU",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1993,
+    "ban_details": "Complete ban on all asbestos under Chemikalienverbot-Verordnung (ChemVerbotsV) in 1993. One of the earliest comprehensive bans in Europe.",
+    "exceptions": [],
+    "timeline": [
+      {
+        "year": 1979,
+        "event": "First restrictions on sprayed asbestos in public buildings introduced under VDI guidelines",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 1981,
+        "event": "Crocidolite (blue asbestos) banned from manufacture and use under Gefahrstoffverordnung",
+        "type": "partial_ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 1990,
+        "event": "Gefahrstoffverordnung broadly restricts most asbestos product categories",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 1993,
+        "event": "Chemikalienverbot-Verordnung: complete ban on all asbestos — Germany among first EU nations to do so",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2003,
+        "event": "EU Directive 1999/77/EC bans chrysotile across all member states, harmonizing and reinforcing German law",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      }
+    ],
+    "peak_usage_era": "1950s-1980s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "asbestos-cement flat sheets",
+      "vinyl-asbestos floor tiles",
+      "spray-applied fireproofing"
+    ],
+    "estimated_buildings_at_risk": "~7 million buildings",
+    "mesothelioma_rate": 14.5,
+    "mesothelioma_source_year": 2020,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "south-africa",
+    "name": "South Africa",
+    "iso2": "ZA",
+    "iso3": "ZAF",
+    "region": "Africa",
+    "ban_status": "full_ban",
+    "ban_year": 2008,
+    "ban_details": "Full ban under Asbestos Regulations (Government Gazette No. 30891) in 2008, removing all remaining exceptions from the partial ban implemented in 2003.",
+    "exceptions": [],
+    "timeline": [
+      {
+        "year": 1977,
+        "event": "Occupational Diseases in Mines and Works Act introduces first health protections for asbestos mine workers",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 1984,
+        "event": "Crocidolite mining in Northern Cape phased out following high incidence of mesothelioma among workers",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2003,
+        "event": "Prohibition on import, manufacture, and sale of asbestos products with scheduled exceptions until 2008",
+        "type": "partial_ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2008,
+        "event": "Full Asbestos Regulations under OHSA: all remaining exceptions removed — complete nationwide ban",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2020,
+        "event": "Asbestos Roadmap developed; government estimates 5 million buildings contain asbestos across the country",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      }
+    ],
+    "peak_usage_era": "1960s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos insulating board",
+      "pipe insulation"
+    ],
+    "estimated_buildings_at_risk": "~5 million buildings",
+    "mesothelioma_rate": 6.8,
+    "mesothelioma_source_year": 2018,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "canada",
+    "name": "Canada",
+    "iso2": "CA",
+    "iso3": "CAN",
+    "region": "North America",
+    "ban_status": "full_ban",
+    "ban_year": 2018,
+    "ban_details": "Prohibition of Asbestos and Asbestos Products Regulations under CEPA (Canadian Environmental Protection Act) came into force in 2018, banning all uses, import, and export.",
+    "exceptions": [],
+    "timeline": [
+      {
+        "year": 1979,
+        "event": "Quebec chrysotile mining at peak; Canada historically world's second-largest chrysotile producer",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 1987,
+        "event": "Occupational exposure limits set; first comprehensive federal workplace asbestos regulations enacted",
+        "type": "regulation",
+        "source_url": "https://www.epa.gov/asbestos"
+      },
+      {
+        "year": 2012,
+        "event": "Jeffrey Mine (Quebec) closes — last active chrysotile mine in Canada",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2016,
+        "event": "Federal Trudeau government announces intent to ban asbestos; exports continue during phase-out period",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2018,
+        "event": "Prohibition of Asbestos and Asbestos Products Regulations in force under CEPA — complete ban",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      }
+    ],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "pipe insulation",
+      "vinyl-asbestos floor tiles",
+      "asbestos-cement flat sheets",
+      "textured ceiling coating",
+      "joint compound"
+    ],
+    "estimated_buildings_at_risk": "~4 million homes built before 1990",
+    "mesothelioma_rate": 11.3,
+    "mesothelioma_source_year": 2020,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      },
+      {
+        "name": "EPA Asbestos",
+        "url": "https://www.epa.gov/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "nigeria",
+    "name": "Nigeria",
+    "iso2": "NG",
+    "iso3": "NGA",
+    "region": "Africa",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No comprehensive national ban. Asbestos-cement roofing sheets widely used across residential and commercial construction, particularly in rural areas.",
+    "exceptions": [],
+    "timeline": [
+      {
+        "year": 1970,
+        "event": "Post-civil war reconstruction drives large-scale asbestos-cement roofing deployment nationwide",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 1990,
+        "event": "Health concerns begin appearing in medical literature; no government regulatory response initiated",
+        "type": "other",
+        "source_url": "https://www.who.int/news-room/fact-sheets/detail/asbestos"
+      },
+      {
+        "year": 2006,
+        "event": "Isolated state-level advisories issued; no enforcement mechanism or national framework created",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2015,
+        "event": "ILO and WHO jointly call on Nigeria to ratify asbestos conventions and enact a national ban",
+        "type": "other",
+        "source_url": "https://www.who.int/news-room/fact-sheets/detail/asbestos"
+      },
+      {
+        "year": 2024,
+        "event": "No comprehensive ban; millions of aging asbestos-cement roofs still in active residential use",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      }
+    ],
+    "peak_usage_era": "1970s-present",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "high",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      },
+      {
+        "name": "WHO Asbestos",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/asbestos",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "algeria",
+    "name": "Algeria",
+    "iso2": "DZ",
+    "iso3": "DZA",
+    "region": "Africa",
+    "ban_status": "full_ban",
+    "ban_year": 2017,
+    "ban_details": "Complete ban on all asbestos under Decree 17-340 of 2017. Algeria aligns with North African regulatory trends.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "argentina",
+    "name": "Argentina",
+    "iso2": "AR",
+    "iso3": "ARG",
+    "region": "Latin America",
+    "ban_status": "full_ban",
+    "ban_year": 2001,
+    "ban_details": "Complete ban on asbestos production, import, and use under Law 19.587 amendment and related regulations, effective 2001.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "austria",
+    "name": "Austria",
+    "iso2": "AT",
+    "iso3": "AUT",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1990,
+    "ban_details": "Complete ban under Chemikaliengesetz and related regulations in 1990, following restrictions on crocidolite and amosite in the 1980s.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1980s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "bahrain",
+    "name": "Bahrain",
+    "iso2": "BH",
+    "iso3": "BHR",
+    "region": "Middle East",
+    "ban_status": "full_ban",
+    "ban_year": 2007,
+    "ban_details": "Complete ban on all asbestos products adopted in 2007 as part of Gulf Cooperation Council (GCC) harmonized regulations.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "thermal insulation board",
+      "asbestos gaskets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "belgium",
+    "name": "Belgium",
+    "iso2": "BE",
+    "iso3": "BEL",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1998,
+    "ban_details": "Complete ban on all asbestos under Royal Decree of February 3, 1998 — one of the earlier EU-wide bans.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1980s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "brunei",
+    "name": "Brunei",
+    "iso2": "BN",
+    "iso3": "BRN",
+    "region": "Asia",
+    "ban_status": "full_ban",
+    "ban_year": 2007,
+    "ban_details": "Complete ban on all asbestos products adopted in 2007 as part of ASEAN-region regulatory reforms.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "bulgaria",
+    "name": "Bulgaria",
+    "iso2": "BG",
+    "iso3": "BGR",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2005,
+    "ban_details": "Full ban on all asbestos under EU Directive 1999/77/EC (Commission Directive), in force March 2005. Chrysotile prohibited across all EU member states.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes",
+      "asbestos insulating board"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "chile",
+    "name": "Chile",
+    "iso2": "CL",
+    "iso3": "CHL",
+    "region": "Latin America",
+    "ban_status": "full_ban",
+    "ban_year": 2001,
+    "ban_details": "Complete ban on all asbestos production, import, and commercialization under Decree No. 656 of 2000, effective 2001.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "colombia",
+    "name": "Colombia",
+    "iso2": "CO",
+    "iso3": "COL",
+    "region": "Latin America",
+    "ban_status": "full_ban",
+    "ban_year": 2019,
+    "ban_details": "Complete ban on all asbestos use and production under Law 1968 of 2019, with a 5-year transition period.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "brake linings"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "croatia",
+    "name": "Croatia",
+    "iso2": "HR",
+    "iso3": "HRV",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2006,
+    "ban_details": "Complete ban on all asbestos adopted in 2006 in alignment with EU Directive 1999/77/EC.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "cyprus",
+    "name": "Cyprus",
+    "iso2": "CY",
+    "iso3": "CYP",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2005,
+    "ban_details": "Full ban on all asbestos under EU Directive 1999/77/EC (Commission Directive), in force March 2005. Chrysotile prohibited across all EU member states.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "pipe insulation"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "czech-republic",
+    "name": "Czech Republic",
+    "iso2": "CZ",
+    "iso3": "CZE",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2005,
+    "ban_details": "Full ban on all asbestos under EU Directive 1999/77/EC (Commission Directive), in force March 2005. Chrysotile prohibited across all EU member states.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes",
+      "asbestos insulating board"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "denmark",
+    "name": "Denmark",
+    "iso2": "DK",
+    "iso3": "DNK",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1988,
+    "ban_details": "Complete ban on all asbestos under Statutory Order No. 384 of June 1988 — one of the earliest EU bans.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1970s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "djibouti",
+    "name": "Djibouti",
+    "iso2": "DJ",
+    "iso3": "DJI",
+    "region": "Africa",
+    "ban_status": "full_ban",
+    "ban_year": 2009,
+    "ban_details": "Complete ban adopted in 2009 in alignment with African Union and ILO conventions on asbestos.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "egypt",
+    "name": "Egypt",
+    "iso2": "EG",
+    "iso3": "EGY",
+    "region": "Africa",
+    "ban_status": "full_ban",
+    "ban_year": 2005,
+    "ban_details": "Complete ban on all asbestos production, import, and use adopted in 2005 under Egyptian environmental regulations.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "estonia",
+    "name": "Estonia",
+    "iso2": "EE",
+    "iso3": "EST",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2005,
+    "ban_details": "Full ban on all asbestos under EU Directive 1999/77/EC (Commission Directive), in force March 2005. Chrysotile prohibited across all EU member states.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "finland",
+    "name": "Finland",
+    "iso2": "FI",
+    "iso3": "FIN",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1993,
+    "ban_details": "Complete ban on all asbestos effective January 1, 1993 under Asbestos Decree. Finland was among the first European countries to implement a comprehensive ban.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1970s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "france",
+    "name": "France",
+    "iso2": "FR",
+    "iso3": "FRA",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1997,
+    "ban_details": "Complete ban on all asbestos including chrysotile under Decree No. 96-1133 of 1996, effective January 1, 1997.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1970s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles",
+      "asbestos-cement flat sheets",
+      "spray-applied fireproofing"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "gabon",
+    "name": "Gabon",
+    "iso2": "GA",
+    "iso3": "GAB",
+    "region": "Africa",
+    "ban_status": "full_ban",
+    "ban_year": 2012,
+    "ban_details": "Complete ban on all asbestos products adopted in 2012 as part of environmental health reforms.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "gibraltar",
+    "name": "Gibraltar",
+    "iso2": "GI",
+    "iso3": "GIB",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2000,
+    "ban_details": "As a British Overseas Territory, Gibraltar adopted UK asbestos ban regulations effective 2000, aligned with Control of Asbestos at Work Regulations.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1980s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "greece",
+    "name": "Greece",
+    "iso2": "GR",
+    "iso3": "GRC",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2005,
+    "ban_details": "Full ban on all asbestos under EU Directive 1999/77/EC (Commission Directive), in force March 2005. Chrysotile prohibited across all EU member states.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "greenland",
+    "name": "Greenland",
+    "iso2": "GL",
+    "iso3": "GRL",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1988,
+    "ban_details": "As an autonomous territory of Denmark, Greenland adopted Danish asbestos ban regulations in 1988.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1970s",
+    "common_materials": [
+      "pipe insulation",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "honduras",
+    "name": "Honduras",
+    "iso2": "HN",
+    "iso3": "HND",
+    "region": "Latin America",
+    "ban_status": "full_ban",
+    "ban_year": 2004,
+    "ban_details": "Complete ban on all asbestos production, import, and use adopted in 2004 under environmental health legislation.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "hungary",
+    "name": "Hungary",
+    "iso2": "HU",
+    "iso3": "HUN",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2005,
+    "ban_details": "Full ban on all asbestos under EU Directive 1999/77/EC (Commission Directive), in force March 2005. Chrysotile prohibited across all EU member states.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes",
+      "asbestos insulating board"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "iceland",
+    "name": "Iceland",
+    "iso2": "IS",
+    "iso3": "ISL",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1983,
+    "ban_details": "Complete ban on all asbestos effective 1983 — one of the first countries in the world to implement a comprehensive asbestos ban.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1970s",
+    "common_materials": [
+      "pipe insulation",
+      "asbestos-cement flat sheets",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "iran",
+    "name": "Iran",
+    "iso2": "IR",
+    "iso3": "IRN",
+    "region": "Middle East",
+    "ban_status": "full_ban",
+    "ban_year": 2012,
+    "ban_details": "Complete ban on all asbestos products adopted in 2012 under environmental health legislation.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "thermal insulation board",
+      "asbestos gaskets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "iraq",
+    "name": "Iraq",
+    "iso2": "IQ",
+    "iso3": "IRQ",
+    "region": "Middle East",
+    "ban_status": "full_ban",
+    "ban_year": 2008,
+    "ban_details": "Complete ban on all asbestos products adopted in 2008 under environmental and occupational health regulations.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "thermal insulation board"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "ireland",
+    "name": "Ireland",
+    "iso2": "IE",
+    "iso3": "IRL",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2000,
+    "ban_details": "Complete ban on all asbestos under European Communities (Protection of Workers) (Exposure to Asbestos) Regulations, with chrysotile prohibition effective 2000.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1980s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "israel",
+    "name": "Israel",
+    "iso2": "IL",
+    "iso3": "ISR",
+    "region": "Middle East",
+    "ban_status": "full_ban",
+    "ban_year": 2011,
+    "ban_details": "Complete ban on all asbestos production, import, and use adopted in 2011 under the Hazardous Substances Law.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "thermal insulation board"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "italy",
+    "name": "Italy",
+    "iso2": "IT",
+    "iso3": "ITA",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1992,
+    "ban_details": "Complete ban on all asbestos production and use under Law 257 of March 27, 1992.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1980s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles",
+      "asbestos-cement flat sheets",
+      "spray-applied fireproofing"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "ivory-coast",
+    "name": "Ivory Coast",
+    "iso2": "CI",
+    "iso3": "CIV",
+    "region": "Africa",
+    "ban_status": "full_ban",
+    "ban_year": 2012,
+    "ban_details": "Complete ban on all asbestos products adopted in 2012 under environmental health legislation.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "jordan",
+    "name": "Jordan",
+    "iso2": "JO",
+    "iso3": "JOR",
+    "region": "Middle East",
+    "ban_status": "full_ban",
+    "ban_year": 2008,
+    "ban_details": "Complete ban on all asbestos products adopted in 2008 under environmental and occupational safety regulations.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "thermal insulation board",
+      "asbestos gaskets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "kuwait",
+    "name": "Kuwait",
+    "iso2": "KW",
+    "iso3": "KWT",
+    "region": "Middle East",
+    "ban_status": "full_ban",
+    "ban_year": 2007,
+    "ban_details": "Complete ban on all asbestos products adopted in 2007 as part of GCC harmonized regulations.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "thermal insulation board",
+      "asbestos gaskets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "latvia",
+    "name": "Latvia",
+    "iso2": "LV",
+    "iso3": "LVA",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2005,
+    "ban_details": "Full ban on all asbestos under EU Directive 1999/77/EC (Commission Directive), in force March 2005. Chrysotile prohibited across all EU member states.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "liechtenstein",
+    "name": "Liechtenstein",
+    "iso2": "LI",
+    "iso3": "LIE",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1990,
+    "ban_details": "Complete ban on all asbestos adopted in 1990, aligned with Swiss asbestos regulations.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1970s",
+    "common_materials": [
+      "pipe insulation",
+      "asbestos-cement flat sheets",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "lithuania",
+    "name": "Lithuania",
+    "iso2": "LT",
+    "iso3": "LTU",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2005,
+    "ban_details": "Full ban on all asbestos under EU Directive 1999/77/EC (Commission Directive), in force March 2005. Chrysotile prohibited across all EU member states.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "luxembourg",
+    "name": "Luxembourg",
+    "iso2": "LU",
+    "iso3": "LUX",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2000,
+    "ban_details": "Complete ban on all asbestos including chrysotile adopted in 2000, ahead of the EU-wide ban.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1980s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "north-macedonia",
+    "name": "North Macedonia",
+    "iso2": "MK",
+    "iso3": "MKD",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2009,
+    "ban_details": "Complete ban on all asbestos adopted in 2009 in alignment with EU accession process and EU Directive 1999/77/EC.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "malta",
+    "name": "Malta",
+    "iso2": "MT",
+    "iso3": "MLT",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2005,
+    "ban_details": "Full ban on all asbestos under EU Directive 1999/77/EC (Commission Directive), in force March 2005. Chrysotile prohibited across all EU member states.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "pipe insulation"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "mauritius",
+    "name": "Mauritius",
+    "iso2": "MU",
+    "iso3": "MUS",
+    "region": "Africa",
+    "ban_status": "full_ban",
+    "ban_year": 2003,
+    "ban_details": "Complete ban on all asbestos products adopted in 2003 under Environment Protection Act amendments.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "monaco",
+    "name": "Monaco",
+    "iso2": "MC",
+    "iso3": "MCO",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2000,
+    "ban_details": "Complete ban on all asbestos aligned with French ban regulations, effective 2000.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1980s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "mozambique",
+    "name": "Mozambique",
+    "iso2": "MZ",
+    "iso3": "MOZ",
+    "region": "Africa",
+    "ban_status": "full_ban",
+    "ban_year": 2015,
+    "ban_details": "Complete ban on all asbestos products adopted in 2015 under environmental health reforms.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "netherlands",
+    "name": "Netherlands",
+    "iso2": "NL",
+    "iso3": "NLD",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1993,
+    "ban_details": "Complete ban on all asbestos under the Asbestos Decree (Besluit asbestproducten) of 1993.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1970s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "new-caledonia",
+    "name": "New Caledonia",
+    "iso2": "NC",
+    "iso3": "NCL",
+    "region": "Oceania",
+    "ban_status": "full_ban",
+    "ban_year": 2000,
+    "ban_details": "As a French special collectivity, New Caledonia adopted French asbestos ban regulations effective 2000.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "pipe insulation"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "new-zealand",
+    "name": "New Zealand",
+    "iso2": "NZ",
+    "iso3": "NZL",
+    "region": "Oceania",
+    "ban_status": "full_ban",
+    "ban_year": 2016,
+    "ban_details": "Complete ban on the import of asbestos and asbestos-containing products effective 2016 under the Health and Safety at Work (Asbestos) Regulations 2016.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles",
+      "asbestos insulating board"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "norway",
+    "name": "Norway",
+    "iso2": "NO",
+    "iso3": "NOR",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1985,
+    "ban_details": "Complete ban on all asbestos under Regulation on Asbestos (Asbestforskriften) of 1984, effective January 1, 1985.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1970s",
+    "common_materials": [
+      "pipe insulation",
+      "asbestos-cement flat sheets",
+      "vinyl-asbestos floor tiles",
+      "asbestos insulating board"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "oman",
+    "name": "Oman",
+    "iso2": "OM",
+    "iso3": "OMN",
+    "region": "Middle East",
+    "ban_status": "full_ban",
+    "ban_year": 2010,
+    "ban_details": "Complete ban on all asbestos products adopted in 2010 under Oman's environmental and occupational health regulations.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "thermal insulation board",
+      "asbestos gaskets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "poland",
+    "name": "Poland",
+    "iso2": "PL",
+    "iso3": "POL",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1997,
+    "ban_details": "Complete ban on all asbestos production and import under Act of 19 June 1997 on asbestos management. Poland was a significant asbestos producer before the ban.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes",
+      "asbestos insulating board"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "portugal",
+    "name": "Portugal",
+    "iso2": "PT",
+    "iso3": "PRT",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2005,
+    "ban_details": "Full ban on all asbestos under EU Directive 1999/77/EC (Commission Directive), in force March 2005. Chrysotile prohibited across all EU member states.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "qatar",
+    "name": "Qatar",
+    "iso2": "QA",
+    "iso3": "QAT",
+    "region": "Middle East",
+    "ban_status": "full_ban",
+    "ban_year": 2008,
+    "ban_details": "Complete ban on all asbestos products adopted in 2008 as part of Qatar's environmental health framework.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "thermal insulation board",
+      "asbestos gaskets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "romania",
+    "name": "Romania",
+    "iso2": "RO",
+    "iso3": "ROU",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2005,
+    "ban_details": "Full ban on all asbestos under EU Directive 1999/77/EC (Commission Directive), in force March 2005. Chrysotile prohibited across all EU member states.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes",
+      "asbestos insulating board"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "saudi-arabia",
+    "name": "Saudi Arabia",
+    "iso2": "SA",
+    "iso3": "SAU",
+    "region": "Middle East",
+    "ban_status": "full_ban",
+    "ban_year": 2013,
+    "ban_details": "Complete ban on all asbestos production, import, and use adopted in 2013 under Saudi environmental health regulations.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "thermal insulation board",
+      "asbestos gaskets",
+      "pipe insulation"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "serbia",
+    "name": "Serbia",
+    "iso2": "RS",
+    "iso3": "SRB",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2011,
+    "ban_details": "Complete ban on all asbestos adopted in 2011 as part of EU accession alignment process.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "seychelles",
+    "name": "Seychelles",
+    "iso2": "SC",
+    "iso3": "SYC",
+    "region": "Africa",
+    "ban_status": "full_ban",
+    "ban_year": 2007,
+    "ban_details": "Complete ban on all asbestos products adopted in 2007 under environmental health legislation.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "slovakia",
+    "name": "Slovakia",
+    "iso2": "SK",
+    "iso3": "SVK",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2005,
+    "ban_details": "Full ban on all asbestos under EU Directive 1999/77/EC (Commission Directive), in force March 2005. Chrysotile prohibited across all EU member states.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes",
+      "asbestos insulating board"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "slovenia",
+    "name": "Slovenia",
+    "iso2": "SI",
+    "iso3": "SVN",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2005,
+    "ban_details": "Full ban on all asbestos under EU Directive 1999/77/EC (Commission Directive), in force March 2005. Chrysotile prohibited across all EU member states.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "spain",
+    "name": "Spain",
+    "iso2": "ES",
+    "iso3": "ESP",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2002,
+    "ban_details": "Complete ban on all asbestos production, import, and use under Royal Decree 108/1991 and updated regulations, fully effective 2002.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles",
+      "asbestos insulating board"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "sweden",
+    "name": "Sweden",
+    "iso2": "SE",
+    "iso3": "SWE",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1986,
+    "ban_details": "Complete ban on all asbestos under the Ordinance on Products Containing Asbestos (SFS 1986:1386), effective July 1, 1986.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1970s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "switzerland",
+    "name": "Switzerland",
+    "iso2": "CH",
+    "iso3": "CHE",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 1990,
+    "ban_details": "Complete ban on all asbestos under the Ordinance on Toxic Substances (Giftliste) in 1990, covering all asbestos types.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1980s",
+    "common_materials": [
+      "asbestos insulating board",
+      "pipe insulation",
+      "vinyl-asbestos floor tiles",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "taiwan",
+    "name": "Taiwan",
+    "iso2": "TW",
+    "iso3": "TWN",
+    "region": "Asia",
+    "ban_status": "full_ban",
+    "ban_year": 2019,
+    "ban_details": "Complete ban on all asbestos-containing products effective February 1, 2019 under the Toxic Chemical Substances Control Act.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "brake linings",
+      "friction materials"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "turkey",
+    "name": "Turkey",
+    "iso2": "TR",
+    "iso3": "TUR",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2010,
+    "ban_details": "Complete ban on all asbestos production, import, and use effective 2010 under the Regulation on Hazardous Substances.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "uruguay",
+    "name": "Uruguay",
+    "iso2": "UY",
+    "iso3": "URY",
+    "region": "Latin America",
+    "ban_status": "full_ban",
+    "ban_year": 2004,
+    "ban_details": "Complete ban on all asbestos production, import, and use adopted in 2004 under Decree 154/2004.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "ukraine",
+    "name": "Ukraine",
+    "iso2": "UA",
+    "iso3": "UKR",
+    "region": "Europe",
+    "ban_status": "full_ban",
+    "ban_year": 2011,
+    "ban_details": "Complete ban on all asbestos adopted in 2011 under Ukrainian environmental health law, in alignment with EU standards.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes",
+      "asbestos insulating board"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "thailand",
+    "name": "Thailand",
+    "iso2": "TH",
+    "iso3": "THA",
+    "region": "Asia",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No national ban. Chrysotile used in construction materials. Significant importer from Russia.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1980s-present",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "brake linings",
+      "friction materials"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "philippines",
+    "name": "Philippines",
+    "iso2": "PH",
+    "iso3": "PHL",
+    "region": "Asia",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No national ban. Asbestos-cement construction materials widely used. Chrysotile imported for domestic manufacture.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-present",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "vietnam",
+    "name": "Vietnam",
+    "iso2": "VN",
+    "iso3": "VNM",
+    "region": "Asia",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No national ban. Vietnam is Southeast Asia's largest asbestos consumer. Chrysotile primarily used in roofing cement sheets.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1980s-present",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "pakistan",
+    "name": "Pakistan",
+    "iso2": "PK",
+    "iso3": "PAK",
+    "region": "Asia",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No national ban. Chrysotile used in asbestos-cement products for construction sector. Significant quantities imported annually.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1980s-present",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes",
+      "brake linings"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "bangladesh",
+    "name": "Bangladesh",
+    "iso2": "BD",
+    "iso3": "BGD",
+    "region": "Asia",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No national ban. Growing use of asbestos-cement roofing materials in residential and commercial construction.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1990s-present",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "kenya",
+    "name": "Kenya",
+    "iso2": "KE",
+    "iso3": "KEN",
+    "region": "Africa",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No national ban. Asbestos-cement roofing sheets widely used in residential construction, especially in rural areas.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-present",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "zimbabwe",
+    "name": "Zimbabwe",
+    "iso2": "ZW",
+    "iso3": "ZWE",
+    "region": "Africa",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No national ban. Zimbabwe was a chrysotile asbestos producer (Shabanie-Mashaba mines). Chrysotile still used domestically.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-present",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "pipe insulation"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "kazakhstan",
+    "name": "Kazakhstan",
+    "iso2": "KZ",
+    "iso3": "KAZ",
+    "region": "Asia",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No national ban. Kazakhstan has significant chrysotile asbestos deposits. Domestic production and consumption continues.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-present",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes",
+      "asbestos gaskets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "kyrgyzstan",
+    "name": "Kyrgyzstan",
+    "iso2": "KG",
+    "iso3": "KGZ",
+    "region": "Asia",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No national ban. Chrysotile used in construction materials. Part of former Soviet asbestos economy.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-present",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "myanmar",
+    "name": "Myanmar",
+    "iso2": "MM",
+    "iso3": "MMR",
+    "region": "Asia",
+    "ban_status": "no_ban",
+    "ban_year": null,
+    "ban_details": "No national ban. Asbestos-cement roofing sheets used across residential construction sector.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1990s-present",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "medium",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "angola",
+    "name": "Angola",
+    "iso2": "AO",
+    "iso3": "AGO",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "benin",
+    "name": "Benin",
+    "iso2": "BJ",
+    "iso3": "BEN",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "botswana",
+    "name": "Botswana",
+    "iso2": "BW",
+    "iso3": "BWA",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "burkina-faso",
+    "name": "Burkina Faso",
+    "iso2": "BF",
+    "iso3": "BFA",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "burundi",
+    "name": "Burundi",
+    "iso2": "BI",
+    "iso3": "BDI",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "cabo-verde",
+    "name": "Cabo Verde",
+    "iso2": "CV",
+    "iso3": "CPV",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "cameroon",
+    "name": "Cameroon",
+    "iso2": "CM",
+    "iso3": "CMR",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "central-african-republic",
+    "name": "Central African Republic",
+    "iso2": "CF",
+    "iso3": "CAF",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "chad",
+    "name": "Chad",
+    "iso2": "TD",
+    "iso3": "TCD",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "comoros",
+    "name": "Comoros",
+    "iso2": "KM",
+    "iso3": "COM",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "congo-republic",
+    "name": "Congo (Republic)",
+    "iso2": "CG",
+    "iso3": "COG",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "congo-drc",
+    "name": "Congo (DRC)",
+    "iso2": "CD",
+    "iso3": "COD",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "equatorial-guinea",
+    "name": "Equatorial Guinea",
+    "iso2": "GQ",
+    "iso3": "GNQ",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "eritrea",
+    "name": "Eritrea",
+    "iso2": "ER",
+    "iso3": "ERI",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "eswatini",
+    "name": "Eswatini",
+    "iso2": "SZ",
+    "iso3": "SWZ",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "ethiopia",
+    "name": "Ethiopia",
+    "iso2": "ET",
+    "iso3": "ETH",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "gambia",
+    "name": "Gambia",
+    "iso2": "GM",
+    "iso3": "GMB",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "ghana",
+    "name": "Ghana",
+    "iso2": "GH",
+    "iso3": "GHA",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "guinea",
+    "name": "Guinea",
+    "iso2": "GN",
+    "iso3": "GIN",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "guinea-bissau",
+    "name": "Guinea-Bissau",
+    "iso2": "GW",
+    "iso3": "GNB",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "lesotho",
+    "name": "Lesotho",
+    "iso2": "LS",
+    "iso3": "LSO",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "liberia",
+    "name": "Liberia",
+    "iso2": "LR",
+    "iso3": "LBR",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "libya",
+    "name": "Libya",
+    "iso2": "LY",
+    "iso3": "LBY",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "madagascar",
+    "name": "Madagascar",
+    "iso2": "MG",
+    "iso3": "MDG",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "malawi",
+    "name": "Malawi",
+    "iso2": "MW",
+    "iso3": "MWI",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "mali",
+    "name": "Mali",
+    "iso2": "ML",
+    "iso3": "MLI",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "mauritania",
+    "name": "Mauritania",
+    "iso2": "MR",
+    "iso3": "MRT",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "morocco",
+    "name": "Morocco",
+    "iso2": "MA",
+    "iso3": "MAR",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "namibia",
+    "name": "Namibia",
+    "iso2": "NA",
+    "iso3": "NAM",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "niger",
+    "name": "Niger",
+    "iso2": "NE",
+    "iso3": "NER",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "rwanda",
+    "name": "Rwanda",
+    "iso2": "RW",
+    "iso3": "RWA",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "sao-tome-and-principe",
+    "name": "Sao Tome and Principe",
+    "iso2": "ST",
+    "iso3": "STP",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "senegal",
+    "name": "Senegal",
+    "iso2": "SN",
+    "iso3": "SEN",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "sierra-leone",
+    "name": "Sierra Leone",
+    "iso2": "SL",
+    "iso3": "SLE",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "somalia",
+    "name": "Somalia",
+    "iso2": "SO",
+    "iso3": "SOM",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "south-sudan",
+    "name": "South Sudan",
+    "iso2": "SS",
+    "iso3": "SSD",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "sudan",
+    "name": "Sudan",
+    "iso2": "SD",
+    "iso3": "SDN",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "tanzania",
+    "name": "Tanzania",
+    "iso2": "TZ",
+    "iso3": "TZA",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "togo",
+    "name": "Togo",
+    "iso2": "TG",
+    "iso3": "TGO",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "tunisia",
+    "name": "Tunisia",
+    "iso2": "TN",
+    "iso3": "TUN",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "uganda",
+    "name": "Uganda",
+    "iso2": "UG",
+    "iso3": "UGA",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "zambia",
+    "name": "Zambia",
+    "iso2": "ZM",
+    "iso3": "ZMB",
+    "region": "Africa",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "antigua-and-barbuda",
+    "name": "Antigua and Barbuda",
+    "iso2": "AG",
+    "iso3": "ATG",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "bahamas",
+    "name": "Bahamas",
+    "iso2": "BS",
+    "iso3": "BHS",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "barbados",
+    "name": "Barbados",
+    "iso2": "BB",
+    "iso3": "BRB",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "belize",
+    "name": "Belize",
+    "iso2": "BZ",
+    "iso3": "BLZ",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "bolivia",
+    "name": "Bolivia",
+    "iso2": "BO",
+    "iso3": "BOL",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "costa-rica",
+    "name": "Costa Rica",
+    "iso2": "CR",
+    "iso3": "CRI",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "cuba",
+    "name": "Cuba",
+    "iso2": "CU",
+    "iso3": "CUB",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "dominica",
+    "name": "Dominica",
+    "iso2": "DM",
+    "iso3": "DMA",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "dominican-republic",
+    "name": "Dominican Republic",
+    "iso2": "DO",
+    "iso3": "DOM",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "ecuador",
+    "name": "Ecuador",
+    "iso2": "EC",
+    "iso3": "ECU",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "el-salvador",
+    "name": "El Salvador",
+    "iso2": "SV",
+    "iso3": "SLV",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "grenada",
+    "name": "Grenada",
+    "iso2": "GD",
+    "iso3": "GRD",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "guatemala",
+    "name": "Guatemala",
+    "iso2": "GT",
+    "iso3": "GTM",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "guyana",
+    "name": "Guyana",
+    "iso2": "GY",
+    "iso3": "GUY",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "haiti",
+    "name": "Haiti",
+    "iso2": "HT",
+    "iso3": "HTI",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "jamaica",
+    "name": "Jamaica",
+    "iso2": "JM",
+    "iso3": "JAM",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "nicaragua",
+    "name": "Nicaragua",
+    "iso2": "NI",
+    "iso3": "NIC",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "panama",
+    "name": "Panama",
+    "iso2": "PA",
+    "iso3": "PAN",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "paraguay",
+    "name": "Paraguay",
+    "iso2": "PY",
+    "iso3": "PRY",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "peru",
+    "name": "Peru",
+    "iso2": "PE",
+    "iso3": "PER",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "saint-kitts-and-nevis",
+    "name": "Saint Kitts and Nevis",
+    "iso2": "KN",
+    "iso3": "KNA",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "saint-lucia",
+    "name": "Saint Lucia",
+    "iso2": "LC",
+    "iso3": "LCA",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "saint-vincent-and-the-grenadines",
+    "name": "Saint Vincent and the Grenadines",
+    "iso2": "VC",
+    "iso3": "VCT",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "suriname",
+    "name": "Suriname",
+    "iso2": "SR",
+    "iso3": "SUR",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "trinidad-and-tobago",
+    "name": "Trinidad and Tobago",
+    "iso2": "TT",
+    "iso3": "TTO",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "venezuela",
+    "name": "Venezuela",
+    "iso2": "VE",
+    "iso3": "VEN",
+    "region": "Latin America",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1960s-1990s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement water pipes",
+      "vinyl-asbestos floor tiles"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "afghanistan",
+    "name": "Afghanistan",
+    "iso2": "AF",
+    "iso3": "AFG",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "armenia",
+    "name": "Armenia",
+    "iso2": "AM",
+    "iso3": "ARM",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "azerbaijan",
+    "name": "Azerbaijan",
+    "iso2": "AZ",
+    "iso3": "AZE",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "bhutan",
+    "name": "Bhutan",
+    "iso2": "BT",
+    "iso3": "BTN",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "cambodia",
+    "name": "Cambodia",
+    "iso2": "KH",
+    "iso3": "KHM",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "georgia",
+    "name": "Georgia",
+    "iso2": "GE",
+    "iso3": "GEO",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "laos",
+    "name": "Laos",
+    "iso2": "LA",
+    "iso3": "LAO",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "lebanon",
+    "name": "Lebanon",
+    "iso2": "LB",
+    "iso3": "LBN",
+    "region": "Middle East",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "malaysia",
+    "name": "Malaysia",
+    "iso2": "MY",
+    "iso3": "MYS",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "maldives",
+    "name": "Maldives",
+    "iso2": "MV",
+    "iso3": "MDV",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "mongolia",
+    "name": "Mongolia",
+    "iso2": "MN",
+    "iso3": "MNG",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "nepal",
+    "name": "Nepal",
+    "iso2": "NP",
+    "iso3": "NPL",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "north-korea",
+    "name": "North Korea",
+    "iso2": "KP",
+    "iso3": "PRK",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "palestine",
+    "name": "Palestine",
+    "iso2": "PS",
+    "iso3": "PSE",
+    "region": "Middle East",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "singapore",
+    "name": "Singapore",
+    "iso2": "SG",
+    "iso3": "SGP",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "sri-lanka",
+    "name": "Sri Lanka",
+    "iso2": "LK",
+    "iso3": "LKA",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "syria",
+    "name": "Syria",
+    "iso2": "SY",
+    "iso3": "SYR",
+    "region": "Middle East",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "tajikistan",
+    "name": "Tajikistan",
+    "iso2": "TJ",
+    "iso3": "TJK",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "timor-leste",
+    "name": "Timor-Leste",
+    "iso2": "TL",
+    "iso3": "TLS",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "turkmenistan",
+    "name": "Turkmenistan",
+    "iso2": "TM",
+    "iso3": "TKM",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "united-arab-emirates",
+    "name": "United Arab Emirates",
+    "iso2": "AE",
+    "iso3": "ARE",
+    "region": "Middle East",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "uzbekistan",
+    "name": "Uzbekistan",
+    "iso2": "UZ",
+    "iso3": "UZB",
+    "region": "Asia",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "yemen",
+    "name": "Yemen",
+    "iso2": "YE",
+    "iso3": "YEM",
+    "region": "Middle East",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "albania",
+    "name": "Albania",
+    "iso2": "AL",
+    "iso3": "ALB",
+    "region": "Europe",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "andorra",
+    "name": "Andorra",
+    "iso2": "AD",
+    "iso3": "AND",
+    "region": "Europe",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "belarus",
+    "name": "Belarus",
+    "iso2": "BY",
+    "iso3": "BLR",
+    "region": "Europe",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "bosnia-and-herzegovina",
+    "name": "Bosnia and Herzegovina",
+    "iso2": "BA",
+    "iso3": "BIH",
+    "region": "Europe",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "kosovo",
+    "name": "Kosovo",
+    "iso2": "XK",
+    "iso3": "XKX",
+    "region": "Europe",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "moldova",
+    "name": "Moldova",
+    "iso2": "MD",
+    "iso3": "MDA",
+    "region": "Europe",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "montenegro",
+    "name": "Montenegro",
+    "iso2": "ME",
+    "iso3": "MNE",
+    "region": "Europe",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "san-marino",
+    "name": "San Marino",
+    "iso2": "SM",
+    "iso3": "SMR",
+    "region": "Europe",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "vatican",
+    "name": "Vatican",
+    "iso2": "VA",
+    "iso3": "VAT",
+    "region": "Europe",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1950s-1990s",
+    "common_materials": [
+      "asbestos-cement flat sheets",
+      "pipe insulation",
+      "asbestos-cement water pipes"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "fiji",
+    "name": "Fiji",
+    "iso2": "FJ",
+    "iso3": "FJI",
+    "region": "Oceania",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "kiribati",
+    "name": "Kiribati",
+    "iso2": "KI",
+    "iso3": "KIR",
+    "region": "Oceania",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "marshall-islands",
+    "name": "Marshall Islands",
+    "iso2": "MH",
+    "iso3": "MHL",
+    "region": "Oceania",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "micronesia",
+    "name": "Micronesia",
+    "iso2": "FM",
+    "iso3": "FSM",
+    "region": "Oceania",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "nauru",
+    "name": "Nauru",
+    "iso2": "NR",
+    "iso3": "NRU",
+    "region": "Oceania",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "palau",
+    "name": "Palau",
+    "iso2": "PW",
+    "iso3": "PLW",
+    "region": "Oceania",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "papua-new-guinea",
+    "name": "Papua New Guinea",
+    "iso2": "PG",
+    "iso3": "PNG",
+    "region": "Oceania",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "samoa",
+    "name": "Samoa",
+    "iso2": "WS",
+    "iso3": "WSM",
+    "region": "Oceania",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "solomon-islands",
+    "name": "Solomon Islands",
+    "iso2": "SB",
+    "iso3": "SLB",
+    "region": "Oceania",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "tonga",
+    "name": "Tonga",
+    "iso2": "TO",
+    "iso3": "TON",
+    "region": "Oceania",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "tuvalu",
+    "name": "Tuvalu",
+    "iso2": "TV",
+    "iso3": "TUV",
+    "region": "Oceania",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
+    "sources": [
+      {
+        "name": "IBAS Ban List",
+        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
+        "accessed": "2026-03-13"
+      }
+    ],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "slug": "vanuatu",
+    "name": "Vanuatu",
+    "iso2": "VU",
+    "iso3": "VUT",
+    "region": "Oceania",
+    "ban_status": "unknown",
+    "ban_year": null,
+    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "exceptions": [],
+    "timeline": [],
+    "peak_usage_era": "1970s-2000s",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets"
+    ],
+    "estimated_buildings_at_risk": null,
+    "mesothelioma_rate": null,
+    "mesothelioma_source_year": null,
+    "priority": "low",
     "sources": [
       {
         "name": "IBAS Ban List",
