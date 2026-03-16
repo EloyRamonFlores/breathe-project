@@ -7,7 +7,11 @@ import MapLoader from "./MapLoader";
 
 const Globe3DInner = dynamic(() => import("./Globe3D"), { ssr: false });
 
-export default function Globe3DLoader() {
+interface Globe3DLoaderProps {
+  show?: boolean;
+}
+
+export default function Globe3DLoader({ show = true }: Globe3DLoaderProps) {
   const t = useTranslations("home");
   const [state, setState] = useState<"loading" | "webgl" | "no-webgl">(
     "loading"
@@ -40,6 +44,10 @@ export default function Globe3DLoader() {
         <MapLoader />
       </div>
     );
+  }
+
+  if (!show) {
+    return null;
   }
 
   return <Globe3DInner />;

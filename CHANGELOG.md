@@ -136,6 +136,19 @@ All notable changes, decisions, and progress for the BREATHE platform.
 - **Architecture**: `BASE_URL` constant pattern (`process.env.NEXT_PUBLIC_BASE_URL ?? "https://breathe.global"`) used consistently across sitemap, robots, and all `alternates` — Vercel env var at deploy time
 - **Build**: `npm run build` passes with zero errors; all 420+ static routes generated
 
+### 2026-03-16 — Globe Enhancements + Counter-Triggered Reveal (v1.2.0)
+- **Globe: dark sphere** — replaced earth-night.jpg with a 2×2 canvas filled `#0D1526`, converted to dataURL (`darkGlobeTexture()`); only colored country polygons are visible, no ocean imagery
+- **Globe: animated trade arcs** — 12 arcs from major asbestos producers (Russia, Kazakhstan, China) to no-ban consumer countries (India, Pakistan, Indonesia, Thailand, Iran, Serbia, Ethiopia, Nigeria, Kenya); red gradient (`rgba(239,68,68,0.05)` → `rgba(239,68,68,0.75)`), dash-animated at 2200ms
+- **Globe: zoom on country click** — `getPolygonCenter()` computes polygon centroid (largest ring for MultiPolygon); `globe.pointOfView({altitude: 1.2}, 800ms)` zooms in before navigating; navigation fires after 900ms
+- **Globe: hover pauses rotation** — `controlsHolder` ref pattern (populated after chain, used inside async hover callback); `autoRotate = false` on hover-enter, resumes via `setTimeout(800ms)` on hover-leave; drag also pauses/resumes via OrbitControls `start`/`end` events (2000ms resume delay)
+- **Globe: counter-triggered reveal** — Globe only mounts after counter animation completes
+  - `AnimatedCounter` gains `onComplete?: () => void` callback prop — fires when count-up finishes (or instantly on `prefers-reduced-motion`)
+  - New `src/components/layout/HeroSection.tsx` — client component holding `globeReady` state
+  - `page.tsx` (server component) passes pre-translated strings as props to `HeroSection`; no client state in page
+  - `Globe3DLoader` gains `show?: boolean` prop — returns `null` until `show=true`, then mounts `Globe3DInner`
+  - Sequence: counter counts 0→128 (2500ms) → `onComplete` fires → `globeReady=true` → globe mounts → globe fades in (2s ease-in)
+- **Build**: `npm run build` passes with zero TypeScript errors; 421 static routes generated
+
 ### 2026-03-16 — 3D Globe Hero + Split-screen Layout (v1.0.0)
 - **New dependency**: `globe.gl` (~500KB, loaded via dynamic import after page load)
 - **New component**: `src/components/map/Globe3D.tsx` — client-only 3D globe using globe.gl + Three.js

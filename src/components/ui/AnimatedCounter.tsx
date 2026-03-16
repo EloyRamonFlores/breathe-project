@@ -7,12 +7,14 @@ interface AnimatedCounterProps {
   target: number;
   duration?: number;
   className?: string;
+  onComplete?: () => void;
 }
 
 export default function AnimatedCounter({
   target,
   duration = 2000,
   className = "",
+  onComplete,
 }: AnimatedCounterProps) {
   const [count, setCount] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -29,6 +31,7 @@ export default function AnimatedCounter({
     if (prefersReducedMotion) {
       setCount(target);
       setHasAnimated(true);
+      onComplete?.();
       return;
     }
 
@@ -50,6 +53,7 @@ export default function AnimatedCounter({
             requestAnimationFrame(animate);
           } else {
             setCount(target);
+            onComplete?.();
           }
         }
 
@@ -60,6 +64,7 @@ export default function AnimatedCounter({
 
     observer.observe(element);
     return () => observer.disconnect();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [target, duration, hasAnimated]);
 
   return (
