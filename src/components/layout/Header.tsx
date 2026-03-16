@@ -39,12 +39,12 @@ export default function Header() {
   ] as const;
 
   return (
-    <header className="sticky top-0 z-50 border-b border-bg-tertiary/50 bg-bg-primary/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-bg-tertiary/50 bg-bg-primary/90 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
         {/* Logo */}
         <Link
           href="/"
-          className="font-serif text-2xl tracking-wide text-text-primary transition-opacity hover:opacity-80"
+          className="font-serif text-2xl tracking-wide text-text-primary transition-[letter-spacing] duration-300 hover:tracking-[0.1em]"
         >
           BREATHE
         </Link>
@@ -58,7 +58,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary"
+              className="underline-from-center text-sm font-medium text-text-secondary transition-colors hover:text-text-primary"
               onClick={closeMenu}
             >
               {link.label}

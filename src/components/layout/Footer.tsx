@@ -4,12 +4,20 @@ export default function Footer() {
   const t = useTranslations("footer");
 
   return (
-    <footer className="border-t border-bg-tertiary bg-bg-secondary">
+    <footer className="bg-bg-secondary">
+      {/* Gradient divider — replaces solid border-t */}
+      <div
+        className="h-px bg-gradient-to-r from-transparent via-bg-tertiary to-transparent"
+        aria-hidden="true"
+      />
+
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6">
         <div className="grid gap-8 md:grid-cols-3">
           {/* About */}
           <div>
-            <h3 className="font-serif text-lg text-text-primary">BREATHE</h3>
+            <h3 className="font-serif text-lg tracking-[0.15em] text-text-primary">
+              BREATHE
+            </h3>
             <p className="mt-2 text-sm leading-relaxed text-text-secondary">
               {t("about")}
             </p>
@@ -26,7 +34,8 @@ export default function Footer() {
                   href="https://ibasecretariat.org/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors hover:text-text-primary"
+                  className="underline-from-center transition-colors hover:text-text-primary"
+                  aria-label="IBAS — International Ban Asbestos Secretariat (opens in new tab)"
                 >
                   IBAS — International Ban Asbestos Secretariat
                 </a>
@@ -36,7 +45,8 @@ export default function Footer() {
                   href="https://www.epa.gov/asbestos"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors hover:text-text-primary"
+                  className="underline-from-center transition-colors hover:text-text-primary"
+                  aria-label="EPA — U.S. Environmental Protection Agency (opens in new tab)"
                 >
                   EPA — U.S. Environmental Protection Agency
                 </a>
@@ -46,7 +56,8 @@ export default function Footer() {
                   href="https://www.who.int/news-room/fact-sheets/detail/asbestos-elimination-of-asbestos-related-diseases"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors hover:text-text-primary"
+                  className="underline-from-center transition-colors hover:text-text-primary"
+                  aria-label="WHO — World Health Organization (opens in new tab)"
                 >
                   WHO — World Health Organization
                 </a>
@@ -67,7 +78,7 @@ export default function Footer() {
 
         {/* Disclaimer */}
         <div className="mt-10 border-t border-bg-tertiary pt-6">
-          <p className="text-xs leading-relaxed text-text-muted">
+          <p className="text-xs leading-relaxed text-text-secondary">
             {t("disclaimer")}
           </p>
         </div>

@@ -136,6 +136,95 @@ All notable changes, decisions, and progress for the BREATHE platform.
 - **Architecture**: `BASE_URL` constant pattern (`process.env.NEXT_PUBLIC_BASE_URL ?? "https://breathe.global"`) used consistently across sitemap, robots, and all `alternates` — Vercel env var at deploy time
 - **Build**: `npm run build` passes with zero errors; all 420+ static routes generated
 
+### 2026-03-16 — 3D Globe Hero + Split-screen Layout (v1.0.0)
+- **New dependency**: `globe.gl` (~500KB, loaded via dynamic import after page load)
+- **New component**: `src/components/map/Globe3D.tsx` — client-only 3D globe using globe.gl + Three.js
+  - GeoJSON polygons colored by ban_status: green (full_ban/de_facto_ban), amber (partial_ban), red (no_ban), gray (unknown)
+  - Slow auto-rotation (0.3 deg/frame) focused on Asia/Africa (high no-ban density)
+  - Auto-rotation pauses on user interaction, resumes after 2s idle
+  - Hover: country altitude lift (0.006 → 0.025) + tooltip with name, status dot, ban year
+  - Click: navigates to `/country/[slug]`
+  - Atmosphere glow: `rgba(59, 130, 246, 0.6)` — subtle blue
+  - Transparent background (`backgroundColor: rgba(0,0,0,0)`, `alpha: true`) integrates with `#0A0F1C` dark theme
+  - ResizeObserver for responsive canvas sizing; full cleanup on unmount
+- **New component**: `src/components/map/Globe3DLoader.tsx` — client component wrapping Globe3D
+  - WebGL availability check via `useEffect` + `getContext('webgl')` — avoids hydration mismatch
+  - Loading state: circular pulse skeleton while WebGL check runs + while globe.gl chunk downloads
+  - Fallback: if no WebGL, renders text notice + existing Leaflet MapLoader
+  - Dynamic import with `ssr: false` ensures globe.gl never evaluates on server
+- **Hero restructured**: `src/app/[locale]/page.tsx` — split-screen layout replacing centered counter + map
+  - Desktop (≥1024px): side-by-side — globe fills left 50% full-height, stats/CTA fill right 50% centered
+  - Mobile (<1024px): globe top (50vh), stats+CTA below with scroll
+  - `min-h-screen` on hero section ensures above-the-fold on desktop with no scroll required
+  - Counter now `text-[8.5rem]` (desktop) — larger and more dominant
+  - Radial warning glow behind counter (elliptical, 18% opacity)
+  - Source attribution line below CTA: "Source: IBAS, EPA, WHO"
+- **Leaflet map preserved**: moved to dedicated section below hero with heading `explore_map`
+  - Section has `bg-bg-secondary` + centered `font-serif` h2 heading
+  - Full interactive functionality unchanged (hover, click, legend, mobile tap-to-interact)
+- **i18n**: 8 new keys added to `home` namespace in `en.json` + `es.json`:
+  `explore_map`, `globe_loading`, `globe_fallback`, `globe_tooltip_banned` (with `{year}`),
+  `globe_tooltip_no_ban`, `globe_tooltip_unknown`, `source_attribution`
+- **Build**: `npm run build` passes with zero errors; all 420+ static routes generated
+
+### 2026-03-16 — Counter Animation Reverted + Globe Slower Fade (v1.1.2)
+- **`AnimatedCounter.tsx`** — Fully reverted to original animation: no `delay` prop, `ease-out` easing (`progress * (2 - progress)`), IntersectionObserver fires immediately on visibility, duration 2500ms
+- **`page.tsx`** — Removed all stagger/choreography CSS (`animate-[page-fade-in...]`, `[animation-delay:...]`) from hero right side; hero content renders immediately as before
+- **`Globe3D.tsx`** — Globe fade-in slowed from `0.8s` to `2s ease-in` for a more gradual, cinematic reveal
+
+### 2026-03-16 — Counter Easing Fix (v1.1.1)
+- **`AnimatedCounter.tsx`** — Changed easing from ease-out to cubic ease-in-out to fix jarring fast-start behavior
+- **`page.tsx`** — Changed counter `delay` from 900ms to 150ms to eliminate 750ms dead-time showing "0"
+- Reverted in v1.1.2 at user request (original ease-out animation preferred)
+
+### 2026-03-16 — Choreographed Hero Animation (v1.1.0)
+- **Problem**: All hero elements (counter animation, loading skeleton, globe canvas pop-in) fired simultaneously, creating competing visual noise and a low-quality perceived loading experience
+- **Solution**: Temporal choreography — one visual "event" at a time draws user attention
+- **`AnimatedCounter.tsx`** — Added `delay?: number` prop (default `0`)
+  - Observer declared outside `setTimeout` closure for safe React cleanup (no memory leaks)
+  - Cleanup returns `clearTimeout(timer)` + `observer?.disconnect()`
+  - `prefers-reduced-motion`: delay ignored, count shown immediately
+- **`page.tsx`** — Staggered entrance for right-side hero elements using existing `page-fade-in` keyframe
+  - Pattern: `animate-[page-fade-in_0.5s_ease-out_both] [animation-delay:Xms]`
+  - `animation-fill-mode: both` keeps elements at `opacity:0` before delay fires — no flash
+  - AnimatedCounter: 150ms | h1: 300ms | deaths stat: 420ms | CTA: 540ms | source: 660ms
+  - `<AnimatedCounter delay={900} />` — count-up starts after all text has settled
+- **`Globe3D.tsx`** — Globe fades in after full initialization (not on import)
+  - Container set to `opacity: 0` before async import
+  - After controls wired up: `transition: opacity 0.8s ease-in` → `opacity: 1`
+  - Replaces abrupt canvas pop-in with graceful reveal
+- **`Globe3DLoader.tsx`** — Removed pulsing skeleton loading state
+  - Returns `null` while WebGL check runs — left side stays dark (intentional, not broken)
+  - Globe's own fade-in handles the appearance; no skeleton competing with counter
+- **UX sequence**: text stagger (150–660ms) → count-up (900ms) → globe fade-in (~1.5–2s)
+- **`prefers-reduced-motion`**: all durations collapse to 0.01ms via existing global CSS; counter shows 128 instantly
+- **No new CSS**: reuses `page-fade-in` keyframe already in `globals.css`
+- **Build**: `npm run build` passes with zero errors; 421 static routes generated
+
+### 2026-03-16 — Performance Optimization: Remove Leaflet from Home (v1.0.1)
+- **Removed**: Leaflet map section from home page (`src/app/[locale]/page.tsx`)
+  - Eliminates Leaflet JS (~200KB), Leaflet CSS (~50KB), react-leaflet chunk, and duplicate world.json load (~300KB) from the home page bundle
+  - `MapLoader` import removed from `page.tsx`
+  - Shimmer divider between hero and map removed (no longer needed)
+- **Rationale**: Globe3D renders the same geographic data visually; the Leaflet flat map below the hero was redundant and doubled the JS payload on the landing page
+- **Page structure after**: Hero (split-screen globe + stats) → CTA section → Footer
+- **Leaflet map preserved** in `src/components/map/` — available for future use on country/learn pages
+- **Build**: `npm run build` passes with zero errors; all 421 static routes generated
+
+### 2026-03-15 — Design Polish + UX Fixes + Skills Audit (v0.9.0)
+- **Bug fix**: Map scroll blocked on mobile — Leaflet dragging now disabled by default with tap-to-activate overlay; `scrollWheelZoom` permanently off; click-outside resets interaction state
+- **Fix**: Map legend collapsible on mobile (<768px) via pill toggle with slide-down animation; always expanded on desktop
+- **Hero polish**: Radial warning glow (`rgba(245,158,11,0.30)`) behind counter; hero grain texture (CSS SVG noise, opacity 0.03); "NO" highlighted in amber/bold via split i18n keys; reduced mobile padding (`pt-16` → `sm:pt-24`); shimmer gradient divider between hero and map
+- **CTA section**: Left danger border (4px), gradient button (`from-accent to-accent/80`), CTA pulse animation, social proof text ("Free tool. No registration required.")
+- **Footer**: Gradient divider replaces solid border-t; BREATHE letter-spacing 0.15em; center-expand underline on data source links; disclaimer text upgraded to `text-secondary` for better contrast (WCAG fix)
+- **Header**: `backdrop-blur-xl` (was `backdrop-blur-md`); bg opacity 90% (was 80%); logo letter-spacing transition on hover; nav link center-expand underlines; added `aria-label` on "opens in new tab" footer links
+- **Global texture**: Subtle noise grain on body (opacity 0.025, `pointer-events: none`, GPU-composited via `position: fixed`)
+- **i18n**: 6 new keys in `home` namespace (en + es): `map_interact`, `map_legend_toggle`, `counter_prefix`, `counter_no`, `counter_suffix`, `cta_social_proof`
+- **WCAG audit findings**: 3 critical (missing h1 — fixed with `sr-only` h1; disclaimer contrast — fixed; no skip link — deferred), 3 moderate (nav focus-visible styles, html lang attr, target=_blank labeling — footer links fixed, rest deferred)
+- **SEO audit findings**: 2 gaps (no OG image, missing `x-default` in hreflang — both deferred to v0.9.1), all structured data and sitemap confirmed correct
+- **Performance audit findings**: 2 deferred optimizations (next/font migration for Google Fonts link, GeoJSON bundled into client JS — both deferred to v0.10.0)
+- **Build**: `npm run build` passes with zero errors; all 420+ static routes generated
+
 ### 2026-03-14 — Final Polish Pass (v0.8.0)
 - **Typography verified**: Instrument Serif (display), DM Sans (body), JetBrains Mono (data) all confirmed correct via CSS vars + Tailwind `@theme inline`. No fixes needed.
 - **Contrast verified**: All color pairs pass WCAG AA minimum — `text-primary #F9FAFB` and `text-secondary #9CA3AF` on `bg-primary #0A0F1C` confirmed.

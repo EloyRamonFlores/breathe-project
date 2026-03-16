@@ -20,7 +20,20 @@
     "cta_title": "¿Tu hogar está en riesgo?",
     "cta_description": "Descubre si tu edificio puede contener asbesto según su país, antigüedad y tipo.",
     "map_loading": "Cargando mapa global...",
-    "map_legend_title": "Estado de Prohibición del Asbesto"
+    "map_legend_title": "Estado de Prohibición del Asbesto",
+    "map_interact": "Toca para interactuar con el mapa",
+    "map_legend_toggle": "Leyenda",
+    "counter_prefix": "{count} países aún",
+    "counter_no": "NO",
+    "counter_suffix": "prohíben el asbesto",
+    "cta_social_proof": "Herramienta gratuita. Sin registro necesario.",
+    "explore_map": "Explora el Mapa Global de Prohibición del Asbesto",
+    "globe_loading": "Cargando globo 3D...",
+    "globe_fallback": "El globo 3D requiere WebGL",
+    "globe_tooltip_banned": "Prohibido desde {year}",
+    "globe_tooltip_no_ban": "Sin prohibición",
+    "globe_tooltip_unknown": "Estado desconocido",
+    "source_attribution": "Fuente: IBAS, EPA, OMS"
   },
   "check": {
     "meta_title": "Evaluador de Riesgo de Asbesto — ¿Tu Hogar Está en Riesgo?",

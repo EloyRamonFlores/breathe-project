@@ -20,7 +20,20 @@
     "cta_title": "Is your home at risk?",
     "cta_description": "Find out if your building may contain asbestos based on its country, age, and type.",
     "map_loading": "Loading global map...",
-    "map_legend_title": "Asbestos Ban Status"
+    "map_legend_title": "Asbestos Ban Status",
+    "map_interact": "Tap to interact with map",
+    "map_legend_toggle": "Legend",
+    "counter_prefix": "{count} countries still have",
+    "counter_no": "NO",
+    "counter_suffix": "ban on asbestos",
+    "cta_social_proof": "Free tool. No registration required.",
+    "explore_map": "Explore the Global Asbestos Ban Map",
+    "globe_loading": "Loading 3D globe...",
+    "globe_fallback": "3D globe requires WebGL",
+    "globe_tooltip_banned": "Banned since {year}",
+    "globe_tooltip_no_ban": "No ban in place",
+    "globe_tooltip_unknown": "Status unknown",
+    "source_attribution": "Source: IBAS, EPA, WHO"
   },
   "check": {
     "meta_title": "Asbestos Risk Checker — Is Your Home at Risk?",
