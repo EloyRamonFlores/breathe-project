@@ -136,6 +136,15 @@ All notable changes, decisions, and progress for the BREATHE platform.
 - **Architecture**: `BASE_URL` constant pattern (`process.env.NEXT_PUBLIC_BASE_URL ?? "https://breathe.global"`) used consistently across sitemap, robots, and all `alternates` — Vercel env var at deploy time
 - **Build**: `npm run build` passes with zero errors; all 420+ static routes generated
 
+### 2026-03-16 — Counter Jank Fix + Ocean Invisible + Globe Timing (v1.3.0)
+- **Root cause fixed**: counter animation was stuttering/freezing mid-count because Three.js/WebGL initialization (triggered at counter completion) competed with the `requestAnimationFrame` loop on the main thread, dropping frames
+- **Counter animation removed**: replaced count-up `AnimatedCounter` in hero with a static `<span>` + `page-fade-in` (0.5s ease-out). Number `128` appears immediately, confident and uninterrupted. `AnimatedCounter` reverted to clean original (no `onComplete` prop).
+- **Globe mounts immediately**: removed `globeReady` state, `onComplete` callback, and `show` prop mechanism. Globe initializes in the background on page load (opacity 0) while user reads text — no competition with any animation. `HeroSection` simplified to a stateless component.
+- **Ocean invisible**: `darkGlobeTexture()` color changed from `#0D1526` → `#0A0F1C` (exact match to `--bg-primary`). Ocean disappears; only colored country polygons and atmosphere glow visible.
+- **Globe fade shortened**: `2s ease-in` → `1s ease-in`. Globe is already warm (initialized in background) when it reveals, so the longer fade was unnecessary.
+- **UX sequence**: `128` fades in (~200ms) → user reads text → globe fades in when ready (~1–1.5s) — no stutter, no delays, no competing animations.
+- **Build**: `npm run build` passes with zero TypeScript errors; 421 static routes generated
+
 ### 2026-03-16 — Globe Enhancements + Counter-Triggered Reveal (v1.2.0)
 - **Globe: dark sphere** — replaced earth-night.jpg with a 2×2 canvas filled `#0D1526`, converted to dataURL (`darkGlobeTexture()`); only colored country polygons are visible, no ocean imagery
 - **Globe: animated trade arcs** — 12 arcs from major asbestos producers (Russia, Kazakhstan, China) to no-ban consumer countries (India, Pakistan, Indonesia, Thailand, Iran, Serbia, Ethiopia, Nigeria, Kenya); red gradient (`rgba(239,68,68,0.05)` → `rgba(239,68,68,0.75)`), dash-animated at 2200ms

@@ -145,7 +145,7 @@ function darkGlobeTexture(): string {
   c.height = 2;
   const ctx = c.getContext("2d");
   if (ctx) {
-    ctx.fillStyle = "#0D1526";
+    ctx.fillStyle = "#0A0F1C";
     ctx.fillRect(0, 0, 2, 2);
   }
   return c.toDataURL();
@@ -307,7 +307,7 @@ export default function Globe3D() {
       controls.addEventListener("end", resumeAfterDrag);
 
       // Fade in
-      container.style.transition = "opacity 2s ease-in";
+      container.style.transition = "opacity 1s ease-in";
       container.style.opacity = "1";
 
       // Responsive resize

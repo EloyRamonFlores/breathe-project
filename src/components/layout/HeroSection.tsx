@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useCallback } from "react";
 import { Link } from "@/i18n/navigation";
-import AnimatedCounter from "@/components/ui/AnimatedCounter";
 import Globe3DLoader from "@/components/map/Globe3DLoader";
+import { formatNumber } from "@/lib/utils";
 
 interface HeroSectionProps {
   noBanCount: number;
@@ -24,12 +23,6 @@ export default function HeroSection({
   cta,
   sourceAttribution,
 }: HeroSectionProps) {
-  const [globeReady, setGlobeReady] = useState(false);
-
-  const handleCounterComplete = useCallback(() => {
-    setGlobeReady(true);
-  }, []);
-
   return (
     <section className="relative min-h-screen flex flex-col lg:flex-row items-center overflow-hidden">
       {/* Grain texture */}
@@ -37,7 +30,7 @@ export default function HeroSection({
 
       {/* Left: 3D Globe — full height on desktop, 50vh on mobile */}
       <div className="w-full lg:w-1/2 h-[50vh] lg:h-screen relative order-1">
-        <Globe3DLoader show={globeReady} />
+        <Globe3DLoader />
       </div>
 
       {/* Right: Stats + CTA */}
@@ -48,13 +41,10 @@ export default function HeroSection({
           aria-hidden="true"
         />
 
-        {/* Big counter */}
-        <AnimatedCounter
-          target={noBanCount}
-          className="relative font-mono text-[5.5rem] sm:text-[7rem] lg:text-[8.5rem] xl:text-[10rem] font-bold text-warning leading-none tabular-nums"
-          duration={2500}
-          onComplete={handleCounterComplete}
-        />
+        {/* Big number — static, no count-up */}
+        <span className="relative font-mono text-[5.5rem] sm:text-[7rem] lg:text-[8.5rem] xl:text-[10rem] font-bold text-warning leading-none tabular-nums animate-[page-fade-in_0.5s_ease-out_both]">
+          {formatNumber(noBanCount)}
+        </span>
 
         {/* Main headline — visible h1 */}
         <h1 className="relative mt-3 max-w-md font-serif text-xl sm:text-2xl lg:text-3xl text-text-primary leading-snug">
