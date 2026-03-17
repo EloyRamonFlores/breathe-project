@@ -4,6 +4,35 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v1.1.0] — 2026-03-17 — Post-Deploy: OG Images, 404 Page, Analytics
+
+### OG Image Generation
+- **Home OG image** (`src/app/opengraph-image.tsx`): Static 1200×630px using Next.js `ImageResponse`. Dark background (#0A0F1C), large amber counter (128 countries without ban), "NO ban" in red, toxinfree.global branding. Fully Satori-compliant (all multi-child divs use `display: flex`).
+- **Country OG images** (`src/app/[locale]/country/[slug]/opengraph-image.tsx`): Dynamic per-country 1200×630px. Shows country name, ban status badge (green/amber/red), ban year if available, question "Is asbestos banned in [Country]?". Rendered server-side on demand (`ƒ` route).
+- **metadataBase** added to root layout — resolves the "localhost:3000" OG URL warning; uses `NEXT_PUBLIC_BASE_URL` env var (defaults to `https://toxinfree.global`).
+
+### Custom 404 Page
+- `src/app/not-found.tsx`: Dark theme, ToxinFree branding, "Page not found" with links to Home, Risk Checker, and Learn. Uses inline styles (outside locale layout, no Tailwind/i18n available).
+
+### Analytics
+- Installed `@vercel/analytics@2.0.1` and `@vercel/speed-insights@2.0.0`
+- `<Analytics />` and `<SpeedInsights />` added to root layout — active on first Vercel deploy
+- No configuration needed; Vercel auto-associates with the project
+
+### Google Search Console
+- Verification placeholder added as commented block in `src/app/layout.tsx`
+- To activate: uncomment `verification: { google: "GOOGLE_SITE_VERIFICATION_CODE" }` and replace with the actual code from Search Console → Settings → Ownership verification → HTML tag
+
+### Files Added / Modified
+- `src/app/opengraph-image.tsx` — new, home OG image
+- `src/app/[locale]/country/[slug]/opengraph-image.tsx` — new, dynamic country OG image
+- `src/app/not-found.tsx` — new, custom 404 page
+- `src/app/layout.tsx` — metadataBase, Analytics, SpeedInsights, GSC placeholder
+- `package.json` — @vercel/analytics, @vercel/speed-insights added
+- Build: ✅ 422 static routes, 0 errors
+
+---
+
 ## [v1.0.0] — 2026-03-17 — LAUNCH: SEO Optimization & Internal Linking
 
 ### SEO Optimization Pass

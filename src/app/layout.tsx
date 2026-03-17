@@ -1,6 +1,8 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import { DM_Sans, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -15,7 +17,10 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "700"],
 });
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://toxinfree.global";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: {
     default: "ToxinFree — Global Toxic Substance Awareness",
     template: "%s | ToxinFree",
@@ -29,6 +34,12 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "ToxinFree",
   },
+  // ── Google Search Console verification ──────────────────────────────────────
+  // Replace GOOGLE_SITE_VERIFICATION_CODE with the value from Search Console
+  // → Settings → Ownership verification → HTML tag → content="..."
+  // verification: {
+  //   google: "GOOGLE_SITE_VERIFICATION_CODE",
+  // },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -39,6 +50,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={`${dmSans.variable} ${jetbrainsMono.variable} bg-bg-primary text-text-primary antialiased`}
       >
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
