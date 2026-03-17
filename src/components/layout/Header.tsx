@@ -41,12 +41,28 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-bg-tertiary/50 bg-bg-primary/90 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
-        {/* Logo */}
+        {/* Logo — shield+check icon + "Toxin" (light) / "Free" (bold green) */}
         <Link
           href="/"
-          className="font-serif text-2xl tracking-wide text-text-primary transition-[letter-spacing] duration-300 hover:tracking-[0.1em]"
+          className="flex items-center gap-2 transition-opacity duration-300 hover:opacity-80"
         >
-          BREATHE
+          <svg
+            className="h-6 w-6 shrink-0 text-safe"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={1.5}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M12 3L4.5 6.5V12c0 4.7 3.3 9.1 7.5 10.5 4.2-1.4 7.5-5.8 7.5-10.5V6.5L12 3z" />
+            <path d="M9 12l2.5 2.5L15 9" />
+          </svg>
+          <span className="font-sans text-2xl tracking-wide">
+            <span className="font-normal text-text-primary">Toxin</span>
+            <span className="font-bold text-safe">Free</span>
+          </span>
         </Link>
 
         {/* Desktop nav */}

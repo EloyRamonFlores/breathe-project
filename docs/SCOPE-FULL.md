@@ -290,7 +290,8 @@ The #1 growth channel for this type of content.
 ### Phase 2: Social + Viral Mechanics (Month 3-12)
 - Shareable risk checker results ("My house has a HIGH asbestos risk — check yours")
 - Embeddable world map widget (let journalists and bloggers embed it)
-- Annual "Global Asbestos Report" — automated data summary, designed beautifully, pitched to media
+- Annual "Global Asbestos Report" — automated data summary, designed beautifully, pitched
+ to media
 - Infographics designed for social sharing (Instagram, Twitter/X, Reddit)
 
 ### Phase 3: Partnerships (Month 6-18)

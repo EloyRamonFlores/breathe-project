@@ -214,7 +214,7 @@ export default function RiskChecker() {
       {/* Header */}
       {!isResults && (
         <div className="mb-8 text-center">
-          <h1 className="font-serif text-3xl text-text-primary sm:text-4xl">
+          <h1 className="font-sans font-bold text-3xl text-text-primary sm:text-4xl">
             {t("title")}
           </h1>
           <p className="mt-2 font-mono text-sm text-text-muted">

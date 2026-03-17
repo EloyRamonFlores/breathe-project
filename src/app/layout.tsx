@@ -17,26 +17,24 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "BREATHE — Global Toxic Substance Awareness",
-    template: "%s | BREATHE",
+    default: "ToxinFree — Global Toxic Substance Awareness",
+    template: "%s | ToxinFree",
   },
   description:
     "The first citizen-powered early warning system for invisible toxic substances. Check your asbestos risk, explore global regulations, and protect your family.",
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     type: "website",
-    siteName: "BREATHE",
+    siteName: "ToxinFree",
   },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+      <head />
       <body
         className={`${dmSans.variable} ${jetbrainsMono.variable} bg-bg-primary text-text-primary antialiased`}
       >

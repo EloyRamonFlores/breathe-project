@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import type { HistoryEventData, HistoryEventType } from "@/lib/types";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://breathe.global";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://toxinfree.global";
 
 export async function generateStaticParams() {
   return ["en", "es"].map((locale) => ({ locale }));
@@ -78,8 +78,8 @@ export default async function HistoryPage({
     headline: t("history_page.title"),
     datePublished: "2026-03-14",
     dateModified: "2026-03-14",
-    author: { "@type": "Organization", name: "BREATHE" },
-    publisher: { "@type": "Organization", name: "BREATHE" },
+    author: { "@type": "Organization", name: "ToxinFree" },
+    publisher: { "@type": "Organization", name: "ToxinFree" },
   };
 
   return (
@@ -102,7 +102,7 @@ export default async function HistoryPage({
         {/* ── Page Header ── */}
         <header className="mb-10">
           <p className="font-mono text-sm text-text-muted mb-2">{yearRange}</p>
-          <h1 className="font-serif text-3xl sm:text-4xl text-text-primary mb-4">
+          <h1 className="font-sans font-bold text-3xl sm:text-4xl text-text-primary mb-4">
             {t("history_page.title")}
           </h1>
           <p className="text-text-secondary text-base sm:text-lg leading-relaxed border-l-2 border-danger/40 pl-4">

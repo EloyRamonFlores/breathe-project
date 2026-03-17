@@ -14,7 +14,7 @@ const FILL_COLORS: Record<string, string> = {
   de_facto_ban: "#059669",
   partial_ban: "#F59E0B",
   no_ban: "#EF4444",
-  unknown: "#374151",
+  unknown: "rgba(55, 65, 81, 0.35)",
 };
 
 // Representative asbestos trade flows: major producers → no-ban consumer countries
@@ -138,18 +138,6 @@ function getPolygonCenter(
   };
 }
 
-/** 2×2 dark-navy canvas texture — replaces ocean image, only polygons visible */
-function darkGlobeTexture(): string {
-  const c = document.createElement("canvas");
-  c.width = 2;
-  c.height = 2;
-  const ctx = c.getContext("2d");
-  if (ctx) {
-    ctx.fillStyle = "#0A0F1C";
-    ctx.fillRect(0, 0, 2, 2);
-  }
-  return c.toDataURL();
-}
 
 export default function Globe3D() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -225,11 +213,11 @@ export default function Globe3D() {
       globe
         .width(container.offsetWidth)
         .height(container.offsetHeight)
-        // ── Globe appearance: no ocean, dark navy sphere ──
-        .globeImageUrl(darkGlobeTexture())
+        // ── Globe appearance: NASA Earth at Night texture ──
+        .globeImageUrl("https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-night.jpg")
         .backgroundColor("rgba(0,0,0,0)")
-        .atmosphereColor("rgba(59, 130, 246, 0.6)")
-        .atmosphereAltitude(0.15)
+        .atmosphereColor("rgba(100, 180, 255, 0.15)")
+        .atmosphereAltitude(0.12)
         // ── Country polygons ──
         .polygonsData(features)
         .polygonCapColor(getCapColor)

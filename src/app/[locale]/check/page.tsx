@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import RiskChecker from "@/components/checker/RiskChecker";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://breathe.global";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://toxinfree.global";
 
 const webAppJsonLd = {
   "@context": "https://schema.org",

@@ -10,9 +10,9 @@
     "language": "Idioma"
   },
   "home": {
-    "meta_title": "Mapa de Riesgo de Asbesto — 200 Países",
-    "meta_description": "Explora las regulaciones sobre el asbesto en 200 países. Mapa interactivo, evaluador de riesgo y datos sobre 255,000 muertes anuales por exposición al asbesto.",
-    "title": "BREATHE",
+    "meta_title": "ToxinFree — Mapa Global de Prohibición del Asbesto | 200 Países",
+    "meta_description": "Descubre qué países prohíben el asbesto con nuestro mapa global interactivo. Evaluador de riesgo gratuito. 200 países, 255,000 muertes anuales.",
+    "title": "ToxinFree",
     "subtitle": "El primer sistema ciudadano de alerta temprana para sustancias tóxicas invisibles",
     "counter": "{count} países aún NO prohíben el asbesto",
     "deaths": "~255,000 personas mueren por exposición al asbesto cada año",
@@ -23,7 +23,7 @@
     "map_legend_title": "Estado de Prohibición del Asbesto",
     "map_interact": "Toca para interactuar con el mapa",
     "map_legend_toggle": "Leyenda",
-    "counter_prefix": "{count} países aún",
+    "counter_prefix": "países aún",
     "counter_no": "NO",
     "counter_suffix": "prohíben el asbesto",
     "cta_social_proof": "Herramienta gratuita. Sin registro necesario.",
@@ -33,11 +33,40 @@
     "globe_tooltip_banned": "Prohibido desde {year}",
     "globe_tooltip_no_ban": "Sin prohibición",
     "globe_tooltip_unknown": "Estado desconocido",
-    "source_attribution": "Fuente: IBAS, EPA, OMS"
+    "source_attribution": "Fuente: IBAS, EPA, OMS",
+    "cta2": "Ver estadísticas",
+    "hero_tagline": "La crisis de salud global silenciosa",
+    "hero_desc_before": "Aproximadamente",
+    "hero_desc_bold": "255,000 personas",
+    "hero_desc_after": "mueren por exposición al asbesto cada año. Explora el mapa para ver el estado de las regulaciones a nivel mundial.",
+    "coming_soon": "Próximamente",
+    "substance_asbestos": "Asbesto",
+    "substance_pfas": "PFAS",
+    "substance_lead": "Plomo",
+    "substance_microplastics": "Microplásticos",
+    "stat_banned_label": "países con prohibición total",
+    "stat_production_label": "toneladas producidas anualmente",
+    "edu_section_heading": "Comprende el Riesgo",
+    "edu_section_subtitle": "La educación es la primera línea de defensa. Conoce qué es el asbesto, dónde se encuentra y cómo protegerte a ti y a tu familia.",
+    "edu_card1_title": "¿Qué es el Asbesto?",
+    "edu_card1_desc": "Un grupo de minerales fibrosos naturales que alguna vez fueron aclamados por su resistencia al calor y durabilidad. Hoy sabemos que sus fibras microscópicas son altamente cancerígenas cuando se inhalan.",
+    "edu_card1_cta": "Aprender más",
+    "edu_card2_title": "Dónde Se Esconde",
+    "edu_card2_desc": "Presente en millones de hogares construidos antes del año 2000. Se encuentra comúnmente en aislamientos, techos, baldosas y tuberías.",
+    "edu_card2_cta": "Explorar",
+    "edu_card3_title": "Qué Hacer (y Qué NO Hacer)",
+    "edu_card3_desc": "La regla de oro: nunca perturbes materiales sospechosos. Descubre los pasos seguros a seguir si crees que has encontrado asbesto en tu propiedad y cómo contactar a profesionales certificados.",
+    "edu_card3_cta": "Leer guía",
+    "legend_no_ban": "Sin prohibición",
+    "legend_limited": "Datos limitados",
+    "legend_full_ban": "Prohibición total",
+    "top_countries_label": "Perfiles de países más visitados",
+    "top_countries_no_ban": "Sin prohibición",
+    "top_countries_banned": "Prohibido"
   },
   "check": {
-    "meta_title": "Evaluador de Riesgo de Asbesto — ¿Tu Hogar Está en Riesgo?",
-    "meta_description": "Verifica si tu hogar puede contener asbesto. Ingresa tu país y año de construcción para obtener una evaluación de riesgo personalizada. Resultados gratuitos e instantáneos.",
+    "meta_title": "Evaluador de Riesgo de Asbesto — ¿Tu Hogar Tiene Asbesto?",
+    "meta_description": "Evaluador gratuito: ¿tiene asbesto tu hogar? Ingresa país y año de construcción para resultados inmediatos. Riesgo por década. Sin registro.",
     "title": "Evaluador de Riesgo de Asbesto",
     "step1_label": "¿Dónde?",
     "step1_description": "Selecciona tu país",
@@ -71,6 +100,7 @@
     "materials_none": "No se identificaron materiales específicos para este perfil",
     "material_when_damaged": "Al dañarse:",
     "share_copied": "¡Enlace copiado!",
+    "view_country_profile": "Ver perfil de {country} →",
     "disclaimer_note": "Esta evaluación es solo para concientización. NO sustituye una inspección profesional de asbesto.",
     "actions_low": ["Realiza una inspección visual anual", "No se requiere acción inmediata si los materiales no están perturbados", "Mantén registro de materiales con asbesto conocidos o sospechosos"],
     "actions_moderate": ["Programa una inspección profesional antes de cualquier renovación", "No lijas, perfores ni perturbes materiales sospechosos", "Mantén registros de las condiciones del edificio", "Contacta a un profesional si encuentras materiales dañados"],
@@ -134,7 +164,7 @@
   },
   "learn": {
     "title": "Aprende Sobre el Asbesto",
-    "subtitle": "Comprende el riesgo, reconoce los materiales, sabe qué hacer.",
+    "subtitle": "Los peligros del asbesto, dónde se esconde en los hogares, la historia del encubrimiento y qué hacer si lo encuentras.",
     "page_description": "Información recopilada de fuentes públicas incluyendo EPA, OMS e IBAS. No es asesoría legal ni médica.",
     "what_is": "¿Qué es el Asbesto?",
     "where_hides": "¿Dónde Se Esconde el Asbesto en Tu Hogar?",
@@ -170,7 +200,7 @@
     },
     "what_is_page": {
       "title": "¿Qué es el Asbesto?",
-      "meta_description": "Aprende qué es el asbesto, los tres tipos principales de fibras, por qué es peligroso y las enfermedades que causa.",
+      "meta_description": "¿Qué es el asbesto? Los 3 tipos de fibras (crisotilo, amosita, crocidolita), por qué es peligroso y las enfermedades que causa, incluyendo el mesotelioma.",
       "intro": "El asbesto es un grupo de minerales silicatados naturales formados por cristales fibrosos largos y delgados. Durante gran parte del siglo XX, fue valorado por su resistencia al calor, resistencia a la tracción y bajo costo. Sus fibras son invisibles a simple vista — y eso es lo que las hace mortales.",
       "fiber_types_heading": "Los Tres Tipos Principales de Fibras",
       "fiber_types": [
@@ -228,6 +258,8 @@
           "severity": "high"
         }
       ],
+      "no_ban_countries_heading": "Países que Aún Usan Asbesto",
+      "no_ban_countries_body": "Estos importantes países no tienen prohibición nacional de asbesto. Miles de millones de personas viven en edificios que pueden contener materiales con asbesto.",
       "disclaimer": "Información recopilada de fuentes públicas de la OMS, EPA e IARC. No es asesoría médica.",
       "cta_heading": "Usa el Evaluador de Riesgo",
       "cta_body": "Descubre si tu edificio puede contener asbesto según su país, antigüedad y tipo.",
@@ -235,7 +267,7 @@
     },
     "where_hides_page": {
       "title": "¿Dónde Se Esconde el Asbesto en Tu Hogar?",
-      "meta_description": "Identifica qué materiales de construcción pueden contener asbesto, organizados por habitación y ubicación en el edificio.",
+      "meta_description": "¿Dónde se encuentra el asbesto en los hogares? Guía completa de materiales de construcción con asbesto, organizados por ubicación — pisos, paredes, techos y tuberías.",
       "intro": "El asbesto se utilizó en más de 3,000 productos distintos. No tiene una apariencia característica. La única manera de confirmar su presencia es mediante análisis de laboratorio profesional. Esta guía te ayuda a saber qué materiales merecen precaución adicional.",
       "risk_badge_label": "Riesgo si se perturba",
       "friable_label": "Friable",
@@ -263,7 +295,7 @@
     },
     "history_page": {
       "title": "Cómo la Industria Ocultó la Verdad",
-      "meta_description": "La historia documentada de cómo la industria del asbesto suprimió evidencias de daño desde 1906 hasta hoy.",
+      "meta_description": "El encubrimiento del asbesto: cómo la industria suprimió evidencia de daño por décadas. Cronología de 1906 a la prohibición en EE.UU. en 2024.",
       "intro": "Esta no es una historia de ignorancia. Para la década de 1930, la industria del asbesto ya tenía estudios internos que demostraban que su producto mataba trabajadores. Lo que siguió fue uno de los encubrimientos más trascendentales en la historia industrial.",
       "timeline_aria_label": "Cronología de la historia de la industria del asbesto",
       "source_label": "Fuente",
@@ -343,7 +375,7 @@
     },
     "what_to_do_page": {
       "title": "Qué Hacer Si Encuentras Asbesto",
-      "meta_description": "Guía paso a paso para tres escenarios: sospecha de asbesto, evaluación profesional y hallazgo confirmado.",
+      "meta_description": "¿Encontraste asbesto en tu hogar? Qué hacer y qué NO hacer. Guía paso a paso para sospechas, evaluación profesional y asbesto confirmado.",
       "intro": "La regla más importante: no entres en pánico y no lo toques. Los materiales que contienen asbesto intactos y no perturbados representan un riesgo inmediato mínimo. El peligro surge de la perturbación.",
       "scenarios_heading": "Tres Escenarios",
       "scenario_suspect": {
@@ -393,11 +425,11 @@
         "Un niño o familiar ha sido expuesto a polvo visible proveniente de materiales de construcción",
         "Estás comprando, vendiendo o alquilando un edificio construido antes de 1990"
       ],
-      "disclaimer": "Esta guía proporciona información general de concientización únicamente. Siempre consulta a un profesional certificado de asbesto para tu situación específica. BREATHE no se responsabiliza por acciones tomadas basadas en esta guía."
+      "disclaimer": "Esta guía proporciona información general de concientización únicamente. Siempre consulta a un profesional certificado de asbesto para tu situación específica. ToxinFree no se responsabiliza por acciones tomadas basadas en esta guía."
     },
     "numbers_page": {
       "title": "El Asbesto en Números",
-      "meta_description": "Estadísticas globales sobre muertes, prohibiciones y exposición al asbesto. Datos de OMS, IBAS y EPA.",
+      "meta_description": "Muertes por asbesto al año, estadísticas globales de prohibiciones y exposición regional. 255,000 muertes anuales. 72 países con prohibición. Datos de OMS, IBAS, EPA.",
       "intro": "Los números detrás de la crisis global del asbesto. Todas las estadísticas provienen de la OMS, IBAS e investigaciones epidemiológicas revisadas por pares.",
       "stat_deaths_value": "255,000",
       "stat_deaths_label": "personas mueren cada año por enfermedades relacionadas con el asbesto",
@@ -452,10 +484,16 @@
   },
   "disclaimer": "Esta evaluación se basa en datos generales sobre prácticas de construcción y regulaciones. NO sustituye una inspección profesional de asbesto. La única manera de confirmar la presencia de asbesto es mediante análisis de laboratorio por un profesional certificado.",
   "footer": {
-    "about": "BREATHE es una plataforma ciudadana de concientización. Todos los datos provienen de registros públicos.",
+    "tagline": "Plataforma ciudadana de concientización sobre sustancias tóxicas invisibles.",
     "disclaimer": "Información recopilada de fuentes públicas. No es asesoría legal ni médica.",
     "sources": "Fuentes de Datos",
-    "built_by": "Desarrollado por"
+    "built_by": "Desarrollado por",
+    "nav_heading": "Navegación",
+    "nav_home": "Inicio",
+    "nav_check": "Evaluador de Riesgo",
+    "nav_map": "Mapa Global",
+    "nav_learn": "Aprender",
+    "credibility_stat": "Datos de 200 países y más de 20 materiales"
   },
   "nav_aria": {
     "menu_open": "Abrir menú",

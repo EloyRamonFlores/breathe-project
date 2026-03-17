@@ -18,8 +18,7 @@
   --color-unknown: #4B5563;
   --color-accent: #3B82F6;
 
-  /* Font fallback (Instrument Serif loaded via <link> in layout) */
-  --font-instrument-serif: "Instrument Serif", Georgia, serif;
+  /* Instrument Serif removed — all headings use DM Sans (font-sans font-bold) */
 
   /* Map Colors */
   --map-banned-removal: #059669;
@@ -50,7 +49,7 @@
   --color-map-producer: var(--map-producer);
   --color-map-no-data: var(--map-no-data);
   --font-sans: var(--font-dm-sans);
-  --font-serif: var(--font-instrument-serif);
+  --font-serif: var(--font-dm-sans);
   --font-mono: var(--font-jetbrains-mono);
   --animate-shimmer: shimmer 2s linear infinite;
   --animate-cta-pulse: cta-pulse 2s ease-in-out infinite;

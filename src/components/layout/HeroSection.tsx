@@ -2,16 +2,38 @@
 
 import { Link } from "@/i18n/navigation";
 import Globe3DLoader from "@/components/map/Globe3DLoader";
+import SubstanceSelector from "@/components/ui/SubstanceSelector";
 import { formatNumber } from "@/lib/utils";
+
+interface SubstancePill {
+  id: string;
+  label: string;
+  active: boolean;
+  color: string;
+}
 
 interface HeroSectionProps {
   noBanCount: number;
   counterPrefix: string;
   counterNo: string;
   counterSuffix: string;
-  deaths: string;
   cta: string;
+  cta2: string;
   sourceAttribution: string;
+  descBefore: string;
+  descBold: string;
+  descAfter: string;
+  activeColor: string;
+  substancePills: SubstancePill[];
+  comingSoonLabel: string;
+  statBannedValue: string;
+  statBannedLabel: string;
+  statProductionValue: string;
+  statProductionLabel: string;
+  legendNoBan: string;
+  legendLimited: string;
+  legendFullBan: string;
+  heroTagline: string;
 }
 
 export default function HeroSection({
@@ -19,59 +41,170 @@ export default function HeroSection({
   counterPrefix,
   counterNo,
   counterSuffix,
-  deaths,
   cta,
+  cta2,
   sourceAttribution,
+  descBefore,
+  descBold,
+  descAfter,
+  activeColor,
+  substancePills,
+  comingSoonLabel,
+  statBannedValue,
+  statBannedLabel,
+  statProductionValue,
+  statProductionLabel,
+  legendNoBan,
+  legendLimited,
+  legendFullBan,
+  heroTagline,
 }: HeroSectionProps) {
   return (
-    <section className="relative min-h-screen flex flex-col lg:flex-row items-center overflow-hidden">
-      {/* Grain texture */}
-      <div className="hero-noise" aria-hidden="true" />
+    <section className="relative overflow-hidden bg-[#0F172A]">
+      {/* Diagonal background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A]" aria-hidden="true" />
 
-      {/* Left: 3D Globe — full height on desktop, 50vh on mobile */}
-      <div className="w-full lg:w-1/2 h-[50vh] lg:h-screen relative order-1">
-        <Globe3DLoader />
-      </div>
+      {/* Dot grid overlay */}
+      <div
+        className="absolute inset-0 opacity-[0.04] pointer-events-none"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)",
+          backgroundSize: "40px 40px",
+        }}
+        aria-hidden="true"
+      />
 
-      {/* Right: Stats + CTA */}
-      <div className="w-full lg:w-1/2 px-8 lg:px-16 py-12 lg:py-0 flex flex-col justify-center order-2 relative z-10">
-        {/* Radial warning glow behind the counter */}
-        <div
-          className="pointer-events-none absolute -inset-x-8 inset-y-0 bg-[radial-gradient(ellipse_at_left,rgba(245,158,11,0.18)_0%,transparent_65%)]"
-          aria-hidden="true"
-        />
+      {/* Bottom fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#0F172A] to-transparent pointer-events-none z-20" aria-hidden="true" />
 
-        {/* Big number — static, no count-up */}
-        <span className="relative font-mono text-[5.5rem] sm:text-[7rem] lg:text-[8.5rem] xl:text-[10rem] font-bold text-warning leading-none tabular-nums animate-[page-fade-in_0.5s_ease-out_both]">
-          {formatNumber(noBanCount)}
-        </span>
+      {/* Ambient glow — left side */}
+      <div
+        className="absolute pointer-events-none z-0"
+        style={{
+          left: "-10%",
+          top: "10%",
+          width: "60%",
+          height: "80%",
+          background:
+            "radial-gradient(ellipse at 50% 50%, rgba(30, 58, 138, 0.18) 0%, transparent 70%)",
+        }}
+        aria-hidden="true"
+      />
 
-        {/* Main headline — visible h1 */}
-        <h1 className="relative mt-3 max-w-md font-serif text-xl sm:text-2xl lg:text-3xl text-text-primary leading-snug">
-          {counterPrefix}{" "}
-          <strong className="font-extrabold text-warning">{counterNo}</strong>{" "}
-          {counterSuffix}
-        </h1>
+      {/* Main grid */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-10 lg:pt-8 lg:pb-14">
+        <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] gap-6 lg:gap-10 items-center">
 
-        {/* Deaths stat */}
-        <p className="relative mt-3 font-mono text-sm sm:text-base text-text-muted">
-          {deaths}
-        </p>
+          {/* Left: Globe + legend */}
+          <div className="order-2 lg:order-1 flex flex-col">
+            {/* Substance selector — centered above the globe */}
+            <div className="mb-4 flex justify-center">
+              <SubstanceSelector substances={substancePills} comingSoonLabel={comingSoonLabel} />
+            </div>
+            {/* Globe — fixed height to prevent layout shift */}
+            <div className="w-full h-[min(55vh,480px)] relative">
+              <Globe3DLoader />
+            </div>
 
-        {/* CTA button */}
-        <div className="relative mt-8">
-          <Link
-            href="/check"
-            className="inline-block rounded-lg bg-gradient-to-r from-accent to-accent/80 px-10 py-5 text-lg font-medium text-white animate-[cta-pulse_2s_ease-in-out_infinite] transition-opacity hover:opacity-90"
-          >
-            {cta}
-          </Link>
+            {/* Legend */}
+            <div className="mt-2 flex flex-wrap items-center justify-center gap-4 text-xs bg-slate-900/50 px-3 py-2 rounded-xl backdrop-blur-sm border border-slate-800">
+              <div className="flex items-center gap-1.5">
+                <div className="w-3 h-3 rounded-full bg-[#EF4444] shadow-[0_0_8px_rgba(239,68,68,0.5)]" />
+                <span className="text-slate-300">{legendNoBan}</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <div className="w-3 h-3 rounded-full bg-[#4B5563]" />
+                <span className="text-slate-300">{legendLimited}</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <div className="w-3 h-3 rounded-full bg-[#10B981] shadow-[0_0_8px_rgba(16,185,129,0.5)]" />
+                <span className="text-slate-300">{legendFullBan}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right: Content */}
+          <div className="order-1 lg:order-2 text-center lg:text-left">
+
+            {/* Eyebrow — contextual label above the counter */}
+            <p className="mb-1 font-mono text-[10px] uppercase tracking-[0.2em] text-text-muted">
+              {heroTagline}
+            </p>
+
+            {/* Big number */}
+            <div className="mb-2">
+              <span
+                className="block font-mono text-[4rem] sm:text-[5.5rem] md:text-[6.5rem] font-bold leading-none tabular-nums"
+                style={{ color: activeColor }}
+              >
+                {formatNumber(noBanCount)}
+              </span>
+            </div>
+
+            {/* Headline */}
+            <h1 className="text-xl md:text-2xl font-bold text-white leading-tight mb-4">
+              {counterPrefix}{" "}
+              <strong style={{ color: activeColor }}>{counterNo}</strong>{" "}
+              {counterSuffix}
+            </h1>
+
+            {/* Description — short italic tagline when descBold is empty */}
+            <p className="text-sm text-slate-400 mb-5 max-w-xl mx-auto lg:mx-0 leading-relaxed italic">
+              {descBefore}
+              {descBold && (
+                <>{" "}<strong className="text-white font-semibold not-italic">{descBold}</strong></>
+              )}
+              {descAfter && <>{" "}{descAfter}</>}
+            </p>
+
+            {/* CTA buttons */}
+            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+              <Link
+                href="/check"
+                className="inline-block rounded-full text-white font-semibold px-6 py-2.5 text-sm transition-all duration-200 active:scale-[0.98]"
+                style={{
+                  backgroundColor: activeColor,
+                  boxShadow: `0 0 20px ${activeColor}4D`,
+                }}
+              >
+                {cta}
+              </Link>
+              <Link
+                href="/learn/by-the-numbers"
+                className="inline-block rounded-full border border-slate-700 text-white hover:bg-slate-800 font-semibold px-6 py-2.5 text-sm transition-all duration-200 active:scale-[0.98]"
+              >
+                {cta2}
+              </Link>
+            </div>
+
+            {/* Source attribution */}
+            <p className="mt-1.5 text-[11px] text-slate-500 text-center lg:text-left">
+              {sourceAttribution}
+            </p>
+
+            {/* Stat cards */}
+            <div className="mt-3 grid grid-cols-2 gap-2">
+              <div className="bg-slate-900/50 p-3 rounded-xl backdrop-blur-sm border border-slate-800 text-center lg:text-left">
+                <div className="font-mono text-xl font-bold text-[#10B981] mb-0.5 tabular-nums">
+                  {statBannedValue}
+                </div>
+                <p className="text-[11px] text-slate-400 font-medium leading-tight">
+                  {statBannedLabel}
+                </p>
+              </div>
+              <div className="bg-slate-900/50 p-3 rounded-xl backdrop-blur-sm border border-slate-800 text-center lg:text-left">
+                <div className="font-mono text-xl font-bold text-[#EF4444] mb-0.5 tabular-nums">
+                  {statProductionValue}
+                </div>
+                <p className="text-[11px] text-slate-400 font-medium leading-tight">
+                  {statProductionLabel}
+                </p>
+              </div>
+            </div>
+
+          </div>
         </div>
-
-        {/* Source attribution */}
-        <p className="relative mt-4 text-xs text-text-muted">
-          {sourceAttribution}
-        </p>
       </div>
     </section>
   );

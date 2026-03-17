@@ -1,4 +1,4 @@
-# BREATHE — Global Toxic Substance Awareness Platform
+# ToxinFree — Global Toxic Substance Awareness Platform
 
 ## Project Overview
 A multilingual, data-driven web platform that makes toxic substance exposure information actionable for citizens worldwide. Starting with asbestos (72 countries have bans, billions still live with it), designed to expand to PFAS, lead, microplastics.

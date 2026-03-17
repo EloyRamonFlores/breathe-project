@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import type { RiskResult, Era, Material } from "@/lib/types";
 import { getRiskColor, getRiskTailwindClass } from "@/lib/utils";
 
@@ -104,7 +105,7 @@ export default function RiskResults({ result, onReset }: Props) {
                 {t("result_title")}
               </p>
               <h1
-                className={`mt-1 font-serif text-4xl font-bold sm:text-5xl ${riskTextClass}`}
+                className={`mt-1 font-sans text-4xl font-bold sm:text-5xl ${riskTextClass}`}
               >
                 {tLevels(level)}
               </h1>
@@ -130,7 +131,12 @@ export default function RiskResults({ result, onReset }: Props) {
 
           {/* Context line */}
           <p className="mt-3 font-mono text-xs text-text-muted">
-            <span className="text-text-secondary">{country.name}</span>
+            <Link
+              href={`/country/${country.slug}`}
+              className="text-text-secondary hover:text-accent hover:underline transition-colors"
+            >
+              {country.name}
+            </Link>
             <span className="mx-2 opacity-40">·</span>
             <span className="text-text-secondary">
               {tEras(era as Parameters<typeof tEras>[0])}
@@ -209,6 +215,14 @@ export default function RiskResults({ result, onReset }: Props) {
           </ul>
         </div>
       </div>
+
+      {/* Country profile link */}
+      <Link
+        href={`/country/${country.slug}`}
+        className="flex items-center justify-center gap-2 rounded-lg border border-bg-tertiary bg-bg-secondary px-4 py-3 text-sm font-medium text-accent transition-colors hover:bg-bg-tertiary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-bg-primary"
+      >
+        {t("view_country_profile", { country: country.name })}
+      </Link>
 
       {/* Action buttons */}
       <div className="flex flex-col gap-3 sm:flex-row">

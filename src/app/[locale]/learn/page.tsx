@@ -2,7 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://breathe.global";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://toxinfree.global";
 
 export async function generateStaticParams() {
   return ["en", "es"].map((locale) => ({ locale }));
@@ -77,8 +77,8 @@ export default async function LearnPage({
     headline: t("title"),
     datePublished: "2026-03-14",
     dateModified: "2026-03-14",
-    author: { "@type": "Organization", name: "BREATHE" },
-    publisher: { "@type": "Organization", name: "BREATHE" },
+    author: { "@type": "Organization", name: "ToxinFree" },
+    publisher: { "@type": "Organization", name: "ToxinFree" },
   };
 
   return (
@@ -91,7 +91,7 @@ export default async function LearnPage({
 
         {/* ── Header ── */}
         <header className="mb-12">
-          <h1 className="font-serif text-3xl sm:text-4xl text-text-primary mb-3">
+          <h1 className="font-sans font-bold text-3xl sm:text-4xl text-text-primary mb-3">
             {t("title")}
           </h1>
           <p className="text-text-secondary text-base sm:text-lg max-w-2xl">

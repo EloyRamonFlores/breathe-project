@@ -1,6 +1,125 @@
 # CHANGELOG.md — Build Progress & Decision Log
 
-All notable changes, decisions, and progress for the BREATHE platform.
+All notable changes, decisions, and progress for the ToxinFree platform.
+
+---
+
+## [v1.0.0] — 2026-03-17 — LAUNCH: SEO Optimization & Internal Linking
+
+### SEO Optimization Pass
+- **Home metadata**: Title → "ToxinFree — Global Asbestos Ban Map & Risk Checker | 200 Countries"; description includes keywords "asbestos ban by country", "which countries banned asbestos", "global asbestos map", "risk checker"
+- **Risk checker metadata**: Title updated to target "does your home have asbestos" keyword; description includes "asbestos risk by year built"
+- **Learn page metadata**: All 6 learn pages now have keyword-optimized meta descriptions targeting top queries: "what is asbestos", "where is asbestos found in homes", "asbestos cover-up history", "found asbestos what to do", "asbestos deaths per year"
+- **Country page titles**: Dynamic format — full_ban countries: "Is Asbestos Banned in [Country]? Banned [Year] | ToxinFree"; no_ban: "...? No National Ban | ToxinFree"
+- **15 priority country descriptions**: Handcrafted unique descriptions for US, India, China, Russia, Brazil, Mexico, Indonesia, UK, Australia, Japan, South Korea, Germany, South Africa, Canada, Nigeria — each ≤155 chars with natural keyword integration
+- **Generic country descriptions**: Improved templates for all 185 remaining countries (more specific, action-oriented)
+
+### Structured Data
+- **Organization JSON-LD** added to home page (`@type: Organization`, name, url, description)
+- Country page FAQ JSON-LD confirmed functional (was already implemented in v0.7.0)
+- Risk checker WebApplication JSON-LD confirmed functional
+- Learn pages Article JSON-LD confirmed functional
+
+### Sitemap Improvements
+- Home `changeFrequency`: "monthly" → **"weekly"**
+- learn/history + learn/by-the-numbers priority: 0.7 → **0.8** (all learn pages now 0.8)
+- Country page priority: 2-tier (0.9 / 0.7) → **3-tier** (0.9 high priority / 0.8 has ban data / 0.6 unknown status)
+- `lastModified`: Updated to 2026-03-17
+
+### Internal Linking
+- **RiskResults → Country page**: Added "View [Country] profile →" link (locale-aware via `@/i18n/navigation`) above action buttons; country name in context line now links to country page
+- **learn/what-is-asbestos → no-ban countries**: Added "Countries Still Using Asbestos" section with links to India, China, Russia, Indonesia, Mexico, Nigeria
+- **Home → top country profiles**: Added "Most viewed country profiles" row linking to India, China, Russia, USA, Mexico, Indonesia, Brazil, UK with ban status badge
+
+### Technical SEO Verified
+- robots.txt: ✅ allows all crawlers, references sitemap
+- sitemap.xml: ✅ 421 URLs (8 static × 2 locales + 200 countries × 2 locales)
+- hreflang: ✅ per-page via generateMetadata.alternates.languages
+- BASE_URL: ✅ defaults to "https://toxinfree.global" across all files
+- .gitignore: ✅ node_modules, .next, .env* all excluded
+- TypeScript: ✅ strict mode, zero errors
+- Build: ✅ 421 static routes, 0 errors
+
+### Files Modified
+- `src/messages/en.json` — meta_title (home), meta_description (home, check, all learn pages), new i18n keys (top_countries, view_country_profile, no_ban_countries)
+- `src/messages/es.json` — same in Spanish
+- `src/app/[locale]/page.tsx` — Organization JSON-LD, top countries section
+- `src/app/[locale]/country/[slug]/page.tsx` — getCountryTitle(), PRIORITY_DESCRIPTIONS map, improved generic templates
+- `src/app/sitemap.ts` — 3-tier country priority, weekly home, 0.8 learn pages, 2026-03-17 date
+- `src/components/checker/RiskResults.tsx` — Link import, country page link above action buttons, context line links to country
+- `src/app/[locale]/learn/what-is-asbestos/page.tsx` — no-ban countries section with links
+
+---
+
+## [v1.6.0] — 2026-03-17 — Creative Audit: Brand Identity + Visual Hierarchy
+
+### Brand Identity
+- **Logo wordmark**: Split "Toxin" (font-weight 400) + "Free" (font-weight 700, `#10B981` green) — communicates the "toxic → free" transformation
+- **Logo icon**: Shield+checkmark SVG inline icon added to wordmark (24px in header, 20px in footer) — `currentColor` on `text-safe` green; universally communicates protection
+- **Favicon**: New `public/favicon.svg` — shield+check on `#0A0F1C` background; registered in `layout.tsx` metadata
+- **Consistency**: Same logo treatment applied to both `Header.tsx` and `Footer.tsx`
+
+### Visual Hierarchy
+- **SubstanceSelector inactive pills**: Removed dynamic color from inactive state (was 40% opacity colored — still visually noisy). Now: `text-text-muted`, `border-slate-800`, transparent background. Hover reveals subtle `text-text-secondary` + `border-slate-700`. Only Asbestos pill retains full color presence.
+- **Hero description**: Replaced long clinical sentence with short italic tagline — "The silent global health crisis" (EN) / "La crisis de salud global silenciosa" (ES). Matches existing `hero_tagline` i18n key. `<strong>` interpolation now conditional (renders only when `descBold` is non-empty).
+
+### Audit Findings (no changes needed)
+- Typography: `font-serif`/`font-sans`/`font-mono` all correctly mapped via `@theme inline` ✓
+- Education bento grid (3-col, 2+1 repeating): correct layout, CTA card differentiation works ✓
+- Footer hover states (`underline-from-center`) and Koku branding: already polished ✓
+
+### Files Modified
+- `src/components/layout/Header.tsx` — logo treatment
+- `src/components/layout/Footer.tsx` — logo treatment
+- `src/components/ui/SubstanceSelector.tsx` — inactive pill styles
+- `src/components/layout/HeroSection.tsx` — italic conditional description
+- `src/messages/en.json` — `hero_desc_before/bold/after` → tagline
+- `src/messages/es.json` — same
+- `src/app/layout.tsx` — favicon metadata
+- `public/favicon.svg` — NEW
+
+---
+
+## [v1.5.0] — 2026-03-16 — Homepage Polish Pass
+
+### Visual Changes
+- **Logo font**: Changed from Instrument Serif to DM Sans Bold in Header and Footer
+- **SubstanceSelector**: New pill-tab component replaces "ASBESTOS" badge; shows 4 substances (asbestos active, PFAS/lead/microplastics coming soon with tooltip)
+- **Hero tagline**: Replaced redundant 3-part description with short italic tagline "The silent global health crisis"
+- **Stat cards redesigned**: New complementary data (72 banned countries + 2.3M tons production), left-border accents, hover lift effect
+- **Educational preview cards**: New 3-card section between hero and CTA linking to learn pages (What is Asbestos?, Where It Hides, What To Do)
+- **Globe legend**: Repositioned as semi-transparent overlay at bottom-left of globe container (backdrop-blur)
+- **Secondary CTA button**: Updated to semantic design-system color classes
+- **Footer redesign**: 4-column layout (Brand + tagline, Navigation links, Data Sources, Built by + credibility stat)
+
+### Data
+- **New**: `src/data/substances.ts` — centralized substance data (asbestos, PFAS, lead, microplastics) with stats and color assignments; architecture ready for multi-substance expansion
+
+### Components
+- **New**: `src/components/ui/SubstanceSelector.tsx` — horizontal pill selector with CSS-only "Coming Soon" tooltips
+- **Modified**: `src/components/layout/HeroSection.tsx` — updated props, SubstanceSelector integration, stat cards, legend overlay, tagline, CTA button
+- **Modified**: `src/components/layout/Header.tsx` — logo font change (Instrument Serif → DM Sans Bold)
+- **Modified**: `src/components/layout/Footer.tsx` — 4-column redesign with navigation links and credibility stat
+- **Modified**: `src/app/[locale]/page.tsx` — educational preview cards section, updated HeroSection props, substances.ts integration
+
+### i18n
+- **Added**: 20+ new keys to `home` and `footer` namespaces in `en.json` + `es.json` (substance names, tagline, edu cards, footer nav, credibility stat)
+- **Removed**: `hero_desc_before`, `hero_desc_bold`, `hero_desc_after`, `stat_deaths_count`, `stat_deaths_label`, `badge`, `about` keys
+- **Build**: `npm run build` passes with zero errors
+
+---
+
+## [v1.4.0] — 2026-03-16 — Rebrand to ToxinFree + domain toxinfree.global
+- Project renamed from BREATHE to ToxinFree
+- Domain updated to toxinfree.global
+- Updated: Header logo, Footer brand name
+- Updated: all `BASE_URL` defaults from `breathe.global` → `toxinfree.global` (sitemap, robots, 10 page files)
+- Updated: JSON-LD Organization name in all Article schemas (6 learn pages)
+- Updated: Root layout metadata (title template, siteName, OG)
+- Updated: i18n strings in `en.json` + `es.json` (title, about, disclaimer)
+- Updated: `CLAUDE.md` project overview
+- Vercel: set `NEXT_PUBLIC_BASE_URL=https://toxinfree.global`
+- **Build**: `npm run build` passes with zero errors; 421 static routes generated
 
 ---
 

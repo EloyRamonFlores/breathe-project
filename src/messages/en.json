@@ -10,9 +10,9 @@
     "language": "Language"
   },
   "home": {
-    "meta_title": "Asbestos Risk Map — 200 Countries",
-    "meta_description": "Explore asbestos regulations across 200 countries. Interactive map, risk checker, and data on 255,000 annual deaths from asbestos exposure.",
-    "title": "BREATHE",
+    "meta_title": "ToxinFree — Global Asbestos Ban Map & Risk Checker | 200 Countries",
+    "meta_description": "Discover which countries banned asbestos with our global asbestos map. Free risk checker to assess your building. 200 countries, 255,000 annual deaths.",
+    "title": "ToxinFree",
     "subtitle": "The first citizen early-warning system for invisible toxic substances",
     "counter": "{count} countries still have NO ban on asbestos",
     "deaths": "~255,000 people die from asbestos exposure every year",
@@ -23,7 +23,7 @@
     "map_legend_title": "Asbestos Ban Status",
     "map_interact": "Tap to interact with map",
     "map_legend_toggle": "Legend",
-    "counter_prefix": "{count} countries still have",
+    "counter_prefix": "countries still have",
     "counter_no": "NO",
     "counter_suffix": "ban on asbestos",
     "cta_social_proof": "Free tool. No registration required.",
@@ -33,11 +33,40 @@
     "globe_tooltip_banned": "Banned since {year}",
     "globe_tooltip_no_ban": "No ban in place",
     "globe_tooltip_unknown": "Status unknown",
-    "source_attribution": "Source: IBAS, EPA, WHO"
+    "source_attribution": "Source: IBAS, EPA, WHO",
+    "cta2": "See Statistics",
+    "hero_tagline": "The silent global health crisis",
+    "hero_desc_before": "Approximately",
+    "hero_desc_bold": "255,000 people",
+    "hero_desc_after": "die from asbestos exposure every year. Explore the map to see the state of global regulations.",
+    "coming_soon": "Coming Soon",
+    "substance_asbestos": "Asbestos",
+    "substance_pfas": "PFAS",
+    "substance_lead": "Lead",
+    "substance_microplastics": "Microplastics",
+    "stat_banned_label": "countries with full ban",
+    "stat_production_label": "tons produced annually",
+    "edu_section_heading": "Understand the Risk",
+    "edu_section_subtitle": "Education is the first line of defense. Learn what asbestos is, where it's found, and how to protect yourself and your family.",
+    "edu_card1_title": "What is Asbestos?",
+    "edu_card1_desc": "A group of naturally occurring fibrous minerals once prized for their heat resistance and durability. Today we know their microscopic fibers are highly carcinogenic when inhaled.",
+    "edu_card1_cta": "Learn more",
+    "edu_card2_title": "Where It Hides",
+    "edu_card2_desc": "Found in millions of homes built before 2000. Commonly present in insulation, roofing, floor tiles, and pipes.",
+    "edu_card2_cta": "Explore",
+    "edu_card3_title": "What To Do (and What NOT To Do)",
+    "edu_card3_desc": "The golden rule: never disturb suspicious materials. Learn the safe steps to follow if you believe you've found asbestos in your property and how to contact certified professionals.",
+    "edu_card3_cta": "Read guide",
+    "legend_no_ban": "No ban",
+    "legend_limited": "Limited data",
+    "legend_full_ban": "Full ban",
+    "top_countries_label": "Most viewed country profiles",
+    "top_countries_no_ban": "No ban",
+    "top_countries_banned": "Banned"
   },
   "check": {
-    "meta_title": "Asbestos Risk Checker — Is Your Home at Risk?",
-    "meta_description": "Check if your home may contain asbestos. Enter your country and construction year to get a personalized risk assessment. Free, instant results.",
+    "meta_title": "Asbestos Risk Checker — Does Your Home Have Asbestos?",
+    "meta_description": "Free asbestos risk checker: does your home have asbestos? Enter country and year built for instant results. Asbestos risk by decade. No registration.",
     "title": "Asbestos Risk Checker",
     "step1_label": "Where?",
     "step1_description": "Select your country",
@@ -71,6 +100,7 @@
     "materials_none": "No specific materials identified for this profile",
     "material_when_damaged": "When damaged:",
     "share_copied": "Link copied!",
+    "view_country_profile": "View {country} profile →",
     "disclaimer_note": "This assessment is for awareness only. It is NOT a substitute for professional asbestos inspection.",
     "actions_low": ["Conduct an annual visual inspection", "No immediate action needed if materials are undisturbed", "Keep records of any known or suspected asbestos materials"],
     "actions_moderate": ["Schedule a professional asbestos survey before any renovation", "Do not sand, drill, or disturb suspected materials", "Keep records of building condition", "Contact a licensed professional if you find damaged materials"],
@@ -134,7 +164,7 @@
   },
   "learn": {
     "title": "Learn About Asbestos",
-    "subtitle": "Understand the risk, recognize the materials, know what to do.",
+    "subtitle": "Asbestos dangers, where it hides in homes, the cover-up history, and what to do if you find it.",
     "page_description": "Information aggregated from public sources including EPA, WHO, and IBAS. Not legal or medical advice.",
     "what_is": "What is Asbestos?",
     "where_hides": "Where Does Asbestos Hide in Your Home?",
@@ -170,7 +200,7 @@
     },
     "what_is_page": {
       "title": "What is Asbestos?",
-      "meta_description": "Learn what asbestos is, the three main fiber types, why it is dangerous, and the diseases it causes.",
+      "meta_description": "What is asbestos? Learn about the 3 fiber types (chrysotile, amosite, crocidolite), why asbestos is dangerous, and the diseases it causes including mesothelioma.",
       "intro": "Asbestos is a group of naturally occurring silicate minerals made of long, thin fibrous crystals. For much of the 20th century, it was valued for its heat resistance, tensile strength, and low cost. Its fibers are invisible to the naked eye — and that is what makes them deadly.",
       "fiber_types_heading": "The Three Main Fiber Types",
       "fiber_types": [
@@ -228,6 +258,8 @@
           "severity": "high"
         }
       ],
+      "no_ban_countries_heading": "Countries Still Using Asbestos",
+      "no_ban_countries_body": "These major countries have no national asbestos ban. Billions of people live in buildings that may contain asbestos-containing materials.",
       "disclaimer": "Information aggregated from WHO, EPA, and IARC public sources. Not medical advice.",
       "cta_heading": "Use the Risk Checker",
       "cta_body": "Find out if your building may contain asbestos based on its country, age, and type.",
@@ -235,7 +267,7 @@
     },
     "where_hides_page": {
       "title": "Where Does Asbestos Hide in Your Home?",
-      "meta_description": "Identify which building materials may contain asbestos, organized by room and building location.",
+      "meta_description": "Where is asbestos found in homes? Complete guide to asbestos building materials organized by location — floors, walls, ceilings, and pipes.",
       "intro": "Asbestos was used in over 3,000 different products. It does not have a distinctive look. The only way to confirm its presence is professional laboratory testing. This guide helps you know which materials deserve extra caution.",
       "risk_badge_label": "Risk if disturbed",
       "friable_label": "Friable",
@@ -263,7 +295,7 @@
     },
     "history_page": {
       "title": "How Industry Hid the Truth",
-      "meta_description": "The documented history of how the asbestos industry suppressed evidence of harm from 1906 to today.",
+      "meta_description": "The asbestos cover-up: how the industry suppressed evidence of harm for decades. Timeline from 1906 to the 2024 U.S. ban. A documented history.",
       "intro": "This is not a story about ignorance. By the 1930s, the asbestos industry had internal studies proving their product killed workers. What followed was one of the most consequential cover-ups in industrial history.",
       "timeline_aria_label": "Timeline of asbestos industry history",
       "source_label": "Source",
@@ -343,7 +375,7 @@
     },
     "what_to_do_page": {
       "title": "What To Do If You Find Asbestos",
-      "meta_description": "Step-by-step guide for three scenarios: suspecting asbestos, getting a professional assessment, and confirmed asbestos finds.",
+      "meta_description": "Found asbestos in your home? What to do and what NOT to do. Step-by-step guide for suspecting, assessing, and confirmed asbestos — when to call a professional.",
       "intro": "The most important rule: do not panic, and do not touch. Intact asbestos-containing materials that are left undisturbed pose minimal immediate risk. The danger comes from disturbance.",
       "scenarios_heading": "Three Scenarios",
       "scenario_suspect": {
@@ -393,11 +425,11 @@
         "A child or family member has been exposed to visible dust from building materials",
         "You are buying, selling, or renting a building constructed before 1990"
       ],
-      "disclaimer": "This guide provides general awareness information only. Always consult a certified asbestos professional for your specific situation. BREATHE is not responsible for actions taken based on this guide."
+      "disclaimer": "This guide provides general awareness information only. Always consult a certified asbestos professional for your specific situation. ToxinFree is not responsible for actions taken based on this guide."
     },
     "numbers_page": {
       "title": "Asbestos by the Numbers",
-      "meta_description": "Global statistics on asbestos deaths, bans, and exposure. Data from WHO, IBAS, and EPA.",
+      "meta_description": "Asbestos deaths per year, global ban statistics, and regional exposure data. 255,000 deaths annually. 72 countries with bans. Data from WHO, IBAS, EPA.",
       "intro": "The numbers behind the global asbestos crisis. All statistics sourced from WHO, IBAS, and peer-reviewed epidemiological research.",
       "stat_deaths_value": "255,000",
       "stat_deaths_label": "people die each year from asbestos-related diseases",
@@ -452,10 +484,16 @@
   },
   "disclaimer": "This assessment is based on general data about construction practices and regulations. It is NOT a substitute for professional asbestos inspection. The only way to confirm the presence of asbestos is through laboratory testing by a certified professional.",
   "footer": {
-    "about": "BREATHE is a citizen-powered awareness platform. All data sourced from public records.",
+    "tagline": "Citizen-powered awareness platform for invisible toxic substances.",
     "disclaimer": "Information aggregated from public sources. Not legal or medical advice.",
     "sources": "Data Sources",
-    "built_by": "Built by"
+    "built_by": "Developed by",
+    "nav_heading": "Navigation",
+    "nav_home": "Home",
+    "nav_check": "Risk Checker",
+    "nav_map": "Global Map",
+    "nav_learn": "Learn",
+    "credibility_stat": "Data covers 200 countries and 20+ materials"
   },
   "nav_aria": {
     "menu_open": "Open menu",

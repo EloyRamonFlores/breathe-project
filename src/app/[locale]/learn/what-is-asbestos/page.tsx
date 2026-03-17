@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import type { FiberTypeData, DiseaseData } from "@/lib/types";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://breathe.global";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://toxinfree.global";
 
 export async function generateStaticParams() {
   return ["en", "es"].map((locale) => ({ locale }));
@@ -63,8 +63,8 @@ export default async function WhatIsAsbestosPage({
     headline: t("what_is_page.title"),
     datePublished: "2026-03-14",
     dateModified: "2026-03-14",
-    author: { "@type": "Organization", name: "BREATHE" },
-    publisher: { "@type": "Organization", name: "BREATHE" },
+    author: { "@type": "Organization", name: "ToxinFree" },
+    publisher: { "@type": "Organization", name: "ToxinFree" },
   };
 
   return (
@@ -86,7 +86,7 @@ export default async function WhatIsAsbestosPage({
 
         {/* ── Page Header ── */}
         <header className="mb-10">
-          <h1 className="font-serif text-3xl sm:text-4xl text-text-primary mb-4">
+          <h1 className="font-sans font-bold text-3xl sm:text-4xl text-text-primary mb-4">
             {t("what_is_page.title")}
           </h1>
           <p className="text-text-secondary text-base sm:text-lg leading-relaxed">
@@ -225,6 +225,40 @@ export default async function WhatIsAsbestosPage({
                   {disease.description}
                 </p>
               </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── Countries Still Using Asbestos ── */}
+        <section className="mb-10" aria-labelledby="no-ban-countries-heading">
+          <h2
+            id="no-ban-countries-heading"
+            className="text-lg font-semibold text-text-primary mb-2"
+          >
+            {t("what_is_page.no_ban_countries_heading")}
+          </h2>
+          <p className="text-sm text-text-muted mb-4">
+            {t("what_is_page.no_ban_countries_body")}
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {(
+              [
+                { slug: "india", name: "India" },
+                { slug: "china", name: "China" },
+                { slug: "russia", name: "Russia" },
+                { slug: "indonesia", name: "Indonesia" },
+                { slug: "mexico", name: "Mexico" },
+                { slug: "nigeria", name: "Nigeria" },
+              ] as const
+            ).map(({ slug, name }) => (
+              <Link
+                key={slug}
+                href={`/country/${slug}`}
+                className="inline-flex items-center gap-1.5 rounded-full border border-red-900/40 bg-red-950/20 px-3 py-1.5 text-sm text-red-400/90 transition-colors hover:border-red-700/50 hover:bg-red-950/40"
+              >
+                {name}
+                <span aria-hidden="true" className="opacity-50">→</span>
+              </Link>
             ))}
           </div>
         </section>

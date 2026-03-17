@@ -18,17 +18,64 @@ export async function generateStaticParams() {
 
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://breathe.global";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://toxinfree.global";
+
+// ─── Handcrafted descriptions for 15 priority countries ─────────────────────
+const PRIORITY_DESCRIPTIONS: Record<string, string> = {
+  "united-states":
+    "Yes, the U.S. banned asbestos in 2024. Millions of pre-ban buildings still contain asbestos materials. Check if your home is at risk.",
+  india:
+    "India has no national asbestos ban. The world's second-largest user, with millions exposed in construction and manufacturing. Check your building.",
+  china:
+    "China has no asbestos ban and is the world's largest asbestos producer. Millions of buildings contain asbestos materials. Assess your exposure risk.",
+  russia:
+    "Russia has no asbestos ban and mines over 700,000 tons annually. Buildings across all eras contain asbestos materials. Use our free risk checker.",
+  brazil:
+    "Yes, Brazil banned asbestos in 2023 after a decades-long fight. Pre-ban buildings may still contain materials. Check your property's risk now.",
+  mexico:
+    "Mexico has no asbestos ban. Millions of homes and factories from 1960–2000 likely contain asbestos-cement materials. Check your risk now.",
+  indonesia:
+    "Indonesia has no asbestos ban. Widespread use in roofing and construction puts millions at risk. Assess your building with our free tool.",
+  "united-kingdom":
+    "Yes, the UK banned asbestos in 1999. Buildings built before 1999 may still contain it. Learn UK regulations and check your property's risk.",
+  australia:
+    "Yes, Australia banned asbestos in 2003. Pre-2003 buildings from the 1960–1980 peak era may still contain asbestos materials. Check your risk.",
+  japan:
+    "Yes, Japan banned asbestos in 2012. Buildings built before the ban may still contain asbestos-cement, floor tiles, and insulation materials.",
+  "south-korea":
+    "Yes, South Korea banned asbestos in 2009. Older buildings from the 1970–1990 construction boom may still contain asbestos materials.",
+  germany:
+    "Yes, Germany banned asbestos in 1993, one of the first countries to do so. Pre-1993 buildings remain a risk. Learn about German asbestos law.",
+  "south-africa":
+    "Yes, South Africa banned asbestos in 2008. Once a major producer, the country has a legacy of contaminated buildings and sites. Check your risk.",
+  canada:
+    "Yes, Canada banned asbestos in 2018 — despite being a former top producer. Pre-2018 buildings, especially 1960–1980 era, may still contain it.",
+  nigeria:
+    "Nigeria has no asbestos ban. Asbestos-cement roofing is still widely used in construction. Check if your building contains hazardous materials.",
+};
 
 function getBanDescription(country: Country): string {
+  if (PRIORITY_DESCRIPTIONS[country.slug]) {
+    return PRIORITY_DESCRIPTIONS[country.slug];
+  }
   const banText: Record<Country["ban_status"], string> = {
-    full_ban: `${country.name} banned asbestos in ${country.ban_year}. Learn about affected buildings and what to do.`,
-    partial_ban: `Asbestos is partially regulated in ${country.name}. Learn about the risks and regulatory history.`,
-    no_ban: `There is no asbestos ban in ${country.name}. Learn about the risks and what you can do.`,
-    de_facto_ban: `Asbestos use has effectively ceased in ${country.name}. Learn about legacy risks and what to do.`,
-    unknown: `Asbestos regulatory status in ${country.name} is unclear. Learn what we know and how to stay safe.`,
+    full_ban: `${country.name} banned asbestos in ${country.ban_year}. Older buildings may still contain asbestos materials. Use our free risk checker to assess your property.`,
+    partial_ban: `Asbestos is partially regulated in ${country.name}. Some uses are still permitted. Learn about regulations and check your building's asbestos risk.`,
+    no_ban: `There is no national asbestos ban in ${country.name}. Buildings of all ages may contain asbestos materials. Use our free risk checker to assess your property.`,
+    de_facto_ban: `Asbestos use has effectively ceased in ${country.name}. Legacy materials in older buildings may still pose a risk. Check your property now.`,
+    unknown: `Asbestos regulatory status in ${country.name} is unclear. Exercise caution with older buildings and use our risk checker to assess your property.`,
   };
   return banText[country.ban_status];
+}
+
+function getCountryTitle(country: Country): string {
+  if (country.ban_status === "full_ban" && country.ban_year) {
+    return `Is Asbestos Banned in ${country.name}? Banned ${country.ban_year} | ToxinFree`;
+  }
+  if (country.ban_status === "no_ban") {
+    return `Is Asbestos Banned in ${country.name}? No National Ban | ToxinFree`;
+  }
+  return `Is Asbestos Banned in ${country.name}? | ToxinFree`;
 }
 
 export async function generateMetadata({
@@ -40,10 +87,10 @@ export async function generateMetadata({
   const country = (countries as Country[]).find((c) => c.slug === slug);
 
   if (!country) {
-    return { title: "Country Not Found | BREATHE" };
+    return { title: "Country Not Found | ToxinFree" };
   }
 
-  const title = `Is Asbestos Banned in ${country.name}? | BREATHE`;
+  const title = getCountryTitle(country);
   const description = getBanDescription(country);
 
   return {
@@ -152,7 +199,7 @@ export default async function CountryPage({
               {flag}
             </span>
             <div className="flex-1 min-w-0">
-              <h1 className="font-serif text-3xl sm:text-4xl text-text-primary leading-tight mb-2">
+              <h1 className="font-sans font-bold text-3xl sm:text-4xl text-text-primary leading-tight mb-2">
                 {country.name}
               </h1>
               <div className="flex flex-wrap items-center gap-2">

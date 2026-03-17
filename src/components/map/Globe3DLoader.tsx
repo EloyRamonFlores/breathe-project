@@ -28,7 +28,7 @@ export default function Globe3DLoader() {
   }, []);
 
   if (state === "loading") {
-    return null;
+    return <div className="w-full h-full" aria-hidden="true" />;
   }
 
   if (state === "no-webgl") {
