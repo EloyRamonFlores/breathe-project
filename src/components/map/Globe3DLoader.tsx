@@ -2,18 +2,20 @@
 
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
-import { useTranslations } from "next-intl";
 import MapLoader from "./MapLoader";
 
 const Globe3DInner = dynamic(() => import("./Globe3D"), { ssr: false });
 
 export default function Globe3DLoader() {
-  const t = useTranslations("home");
-  const [state, setState] = useState<"loading" | "webgl" | "no-webgl">(
-    "loading"
-  );
+  const [state, setState] = useState<"loading" | "globe" | "map">("loading");
 
   useEffect(() => {
+    // Mobile / tablet → Leaflet only (globe.gl is ~500KB, unusable on small screens)
+    if (window.innerWidth < 1024) {
+      setState("map");
+      return;
+    }
+
     // Check WebGL support
     try {
       const canvas = document.createElement("canvas");
@@ -23,11 +25,11 @@ export default function Globe3DLoader() {
           "experimental-webgl"
         ) as WebGLRenderingContext | null);
       if (!gl) {
-        setState("no-webgl");
+        setState("map");
         return;
       }
     } catch {
-      setState("no-webgl");
+      setState("map");
       return;
     }
 
@@ -38,33 +40,23 @@ export default function Globe3DLoader() {
     };
     const effectiveType = nav.connection?.effectiveType;
     if (effectiveType === "2g" || effectiveType === "slow-2g") {
-      setState("no-webgl");
+      setState("map");
       return;
     }
 
     // Check device memory — fall back to Leaflet on low-memory devices (<4 GB)
     if (nav.deviceMemory !== undefined && nav.deviceMemory < 4) {
-      setState("no-webgl");
+      setState("map");
       return;
     }
 
-    setState("webgl");
+    setState("globe");
   }, []);
 
-  if (state === "loading") {
-    return <MapLoader />;
+  if (state === "globe") {
+    return <Globe3DInner />;
   }
 
-  if (state === "no-webgl") {
-    return (
-      <div className="flex w-full h-full flex-col items-center justify-center gap-4 p-4">
-        <p className="font-mono text-sm text-text-muted text-center">
-          {t("globe_fallback")}
-        </p>
-        <MapLoader />
-      </div>
-    );
-  }
-
-  return <Globe3DInner />;
+  // loading + map → show Leaflet (immediate useful content, no blank screen)
+  return <MapLoader />;
 }

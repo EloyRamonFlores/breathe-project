@@ -4,6 +4,18 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v1.4.0] — 2026-03-18 — Mobile performance: Lighthouse 63 → 85+
+
+### Mobile Performance — Globe blocked main thread for 37 seconds
+- **Root cause**: `globe.gl` chunk (487KB) was downloading and executing on mobile devices. On a simulated Moto G Power (Lighthouse slow 4G), it consumed 39,747ms of CPU and caused 37,330ms of Total Blocking Time. The existing checks (WebGL, deviceMemory, connection speed) all passed on the simulated device.
+- **Fix**: Added `window.innerWidth < 1024` as the first check in `Globe3DLoader.tsx`. On mobile/tablet, the globe chunk never downloads — Leaflet map loads directly.
+- **Removed fallback message**: when globe can't load, Leaflet renders seamlessly without "your device doesn't support..." text. Better UX.
+- **Removed hardcoded English** in `MapLoader.tsx` loading state — spinner only, no text.
+- **Removed `output: "standalone"`** from `next.config.ts` — this is for Docker/Node.js, not Vercel. Incorrect config.
+- **Added `browserslist`** targeting modern browsers — eliminates ~14KB of unnecessary polyfills (Array.prototype.at, flat, Object.fromEntries, etc.).
+
+---
+
 ## [v1.3.0] — 2026-03-18 — Sitemap fix, BASE_URL centralized, audit verdict
 
 ### GSC Sitemap Fix — 416 "URL no permitida" errors
