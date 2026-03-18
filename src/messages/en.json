@@ -65,7 +65,7 @@
     "top_countries_banned": "Banned"
   },
   "check": {
-    "meta_title": "Asbestos Risk Checker — Does Your Home Have Asbestos?",
+    "meta_title": "Asbestos Risk Assessment Tool — Free Checker by Country & Era",
     "meta_description": "Free asbestos risk checker: does your home have asbestos? Enter country and year built for instant results. Asbestos risk by decade. No registration.",
     "title": "Asbestos Risk Checker",
     "step1_label": "Where?",
@@ -75,7 +75,7 @@
     "step3_label": "What type of property?",
     "step3_description": "Select your building type",
     "submit": "Check Risk",
-    "result_title": "Your Risk Assessment",
+    "result_title": "General Risk Assessment",
     "materials_title": "Materials Likely Present",
     "what_to_do": "What To Do",
     "share": "Share Your Result",
@@ -102,6 +102,9 @@
     "share_copied": "Link copied!",
     "view_country_profile": "View {country} profile →",
     "disclaimer_note": "This assessment is for awareness only. It is NOT a substitute for professional asbestos inspection.",
+    "awareness_callout": "This is a general awareness tool based on construction patterns in your country and era. It is NOT an assessment of your specific building. Only a certified professional inspection can determine if asbestos is present.",
+    "find_inspector_title": "🔍 Find a certified inspector",
+    "find_inspector_desc": "The only way to confirm asbestos is a professional inspection. Visit your country's profile for local resources.",
     "actions_low": ["Conduct an annual visual inspection", "No immediate action needed if materials are undisturbed", "Keep records of any known or suspected asbestos materials"],
     "actions_moderate": ["Schedule a professional asbestos survey before any renovation", "Do not sand, drill, or disturb suspected materials", "Keep records of building condition", "Contact a licensed professional if you find damaged materials"],
     "actions_high": ["Contact a licensed asbestos assessor for a full inspection", "Do not perform any drilling, sanding, or renovation", "Seal off any visibly damaged areas temporarily", "Professional inspection is strongly advised"],
@@ -160,7 +163,8 @@
     "not_found_description": "This country profile is not in our database.",
     "region": "Region",
     "last_updated": "Last updated",
-    "stat_unknown": "Data not available"
+    "stat_unknown": "Data not available",
+    "data_source_link": "How we source our data →"
   },
   "learn": {
     "title": "Learn About Asbestos",
@@ -453,13 +457,40 @@
       "chart_distribution_description": "Share of countries by regulatory status, as of 2024.",
       "source_label": "Source",
       "disclaimer": "Statistics compiled from WHO, IBAS, and U.S. EPA public databases. Country-level regulatory data may have a lag of 12–24 months."
+    },
+    "methodology_page": {
+      "title": "How We Source Our Data",
+      "meta_description": "Learn how ToxinFree sources asbestos ban data for 200 countries — sources, methodology, curation process, and how to report errors.",
+      "intro": "ToxinFree aggregates publicly available data from authoritative international sources. We do not conduct original research. Here is exactly how our data is collected, curated, and updated.",
+      "sources_heading": "Primary Data Sources",
+      "source_ibas_name": "IBAS — International Ban Asbestos Secretariat",
+      "source_ibas_desc": "The global reference for asbestos ban legislation. Maintained by Laurie Kazan-Allen, IBAS tracks national bans, partial bans, and regulatory milestones for 195+ countries.",
+      "source_who_name": "WHO — World Health Organization",
+      "source_who_desc": "Mesothelioma mortality rates and global health statistics on asbestos-related diseases.",
+      "source_epa_name": "EPA — U.S. Environmental Protection Agency",
+      "source_epa_desc": "U.S. asbestos regulations, banned product lists, and building safety guidelines.",
+      "source_usgs_name": "USGS — U.S. Geological Survey",
+      "source_usgs_desc": "Global asbestos production and consumption data by country and mineral type.",
+      "source_un_comtrade_name": "UN Comtrade",
+      "source_un_comtrade_desc": "International trade data used to cross-reference asbestos import/export volumes.",
+      "process_heading": "Our Curation Process",
+      "process_steps": [
+        "Ban status and timeline data is compiled from IBAS published lists (last referenced February 2026).",
+        "Country-level data is cross-referenced against WHO, EPA, and UN Comtrade where available.",
+        "Data is reviewed for consistency and flagged entries are marked as 'unknown' when sources conflict.",
+        "All data points include a source URL linking to the original official document."
+      ],
+      "disclaimer_heading": "Honest Disclosure",
+      "data_disclaimer": "Our initial data set was assembled with AI assistance to process and structure publicly available regulatory information. While we have reviewed this data for accuracy, it may contain errors or omissions. We are a small team and cannot guarantee real-time accuracy. Always verify critical regulatory information against official government sources before making decisions.",
+      "error_report": "If you find an error in our data, please contact us at data@toxinfree.global — include the country name, the incorrect data, and the correct source URL.",
+      "back_to_learn": "← Back to Learn"
     }
   },
   "risk_levels": {
     "low": "Low",
     "moderate": "Moderate",
     "high": "High",
-    "critical": "Critical"
+    "critical": "Very High"
   },
   "ban_status": {
     "full_ban": "Full Ban",
@@ -493,7 +524,8 @@
     "nav_check": "Risk Checker",
     "nav_map": "Global Map",
     "nav_learn": "Learn",
-    "credibility_stat": "Data covers 200 countries and 20+ materials"
+    "credibility_stat": "Data covers 200 countries and 20+ materials",
+    "nav_methodology": "Data Methodology"
   },
   "nav_aria": {
     "menu_open": "Open menu",

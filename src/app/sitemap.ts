@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
 import countries from "@/data/countries.json";
 import type { Country } from "@/lib/types";
+import { SITE_URL } from "@/lib/constants";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://toxinfree.global";
+const BASE_URL = SITE_URL;
 const LOCALES = ["en", "es"];
 
 function getCountryPriority(country: Country): number {
@@ -22,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { path: "/learn/history", priority: 0.8, changeFrequency: "monthly" },
       { path: "/learn/what-to-do", priority: 0.8, changeFrequency: "monthly" },
       { path: "/learn/by-the-numbers", priority: 0.8, changeFrequency: "monthly" },
+      { path: "/learn/methodology", priority: 0.7, changeFrequency: "monthly" },
     ];
 
   const staticRoutes: MetadataRoute.Sitemap = LOCALES.flatMap((locale) =>

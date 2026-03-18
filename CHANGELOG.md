@@ -4,6 +4,73 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v1.3.0] — 2026-03-18 — Sitemap fix, BASE_URL centralized, audit verdict
+
+### GSC Sitemap Fix — 416 "URL no permitida" errors
+- **Root cause**: `NEXT_PUBLIC_BASE_URL` env var in Vercel was set to `https://breathe.global` (old domain), overriding the fallback. All 416 sitemap URLs were pointing to the wrong domain.
+- **Fix**: Created `src/lib/constants.ts` with `SITE_URL = "https://toxinfree.global"` hardcoded. Removed `process.env.NEXT_PUBLIC_BASE_URL` dependency from all 13 files: `sitemap.ts`, `robots.ts`, `layout.tsx`, all `learn/*` pages, `check/page.tsx`, `country/[slug]/page.tsx`.
+- **Added `/learn/methodology`** to `sitemap.ts` — the page existed but was missing from the sitemap index.
+
+### Audit
+- Added `docs/AUDIT-VERDICT.md` — independent senior-level audit of the codebase and product post v1.2.0. Global rating 6.5/10. Key finding: distribution > features.
+
+---
+
+## [v1.2.0] — 2026-03-17 — Critical Vulnerability Fixes: Legal Safety, Data Transparency, Performance, Scalability
+
+Senior Product Strategist audit identified 5 critical vulnerabilities. All resolved.
+
+### V1 — Risk Checker Legal Safety
+- **Removed numeric score** (100%, 4% etc.) from `RiskResults.tsx` — replaced with qualitative label only ("Low", "Moderate", "High", "Very High")
+- **Renamed "Critical" → "Very High"** in both `en.json` and `es.json` (`risk_levels.critical`) to avoid medical emergency connotation
+- **Added awareness callout** (amber bordered) before results: "This is a general awareness tool... NOT an assessment of your specific building"
+- **Fixed Share button**: clipboard now copies a disclaimer sentence + URL instead of raw URL alone
+- **Added "Find a certified inspector" CTA** before disclaimer, linking to the user's country profile
+- **Language audit**: changed `result_title` from "Your Risk Assessment" → "General Risk Assessment"; updated meta_title away from "Does Your Home Have Asbestos?" implication
+
+### V2 — Data Transparency
+- **New page `/learn/methodology`** (EN + ES): explains data sources (IBAS, WHO, EPA, USGS, UN Comtrade), curation process, honest AI-assistance disclosure, and error reporting contact
+- **Country pages**: added "How we source our data →" link to `/learn/methodology` in every country disclaimer block
+- **Footer**: added "Data Methodology" link in navigation column
+
+### V3 — Globe Performance on Slow Devices
+- **`Globe3DLoader.tsx`**: added connection speed detection (`navigator.connection?.effectiveType` — falls back to Leaflet on "2g" or "slow-2g") and device memory detection (`navigator.deviceMemory < 4` — falls back on low-memory devices)
+- **Loading state**: replaced blank div with `<MapLoader />` — users on slow connections now see the interactive Leaflet map immediately, not a blank screen
+
+### V4 — Multi-Substance Scalability
+- **Refactored calculator**: `src/lib/risk-calculator.ts` moved to `src/lib/calculators/asbestos-risk-calculator.ts`
+- **Created calculator factory**: `src/lib/calculators/index.ts` exports `getCalculator(substanceId)` — ready for PFAS calculator without touching existing code
+- **Documented data architecture**: added multi-substance data pattern note to `docs/DATA.md`
+- **Created `docs/SCALING.md`**: step-by-step guide for adding substance #2
+
+### V5 — Community Resilience
+- **`CONTRIBUTING.md`**: complete guide for contributing data corrections, translations, and code; includes data verification standards and license information (MIT code, CC BY 4.0 data)
+- **`.github/ISSUE_TEMPLATE/data-correction.md`**: GitHub issue template for reporting country data errors
+
+### Files Added / Modified
+- `src/components/checker/RiskResults.tsx` — V1 fixes
+- `src/messages/en.json` — new keys: awareness_callout, find_inspector_*, result_title, meta_title, methodology_page.*, data_source_link, nav_methodology, risk_levels.critical → "Very High"
+- `src/messages/es.json` — same keys in Spanish
+- `src/components/map/Globe3DLoader.tsx` — V3 performance fallbacks
+- `src/components/layout/Footer.tsx` — methodology link
+- `src/app/[locale]/country/[slug]/page.tsx` — data source link
+- `src/components/checker/RiskChecker.tsx` — updated import path
+- `src/lib/calculators/asbestos-risk-calculator.ts` — new (moved)
+- `src/lib/calculators/index.ts` — new (factory)
+- `src/app/[locale]/learn/methodology/page.tsx` — new (EN + ES)
+- `docs/DATA.md` — multi-substance architecture note
+- `docs/SCALING.md` — new
+- `CONTRIBUTING.md` — new
+- `.github/ISSUE_TEMPLATE/data-correction.md` — new
+- `src/lib/risk-calculator.ts` — deleted (moved to calculators/)
+
+### Build Status
+- 424 static routes (422 prior + 2 new methodology pages)
+- `npm run type-check` — ✅ 0 errors
+- `npm run build` — ✅ 0 errors
+
+---
+
 ## [v1.1.0] — 2026-03-17 — Post-Deploy: OG Images, 404 Page, Analytics
 
 ### OG Image Generation

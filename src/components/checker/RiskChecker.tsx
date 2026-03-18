@@ -5,7 +5,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import countriesData from "@/data/countries.json";
 import type { Country, Era, BuildingType, RiskResult } from "@/lib/types";
-import { calculateRisk } from "@/lib/risk-calculator";
+import { calculateRisk } from "@/lib/calculators";
 import RiskResults from "./RiskResults";
 
 const countries = (countriesData as Country[]).sort((a, b) =>

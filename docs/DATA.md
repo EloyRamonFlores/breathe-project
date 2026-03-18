@@ -35,6 +35,16 @@ Data updates happen via git commits — edit JSON → deploy → live in minutes
 - **What it provides**: International trade data for asbestos and asbestos-containing materials
 - **Format**: API available, CSV export
 
+## Multi-Substance Data Architecture (Future)
+
+> **Note for v2+ development:** When adding a second substance (e.g. PFAS), follow this pattern:
+>
+> - Create `src/data/regulations/pfas.json` using the same schema as `countries.json` but scoped to PFAS regulatory data.
+> - The `src/data/regulations/` directory will become the canonical location for all per-substance regulatory data.
+> - Keep `src/data/countries.json` as the shared geographic/identity dataset (name, iso2, iso3, region, slug).
+> - Each substance's regulatory status and timelines live in its own `regulations/{substance}.json` file.
+> - See `docs/SCALING.md` for the complete step-by-step guide to adding a new substance.
+
 ## Data Files Schema
 
 ### countries.json

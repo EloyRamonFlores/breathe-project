@@ -16,7 +16,9 @@ const bannedCount = countries.filter(
 
 const activeSubstance = getActiveSubstance();
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://toxinfree.global";
+import { SITE_URL } from "@/lib/constants";
+
+const BASE_URL = SITE_URL;
 
 const orgJsonLd = {
   "@context": "https://schema.org",

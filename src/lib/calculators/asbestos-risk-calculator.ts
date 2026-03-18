@@ -1,4 +1,4 @@
-import type { Country, Material, Era, BuildingType, RiskLevel, RiskResult, RiskMatrix } from "./types";
+import type { Country, Material, Era, BuildingType, RiskLevel, RiskResult, RiskMatrix } from "@/lib/types";
 import riskMatrixData from "@/data/risk-matrix.json";
 import materialsData from "@/data/materials.json";
 
@@ -28,7 +28,7 @@ function getCountryFactor(country: Country, constructionYear: number): number {
   return riskMatrix.country_factor.full_ban_at_construction;
 }
 
-function getEraFromYear(year: number): Era {
+export function getEraFromYear(year: number): Era {
   if (year < 1940) return "pre_1940";
   if (year < 1960) return "1940_1960";
   if (year < 1980) return "1960_1980";
@@ -99,5 +99,3 @@ export function calculateRisk(
     materials: matchedMaterials,
   };
 }
-
-export { getEraFromYear };

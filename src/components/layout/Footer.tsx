@@ -78,6 +78,14 @@ export default function Footer() {
                   {t("nav_learn")}
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/learn/methodology"
+                  className="underline-from-center transition-colors hover:text-text-primary"
+                >
+                  {t("nav_methodology")}
+                </Link>
+              </li>
             </ul>
           </div>
 

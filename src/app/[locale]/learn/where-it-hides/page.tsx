@@ -4,8 +4,9 @@ import { Link } from "@/i18n/navigation";
 import materialsData from "@/data/materials.json";
 import type { Material, RiskLevel } from "@/lib/types";
 import { getRiskTailwindClass } from "@/lib/utils";
+import { SITE_URL } from "@/lib/constants";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://toxinfree.global";
+const BASE_URL = SITE_URL;
 
 export async function generateStaticParams() {
   return ["en", "es"].map((locale) => ({ locale }));

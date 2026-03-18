@@ -18,7 +18,9 @@ export async function generateStaticParams() {
 
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://toxinfree.global";
+import { SITE_URL } from "@/lib/constants";
+
+const BASE_URL = SITE_URL;
 
 // ─── Handcrafted descriptions for 15 priority countries ─────────────────────
 const PRIORITY_DESCRIPTIONS: Record<string, string> = {
@@ -419,6 +421,12 @@ export default async function CountryPage({
           <p className="text-xs text-text-muted leading-relaxed">
             {t("page_disclaimer")}
           </p>
+          <Link
+            href="/learn/methodology"
+            className="mt-2 inline-flex items-center font-mono text-xs text-accent hover:underline"
+          >
+            {t("data_source_link")}
+          </Link>
         </div>
       </div>
     </main>

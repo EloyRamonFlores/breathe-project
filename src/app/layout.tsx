@@ -17,10 +17,10 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "700"],
 });
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://toxinfree.global";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(BASE_URL),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "ToxinFree — Global Toxic Substance Awareness",
     template: "%s | ToxinFree",

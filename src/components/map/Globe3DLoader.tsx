@@ -14,6 +14,7 @@ export default function Globe3DLoader() {
   );
 
   useEffect(() => {
+    // Check WebGL support
     try {
       const canvas = document.createElement("canvas");
       const gl =
@@ -21,14 +22,37 @@ export default function Globe3DLoader() {
         (canvas.getContext(
           "experimental-webgl"
         ) as WebGLRenderingContext | null);
-      setState(gl ? "webgl" : "no-webgl");
+      if (!gl) {
+        setState("no-webgl");
+        return;
+      }
     } catch {
       setState("no-webgl");
+      return;
     }
+
+    // Check connection speed (non-standard API — not available in all browsers)
+    const nav = navigator as Navigator & {
+      connection?: { effectiveType?: string };
+      deviceMemory?: number;
+    };
+    const effectiveType = nav.connection?.effectiveType;
+    if (effectiveType === "2g" || effectiveType === "slow-2g") {
+      setState("no-webgl");
+      return;
+    }
+
+    // Check device memory — fall back to Leaflet on low-memory devices (<4 GB)
+    if (nav.deviceMemory !== undefined && nav.deviceMemory < 4) {
+      setState("no-webgl");
+      return;
+    }
+
+    setState("webgl");
   }, []);
 
   if (state === "loading") {
-    return <div className="w-full h-full" aria-hidden="true" />;
+    return <MapLoader />;
   }
 
   if (state === "no-webgl") {

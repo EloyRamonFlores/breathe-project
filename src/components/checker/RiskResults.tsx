@@ -14,8 +14,6 @@ const ERA_CONSTRUCTION_YEAR: Record<Era, number> = {
   post_2000: 2010,
 };
 
-const RISK_ORDER = { critical: 4, high: 3, moderate: 2, low: 1 } as const;
-
 function getBanContextKey(result: RiskResult): string {
   const { country, era } = result;
   const constructionYear = ERA_CONSTRUCTION_YEAR[era];
@@ -59,8 +57,7 @@ export default function RiskResults({ result, onReset }: Props) {
   const tLevels = useTranslations("risk_levels");
   const [copied, setCopied] = useState(false);
 
-  const { score, level, country, era, materials } = result;
-  const scorePercent = Math.round(score * 100);
+  const { level, country, era, materials } = result;
   const riskColor = getRiskColor(level);
   const riskTextClass = getRiskTailwindClass(level);
   const banContextKey = getBanContextKey(result);
@@ -68,14 +65,15 @@ export default function RiskResults({ result, onReset }: Props) {
   const displayMaterials = materials.slice(0, 5);
 
   const handleShare = async () => {
+    const shareText = `General risk assessment based on country and construction era — not a property inspection.\n${window.location.href}`;
     try {
-      await navigator.clipboard.writeText(window.location.href);
+      await navigator.clipboard.writeText(shareText);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
       // Fallback: select and copy via execCommand
       const input = document.createElement("input");
-      input.value = window.location.href;
+      input.value = shareText;
       document.body.appendChild(input);
       input.select();
       document.execCommand("copy");
@@ -87,6 +85,12 @@ export default function RiskResults({ result, onReset }: Props) {
 
   return (
     <div className="animate-in fade-in slide-in-from-bottom-4 duration-400 space-y-4">
+      {/* Awareness callout */}
+      <div className="rounded-lg border border-warning/40 bg-warning/8 px-4 py-3 text-sm text-text-secondary">
+        <span className="mr-1" aria-hidden="true">⚠️</span>
+        {t("awareness_callout")}
+      </div>
+
       {/* Main Risk Card */}
       <div
         className="overflow-hidden rounded-xl border bg-bg-secondary"
@@ -99,34 +103,15 @@ export default function RiskResults({ result, onReset }: Props) {
             background: `linear-gradient(135deg, color-mix(in srgb, ${riskColor} 12%, transparent) 0%, transparent 60%)`,
           }}
         >
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              <p className="font-mono text-xs uppercase tracking-widest text-text-muted">
-                {t("result_title")}
-              </p>
-              <h1
-                className={`mt-1 font-sans text-4xl font-bold sm:text-5xl ${riskTextClass}`}
-              >
-                {tLevels(level)}
-              </h1>
-            </div>
-            {/* Score badge */}
-            <div className="flex-shrink-0 text-right">
-              <p className="font-mono text-xs text-text-muted">{t("score_label")}</p>
-              <p
-                className={`font-mono text-3xl font-bold sm:text-4xl ${riskTextClass}`}
-              >
-                {scorePercent}%
-              </p>
-            </div>
-          </div>
-
-          {/* Progress bar */}
-          <div className="mt-4 h-2 w-full overflow-hidden rounded-full bg-bg-tertiary">
-            <div
-              className="h-full rounded-full transition-all duration-1000 ease-out"
-              style={{ width: `${scorePercent}%`, backgroundColor: riskColor }}
-            />
+          <div>
+            <p className="font-mono text-xs uppercase tracking-widest text-text-muted">
+              {t("result_title")}
+            </p>
+            <h1
+              className={`mt-1 font-sans text-4xl font-bold sm:text-5xl ${riskTextClass}`}
+            >
+              {tLevels(level)}
+            </h1>
           </div>
 
           {/* Context line */}
@@ -241,6 +226,19 @@ export default function RiskResults({ result, onReset }: Props) {
           {t("check_another")}
         </button>
       </div>
+
+      {/* Find inspector CTA */}
+      <Link
+        href={`/country/${country.slug}`}
+        className="flex flex-col gap-1 rounded-lg border border-warning/30 bg-warning/5 px-4 py-4 transition-colors hover:bg-warning/10"
+      >
+        <span className="text-sm font-semibold text-warning">
+          {t("find_inspector_title")}
+        </span>
+        <span className="text-xs text-text-secondary">
+          {t("find_inspector_desc")}
+        </span>
+      </Link>
 
       {/* Disclaimer */}
       <p className="rounded-lg border border-bg-tertiary bg-bg-secondary px-4 py-3 text-xs text-text-muted">

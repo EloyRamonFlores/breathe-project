@@ -65,7 +65,7 @@
     "top_countries_banned": "Prohibido"
   },
   "check": {
-    "meta_title": "Evaluador de Riesgo de Asbesto — ¿Tu Hogar Tiene Asbesto?",
+    "meta_title": "Herramienta de Evaluación de Riesgo de Asbesto — Gratis por País y Época",
     "meta_description": "Evaluador gratuito: ¿tiene asbesto tu hogar? Ingresa país y año de construcción para resultados inmediatos. Riesgo por década. Sin registro.",
     "title": "Evaluador de Riesgo de Asbesto",
     "step1_label": "¿Dónde?",
@@ -75,7 +75,7 @@
     "step3_label": "¿Qué tipo de propiedad?",
     "step3_description": "Selecciona el tipo de edificio",
     "submit": "Evaluar Riesgo",
-    "result_title": "Tu Evaluación de Riesgo",
+    "result_title": "Evaluación de Riesgo General",
     "materials_title": "Materiales Probablemente Presentes",
     "what_to_do": "Qué Hacer",
     "share": "Comparte Tu Resultado",
@@ -102,6 +102,9 @@
     "share_copied": "¡Enlace copiado!",
     "view_country_profile": "Ver perfil de {country} →",
     "disclaimer_note": "Esta evaluación es solo para concientización. NO sustituye una inspección profesional de asbesto.",
+    "awareness_callout": "Esta es una herramienta de concientización general basada en los patrones de construcción de tu país y época. NO es una evaluación de tu edificio específico. Solo una inspección profesional certificada puede determinar si hay asbesto presente.",
+    "find_inspector_title": "🔍 Encuentra un inspector certificado",
+    "find_inspector_desc": "La única forma de confirmar la presencia de asbesto es una inspección profesional. Visita el perfil de tu país para recursos locales.",
     "actions_low": ["Realiza una inspección visual anual", "No se requiere acción inmediata si los materiales no están perturbados", "Mantén registro de materiales con asbesto conocidos o sospechosos"],
     "actions_moderate": ["Programa una inspección profesional antes de cualquier renovación", "No lijas, perfores ni perturbes materiales sospechosos", "Mantén registros de las condiciones del edificio", "Contacta a un profesional si encuentras materiales dañados"],
     "actions_high": ["Contacta a un evaluador de asbesto certificado para una inspección completa", "No realices ningún trabajo de perforación, lijado o renovación", "Sella temporalmente las áreas visiblemente dañadas", "Se recomienda firmemente una inspección profesional"],
@@ -160,7 +163,8 @@
     "not_found_description": "Este perfil de país no está en nuestra base de datos.",
     "region": "Región",
     "last_updated": "Última actualización",
-    "stat_unknown": "Datos no disponibles"
+    "stat_unknown": "Datos no disponibles",
+    "data_source_link": "Cómo obtenemos nuestros datos →"
   },
   "learn": {
     "title": "Aprende Sobre el Asbesto",
@@ -453,13 +457,40 @@
       "chart_distribution_description": "Proporción de países por estado regulatorio, a partir de 2024.",
       "source_label": "Fuente",
       "disclaimer": "Estadísticas compiladas de bases de datos públicas de la OMS, IBAS y EPA de EE. UU. Los datos regulatorios a nivel de país pueden tener un retraso de 12 a 24 meses."
+    },
+    "methodology_page": {
+      "title": "Cómo Obtenemos Nuestros Datos",
+      "meta_description": "Conoce cómo ToxinFree recopila datos de prohibición de asbesto para 200 países — fuentes, metodología, proceso de curación y cómo reportar errores.",
+      "intro": "ToxinFree agrega datos públicamente disponibles de fuentes internacionales autorizadas. No realizamos investigación original. Aquí explicamos exactamente cómo se recopilan, curan y actualizan nuestros datos.",
+      "sources_heading": "Fuentes de Datos Primarias",
+      "source_ibas_name": "IBAS — Secretaría Internacional de Prohibición del Asbesto",
+      "source_ibas_desc": "La referencia global para la legislación de prohibición del asbesto. Mantenida por Laurie Kazan-Allen, IBAS rastrea prohibiciones nacionales, prohibiciones parciales e hitos regulatorios para más de 195 países.",
+      "source_who_name": "OMS — Organización Mundial de la Salud",
+      "source_who_desc": "Tasas de mortalidad por mesotelioma y estadísticas de salud global sobre enfermedades relacionadas con el asbesto.",
+      "source_epa_name": "EPA — Agencia de Protección Ambiental de EE. UU.",
+      "source_epa_desc": "Regulaciones de asbesto en EE. UU., listas de productos prohibidos y pautas de seguridad en edificios.",
+      "source_usgs_name": "USGS — Servicio Geológico de EE. UU.",
+      "source_usgs_desc": "Datos globales de producción y consumo de asbesto por país y tipo mineral.",
+      "source_un_comtrade_name": "UN Comtrade",
+      "source_un_comtrade_desc": "Datos de comercio internacional utilizados para contrastar volúmenes de importación/exportación de asbesto.",
+      "process_heading": "Nuestro Proceso de Curación",
+      "process_steps": [
+        "El estado de prohibición y los datos de cronología se compilan de las listas publicadas por IBAS (última referencia: febrero de 2026).",
+        "Los datos por país se contrastan con la OMS, EPA y UN Comtrade cuando están disponibles.",
+        "Los datos se revisan para verificar consistencia; las entradas con conflictos se marcan como 'desconocido'.",
+        "Todos los puntos de datos incluyen una URL fuente que enlaza al documento oficial original."
+      ],
+      "disclaimer_heading": "Divulgación Honesta",
+      "data_disclaimer": "Nuestro conjunto de datos inicial fue compilado con asistencia de IA para procesar y estructurar información regulatoria públicamente disponible. Aunque hemos revisado estos datos para verificar su precisión, pueden contener errores u omisiones. Somos un equipo pequeño y no podemos garantizar precisión en tiempo real. Siempre verifica la información regulatoria crítica contra fuentes gubernamentales oficiales antes de tomar decisiones.",
+      "error_report": "Si encuentras un error en nuestros datos, contáctanos en data@toxinfree.global — incluye el nombre del país, el dato incorrecto y la URL de la fuente correcta.",
+      "back_to_learn": "← Volver a Aprender"
     }
   },
   "risk_levels": {
     "low": "Bajo",
     "moderate": "Moderado",
     "high": "Alto",
-    "critical": "Crítico"
+    "critical": "Muy Alto"
   },
   "ban_status": {
     "full_ban": "Prohibición Total",
@@ -493,7 +524,8 @@
     "nav_check": "Evaluador de Riesgo",
     "nav_map": "Mapa Global",
     "nav_learn": "Aprender",
-    "credibility_stat": "Datos de 200 países y más de 20 materiales"
+    "credibility_stat": "Datos de 200 países y más de 20 materiales",
+    "nav_methodology": "Metodología de Datos"
   },
   "nav_aria": {
     "menu_open": "Abrir menú",
