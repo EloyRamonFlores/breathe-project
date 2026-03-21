@@ -10,10 +10,30 @@ const buildingTypeForMaterials: Record<BuildingType, string> = {
   factory: "industrial",
 };
 
-const riskMatrix = riskMatrixData as RiskMatrix;
+const riskMatrix = riskMatrixData as unknown as RiskMatrix;
 const materials = materialsData as Material[];
 
+/**
+ * Determines the country risk factor using per-country overrides when available,
+ * falling back to generic factors based on ban status at construction time.
+ *
+ * v2.1: Dynamic pre/post-ban factors per country. Countries like Australia (0.95 → 0.05)
+ * now correctly reflect the massive risk difference between pre-ban fibro homes
+ * and post-ban construction. Previously, a static factor produced false positives
+ * for post-ban buildings.
+ */
 function getCountryFactor(country: Country, constructionYear: number): number {
+  // Check for per-country override (slug-based lookup)
+  const override = riskMatrix.country_overrides[country.slug];
+
+  if (override) {
+    // Countries with no ban have the same factor regardless of construction year
+    if (override.ban_year === null) return override.pre_ban;
+    // Dynamic: pre-ban vs post-ban factor based on construction year
+    return constructionYear < override.ban_year ? override.pre_ban : override.post_ban;
+  }
+
+  // Fallback to generic factors for countries without overrides
   if (country.ban_status === "unknown") return riskMatrix.country_factor.unknown;
   if (country.ban_status === "no_ban") return riskMatrix.country_factor.no_ban_at_construction;
   if (country.ban_year === null) return riskMatrix.country_factor.unknown;
@@ -75,6 +95,17 @@ function getMatchingMaterials(
     });
 }
 
+/**
+ * Risk calculation v2.1 — Weighted average instead of multiplication.
+ *
+ * Formula: score = min((country × 0.45) + (era × 0.35) + (building × 0.20), 1.0)
+ *
+ * Why weighted average? Multiplying decimals dilutes risk artificially.
+ * Example: Germany 1985 apartment → 0.8 × 0.5 × 0.9 = 0.36 (LOW) ← false negative
+ * Weighted: (0.8×0.45) + (0.5×0.35) + (0.75×0.20) = 0.685 (HIGH) ← correct
+ *
+ * Building factors normalized to max 1.0 to prevent overflow.
+ */
 export function calculateRisk(
   country: Country,
   era: Era,
@@ -86,7 +117,11 @@ export function calculateRisk(
   const eraFactor = riskMatrix.era_factor[era];
   const buildingFactor = riskMatrix.building_factor[buildingType];
 
-  const score = Math.min(countryFactor * eraFactor * buildingFactor, 1.0);
+  const { weights } = riskMatrix;
+  const score = Math.min(
+    (countryFactor * weights.country) + (eraFactor * weights.era) + (buildingFactor * weights.building),
+    1.0
+  );
   const level = scoreToLevel(score);
   const matchedMaterials = getMatchingMaterials(constructionYear, buildingType, country.region);
 

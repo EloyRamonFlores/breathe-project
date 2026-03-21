@@ -1,3 +1,14 @@
+import countriesData from "@/data/countries.json";
+import type { Country } from "@/lib/types";
+
+const countries = countriesData as Country[];
+const computedNoBanCount = countries.filter(
+  (c) => c.ban_status === "no_ban" || c.ban_status === "unknown"
+).length;
+const computedBannedCount = countries.filter(
+  (c) => c.ban_status === "full_ban" || c.ban_status === "de_facto_ban"
+).length;
+
 export interface SubstanceStats {
   noBanCount: number;
   bannedCount: number;
@@ -18,8 +29,8 @@ export const substances: Substance[] = [
     active: true,
     color: "#EF4444",
     stats: {
-      noBanCount: 128,
-      bannedCount: 72,
+      noBanCount: computedNoBanCount,
+      bannedCount: computedBannedCount,
       deathsPerYear: "~255,000",
       productionTons: "2.3M",
     },

@@ -1,28 +1,53 @@
 {
+  "weights": {
+    "country": 0.45,
+    "era": 0.35,
+    "building": 0.20
+  },
   "country_factor": {
-    "no_ban_at_construction": 0.9,
-    "partial_ban_at_construction": 0.6,
-    "full_ban_at_construction": 0.2,
-    "unknown": 0.5
+    "no_ban_at_construction": 0.90,
+    "partial_ban_at_construction": 0.60,
+    "full_ban_at_construction": 0.10,
+    "unknown": 0.55
+  },
+  "country_overrides": {
+    "india": { "pre_ban": 0.95, "post_ban": 0.95, "ban_year": null },
+    "china": { "pre_ban": 0.90, "post_ban": 0.90, "ban_year": null },
+    "russia": { "pre_ban": 0.90, "post_ban": 0.90, "ban_year": null },
+    "mexico": { "pre_ban": 0.90, "post_ban": 0.90, "ban_year": null },
+    "brazil": { "pre_ban": 0.80, "post_ban": 0.15, "ban_year": 2017 },
+    "united-states": { "pre_ban": 0.80, "post_ban": 0.80, "ban_year": null },
+    "united-kingdom": { "pre_ban": 0.85, "post_ban": 0.10, "ban_year": 1999 },
+    "germany": { "pre_ban": 0.80, "post_ban": 0.10, "ban_year": 1993 },
+    "australia": { "pre_ban": 0.95, "post_ban": 0.05, "ban_year": 2003 },
+    "japan": { "pre_ban": 0.60, "post_ban": 0.05, "ban_year": 2006 },
+    "sweden": { "pre_ban": 0.70, "post_ban": 0.05, "ban_year": 1982 },
+    "south-korea": { "pre_ban": 0.75, "post_ban": 0.05, "ban_year": 2009 },
+    "canada": { "pre_ban": 0.85, "post_ban": 0.10, "ban_year": 2018 },
+    "south-africa": { "pre_ban": 0.90, "post_ban": 0.10, "ban_year": 2008 },
+    "france": { "pre_ban": 0.80, "post_ban": 0.10, "ban_year": 1997 },
+    "italy": { "pre_ban": 0.85, "post_ban": 0.10, "ban_year": 1992 },
+    "indonesia": { "pre_ban": 0.85, "post_ban": 0.85, "ban_year": null },
+    "nigeria": { "pre_ban": 0.80, "post_ban": 0.80, "ban_year": null }
   },
   "era_factor": {
-    "pre_1940": 0.7,
-    "1940_1960": 0.9,
-    "1960_1980": 1.0,
-    "1980_2000": 0.5,
-    "post_2000": 0.2
+    "pre_1940": 0.70,
+    "1940_1960": 0.90,
+    "1960_1980": 1.00,
+    "1980_2000": 0.50,
+    "post_2000": 0.20
   },
   "building_factor": {
-    "residential": 1.0,
-    "apartment": 0.9,
-    "school": 1.1,
-    "office": 0.8,
-    "factory": 1.2
+    "residential": 0.80,
+    "apartment": 0.75,
+    "school": 0.90,
+    "office": 0.65,
+    "factory": 1.00
   },
   "thresholds": {
-    "low": [0, 0.3],
-    "moderate": [0.3, 0.6],
-    "high": [0.6, 0.8],
-    "critical": [0.8, 1.0]
+    "low": [0, 0.29],
+    "moderate": [0.30, 0.59],
+    "high": [0.60, 0.79],
+    "critical": [0.80, 1.0]
   }
 }

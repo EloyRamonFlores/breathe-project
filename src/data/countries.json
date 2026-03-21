@@ -465,60 +465,123 @@
     "region": "Europe",
     "ban_status": "full_ban",
     "ban_year": 1999,
-    "ban_details": "Complete ban on all asbestos including chrysotile under Control of Asbestos at Work Regulations 1999. Updated and consolidated under Control of Asbestos Regulations 2012.",
+    "ban_details": "Complete ban on all forms of asbestos (including chrysotile) under the Asbestos (Prohibitions) (Amendment) Regulations 1999, effective 24 November 1999 — five years ahead of the EU-wide ban. Currently governed by the Control of Asbestos Regulations 2012 (CAR 2012), which establishes a criminal 'duty to manage' asbestos in non-domestic premises.",
     "exceptions": [],
     "timeline": [
       {
-        "year": 1969,
-        "event": "Asbestos Regulations 1969 establish first occupational safety requirements for asbestos workers",
+        "year": 1924,
+        "event": "Nellie Kershaw, textile worker at Turner Brothers Asbestos in Rochdale, dies of pulmonary asbestosis — first documented asbestos death in the UK. Dr. W.E. Cooke publishes the case in the BMJ in 1927, coining the term 'pulmonary asbestosis'",
+        "type": "other",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/1825122/"
+      },
+      {
+        "year": 1931,
+        "event": "Asbestos Industry Regulations 1931 (SI 1931/1140) — first asbestos-specific regulations. Required exhaust ventilation in factories and prohibited employment of young people in asbestos manufacturing",
         "type": "regulation",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://www.legislation.gov.uk/uksro/1931/344/contents/made"
+      },
+      {
+        "year": 1969,
+        "event": "The Asbestos Regulations 1969 (SI 1969/690) expand protections beyond asbestos factories to all factories, building sites, and engineering construction. Introduced first quantitative exposure limits",
+        "type": "regulation",
+        "source_url": "https://www.legislation.gov.uk/id/uksi/1969/690"
+      },
+      {
+        "year": 1978,
+        "event": "Nancy Tait founds the Society for the Prevention of Asbestos and Industrial Diseases (SPAID) — the world's first asbestos victims' pressure group, after her husband died of mesothelioma in 1968",
+        "type": "other",
+        "source_url": "https://ibasecretariat.org/mem_nancy_tait.php"
       },
       {
         "year": 1985,
-        "event": "Crocidolite (blue asbestos) banned from import and use in the UK",
+        "event": "Asbestos (Prohibitions) Regulations 1985 ban import and use of blue asbestos (crocidolite) and brown asbestos (amosite). White asbestos (chrysotile) — 95% of use — remains legal",
         "type": "ban",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://www.legislation.gov.uk/uksi/1985/910/made"
       },
       {
-        "year": 1988,
-        "event": "Amosite (brown asbestos) banned; all amphibole asbestos fibers fully prohibited",
-        "type": "ban",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "year": 1987,
+        "event": "Control of Asbestos at Work Regulations 1987 (SI 1987/2115) introduce statutory control procedures for worker exposure, protective clothing requirements, and workplace designation as 'asbestos areas'",
+        "type": "regulation",
+        "source_url": "https://www.legislation.gov.uk/uksi/1987/2115/made"
+      },
+      {
+        "year": 1995,
+        "event": "June Hancock wins landmark case against J.W. Roberts Ltd (Turner & Newall) — first UK case establishing environmental exposure liability for a mesothelioma victim who never worked with asbestos",
+        "type": "court_ruling",
+        "source_url": "https://www.irwinmitchell.com/news-and-insights/newsandmedia/2020/october/legacy-of-remarkable-leeds-woman-june-hancock-lives-on-through-research-into-asbestos-cancer"
       },
       {
         "year": 1999,
-        "event": "Control of Asbestos at Work Regulations extended to include chrysotile — complete UK ban on all asbestos",
+        "event": "Asbestos (Prohibitions) (Amendment) Regulations 1999 (SI 1999/2373) — total ban on all forms of asbestos including chrysotile, effective 24 November 1999. Five years ahead of the EU-wide ban",
         "type": "ban",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://www.legislation.gov.uk/uksi/1999/2373/made"
+      },
+      {
+        "year": 2006,
+        "event": "Control of Asbestos Regulations 2006 (SI 2006/2739) consolidate previous regulations. Increased emphasis on training for all workers who may encounter asbestos",
+        "type": "regulation",
+        "source_url": "https://www.legislation.gov.uk/uksi/2006/2739/made"
       },
       {
         "year": 2012,
-        "event": "Control of Asbestos Regulations 2012 consolidates all prior regulations; mandatory duty-to-manage for commercial buildings",
+        "event": "Control of Asbestos Regulations 2012 (SI 2012/632) — current primary regulation. Establishes criminal 'duty to manage' asbestos in non-domestic premises. Non-compliance: unlimited fine and/or 2 years imprisonment",
         "type": "regulation",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://www.legislation.gov.uk/uksi/2012/632/regulation/4"
+      },
+      {
+        "year": 2026,
+        "event": "HSE concludes public consultation (January 9, 2026) on proposed changes to CAR 2012, focusing on improving survey quality and surveyor competence",
+        "type": "regulation",
+        "source_url": "https://consultations.hse.gov.uk/hse/proposals-control-of-asbestos-regs-2012/"
       }
     ],
     "peak_usage_era": "1950s-1970s",
     "common_materials": [
-      "asbestos insulating board",
-      "pipe insulation",
-      "asbestos-cement flat sheets",
+      "artex textured coatings",
+      "asbestos insulating board (AIB)",
+      "asbestos-cement roofing and flat sheets",
+      "lagging and pipe insulation",
       "vinyl-asbestos floor tiles",
+      "brake linings (Capasco brand)",
       "roof felt underlayment"
     ],
-    "estimated_buildings_at_risk": "~1.5 million commercial buildings",
-    "mesothelioma_rate": 20.5,
-    "mesothelioma_source_year": 2020,
+    "estimated_buildings_at_risk": "80-90% of pre-2000 buildings; 80-85% of state schools; 90%+ of NHS hospital trusts",
+    "mesothelioma_rate": 35.4,
+    "mesothelioma_source_year": 2023,
     "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
         "accessed": "2026-03-13"
+      },
+      {
+        "name": "HSE Mesothelioma Statistics 2025",
+        "url": "https://www.hse.gov.uk/statistics/assets/docs/mesothelioma.pdf",
+        "accessed": "2026-03-21"
+      },
+      {
+        "name": "HSE Asbestos-Related Disease Statistics 2025",
+        "url": "https://www.hse.gov.uk/statistics/assets/docs/asbestos-related-disease.pdf",
+        "accessed": "2026-03-21"
+      },
+      {
+        "name": "Control of Asbestos Regulations 2012",
+        "url": "https://www.legislation.gov.uk/uksi/2012/632/contents/made",
+        "accessed": "2026-03-21"
+      },
+      {
+        "name": "British Safety Council — Asbestos in the UK",
+        "url": "https://www.britsafe.org/safety-management/2025/asbestos-in-the-uk-how-the-past-inevitably-catches-up-with-us",
+        "accessed": "2026-03-21"
+      },
+      {
+        "name": "BOHS — Asbestos in Schools England",
+        "url": "https://www.bohs.org/media-resources/press-releases/detail/asbestos-schools-england-oversight-failure/",
+        "accessed": "2026-03-21"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-21"
   },
   {
     "slug": "australia",

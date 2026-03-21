@@ -103,8 +103,8 @@
     "view_country_profile": "View {country} profile →",
     "disclaimer_note": "This assessment is for awareness only. It is NOT a substitute for professional asbestos inspection.",
     "awareness_callout": "This is a general awareness tool based on construction patterns in your country and era. It is NOT an assessment of your specific building. Only a certified professional inspection can determine if asbestos is present.",
-    "find_inspector_title": "🔍 Find a certified inspector",
-    "find_inspector_desc": "The only way to confirm asbestos is a professional inspection. Visit your country's profile for local resources.",
+    "find_inspector_title": "🔍 Learn about asbestos in your country",
+    "find_inspector_desc": "View regulations, common materials, and recommended next steps for your country.",
     "actions_low": ["Conduct an annual visual inspection", "No immediate action needed if materials are undisturbed", "Keep records of any known or suspected asbestos materials"],
     "actions_moderate": ["Schedule a professional asbestos survey before any renovation", "Do not sand, drill, or disturb suspected materials", "Keep records of building condition", "Contact a licensed professional if you find damaged materials"],
     "actions_high": ["Contact a licensed asbestos assessor for a full inspection", "Do not perform any drilling, sanding, or renovation", "Seal off any visibly damaged areas temporarily", "Professional inspection is strongly advised"],
@@ -487,10 +487,10 @@
     }
   },
   "risk_levels": {
-    "low": "Low",
-    "moderate": "Moderate",
-    "high": "High",
-    "critical": "Very High"
+    "low": "Lower Probability",
+    "moderate": "Moderate Probability",
+    "high": "High Probability",
+    "critical": "Very High Probability"
   },
   "ban_status": {
     "full_ban": "Full Ban",

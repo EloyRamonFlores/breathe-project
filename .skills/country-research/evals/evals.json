@@ -1,0 +1,55 @@
+{
+  "skill_name": "country-research",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Investiga el Reino Unido (UK) para ToxinFree. Necesito el perfil completo: timeline regulatorio, historias de resistencia (especialmente Laurie Kazan-Allen y el IBAS), fuentes de exposición, empresas responsables, datos de mortalidad, estado actual, y recursos locales. Todo con fuentes verificables.",
+      "expected_output": "Un archivo Markdown estructurado con las 7 secciones del template, fuentes URL en cada dato, sin citas inventadas, con timeline desde las primeras regulaciones hasta hoy, y la historia de Laurie Kazan-Allen verificada contra fuentes reales.",
+      "files": [],
+      "expectations": [
+        "Output is a single structured Markdown file following the template",
+        "All 7 sections are present and populated",
+        "Regulatory timeline includes at least 5 dated entries with legal instrument names",
+        "At least one activism story has a verified quote with source URL",
+        "No quotes appear without a source attribution",
+        "Mortality section includes mesothelioma data with WHO or government source",
+        "Corporate section mentions Turner & Newall or Cape plc with court/legal sources",
+        "Current status section has sources from 2024-2026",
+        "Source index lists at least 10 unique URLs",
+        "Verification notes section honestly lists any data gaps"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Research Colombia for ToxinFree. I need the full country profile — especially the story of Ana Cecilia Niño and Ley 1968 (2019). Include the timeline, activism, Eternit Colombia's role, mortality data, exposure sources, what's happening now with the ban implementation, and local resources. Everything with verified sources.",
+      "expected_output": "A complete Markdown research profile for Colombia with verified data about the 2019 ban law, Ana Cecilia Niño's real story (not dramatized), Eternit Colombia's documented role, and current ban implementation status. All sourced.",
+      "files": [],
+      "expectations": [
+        "Output follows the 7-section Markdown template",
+        "Timeline includes Ley 1968 de 2019 with correct date and legal reference",
+        "Ana Cecilia Niño's story is present with factual biographical details",
+        "Any quote attributed to Ana Cecilia Niño cites a real published source",
+        "Eternit Colombia appears in corporate section with documented legal outcomes",
+        "Current status addresses post-2021 ban implementation",
+        "At least 8 unique source URLs are cited",
+        "Verification notes section exists and is honest about gaps"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Investiga Italia para ToxinFree — el caso de Casale Monferrato, Eternit, el juicio Schmidheiny, Romana Blasotti. Quiero el perfil completo con todas las secciones. Fuentes verificables para todo.",
+      "expected_output": "Complete Italy profile centered on the Casale Monferrato disaster and Eternit trial. Romana Blasotti's story verified, Schmidheiny trial documented with court references, mortality data from Italian national registry, current status of ongoing legal proceedings.",
+      "files": [],
+      "expectations": [
+        "Output follows the 7-section template",
+        "Timeline includes 1992 ban with Law 257/1992 referenced",
+        "Casale Monferrato story is documented with specific facts (factory location, period of operation)",
+        "Eternit/Schmidheiny trial documented with court dates and outcomes",
+        "Romana Blasotti's story verified with source",
+        "Mortality data cites Italian mesothelioma registry (ReNaM) or equivalent",
+        "At least 10 unique source URLs",
+        "Corporate section distinguishes between Eternit Switzerland and Eternit Italy"
+      ]
+    }
+  ]
+}

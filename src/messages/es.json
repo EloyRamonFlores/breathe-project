@@ -103,8 +103,8 @@
     "view_country_profile": "Ver perfil de {country} →",
     "disclaimer_note": "Esta evaluación es solo para concientización. NO sustituye una inspección profesional de asbesto.",
     "awareness_callout": "Esta es una herramienta de concientización general basada en los patrones de construcción de tu país y época. NO es una evaluación de tu edificio específico. Solo una inspección profesional certificada puede determinar si hay asbesto presente.",
-    "find_inspector_title": "🔍 Encuentra un inspector certificado",
-    "find_inspector_desc": "La única forma de confirmar la presencia de asbesto es una inspección profesional. Visita el perfil de tu país para recursos locales.",
+    "find_inspector_title": "🔍 Conoce sobre el asbesto en tu país",
+    "find_inspector_desc": "Consulta regulaciones, materiales comunes y los pasos recomendados para tu país.",
     "actions_low": ["Realiza una inspección visual anual", "No se requiere acción inmediata si los materiales no están perturbados", "Mantén registro de materiales con asbesto conocidos o sospechosos"],
     "actions_moderate": ["Programa una inspección profesional antes de cualquier renovación", "No lijas, perfores ni perturbes materiales sospechosos", "Mantén registros de las condiciones del edificio", "Contacta a un profesional si encuentras materiales dañados"],
     "actions_high": ["Contacta a un evaluador de asbesto certificado para una inspección completa", "No realices ningún trabajo de perforación, lijado o renovación", "Sella temporalmente las áreas visiblemente dañadas", "Se recomienda firmemente una inspección profesional"],
@@ -487,10 +487,10 @@
     }
   },
   "risk_levels": {
-    "low": "Bajo",
-    "moderate": "Moderado",
-    "high": "Alto",
-    "critical": "Muy Alto"
+    "low": "Menor Probabilidad",
+    "moderate": "Probabilidad Moderada",
+    "high": "Probabilidad Alta",
+    "critical": "Probabilidad Muy Alta"
   },
   "ban_status": {
     "full_ban": "Prohibición Total",

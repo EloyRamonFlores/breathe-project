@@ -58,13 +58,25 @@ export type Era = "pre_1940" | "1940_1960" | "1960_1980" | "1980_2000" | "post_2
 
 export type BuildingType = "residential" | "apartment" | "school" | "office" | "factory";
 
+export interface CountryOverride {
+  pre_ban: number;
+  post_ban: number;
+  ban_year: number | null;
+}
+
 export interface RiskMatrix {
+  weights: {
+    country: number;
+    era: number;
+    building: number;
+  };
   country_factor: {
     no_ban_at_construction: number;
     partial_ban_at_construction: number;
     full_ban_at_construction: number;
     unknown: number;
   };
+  country_overrides: Record<string, CountryOverride>;
   era_factor: Record<Era, number>;
   building_factor: Record<BuildingType, number>;
   thresholds: Record<RiskLevel, [number, number]>;
