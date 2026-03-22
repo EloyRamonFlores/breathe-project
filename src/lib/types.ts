@@ -7,6 +7,7 @@ export interface Source {
 export interface TimelineEvent {
   year: number;
   event: string;
+  event_es?: string;
   type: "ban" | "partial_ban" | "regulation" | "court_ruling" | "other";
   source_url: string;
 }
@@ -20,10 +21,12 @@ export interface Country {
   ban_status: "full_ban" | "partial_ban" | "no_ban" | "de_facto_ban" | "unknown";
   ban_year: number | null;
   ban_details: string;
+  ban_details_es?: string;
   exceptions: string[];
   timeline: TimelineEvent[];
   peak_usage_era: string;
   common_materials: string[];
+  common_materials_es?: string[];
   estimated_buildings_at_risk: string | null;
   mesothelioma_rate: number | null;
   mesothelioma_source_year: number | null;

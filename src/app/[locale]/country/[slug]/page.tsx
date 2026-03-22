@@ -56,9 +56,54 @@ const PRIORITY_DESCRIPTIONS: Record<string, string> = {
     "Nigeria has no asbestos ban. Asbestos-cement roofing is still widely used in construction. Check if your building contains hazardous materials.",
 };
 
-function getBanDescription(country: Country): string {
-  if (PRIORITY_DESCRIPTIONS[country.slug]) {
-    return PRIORITY_DESCRIPTIONS[country.slug];
+const PRIORITY_DESCRIPTIONS_ES: Record<string, string> = {
+  "united-states":
+    "Sí, EE.UU. prohibió el asbesto en 2024. Millones de edificios anteriores a la prohibición aún contienen materiales con asbesto. Verifica si tu hogar está en riesgo.",
+  india:
+    "India no tiene una prohibición nacional del asbesto. Es el segundo mayor usuario mundial, con millones expuestos en la construcción y manufactura. Evalúa tu edificio.",
+  china:
+    "China no tiene prohibición de asbesto y es el mayor productor mundial. Millones de edificios contienen materiales con asbesto. Evalúa tu riesgo de exposición.",
+  russia:
+    "Rusia no tiene prohibición de asbesto y extrae más de 700,000 toneladas anuales. Los edificios de todas las épocas contienen materiales con asbesto. Usa nuestra herramienta gratuita.",
+  brazil:
+    "Sí, Brasil prohibió el asbesto en 2023 tras décadas de lucha. Los edificios anteriores a la prohibición pueden contener materiales. Verifica el riesgo de tu propiedad.",
+  mexico:
+    "México no tiene una prohibición del asbesto. Millones de hogares y fábricas de 1960–2000 probablemente contienen materiales de cemento-asbesto. Verifica tu riesgo ahora.",
+  indonesia:
+    "Indonesia no tiene una prohibición del asbesto. Su uso generalizado en techos y construcción pone a millones en riesgo. Evalúa tu edificio con nuestra herramienta gratuita.",
+  "united-kingdom":
+    "Sí, el Reino Unido prohibió el asbesto en 1999. Los edificios construidos antes de 1999 pueden contenerlo. Conoce la normativa del Reino Unido y verifica el riesgo de tu propiedad.",
+  australia:
+    "Sí, Australia prohibió el asbesto en 2003. Los edificios anteriores a 2003 de la era de máximo uso (1960–1980) pueden contener materiales con asbesto. Verifica tu riesgo.",
+  japan:
+    "Sí, Japón prohibió el asbesto en 2012. Los edificios construidos antes de la prohibición pueden contener cemento-asbesto, baldosas y materiales de aislamiento.",
+  "south-korea":
+    "Sí, Corea del Sur prohibió el asbesto en 2009. Los edificios más antiguos del boom constructivo de 1970–1990 pueden contener materiales con asbesto.",
+  germany:
+    "Sí, Alemania prohibió el asbesto en 1993, siendo uno de los primeros países en hacerlo. Los edificios anteriores a 1993 siguen siendo un riesgo. Conoce la ley alemana sobre asbesto.",
+  "south-africa":
+    "Sí, Sudáfrica prohibió el asbesto en 2008. Como antiguo gran productor, el país tiene un legado de edificios y sitios contaminados. Verifica tu riesgo.",
+  canada:
+    "Sí, Canadá prohibió el asbesto en 2018, a pesar de ser un antiguo gran productor. Los edificios anteriores a 2018, especialmente de la era 1960–1980, pueden contenerlo.",
+  nigeria:
+    "Nigeria no tiene una prohibición del asbesto. Las cubiertas de cemento-asbesto aún se usan ampliamente en la construcción. Verifica si tu edificio contiene materiales peligrosos.",
+};
+
+function getBanDescription(country: Country, locale: string): string {
+  const priorityMap =
+    locale === "es" ? PRIORITY_DESCRIPTIONS_ES : PRIORITY_DESCRIPTIONS;
+  if (priorityMap[country.slug]) {
+    return priorityMap[country.slug];
+  }
+  if (locale === "es") {
+    const banText: Record<Country["ban_status"], string> = {
+      full_ban: `${country.name} prohibió el asbesto en ${country.ban_year}. Los edificios más antiguos pueden contener materiales con asbesto. Usa nuestra herramienta gratuita para evaluar tu propiedad.`,
+      partial_ban: `El asbesto está parcialmente regulado en ${country.name}. Algunos usos aún están permitidos. Conoce la normativa y verifica el riesgo de tu edificio.`,
+      no_ban: `No existe una prohibición nacional del asbesto en ${country.name}. Los edificios de todas las épocas pueden contener materiales con asbesto. Usa nuestra herramienta gratuita para evaluar tu propiedad.`,
+      de_facto_ban: `El uso del asbesto ha cesado efectivamente en ${country.name}. Los materiales legados en edificios antiguos pueden representar un riesgo. Verifica tu propiedad ahora.`,
+      unknown: `El estado regulatorio del asbesto en ${country.name} no está claro. Actúa con precaución en edificios más antiguos y utiliza nuestra herramienta de evaluación.`,
+    };
+    return banText[country.ban_status];
   }
   const banText: Record<Country["ban_status"], string> = {
     full_ban: `${country.name} banned asbestos in ${country.ban_year}. Older buildings may still contain asbestos materials. Use our free risk checker to assess your property.`,
@@ -70,7 +115,16 @@ function getBanDescription(country: Country): string {
   return banText[country.ban_status];
 }
 
-function getCountryTitle(country: Country): string {
+function getCountryTitle(country: Country, locale: string): string {
+  if (locale === "es") {
+    if (country.ban_status === "full_ban" && country.ban_year) {
+      return `¿Está prohibido el asbesto en ${country.name}? Prohibido en ${country.ban_year} | ToxinFree`;
+    }
+    if (country.ban_status === "no_ban") {
+      return `¿Está prohibido el asbesto en ${country.name}? Sin prohibición nacional | ToxinFree`;
+    }
+    return `¿Está prohibido el asbesto en ${country.name}? | ToxinFree`;
+  }
   if (country.ban_status === "full_ban" && country.ban_year) {
     return `Is Asbestos Banned in ${country.name}? Banned ${country.ban_year} | ToxinFree`;
   }
@@ -85,15 +139,15 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const country = (countries as Country[]).find((c) => c.slug === slug);
 
   if (!country) {
     return { title: "Country Not Found | ToxinFree" };
   }
 
-  const title = getCountryTitle(country);
-  const description = getBanDescription(country);
+  const title = getCountryTitle(country, locale);
+  const description = getBanDescription(country, locale);
 
   return {
     title,
@@ -171,16 +225,29 @@ export default async function CountryPage({
   const pillClass = getBanStatusPillClass(country.ban_status);
   const whatToDoItems = t.raw(getWhatToDoKey(country.ban_status)) as string[];
 
+  const banDisplayDetails =
+    locale === "es"
+      ? (country.ban_details_es ?? country.ban_details)
+      : country.ban_details;
+
+  const displayMaterials =
+    locale === "es"
+      ? (country.common_materials_es ?? country.common_materials)
+      : country.common_materials;
+
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
       {
         "@type": "Question",
-        name: `Is asbestos banned in ${country.name}?`,
+        name:
+          locale === "es"
+            ? `¿Está prohibido el asbesto en ${country.name}?`
+            : `Is asbestos banned in ${country.name}?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: getBanDescription(country),
+          text: getBanDescription(country, locale),
         },
       },
     ],
@@ -215,9 +282,9 @@ export default async function CountryPage({
             </div>
           </div>
 
-          {country.ban_details && (
+          {banDisplayDetails && (
             <p className="text-text-secondary text-sm sm:text-base leading-relaxed mt-4 border-l-2 border-bg-tertiary pl-4">
-              {country.ban_details}
+              {banDisplayDetails}
             </p>
           )}
         </header>
@@ -309,7 +376,7 @@ export default async function CountryPage({
         </section>
 
         {/* ── Common Materials ── */}
-        {country.common_materials.length > 0 && (
+        {displayMaterials.length > 0 && (
           <section className="mb-10" aria-labelledby="materials-heading">
             <h2
               id="materials-heading"
@@ -321,7 +388,7 @@ export default async function CountryPage({
               {t("common_materials_intro")}
             </p>
             <div className="flex flex-wrap gap-2">
-              {country.common_materials.map((material) => (
+              {displayMaterials.map((material) => (
                 <span
                   key={material}
                   className="inline-flex items-center rounded-full bg-bg-secondary border border-bg-tertiary px-3 py-1.5 text-sm text-text-secondary"

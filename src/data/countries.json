@@ -8,6 +8,7 @@
     "ban_status": "full_ban",
     "ban_year": 2024,
     "ban_details": "EPA final rule banning chrysotile asbestos effective 2024 under TSCA Section 6(a), with phased compliance timelines",
+    "ban_details_es": "Norma final de la EPA que prohíbe el uso continuo del asbesto crisotilo bajo la Sección 6(a) de la TSCA, efectiva en 2024, con plazos de cumplimiento escalonados.",
     "exceptions": [
       "legacy uses under phase-out schedule"
     ],
@@ -15,24 +16,28 @@
       {
         "year": 1989,
         "event": "EPA issues Asbestos Ban and Phase-Out Rule under TSCA — later overturned by 5th Circuit Court (1991)",
+        "event_es": "La EPA emite la Norma de Prohibición y Eliminación Gradual del Asbesto bajo la TSCA — posteriormente anulada por el Tribunal del Quinto Circuito (1991)",
         "type": "ban",
         "source_url": "https://www.epa.gov/asbestos"
       },
       {
         "year": 2016,
         "event": "Frank R. Lautenberg Chemical Safety Act reforms TSCA, giving EPA new authority over existing chemicals including asbestos",
+        "event_es": "La Ley de Seguridad de Sustancias Químicas Frank R. Lautenberg reforma la TSCA, otorgando a la EPA nueva autoridad sobre químicos existentes, incluyendo el asbesto",
         "type": "regulation",
         "source_url": "https://www.epa.gov/asbestos"
       },
       {
         "year": 2019,
         "event": "EPA Significant New Use Rule (SNUR) prevents reintroduction of asbestos products discontinued since 1989",
+        "event_es": "La Norma de Nuevos Usos Significativos (SNUR) de la EPA impide la reintroducción de productos de asbesto descontinuados desde 1989",
         "type": "regulation",
         "source_url": "https://www.epa.gov/asbestos"
       },
       {
         "year": 2024,
         "event": "EPA Final Rule: comprehensive ban on ongoing uses of chrysotile asbestos under TSCA Section 6(a)",
+        "event_es": "Norma Final de la EPA: prohibición integral del uso continuo del asbesto crisotilo bajo la Sección 6(a) de la TSCA",
         "type": "ban",
         "source_url": "https://www.epa.gov/asbestos"
       }
@@ -45,6 +50,14 @@
       "joint compound",
       "roof felt underlayment",
       "cement siding"
+    ],
+    "common_materials_es": [
+      "baldosas de vinilo-asbesto",
+      "aislamiento de tuberías",
+      "revestimiento texturizado de cielorraso",
+      "masilla de juntas",
+      "fieltro de cubierta",
+      "revestimiento de cemento"
     ],
     "estimated_buildings_at_risk": "~30 million",
     "mesothelioma_rate": 10.2,
@@ -73,35 +86,41 @@
     "ban_status": "no_ban",
     "ban_year": null,
     "ban_details": "No national ban. World's largest asbestos importer, primarily chrysotile for asbestos-cement roofing and construction products.",
+    "ban_details_es": "Sin prohibición nacional. El mayor importador mundial de asbesto, principalmente crisotilo para techos de cemento-asbesto y productos de construcción.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1983,
         "event": "WHO publishes evidence on chrysotile health hazards; India continues large-scale asbestos imports",
+        "event_es": "La OMS publica evidencia sobre los riesgos del crisotilo para la salud; India continúa importando asbesto a gran escala",
         "type": "other",
         "source_url": "https://www.who.int/news-room/fact-sheets/detail/asbestos"
       },
       {
         "year": 2011,
         "event": "Collegium Ramazzini files Supreme Court petition requesting a national asbestos ban; case remains pending",
+        "event_es": "El Collegium Ramazzini presenta una petición ante la Corte Suprema solicitando una prohibición nacional del asbesto; el caso permanece pendiente",
         "type": "court_ruling",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2013,
         "event": "Chrysotile institute lobbying intensifies; India-Russia trade in chrysotile fibers grows significantly",
+        "event_es": "El cabildeo del Instituto del Crisotilo se intensifica; el comercio de fibras de crisotilo entre India y Rusia crece significativamente",
         "type": "other",
         "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
       },
       {
         "year": 2018,
         "event": "Indian government formally declines to ban chrysotile, citing economic concerns in cement and construction industry",
+        "event_es": "El gobierno indio rechaza formalmente la prohibición del crisotilo, citando preocupaciones económicas en la industria del cemento y la construcción",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2023,
         "event": "India remains world's largest asbestos importer at approximately 300,000 metric tons per year; no ban timeline announced",
+        "event_es": "India sigue siendo el mayor importador mundial de asbesto, con aproximadamente 300,000 toneladas métricas por año; no se ha anunciado un plazo de prohibición",
         "type": "other",
         "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
       }
@@ -112,6 +131,12 @@
       "brake linings",
       "gaskets",
       "asbestos-cement water pipes"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "forros de frenos",
+      "empaquetaduras",
+      "tuberías de agua de cemento-asbesto"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
@@ -140,35 +165,41 @@
     "ban_status": "no_ban",
     "ban_year": null,
     "ban_details": "No comprehensive national ban. Chrysotile used extensively in cement products, friction materials, and construction. Domestic production in Xinjiang province.",
+    "ban_details_es": "Sin prohibición nacional integral. El crisotilo se utiliza extensamente en productos de cemento, materiales de fricción y construcción. Producción doméstica en la provincia de Xinjiang.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1970,
         "event": "Rapid industrialization drives large-scale asbestos-cement construction across all provinces",
+        "event_es": "La rápida industrialización impulsa la construcción a gran escala con cemento-asbesto en todas las provincias",
         "type": "other",
         "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
       },
       {
         "year": 2001,
         "event": "Some provinces begin restricting sprayed asbestos applications in public buildings",
+        "event_es": "Algunas provincias comienzan a restringir las aplicaciones de asbesto proyectado en edificios públicos",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2012,
         "event": "China becomes world's top chrysotile consumer; Xinjiang province produces chrysotile domestically",
+        "event_es": "China se convierte en el mayor consumidor mundial de crisotilo; la provincia de Xinjiang produce crisotilo doméstico",
         "type": "other",
         "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
       },
       {
         "year": 2019,
         "event": "Partial import restrictions on amphibole fibers (crocidolite, amosite) introduced; chrysotile remains unrestricted",
+        "event_es": "Se introducen restricciones parciales de importación para fibras anfíbolas (crocidolita, amosita); el crisotilo permanece sin restricciones",
         "type": "partial_ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2024,
         "event": "No comprehensive ban in place; chrysotile still used in friction products, cement goods, and construction",
+        "event_es": "Sin prohibición integral vigente; el crisotilo sigue utilizándose en productos de fricción, artículos de cemento y construcción",
         "type": "other",
         "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
       }
@@ -180,6 +211,13 @@
       "brake linings",
       "friction materials",
       "asbestos gaskets"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "forros de frenos",
+      "materiales de fricción",
+      "empaquetaduras de asbesto"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
@@ -208,35 +246,41 @@
     "ban_status": "no_ban",
     "ban_year": null,
     "ban_details": "No ban on chrysotile asbestos. World's largest producer via Uralasbest (Asbest, Ural region). Russia actively promotes 'controlled use' internationally.",
+    "ban_details_es": "Sin prohibición del asbesto crisotilo. Mayor productor mundial a través de Uralasbest (Asbest, región de los Urales). Rusia promueve activamente el 'uso controlado' a nivel internacional.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1950,
         "event": "Soviet-era expansion of chrysotile mining in Ural mountains; Uralasbest becomes world's largest asbestos mine",
+        "event_es": "Expansión soviética de la minería de crisotilo en los montes Urales; Uralasbest se convierte en la mina de asbesto más grande del mundo",
         "type": "other",
         "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
       },
       {
         "year": 1990,
         "event": "Russia inherits world's largest chrysotile reserves and production infrastructure after USSR dissolution",
+        "event_es": "Rusia hereda las mayores reservas de crisotilo del mundo y la infraestructura de producción tras la disolución de la URSS",
         "type": "other",
         "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
       },
       {
         "year": 2012,
         "event": "Russian chrysotile industry launches international 'controlled use' lobbying campaign to oppose global bans",
+        "event_es": "La industria rusa del crisotilo lanza una campaña internacional de cabildeo por el 'uso controlado' para oponerse a las prohibiciones globales",
         "type": "other",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2019,
         "event": "Russia exports approximately 300,000 metric tons per year, primarily targeting Southeast Asia, Middle East, and Africa",
+        "event_es": "Rusia exporta aproximadamente 300,000 toneladas métricas por año, principalmente hacia el Sudeste Asiático, Oriente Medio y África",
         "type": "other",
         "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
       },
       {
         "year": 2024,
         "event": "No ban in place; Uralasbest remains operational as world's largest open-pit chrysotile mine",
+        "event_es": "Sin prohibición vigente; Uralasbest sigue operando como la mayor mina de crisotilo a cielo abierto del mundo",
         "type": "other",
         "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
       }
@@ -248,6 +292,13 @@
       "pipe insulation",
       "asbestos-cement water pipes",
       "asbestos gaskets"
+    ],
+    "common_materials_es": [
+      "láminas planas de cemento-asbesto",
+      "láminas de techo de cemento-asbesto",
+      "aislamiento de tuberías",
+      "tuberías de agua de cemento-asbesto",
+      "empaquetaduras de asbesto"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
@@ -276,35 +327,41 @@
     "ban_status": "full_ban",
     "ban_year": 2017,
     "ban_details": "Federal Supreme Court (STF) ruled chrysotile use unconstitutional in 2017, establishing a nationwide prohibition enforced through federal and state legislation.",
+    "ban_details_es": "El Tribunal Supremo Federal (STF) declaró inconstitucional el uso del crisotilo en 2017, estableciendo una prohibición nacional aplicada mediante legislación federal y estatal.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1995,
         "event": "Sao Paulo state legislature passes first state-level restrictions on chrysotile use and manufacture",
+        "event_es": "La legislatura del estado de São Paulo aprueba las primeras restricciones estatales sobre el uso y fabricación de crisotilo",
         "type": "partial_ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2001,
         "event": "Federal Supreme Court affirms state authority to ban asbestos; six states implement bans",
+        "event_es": "El Tribunal Supremo Federal confirma la autoridad estatal para prohibir el asbesto; seis estados implementan prohibiciones",
         "type": "court_ruling",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2012,
         "event": "STF consolidates multiple asbestos ban cases; chrysotile industry files constitutional challenge to state bans",
+        "event_es": "El STF consolida múltiples casos de prohibición de asbesto; la industria del crisotilo presenta un desafío constitucional a las prohibiciones estatales",
         "type": "court_ruling",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2017,
         "event": "Federal Supreme Court rules chrysotile asbestos violates constitutional right to health — nationwide prohibition",
+        "event_es": "El Tribunal Supremo Federal declara que el asbesto crisotilo viola el derecho constitucional a la salud — prohibición en todo el país",
         "type": "ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2023,
         "event": "Federal enforcement strengthened; Eternit plant closures completed; chrysotile imports cease",
+        "event_es": "Fortalecimiento de la aplicación federal; cierres de plantas Eternit completados; las importaciones de crisotilo cesan",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       }
@@ -315,6 +372,12 @@
       "asbestos-cement flat sheets",
       "asbestos-cement water pipes",
       "brake linings"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto",
+      "forros de frenos"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
@@ -338,35 +401,41 @@
     "ban_status": "no_ban",
     "ban_year": null,
     "ban_details": "No comprehensive federal ban on chrysotile. Crocidolite and amosite banned in 2004. Chrysotile still legally imported for friction products. Occupational exposure limits set in 2007.",
+    "ban_details_es": "No existe una prohibición federal integral del crisotilo. La crocidolita y la amosita fueron prohibidas en 2004. El crisotilo aún se importa legalmente para productos de fricción. Los límites de exposición ocupacional se establecieron en 2007.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1990,
         "event": "Asbestos use declines due to economic shifts and reduced domestic construction activity",
+        "event_es": "El uso del asbesto disminuye debido a cambios económicos y menor actividad en la construcción doméstica",
         "type": "other",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2004,
         "event": "Crocidolite (blue asbestos) and amosite (brown asbestos) formally prohibited; chrysotile remains legal",
+        "event_es": "La crocidolita (asbesto azul) y la amosita (asbesto café) quedan formalmente prohibidas; el crisotilo sigue siendo legal",
         "type": "partial_ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2007,
         "event": "NOM-010-STPS regulations establish occupational exposure limits for asbestos fibers in workplaces",
+        "event_es": "Las regulaciones NOM-010-STPS establecen límites de exposición ocupacional a fibras de asbesto en los centros de trabajo",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2016,
         "event": "Updated environmental regulations tighten asbestos handling, transport, and disposal requirements",
+        "event_es": "Regulaciones ambientales actualizadas endurecen los requisitos de manejo, transporte y eliminación del asbesto",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2024,
         "event": "No comprehensive ban on chrysotile; small quantities still imported for automotive friction products",
+        "event_es": "Sin prohibición integral del crisotilo; pequeñas cantidades aún se importan para productos de fricción automotriz",
         "type": "other",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       }
@@ -377,6 +446,12 @@
       "asbestos-cement water pipes",
       "vinyl-asbestos floor tiles",
       "brake linings"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto",
+      "baldosas de vinilo-asbesto",
+      "forros de frenos"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
@@ -400,35 +475,41 @@
     "ban_status": "no_ban",
     "ban_year": null,
     "ban_details": "No national ban. Asbestos-cement roofing sheets remain widely used in residential and agricultural construction across rural areas.",
+    "ban_details_es": "Sin prohibición nacional. Las láminas de techo de cemento-asbesto siguen siendo ampliamente utilizadas en la construcción residencial y agrícola en zonas rurales.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1975,
         "event": "Asbestos-cement sheet manufacturing established; corrugated roofing becomes dominant construction material",
+        "event_es": "Se establece la fabricación de láminas de cemento-asbesto; las cubiertas onduladas se convierten en el material de construcción dominante",
         "type": "other",
         "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
       },
       {
         "year": 1990,
         "event": "Asbestos-cement sheets estimated to cover 60-70% of rural housing roofing nationwide",
+        "event_es": "Se estima que las láminas de cemento-asbesto cubren del 60 al 70% de los techos de viviendas rurales en todo el país",
         "type": "other",
         "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
       },
       {
         "year": 2006,
         "event": "No national regulatory framework; Ministry of Health begins internal review of asbestos health impacts",
+        "event_es": "Sin marco regulatorio nacional; el Ministerio de Salud inicia una revisión interna sobre los impactos del asbesto en la salud",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2015,
         "event": "WHO Indonesia office publishes health burden estimate; government acknowledges occupational exposure issue",
+        "event_es": "La oficina de la OMS en Indonesia publica una estimación de la carga de enfermedad; el gobierno reconoce el problema de la exposición ocupacional",
         "type": "other",
         "source_url": "https://www.who.int/news-room/fact-sheets/detail/asbestos"
       },
       {
         "year": 2024,
         "event": "No ban in place; Indonesia remains one of Southeast Asia's largest asbestos consumers",
+        "event_es": "Sin prohibición vigente; Indonesia sigue siendo uno de los mayores consumidores de asbesto del Sudeste Asiático",
         "type": "other",
         "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
       }
@@ -438,6 +519,11 @@
       "asbestos-cement roofing sheets",
       "asbestos-cement flat sheets",
       "asbestos-cement water pipes"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
@@ -466,71 +552,83 @@
     "ban_status": "full_ban",
     "ban_year": 1999,
     "ban_details": "Complete ban on all forms of asbestos (including chrysotile) under the Asbestos (Prohibitions) (Amendment) Regulations 1999, effective 24 November 1999 — five years ahead of the EU-wide ban. Currently governed by the Control of Asbestos Regulations 2012 (CAR 2012), which establishes a criminal 'duty to manage' asbestos in non-domestic premises.",
+    "ban_details_es": "Prohibición total de todos los tipos de asbesto (incluyendo el crisotilo) bajo las Regulaciones de Asbesto (Prohibiciones) (Enmienda) de 1999, en vigor desde el 24 de noviembre de 1999 — cinco años antes de la prohibición a nivel europeo. Actualmente rige el Reglamento de Control del Asbesto 2012 (CAR 2012), que establece la obligación legal de gestionar el asbesto en locales no domésticos.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1924,
         "event": "Nellie Kershaw, textile worker at Turner Brothers Asbestos in Rochdale, dies of pulmonary asbestosis — first documented asbestos death in the UK. Dr. W.E. Cooke publishes the case in the BMJ in 1927, coining the term 'pulmonary asbestosis'",
+        "event_es": "Nellie Kershaw, trabajadora textil en Turner Brothers Asbestos en Rochdale, fallece de asbestosis pulmonar — primera muerte documentada por asbesto en el Reino Unido. El Dr. W.E. Cooke publica el caso en el BMJ en 1927, acuñando el término 'asbestosis pulmonar'",
         "type": "other",
         "source_url": "https://pubmed.ncbi.nlm.nih.gov/1825122/"
       },
       {
         "year": 1931,
         "event": "Asbestos Industry Regulations 1931 (SI 1931/1140) — first asbestos-specific regulations. Required exhaust ventilation in factories and prohibited employment of young people in asbestos manufacturing",
+        "event_es": "Reglamentos de la Industria del Asbesto de 1931 (SI 1931/1140) — primeras regulaciones específicas sobre el asbesto. Exigían ventilación de extracción en fábricas y prohibían el empleo de jóvenes en la manufactura del asbesto",
         "type": "regulation",
         "source_url": "https://www.legislation.gov.uk/uksro/1931/344/contents/made"
       },
       {
         "year": 1969,
         "event": "The Asbestos Regulations 1969 (SI 1969/690) expand protections beyond asbestos factories to all factories, building sites, and engineering construction. Introduced first quantitative exposure limits",
+        "event_es": "Los Reglamentos sobre el Asbesto de 1969 (SI 1969/690) amplían las protecciones más allá de las fábricas de asbesto a todas las fábricas, obras de construcción y proyectos de ingeniería. Se introducen los primeros límites cuantitativos de exposición",
         "type": "regulation",
         "source_url": "https://www.legislation.gov.uk/id/uksi/1969/690"
       },
       {
         "year": 1978,
         "event": "Nancy Tait founds the Society for the Prevention of Asbestos and Industrial Diseases (SPAID) — the world's first asbestos victims' pressure group, after her husband died of mesothelioma in 1968",
+        "event_es": "Nancy Tait funda la Sociedad para la Prevención del Asbesto y las Enfermedades Industriales (SPAID) — el primer grupo de presión de víctimas del asbesto del mundo, tras la muerte de su esposo por mesotelioma en 1968",
         "type": "other",
         "source_url": "https://ibasecretariat.org/mem_nancy_tait.php"
       },
       {
         "year": 1985,
         "event": "Asbestos (Prohibitions) Regulations 1985 ban import and use of blue asbestos (crocidolite) and brown asbestos (amosite). White asbestos (chrysotile) — 95% of use — remains legal",
+        "event_es": "Las Regulaciones de Asbesto (Prohibiciones) de 1985 prohíben la importación y el uso del asbesto azul (crocidolita) y el asbesto café (amosita). El asbesto blanco (crisotilo) — el 95% del uso — sigue siendo legal",
         "type": "ban",
         "source_url": "https://www.legislation.gov.uk/uksi/1985/910/made"
       },
       {
         "year": 1987,
         "event": "Control of Asbestos at Work Regulations 1987 (SI 1987/2115) introduce statutory control procedures for worker exposure, protective clothing requirements, and workplace designation as 'asbestos areas'",
+        "event_es": "Los Reglamentos de Control del Asbesto en el Trabajo de 1987 (SI 1987/2115) introducen procedimientos legales de control de la exposición de trabajadores, requisitos de ropa protectora y designación de lugares de trabajo como 'zonas de asbesto'",
         "type": "regulation",
         "source_url": "https://www.legislation.gov.uk/uksi/1987/2115/made"
       },
       {
         "year": 1995,
         "event": "June Hancock wins landmark case against J.W. Roberts Ltd (Turner & Newall) — first UK case establishing environmental exposure liability for a mesothelioma victim who never worked with asbestos",
+        "event_es": "June Hancock gana un caso histórico contra J.W. Roberts Ltd (Turner & Newall) — primer caso en el Reino Unido que establece responsabilidad por exposición ambiental para una víctima de mesotelioma que nunca trabajó con asbesto",
         "type": "court_ruling",
         "source_url": "https://www.irwinmitchell.com/news-and-insights/newsandmedia/2020/october/legacy-of-remarkable-leeds-woman-june-hancock-lives-on-through-research-into-asbestos-cancer"
       },
       {
         "year": 1999,
         "event": "Asbestos (Prohibitions) (Amendment) Regulations 1999 (SI 1999/2373) — total ban on all forms of asbestos including chrysotile, effective 24 November 1999. Five years ahead of the EU-wide ban",
+        "event_es": "Las Regulaciones de Asbesto (Prohibiciones) (Enmienda) de 1999 (SI 1999/2373) — prohibición total de todos los tipos de asbesto incluyendo el crisotilo, en vigor desde el 24 de noviembre de 1999. Cinco años antes de la prohibición de la UE",
         "type": "ban",
         "source_url": "https://www.legislation.gov.uk/uksi/1999/2373/made"
       },
       {
         "year": 2006,
         "event": "Control of Asbestos Regulations 2006 (SI 2006/2739) consolidate previous regulations. Increased emphasis on training for all workers who may encounter asbestos",
+        "event_es": "Los Reglamentos de Control del Asbesto de 2006 (SI 2006/2739) consolidan las regulaciones anteriores. Mayor énfasis en la formación de todos los trabajadores que puedan encontrarse con asbesto",
         "type": "regulation",
         "source_url": "https://www.legislation.gov.uk/uksi/2006/2739/made"
       },
       {
         "year": 2012,
         "event": "Control of Asbestos Regulations 2012 (SI 2012/632) — current primary regulation. Establishes criminal 'duty to manage' asbestos in non-domestic premises. Non-compliance: unlimited fine and/or 2 years imprisonment",
+        "event_es": "Los Reglamentos de Control del Asbesto de 2012 (SI 2012/632) — regulación primaria vigente. Establece la obligación penal de gestionar el asbesto en locales no domésticos. Incumplimiento: multa ilimitada y/o 2 años de prisión",
         "type": "regulation",
         "source_url": "https://www.legislation.gov.uk/uksi/2012/632/regulation/4"
       },
       {
         "year": 2026,
         "event": "HSE concludes public consultation (January 9, 2026) on proposed changes to CAR 2012, focusing on improving survey quality and surveyor competence",
+        "event_es": "El HSE concluye una consulta pública (9 de enero de 2026) sobre cambios propuestos al CAR 2012, centrados en mejorar la calidad de los estudios y la competencia de los inspectores",
         "type": "regulation",
         "source_url": "https://consultations.hse.gov.uk/hse/proposals-control-of-asbestos-regs-2012/"
       }
@@ -544,6 +642,15 @@
       "vinyl-asbestos floor tiles",
       "brake linings (Capasco brand)",
       "roof felt underlayment"
+    ],
+    "common_materials_es": [
+      "revestimientos texturizados Artex",
+      "tablero aislante de asbesto (AIB)",
+      "techos y láminas planas de cemento-asbesto",
+      "revestimiento de tuberías y aislamiento",
+      "baldosas de vinilo-asbesto",
+      "forros de frenos (marca Capasco)",
+      "fieltro de cubierta"
     ],
     "estimated_buildings_at_risk": "80-90% of pre-2000 buildings; 80-85% of state schools; 90%+ of NHS hospital trusts",
     "mesothelioma_rate": 35.4,
@@ -592,35 +699,41 @@
     "ban_status": "full_ban",
     "ban_year": 2004,
     "ban_details": "Complete ban on the manufacture, use, reuse, import, transport, storage, and sale of all forms of asbestos effective January 1, 2004.",
+    "ban_details_es": "Prohibición total de la fabricación, uso, reutilización, importación, transporte, almacenamiento y venta de todas las formas de asbesto, efectiva desde el 1 de enero de 2004.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1978,
         "event": "Wittenoom crocidolite mine (Western Australia) closes after over 5,000 worker illness cases documented",
+        "event_es": "La mina de crocidolita de Wittenoom (Australia Occidental) cierra tras documentarse más de 5,000 casos de enfermedad entre los trabajadores",
         "type": "other",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 1986,
         "event": "Crocidolite (blue asbestos) banned nationwide; major mining operations cease",
+        "event_es": "La crocidolita (asbesto azul) es prohibida en todo el país; las principales operaciones mineras cesan",
         "type": "ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2003,
         "event": "Safe Work Australia phases out remaining asbestos product categories ahead of full ban",
+        "event_es": "Safe Work Australia elimina gradualmente las categorías restantes de productos de asbesto antes de la prohibición total",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2004,
         "event": "Complete ban effective January 1, 2004: all asbestos manufacture, import, use, and sale prohibited",
+        "event_es": "Prohibición total efectiva desde el 1 de enero de 2004: se prohíbe toda fabricación, importación, uso y venta de asbesto",
         "type": "ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2014,
         "event": "Asbestos Safety and Eradication Agency (ASEA) established with dedicated federal mandate for remediation",
+        "event_es": "Se establece la Agencia de Seguridad y Erradicación del Asbesto (ASEA) con un mandato federal dedicado a la remediación",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       }
@@ -632,6 +745,13 @@
       "pipe insulation",
       "vinyl-asbestos floor tiles",
       "asbestos insulating board"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "aislamiento de tuberías",
+      "baldosas de vinilo-asbesto",
+      "tablero aislante de asbesto"
     ],
     "estimated_buildings_at_risk": "~1 in 3 Australian homes built before 1990",
     "mesothelioma_rate": 31.0,
@@ -655,35 +775,41 @@
     "ban_status": "full_ban",
     "ban_year": 2006,
     "ban_details": "Complete ban on all asbestos including chrysotile effective 2006 under the Industrial Safety and Health Act. Following the Kubota Shock (2005), aggressive removal programs launched.",
+    "ban_details_es": "Prohibición total de todo tipo de asbesto incluido el crisotilo, efectiva en 2006 bajo la Ley de Seguridad e Higiene Industrial. Tras el 'shock de Kubota' (2005), se lanzaron programas agresivos de remoción.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1975,
         "event": "Ministry of Labour restricts sprayed asbestos applications in construction",
+        "event_es": "El Ministerio de Trabajo restringe las aplicaciones de asbesto proyectado en la construcción",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 1995,
         "event": "Crocidolite and amosite banned; chrysotile still in widespread use across construction sector",
+        "event_es": "Se prohíben la crocidolita y la amosita; el crisotilo sigue en uso generalizado en el sector de la construcción",
         "type": "partial_ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2004,
         "event": "Near-total ban enacted under Industrial Safety and Health Act, with narrow exceptions",
+        "event_es": "Se promulga una prohibición casi total bajo la Ley de Seguridad e Higiene Industrial, con excepciones limitadas",
         "type": "ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2006,
         "event": "Complete ban on all asbestos products including chrysotile; all exceptions removed",
+        "event_es": "Prohibición total de todos los productos de asbesto incluyendo el crisotilo; se eliminan todas las excepciones",
         "type": "ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2008,
         "event": "Kubota Shock aftermath: landmark corporate liability ruling drives nationwide asbestos removal programs",
+        "event_es": "Consecuencias del shock de Kubota: sentencia histórica de responsabilidad corporativa impulsa programas nacionales de remoción de asbesto",
         "type": "court_ruling",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       }
@@ -695,6 +821,13 @@
       "spray-applied fireproofing",
       "pipe insulation",
       "asbestos insulating board"
+    ],
+    "common_materials_es": [
+      "láminas planas de cemento-asbesto",
+      "láminas de techo de cemento-asbesto",
+      "ignifugación proyectada",
+      "aislamiento de tuberías",
+      "tablero aislante de asbesto"
     ],
     "estimated_buildings_at_risk": "~280,000 buildings",
     "mesothelioma_rate": 9.1,
@@ -718,35 +851,41 @@
     "ban_status": "full_ban",
     "ban_year": 2009,
     "ban_details": "Complete ban on all asbestos effective January 1, 2009 under amendments to the Industrial Safety and Health Act. Asbestos Safety Management Act enacted in 2011.",
+    "ban_details_es": "Prohibición total de todo tipo de asbesto efectiva desde el 1 de enero de 2009 bajo enmiendas a la Ley de Seguridad e Higiene Industrial. La Ley de Gestión de la Seguridad del Asbesto fue promulgada en 2011.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1990,
         "event": "Occupational Safety and Health Act sets first asbestos exposure limits for workers",
+        "event_es": "La Ley de Seguridad y Salud Ocupacional establece los primeros límites de exposición al asbesto para los trabajadores",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 1997,
         "event": "Crocidolite and amosite banned; restrictions on chrysotile significantly tightened",
+        "event_es": "Se prohíben la crocidolita y la amosita; las restricciones al crisotilo se endurecen significativamente",
         "type": "partial_ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2007,
         "event": "Government announces full phase-out timeline for all remaining chrysotile asbestos uses",
+        "event_es": "El gobierno anuncia el calendario de eliminación total de todos los usos restantes de asbesto crisotilo",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2009,
         "event": "Complete ban on all asbestos products effective January 1, 2009",
+        "event_es": "Prohibición total de todos los productos de asbesto efectiva desde el 1 de enero de 2009",
         "type": "ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2011,
         "event": "Asbestos Safety Management Act establishes national registry of asbestos-containing buildings",
+        "event_es": "La Ley de Gestión de la Seguridad del Asbesto establece un registro nacional de edificios con materiales que contienen asbesto",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       }
@@ -758,6 +897,13 @@
       "brake linings",
       "friction materials",
       "pipe insulation"
+    ],
+    "common_materials_es": [
+      "láminas planas de cemento-asbesto",
+      "láminas de techo de cemento-asbesto",
+      "forros de frenos",
+      "materiales de fricción",
+      "aislamiento de tuberías"
     ],
     "estimated_buildings_at_risk": "~200,000 buildings",
     "mesothelioma_rate": 4.3,
@@ -781,35 +927,41 @@
     "ban_status": "full_ban",
     "ban_year": 1993,
     "ban_details": "Complete ban on all asbestos under Chemikalienverbot-Verordnung (ChemVerbotsV) in 1993. One of the earliest comprehensive bans in Europe.",
+    "ban_details_es": "Prohibición total de todo tipo de asbesto bajo la Chemikalienverbot-Verordnung (ChemVerbotsV) en 1993. Una de las prohibiciones integrales más tempranas en Europa.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1979,
         "event": "First restrictions on sprayed asbestos in public buildings introduced under VDI guidelines",
+        "event_es": "Se introducen las primeras restricciones al asbesto proyectado en edificios públicos bajo las directrices VDI",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 1981,
         "event": "Crocidolite (blue asbestos) banned from manufacture and use under Gefahrstoffverordnung",
+        "event_es": "La crocidolita (asbesto azul) queda prohibida para su fabricación y uso bajo la Gefahrstoffverordnung",
         "type": "partial_ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 1990,
         "event": "Gefahrstoffverordnung broadly restricts most asbestos product categories",
+        "event_es": "La Gefahrstoffverordnung restringe ampliamente la mayoría de las categorías de productos de asbesto",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 1993,
         "event": "Chemikalienverbot-Verordnung: complete ban on all asbestos — Germany among first EU nations to do so",
+        "event_es": "Chemikalienverbot-Verordnung: prohibición total de todo tipo de asbesto — Alemania entre las primeras naciones de la UE en hacerlo",
         "type": "ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2003,
         "event": "EU Directive 1999/77/EC bans chrysotile across all member states, harmonizing and reinforcing German law",
+        "event_es": "La Directiva de la UE 1999/77/CE prohíbe el crisotilo en todos los estados miembros, armonizando y reforzando la ley alemana",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       }
@@ -821,6 +973,13 @@
       "asbestos-cement flat sheets",
       "vinyl-asbestos floor tiles",
       "spray-applied fireproofing"
+    ],
+    "common_materials_es": [
+      "tablero aislante de asbesto",
+      "aislamiento de tuberías",
+      "láminas planas de cemento-asbesto",
+      "baldosas de vinilo-asbesto",
+      "ignifugación proyectada"
     ],
     "estimated_buildings_at_risk": "~7 million buildings",
     "mesothelioma_rate": 14.5,
@@ -844,35 +1003,41 @@
     "ban_status": "full_ban",
     "ban_year": 2008,
     "ban_details": "Full ban under Asbestos Regulations (Government Gazette No. 30891) in 2008, removing all remaining exceptions from the partial ban implemented in 2003.",
+    "ban_details_es": "Prohibición total bajo los Reglamentos de Asbesto (Gaceta Oficial No. 30891) en 2008, eliminando todas las excepciones restantes de la prohibición parcial implementada en 2003.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1977,
         "event": "Occupational Diseases in Mines and Works Act introduces first health protections for asbestos mine workers",
+        "event_es": "La Ley de Enfermedades Ocupacionales en Minas y Obras introduce las primeras protecciones sanitarias para los mineros de asbesto",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 1984,
         "event": "Crocidolite mining in Northern Cape phased out following high incidence of mesothelioma among workers",
+        "event_es": "La extracción de crocidolita en la Provincia del Cabo del Norte se abandona gradualmente tras la alta incidencia de mesotelioma entre los trabajadores",
         "type": "other",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2003,
         "event": "Prohibition on import, manufacture, and sale of asbestos products with scheduled exceptions until 2008",
+        "event_es": "Prohibición de importación, fabricación y venta de productos de asbesto con excepciones programadas hasta 2008",
         "type": "partial_ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2008,
         "event": "Full Asbestos Regulations under OHSA: all remaining exceptions removed — complete nationwide ban",
+        "event_es": "Reglamentos Completos de Asbesto bajo la OHSA: se eliminan todas las excepciones restantes — prohibición nacional total",
         "type": "ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2020,
         "event": "Asbestos Roadmap developed; government estimates 5 million buildings contain asbestos across the country",
+        "event_es": "Se desarrolla una Hoja de Ruta del Asbesto; el gobierno estima que 5 millones de edificios en el país contienen asbesto",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       }
@@ -883,6 +1048,12 @@
       "asbestos-cement flat sheets",
       "asbestos insulating board",
       "pipe insulation"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tablero aislante de asbesto",
+      "aislamiento de tuberías"
     ],
     "estimated_buildings_at_risk": "~5 million buildings",
     "mesothelioma_rate": 6.8,
@@ -906,35 +1077,41 @@
     "ban_status": "full_ban",
     "ban_year": 2018,
     "ban_details": "Prohibition of Asbestos and Asbestos Products Regulations under CEPA (Canadian Environmental Protection Act) came into force in 2018, banning all uses, import, and export.",
+    "ban_details_es": "El Reglamento de Prohibición del Asbesto y Productos de Asbesto bajo la CEPA (Ley Canadiense de Protección del Medio Ambiente) entró en vigor en 2018, prohibiendo todos los usos, la importación y la exportación.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1979,
         "event": "Quebec chrysotile mining at peak; Canada historically world's second-largest chrysotile producer",
+        "event_es": "La minería de crisotilo en Quebec llega a su punto máximo; Canadá fue históricamente el segundo mayor productor mundial de crisotilo",
         "type": "other",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 1987,
         "event": "Occupational exposure limits set; first comprehensive federal workplace asbestos regulations enacted",
+        "event_es": "Se establecen límites de exposición ocupacional; se promulgan las primeras regulaciones federales integrales sobre el asbesto en los lugares de trabajo",
         "type": "regulation",
         "source_url": "https://www.epa.gov/asbestos"
       },
       {
         "year": 2012,
         "event": "Jeffrey Mine (Quebec) closes — last active chrysotile mine in Canada",
+        "event_es": "La Mina Jeffrey (Quebec) cierra — última mina activa de crisotilo en Canadá",
         "type": "other",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2016,
         "event": "Federal Trudeau government announces intent to ban asbestos; exports continue during phase-out period",
+        "event_es": "El gobierno federal de Trudeau anuncia la intención de prohibir el asbesto; las exportaciones continúan durante el período de eliminación gradual",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2018,
         "event": "Prohibition of Asbestos and Asbestos Products Regulations in force under CEPA — complete ban",
+        "event_es": "El Reglamento de Prohibición del Asbesto y Productos de Asbesto entra en vigor bajo la CEPA — prohibición total",
         "type": "ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       }
@@ -946,6 +1123,13 @@
       "asbestos-cement flat sheets",
       "textured ceiling coating",
       "joint compound"
+    ],
+    "common_materials_es": [
+      "aislamiento de tuberías",
+      "baldosas de vinilo-asbesto",
+      "láminas planas de cemento-asbesto",
+      "revestimiento texturizado de cielorraso",
+      "masilla de juntas"
     ],
     "estimated_buildings_at_risk": "~4 million homes built before 1990",
     "mesothelioma_rate": 11.3,
@@ -974,35 +1158,41 @@
     "ban_status": "no_ban",
     "ban_year": null,
     "ban_details": "No comprehensive national ban. Asbestos-cement roofing sheets widely used across residential and commercial construction, particularly in rural areas.",
+    "ban_details_es": "Sin prohibición nacional integral. Las láminas de techo de cemento-asbesto se utilizan ampliamente en la construcción residencial y comercial, especialmente en zonas rurales.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1970,
         "event": "Post-civil war reconstruction drives large-scale asbestos-cement roofing deployment nationwide",
+        "event_es": "La reconstrucción posguerra civil impulsa el despliegue masivo de techos de cemento-asbesto en todo el país",
         "type": "other",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 1990,
         "event": "Health concerns begin appearing in medical literature; no government regulatory response initiated",
+        "event_es": "Las preocupaciones sanitarias comienzan a aparecer en la literatura médica; no se inicia ninguna respuesta regulatoria gubernamental",
         "type": "other",
         "source_url": "https://www.who.int/news-room/fact-sheets/detail/asbestos"
       },
       {
         "year": 2006,
         "event": "Isolated state-level advisories issued; no enforcement mechanism or national framework created",
+        "event_es": "Se emiten avisos aislados a nivel estatal; no se crea ningún mecanismo de aplicación ni marco nacional",
         "type": "regulation",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
         "year": 2015,
         "event": "ILO and WHO jointly call on Nigeria to ratify asbestos conventions and enact a national ban",
+        "event_es": "La OIT y la OMS hacen un llamado conjunto a Nigeria para que ratifique los convenios sobre el asbesto y promulgue una prohibición nacional",
         "type": "other",
         "source_url": "https://www.who.int/news-room/fact-sheets/detail/asbestos"
       },
       {
         "year": 2024,
         "event": "No comprehensive ban; millions of aging asbestos-cement roofs still in active residential use",
+        "event_es": "Sin prohibición integral; millones de envejecidos techos de cemento-asbesto siguen en uso residencial activo",
         "type": "other",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       }
@@ -1012,6 +1202,11 @@
       "asbestos-cement roofing sheets",
       "asbestos-cement flat sheets",
       "asbestos-cement water pipes"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,

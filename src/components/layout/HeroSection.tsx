@@ -1,5 +1,6 @@
 "use client";
 
+import { type ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import Globe3DLoader from "@/components/map/Globe3DLoader";
 import SubstanceSelector from "@/components/ui/SubstanceSelector";
@@ -34,6 +35,7 @@ interface HeroSectionProps {
   legendLimited: string;
   legendFullBan: string;
   heroTagline: string;
+  searchSlot?: ReactNode;
 }
 
 export default function HeroSection({
@@ -58,39 +60,41 @@ export default function HeroSection({
   legendLimited,
   legendFullBan,
   heroTagline,
+  searchSlot,
 }: HeroSectionProps) {
   return (
-    <section className="relative overflow-hidden bg-[#0F172A]">
-      {/* Diagonal background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A]" aria-hidden="true" />
+    <section className="relative bg-[#0F172A]">
+      {/* Decorative elements — isolated overflow so dropdown can escape */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        {/* Diagonal background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A]" />
 
-      {/* Dot grid overlay */}
-      <div
-        className="absolute inset-0 opacity-[0.04] pointer-events-none"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)",
-          backgroundSize: "40px 40px",
-        }}
-        aria-hidden="true"
-      />
+        {/* Dot grid overlay */}
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)",
+            backgroundSize: "40px 40px",
+          }}
+        />
 
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#0F172A] to-transparent pointer-events-none z-20" aria-hidden="true" />
+        {/* Bottom fade */}
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#0F172A] to-transparent z-20" />
 
-      {/* Ambient glow — left side */}
-      <div
-        className="absolute pointer-events-none z-0"
-        style={{
-          left: "-10%",
-          top: "10%",
-          width: "60%",
-          height: "80%",
-          background:
-            "radial-gradient(ellipse at 50% 50%, rgba(30, 58, 138, 0.18) 0%, transparent 70%)",
-        }}
-        aria-hidden="true"
-      />
+        {/* Ambient glow — left side */}
+        <div
+          className="absolute z-0"
+          style={{
+            left: "-10%",
+            top: "10%",
+            width: "60%",
+            height: "80%",
+            background:
+              "radial-gradient(ellipse at 50% 50%, rgba(30, 58, 138, 0.18) 0%, transparent 70%)",
+          }}
+        />
+      </div>
 
       {/* Main grid */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-10 lg:pt-8 lg:pb-14">
@@ -202,6 +206,13 @@ export default function HeroSection({
                 </p>
               </div>
             </div>
+
+            {/* Search slot — injected from page */}
+            {searchSlot && (
+              <div className="mt-5">
+                {searchSlot}
+              </div>
+            )}
 
           </div>
         </div>

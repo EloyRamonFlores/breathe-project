@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import type { TimelineEvent } from "@/lib/types";
 
 interface TimelineProps {
@@ -36,7 +36,10 @@ function getTypeLabel(
 }
 
 export default async function Timeline({ events }: TimelineProps) {
-  const t = await getTranslations("country");
+  const [t, locale] = await Promise.all([
+    getTranslations("country"),
+    getLocale(),
+  ]);
 
   const sorted = [...events].sort((a, b) => a.year - b.year);
 
@@ -71,7 +74,7 @@ export default async function Timeline({ events }: TimelineProps) {
               </span>
             </div>
             <p className="text-sm text-text-secondary leading-relaxed">
-              {event.event}
+              {locale === "es" && event.event_es ? event.event_es : event.event}
             </p>
             {event.source_url && (
               <a
@@ -81,7 +84,7 @@ export default async function Timeline({ events }: TimelineProps) {
                 className="mt-1 inline-block text-xs text-text-muted hover:text-accent transition-colors"
                 aria-label={`Source for ${event.year} event`}
               >
-                ↗ Source
+                {t("source_link_label")}
               </a>
             )}
           </div>

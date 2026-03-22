@@ -4,6 +4,145 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v1.7.3] — 2026-03-22 — Home: Eliminada sección "¿Por qué ToxinFree?"
+
+### Removed
+- Sección Trust Signals (3 cards: Datos Rigurosos, 195 Países, Gratis y Abierto) eliminada del home temporalmente. Recuperable desde git history.
+
+---
+
+## [v1.7.2] — 2026-03-22 — Home UX: Ticker Mixto + Bento Grid Unificado
+
+### Changed
+- **BanTicker — países mixtos con estilo pill:** El ticker ya no muestra únicamente países con ban. Ahora mezcla países con ban (pill verde, `border-emerald-500/30`) + países sin ban (pill roja, `border-red-500/30`) intercalados cada 4 entradas. Los países sin ban provienen del top 15 por prioridad. La visual comunica el contraste global sin texto adicional.
+- **BanTicker — highlight por pill en hover:** Reemplazado el `isHovered` state + opacity global por CSS `group`/`group-hover`. Al entrar al ticker todos los pills bajan a `opacity-30`; el pill específico bajo el cursor sube a `opacity-100` + `scale-[1.08]` + `shadow-lg` coloreada. Cero JS extra, puro CSS.
+- **Bento Grid — sección unificada:** `StatRotator` y `RegionSummary` eliminados de sus secciones independientes e integrados como cards 5 y 6 del bento grid (`md:col-span-1` y `md:col-span-2` respectivamente). Layout final: 2-1 / 2-1 / 1-2. Misma card base (`bg-slate-900/40 border border-slate-800 rounded-2xl`) con icono + label `font-mono uppercase`.
+
+### Modified Files
+- **`src/components/home/BanTicker.tsx`** — Nuevo `useMemo` para `noBanCountries` (top 15 por prioridad). Nuevo `mixedItems` que interleaves ambos tipos. Pills con clases `group-hover:opacity-30 hover:!opacity-100`. Removido `isHovered` state.
+- **`src/app/[locale]/page.tsx`** — Eliminadas secciones individuales de `StatRotator` y `RegionSummary`. Ambos integrados como cards 5-6 dentro del grid de "Comprende el Riesgo".
+
+---
+
+## [v1.7.1] — 2026-03-22 — Home UX Polish: Ticker, Search Dropdown & Hero Fixes
+
+### Bug Fixes
+- **BanTicker — pausa abrupta:** Eliminado el enfoque RAF+`playbackRate` que causaba desplazamiento visual al hacer hover. Reemplazado por `animation.pause()` / `animation.play()` directo (congela en posición exacta, sin saltos). Suavidad visual manejada por `opacity: 0.7` + `transition: 0.4s ease`.
+- **BanTicker — desplazamiento fantasma al hover sobre países:** El RAF animaba `playbackRate` de 1→0 durante 600ms; los ítems seguían moviéndose, disparaban `mouseleave`/`mouseenter` inconsistentes y dos loops competían entre sí. Fix: pausa instantánea elimina el movimiento durante la transición.
+- **BanTicker — velocidad:** Reducida de `60s` a `120s` para que el scroll sea más legible.
+- **CountrySearch dropdown cortado:** El `overflow-hidden` del `<section>` del HeroSection clippeaba el dropdown. Fix: `overflow-hidden` movido a un `div` wrapper solo para los elementos decorativos absolutos (gradiente, dot grid, glow, bottom fade). El contenido real ya no tiene restricción de overflow.
+- **CountrySearch — integración en Hero:** Movida del bloque separado (sección con padding propio) al interior del HeroSection como `searchSlot?: ReactNode`, renderizado debajo de los stat cards en la columna derecha.
+
+### Modified Files
+- **`src/components/home/BanTicker.tsx`** — Lógica de pausa simplificada. Eliminados: `isPaused` state (reemplazado por `isHovered`), RAF loop, debounce timer. Añadidos: `animRef` con `animation.pause()/play()`.
+- **`src/components/layout/HeroSection.tsx`** — Removido `overflow-hidden` de `<section>`. Elementos decorativos envueltos en `<div className="absolute inset-0 overflow-hidden pointer-events-none">`. Añadido prop `searchSlot?: ReactNode`.
+- **`src/app/[locale]/page.tsx`** — `CountrySearchSection` pasado como `searchSlot` al HeroSection. Eliminada sección separada de búsqueda.
+- **`src/app/globals.css`** — Velocidad del ticker: `60s` → `120s`.
+
+---
+
+## [v1.7.0] — 2026-03-22 — Home UX Overhaul: 5 Innovation Ideas Implemented
+
+### Summary
+Transformed the home page from a static landing into an interactive, data-rich experience. Implemented all 5 innovation ideas from the UX audit: Instant Risk Card, Ban Timeline Ticker, Shocking Stat Rotator, Region Heatmap Summary, and enhanced Country Search with inline preview.
+
+### New Components (5)
+- **`src/components/home/CountryPreviewCard.tsx`** — Idea 1: Inline preview card showing flag, ban status, ban year, mesothelioma rate, and peak usage era when selecting a country from search. Includes "View full profile" and "Check Risk" CTAs.
+- **`src/components/home/CountrySearchSection.tsx`** — Client wrapper combining CountrySearch + CountryPreviewCard + popular search chips. Manages selected country state.
+- **`src/components/home/BanTicker.tsx`** — Idea 2: Auto-scrolling horizontal ticker of countries sorted by ban year (1983 Iceland → 2024 latest). Includes "??? Your country?" CTA. Pauses on hover, respects `prefers-reduced-motion`.
+- **`src/components/home/StatRotator.tsx`** — Idea 4: 3 shocking stats rotating every 5 seconds with fade transitions ("Every 2 min someone dies…", "60+ countries still allow imports…", "20–50 year latency…"). Dot navigation, manual nav for reduced motion.
+- **`src/components/home/RegionSummary.tsx`** — Idea 5: 7 region cards with progress bars showing % of countries with full bans. Color-coded: green (≥70%), amber (≥40%), red (<40%). Computed dynamically from `countries.json`.
+
+### Modified Files
+- **`src/components/search/CountrySearch.tsx`** — Added optional `onSelect` callback prop. When provided, calls callback instead of navigating (enables preview card flow).
+- **`src/app/[locale]/page.tsx`** — Integrated all 5 new sections. New home page order: Hero → BanTicker → Search+Preview → Bento Grid → StatRotator → RegionSummary → Trust Signals → Most Viewed.
+- **`src/app/globals.css`** — Added `ticker-scroll` keyframe animation (60s infinite linear horizontal scroll).
+- **`src/messages/en.json`** — 30+ new i18n keys for preview card, ticker, stat rotator, and region summary.
+- **`src/messages/es.json`** — Matching 30+ Spanish translation keys.
+
+### Home Page Section Order (Final)
+1. HeroSection (globe + counter)
+2. Ban Timeline Ticker (chronological ban history)
+3. Country Search + Instant Preview Card
+4. Bento Grid (educational cards)
+5. Shocking Stat Rotator (rotating crisis data)
+6. Region Heatmap Summary (7 regions with progress bars)
+7. Why ToxinFree? Trust Signals
+8. Most Viewed Country Profiles
+
+### Build
+- 424/424 static pages generated successfully
+- TypeScript strict mode — no errors
+
+---
+
+## [v1.6.0] — 2026-03-22 — i18n Fix: Full Spanish on Country Pages
+
+### Problem Fixed
+Country pages at `/es/country/[slug]` showed UI labels in Spanish but all data content (timeline events, `ban_details`, `common_materials`) was in English — a jarring Spanglish experience.
+
+### Approach: Co-located `_es` fields in `countries.json`
+- Added `ban_details_es`, `common_materials_es`, and `event_es` fields directly to the 15 high-priority country entries (Option A over i18n message keys — timeline events are unique per country, not reusable).
+- 185 low-priority countries use Spanish template fallbacks generated in `page.tsx` — no data changes needed.
+
+### Files Changed
+- **`src/lib/types.ts`** — Added optional `event_es?`, `ban_details_es?`, `common_materials_es?` to `TimelineEvent` and `Country` interfaces.
+- **`src/data/countries.json`** — Full Spanish translations added for all 15 priority countries: united-states, india, china, russia, brazil, mexico, indonesia, united-kingdom, australia, japan, south-korea, germany, south-africa, canada, nigeria. Includes `ban_details_es`, `common_materials_es`, and `event_es` on every timeline entry (~75 translated events total).
+- **`src/components/ui/Timeline.tsx`** — Uses `getLocale()` to render `event_es` when locale=es; fixes hardcoded `"↗ Source"` string via `t("source_link_label")`.
+- **`src/app/[locale]/country/[slug]/page.tsx`** — Added `PRIORITY_DESCRIPTIONS_ES` (Spanish SEO meta descriptions for all 15 priority countries); locale-aware `getBanDescription()` and `getCountryTitle()`; `ban_details` and `common_materials` render from `_es` fields when locale=es; FAQ structured data question translated.
+- **`src/messages/es.json`** — Added `source_link_label: "↗ Fuente"`.
+- **`src/messages/en.json`** — Added `source_link_label: "↗ Source"`.
+
+### Translation Quality
+- Latin American Spanish throughout — "asbesto" (not "amianto").
+- Technical regulatory terms kept precise (e.g. "Reglamento de Control del Asbesto 2012", "Norma de Nuevos Usos Significativos (SNUR)").
+- `npm run type-check` passes clean.
+
+---
+
+## [v1.5.0] — 2026-03-21 — Risk Logic v2.1 + UK Country Data Enrichment
+
+### Risk Calculator v2.1 — Weighted Average (critical fix)
+- **Formula changed** from multiplication (`country × era × building`) to weighted average: `(country×0.45) + (era×0.35) + (building×0.20)`, capped at 1.0
+- **Fixed critical false negative**: Germany 1985 apartment was `LOW` → now correctly `HIGH` (0.685). Multiplying decimals diluted risk artificially.
+- **Fixed overflow**: Mexico factory 1970 was `1.08` → now `0.955` (capped). Building factors normalized to max 1.0.
+- **18 per-country overrides** with dynamic pre/post-ban factors in `risk-matrix.json`. Example: Australia drops from 0.95 (pre-2003) to 0.05 (post-2003), eliminating false positives for post-ban buildings.
+- **Risk level labels** changed to "Probability" language for legal safety: EN `"Lower Probability" / "High Probability"`, ES `"Menor Probabilidad" / "Probabilidad Alta"`.
+- **`substances.ts`** now computes `noBanCount` and `bannedCount` dynamically from `countries.json` instead of hardcoded values — fixes drift between data and display.
+- **12/12 test cases pass** matching documented RISK-LOGIC.md v2.1 values.
+
+### UK Country Profile — Enriched with Verified Research
+- **Timeline expanded** from 5 to 11 events (1924 Nellie Kershaw → 2026 HSE consultation) with Statutory Instrument numbers (SI 1931/1140, SI 1969/690, SI 1987/2115, SI 1999/2373, SI 2012/632).
+- **Mesothelioma data updated** to HSE 2023: 2,218 deaths/year (was generic 2020 estimate).
+- **Buildings at risk** updated: "80-90% of pre-2000 buildings; 80-85% of state schools; 90%+ of NHS trusts" (sourced from BOHS, British Safety Council).
+- **Materials** expanded with UK-specific entries: Artex textured coatings, asbestos insulating board (AIB), Capasco brake linings.
+- **6 verified sources** added: HSE PDFs, legislation.gov.uk, IBAS, BOHS, British Safety Council.
+- **Full research profile**: `docs/research/united-kingdom-research.md` — 44 sources, 7 sections (timeline, activism stories, exposure sources, corporate responsibility, mortality, current status, resources).
+
+### Country Research Skill
+- **New skill** at `.skills/country-research/SKILL.md` for rigorous investigative country research.
+- 7-section Markdown template with quality checklist: every fact needs a URL, no fabricated quotes, neutral corporate language, honest verification notes.
+- Activism stories include: Nellie Kershaw (1924, first documented death), Nancy Tait (1978, founded world's first victims' group SPAID), June Hancock (1995, landmark environmental exposure case), Laurie Kazan-Allen (IBAS coordinator).
+
+### Files Added / Modified
+- `src/data/risk-matrix.json` — v2.1 with weights, country_overrides, normalized building factors
+- `src/lib/calculators/asbestos-risk-calculator.ts` — weighted average formula
+- `src/lib/types.ts` — added `CountryOverride`, `weights` to `RiskMatrix`
+- `src/messages/en.json` — "Probability" risk level labels
+- `src/messages/es.json` — "Probabilidad" risk level labels
+- `src/data/countries.json` — UK entry enriched
+- `src/data/substances.ts` — dynamic ban counts
+- `docs/research/united-kingdom-research.md` — new (full UK research)
+- `.skills/country-research/SKILL.md` — new (research skill)
+- `.skills/country-research/evals/evals.json` — new (test cases)
+
+### Build Status
+- TypeScript: clean (0 errors)
+- 12/12 risk logic test cases pass
+- Pre-existing lint issues in `AnimatedCounter.tsx` unchanged
+
+---
+
 ## [v1.4.0] — 2026-03-18 — Mobile performance: Lighthouse 63 → 85+
 
 ### Mobile Performance — Globe blocked main thread for 37 seconds

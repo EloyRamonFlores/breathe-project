@@ -33,9 +33,8 @@ export default function Header() {
   }
 
   const navLinks = [
-    { href: "/#map", label: t("map") },
-    { href: "/check", label: t("check") },
-    { href: "/learn", label: t("learn") },
+    { href: "/#map", label: t("map"), isCta: false },
+    { href: "/learn", label: t("learn"), isCta: false },
   ] as const;
 
   return (
@@ -80,6 +79,15 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+
+          {/* Check Risk CTA — prominent button */}
+          <Link
+            href="/check"
+            className="rounded-lg bg-red-500/15 border border-red-500/30 px-4 py-1.5 text-sm font-semibold text-red-400 transition-all duration-200 hover:bg-red-500/25 hover:border-red-500/50 hover:text-red-300 hover:shadow-lg hover:shadow-red-900/20"
+            onClick={closeMenu}
+          >
+            {t("check")}
+          </Link>
 
           {/* Language toggle */}
           <button
@@ -142,6 +150,13 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="/check"
+              className="rounded-lg bg-red-500/15 border border-red-500/30 mx-3 mt-1 px-3 py-2.5 text-sm font-semibold text-red-400 text-center transition-all duration-200 hover:bg-red-500/25"
+              onClick={closeMenu}
+            >
+              {t("check")}
+            </Link>
             <button
               onClick={() => {
                 switchLocale();
