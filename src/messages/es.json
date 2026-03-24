@@ -30,6 +30,8 @@
     "explore_map": "Explora el Mapa Global de Prohibición del Asbesto",
     "globe_loading": "Cargando globo 3D...",
     "globe_fallback": "El globo 3D requiere WebGL",
+    "map_toggle_to_3d": "Globo 3D",
+    "map_toggle_to_2d": "Mapa 2D",
     "globe_tooltip_banned": "Prohibido desde {year}",
     "globe_tooltip_no_ban": "Sin prohibición",
     "globe_tooltip_unknown": "Estado desconocido",
@@ -69,6 +71,10 @@
     "search_placeholder": "Buscar por nombre de país...",
     "search_results_label": "Resultados de búsqueda de países",
     "search_no_results": "No se encontró ningún país. Intenta con otro nombre.",
+    "search_clear": "Borrar búsqueda",
+    "globe_aria_label": "Globo 3D interactivo que muestra el estado global de prohibición de asbesto y rutas comerciales",
+    "search_result_count_one": "1 resultado",
+    "search_result_count_other": "{count} resultados",
     "search_popular": "Búsquedas populares",
     "trust_heading": "¿Por qué ToxinFree?",
     "trust_data_title": "Datos Rigurosos",
@@ -582,7 +588,12 @@
     "contact_heading": "Conectar",
     "contact_github": "GitHub",
     "contact_email": "Contacto",
-    "data_updated": "Datos actualizados: Q1 2026"
+    "data_updated": "Datos actualizados: Q1 2026",
+    "aria_ibas": "IBAS — Secretariado Internacional para la Prohibición del Asbesto (se abre en nueva pestaña)",
+    "aria_epa": "EPA — Agencia de Protección Ambiental de EE.UU. (se abre en nueva pestaña)",
+    "aria_who": "OMS — Organización Mundial de la Salud (se abre en nueva pestaña)",
+    "aria_github": "GitHub (se abre en nueva pestaña)",
+    "aria_koku": "Koku (se abre en nueva pestaña)"
   },
   "nav_aria": {
     "menu_open": "Abrir menú",

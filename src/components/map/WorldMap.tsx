@@ -8,6 +8,7 @@ import { useRouter } from "@/i18n/navigation";
 import countriesData from "@/data/countries.json";
 import worldGeoJSON from "@/data/geo/world.json";
 import type { Country } from "@/lib/types";
+import { FILL_COLORS, STATUS_DOTS } from "@/lib/map-constants";
 import "leaflet/dist/leaflet.css";
 
 interface GeoFeatureProperties {
@@ -18,22 +19,6 @@ interface GeoFeatureProperties {
 }
 
 type GeoFeature = GeoJSON.Feature<GeoJSON.Geometry, GeoFeatureProperties>;
-
-const FILL_COLORS: Record<string, string> = {
-  full_ban: "#059669",
-  de_facto_ban: "#059669",
-  partial_ban: "#F59E0B",
-  no_ban: "#EF4444",
-  unknown: "#374151",
-};
-
-const STATUS_DOTS: Record<string, string> = {
-  full_ban: "#059669",
-  de_facto_ban: "#059669",
-  partial_ban: "#F59E0B",
-  no_ban: "#EF4444",
-  unknown: "#4B5563",
-};
 
 /** Controls Leaflet dragging imperatively from inside the MapContainer tree */
 function MapInteractionController({ interactive }: { interactive: boolean }) {

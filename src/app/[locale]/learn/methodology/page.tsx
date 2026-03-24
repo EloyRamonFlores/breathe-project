@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, CONTENT_PUBLISHED_DATE, CONTENT_MODIFIED_DATE } from "@/lib/constants";
 
 const BASE_URL = SITE_URL;
 
@@ -72,8 +72,22 @@ export default async function MethodologyPage({
 
   const processSteps = t.raw("methodology_page.process_steps") as string[];
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: t("methodology_page.title"),
+    datePublished: CONTENT_PUBLISHED_DATE,
+    dateModified: CONTENT_MODIFIED_DATE,
+    author: { "@type": "Organization", name: "ToxinFree" },
+    publisher: { "@type": "Organization", name: "ToxinFree" },
+  };
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       {/* Back link */}
       <Link
         href="/learn"

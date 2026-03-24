@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = LOCALES.flatMap((locale) =>
     staticPaths.map(({ path, priority, changeFrequency }) => ({
       url: `${BASE_URL}/${locale}${path}`,
-      lastModified: new Date("2026-03-17"),
+      lastModified: new Date(),
       changeFrequency,
       priority,
     }))

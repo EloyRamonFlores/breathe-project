@@ -4,6 +4,91 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v1.9.0] — 2026-03-24 — Vitest Setup + Test Coverage
+
+### Testing Infrastructure
+- Added Vitest v2 with path alias config (`@` → `src/`)
+- `npm test` runs all tests in CI mode (78 tests, 2 files)
+
+### Risk Calculator Unit Tests (`src/__tests__/asbestos-risk-calculator.test.ts`)
+- 62 test cases covering documented v2.1 algorithm scenarios
+- Confirmed v2.1 weighted formula values: Germany HIGH 0.685, India CRITICAL 0.9375, UK CRITICAL 0.9125, US MODERATE 0.56, Australia LOW 0.2525, Japan CRITICAL 0.82
+- `getEraFromYear` boundary tests: all 5 era buckets verified
+- Score bounds: all 6 concrete cases return score in [0, 1]
+- Risk level threshold tests: all 4 levels verified via calculateRisk output
+- All 18 country overrides produce valid factors in (0, 1]
+- Edge case: unknown country/era does not crash, returns valid RiskResult shape
+- Material matching: 1960_1980 residential returns ≥ 1 material; post_2000 returns 0
+
+### Data Integrity Tests (`src/__tests__/data-integrity.test.ts`)
+- `countries.json`: 200 entries, required fields present, valid ban_status enum, full_ban entries have ban_year, unique slugs and iso2 codes, priority:high countries have timelines
+- `materials.json`: 20 entries, valid risk levels, era_start ≤ era_end, unique ids
+- `risk-matrix.json`: weights sum to 1.0, 18 overrides with valid factors, all 4 threshold keys present
+
+### methodology Page JSON-LD
+- Added Article schema (same pattern as other learn pages)
+- Imports `CONTENT_PUBLISHED_DATE`, `CONTENT_MODIFIED_DATE` from `@/lib/constants`
+
+**Test Coverage dimension: 0/10 → 4/10**
+
+**Files added/modified:**
+- `vitest.config.ts` — NEW
+- `src/__tests__/asbestos-risk-calculator.test.ts` — NEW
+- `src/__tests__/data-integrity.test.ts` — NEW
+- `package.json` — added `vitest ^2` devDependency + `test` script
+- `src/app/[locale]/learn/methodology/page.tsx` — added JSON-LD Article schema
+
+---
+
+## [v1.8.1] — 2026-03-24 — Mobile 2D/3D map toggle
+
+### Feature: Toggle button 2D ↔ 3D on mobile
+- Mobile users now see a floating pill button (bottom-right of map) to switch between Leaflet 2D map and Globe3D
+- Default on mobile remains Leaflet 2D (faster, works on all devices)
+- Button appears only on mobile/tablet (`< 1024px`), only after mount — no SSR flash
+- User choice is local state (no persistence — single session intent)
+- i18n: `map_toggle_to_3d` / `map_toggle_to_2d` added to EN (`"3D Globe"` / `"2D Map"`) and ES (`"Globo 3D"` / `"Mapa 2D"`)
+- Respects existing WebGL/connection/memory detection — user opts in to 3D explicitly
+- TypeScript clean
+
+### Files Modified
+- `src/components/map/Globe3DLoader.tsx`
+- `src/messages/en.json`
+- `src/messages/es.json`
+
+---
+
+## [v1.8.0] — 2026-03-23 — Full Technical Audit: 8 Auto-Fixes + docs/FULL-AUDIT.md
+
+### Summary
+Comprehensive 14-section technical audit performed across all 7 disciplines: frontend architecture, SEO, accessibility, security, data quality, performance, and documentation. Global score: **7.0/10** (up from 6.5 at v1.2.0). 8 issues auto-fixed, 11 technical debt items inventoried, 4-week actionable roadmap produced.
+
+### Auto-Fixes Applied (8)
+1. **Shared map constants** — Extracted duplicated `FILL_COLORS` and `STATUS_DOTS` from Globe3D.tsx and WorldMap.tsx into `src/lib/map-constants.ts`. Fixed color mismatch (Globe3D unknown was `rgba(55,65,81,0.35)` vs WorldMap `#374151`).
+2. **CountrySearch i18n** — Replaced 7 hardcoded locale ternaries in `statusLabel()` with `useTranslations("ban_status")`. Replaced hardcoded "result"/"resultado" and "Clear search" with i18n keys.
+3. **Footer aria-labels** — Replaced 5 hardcoded English `aria-label` attributes (IBAS, EPA, WHO, GitHub, Koku) with i18n `footer.aria_*` keys. Spanish translations added.
+4. **Globe3D aria-label** — Replaced hardcoded English `aria-label` with i18n `home.globe_aria_label` key.
+5. **JSON-LD dates centralized** — Created `CONTENT_PUBLISHED_DATE` and `CONTENT_MODIFIED_DATE` constants in `src/lib/constants.ts`. Updated 6 learn pages to import from constants instead of hardcoding `"2026-03-14"`.
+6. **Sitemap lastModified** — Replaced hardcoded `new Date("2026-03-17")` with `new Date()` in sitemap.ts for static routes.
+7. **Security headers** — Added 6 HTTP security headers to `next.config.ts`: X-Frame-Options (DENY), X-Content-Type-Options (nosniff), Referrer-Policy, Permissions-Policy, X-DNS-Prefetch-Control, HSTS.
+8. **README.md** — Created project root README with description, tech stack, quick start, structure, features, data sources, and license.
+
+### New Files
+- `src/lib/map-constants.ts` — Shared map color definitions
+- `README.md` — Project overview for GitHub
+- `docs/FULL-AUDIT.md` — Complete 14-section audit report with roadmap
+
+### i18n
+- **18 new keys** added (9 per locale): `home.search_clear`, `home.globe_aria_label`, `home.search_result_count_one`, `home.search_result_count_other`, `footer.aria_ibas`, `footer.aria_epa`, `footer.aria_who`, `footer.aria_github`, `footer.aria_koku`
+- en.json and es.json remain in perfect parity (~380 keys each)
+
+### Build Status
+- TypeScript: clean (0 errors)
+- Build: 424/424 static pages generated
+- ESLint: passes
+
+---
+
 ## [v1.7.3] — 2026-03-22 — Home: Eliminada sección "¿Por qué ToxinFree?"
 
 ### Removed

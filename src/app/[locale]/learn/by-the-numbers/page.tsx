@@ -6,7 +6,7 @@ import AnimatedCounter from "@/components/ui/AnimatedCounter";
 import ByTheNumbersCharts from "@/components/ui/ByTheNumbersCharts";
 import countriesData from "@/data/countries.json";
 import type { Country, RegionBanData, DistributionEntry } from "@/lib/types";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, CONTENT_PUBLISHED_DATE, CONTENT_MODIFIED_DATE } from "@/lib/constants";
 
 const BASE_URL = SITE_URL;
 
@@ -152,8 +152,8 @@ export default async function ByTheNumbersPage({
     "@context": "https://schema.org",
     "@type": "Article",
     headline: t("numbers_page.title"),
-    datePublished: "2026-03-14",
-    dateModified: "2026-03-14",
+    datePublished: CONTENT_PUBLISHED_DATE,
+    dateModified: CONTENT_MODIFIED_DATE,
     author: { "@type": "Organization", name: "ToxinFree" },
     publisher: { "@type": "Organization", name: "ToxinFree" },
   };

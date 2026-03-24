@@ -24,6 +24,7 @@ interface CountrySearchProps {
 
 export default function CountrySearch({ locale, onSelect }: CountrySearchProps) {
   const t = useTranslations("home");
+  const tBan = useTranslations("ban_status");
   const router = useRouter();
   const [query, setQuery] = useState("");
   const [isOpen, setIsOpen] = useState(false);
@@ -165,18 +166,7 @@ export default function CountrySearch({ locale, onSelect }: CountrySearchProps) 
   };
 
   const statusLabel = (status: Country["ban_status"]) => {
-    switch (status) {
-      case "full_ban":
-        return locale === "es" ? "Prohibido" : "Banned";
-      case "de_facto_ban":
-        return locale === "es" ? "Prohibido de facto" : "De facto ban";
-      case "partial_ban":
-        return locale === "es" ? "Parcial" : "Partial";
-      case "no_ban":
-        return locale === "es" ? "Sin prohibición" : "No ban";
-      default:
-        return locale === "es" ? "Desconocido" : "Unknown";
-    }
+    return tBan(status);
   };
 
   const listboxId = "country-search-listbox";
@@ -231,7 +221,7 @@ export default function CountrySearch({ locale, onSelect }: CountrySearchProps) 
               inputRef.current?.focus();
             }}
             className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-300 transition-colors"
-            aria-label="Clear search"
+            aria-label={t("search_clear")}
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -251,9 +241,9 @@ export default function CountrySearch({ locale, onSelect }: CountrySearchProps) 
             className="max-h-[300px] overflow-y-auto"
           >
             <li className="sticky top-0 bg-slate-900/95 backdrop-blur-xl px-4 py-2 text-[11px] font-mono uppercase tracking-wider text-slate-500 border-b border-slate-800/50">
-              {filtered.length} {filtered.length === 1
-                ? (locale === "es" ? "resultado" : "result")
-                : (locale === "es" ? "resultados" : "results")}
+              {filtered.length === 1
+                ? t("search_result_count_one")
+                : t("search_result_count_other", { count: filtered.length })}
             </li>
             {filtered.map((country, i) => (
               <li

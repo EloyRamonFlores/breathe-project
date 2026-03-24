@@ -6,16 +6,9 @@ import { useRouter } from "@/i18n/navigation";
 import countriesData from "@/data/countries.json";
 import worldGeoJSON from "@/data/geo/world.json";
 import type { Country } from "@/lib/types";
+import { FILL_COLORS_GLOBE as FILL_COLORS } from "@/lib/map-constants";
 
 const countries = countriesData as Country[];
-
-const FILL_COLORS: Record<string, string> = {
-  full_ban: "#059669",
-  de_facto_ban: "#059669",
-  partial_ban: "#F59E0B",
-  no_ban: "#EF4444",
-  unknown: "rgba(55, 65, 81, 0.35)",
-};
 
 // Representative asbestos trade flows: major producers → no-ban consumer countries
 interface ArcData {
@@ -328,7 +321,7 @@ export default function Globe3D() {
       ref={containerRef}
       className="w-full h-full"
       role="img"
-      aria-label="Interactive 3D globe showing global asbestos ban status and trade routes"
+      aria-label={t("globe_aria_label")}
     />
   );
 }

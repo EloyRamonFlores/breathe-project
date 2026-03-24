@@ -2,7 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import type { FiberTypeData, DiseaseData } from "@/lib/types";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, CONTENT_PUBLISHED_DATE, CONTENT_MODIFIED_DATE } from "@/lib/constants";
 
 const BASE_URL = SITE_URL;
 
@@ -62,8 +62,8 @@ export default async function WhatIsAsbestosPage({
     "@context": "https://schema.org",
     "@type": "Article",
     headline: t("what_is_page.title"),
-    datePublished: "2026-03-14",
-    dateModified: "2026-03-14",
+    datePublished: CONTENT_PUBLISHED_DATE,
+    dateModified: CONTENT_MODIFIED_DATE,
     author: { "@type": "Organization", name: "ToxinFree" },
     publisher: { "@type": "Organization", name: "ToxinFree" },
   };

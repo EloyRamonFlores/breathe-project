@@ -30,6 +30,8 @@
     "explore_map": "Explore the Global Asbestos Ban Map",
     "globe_loading": "Loading 3D globe...",
     "globe_fallback": "3D globe requires WebGL",
+    "map_toggle_to_3d": "3D Globe",
+    "map_toggle_to_2d": "2D Map",
     "globe_tooltip_banned": "Banned since {year}",
     "globe_tooltip_no_ban": "No ban in place",
     "globe_tooltip_unknown": "Status unknown",
@@ -69,6 +71,10 @@
     "search_placeholder": "Search by country name...",
     "search_results_label": "Country search results",
     "search_no_results": "No country found. Try a different name.",
+    "search_clear": "Clear search",
+    "globe_aria_label": "Interactive 3D globe showing global asbestos ban status and trade routes",
+    "search_result_count_one": "1 result",
+    "search_result_count_other": "{count} results",
     "search_popular": "Popular searches",
     "trust_heading": "Why ToxinFree?",
     "trust_data_title": "Rigorous Data",
@@ -582,7 +588,12 @@
     "contact_heading": "Connect",
     "contact_github": "GitHub",
     "contact_email": "Contact",
-    "data_updated": "Data last updated: Q1 2026"
+    "data_updated": "Data last updated: Q1 2026",
+    "aria_ibas": "IBAS — International Ban Asbestos Secretariat (opens in new tab)",
+    "aria_epa": "EPA — U.S. Environmental Protection Agency (opens in new tab)",
+    "aria_who": "WHO — World Health Organization (opens in new tab)",
+    "aria_github": "GitHub (opens in new tab)",
+    "aria_koku": "Koku (opens in new tab)"
   },
   "nav_aria": {
     "menu_open": "Open menu",
