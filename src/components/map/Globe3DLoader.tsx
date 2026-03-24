@@ -74,7 +74,7 @@ export default function Globe3DLoader() {
   const showToggle = isMobile && state !== "loading";
 
   return (
-    <div className="relative">
+    <div className="relative h-full overflow-hidden">
       {showGlobe ? <Globe3DInner /> : <MapLoader />}
 
       {showToggle && (
