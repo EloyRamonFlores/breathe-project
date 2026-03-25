@@ -599,5 +599,15 @@
     "menu_open": "Abrir menú",
     "menu_close": "Cerrar menú",
     "main_nav": "Navegación principal"
+  },
+  "errors": {
+    "boundary_title": "Algo salió mal",
+    "boundary_message": "Ocurrió un error inesperado. Por favor, intenta recargar la página.",
+    "boundary_retry": "Intentar recargar",
+    "page_title": "Algo salió mal",
+    "page_message": "Ocurrió un error al cargar esta página.",
+    "page_retry": "Intentar de nuevo",
+    "page_home": "← Volver al Inicio",
+    "invalid_params": "Parámetros de enlace no válidos. Por favor, selecciona tus opciones a continuación."
   }
 }

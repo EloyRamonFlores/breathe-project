@@ -58,7 +58,7 @@ export default function CountrySearchSection({ locale }: CountrySearchSectionPro
               <Link
                 key={c.slug}
                 href={`/country/${c.slug}`}
-                className="inline-flex items-center gap-1.5 rounded-full border border-slate-700/50 bg-slate-900/40 px-3 py-1.5 text-sm text-slate-300 transition-all duration-200 hover:border-slate-600 hover:bg-slate-800/60 hover:text-white"
+                className="inline-flex items-center gap-1.5 rounded-full border border-slate-700/50 bg-slate-900/40 px-3 py-1.5 text-sm text-slate-300 transition-all duration-200 hover:border-slate-600 hover:bg-slate-800/60 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
               >
                 <span aria-hidden="true">{getFlag(c.iso2)}</span>
                 {c.name}

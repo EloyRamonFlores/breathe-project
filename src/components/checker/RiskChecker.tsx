@@ -78,6 +78,7 @@ export default function RiskChecker() {
   const t = useTranslations("check");
   const tEras = useTranslations("eras");
   const tBuilding = useTranslations("building_types");
+  const tErrors = useTranslations("errors");
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -90,6 +91,7 @@ export default function RiskChecker() {
   const [activeIndex, setActiveIndex] = useState(-1);
   const [result, setResult] = useState<RiskResult | null>(null);
   const [visible, setVisible] = useState(false);
+  const [validationError, setValidationError] = useState<string | null>(null);
 
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
@@ -122,9 +124,11 @@ export default function RiskChecker() {
         setSelectedBuilding(buildingType);
         setResult(calc);
         setStep("results");
+      } else {
+        setValidationError(tErrors("invalid_params"));
       }
     }
-  }, [searchParams]);
+  }, [searchParams, tErrors]);
 
   const filteredCountries = countries.filter((c) =>
     c.name.toLowerCase().includes(countryQuery.toLowerCase())
@@ -169,6 +173,7 @@ export default function RiskChecker() {
     setCountryQuery("");
     setResult(null);
     setDropdownOpen(false);
+    setValidationError(null);
     router.push("?", { scroll: false });
     setTimeout(() => inputRef.current?.focus(), 100);
   }, [router]);
@@ -244,6 +249,16 @@ export default function RiskChecker() {
               )}
             </div>
           ))}
+        </div>
+      )}
+
+      {/* Validation error banner */}
+      {validationError && step === 1 && (
+        <div
+          role="alert"
+          className="mb-6 rounded-lg border border-amber-700/50 bg-amber-950/30 px-4 py-3 text-sm text-amber-300"
+        >
+          {validationError}
         </div>
       )}
 

@@ -4,6 +4,89 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v1.12.0] — 2026-03-25 — Error Handling & Accessibility
+
+### Error Handling
+- Added `src/components/ui/ErrorBoundary.tsx` — reusable React class-based error boundary with i18n fallback UI and dev-only console logging
+- Added Next.js `error.tsx` route segments for `/check`, `/country/[slug]`, and `/learn` — styled dark-theme error pages with retry button and home link
+- Added `"errors"` i18n namespace to `en.json` and `es.json` (8 keys: boundary + page variants + invalid_params)
+- Added URL param validation to `RiskChecker.tsx`: invalid `?country=`, `?era=`, or `?type=` params now show an amber warning banner instead of silently failing
+
+### Accessibility
+- Added skip-to-content link in `src/app/[locale]/layout.tsx` — visually hidden, appears on Tab focus, links to `#main-content`
+- Changed `<div className="flex-1">` to `<main id="main-content">` for proper landmark semantics
+- Added `focus-visible:ring-2 focus-visible:ring-emerald-500` to popular country search chips in `CountrySearchSection.tsx`
+
+### Cleanup
+- Deleted `INNOVACION-SUGERENCIAS.md` (ideas implemented or deferred)
+- Deleted `AUDIT-HOME-UX-CLAUDE-CODE.md` (audit completed, tasks tracked in code)
+
+---
+
+## [v1.11.0] — 2026-03-25 — Data Enrichment: 20 Country Profiles
+
+### Country Data Enrichment
+- Enriched **20 countries** in `countries.json` with detailed timelines, Spanish translations, and verified sources
+- **Countries enriched:** Turkey, Argentina, Chile, Colombia, Algeria, Egypt, Iran, Ukraine, Pakistan, Vietnam, Bangladesh, Philippines, Thailand, Myanmar, Kenya, Malaysia, Morocco, Peru, Sri Lanka, Venezuela
+- 35 countries now have non-empty timelines (up from 15) — **17.5% → critical mass for credibility**
+
+### Fields Added Per Country
+- `ban_details` expanded from 1 sentence to 2-4 sentences with specific legislation names and decree numbers
+- `ban_details_es` — NEW: Spanish translation for all 20 countries
+- `common_materials_es` — NEW: Spanish material translations for all 20 countries
+- `timeline` — 3-6 events per country with `event_es`, `type`, and `source_url`
+- `sources` expanded from 1 (IBAS only) to 3-6 verified sources per country
+- `priority` upgraded to `"high"` for all 20 countries (with timelines)
+
+### Ban Status Corrections (IBAS-verified)
+- **Algeria**: 2017 → **2009** (Executive Decree No. 09-321)
+- **Iran**: 2012 → **2022** (chrysotile banned 2021, confirmed at Rotterdam Convention 2022)
+- **Ukraine**: 2011 → **2022** (Bill No. 4142, September 6; 2017 MoH ban was annulled in 2019)
+- **Kenya**: `no_ban` → **`full_ban` (2006)** (Legal Notice No. 121)
+- **Malaysia**: `unknown` → **`partial_ban`** (crocidolite banned via OSHA Order 1999)
+- **Morocco**: `unknown` → **`no_ban`** (no legislation found, imports ~5,000t/year)
+- **Peru**: `unknown` → **`partial_ban`** (Law 29662 bans amphiboles, chrysotile regulated)
+- **Sri Lanka**: `unknown` → **`no_ban`** (crocidolite banned 1997, chrysotile legal; Russia blocked 2018 ban attempt)
+- **Venezuela**: `unknown` → **`no_ban`** (use permitted with ministry endorsement)
+
+### Data Quality
+- Chile: mesothelioma_rate added (9.7 per million, 2017-2022 study)
+- Kenya: estimated_buildings_at_risk added (~30 million tonnes of asbestos roofing)
+- All sources verified via IBAS, WHO, PMC, government publications, and academic journals
+
+### Verification
+- `npm test` — 78 tests pass (200 entries, unique slugs/iso2, priority:high all have timelines)
+- `npm run type-check` — TypeScript compilation succeeds
+- `npm run build` — 424 static pages generated successfully
+
+**Files modified:**
+- `src/data/countries.json` — 20 country entries enriched in-place
+- `CHANGELOG.md` — modified
+
+---
+
+## [v1.10.0] — 2026-03-24 — CI Pipeline + CSP Header + PR Template
+
+### CI / GitHub Actions
+- Added `.github/workflows/ci.yml` — runs type-check, lint, test, build on push/PR to master
+- Node 20, `npm ci`, fail-fast on any step
+
+### Security
+- Added `Content-Security-Policy-Report-Only` header in `next.config.ts`
+  - Covers: `*.basemaps.cartocdn.com` (Leaflet tiles), `blob:` (globe.gl WebGL workers), Vercel analytics endpoints, `'unsafe-inline'` for map tooltips + JSON-LD
+  - Report-Only mode — violations logged to console, not enforced
+
+### Dev Experience
+- Added `.github/pull_request_template.md` with sections: Description, Changes, Testing (4 checklist items), Checklist (i18n, no-any, mobile, a11y, data source)
+
+**Files added/modified:**
+- `.github/workflows/ci.yml` — NEW
+- `.github/pull_request_template.md` — NEW
+- `next.config.ts` — modified (CSP-Report-Only header added)
+- `CHANGELOG.md` — modified
+
+---
+
 ## [v1.9.0] — 2026-03-24 — Vitest Setup + Test Coverage
 
 ### Testing Infrastructure

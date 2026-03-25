@@ -599,5 +599,15 @@
     "menu_open": "Open menu",
     "menu_close": "Close menu",
     "main_nav": "Main navigation"
+  },
+  "errors": {
+    "boundary_title": "Something went wrong",
+    "boundary_message": "An unexpected error occurred. Please try refreshing the page.",
+    "boundary_retry": "Try refreshing",
+    "page_title": "Something went wrong",
+    "page_message": "An error occurred while loading this page.",
+    "page_retry": "Try again",
+    "page_home": "← Back to Home",
+    "invalid_params": "Invalid link parameters. Please select your options below."
   }
 }
