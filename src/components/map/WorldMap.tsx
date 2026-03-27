@@ -8,6 +8,7 @@ import { useRouter } from "@/i18n/navigation";
 import countriesData from "@/data/countries.json";
 import worldGeoJSON from "@/data/geo/world.json";
 import type { Country } from "@/lib/types";
+import DOMPurify from "dompurify";
 import { FILL_COLORS, STATUS_DOTS } from "@/lib/map-constants";
 import "leaflet/dist/leaflet.css";
 
@@ -112,7 +113,7 @@ export default function WorldMap() {
         </div>
       `;
 
-      layer.bindTooltip(tooltipHtml, {
+      layer.bindTooltip(DOMPurify.sanitize(tooltipHtml), {
         sticky: true,
         direction: "top",
         offset: [0, -10],

@@ -1,4 +1,4 @@
-# SEO.md — Search Engine Optimization Strategy
+# SEO.md — Search Engine Optimization Strategy (Updated v1.13.0)
 
 ## Core SEO Architecture
 The site uses Next.js Static Site Generation (SSG). Every page is pre-rendered at build time as pure HTML. This gives us perfect Core Web Vitals and instant indexing.
@@ -27,7 +27,7 @@ Every page MUST have:
 ```tsx
 // In page metadata (Next.js generateMetadata)
 {
-  title: "Unique Page Title | BREATHE",           // <60 chars
+  title: "Unique Page Title | ToxinFree",          // <60 chars
   description: "Unique meta description",           // <155 chars
   openGraph: {
     title: "Title for social sharing",
@@ -65,7 +65,7 @@ Every page MUST have:
   "headline": "What Is Asbestos? A Complete Guide",
   "datePublished": "2026-03-13",
   "dateModified": "2026-03-13",
-  "author": { "@type": "Organization", "name": "BREATHE" }
+  "author": { "@type": "Organization", "name": "ToxinFree" }
 }
 ```
 
@@ -80,25 +80,25 @@ Every page MUST have:
 ```
 
 ## Technical SEO Checklist
-- [ ] Sitemap.xml auto-generated at build time
-- [ ] robots.txt allows all crawling
+- [x] Sitemap.xml auto-generated at build time (424+ routes)
+- [x] robots.txt allows all crawling
 - [ ] Canonical URLs on every page
-- [ ] hreflang tags for all language variants
-- [ ] No JavaScript-only content (SSG ensures HTML-first)
+- [x] hreflang tags for all language variants (next-intl middleware)
+- [x] No JavaScript-only content (SSG ensures HTML-first)
 - [ ] Images: WebP format, responsive sizes, descriptive alt text
 - [ ] Core Web Vitals: LCP < 2.5s, FID < 100ms, CLS < 0.1
-- [ ] Mobile-first responsive design
-- [ ] HTTPS (automatic with Vercel)
-- [ ] Internal linking between country pages and educational content
+- [x] Mobile-first responsive design
+- [x] HTTPS (automatic with Vercel)
+- [x] Internal linking between country pages and educational content
 
 ## Open Graph Images
-Auto-generate OG images for social sharing using:
+Dynamic OG images implemented via @vercel/og since v1.1.0:
 - Country pages: map thumbnail + country flag + ban status
+- Home page: dynamic OG with global stats
 - Risk checker results: risk level + key stats (designed for screenshot sharing)
-- Use @vercel/og or satori for dynamic OG image generation
 
 ## Launch Checklist
-- [ ] Submit sitemap to Google Search Console
+- [x] Submit sitemap to Google Search Console (live since March 2026)
 - [ ] Submit to Bing Webmaster Tools
 - [ ] Verify rich results with Google Rich Results Test
 - [ ] Test OG images with Facebook Sharing Debugger and Twitter Card Validator

@@ -1233,28 +1233,89 @@
     "iso3": "DZA",
     "region": "Africa",
     "ban_status": "full_ban",
-    "ban_year": 2017,
-    "ban_details": "Complete ban on all asbestos under Decree 17-340 of 2017. Algeria aligns with North African regulatory trends.",
+    "ban_year": 2009,
+    "ban_details": "Complete ban on all types of asbestos and asbestos-containing products under Executive Decree No. 09-321, published in the Official Journal on October 14, 2009. Algeria's asbestos-cement industry dates to 1950 when Eternit built a factory in Algiers. Four factories were shut down by government order in July 2008 after failing to meet workplace exposure limits, with levels reaching 6.7-13 fibres/cc against a 0.1 fibre/cc standard.",
+    "ban_details_es": "Prohibición total de todos los tipos de asbesto y productos que contienen asbesto bajo el Decreto Ejecutivo No. 09-321, publicado en el Diario Oficial el 14 de octubre de 2009. La industria de cemento-asbesto de Argelia data de 1950 cuando Eternit construyó una fábrica en Argel. Cuatro fábricas fueron cerradas por orden gubernamental en julio de 2008 tras no cumplir los límites de exposición laboral, con niveles alcanzando 6.7-13 fibras/cc contra un estándar de 0.1 fibra/cc.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 1950,
+        "event": "Eternit de Gué de Constantine constructs Algeria's first asbestos-cement factory in Algiers",
+        "event_es": "Eternit de Gué de Constantine construye la primera fábrica de cemento-asbesto de Argelia en Argel",
+        "type": "other",
+        "source_url": "https://ibasecretariat.org/lka_algeria_non_to_asbestos.php"
+      },
+      {
+        "year": 1977,
+        "event": "Three additional asbestos-cement factories built in Meftah (Blida), Zahana (Mascara), and Bordj-Bou-Arréridj",
+        "event_es": "Se construyen tres fábricas adicionales de cemento-asbesto en Meftah (Blida), Zahana (Mascara) y Bordj-Bou-Arréridj",
+        "type": "other",
+        "source_url": "https://ibasecretariat.org/lka_algeria_non_to_asbestos.php"
+      },
+      {
+        "year": 1998,
+        "event": "Government adopts 'controlled use' principle for asbestos; Algiers factory closed by government order due to irreparable conditions",
+        "event_es": "El gobierno adopta el principio de 'uso controlado' de asbesto; la fábrica de Argel es cerrada por orden gubernamental debido a condiciones irremediables",
+        "type": "regulation",
+        "source_url": "https://ibasecretariat.org/lka_algeria_non_to_asbestos.php"
+      },
+      {
+        "year": 2003,
+        "event": "Legislation sets workplace airborne asbestos limit of 0.1 fibre/cc, to be achieved by January 2005",
+        "event_es": "La legislación establece un límite de asbesto en aire de 0.1 fibra/cc en el lugar de trabajo, a cumplirse en enero de 2005",
+        "type": "regulation",
+        "source_url": "https://ibasecretariat.org/lka_algeria_non_to_asbestos.php"
+      },
+      {
+        "year": 2008,
+        "event": "Minister Cherif Rahmani orders closure of all four remaining asbestos-cement factories (July 28) after airborne levels found at 6.7-13 fibres/cc; 480 Meftah workers receive redundancy up to 70 months' wages",
+        "event_es": "El ministro Cherif Rahmani ordena el cierre de las cuatro fábricas restantes de cemento-asbesto (28 de julio) tras encontrar niveles de 6.7-13 fibras/cc; 480 trabajadores de Meftah reciben indemnización de hasta 70 meses de salario",
+        "type": "regulation",
+        "source_url": "https://ibasecretariat.org/lka_algeria_non_to_asbestos.php"
+      },
+      {
+        "year": 2009,
+        "event": "Executive Decree No. 09-321 bans all types of asbestos and asbestos products, published in the Official Journal on October 14",
+        "event_es": "El Decreto Ejecutivo No. 09-321 prohíbe todos los tipos de asbesto y productos de asbesto, publicado en el Diario Oficial el 14 de octubre",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/chron_ban_list.php"
+      }
+    ],
     "peak_usage_era": "1960s-2000s",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement flat sheets",
-      "asbestos-cement water pipes"
+      "asbestos-cement water pipes",
+      "thermal insulation"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto",
+      "aislamiento térmico"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Algeria Says Non to Asbestos",
+        "url": "https://ibasecretariat.org/lka_algeria_non_to_asbestos.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS Chronology of Asbestos Bans",
+        "url": "https://www.ibasecretariat.org/chron_ban_list.php",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "argentina",
@@ -1264,27 +1325,86 @@
     "region": "Latin America",
     "ban_status": "full_ban",
     "ban_year": 2001,
-    "ban_details": "Complete ban on asbestos production, import, and use under Law 19.587 amendment and related regulations, effective 2001.",
+    "ban_details": "First Latin American country to ban asbestos. Resolution 845/2000 banned amphibole asbestos on October 10, 2000. Resolution 823/2001 extended the ban to chrysotile, prohibiting all production, import, commercialization, and use effective January 1, 2003. The ban followed extensive consultation with IARC, WHO, ILO, and the Pan American Health Organization.",
+    "ban_details_es": "Primer país latinoamericano en prohibir el asbesto. La Resolución 845/2000 prohibió el asbesto anfíbol el 10 de octubre de 2000. La Resolución 823/2001 extendió la prohibición al crisotilo, prohibiendo toda producción, importación, comercialización y uso a partir del 1 de enero de 2003. La prohibición siguió extensas consultas con IARC, OMS, OIT y la Organización Panamericana de la Salud.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 1997,
+        "event": "Asbestos identified as priority in Argentina's National Plan for Rational Management of Chemical Substances; technical working group on carcinogenic substances convened",
+        "event_es": "El asbesto es identificado como prioridad en el Plan Nacional de Gestión Racional de Sustancias Químicas de Argentina; se convoca un grupo técnico sobre sustancias cancerígenas",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/lka_argentina_ban.php"
+      },
+      {
+        "year": 2000,
+        "event": "Resolution 845/2000 bans amphibole asbestos (October 10), making Argentina the first Latin American country to restrict asbestos",
+        "event_es": "La Resolución 845/2000 prohíbe el asbesto anfíbol (10 de octubre), convirtiendo a Argentina en el primer país latinoamericano en restringir el asbesto",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/lka_argentina_ban.php"
+      },
+      {
+        "year": 2001,
+        "event": "Resolution 823/2001 (July 26) extends ban to chrysotile asbestos, prohibiting all production, import, commercialization, and use effective January 1, 2003",
+        "event_es": "La Resolución 823/2001 (26 de julio) extiende la prohibición al asbesto crisotilo, prohibiendo toda producción, importación, comercialización y uso a partir del 1 de enero de 2003",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/lka_argentina_ban.php"
+      },
+      {
+        "year": 2003,
+        "event": "Complete asbestos ban takes full effect — all types of asbestos and asbestos-containing products prohibited in Argentina",
+        "event_es": "La prohibición total del asbesto entra en pleno vigor — todos los tipos de asbesto y productos que lo contienen quedan prohibidos en Argentina",
+        "type": "ban",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/15281380/"
+      }
+    ],
     "peak_usage_era": "1960s-1990s",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement water pipes",
-      "vinyl-asbestos floor tiles"
+      "vinyl-asbestos floor tiles",
+      "brake linings",
+      "thermal insulation"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto",
+      "baldosas de vinilo-asbesto",
+      "forros de frenos",
+      "aislamiento térmico"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Argentina Bans Asbestos",
+        "url": "https://www.ibasecretariat.org/lka_argentina_ban.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Asbestos Banned in Argentina (PubMed)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15281380/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Asbestos and cancer in Latin America (PMC)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8958443/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Argentina's Asbestos Anomaly",
+        "url": "https://ibasecretariat.org/lka-argentinas-asbestos-anomaly.php",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "austria",
@@ -1446,27 +1566,93 @@
     "region": "Latin America",
     "ban_status": "full_ban",
     "ban_year": 2001,
-    "ban_details": "Complete ban on all asbestos production, import, and commercialization under Decree No. 656 of 2000, effective 2001.",
+    "ban_details": "Supreme Decree 656 (issued September 12, 2000, published January 13, 2001) bans the production, import, distribution, sale, and use of all types of asbestos. The ban resulted from five years of consultative debate involving politicians, civil servants, asbestos victims, trade unionists, and environmental NGOs. Canada's Prime Minister personally attempted to reverse the chrysotile ban in June 2001 but was unsuccessful.",
+    "ban_details_es": "El Decreto Supremo 656 (emitido el 12 de septiembre de 2000, publicado el 13 de enero de 2001) prohíbe la producción, importación, distribución, venta y uso de todo tipo de asbesto. La prohibición resultó de cinco años de debate consultivo involucrando políticos, funcionarios, víctimas de asbesto, sindicalistas y ONGs ambientales. El Primer Ministro de Canadá intentó personalmente revertir la prohibición del crisotilo en junio de 2001 sin éxito.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 1935,
+        "event": "Pizarreño company begins manufacturing asbestos-cement products in Chile, contaminating workers and surrounding neighborhoods for over 60 years",
+        "event_es": "La empresa Pizarreño comienza a fabricar productos de cemento-asbesto en Chile, contaminando a trabajadores y vecindarios circundantes por más de 60 años",
+        "type": "other",
+        "source_url": "https://en.wikipedia.org/wiki/Pizarre%C3%B1o_asbestos_disaster"
+      },
+      {
+        "year": 1998,
+        "event": "Pizarreño ceases use of asbestos in manufacturing after decades of production",
+        "event_es": "Pizarreño deja de usar asbesto en la fabricación después de décadas de producción",
+        "type": "other",
+        "source_url": "https://en.wikipedia.org/wiki/Pizarre%C3%B1o_asbestos_disaster"
+      },
+      {
+        "year": 2000,
+        "event": "Ministry of Health issues Supreme Decree 656 (September 12) banning all asbestos production, import, distribution, sale, and use",
+        "event_es": "El Ministerio de Salud emite el Decreto Supremo 656 (12 de septiembre) prohibiendo toda producción, importación, distribución, venta y uso de asbesto",
+        "type": "ban",
+        "source_url": "https://ibasecretariat.org/lka_chile_ban_ex.php"
+      },
+      {
+        "year": 2001,
+        "event": "Decree 656 published in Official Journal (January 13) and becomes effective June 13, 2001. Canadian PM Chretien calls Chilean President Lagos to reverse chrysotile ban — attempt fails",
+        "event_es": "El Decreto 656 se publica en el Diario Oficial (13 de enero) y entra en vigor el 13 de junio de 2001. El PM canadiense Chretien llama al Presidente Lagos para revertir la prohibición del crisotilo — intento fracasa",
+        "type": "ban",
+        "source_url": "https://ibasecretariat.org/lka_chile_ban_ex.php"
+      },
+      {
+        "year": 2019,
+        "event": "Highest mesothelioma mortality rate recorded in Chile during 2017-2022 study period (0.97 per 100,000 inhabitants)",
+        "event_es": "Se registra la tasa más alta de mortalidad por mesotelioma en Chile durante el período de estudio 2017-2022 (0.97 por 100,000 habitantes)",
+        "type": "other",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12221258/"
+      }
+    ],
     "peak_usage_era": "1960s-1990s",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement water pipes",
-      "vinyl-asbestos floor tiles"
+      "vinyl-asbestos floor tiles",
+      "asbestos-cement flat sheets",
+      "brake linings"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto",
+      "baldosas de vinilo-asbesto",
+      "láminas planas de cemento-asbesto",
+      "forros de frenos"
     ],
     "estimated_buildings_at_risk": null,
-    "mesothelioma_rate": null,
-    "mesothelioma_source_year": null,
-    "priority": "medium",
+    "mesothelioma_rate": 9.7,
+    "mesothelioma_source_year": 2022,
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Chile Bans Asbestos",
+        "url": "https://ibasecretariat.org/lka_chile_ban_ex.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Chile Asbestos Regulations",
+        "url": "https://ibasecretariat.org/chile_asb_law.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Mesothelioma mortality rate 2017-2022 in Chile (PMC)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12221258/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Pizarreño asbestos disaster (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Pizarre%C3%B1o_asbestos_disaster",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "colombia",
@@ -1476,27 +1662,105 @@
     "region": "Latin America",
     "ban_status": "full_ban",
     "ban_year": 2019,
-    "ban_details": "Complete ban on all asbestos use and production under Law 1968 of 2019, with a 5-year transition period.",
+    "ban_details": "Law 1968 of 2019 ('Ana Cecilia Niño Law') bans all exploitation, production, commercialization, use, import, distribution, and export of asbestos effective January 1, 2021. The law mandates 20-year health monitoring for exposed workers and established the National Commission for Asbestos Substitution. Named after journalist Ana Cecilia Niño who died of mesothelioma in 2017 from environmental exposure in Sibaté, where Eternit's asbestos-cement factory contaminated the town since 1942.",
+    "ban_details_es": "La Ley 1968 de 2019 ('Ley Ana Cecilia Niño') prohíbe toda explotación, producción, comercialización, uso, importación, distribución y exportación de asbesto a partir del 1 de enero de 2021. La ley exige monitoreo de salud por 20 años para trabajadores expuestos y estableció la Comisión Nacional para la Sustitución del Asbesto. Nombrada en honor a la periodista Ana Cecilia Niño quien murió de mesotelioma en 2017 por exposición ambiental en Sibaté, donde la fábrica de cemento-asbesto de Eternit contaminó el pueblo desde 1942.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 1942,
+        "event": "Eternit Colombiana establishes first asbestos-cement plant in Sibaté, near Bogotá, beginning decades of industrial asbestos use and environmental contamination",
+        "event_es": "Eternit Colombiana establece la primera planta de cemento-asbesto en Sibaté, cerca de Bogotá, iniciando décadas de uso industrial de asbesto y contaminación ambiental",
+        "type": "other",
+        "source_url": "https://www.etui.org/topics/health-safety-working-conditions/hesamag/migrant-workers-in-fortress-europe/sibate-a-colombian-town-poisoned-by-asbestos"
+      },
+      {
+        "year": 2007,
+        "event": "Senator Jesús Bernal Amorocho introduces first bill to ban asbestos in Colombia; strong industry lobbying prevents passage",
+        "event_es": "El senador Jesús Bernal Amorocho presenta el primer proyecto de ley para prohibir el asbesto en Colombia; el fuerte lobby industrial impide su aprobación",
+        "type": "regulation",
+        "source_url": "https://ibasecretariat.org/lka-colombia-bans-asbestos.php"
+      },
+      {
+        "year": 2015,
+        "event": "Senator Nadia Blel leads work table in Colombian Congress to study asbestos ban procedure with 3-5 year transition period",
+        "event_es": "La senadora Nadia Blel lidera mesa de trabajo en el Congreso colombiano para estudiar el procedimiento de prohibición del asbesto con período de transición de 3-5 años",
+        "type": "regulation",
+        "source_url": "https://ibasecretariat.org/lka-colombia-bans-asbestos.php"
+      },
+      {
+        "year": 2017,
+        "event": "Ana Cecilia Niño dies of mesothelioma (January 8, age 42) from environmental exposure in Sibaté. Senate Committee approves the 'Ana Cecilia Niño Law' (October)",
+        "event_es": "Ana Cecilia Niño muere de mesotelioma (8 de enero, 42 años) por exposición ambiental en Sibaté. Comisión del Senado aprueba la 'Ley Ana Cecilia Niño' (octubre)",
+        "type": "regulation",
+        "source_url": "https://confrontpower.org/colombia-asbestos-campaign/"
+      },
+      {
+        "year": 2019,
+        "event": "President Iván Duque signs Law 1968 (July 11), banning all asbestos from January 1, 2021, after seven failed legislative attempts since 2007",
+        "event_es": "El presidente Iván Duque firma la Ley 1968 (11 de julio), prohibiendo todo el asbesto a partir del 1 de enero de 2021, después de siete intentos legislativos fallidos desde 2007",
+        "type": "ban",
+        "source_url": "https://www.etui.org/topics/health-safety-working-conditions/news-list/colombia-bans-asbestos"
+      },
+      {
+        "year": 2021,
+        "event": "Complete asbestos ban takes effect January 1 — all exploitation, production, commercialization, use, import, distribution, and export prohibited",
+        "event_es": "La prohibición total del asbesto entra en vigor el 1 de enero — toda explotación, producción, comercialización, uso, importación, distribución y exportación queda prohibida",
+        "type": "ban",
+        "source_url": "https://ibasecretariat.org/mtt-colombia-has-a-ban-asbestos-law-in-name-but-not-in-fact.php"
+      }
+    ],
     "peak_usage_era": "1970s-2000s",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement water pipes",
-      "brake linings"
+      "brake linings",
+      "asbestos-cement flat sheets",
+      "gaskets and packings"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto",
+      "forros de frenos",
+      "láminas planas de cemento-asbesto",
+      "juntas y empaques"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Colombia Bans Asbestos",
+        "url": "https://ibasecretariat.org/lka-colombia-bans-asbestos.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Colombia bans asbestos (ETUI)",
+        "url": "https://www.etui.org/topics/health-safety-working-conditions/news-list/colombia-bans-asbestos",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "The family campaign that defeated Colombian asbestos industry",
+        "url": "https://confrontpower.org/colombia-asbestos-campaign/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Sibaté: Colombian town poisoned by asbestos (ETUI)",
+        "url": "https://www.etui.org/topics/health-safety-working-conditions/hesamag/migrant-workers-in-fortress-europe/sibate-a-colombian-town-poisoned-by-asbestos",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Mesothelioma mortality in Colombia 1997-2022 (PMC)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12111391/",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "croatia",
@@ -1657,27 +1921,72 @@
     "region": "Africa",
     "ban_status": "full_ban",
     "ban_year": 2005,
-    "ban_details": "Complete ban on all asbestos production, import, and use adopted in 2005 under Egyptian environmental regulations.",
+    "ban_details": "The Egyptian trade minister prohibited the import and manufacture of all types of asbestos and asbestos materials in 2005. Blue asbestos (crocidolite) had been banned since the 1970s. The ban followed a workers' strike at the ORA-Egypt cement factory demanding safety measures. However, the legislation has loopholes: it does not mention scientific names of asbestos types, and importation of products containing asbestos is not explicitly prohibited.",
+    "ban_details_es": "El ministro de comercio egipcio prohibió la importación y fabricación de todo tipo de asbesto y materiales de asbesto en 2005. El asbesto azul (crocidolita) había sido prohibido desde la década de 1970. La prohibición siguió a una huelga de trabajadores en la fábrica de cemento ORA-Egypt exigiendo medidas de seguridad. Sin embargo, la legislación tiene vacíos: no menciona nombres científicos de tipos de asbesto, y la importación de productos que contienen asbesto no está explícitamente prohibida.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 1970,
+        "event": "Blue asbestos (crocidolite) banned in Egypt after its dangers were established internationally",
+        "event_es": "El asbesto azul (crocidolita) se prohíbe en Egipto después de que sus peligros fueron establecidos internacionalmente",
+        "type": "regulation",
+        "source_url": "https://egyptianstreets.com/2019/03/06/asbestos-use-in-egypt-a-growing-threat-to-public-health/"
+      },
+      {
+        "year": 2005,
+        "event": "Trade minister bans import and manufacture of all types of asbestos; asbestos factories officially closed following workers' strike at ORA-Egypt cement factory",
+        "event_es": "El ministro de comercio prohíbe la importación y fabricación de todo tipo de asbesto; las fábricas de asbesto cierran oficialmente tras la huelga de trabajadores en la fábrica de cemento ORA-Egypt",
+        "type": "ban",
+        "source_url": "https://egyptindependent.com/asbestos-despite-ban-killing-people-more-ever/"
+      },
+      {
+        "year": 2019,
+        "event": "Investigations reveal asbestos processing facilities had dumped contaminated waste across Egypt prior to ban, with legislation loopholes allowing continued import of asbestos-containing products",
+        "event_es": "Investigaciones revelan que fábricas de asbesto habían vertido residuos contaminados por todo Egipto antes de la prohibición, con vacíos legislativos que permiten la importación continua de productos con asbesto",
+        "type": "other",
+        "source_url": "https://egyptianstreets.com/2019/03/06/asbestos-use-in-egypt-a-growing-threat-to-public-health/"
+      }
+    ],
     "peak_usage_era": "1960s-2000s",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement flat sheets",
-      "asbestos-cement water pipes"
+      "asbestos-cement water pipes",
+      "brake linings"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto",
+      "forros de frenos"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS Chronology of Asbestos Bans",
+        "url": "https://www.ibasecretariat.org/chron_ban_list.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Asbestos Use in Egypt: A Growing Threat (Egyptian Streets)",
+        "url": "https://egyptianstreets.com/2019/03/06/asbestos-use-in-egypt-a-growing-threat-to-public-health/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Asbestos despite the ban killing people (Egypt Independent)",
+        "url": "https://egyptindependent.com/asbestos-despite-ban-killing-people-more-ever/",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "estonia",
@@ -1989,29 +2298,77 @@
     "iso3": "IRN",
     "region": "Middle East",
     "ban_status": "full_ban",
-    "ban_year": 2012,
-    "ban_details": "Complete ban on all asbestos products adopted in 2012 under environmental health legislation.",
+    "ban_year": 2022,
+    "ban_details": "Ban on chrysotile asbestos enacted in 2021, with Iran's representative to the Rotterdam Convention confirming the full ban in June 2022. A 2000 law by the Department of Environment had stipulated a 7-year phase-out, but that deadline passed unenforced. Studies in Shiraz found 70% of sampling sites with high to very high airborne asbestos fibre concentrations, with motor vehicle traffic as the primary contamination source.",
+    "ban_details_es": "Prohibición del asbesto crisotilo promulgada en 2021, con el representante de Irán en la Convención de Rotterdam confirmando la prohibición total en junio de 2022. Una ley del año 2000 del Departamento de Medio Ambiente había estipulado una eliminación en 7 años, pero ese plazo venció sin cumplirse. Estudios en Shiraz encontraron 70% de sitios de muestreo con concentraciones altas a muy altas de fibras de asbesto en el aire, con el tráfico vehicular como fuente principal de contaminación.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2000,
+        "event": "Department of Environment passes law stipulating a 7-year phase-out period for asbestos use in Iran",
+        "event_es": "El Departamento de Medio Ambiente aprueba ley que estipula un período de eliminación de 7 años para el uso de asbesto en Irán",
+        "type": "regulation",
+        "source_url": "https://ibasecretariat.org/rm_ktf_iranian_chap_eng.php"
+      },
+      {
+        "year": 2007,
+        "event": "Phase-out deadline passes unenforced; asbestos continues to be used in construction and industrial applications",
+        "event_es": "El plazo de eliminación vence sin cumplirse; el asbesto continúa usándose en aplicaciones de construcción e industriales",
+        "type": "other",
+        "source_url": "https://ibasecretariat.org/rm_ktf_iranian_chap_eng.php"
+      },
+      {
+        "year": 2021,
+        "event": "Iran bans chrysotile asbestos, with other asbestos forms having been restricted earlier",
+        "event_es": "Irán prohíbe el asbesto crisotilo, habiendo restringido otras formas de asbesto anteriormente",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/chron_ban_list.php"
+      },
+      {
+        "year": 2022,
+        "event": "Iran's representative to the Rotterdam Convention confirms the full national asbestos ban (June 2022)",
+        "event_es": "El representante de Irán en la Convención de Rotterdam confirma la prohibición nacional total del asbesto (junio de 2022)",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/chron_ban_list.php"
+      }
+    ],
     "peak_usage_era": "1970s-2000s",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement flat sheets",
       "thermal insulation board",
-      "asbestos gaskets"
+      "asbestos gaskets",
+      "brake linings"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tablero de aislamiento térmico",
+      "juntas de asbesto",
+      "forros de frenos"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS Chronology of Asbestos Bans",
+        "url": "https://www.ibasecretariat.org/chron_ban_list.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Iran Asbestos Profile",
+        "url": "https://ibasecretariat.org/rm_ktf_iranian_chap_eng.php",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "iraq",
@@ -3057,9 +3414,46 @@
     "region": "Europe",
     "ban_status": "full_ban",
     "ban_year": 2010,
-    "ban_details": "Complete ban on all asbestos production, import, and use effective 2010 under the Regulation on Hazardous Substances.",
+    "ban_details": "Complete ban on all asbestos production, import, supply, and use effective December 31, 2010, under the Regulation on Health and Safety Measures Regarding the Use of Asbestos. A partial ban had been in place since 2005. Turkey was both a consumer and producer of asbestos, with natural deposits in Anatolia. The Cappadocia region experienced an unprecedented mesothelioma epidemic, with ~50% of deaths in three villages caused by mesothelioma. The ban aligned Turkey with EU standards.",
+    "ban_details_es": "Prohibición total de toda producción, importación, suministro y uso de asbesto a partir del 31 de diciembre de 2010, bajo el Reglamento sobre Medidas de Salud y Seguridad respecto al Uso de Asbesto. Una prohibición parcial existía desde 2005. Turquía fue tanto consumidor como productor de asbesto, con depósitos naturales en Anatolia. La región de Capadocia experimentó una epidemia de mesotelioma sin precedentes, con ~50% de las muertes en tres aldeas causadas por mesotelioma. La prohibición alineó a Turquía con los estándares de la UE.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 1975,
+        "event": "Discovery of the Cappadocia mesothelioma epidemic in Karain village, where ~50% of all deaths were caused by mesothelioma from environmental erionite and asbestos exposure",
+        "event_es": "Descubrimiento de la epidemia de mesotelioma en Capadocia en la aldea de Karain, donde ~50% de todas las muertes eran causadas por mesotelioma debido a exposición ambiental a erionita y asbesto",
+        "type": "other",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5497117/"
+      },
+      {
+        "year": 1978,
+        "event": "Professor Y.I. Baris publishes Cappadocia mesothelioma findings in Thorax journal, drawing international attention to Turkey's asbestos crisis",
+        "event_es": "El profesor Y.I. Baris publica hallazgos sobre mesotelioma en Capadocia en la revista Thorax, atrayendo atención internacional a la crisis de asbesto en Turquía",
+        "type": "other",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5497117/"
+      },
+      {
+        "year": 2001,
+        "event": "Ministry of Health approves relocation of Cappadocia villages (Karain, Tuzkoy, Sarihidir) affected by the mesothelioma epidemic",
+        "event_es": "El Ministerio de Salud aprueba la reubicación de aldeas de Capadocia (Karain, Tuzkoy, Sarihidir) afectadas por la epidemia de mesotelioma",
+        "type": "regulation",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5497117/"
+      },
+      {
+        "year": 2005,
+        "event": "Partial restrictions on asbestos use imposed, limiting certain applications while full ban is prepared",
+        "event_es": "Se imponen restricciones parciales al uso de asbesto, limitando ciertas aplicaciones mientras se prepara la prohibición total",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2010,
+        "event": "Complete ban on asbestos production, import, supply, and use takes effect December 31 under the Regulation on Health and Safety Measures Regarding the Use of Asbestos, aligning with EU standards",
+        "event_es": "Prohibición total de producción, importación, suministro y uso de asbesto entra en vigor el 31 de diciembre bajo el Reglamento sobre Medidas de Salud y Seguridad, alineándose con estándares de la UE",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      }
+    ],
     "peak_usage_era": "1960s-2000s",
     "common_materials": [
       "asbestos-cement roofing sheets",
@@ -3067,18 +3461,39 @@
       "pipe insulation",
       "asbestos-cement water pipes"
     ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "aislamiento de tuberías",
+      "tuberías de agua de cemento-asbesto"
+    ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "The Cappadocia mesothelioma epidemic (PMC)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5497117/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS Chronology of Asbestos Bans",
+        "url": "https://www.ibasecretariat.org/chron_ban_list.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Asbestos Bans and Restrictions: Global Timeline",
+        "url": "https://www.completeasbestossurveys.co.uk/asbestos-bans-and-restrictions-the-global-timeline/",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "uruguay",
@@ -3117,29 +3532,87 @@
     "iso3": "UKR",
     "region": "Europe",
     "ban_status": "full_ban",
-    "ban_year": 2011,
-    "ban_details": "Complete ban on all asbestos adopted in 2011 under Ukrainian environmental health law, in alignment with EU standards.",
+    "ban_year": 2022,
+    "ban_details": "Parliamentary Bill No. 4142 banned the import, sale, and use of all types of asbestos and asbestos-containing products, enacted September 6, 2022. A 2017 Ministry of Health ban was annulled by court ruling in 2019. Ukraine imported an average of 42,200 tonnes of asbestos per year from 2009-2015, primarily from Russia and Kazakhstan. The Soviet-era construction legacy left extensive asbestos contamination across the country.",
+    "ban_details_es": "El Proyecto de Ley Parlamentario No. 4142 prohibió la importación, venta y uso de todos los tipos de asbesto y productos que lo contienen, promulgado el 6 de septiembre de 2022. Una prohibición del Ministerio de Salud de 2017 fue anulada por sentencia judicial en 2019. Ucrania importaba un promedio de 42,200 toneladas de asbesto por año de 2009-2015, principalmente de Rusia y Kazajistán. El legado constructivo de la era soviética dejó extensa contaminación de asbesto en todo el país.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2011,
+        "event": "Ukraine sides with Russia to block inclusion of chrysotile asbestos in the Rotterdam Convention on hazardous chemicals trade",
+        "event_es": "Ucrania se alinea con Rusia para bloquear la inclusión del asbesto crisotilo en la Convención de Rotterdam sobre comercio de químicos peligrosos",
+        "type": "other",
+        "source_url": "https://www.wecf.org/milestone-achievement-asbestos-banned-in-ukraine/"
+      },
+      {
+        "year": 2017,
+        "event": "Ministry of Health issues asbestos ban (June), but the prohibition is reversed by the Ministry of Justice within months",
+        "event_es": "El Ministerio de Salud emite prohibición del asbesto (junio), pero la prohibición es revertida por el Ministerio de Justicia en pocos meses",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/lka-ukraine-bans-asbestos-finally.php"
+      },
+      {
+        "year": 2019,
+        "event": "Court ruling annuls the 2017 Ministry of Health asbestos ban; Ukraine continues importing over 10,000 tonnes annually",
+        "event_es": "Sentencia judicial anula la prohibición de asbesto del Ministerio de Salud de 2017; Ucrania continúa importando más de 10,000 toneladas anuales",
+        "type": "court_ruling",
+        "source_url": "https://www.ibasecretariat.org/lka-ukraine-bans-asbestos-finally.php"
+      },
+      {
+        "year": 2022,
+        "event": "Parliament enacts Bill No. 4142 (September 6) banning import, sale, and use of all asbestos types and products — 14 years after campaign began",
+        "event_es": "El Parlamento promulga el Proyecto de Ley No. 4142 (6 de septiembre) prohibiendo la importación, venta y uso de todos los tipos de asbesto y productos — 14 años después de que comenzara la campaña",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/lka-ukraine-bans-asbestos-finally.php"
+      }
+    ],
     "peak_usage_era": "1950s-1990s",
     "common_materials": [
       "asbestos-cement flat sheets",
       "pipe insulation",
       "asbestos-cement water pipes",
-      "asbestos insulating board"
+      "asbestos insulating board",
+      "asbestos-cement roofing sheets"
+    ],
+    "common_materials_es": [
+      "láminas planas de cemento-asbesto",
+      "aislamiento de tuberías",
+      "tuberías de agua de cemento-asbesto",
+      "tablero aislante de asbesto",
+      "láminas de techo de cemento-asbesto"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Ukraine Bans Asbestos Finally",
+        "url": "https://www.ibasecretariat.org/lka-ukraine-bans-asbestos-finally.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "WECF: Milestone achievement - asbestos banned in Ukraine",
+        "url": "https://www.wecf.org/milestone-achievement-asbestos-banned-in-ukraine/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Rebuilding Ukraine: risks from asbestos (PreventionWeb)",
+        "url": "https://www.preventionweb.net/blog/rebuilding-ukraine-imminent-risks-asbestos",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS Chronology of Asbestos Bans",
+        "url": "https://www.ibasecretariat.org/chron_ban_list.php",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "thailand",
@@ -3149,9 +3622,39 @@
     "region": "Asia",
     "ban_status": "no_ban",
     "ban_year": null,
-    "ban_details": "No national ban. Chrysotile used in construction materials. Significant importer from Russia.",
+    "ban_details": "No ban despite a 2011 Cabinet resolution endorsing a total chrysotile ban. The National Health Assembly adopted a ban resolution in 2010, endorsed by Cabinet in April 2011, mandating the Ministry of Industry to implement immediately. However, opposition from manufacturers and the Ministry of Commerce and Industry blocked implementation. The Chrysotile Information Centre made legal threats against ban campaigners in 2012. National consumption has reduced but no prohibitions have been implemented.",
+    "ban_details_es": "Sin prohibición a pesar de una resolución del Gabinete de 2011 respaldando una prohibición total del crisotilo. La Asamblea Nacional de Salud adoptó una resolución de prohibición en 2010, respaldada por el Gabinete en abril de 2011, encomendando al Ministerio de Industria implementarla inmediatamente. Sin embargo, la oposición de fabricantes y los Ministerios de Comercio e Industria bloquearon la implementación. El Centro de Información del Crisotilo amenazó legalmente a los activistas de la prohibición en 2012. El consumo nacional se ha reducido pero no se han implementado prohibiciones.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2010,
+        "event": "National Health Assembly adopts resolution for total ban on chrysotile asbestos in Thailand",
+        "event_es": "La Asamblea Nacional de Salud adopta resolución para prohibición total del asbesto crisotilo en Tailandia",
+        "type": "regulation",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6195151/"
+      },
+      {
+        "year": 2011,
+        "event": "Cabinet endorses chrysotile ban resolution (April 12), mandating Ministry of Industry to prepare time-bound plan to list chrysotile as type 4 hazardous substance",
+        "event_es": "El Gabinete respalda la resolución de prohibición del crisotilo (12 de abril), encomendando al Ministerio de Industria preparar un plan con plazo para listar el crisotilo como sustancia peligrosa tipo 4",
+        "type": "regulation",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6195151/"
+      },
+      {
+        "year": 2012,
+        "event": "Chrysotile Information Centre (funded by International Chrysotile Association) makes legal threats against ban campaign leader, causing international uproar",
+        "event_es": "El Centro de Información del Crisotilo (financiado por la Asociación Internacional del Crisotilo) amenaza legalmente al líder de la campaña de prohibición, causando indignación internacional",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/lka-battle-over-asbestos-in-thailand.php"
+      },
+      {
+        "year": 2018,
+        "event": "Ministry of Public Health backs immediate ban; implementation continues to be blocked by industry and commerce ministries",
+        "event_es": "El Ministerio de Salud Pública respalda prohibición inmediata; la implementación sigue bloqueada por los ministerios de industria y comercio",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/lka-thailand-ministry-backs-immediate-plan.php"
+      }
+    ],
     "peak_usage_era": "1980s-present",
     "common_materials": [
       "asbestos-cement roofing sheets",
@@ -3159,18 +3662,39 @@
       "brake linings",
       "friction materials"
     ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "forros de frenos",
+      "materiales de fricción"
+    ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Thailand Asbestos Profile",
+        "url": "https://www.ibasecretariat.org/prof_thailand.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Challenges in implementing asbestos ban in Thailand (PMC)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6195151/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Thailand Ministry Backs Immediate Ban",
+        "url": "https://www.ibasecretariat.org/lka-thailand-ministry-backs-immediate-plan.php",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "philippines",
@@ -3180,27 +3704,79 @@
     "region": "Asia",
     "ban_status": "no_ban",
     "ban_year": null,
-    "ban_details": "No national ban. Asbestos-cement construction materials widely used. Chrysotile imported for domestic manufacture.",
+    "ban_details": "No comprehensive ban. Amphibole asbestos (crocidolite and amosite) banned since 2000 via DENR Administrative Order for Chemical Control Order for Asbestos. Chrysotile remains legal for use in specific high-density products. Multiple ban bills have been filed in Congress since 2008 but none has been enacted due to industry opposition. Current policy is 'controlled use' with regulation of disposal.",
+    "ban_details_es": "Sin prohibición integral. El asbesto anfíbol (crocidolita y amosita) fue prohibido desde 2000 mediante Orden Administrativa del DENR para Control Químico del Asbesto. El crisotilo sigue siendo legal para uso en productos de alta densidad específicos. Múltiples proyectos de ley de prohibición han sido presentados en el Congreso desde 2008 pero ninguno ha sido promulgado debido a la oposición industrial. La política actual es 'uso controlado' con regulación de eliminación.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2000,
+        "event": "DENR issues Administrative Order (Chemical Control Order for Asbestos) banning crocidolite and amosite; chrysotile permitted for specific high-density products",
+        "event_es": "El DENR emite Orden Administrativa (Orden de Control Químico para Asbesto) prohibiendo crocidolita y amosita; el crisotilo se permite para productos de alta densidad específicos",
+        "type": "partial_ban",
+        "source_url": "https://chemical.emb.gov.ph/wp-content/uploads/2017/03/DAO-2000-02-CCO-Asbestos-1.pdf"
+      },
+      {
+        "year": 2008,
+        "event": "Senator Miriam Santiago introduces bill to ban asbestos; trade unionists, engineers, and homeowners call for a ban throughout the Philippines",
+        "event_es": "La senadora Miriam Santiago presenta proyecto de ley para prohibir el asbesto; sindicalistas, ingenieros y propietarios piden una prohibición en todo Filipinas",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/lka_act_asb_philippines.php"
+      },
+      {
+        "year": 2009,
+        "event": "House Bill 6544 (Ban Asbestos Act of 2009) filed; House Committee on Health approves consolidation of three asbestos ban bills in September",
+        "event_es": "Se presenta el Proyecto de Ley 6544 de la Cámara (Ley de Prohibición de Asbesto de 2009); el Comité de Salud de la Cámara aprueba la consolidación de tres proyectos en septiembre",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/lka_mobiliz_philipiines.php"
+      },
+      {
+        "year": 2014,
+        "event": "House Bill 4437 (Asbestos Ban Act of 2014) filed, proposing ban on importation, manufacturing, processing, use, and distribution of asbestos within two years",
+        "event_es": "Se presenta el Proyecto de Ley 4437 de la Cámara (Ley de Prohibición de Asbesto de 2014), proponiendo prohibir la importación, fabricación, procesamiento, uso y distribución de asbesto en dos años",
+        "type": "regulation",
+        "source_url": "https://www.kazanlaw.com/update-on-bills-banning-asbestos-in-the-philippines/"
+      }
+    ],
     "peak_usage_era": "1970s-present",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement flat sheets",
-      "asbestos-cement water pipes"
+      "asbestos-cement water pipes",
+      "brake linings"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto",
+      "forros de frenos"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Asbestos Action in the Philippines",
+        "url": "https://www.ibasecretariat.org/lka_act_asb_philippines.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Mobilization in the Philippines",
+        "url": "https://www.ibasecretariat.org/lka_mobiliz_philipiines.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "DENR Chemical Control Order for Asbestos (DAO-2000-02)",
+        "url": "https://chemical.emb.gov.ph/wp-content/uploads/2017/03/DAO-2000-02-CCO-Asbestos-1.pdf",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "vietnam",
@@ -3210,27 +3786,86 @@
     "region": "Asia",
     "ban_status": "no_ban",
     "ban_year": null,
-    "ban_details": "No national ban. Vietnam is Southeast Asia's largest asbestos consumer. Chrysotile primarily used in roofing cement sheets.",
+    "ban_details": "No comprehensive ban. Amphibole asbestos banned since 2004. Chrysotile remains legal for asbestos-cement roofing sheets under 'controlled use'. Vietnam was the world's 6th largest asbestos consumer in 2012 (~79,000 tonnes imported). A 2018 Prime Ministerial announcement set 2023 as the deadline to cease chrysotile use in construction, but commercial pressure from industry lobbies has forestalled full implementation.",
+    "ban_details_es": "Sin prohibición integral. El asbesto anfíbol fue prohibido desde 2004. El crisotilo sigue siendo legal para láminas de techo de cemento-asbesto bajo 'uso controlado'. Vietnam fue el 6to mayor consumidor mundial de asbesto en 2012 (~79,000 toneladas importadas). Un anuncio del Primer Ministro en 2018 fijó 2023 como fecha límite para cesar el uso de crisotilo en construcción, pero la presión comercial de lobbies industriales ha impedido la implementación completa.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2001,
+        "event": "Prime Minister's Decision 115/2001/QD-TTG states asbestos will be banned by 2004",
+        "event_es": "La Decisión 115/2001/QD-TTG del Primer Ministro establece que el asbesto será prohibido para 2004",
+        "type": "regulation",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3732140/"
+      },
+      {
+        "year": 2004,
+        "event": "Decision 133/2004/QD-TTG bans amphibole asbestos only; chrysotile permitted with strict monitoring. Full ban deadline missed",
+        "event_es": "La Decisión 133/2004/QD-TTG prohíbe solo el asbesto anfíbol; el crisotilo se permite con monitoreo estricto. Se incumple la fecha límite de prohibición total",
+        "type": "partial_ban",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3732140/"
+      },
+      {
+        "year": 2008,
+        "event": "Decision 121/2008/QD-TTG permits chrysotile use in AC roofing sheets until 2020 under strict monitoring",
+        "event_es": "La Decisión 121/2008/QD-TTG permite el uso de crisotilo en láminas de techo de AC hasta 2020 bajo monitoreo estricto",
+        "type": "regulation",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3732140/"
+      },
+      {
+        "year": 2012,
+        "event": "Vietnam becomes world's 6th largest asbestos consumer, importing ~79,000 tonnes of chrysotile",
+        "event_es": "Vietnam se convierte en el 6to mayor consumidor mundial de asbesto, importando ~79,000 toneladas de crisotilo",
+        "type": "other",
+        "source_url": "https://ibasecretariat.org/lka-vietnams-asbestos-frontline-2019.php"
+      },
+      {
+        "year": 2018,
+        "event": "Prime Minister announces 2023 as deadline to stop chrysotile use in construction; WHO commends Vietnam's leap in the fight against asbestos",
+        "event_es": "El Primer Ministro anuncia 2023 como fecha límite para detener el uso de crisotilo en construcción; la OMS elogia el avance de Vietnam en la lucha contra el asbesto",
+        "type": "regulation",
+        "source_url": "https://www.who.int/vietnam/news/detail/12-10-2018-viet-nam-takes-big-leap-in-fight-vs-asbestos"
+      }
+    ],
     "peak_usage_era": "1980s-present",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement flat sheets",
-      "asbestos-cement water pipes"
+      "asbestos-cement water pipes",
+      "brake linings"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto",
+      "forros de frenos"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Asbestos and Asbestos-related Diseases in Vietnam (PMC)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3732140/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Vietnam's Asbestos Frontline 2019",
+        "url": "https://ibasecretariat.org/lka-vietnams-asbestos-frontline-2019.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "WHO: Viet Nam takes big leap in fight vs asbestos",
+        "url": "https://www.who.int/vietnam/news/detail/12-10-2018-viet-nam-takes-big-leap-in-fight-vs-asbestos",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "pakistan",
@@ -3240,9 +3875,39 @@
     "region": "Asia",
     "ban_status": "no_ban",
     "ban_year": null,
-    "ban_details": "No national ban. Chrysotile used in asbestos-cement products for construction sector. Significant quantities imported annually.",
+    "ban_details": "No national ban. Pakistan has been increasing imports of chrysotile asbestos and has sided with Russia, India, Kazakhstan, and Kyrgyzstan to block the inclusion of chrysotile in the Rotterdam Convention's Prior Informed Consent list. The International Chrysotile Association has actively lobbied against proposed bans. Trade union activists and the SDPI have called for an immediate ban on all forms of asbestos.",
+    "ban_details_es": "Sin prohibición nacional. Pakistán ha incrementado las importaciones de asbesto crisotilo y se ha alineado con Rusia, India, Kazajistán y Kirguistán para bloquear la inclusión del crisotilo en la lista de Consentimiento Informado Previo de la Convención de Rotterdam. La Asociación Internacional del Crisotilo ha presionado activamente contra las prohibiciones propuestas. Activistas sindicales y el SDPI han pedido una prohibición inmediata de todas las formas de asbesto.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2005,
+        "event": "Sustainable Development Policy Institute (SDPI) seminar in Islamabad marks first public calls for a national asbestos import ban",
+        "event_es": "Seminario del Instituto de Políticas de Desarrollo Sostenible (SDPI) en Islamabad marca los primeros llamados públicos para una prohibición nacional de importación de asbesto",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/lka_ban_asb_debate_pakistan.php"
+      },
+      {
+        "year": 2013,
+        "event": "International health experts publish statement condemning asbestos industry efforts to prevent a ban in Pakistan, affirming chrysotile is not safe",
+        "event_es": "Expertos internacionales de salud publican declaración condenando los esfuerzos de la industria del asbesto para prevenir una prohibición en Pakistán, afirmando que el crisotilo no es seguro",
+        "type": "other",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/23697697/"
+      },
+      {
+        "year": 2015,
+        "event": "Pakistan joins Russia, Kazakhstan, India, Kyrgyzstan, and Zimbabwe to block chrysotile listing in Rotterdam Convention's Prior Informed Consent list",
+        "event_es": "Pakistán se une a Rusia, Kazajistán, India, Kirguistán y Zimbabue para bloquear la inclusión del crisotilo en la lista de Consentimiento Informado Previo de la Convención de Rotterdam",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2017,
+        "event": "National Trade Union Federation (NTUF) representatives hold press conference demanding immediate ban on all forms of asbestos in Pakistan",
+        "event_es": "Representantes de la Federación Nacional de Sindicatos (NTUF) realizan conferencia de prensa exigiendo la prohibición inmediata de todas las formas de asbesto en Pakistán",
+        "type": "other",
+        "source_url": "https://tribune.com.pk/story/1396159/ban-asbestos-pakistan-plead-trade-unionists"
+      }
+    ],
     "peak_usage_era": "1980s-present",
     "common_materials": [
       "asbestos-cement roofing sheets",
@@ -3250,18 +3915,39 @@
       "asbestos-cement water pipes",
       "brake linings"
     ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto",
+      "forros de frenos"
+    ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Beginning of Ban Asbestos Debate in Pakistan",
+        "url": "https://www.ibasecretariat.org/lka_ban_asb_debate_pakistan.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Statement on asbestos industry efforts in Pakistan (PubMed)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23697697/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "ADAO: Ahmed Family — Asbestos Awareness in Pakistan",
+        "url": "https://www.asbestosdiseaseawareness.org/newsroom/blogs/the-ahmed-family-bringing-asbestos-awareness-and-action-to-pakistan/",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "bangladesh",
@@ -3271,27 +3957,86 @@
     "region": "Asia",
     "ban_status": "no_ban",
     "ban_year": null,
-    "ban_details": "No national ban. Growing use of asbestos-cement roofing materials in residential and commercial construction.",
+    "ban_details": "No national ban on asbestos use in construction. Bangladesh is a major shipbreaking hub (Chittagong), where end-of-life vessels containing asbestos are dismantled on beaches. A 2011 Supreme Court ruling required ships to be cleared of hazardous materials before import for demolition, but enforcement is weak. The World Bank estimates Bangladesh will import 79,000 tonnes of asbestos from end-of-life ships between 2010-2030. Asbestos from shipbreaking is often reused in local construction.",
+    "ban_details_es": "Sin prohibición nacional del uso de asbesto en construcción. Bangladesh es un importante centro de desguace de barcos (Chittagong), donde embarcaciones al final de su vida útil que contienen asbesto son desmanteladas en las playas. Una sentencia del Tribunal Supremo de 2011 exigió que los barcos sean limpiados de materiales peligrosos antes de importarlos para demolición, pero la aplicación es débil. El Banco Mundial estima que Bangladesh importará 79,000 toneladas de asbesto de barcos al final de su vida útil entre 2010-2030. El asbesto del desguace se reutiliza frecuentemente en construcción local.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 1960,
+        "event": "Shipbreaking begins in Bangladesh after a cyclone strands the Greek ship MD Alpine; industry grows dramatically through the 1980s",
+        "event_es": "El desguace de barcos comienza en Bangladesh después de que un ciclón vara el barco griego MD Alpine; la industria crece dramáticamente durante los años 1980",
+        "type": "other",
+        "source_url": "https://shipbreakingplatform.org/our-work/the-problem/bangladesh/"
+      },
+      {
+        "year": 2009,
+        "event": "Supreme Court rules that ships must be cleared of hazardous materials including asbestos before import for demolition, per Basel Convention",
+        "event_es": "El Tribunal Supremo dictamina que los barcos deben ser limpiados de materiales peligrosos incluyendo asbesto antes de importarlos para demolición, según la Convención de Basilea",
+        "type": "court_ruling",
+        "source_url": "https://www.hrw.org/report/2023/09/28/trading-lives-profit/how-shipping-industry-circumvents-regulations-scrap-toxic"
+      },
+      {
+        "year": 2011,
+        "event": "Government bans import of ships containing hazardous materials for scrapping; introduces rules requiring hazardous waste certificates",
+        "event_es": "El gobierno prohíbe la importación de barcos con materiales peligrosos para desguace; introduce normas que exigen certificados de residuos peligrosos",
+        "type": "regulation",
+        "source_url": "https://www.financeuncovered.org/stories/toxic-ships-asbestos-bangladesh-shipbreaking-chittagong-certificates"
+      },
+      {
+        "year": 2018,
+        "event": "Bangladesh Ship Recycling Act passed — first comprehensive legislation for shipbreaking industry after years without regulation",
+        "event_es": "Se aprueba la Ley de Reciclaje de Barcos de Bangladesh — primera legislación integral para la industria del desguace después de años sin regulación",
+        "type": "regulation",
+        "source_url": "https://www.dhakatribune.com/business/251030/op-ed-ship-recycling-industry-and-legal"
+      },
+      {
+        "year": 2023,
+        "event": "Human Rights Watch reports shipping industry continues to circumvent regulations to scrap toxic ships on Bangladesh's beaches, exposing workers to asbestos",
+        "event_es": "Human Rights Watch reporta que la industria naviera continúa eludiendo regulaciones para desguazar barcos tóxicos en las playas de Bangladesh, exponiendo a trabajadores al asbesto",
+        "type": "other",
+        "source_url": "https://www.hrw.org/report/2023/09/28/trading-lives-profit/how-shipping-industry-circumvents-regulations-scrap-toxic"
+      }
+    ],
     "peak_usage_era": "1990s-present",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement flat sheets",
-      "asbestos-cement water pipes"
+      "asbestos-cement water pipes",
+      "shipbreaking-salvaged asbestos materials"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto",
+      "materiales de asbesto recuperados del desguace de barcos"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Asbestos Hazard in Shipbreaking",
+        "url": "https://ibasecretariat.org/lka-the-asbestos-hazard-in-shipbreaking.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "HRW: Trading Lives for Profit (2023)",
+        "url": "https://www.hrw.org/report/2023/09/28/trading-lives-profit/how-shipping-industry-circumvents-regulations-scrap-toxic",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Finance Uncovered: Toxic ships in Bangladesh",
+        "url": "https://www.financeuncovered.org/stories/toxic-ships-asbestos-bangladesh-shipbreaking-chittagong-certificates",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "kenya",
@@ -3299,29 +4044,79 @@
     "iso2": "KE",
     "iso3": "KEN",
     "region": "Africa",
-    "ban_status": "no_ban",
-    "ban_year": null,
-    "ban_details": "No national ban. Asbestos-cement roofing sheets widely used in residential construction, especially in rural areas.",
+    "ban_status": "full_ban",
+    "ban_year": 2006,
+    "ban_details": "Ban on import, manufacture, and use of asbestos under Legal Notice No. 121, Environmental Management and Coordination (Waste Management) Regulations, 2006. Despite the ban, nearly all government institutions built in the 1950s-1960s still have asbestos roofs. Kenya held approximately 30 million tonnes of asbestos roofing at the time of the ban. NEMA developed national guidelines for safe management and disposal of asbestos in 2011, revised in 2013. Enforcement remains a major challenge.",
+    "ban_details_es": "Prohibición de importación, fabricación y uso de asbesto bajo el Aviso Legal No. 121, Reglamentos de Gestión y Coordinación Ambiental (Gestión de Residuos), 2006. A pesar de la prohibición, casi todas las instituciones gubernamentales construidas en las décadas de 1950-1960 aún tienen techos de asbesto. Kenia tenía aproximadamente 30 millones de toneladas de techos de asbesto al momento de la prohibición. NEMA desarrolló directrices nacionales para el manejo seguro y eliminación del asbesto en 2011, revisadas en 2013. La aplicación sigue siendo un desafío importante.",
     "exceptions": [],
-    "timeline": [],
-    "peak_usage_era": "1970s-present",
+    "timeline": [
+      {
+        "year": 2006,
+        "event": "Legal Notice No. 121 bans import, manufacture, and use of asbestos under Environmental Management and Coordination (Waste Management) Regulations",
+        "event_es": "El Aviso Legal No. 121 prohíbe la importación, fabricación y uso de asbesto bajo los Reglamentos de Gestión y Coordinación Ambiental (Gestión de Residuos)",
+        "type": "ban",
+        "source_url": "https://www.standardmedia.co.ke/business/article/2001259112/state-banned-asbestos-in-2006-for-link-to-cancer"
+      },
+      {
+        "year": 2011,
+        "event": "NEMA develops national guidelines on safe management and disposal of asbestos, produced through consultation with Ministry of Health and DOSHS",
+        "event_es": "NEMA desarrolla directrices nacionales sobre el manejo seguro y eliminación de asbesto, producidas en consulta con el Ministerio de Salud y DOSHS",
+        "type": "regulation",
+        "source_url": "https://ibasecretariat.org/lka_exp_asb_kenya.php"
+      },
+      {
+        "year": 2020,
+        "event": "Calls to implement the asbestos ban to save lives — 14 years after enactment, enforcement remains largely unimplemented",
+        "event_es": "Llamados a implementar la prohibición de asbesto para salvar vidas — 14 años después de la promulgación, la aplicación sigue sin implementarse en gran medida",
+        "type": "other",
+        "source_url": "https://www.the-star.co.ke/news/2020-11-12-implement-asbestos-ban-to-save-lives-state-told"
+      },
+      {
+        "year": 2024,
+        "event": "Environment CS Adan Duale orders schools, hospitals, and institutions to remove asbestos roofing; MPs direct NEMA to enforce ban across the country",
+        "event_es": "El Secretario de Medio Ambiente Adan Duale ordena a escuelas, hospitales e instituciones remover techos de asbesto; los parlamentarios dirigen a NEMA a aplicar la prohibición en todo el país",
+        "type": "regulation",
+        "source_url": "https://www.capitalfm.co.ke/news/2024/12/dualegovt-to-reinforce-asbestos-roofing-ban-by-end-of-the-month/"
+      }
+    ],
+    "peak_usage_era": "1950s-1990s",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement flat sheets",
       "asbestos-cement water pipes"
     ],
-    "estimated_buildings_at_risk": null,
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto"
+    ],
+    "estimated_buildings_at_risk": "~30 million tonnes of asbestos roofing material in use at time of ban; nearly all government institutions from 1950s-1960s affected",
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Exposé — Asbestos in Kenya",
+        "url": "https://ibasecretariat.org/lka_exp_asb_kenya.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "State banned asbestos in 2006 (The Standard)",
+        "url": "https://www.standardmedia.co.ke/business/article/2001259112/state-banned-asbestos-in-2006-for-link-to-cancer",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Duale: Govt to reinforce asbestos ban (Capital FM)",
+        "url": "https://www.capitalfm.co.ke/news/2024/12/dualegovt-to-reinforce-asbestos-roofing-ban-by-end-of-the-month/",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "zimbabwe",
@@ -3422,26 +4217,56 @@
     "region": "Asia",
     "ban_status": "no_ban",
     "ban_year": null,
-    "ban_details": "No national ban. Asbestos-cement roofing sheets used across residential construction sector.",
+    "ban_details": "No national ban on asbestos. Asbestos-cement products are used in the construction sector, primarily for roofing. Myanmar had domestic asbestos sheet production but production data shows it declined to near zero by 2017. Limited regulatory infrastructure and ongoing political instability have prevented progress on asbestos regulation. Asbestos use continues in the region alongside other Southeast Asian countries without bans.",
+    "ban_details_es": "Sin prohibición nacional del asbesto. Los productos de cemento-asbesto se usan en el sector de la construcción, principalmente para techos. Myanmar tuvo producción doméstica de láminas de asbesto pero los datos de producción muestran que declinó a casi cero para 2017. La infraestructura regulatoria limitada y la inestabilidad política en curso han impedido el progreso en la regulación del asbesto. El uso de asbesto continúa en la región junto con otros países del sudeste asiático sin prohibiciones.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2012,
+        "event": "Public health experts warn that asbestos use remains high across Asia, including Myanmar, with very little regulation over its use",
+        "event_es": "Expertos en salud pública advierten que el uso de asbesto sigue siendo alto en Asia, incluyendo Myanmar, con muy poca regulación sobre su uso",
+        "type": "other",
+        "source_url": "https://www.asianscientist.com/2012/03/features/abestos-use-high-in-asia-mesothelioma-cancer-2012/"
+      },
+      {
+        "year": 2017,
+        "event": "Myanmar's domestic asbestos sheet production declines to near zero according to CEIC economic data",
+        "event_es": "La producción doméstica de láminas de asbesto en Myanmar declina a casi cero según datos económicos de CEIC",
+        "type": "other",
+        "source_url": "https://www.ceicdata.com/en/myanmar/building-material-production/production-bm-asbestos-sheets"
+      }
+    ],
     "peak_usage_era": "1990s-present",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement flat sheets"
     ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto"
+    ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Asbestos: Deadly But Still Not Banned In Asia (Asian Scientist)",
+        "url": "https://www.asianscientist.com/2012/03/features/abestos-use-high-in-asia-mesothelioma-cancer-2012/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Myanmar Building Material Production: Asbestos Sheets (CEIC)",
+        "url": "https://www.ceicdata.com/en/myanmar/building-material-production/production-bm-asbestos-sheets",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "angola",
@@ -4232,28 +5057,60 @@
     "iso2": "MA",
     "iso3": "MAR",
     "region": "Africa",
-    "ban_status": "unknown",
+    "ban_status": "no_ban",
     "ban_year": null,
-    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "ban_details": "No national ban. Morocco imports approximately 5,000 tonnes of asbestos annually, about 8% of Africa's consumption. Moroccan firms using asbestos are not regulated, only issued guidelines from international health agencies. A 1998 government plan to draft safe-handling legislation aimed to meet WHO workplace limits (1 fibre/ml) by 2000, but no comprehensive ban has been enacted. Significant French colonial-era asbestos legacy remains in buildings.",
+    "ban_details_es": "Sin prohibición nacional. Marruecos importa aproximadamente 5,000 toneladas de asbesto anualmente, cerca del 8% del consumo de África. Las empresas marroquíes que usan asbesto no están reguladas, solo reciben directrices de agencias internacionales de salud. Un plan gubernamental de 1998 para elaborar legislación de manejo seguro pretendía cumplir los límites laborales de la OMS (1 fibra/ml) para 2000, pero no se ha promulgado una prohibición integral. El legado significativo de asbesto de la era colonial francesa permanece en los edificios.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 1998,
+        "event": "Government plans draft law on safe handling of asbestos to meet WHO workplace limits by 2000; asbestos regulation debate raises concerns among businesses",
+        "event_es": "El gobierno planea proyecto de ley sobre manejo seguro de asbesto para cumplir los límites laborales de la OMS para 2000; el debate de regulación del asbesto genera preocupación entre empresas",
+        "type": "regulation",
+        "source_url": "https://www.ipsnews.net/1998/07/environment-morocco-asbestos-regulation-debate-worries-business/"
+      },
+      {
+        "year": 2019,
+        "event": "Morocco not among the 7 African countries with asbestos bans (Algeria, Djibouti, Egypt, Gabon, Mauritius, Mozambique, South Africa); asbestos imports continue",
+        "event_es": "Marruecos no está entre los 7 países africanos con prohibiciones de asbesto (Argelia, Yibuti, Egipto, Gabón, Mauricio, Mozambique, Sudáfrica); las importaciones de asbesto continúan",
+        "type": "other",
+        "source_url": "https://www.asbestos.ae/asbestos-blog/asbestos-africa"
+      }
+    ],
     "peak_usage_era": "1970s-2000s",
     "common_materials": [
       "asbestos-cement roofing sheets",
-      "asbestos-cement flat sheets"
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "low",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Morocco asbestos regulation debate (IPS News)",
+        "url": "https://www.ipsnews.net/1998/07/environment-morocco-asbestos-regulation-debate-worries-business/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Asbestos on the Continent of Africa",
+        "url": "https://www.asbestos.ae/asbestos-blog/asbestos-africa",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "namibia",
@@ -5237,29 +6094,71 @@
     "iso2": "PE",
     "iso3": "PER",
     "region": "Latin America",
-    "ban_status": "unknown",
+    "ban_status": "partial_ban",
     "ban_year": null,
-    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "ban_details": "Partial ban. Law 29662 prohibits the use of amphibole asbestos and mandates demolition and removal of asbestos insulation in buildings where it is presumed to exist. However, chrysotile asbestos remains legal under regulated ('accredited') use. Peru imported 4,600 tonnes of asbestos in 2004, principally for asbestos-cement, friction materials, and textiles. The government has considered the feasibility of a complete ban but has not enacted one.",
+    "ban_details_es": "Prohibición parcial. La Ley 29662 prohíbe el uso de asbesto anfíbol y ordena la demolición y remoción del aislamiento de asbesto en edificios donde se presume su existencia. Sin embargo, el asbesto crisotilo sigue siendo legal bajo uso regulado ('acreditado'). Perú importó 4,600 toneladas de asbesto en 2004, principalmente para cemento-asbesto, materiales de fricción y textiles. El gobierno ha considerado la viabilidad de una prohibición completa pero no la ha promulgado.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2004,
+        "event": "Peru imports 4,600 tonnes of asbestos; regional use principally for asbestos-cement, friction materials, and textiles",
+        "event_es": "Perú importa 4,600 toneladas de asbesto; uso regional principalmente para cemento-asbesto, materiales de fricción y textiles",
+        "type": "other",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8958443/"
+      },
+      {
+        "year": 2012,
+        "event": "Law 29662 enacted: bans amphibole asbestos, mandates removal from existing buildings, but permits regulated chrysotile use",
+        "event_es": "Se promulga la Ley 29662: prohíbe el asbesto anfíbol, ordena la remoción de edificios existentes, pero permite el uso regulado de crisotilo",
+        "type": "partial_ban",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8958443/"
+      },
+      {
+        "year": 2019,
+        "event": "Government considers feasibility of full asbestos ban; progress hindered by continued chrysotile industry pressure",
+        "event_es": "El gobierno considera la viabilidad de una prohibición total del asbesto; el progreso obstaculizado por la presión continua de la industria del crisotilo",
+        "type": "other",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6634328/"
+      }
+    ],
     "peak_usage_era": "1960s-1990s",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement water pipes",
-      "vinyl-asbestos floor tiles"
+      "vinyl-asbestos floor tiles",
+      "friction materials",
+      "asbestos textiles"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto",
+      "baldosas de vinilo-asbesto",
+      "materiales de fricción",
+      "textiles de asbesto"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "low",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Asbestos and cancer in Latin America (PMC)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8958443/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Prevention of Asbestos Exposure in Latin America (PMC)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6634328/",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "saint-kitts-and-nevis",
@@ -5417,29 +6316,60 @@
     "iso2": "VE",
     "iso3": "VEN",
     "region": "Latin America",
-    "ban_status": "unknown",
+    "ban_status": "no_ban",
     "ban_year": null,
-    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "ban_details": "No national ban. Asbestos use is permitted with endorsement from the Ministry of the Environment or Health, subject to laws requiring employers to guarantee the safety and health of exposed workers. Venezuela is not among the Latin American countries that have banned asbestos (Argentina, Chile, Colombia, Dominican Republic, Honduras, Uruguay). The government has considered the feasibility of banning asbestos but political instability has limited regulatory progress.",
+    "ban_details_es": "Sin prohibición nacional. El uso de asbesto se permite con el aval del Ministerio del Ambiente o de Salud, sujeto a leyes que obligan a los empleadores a garantizar la seguridad y salud de los trabajadores expuestos. Venezuela no está entre los países latinoamericanos que han prohibido el asbesto (Argentina, Chile, Colombia, República Dominicana, Honduras, Uruguay). El gobierno ha considerado la viabilidad de prohibir el asbesto pero la inestabilidad política ha limitado el progreso regulatorio.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2006,
+        "event": "Latin American trade unionists back asbestos ban across the region; Venezuela identified as a country where ban advocacy is needed",
+        "event_es": "Sindicalistas latinoamericanos respaldan la prohibición del asbesto en la región; Venezuela identificada como país donde se necesita la promoción de la prohibición",
+        "type": "other",
+        "source_url": "https://ibasecretariat.org/lka_unions_back_asb_ban_lat_am.php"
+      },
+      {
+        "year": 2019,
+        "event": "Regional review confirms Venezuela still permits asbestos use while 6 Latin American and Caribbean countries have enacted bans",
+        "event_es": "Revisión regional confirma que Venezuela aún permite el uso de asbesto mientras 6 países de América Latina y el Caribe han promulgado prohibiciones",
+        "type": "other",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8958443/"
+      }
+    ],
     "peak_usage_era": "1960s-1990s",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement water pipes",
       "vinyl-asbestos floor tiles"
     ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto",
+      "baldosas de vinilo-asbesto"
+    ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "low",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Asbestos and cancer in Latin America (PMC)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8958443/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Unionists Back Asbestos Ban in Latin America",
+        "url": "https://ibasecretariat.org/lka_unions_back_asb_ban_lat_am.php",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "afghanistan",
@@ -5679,28 +6609,74 @@
     "iso2": "MY",
     "iso3": "MYS",
     "region": "Asia",
-    "ban_status": "unknown",
+    "ban_status": "partial_ban",
     "ban_year": null,
-    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "ban_details": "Partial ban. Crocidolite (blue asbestos) prohibited under OSHA (Prohibition of Use of Substance) Order 1999. Since 1999, asbestos building materials banned in government schools, clinics, and hospitals; since 2005, extended to all government buildings. However, chrysotile remains legal under 'controlled use' in manufacturing and private construction. No acts or regulations prohibit asbestos use in private buildings. Unions and civil society have campaigned for a total ban since the 1980s.",
+    "ban_details_es": "Prohibición parcial. La crocidolita (asbesto azul) fue prohibida bajo la Orden OSHA (Prohibición de Uso de Sustancias) de 1999. Desde 1999, los materiales de construcción con asbesto fueron prohibidos en escuelas, clínicas y hospitales gubernamentales; desde 2005, extendido a todos los edificios gubernamentales. Sin embargo, el crisotilo sigue siendo legal bajo 'uso controlado' en la fabricación y la construcción privada. No existen leyes que prohíban el uso de asbesto en edificios privados. Sindicatos y la sociedad civil han promovido una prohibición total desde los años 1980.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 1999,
+        "event": "OSHA (Prohibition of Use of Substance) Order bans crocidolite (blue asbestos); asbestos building materials prohibited in government schools, clinics, and hospitals",
+        "event_es": "La Orden OSHA (Prohibición de Uso de Sustancias) prohíbe la crocidolita (asbesto azul); materiales de construcción con asbesto prohibidos en escuelas, clínicas y hospitales gubernamentales",
+        "type": "partial_ban",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/23885771/"
+      },
+      {
+        "year": 2005,
+        "event": "Prohibition of asbestos building materials extended to all government buildings, though private sector remains unregulated",
+        "event_es": "La prohibición de materiales de construcción con asbesto se extiende a todos los edificios gubernamentales, aunque el sector privado permanece sin regular",
+        "type": "regulation",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/23885771/"
+      },
+      {
+        "year": 2024,
+        "event": "Consumers' Association of Penang submits memorandum calling for outright ban on asbestos in Malaysia; CSOs and unionists urge new minister to finalize ban",
+        "event_es": "La Asociación de Consumidores de Penang presenta memorándum pidiendo prohibición total del asbesto en Malasia; organizaciones civiles y sindicalistas instan al nuevo ministro a finalizar la prohibición",
+        "type": "other",
+        "source_url": "https://consumer.org.my/wp-content/uploads/2024/07/2024-CAP-Memorandum_Ban-Asbestos_EN.pdf"
+      }
+    ],
     "peak_usage_era": "1970s-2000s",
     "common_materials": [
       "asbestos-cement roofing sheets",
-      "asbestos-cement flat sheets"
+      "asbestos-cement flat sheets",
+      "asbestos-cement ceiling tiles",
+      "brake linings"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tejas de techo de cemento-asbesto",
+      "forros de frenos"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "low",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Use of asbestos building materials in Malaysia (PubMed)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23885771/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "DOSH Malaysia: Asbestos Banning Proposal",
+        "url": "https://intranet.dosh.gov.my/osh-info-2/chemical-issues-sp-265/340-asbestos-banning-proposal",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "CAP Memorandum: Call for Outright Ban on Asbestos (2024)",
+        "url": "https://consumer.org.my/wp-content/uploads/2024/07/2024-CAP-Memorandum_Ban-Asbestos_EN.pdf",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "maldives",
@@ -5882,28 +6858,81 @@
     "iso2": "LK",
     "iso3": "LKA",
     "region": "Asia",
-    "ban_status": "unknown",
+    "ban_status": "no_ban",
     "ban_year": null,
-    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "ban_details": "No comprehensive ban. Blue asbestos (crocidolite) banned since 1997, but chrysotile remains legal. Sri Lanka has one of the highest per-capita chrysotile consumption rates globally — over 200,000 metric tonnes consumed between 2012-2016. A planned phase-out starting January 2018 with full ban by 2024 was derailed when Russia threatened to embargo all Sri Lankan tea imports in retaliation. 11% of Sri Lanka's tea exports go to Russia.",
+    "ban_details_es": "Sin prohibición integral. El asbesto azul (crocidolita) fue prohibido desde 1997, pero el crisotilo sigue siendo legal. Sri Lanka tiene una de las tasas de consumo per cápita de crisotilo más altas del mundo — más de 200,000 toneladas métricas consumidas entre 2012-2016. Una eliminación planificada a partir de enero de 2018 con prohibición total para 2024 fue descarrilada cuando Rusia amenazó con embargar todas las importaciones de té de Sri Lanka en represalia. El 11% de las exportaciones de té de Sri Lanka van a Rusia.",
     "exceptions": [],
-    "timeline": [],
-    "peak_usage_era": "1970s-2000s",
+    "timeline": [
+      {
+        "year": 1997,
+        "event": "Blue asbestos (crocidolite) banned in Sri Lanka; white asbestos (chrysotile) remains legal for auto and construction industries",
+        "event_es": "El asbesto azul (crocidolita) se prohíbe en Sri Lanka; el asbesto blanco (crisotilo) sigue siendo legal para las industrias automotriz y de la construcción",
+        "type": "partial_ban",
+        "source_url": "https://ceylontoday.lk/2024/09/21/asbestos-a-silent-threat-sl-can-no-longer-ignore/"
+      },
+      {
+        "year": 2018,
+        "event": "Planned asbestos phase-out starting January 1 derailed when Russia threatens to embargo Sri Lankan tea imports in retaliation; ban deferred until further notice",
+        "event_es": "Eliminación planificada de asbesto a partir del 1 de enero es descarrilada cuando Rusia amenaza con embargar importaciones de té de Sri Lanka en represalia; prohibición aplazada hasta nuevo aviso",
+        "type": "other",
+        "source_url": "https://ibasecretariat.org/lka-pandemic-portends-the-demise-of-the-asbestos-industry.php"
+      },
+      {
+        "year": 2019,
+        "event": "Study reveals prevalence of asbestos-related diseases among Sri Lankan workers exposed through construction and manufacturing",
+        "event_es": "Estudio revela prevalencia de enfermedades relacionadas con el asbesto entre trabajadores de Sri Lanka expuestos a través de la construcción y manufactura",
+        "type": "other",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640253/"
+      },
+      {
+        "year": 2024,
+        "event": "Asian Ban Asbestos Network (ABAN) holds South Asia Strategy Meeting in Colombo; experts warn asbestos remains a 'silent threat Sri Lanka can no longer ignore'",
+        "event_es": "La Red Asiática de Prohibición del Asbesto (ABAN) realiza reunión estratégica del sur de Asia en Colombo; expertos advierten que el asbesto sigue siendo una 'amenaza silenciosa que Sri Lanka no puede seguir ignorando'",
+        "type": "other",
+        "source_url": "https://ceylontoday.lk/2024/09/21/asbestos-a-silent-threat-sl-can-no-longer-ignore/"
+      }
+    ],
+    "peak_usage_era": "1970s-present",
     "common_materials": [
       "asbestos-cement roofing sheets",
-      "asbestos-cement flat sheets"
+      "asbestos-cement flat sheets",
+      "brake linings",
+      "asbestos-cement water pipes"
+    ],
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "forros de frenos",
+      "tuberías de agua de cemento-asbesto"
     ],
     "estimated_buildings_at_risk": null,
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "low",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Korea to Ban Asbestos, Sri Lanka Embraces It",
+        "url": "https://ibasecretariat.org/lka_korea_ban_vs_sri_lanka.php",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Prevalence of Asbestos-Related Disease in Sri Lanka (PMC)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640253/",
+        "accessed": "2026-03-24"
+      },
+      {
+        "name": "Asbestos: A Silent Threat SL Can No Longer Ignore (Ceylon Today)",
+        "url": "https://ceylontoday.lk/2024/09/21/asbestos-a-silent-threat-sl-can-no-longer-ignore/",
+        "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-24"
   },
   {
     "slug": "syria",

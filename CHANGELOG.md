@@ -4,6 +4,69 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v1.14.0] — 2026-03-27 — Countries Listing Page
+
+### New Feature
+- **`/countries` listing page** — Filterable, sortable directory of all 200 countries with ban status, region, and search
+- Route: `/[locale]/countries` (both `/en/countries` and `/es/countries`)
+- **Filter bar**: region dropdown (7 regions), ban status pills (Full Ban, Partial, No Ban, Unknown), text search, sort (A–Z, Ban Year, Region)
+- **Country cards**: flag emoji, name, colored ban status pill, ban year — click navigates to country profile page
+- **Mobile responsive**: single-column grid, sticky filter bar with backdrop blur
+- **Empty state**: search icon + message when no results match filters
+- **SEO**: `generateMetadata` with locale-aware title/description/OG, JSON-LD `ItemList` schema for all 200 countries
+- **Sitemap**: added `/countries` route (priority 0.85)
+
+### Navigation
+- **Header**: added "Countries" / "Países" link between Map and Learn
+- **Home page**: "View All 195 →" now links to `/countries` instead of `/learn`
+
+### i18n
+- Added `countries` namespace with 15 keys in both `en.json` and `es.json`
+- Added `nav.countries` key in both locales
+
+### Code Quality
+- Extracted shared `getFlag(iso2)` helper to `lib/utils.ts` (previously duplicated 6× across codebase)
+
+**Files created:** `src/app/[locale]/countries/page.tsx`, `src/components/countries/CountryListPage.tsx`
+**Files modified:** `Header.tsx`, `page.tsx` (home), `sitemap.ts`, `en.json`, `es.json`, `lib/utils.ts`, `CHANGELOG.md`
+
+---
+
+## [v1.13.1] — 2026-03-25 — XSS Tooltip Fix
+
+### Security
+- **Fixed** XSS-adjacent pattern in `WorldMap.tsx` and `Globe3D.tsx`: tooltip HTML built with template literals is now sanitized via DOMPurify before rendering
+- **WorldMap.tsx**: imported DOMPurify and wrapped `layer.bindTooltip()` content with `DOMPurify.sanitize()`
+- **Globe3D.tsx**: imported DOMPurify and wrapped `buildLabel()` return value with `DOMPurify.sanitize()`
+- **Added** `dompurify` ^3.2.4 to dependencies and `@types/dompurify` ^3.0.5 to devDependencies in `package.json`
+- Tooltip visual appearance unchanged: country name, ban status (colored dot), ban year are preserved
+- Pattern is now safe if data sources ever become user-contributed in the future
+
+**Files modified:** `WorldMap.tsx`, `Globe3D.tsx`, `package.json`, `CHANGELOG.md`
+
+---
+
+## [v1.13.0] — 2026-03-25 — Documentation Cleanup + ROADMAP V2
+
+### Documentation Cleanup
+- **Deleted** `AUDIT-HOME-VERDICT.md` — superseded by `docs/FULL-AUDIT.md`
+- **Deleted** `docs/AUDIT-VERDICT.md` — superseded by `docs/FULL-AUDIT.md`
+- **Deleted** `TOXINFREE-CONTEXTO.md` — overlapped with `CLAUDE.md`, referenced outdated v1.2.0 state
+- **Deleted** `SETUP-GUIDE.md` — bootstrapping guide superseded by `README.md`
+
+### Documentation Updates
+- **Updated** `docs/SEO.md` — replaced "BREATHE" references with "ToxinFree", marked 7 completed checklist items, documented OG image implementation (v1.1.0), marked Google Search Console submission as done
+- **Updated** `CLAUDE.md` — bumped to Next.js 16, added Vitest/CI/CD to tech stack, updated project structure to reflect v1.12.0 reality (tests, ErrorBoundary, home components, search, calculators)
+
+### Roadmap
+- **Created** `ROADMAP-V2.md` — 9-phase post-audit action plan covering: doc cleanup, XSS fix, /countries page, Spanish search, Historias de Resistencia, 6-country deep research, expert validation, Lighthouse CI, re-audit. Target: v2.0.0 at 8.0-8.5/10
+
+**Files deleted:** 4
+**Files modified:** CLAUDE.md, docs/SEO.md, CHANGELOG.md
+**Files created:** ROADMAP-V2.md
+
+---
+
 ## [v1.12.0] — 2026-03-25 — Error Handling & Accessibility
 
 ### Error Handling

@@ -6,12 +6,14 @@ A multilingual, data-driven web platform that makes toxic substance exposure inf
 The core product is a Risk Checker where users input country + construction year → get personalized risk assessment. Wrapped in a global interactive map and educational content.
 
 ## Tech Stack
-- **Framework**: Next.js 14+ (App Router, Static Site Generation)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Maps**: Leaflet + react-leaflet (free, no API key needed)
+- **Framework**: Next.js 16 (App Router, Static Site Generation)
+- **Language**: TypeScript (strict mode)
+- **Styling**: Tailwind CSS v4
+- **Maps**: Leaflet + react-leaflet (2D), globe.gl (3D)
 - **Charts**: Recharts
-- **i18n**: next-intl
+- **i18n**: next-intl (EN/ES, 380+ keys per locale)
+- **Testing**: Vitest (78 tests — calculator + data integrity)
+- **CI/CD**: GitHub Actions (type-check, lint, test, build)
 - **Data**: Static JSON files in `/src/data/`
 - **Hosting**: Vercel (free tier)
 - **Package Manager**: npm
@@ -25,18 +27,24 @@ src/
 │   │   ├── check/          # Risk Checker tool
 │   │   ├── country/[slug]/ # Country profile pages
 │   │   └── learn/          # Educational content pages
+├── __tests__/              # Vitest tests (calculator + data integrity)
 ├── components/
-│   ├── map/                # Leaflet map components
+│   ├── map/                # WorldMap (Leaflet), Globe3D (globe.gl), Globe3DLoader
 │   ├── checker/            # Risk checker form + results
+│   ├── home/               # BanTicker, StatRotator, RegionSummary
+│   ├── search/             # CountrySearch with autocomplete
 │   ├── layout/             # Header, footer, navigation
-│   └── ui/                 # Shared UI components
+│   └── ui/                 # ErrorBoundary, AnimatedCounter, ScrollReveal, Timeline
 ├── data/
 │   ├── countries.json      # 195 countries: ban status, year, details
 │   ├── materials.json      # Asbestos materials by decade + risk level
 │   ├── risk-matrix.json    # Risk calculation logic
 │   └── geo/                # GeoJSON for world map boundaries
 ├── lib/
-│   ├── risk-calculator.ts  # Risk assessment logic
+│   ├── calculators/        # Risk assessment engine (v2.1, weighted average)
+│   ├── types.ts            # TypeScript interfaces
+│   ├── constants.ts        # Site URL, content dates
+│   ├── map-constants.ts    # Shared map color definitions
 │   ├── i18n.ts             # Internationalization config
 │   └── utils.ts            # Shared utilities
 ├── messages/               # i18n translation files
@@ -49,9 +57,10 @@ src/
 ## Commands
 ```bash
 npm run dev          # Start dev server (localhost:3000)
-npm run build        # Production build (SSG)
+npm run build        # Production build (SSG, 424+ static pages)
 npm run lint         # ESLint
 npm run type-check   # TypeScript strict check
+npm test             # Vitest unit + data integrity tests (78 tests)
 ```
 
 ## Coding Rules

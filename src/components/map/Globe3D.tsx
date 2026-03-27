@@ -6,6 +6,7 @@ import { useRouter } from "@/i18n/navigation";
 import countriesData from "@/data/countries.json";
 import worldGeoJSON from "@/data/geo/world.json";
 import type { Country } from "@/lib/types";
+import DOMPurify from "dompurify";
 import { FILL_COLORS_GLOBE as FILL_COLORS } from "@/lib/map-constants";
 
 const countries = countriesData as Country[];
@@ -176,14 +177,14 @@ export default function Globe3D() {
           ? tooltipNoBan
           : tooltipUnknown;
       const color = getCapColor(feat);
-      return (
+      const rawHtml =
         `<div style="font-family:'DM Sans',system-ui,sans-serif;padding:8px 12px;` +
         `background:#111827;border:1px solid #1F2937;border-radius:8px;min-width:140px;pointer-events:none;">` +
         `<div style="font-weight:700;font-size:14px;color:#F9FAFB;margin-bottom:4px;">${name}</div>` +
         `<div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#9CA3AF;">` +
         `<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};flex-shrink:0;"></span>` +
-        `${statusLine}</div></div>`
-      );
+        `${statusLine}</div></div>`;
+      return DOMPurify.sanitize(rawHtml);
     };
 
     const features = (worldGeoJSON as unknown as GeoJSON.FeatureCollection).features;
