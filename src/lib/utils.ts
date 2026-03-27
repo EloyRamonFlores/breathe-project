@@ -34,3 +34,11 @@ export function getBanStatusColor(status: string): string {
 export function formatNumber(num: number): string {
   return new Intl.NumberFormat("en-US").format(num);
 }
+
+export function getFlag(iso2: string): string {
+  return iso2
+    .toUpperCase()
+    .split("")
+    .map((c) => String.fromCodePoint(0x1f1e6 + c.charCodeAt(0) - 65))
+    .join("");
+}

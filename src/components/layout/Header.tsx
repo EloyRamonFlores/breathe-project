@@ -34,6 +34,7 @@ export default function Header() {
 
   const navLinks = [
     { href: "/#map", label: t("map"), isCta: false },
+    { href: "/countries", label: t("countries"), isCta: false },
     { href: "/learn", label: t("learn"), isCta: false },
   ] as const;
 

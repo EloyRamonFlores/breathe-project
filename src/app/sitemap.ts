@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     [
       { path: "", priority: 1.0, changeFrequency: "weekly" },
       { path: "/check", priority: 0.9, changeFrequency: "monthly" },
+      { path: "/countries", priority: 0.85, changeFrequency: "weekly" },
       { path: "/learn", priority: 0.8, changeFrequency: "monthly" },
       { path: "/learn/what-is-asbestos", priority: 0.8, changeFrequency: "monthly" },
       { path: "/learn/where-it-hides", priority: 0.8, changeFrequency: "monthly" },

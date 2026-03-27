@@ -7,6 +7,7 @@
     "map": "Mapa",
     "check": "Evaluar Riesgo",
     "learn": "Aprender",
+    "countries": "Países",
     "language": "Idioma"
   },
   "home": {
@@ -546,6 +547,24 @@
     "moderate": "Probabilidad Moderada",
     "high": "Probabilidad Alta",
     "critical": "Probabilidad Muy Alta"
+  },
+  "countries": {
+    "meta_title": "Países | Estado de Prohibición del Asbesto por País | ToxinFree",
+    "meta_description": "Explora los 200 países para ver el estado de prohibición del asbesto, regulaciones y niveles de riesgo. Filtra por región, estado o busca por nombre.",
+    "heading": "Países",
+    "subtitle": "Explora los 200 países para ver su estado de prohibición del asbesto, regulaciones y evaluación de riesgo.",
+    "filter_region": "Región",
+    "filter_status": "Estado de Prohibición",
+    "filter_all": "Todos",
+    "sort_label": "Ordenar",
+    "sort_name": "Nombre (A–Z)",
+    "sort_ban_year": "Año de Prohibición",
+    "sort_region": "Región",
+    "search_placeholder": "Buscar países…",
+    "results_count": "{count} países",
+    "no_results": "Ningún país coincide con tus filtros.",
+    "no_results_hint": "Intenta ajustar tus filtros o término de búsqueda.",
+    "banned_since": "Prohibido en {year}"
   },
   "ban_status": {
     "full_ban": "Prohibición Total",

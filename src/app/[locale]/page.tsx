@@ -311,7 +311,7 @@ export default async function HomePage({
             </div>
             <div className="mt-4">
               <Link
-                href="/learn"
+                href="/countries"
                 className="text-sm text-slate-500 transition-colors hover:text-slate-300 underline-from-center"
               >
                 {t("top_countries_view_all")}

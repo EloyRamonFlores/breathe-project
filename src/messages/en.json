@@ -7,6 +7,7 @@
     "map": "Map",
     "check": "Check Risk",
     "learn": "Learn",
+    "countries": "Countries",
     "language": "Language"
   },
   "home": {
@@ -546,6 +547,24 @@
     "moderate": "Moderate Probability",
     "high": "High Probability",
     "critical": "Very High Probability"
+  },
+  "countries": {
+    "meta_title": "Countries | Asbestos Ban Status by Country | ToxinFree",
+    "meta_description": "Browse all 200 countries to see asbestos ban status, regulations, and risk levels. Filter by region, ban status, or search by name.",
+    "heading": "Countries",
+    "subtitle": "Browse all 200 countries to see their asbestos ban status, regulations, and risk assessment.",
+    "filter_region": "Region",
+    "filter_status": "Ban Status",
+    "filter_all": "All",
+    "sort_label": "Sort",
+    "sort_name": "Name (A–Z)",
+    "sort_ban_year": "Ban Year",
+    "sort_region": "Region",
+    "search_placeholder": "Search countries…",
+    "results_count": "{count} countries",
+    "no_results": "No countries match your filters.",
+    "no_results_hint": "Try adjusting your filters or search term.",
+    "banned_since": "Banned {year}"
   },
   "ban_status": {
     "full_ban": "Full Ban",
