@@ -10,6 +10,7 @@ function makeCountry(
 ): Country {
   return {
     name: "Test Country",
+    name_es: "País de Prueba",
     iso2: "TC",
     iso3: "TCT",
     ban_details: "",

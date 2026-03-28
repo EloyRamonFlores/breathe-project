@@ -64,6 +64,38 @@ describe("countries.json integrity", () => {
     const unique = new Set(iso2s);
     expect(unique.size).toBe(countries.length);
   });
+
+  it("all entries have a non-empty name_es field", () => {
+    const missing = countries.filter(
+      (c) => !c.name_es || c.name_es.trim() === ""
+    );
+    expect(missing).toHaveLength(0);
+  });
+
+  it("resistance_stories entries have required fields and valid quote pairing", () => {
+    const withStories = countries.filter(
+      (c) => c.resistance_stories && c.resistance_stories.length > 0
+    );
+    for (const country of withStories) {
+      for (const story of country.resistance_stories!) {
+        expect(story.name).toBeTruthy();
+        expect(story.years).toBeTruthy();
+        expect(story.role).toBeTruthy();
+        expect(story.achievement).toBeTruthy();
+        expect(story.source_url).toBeTruthy();
+        if (story.quote) {
+          expect(story.quote_source).toBeTruthy();
+        }
+      }
+    }
+  });
+
+  it("united-kingdom has exactly 4 resistance stories", () => {
+    const uk = countries.find((c) => c.slug === "united-kingdom");
+    expect(uk).toBeDefined();
+    expect(uk!.resistance_stories).toBeDefined();
+    expect(uk!.resistance_stories).toHaveLength(4);
+  });
 });
 
 // ─── materials.json ───────────────────────────────────────────────────────────

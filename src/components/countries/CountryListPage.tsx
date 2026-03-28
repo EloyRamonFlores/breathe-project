@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Country } from "@/lib/types";
 import { getFlag } from "@/lib/utils";
@@ -48,6 +48,7 @@ export default function CountryListPage({
   const t = useTranslations("countries");
   const tHome = useTranslations("home");
   const tBan = useTranslations("ban_status");
+  const locale = useLocale();
 
   const [search, setSearch] = useState("");
   const [region, setRegion] = useState("all");
@@ -58,7 +59,7 @@ export default function CountryListPage({
     const query = search.toLowerCase().trim();
 
     let result = countries.filter((c) => {
-      if (query && !c.name.toLowerCase().includes(query) && !c.iso2.toLowerCase().includes(query)) {
+      if (query && !c.name.toLowerCase().includes(query) && !c.name_es.toLowerCase().includes(query) && !c.iso2.toLowerCase().includes(query)) {
         return false;
       }
       if (region !== "all" && c.region !== region) return false;
@@ -73,20 +74,24 @@ export default function CountryListPage({
     });
 
     result = [...result].sort((a, b) => {
-      if (sort === "name") return a.name.localeCompare(b.name);
+      const nameCompare = (x: Country, y: Country) =>
+        locale === "es"
+          ? x.name_es.localeCompare(y.name_es, "es")
+          : x.name.localeCompare(y.name);
+      if (sort === "name") return nameCompare(a, b);
       if (sort === "ban_year") {
         if (a.ban_year && b.ban_year) return b.ban_year - a.ban_year;
         if (a.ban_year) return -1;
         if (b.ban_year) return 1;
-        return a.name.localeCompare(b.name);
+        return nameCompare(a, b);
       }
       // sort by region
       const regionCmp = a.region.localeCompare(b.region);
-      return regionCmp !== 0 ? regionCmp : a.name.localeCompare(b.name);
+      return regionCmp !== 0 ? regionCmp : nameCompare(a, b);
     });
 
     return result;
-  }, [countries, search, region, status, sort]);
+  }, [countries, search, region, status, sort, locale]);
 
   return (
     <main className="mx-auto max-w-7xl px-4 py-12 sm:px-6">
@@ -198,7 +203,7 @@ export default function CountryListPage({
               </span>
               <div className="min-w-0 flex-1">
                 <p className="truncate font-medium text-text-primary group-hover:text-accent">
-                  {country.name}
+                  {locale === "es" ? country.name_es : country.name}
                 </p>
                 <div className="mt-1 flex items-center gap-2">
                   <span

@@ -4,6 +4,44 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v1.15.0] — 2026-03-28 — Stories of Resistance
+
+### New Feature
+- **Stories of Resistance** section on country profile pages — editorial cards showcasing activists who fought for asbestos bans
+- **UK: 4 activist stories** — Nellie Kershaw (first documented death, 1924), Nancy Tait (SPAID founder, 1978), June Hancock (landmark environmental exposure case, 1995), Laurie Kazan-Allen (IBAS founder, 1999–present)
+- Responsive grid: 2 columns desktop, 1 column mobile
+- Conditional rendering: section only appears on countries with story data
+- Quote support: blockquote styling for sourced quotes (defensive — none of the 4 UK activists have verified quotes)
+- Full EN/ES i18n for all story content
+
+### Code
+- `src/lib/types.ts` — new `ResistanceStory` interface; `resistance_stories?: ResistanceStory[]` added to `Country`
+- `src/data/countries.json` — UK entry enriched with 4 resistance stories (all with `achievement_es` and `role_es`)
+- `src/components/country/ResistanceStories.tsx` — new client component with locale-aware rendering
+- `src/app/[locale]/country/[slug]/page.tsx` — integrated between Timeline and Common Materials sections
+- `src/messages/en.json` + `src/messages/es.json` — added `resistance_title` and `resistance_subtitle` keys
+- `src/__tests__/data-integrity.test.ts` — 2 new tests: field validation for stories + UK has exactly 4 stories
+
+---
+
+## [v1.14.1] — 2026-03-28 — Spanish Country Name Search
+
+### Feature
+- **`name_es` field** — Added official UN Spanish name to all 200 countries in `countries.json`
+- **Spanish search** — `CountrySearch` and `CountryListPage` now match against `name_es`; "Alemania" finds Germany on any locale
+- **Spanish display** — Country names shown in Spanish (`name_es`) when locale is `es` in both search results and the `/countries` listing
+- **Spanish sort** — `/es/countries` sorts alphabetically using `localeCompare(..., "es")` (correct ñ ordering)
+
+### Code
+- `src/data/countries.json` — `name_es` inserted after `name` on all 200 entries
+- `src/lib/types.ts` — `name_es: string` added as required field on `Country` interface
+- `src/components/search/CountrySearch.tsx` — fixed broken `nameEs` expression; `getDisplayName` now locale-aware
+- `src/components/countries/CountryListPage.tsx` — added `useLocale()`, locale-aware display, filter, and sort
+- `src/__tests__/data-integrity.test.ts` — new test: all 200 entries have non-empty `name_es` (79 total tests)
+- `src/__tests__/asbestos-risk-calculator.test.ts` — added `name_es` to `makeCountry` fixture
+
+---
+
 ## [v1.14.0] — 2026-03-27 — Countries Listing Page
 
 ### New Feature

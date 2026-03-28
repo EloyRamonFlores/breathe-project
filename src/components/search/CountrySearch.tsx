@@ -39,29 +39,24 @@ export default function CountrySearch({ locale, onSelect }: CountrySearchProps) 
     return countries
       .filter((c) => {
         const nameEn = c.name.toLowerCase();
+        const nameEs = c.name_es.toLowerCase();
         const slug = c.slug.toLowerCase();
         // Search in both languages always
-        const nameEs =
-          (c.ban_details_es ? c.name : c.name).toLowerCase();
-        // Match against name, slug, and iso2
         return (
           nameEn.includes(q) ||
+          nameEs.includes(q) ||
           slug.includes(q) ||
-          c.iso2.toLowerCase() === q ||
-          // Manually match common Spanish country names from slug
-          nameEs.includes(q)
+          c.iso2.toLowerCase() === q
         );
       })
       .slice(0, 8);
   }, [query]);
 
-  // Build a lookup for Spanish names from the countries data
   const getDisplayName = useCallback(
     (country: Country) => {
-      // For now, use the English name as that's what's in countries.json
-      return country.name;
+      return locale === "es" ? country.name_es : country.name;
     },
-    []
+    [locale]
   );
 
   const handleSelect = useCallback(

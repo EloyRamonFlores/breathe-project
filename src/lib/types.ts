@@ -12,9 +12,22 @@ export interface TimelineEvent {
   source_url: string;
 }
 
+export interface ResistanceStory {
+  name: string;
+  years: string;
+  role: string;
+  role_es?: string;
+  achievement: string;
+  achievement_es?: string;
+  quote?: string;
+  quote_source?: string;
+  source_url: string;
+}
+
 export interface Country {
   slug: string;
   name: string;
+  name_es: string;
   iso2: string;
   iso3: string;
   region: string;
@@ -32,6 +45,7 @@ export interface Country {
   mesothelioma_source_year: number | null;
   priority: "high" | "medium" | "low";
   sources: Source[];
+  resistance_stories?: ResistanceStory[];
   last_updated: string;
 }
 

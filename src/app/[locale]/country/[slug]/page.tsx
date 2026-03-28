@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import countries from "@/data/countries.json";
 import type { Country } from "@/lib/types";
 import Timeline from "@/components/ui/Timeline";
+import ResistanceStories from "@/components/country/ResistanceStories";
 import { getBanStatusColor } from "@/lib/utils";
 
 // ─── Static Generation ────────────────────────────────────────────────────────
@@ -374,6 +375,11 @@ export default async function CountryPage({
             </div>
           )}
         </section>
+
+        {/* ── Stories of Resistance ── */}
+        {country.resistance_stories && country.resistance_stories.length > 0 && (
+          <ResistanceStories stories={country.resistance_stories} />
+        )}
 
         {/* ── Common Materials ── */}
         {displayMaterials.length > 0 && (
