@@ -5,9 +5,10 @@ import { getBanStatusColor, getBanStatusPillClass, getFlag } from "@/lib/utils";
 interface CountryHeroProps {
   country: Country;
   caseNumber: number;
+  heroImageUrl?: string;
 }
 
-export default async function CountryHero({ country, caseNumber }: CountryHeroProps) {
+export default async function CountryHero({ country, caseNumber, heroImageUrl }: CountryHeroProps) {
   const [t, tBanStatus, locale] = await Promise.all([
     getTranslations("country"),
     getTranslations("ban_status"),
@@ -33,15 +34,31 @@ export default async function CountryHero({ country, caseNumber }: CountryHeroPr
       style={{ minHeight: "clamp(280px, 40vh, 500px)" }}
       aria-label={`${country.name} country profile`}
     >
-      {/* Background gradient */}
+      {/* Background image or gradient */}
       <div
         className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(135deg, #060b14 0%, #0a0f1c 40%, #0d1424 100%)",
-        }}
+        style={
+          heroImageUrl
+            ? {
+                backgroundImage: `url('${heroImageUrl}')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }
+            : {
+                background:
+                  "linear-gradient(135deg, #060b14 0%, #0a0f1c 40%, #0d1424 100%)",
+              }
+        }
         aria-hidden="true"
       />
+
+      {/* Dark overlay for text readability over image */}
+      {heroImageUrl && (
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"
+          aria-hidden="true"
+        />
+      )}
 
       {/* Generative CSS pattern */}
       <div className={patternClass} aria-hidden="true" />

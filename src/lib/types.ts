@@ -50,6 +50,7 @@ export interface Country {
   resistance_stories?: ResistanceStory[];
   last_updated: string;
   hero_pattern?: "parliament" | "industry" | "urban" | "mining" | "coastal" | "default";
+  hero_image_url?: string;
 }
 
 export interface Material {

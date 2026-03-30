@@ -325,6 +325,7 @@
   {
     "slug": "brazil",
     "hero_pattern": "urban",
+    "hero_image_url": "https://images.unsplash.com/photo-1518235506717-e1ed3306a89f?w=1400&h=700&fit=crop&q=80",
     "name": "Brazil",
     "name_es": "Brasil",
     "iso2": "BR",
@@ -633,6 +634,7 @@
   {
     "slug": "united-kingdom",
     "hero_pattern": "parliament",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1400&h=700&fit=crop&q=80",
     "name": "United Kingdom",
     "name_es": "Reino Unido",
     "iso2": "GB",
@@ -824,6 +826,7 @@
   {
     "slug": "australia",
     "hero_pattern": "mining",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&h=700&fit=crop&q=80",
     "name": "Australia",
     "name_es": "Australia",
     "iso2": "AU",
@@ -1202,6 +1205,7 @@
   {
     "slug": "south-africa",
     "hero_pattern": "mining",
+    "hero_image_url": "https://images.unsplash.com/photo-1469022563149-aa64dbd37dda?w=1400&h=700&fit=crop&q=80",
     "name": "South Africa",
     "name_es": "Sudáfrica",
     "iso2": "ZA",
@@ -1987,6 +1991,7 @@
   {
     "slug": "colombia",
     "hero_pattern": "urban",
+    "hero_image_url": "https://images.unsplash.com/photo-1535066543857-505cd0ae0a05?w=1400&h=700&fit=crop&q=80",
     "name": "Colombia",
     "name_es": "Colombia",
     "iso2": "CO",
@@ -2438,6 +2443,7 @@
   {
     "slug": "france",
     "hero_pattern": "industry",
+    "hero_image_url": "https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=1400&h=700&fit=crop&q=80",
     "name": "France",
     "name_es": "Francia",
     "iso2": "FR",
@@ -2968,6 +2974,7 @@
   {
     "slug": "italy",
     "hero_pattern": "coastal",
+    "hero_image_url": "https://images.unsplash.com/photo-1552832230-4e37b02d6fbb?w=1400&h=700&fit=crop&q=80",
     "name": "Italy",
     "name_es": "Italia",
     "iso2": "IT",

@@ -214,6 +214,7 @@ export default async function CountryPage({
   const isHighPriority = country.priority === "high";
   const whatToDoItems = t.raw(getWhatToDoKey(country.ban_status)) as string[];
   const caseNumber = allCountries.findIndex((c) => c.slug === slug) + 1;
+  const heroImageUrl = (country as any).hero_image_url;
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -238,7 +239,7 @@ export default async function CountryPage({
       <JsonLd data={faqJsonLd} />
 
       {/* ── Full-width sections ── */}
-      <CountryHero country={country} caseNumber={caseNumber} />
+      <CountryHero country={country} caseNumber={caseNumber} heroImageUrl={heroImageUrl} />
       <StatStrip country={country} />
 
       {/* ── Constrained content ── */}
