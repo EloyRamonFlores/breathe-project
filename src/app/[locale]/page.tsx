@@ -11,6 +11,7 @@ import CountrySearchSection from "@/components/home/CountrySearchSection";
 import BanTicker from "@/components/home/BanTicker";
 import StatRotator from "@/components/home/StatRotator";
 import RegionSummary from "@/components/home/RegionSummary";
+import { getFlag } from "@/lib/utils";
 
 const countries = countriesData as Country[];
 const noBanCount = countries.filter(
@@ -43,15 +44,6 @@ const orgJsonLd = {
   description:
     "Citizen-powered awareness platform for asbestos and toxic substance exposure worldwide. Interactive global map, free risk checker, and educational resources.",
 };
-
-// ISO2 → flag emoji
-function getFlag(iso2: string): string {
-  return iso2
-    .toUpperCase()
-    .split("")
-    .map((c) => String.fromCodePoint(0x1f1e6 + c.charCodeAt(0) - 65))
-    .join("");
-}
 
 export async function generateStaticParams() {
   return ["en", "es"].map((locale) => ({ locale }));

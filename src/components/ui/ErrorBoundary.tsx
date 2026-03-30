@@ -12,6 +12,7 @@ interface State {
 }
 
 interface ClassProps extends Props {
+  errorLabel: string;
   title: string;
   message: string;
   retry: string;
@@ -35,7 +36,7 @@ class ErrorBoundaryClass extends React.Component<ClassProps, State> {
       return (
         <div className="flex min-h-[300px] flex-col items-center justify-center gap-4 p-8 text-center">
           <p className="font-mono text-xs uppercase tracking-widest text-slate-500">
-            Error
+            {this.props.errorLabel}
           </p>
           <h2 className="text-xl font-bold text-slate-100">
             {this.props.title}
@@ -60,6 +61,7 @@ export default function ErrorBoundary({ children }: Props) {
   const t = useTranslations("errors");
   return (
     <ErrorBoundaryClass
+      errorLabel={t("label")}
       title={t("boundary_title")}
       message={t("boundary_message")}
       retry={t("boundary_retry")}

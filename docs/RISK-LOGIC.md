@@ -1,4 +1,4 @@
-# RISK-LOGIC.md — Risk Assessment Algorithm
+# RISK-LOGIC.md — Risk Assessment Algorithm v2.1
 
 ## Overview
 The Risk Checker calculates a risk score (0.0 to 1.0) based on three inputs:
@@ -8,40 +8,61 @@ The Risk Checker calculates a risk score (0.0 to 1.0) based on three inputs:
 
 The score maps to a human-readable risk level and a list of likely materials.
 
-## Calculation
+## Calculation (v2.1 — Weighted Average)
 
 ```
-final_score = country_factor × era_factor × building_factor
+final_score = min((country_factor × 0.45) + (era_factor × 0.35) + (building_factor × 0.20), 1.0)
 ```
 
-### Step 1: Country Factor
-Determine what regulations existed in the user's country at the time of construction.
+**Why weighted average (v2.1)?** The previous multiplicative formula (`country × era × building`) diluted risk artificially by compounding decimals. Example: Germany 1985 apartment → 0.8 × 0.5 × 0.9 = 0.36 (LOW) — a false negative. Weighted average: (0.8×0.45) + (0.5×0.35) + (0.75×0.20) = 0.685 (HIGH) — correct.
 
-```
-IF country had NO ban at construction year → 0.9
-IF country had PARTIAL restrictions       → 0.6
-IF country had FULL ban before construction → 0.2
-IF unknown                                → 0.5
-```
+**Weights** (from `risk-matrix.json`):
+- Country: **0.45** (strongest signal — regulatory status is the primary determinant)
+- Era: **0.35** (construction decade predicts material type)
+- Building: **0.20** (building type affects quantity, not presence)
 
-**Logic**: A country with no ban in 1965 gets 0.9. The same country that banned asbestos in 1990 still gets 0.9 for a building constructed in 1965 (ban came after construction).
+### Step 1: Country Factor (weight: 0.45)
+Determines what regulations existed in the user's country at the time of construction.
 
-### Step 2: Era Factor
+**Per-country overrides** (18 countries with dynamic pre/post-ban factors):
 ```
-Pre-1940:   0.7  (asbestos used but not yet mass-produced)
-1940-1960:  0.9  (post-WWII construction boom, heavy asbestos use)
-1960-1980:  1.0  (peak global asbestos consumption, 1973 was US peak)
-1980-2000:  0.5  (bans starting, alternatives emerging)
-Post-2000:  0.2  (most developed countries banning, but some still using)
+Override logic:
+  IF country has override AND ban_year is null → always use pre_ban factor
+  IF country has override AND construction_year < ban_year → use pre_ban factor
+  IF country has override AND construction_year >= ban_year → use post_ban factor
 ```
 
-### Step 3: Building Factor
+Examples from `risk-matrix.json`:
+- Australia: pre_ban **0.95**, post_ban **0.05** (ban year 2003)
+- India: pre_ban **0.95**, post_ban **0.95** (no ban — same factor always)
+- United Kingdom: pre_ban **0.85**, post_ban **0.10** (ban year 1999)
+
+**Generic fallback** (for countries without overrides):
 ```
-Residential house:   1.0
-Apartment building:  0.9
-School:              1.1  (higher concern: children more vulnerable to exposure)
-Office building:     0.8
-Factory/industrial:  1.2  (heaviest industrial use of asbestos)
+no_ban_at_construction:    0.90
+partial_ban_at_construction: 0.60
+full_ban_at_construction:  0.10
+unknown:                   0.55
+```
+
+### Step 2: Era Factor (weight: 0.35)
+Based on the midpoint year of each construction era:
+```
+pre_1940:   0.70  (asbestos used but not yet mass-produced)
+1940_1960:  0.90  (post-WWII construction boom, heavy asbestos use)
+1960_1980:  1.00  (peak global asbestos consumption, 1973 was US peak)
+1980_2000:  0.50  (bans starting, alternatives emerging)
+post_2000:  0.20  (most developed countries banning, but some still using)
+```
+
+### Step 3: Building Factor (weight: 0.20)
+Normalized to max 1.0 to prevent score overflow:
+```
+residential: 0.80
+apartment:   0.75
+school:      0.90  (higher concern: children more vulnerable)
+office:      0.65
+factory:     1.00  (heaviest industrial use of asbestos)
 ```
 
 ### Step 4: Score → Risk Level
@@ -64,28 +85,31 @@ Show material IF:
 
 Sort by: risk_when_damaged descending (show most dangerous first).
 
-## Example Calculations
+## Example Calculations (v2.1)
 
 ### Example 1: House in India, built 1970
-- Country: India has NO ban (as of 2026) → country_factor = 0.9
-- Era: 1960-1980 → era_factor = 1.0
-- Building: Residential → building_factor = 1.0
-- **Score: 0.9 × 1.0 × 1.0 = 0.90 → CRITICAL**
-- Materials shown: cement roofing, floor tiles, pipe insulation, ceiling texture
+- Country: India override → pre_ban = 0.95 (no ban)
+- Era: 1960–1980 → era_factor = 1.00
+- Building: Residential → building_factor = 0.80
+- **Score: (0.95×0.45) + (1.00×0.35) + (0.80×0.20) = 0.4275 + 0.35 + 0.16 = 0.9375 → CRITICAL**
 
 ### Example 2: Apartment in Germany, built 1985
-- Country: Germany banned asbestos in 1993, so in 1985 it was partial → country_factor = 0.6
-- Era: 1980-2000 → era_factor = 0.5
-- Building: Apartment → building_factor = 0.9
-- **Score: 0.6 × 0.5 × 0.9 = 0.27 → LOW**
-- Materials shown: possibly some floor tiles, pipe lagging (fewer items)
+- Country: Germany override → pre_ban = 0.80 (ban in 1993, so 1985 is pre-ban)
+- Era: 1980–2000 → era_factor = 0.50
+- Building: Apartment → building_factor = 0.75
+- **Score: (0.80×0.45) + (0.50×0.35) + (0.75×0.20) = 0.36 + 0.175 + 0.15 = 0.685 → HIGH**
 
 ### Example 3: School in Mexico, built 1955
-- Country: Mexico has NO federal ban → country_factor = 0.9
-- Era: 1940-1960 → era_factor = 0.9
-- Building: School → building_factor = 1.1
-- **Score: 0.9 × 0.9 × 1.1 = 0.89 → CRITICAL**
-- Materials shown: cement roofing, ceiling tiles, pipe insulation, boiler insulation
+- Country: Mexico override → pre_ban = 0.90 (no ban)
+- Era: 1940–1960 → era_factor = 0.90
+- Building: School → building_factor = 0.90
+- **Score: (0.90×0.45) + (0.90×0.35) + (0.90×0.20) = 0.405 + 0.315 + 0.18 = 0.90 → CRITICAL**
+
+### Example 4: Office in Australia, built 2010
+- Country: Australia override → post_ban = 0.05 (ban in 2003, so 2010 is post-ban)
+- Era: post_2000 → era_factor = 0.20
+- Building: Office → building_factor = 0.65
+- **Score: (0.05×0.45) + (0.20×0.35) + (0.65×0.20) = 0.0225 + 0.07 + 0.13 = 0.2225 → LOW**
 
 ## Disclaimers (displayed with every result)
 1. "This assessment is based on general data about construction practices and regulations. It is NOT a substitute for professional asbestos inspection."
@@ -93,8 +117,15 @@ Sort by: risk_when_damaged descending (show most dangerous first).
 3. "Even in low-risk assessments, asbestos may still be present in individual buildings."
 4. "If you plan to renovate or demolish, always consult a certified asbestos professional first."
 
+## Source Files
+- Algorithm: `src/lib/calculators/asbestos-risk-calculator.ts`
+- Risk matrix data: `src/data/risk-matrix.json`
+- Materials data: `src/data/materials.json`
+- Tests: `src/__tests__/asbestos-risk-calculator.test.ts`
+
 ## Future Improvements (v2+)
 - More granular country data (state/province level regulations)
 - Street address → approximate construction year (using public property records where available)
 - Photo-based material identification (AI vision model — user uploads photo of ceiling/floor)
 - Integration with local testing lab databases for "find a lab near you"
+- Scientific citations for risk matrix multipliers (expert validation)

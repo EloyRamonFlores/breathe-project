@@ -5,17 +5,9 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import countriesData from "@/data/countries.json";
 import type { Country } from "@/lib/types";
+import { getFlag } from "@/lib/utils";
 
 const countries = countriesData as Country[];
-
-// ISO2 → flag emoji
-function getFlag(iso2: string): string {
-  return iso2
-    .toUpperCase()
-    .split("")
-    .map((c) => String.fromCodePoint(0x1f1e6 + c.charCodeAt(0) - 65))
-    .join("");
-}
 
 export default function BanTicker() {
   const t = useTranslations("home");

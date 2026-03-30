@@ -4,6 +4,24 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v2.1.1] — 2026-03-30 — Country Page Phase Completion
+
+### New Components
+- **`KeyFigures`** — Expanded data card section below hero; renders ban year context, mesothelioma rate with severity label, buildings-at-risk (supports multi-segment with `;` separator), and peak usage era; only mounts when data is available
+
+### Implementation Completion (Phases 2.2 – 4.1)
+- **`StatStrip`** — Finalized: horizontal scrollable bar, `var(--color-*)` inline colors for meso rate severity, `scrollbar-none` utility
+- **`MaterialGuide`** — Finalized: client component, `matchMaterialToId` keyword matching, CSS pattern strip per card, friability label, hover-reveal recommendation text, unmatched-materials pill fallback
+- **`Timeline`** — Finalized: decade-grouped `<ol>`, colored `border-l-4` per event type, pulsing dot for current-year events, `source_url` link
+- **`ResistanceStories`** — Finalized: initials avatars colored by `role_type`, role + badge + years header row, amber blockquote for quotes
+- **`page.tsx` (country)** — Final rewrite wiring all new components: `CountryHero` + `StatStrip` full-width at top, `KeyFigures` before timeline, `MaterialGuide` replacing plain pills, `max-w-4xl` body, removed `any` cast for `hero_image_url`
+
+### Technical
+- Removed `(country as any).hero_image_url` — field is properly typed on `Country`
+- Build: 426 static pages, 81 tests passing, type-check clean
+
+---
+
 ## [v2.1.0] — 2026-03-29 — Country Page Editorial Redesign
 
 ### New Components

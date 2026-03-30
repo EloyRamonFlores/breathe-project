@@ -21,6 +21,15 @@ const TYPE_BORDER_CLASS: Record<TimelineEvent["type"], string> = {
   other: "border-l-text-muted",
 };
 
+// Unicode icons for each event type — instant visual scanning
+const TYPE_ICON: Record<TimelineEvent["type"], string> = {
+  ban: "\u2696\uFE0F",         // ⚖️ scales — legislation
+  partial_ban: "\u26A0\uFE0F", // ⚠️ warning — partial
+  regulation: "\u{1F4DC}",     // 📜 scroll — regulation
+  court_ruling: "\u{1F528}",   // 🔨 gavel — court ruling
+  other: "\u{1F4CD}",          // 📍 pin — event/milestone
+};
+
 function getTypeLabel(
   type: TimelineEvent["type"],
   t: Awaited<ReturnType<typeof getTranslations<"country">>>
@@ -71,15 +80,21 @@ export default async function Timeline({ events }: TimelineProps) {
                 TYPE_BORDER_CLASS[event.type] ?? "border-l-text-muted";
               const badgeClass =
                 TYPE_BADGE_CLASS[event.type] ?? "text-text-muted bg-bg-tertiary border-bg-tertiary";
+              const icon = TYPE_ICON[event.type] ?? "📍";
 
               return (
                 <li key={i}>
                   <article
                     className={`rounded-lg bg-bg-secondary border border-bg-tertiary border-l-4 ${borderClass} p-4`}
                   >
-                    <div className="flex flex-wrap items-center gap-2 mb-1.5">
-                      {/* Year */}
-                      <span className="font-mono text-sm font-bold text-text-primary tabular-nums flex items-center gap-1.5">
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                      {/* Icon */}
+                      <span className="text-base" aria-hidden="true">
+                        {icon}
+                      </span>
+
+                      {/* Year — large and bold as visual anchor */}
+                      <span className="font-mono text-xl sm:text-2xl font-bold text-text-primary tabular-nums leading-none flex items-center gap-1.5">
                         {event.year}
                         {isPulsing && (
                           <span
@@ -104,15 +119,16 @@ export default async function Timeline({ events }: TimelineProps) {
                         : event.event}
                     </p>
 
-                    {/* Source */}
+                    {/* Source — larger click target */}
                     {event.source_url && (
                       <a
                         href={event.source_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mt-1.5 inline-block text-xs text-text-muted hover:text-accent transition-colors"
+                        className="mt-2 inline-flex items-center gap-1.5 rounded bg-bg-tertiary/50 px-2.5 py-1 text-xs text-text-muted hover:text-accent hover:bg-accent/10 transition-colors"
                         aria-label={`Source for ${event.year} event`}
                       >
+                        <span aria-hidden="true">↗</span>
                         {t("source_link_label")}
                       </a>
                     )}

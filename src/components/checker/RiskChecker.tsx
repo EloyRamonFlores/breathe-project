@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import countriesData from "@/data/countries.json";
 import type { Country, Era, BuildingType, RiskResult } from "@/lib/types";
 import { calculateRisk } from "@/lib/calculators";
+import { getFlag } from "@/lib/utils";
 import RiskResults from "./RiskResults";
 
 const countries = (countriesData as Country[]).sort((a, b) =>
@@ -63,14 +64,6 @@ const BUILDING_TYPES: { type: BuildingType; emoji: string }[] = [
   { type: "office", emoji: "🏛️" },
   { type: "factory", emoji: "🏭" },
 ];
-
-function iso2ToFlag(iso2: string): string {
-  return iso2
-    .toUpperCase()
-    .split("")
-    .map((c) => String.fromCodePoint(c.charCodeAt(0) - 65 + 0x1f1e6))
-    .join("");
-}
 
 type Step = 1 | 2 | 3 | "results";
 
@@ -325,7 +318,7 @@ export default function RiskChecker() {
                     }`}
                   >
                     <span className="text-lg leading-none" aria-hidden="true">
-                      {iso2ToFlag(country.iso2)}
+                      {getFlag(country.iso2)}
                     </span>
                     <span>{country.name}</span>
                   </li>
@@ -374,7 +367,7 @@ export default function RiskChecker() {
               >
                 {era === "1960_1980" && (
                   <span className="absolute right-2 top-2 rounded bg-critical/20 px-1.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider text-critical">
-                    Peak
+                    {t("era_peak")}
                   </span>
                 )}
                 <p className="font-medium text-text-primary">

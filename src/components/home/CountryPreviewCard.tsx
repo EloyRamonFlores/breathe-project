@@ -3,15 +3,7 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import type { Country } from "@/lib/types";
-
-// ISO2 → flag emoji
-function getFlag(iso2: string): string {
-  return iso2
-    .toUpperCase()
-    .split("")
-    .map((c) => String.fromCodePoint(0x1f1e6 + c.charCodeAt(0) - 65))
-    .join("");
-}
+import { getFlag } from "@/lib/utils";
 
 interface CountryPreviewCardProps {
   country: Country;

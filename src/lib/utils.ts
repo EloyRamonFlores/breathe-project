@@ -118,6 +118,20 @@ export function getMaterialPatternClass(materialId: string): string {
   return map[materialId] ?? "material-pattern-dots";
 }
 
+/**
+ * Extracts a short summary from a long estimated_buildings_at_risk string.
+ * Takes the first segment (before semicolon) and caps at ~30 chars for stat strip display.
+ */
+export function summarizeBuildingsAtRisk(value: string): string {
+  if (value.length <= 28) return value;
+  const firstSegment = value.split(";")[0].trim();
+  if (firstSegment.length <= 28) return firstSegment;
+  // Truncate to last space within 28 chars
+  const truncated = firstSegment.slice(0, 28);
+  const lastSpace = truncated.lastIndexOf(" ");
+  return (lastSpace > 10 ? truncated.slice(0, lastSpace) : truncated) + "…";
+}
+
 export function getRoleTypeColor(roleType?: ResistanceStory["role_type"]): string {
   const map: Record<string, string> = {
     victim: "bg-danger/20 text-danger",

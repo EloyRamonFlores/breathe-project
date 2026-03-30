@@ -9,6 +9,7 @@ import ResistanceStories from "@/components/country/ResistanceStories";
 import CountryHero from "@/components/country/CountryHero";
 import StatStrip from "@/components/country/StatStrip";
 import MaterialGuide from "@/components/country/MaterialGuide";
+import KeyFigures from "@/components/country/KeyFigures";
 import { SITE_URL } from "@/lib/constants";
 
 // ─── Static Generation ────────────────────────────────────────────────────────
@@ -214,7 +215,7 @@ export default async function CountryPage({
   const isHighPriority = country.priority === "high";
   const whatToDoItems = t.raw(getWhatToDoKey(country.ban_status)) as string[];
   const caseNumber = allCountries.findIndex((c) => c.slug === slug) + 1;
-  const heroImageUrl = (country as any).hero_image_url;
+  const heroImageUrl = country.hero_image_url;
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -244,6 +245,9 @@ export default async function CountryPage({
 
       {/* ── Constrained content ── */}
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-10">
+
+        {/* ── Key Figures in Detail ── */}
+        <KeyFigures country={country} />
 
         {/* ── Regulatory Timeline ── */}
         <section aria-labelledby="timeline-heading">
@@ -350,17 +354,17 @@ export default async function CountryPage({
             >
               {t("sources")}
             </h2>
-            <ul className="space-y-1.5" role="list">
+            <ul className="space-y-2" role="list">
               {country.sources.map((source, i) => (
                 <li key={i}>
                   <a
                     href={source.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm text-accent hover:underline"
+                    className="flex items-center gap-3 rounded-lg bg-bg-secondary border border-bg-tertiary px-4 py-3 text-sm text-text-secondary hover:text-accent hover:border-accent/30 hover:bg-accent/5 transition-colors group"
                   >
-                    <span>↗</span>
-                    <span>{source.name}</span>
+                    <span className="flex-shrink-0 text-text-muted group-hover:text-accent transition-colors" aria-hidden="true">↗</span>
+                    <span className="flex-1 min-w-0 truncate">{source.name}</span>
                   </a>
                 </li>
               ))}
