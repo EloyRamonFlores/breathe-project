@@ -8,7 +8,8 @@
     "check": "Evaluar Riesgo",
     "learn": "Aprender",
     "countries": "Países",
-    "language": "Idioma"
+    "language": "Idioma",
+    "skip_to_content": "Ir al contenido principal"
   },
   "home": {
     "meta_title": "ToxinFree — Mapa Global de Prohibición del Asbesto | 200 Países",
@@ -146,6 +147,7 @@
     "era_hint_moderate": "Uso moderado",
     "era_hint_low": "Uso bajo",
     "era_hint_minimal": "Uso mínimo",
+    "era_peak": "Pico",
     "score_label": "Puntuación de Riesgo",
     "context_ban_no_ban": "Sin prohibición",
     "context_ban_full_ban": "Prohibición total",
@@ -222,7 +224,27 @@
     "data_source_link": "Cómo obtenemos nuestros datos →",
     "source_link_label": "↗ Fuente",
     "resistance_title": "Historias de Resistencia",
-    "resistance_subtitle": "Las personas que lucharon por el cambio."
+    "resistance_subtitle": "Las personas que lucharon por el cambio.",
+    "stats_heading": "Estadísticas Clave",
+    "per_million_year": "por millón ({year})",
+    "sentinel_archive": "ARCHIVO CENTINELA",
+    "case_number": "CASO #{number}",
+    "material_guide_title": "Guía de Identificación de Materiales",
+    "material_guide_subtitle": "Materiales comunes aún presentes en edificios",
+    "material_risk_high": "RIESGO ALTO",
+    "material_risk_moderate": "MODERADO",
+    "material_risk_low": "BAJO",
+    "material_learn_more": "Saber más",
+    "material_risk_damaged": "Riesgo si dañado",
+    "material_friable": "Friable",
+    "material_non_friable": "No friable",
+    "resistance_role_victim": "VÍCTIMA PIONERA",
+    "resistance_role_advocate": "LÍDER DE DEFENSA",
+    "resistance_role_legal": "GUERRERO LEGAL",
+    "resistance_role_network": "RED GLOBAL",
+    "resistance_role_journalist": "PERIODISTA",
+    "resistance_role_scientist": "CIENTÍFICO",
+    "stat_per_million": "por millón/año"
   },
   "learn": {
     "title": "Aprende Sobre el Asbesto",
@@ -622,6 +644,7 @@
     "main_nav": "Navegación principal"
   },
   "errors": {
+    "label": "Error",
     "boundary_title": "Algo salió mal",
     "boundary_message": "Ocurrió un error inesperado. Por favor, intenta recargar la página.",
     "boundary_retry": "Intentar recargar",

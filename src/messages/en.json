@@ -8,7 +8,8 @@
     "check": "Check Risk",
     "learn": "Learn",
     "countries": "Countries",
-    "language": "Language"
+    "language": "Language",
+    "skip_to_content": "Skip to main content"
   },
   "home": {
     "meta_title": "ToxinFree — Global Asbestos Ban Map & Risk Checker | 200 Countries",
@@ -146,6 +147,7 @@
     "era_hint_moderate": "Moderate use",
     "era_hint_low": "Low use",
     "era_hint_minimal": "Minimal use",
+    "era_peak": "Peak",
     "score_label": "Risk Score",
     "context_ban_no_ban": "No ban",
     "context_ban_full_ban": "Full ban",
@@ -222,7 +224,27 @@
     "data_source_link": "How we source our data →",
     "source_link_label": "↗ Source",
     "resistance_title": "Stories of Resistance",
-    "resistance_subtitle": "The people who fought for change."
+    "resistance_subtitle": "The people who fought for change.",
+    "stats_heading": "Key Statistics",
+    "per_million_year": "per million ({year})",
+    "sentinel_archive": "SENTINEL ARCHIVE",
+    "case_number": "CASE #{number}",
+    "material_guide_title": "Material Identification Guide",
+    "material_guide_subtitle": "Common materials still present in buildings",
+    "material_risk_high": "HIGH RISK",
+    "material_risk_moderate": "MODERATE",
+    "material_risk_low": "LOW",
+    "material_learn_more": "Learn more",
+    "material_risk_damaged": "Risk when damaged",
+    "material_friable": "Friable",
+    "material_non_friable": "Non-friable",
+    "resistance_role_victim": "PIONEER VICTIM",
+    "resistance_role_advocate": "ADVOCACY LEADER",
+    "resistance_role_legal": "LEGAL WARRIOR",
+    "resistance_role_network": "GLOBAL NETWORK",
+    "resistance_role_journalist": "JOURNALIST",
+    "resistance_role_scientist": "SCIENTIST",
+    "stat_per_million": "per million/yr"
   },
   "learn": {
     "title": "Learn About Asbestos",
@@ -622,6 +644,7 @@
     "main_nav": "Main navigation"
   },
   "errors": {
+    "label": "Error",
     "boundary_title": "Something went wrong",
     "boundary_message": "An unexpected error occurred. Please try refreshing the page.",
     "boundary_retry": "Try refreshing",

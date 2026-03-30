@@ -324,6 +324,7 @@
   },
   {
     "slug": "brazil",
+    "hero_pattern": "urban",
     "name": "Brazil",
     "name_es": "Brasil",
     "iso2": "BR",
@@ -331,71 +332,150 @@
     "region": "Latin America",
     "ban_status": "full_ban",
     "ban_year": 2017,
-    "ban_details": "Federal Supreme Court (STF) ruled chrysotile use unconstitutional in 2017, establishing a nationwide prohibition enforced through federal and state legislation.",
-    "ban_details_es": "El Tribunal Supremo Federal (STF) declaró inconstitucional el uso del crisotilo en 2017, estableciendo una prohibición nacional aplicada mediante legislación federal y estatal.",
+    "ban_details": "Federal Supreme Court (STF) ruled November 29, 2017 (7-2 vote) that Federal Law 9.055/1995 permitting 'controlled use' of chrysotile was unconstitutional, establishing a full national ban on mining, processing, marketing, and distribution of chrysotile asbestos (ADI 3937, 3406, 3470). Ban reaffirmed February 23, 2023. Enforcement has been contested: Goiás state enacted a loophole law (No. 20,514/2019) allowing export-only mining, which SAMA/Eternit exploited until a five-year wind-down law (No. 22,935/2023) was enacted. ADI 6200 challenging the Goiás law was postponed indefinitely by the STF in October 2024.",
+    "ban_details_es": "El Tribunal Supremo Federal (STF) dictaminó el 29 de noviembre de 2017 (votación 7-2) que la Ley Federal 9.055/1995 que permitía el 'uso controlado' del crisotilo era inconstitucional, estableciendo una prohibición nacional plena sobre la minería, procesamiento, comercialización y distribución del asbesto crisotilo (ADI 3937, 3406, 3470). La prohibición fue ratificada el 23 de febrero de 2023. La aplicación ha sido contestada: el estado de Goiás promulgó una ley de excepción (No. 20.514/2019) que permitía la minería solo para exportación.",
     "exceptions": [],
     "timeline": [
       {
-        "year": 1995,
-        "event": "Sao Paulo state legislature passes first state-level restrictions on chrysotile use and manufacture",
-        "event_es": "La legislatura del estado de São Paulo aprueba las primeras restricciones estatales sobre el uso y fabricación de crisotilo",
+        "year": 1939,
+        "event": "Eternit opens asbestos-cement factory in Osasco, São Paulo — operates for 54 years without adequate worker protection until 1993",
+        "event_es": "Eternit abre una fábrica de cemento-asbesto en Osasco, São Paulo — opera durante 54 años sin protección adecuada para los trabajadores hasta 1993",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/prof_brazil.php"
+      },
+      {
+        "year": 1991,
+        "event": "Amphibole asbestos (crocidolite, amosite) banned under occupational safety legislation",
+        "event_es": "El asbesto anfíbol (crocidolita, amosita) queda prohibido bajo la legislación de seguridad ocupacional",
         "type": "partial_ban",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10001436/"
       },
       {
-        "year": 2001,
-        "event": "Federal Supreme Court affirms state authority to ban asbestos; six states implement bans",
-        "event_es": "El Tribunal Supremo Federal confirma la autoridad estatal para prohibir el asbesto; seis estados implementan prohibiciones",
-        "type": "court_ruling",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "year": 1995,
+        "event": "Federal Law No. 9.055/1995 permits 'controlled use' of chrysotile — legalizes ongoing mining at SAMA/Eternit's Minaçu mine in Goiás; ABREA (Association of Brazilians Exposed to Asbestos) founded by former Eternit workers",
+        "event_es": "La Ley Federal No. 9.055/1995 permite el 'uso controlado' del crisotilo — legaliza la minería en la mina SAMA/Eternit en Minaçu, Goiás; se funda ABREA (Asociação Brasileira dos Expostos ao Amianto) por ex trabajadores de Eternit",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/lka-brazil-bans-asbestos.php"
       },
       {
-        "year": 2012,
-        "event": "STF consolidates multiple asbestos ban cases; chrysotile industry files constitutional challenge to state bans",
-        "event_es": "El STF consolida múltiples casos de prohibición de asbesto; la industria del crisotilo presenta un desafío constitucional a las prohibiciones estatales",
+        "year": 2008,
+        "event": "STF upholds São Paulo state asbestos ban — signals chrysotile restriction may be constitutional at federal level",
+        "event_es": "El STF confirma la prohibición del asbesto en el estado de São Paulo — señala que la restricción del crisotilo puede ser constitucional a nivel federal",
         "type": "court_ruling",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://www.ibasecretariat.org/prof_brazil.php"
       },
       {
         "year": 2017,
-        "event": "Federal Supreme Court rules chrysotile asbestos violates constitutional right to health — nationwide prohibition",
-        "event_es": "El Tribunal Supremo Federal declara que el asbesto crisotilo viola el derecho constitucional a la salud — prohibición en todo el país",
+        "event": "STF rules (November 29, 7-2): Federal Law 9.055/1995 unconstitutional — complete national ban on chrysotile mining, processing, marketing, and distribution (ADI 3937, 3406, 3470)",
+        "event_es": "El STF falla (29 de noviembre, 7-2): la Ley Federal 9.055/1995 es inconstitucional — prohibición nacional total de la minería, procesamiento, comercialización y distribución del crisotilo (ADI 3937, 3406, 3470)",
         "type": "ban",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://www.ibasecretariat.org/lka-brazil-bans-asbestos.php"
+      },
+      {
+        "year": 2019,
+        "event": "Goiás state enacts Law No. 20,514 permitting asbestos mining for export — SAMA/Eternit continues operating in defiance of national ban; exports reach US$96.6 million in 2022",
+        "event_es": "El estado de Goiás promulga la Ley No. 20.514 que permite la minería de asbesto para exportación — SAMA/Eternit continúa operando en desafío a la prohibición nacional; las exportaciones alcanzan US$96,6 millones en 2022",
+        "type": "regulation",
+        "source_url": "https://www.mesothelioma.com/blog/brazil-continues-to-mine-and-export-asbestos-despite-ban/"
+      },
+      {
+        "year": 2021,
+        "event": "São Paulo Court (June 9) convicts SAMA, Eternit SA, and transport company of violating state and federal asbestos laws",
+        "event_es": "El Tribunal de São Paulo (9 de junio) condena a SAMA, Eternit SA y una empresa de transporte por violar las leyes de asbesto estatales y federales",
+        "type": "court_ruling",
+        "source_url": "https://www.ibasecretariat.org/lka-closing-brazils-asbestos-loopholes.php"
       },
       {
         "year": 2023,
-        "event": "Federal enforcement strengthened; Eternit plant closures completed; chrysotile imports cease",
-        "event_es": "Fortalecimiento de la aplicación federal; cierres de plantas Eternit completados; las importaciones de crisotilo cesan",
-        "type": "regulation",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "event": "STF reaffirms national asbestos ban (February 23, 7-1); Goiás enacts Law No. 22,935 (August) establishing five-year deadline for all asbestos activities to cease",
+        "event_es": "El STF reafirma la prohibición nacional del asbesto (23 de febrero, 7-1); Goiás promulga la Ley No. 22.935 (agosto) estableciendo un plazo de cinco años para el cese de todas las actividades de asbesto",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/lka-brazil-asbestos-ban-upheld.php"
+      },
+      {
+        "year": 2024,
+        "event": "STF vote on ADI 6200 (challenging Goiás export law) postponed indefinitely by Justice Alexandre de Moraes in October 2024; SAMA begins rare-earth transition in Minaçu",
+        "event_es": "La votación del STF sobre ADI 6200 (que impugna la ley de exportación de Goiás) es pospuesta indefinidamente por el Ministro Alexandre de Moraes en octubre de 2024; SAMA inicia la transición a tierras raras en Minaçu",
+        "type": "court_ruling",
+        "source_url": "https://www.asbestosdiseaseawareness.org/newsroom/blogs/brazil-federal-supreme-court-upholds-decision-to-ban-asbestos-mining-processing-and-export/"
       }
     ],
     "peak_usage_era": "1960s-2000s",
     "common_materials": [
-      "asbestos-cement roofing sheets",
+      "asbestos-cement roofing sheets (telhas onduladas)",
       "asbestos-cement flat sheets",
       "asbestos-cement water pipes",
-      "brake linings"
+      "brake linings and friction materials",
+      "asbestos-cement water tanks"
     ],
     "common_materials_es": [
-      "láminas de techo de cemento-asbesto",
+      "láminas de techo de cemento-asbesto (telhas onduladas)",
       "láminas planas de cemento-asbesto",
       "tuberías de agua de cemento-asbesto",
-      "forros de frenos"
+      "forros de frenos y materiales de fricción",
+      "tanques de agua de cemento-asbesto"
     ],
-    "estimated_buildings_at_risk": null,
-    "mesothelioma_rate": null,
-    "mesothelioma_source_year": null,
+    "estimated_buildings_at_risk": "tens of millions of buildings with legacy asbestos-cement roofing",
+    "mesothelioma_rate": 2.3,
+    "mesothelioma_source_year": 2017,
     "priority": "high",
+    "resistance_stories": [
+      {
+        "name": "Fernanda Giannasi",
+        "years": "1983–present",
+        "role_type": "advocate",
+        "role": "Labour Inspector, Brazilian Ministry of Labor; co-founder of ABREA",
+        "role_es": "Inspectora de Trabajo, Ministerio de Trabajo de Brasil; cofundadora de ABREA",
+        "achievement": "Fernanda Giannasi is a Labour Inspector with Brazil's Ministry of Labor (since 1983) who became the central figure in the campaign for a national asbestos ban. She co-founded ABREA (Associação Brasileira dos Expostos ao Amianto) in 1995 with former Eternit factory workers and served as coordinator for Latin America of the Citizens' Virtual Network Against Asbestos. Giannasi documented hazardous conditions at the Osasco factory, led enforcement actions against the industry, and supported 3,500 workers in lawsuits. The industry responded with criminal defamation charges (from Eternit and Saint-Gobain), death threats, and a period of professional exile. Canada's government also pressured Brazilian officials against her enforcement work. She remained active through the 2017 STF ruling and the 2023 ban reaffirmation.",
+        "achievement_es": "Fernanda Giannasi es inspectora de trabajo del Ministerio de Trabajo de Brasil (desde 1983) que se convirtió en la figura central de la campaña por la prohibición nacional del asbesto. Cofundó ABREA (Asociação Brasileira dos Expostos ao Amianto) en 1995 con ex trabajadores de la fábrica Eternit y coordinó la Red Virtual de Ciudadanos contra el Asbesto para América Latina. Documentó las condiciones peligrosas en la fábrica de Osasco, dirigió acciones de aplicación de la ley y apoyó a 3.500 trabajadores en demandas judiciales.",
+        "quote": "I defend an immediate world ban on the production, marketing and use of asbestos.",
+        "quote_source": "PMC: Fernanda Giannasi — battling asbestos in Brazil, Journal of Epidemiology and Community Health, 2006 (https://pmc.ncbi.nlm.nih.gov/articles/PMC2465482/)",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2465482/"
+      },
+      {
+        "name": "ABREA — Associação Brasileira dos Expostos ao Amianto",
+        "years": "1995–present",
+        "role_type": "network",
+        "role": "National advocacy organization for asbestos victims, founded by Eternit factory workers, Osasco, São Paulo",
+        "role_es": "Organización nacional de defensa de las víctimas del asbesto, fundada por trabajadores de la fábrica Eternit, Osasco, São Paulo",
+        "achievement": "ABREA was founded in 1995 by former workers of Eternit's Osasco factory after a generation of exposure with no protection. A 2003 ABREA survey of 1,022 former Eternit workers documented 24 deaths from asbestos-related disease, 223 respiratory disorder cases, 192 cases of pleural plaques, and 109 asbestosis cases. ABREA's documentation built the evidentiary base for Brazil's constitutional litigation and contributed directly to the STF decisions of 2017 and 2023. The organization continues to support sick workers and their families and to advocate for enforcement of the national ban.",
+        "achievement_es": "ABREA fue fundada en 1995 por ex trabajadores de la fábrica Eternit de Osasco tras una generación de exposición sin protección. Una encuesta de ABREA de 2003 entre 1.022 ex trabajadores de Eternit documentó 24 muertes por enfermedades relacionadas con el asbesto, 223 casos de trastornos respiratorios, 192 casos de placas pleurales y 109 casos de asbestosis. La documentación de ABREA formó la base probatoria para el litigio constitucional de Brasil.",
+        "source_url": "https://www.aljazeera.com/news/2003/10/23/brazils-asbestos-victims-gasp-for-justice"
+      }
+    ],
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
         "accessed": "2026-03-13"
+      },
+      {
+        "name": "IBAS: Brazil Asbestos Profile",
+        "url": "https://www.ibasecretariat.org/prof_brazil.php",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "IBAS: Brazil Bans Asbestos (2017)",
+        "url": "https://www.ibasecretariat.org/lka-brazil-bans-asbestos.php",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "IBAS: Brazil Asbestos Ban Upheld (2023)",
+        "url": "https://www.ibasecretariat.org/lka-brazil-asbestos-ban-upheld.php",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "PMC: Fernanda Giannasi — battling asbestos in Brazil (2006)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2465482/",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "PubMed: Analysis of Mortality from Asbestos-Related Diseases in Brazil 1996-2017",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36156859/",
+        "accessed": "2026-03-28"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-28"
   },
   {
     "slug": "mexico",
@@ -552,6 +632,7 @@
   },
   {
     "slug": "united-kingdom",
+    "hero_pattern": "parliament",
     "name": "United Kingdom",
     "name_es": "Reino Unido",
     "iso2": "GB",
@@ -700,6 +781,7 @@
       {
         "name": "Nellie Kershaw",
         "years": "c. 1891–1924",
+        "role_type": "victim",
         "role": "First recognized asbestos death in the UK",
         "role_es": "Primera muerte reconocida por asbesto en el Reino Unido",
         "achievement": "A textile worker at Turner Brothers Asbestos in Rochdale, her death at age 33 became the first documented case of asbestos-caused death. Dr. W.E. Cooke published her case in the BMJ in 1927, coining the term 'pulmonary asbestosis' — though Turner & Newall denied all responsibility.",
@@ -709,6 +791,7 @@
       {
         "name": "Nancy Tait",
         "years": "1920–2009",
+        "role_type": "advocate",
         "role": "Founded SPAID, the world's first asbestos victims' group",
         "role_es": "Fundadora de SPAID, el primer grupo de víctimas del asbesto del mundo",
         "achievement": "After her husband died of mesothelioma in 1968, she published 'Asbestos Kills' in 1976 — a pioneering booklet documenting the hazards of all asbestos types. In 1978 she founded the Society for the Prevention of Asbestos and Industrial Diseases (SPAID), the world's first asbestos victims' pressure group.",
@@ -718,6 +801,7 @@
       {
         "name": "June Hancock",
         "years": "1936–1997",
+        "role_type": "legal",
         "role": "Won landmark environmental exposure case",
         "role_es": "Ganó un caso histórico de exposición ambiental",
         "achievement": "A resident of Armley, Leeds who never worked with asbestos, she won the first UK case establishing environmental exposure liability for mesothelioma in 1995 — awarded £115,000 in damages against Cape plc. The June Hancock Mesothelioma Research Fund, created in her name, has raised over £1.5 million for research.",
@@ -727,6 +811,7 @@
       {
         "name": "Laurie Kazan-Allen",
         "years": "1999–present",
+        "role_type": "network",
         "role": "Founder and coordinator of IBAS",
         "role_es": "Fundadora y coordinadora de IBAS",
         "achievement": "Founded the International Ban Asbestos Secretariat (IBAS) in 1999, building the world's most comprehensive database of asbestos ban chronology and country regulations. Over 25 years of research and advocacy, she helped launch ban networks across Asia and coordinates the global asbestos ban movement.",
@@ -738,6 +823,7 @@
   },
   {
     "slug": "australia",
+    "hero_pattern": "mining",
     "name": "Australia",
     "name_es": "Australia",
     "iso2": "AU",
@@ -745,62 +831,92 @@
     "region": "Oceania",
     "ban_status": "full_ban",
     "ban_year": 2004,
-    "ban_details": "Complete ban on the manufacture, use, reuse, import, transport, storage, and sale of all forms of asbestos effective January 1, 2004.",
-    "ban_details_es": "Prohibición total de la fabricación, uso, reutilización, importación, transporte, almacenamiento y venta de todas las formas de asbesto, efectiva desde el 1 de enero de 2004.",
+    "ban_details": "Complete ban on the manufacture, use, reuse, import, transport, storage, and sale of all forms of asbestos effective January 1, 2004. Australia had the world's highest per-capita asbestos use — James Hardie's fibro (asbestos-cement sheet) defined post-war suburban housing, and Wittenoom in Western Australia was the largest asbestos contaminated site in the southern hemisphere. Bernie Banton's campaign exposed James Hardie's underfunded compensation fund, leading to the Asbestos Injuries Compensation Fund (AICF) in 2007.",
+    "ban_details_es": "Prohibición total de la fabricación, uso, reutilización, importación, transporte, almacenamiento y venta de todas las formas de asbesto, efectiva desde el 1 de enero de 2004. Australia tuvo el mayor uso de asbesto per cápita del mundo — el fibro (lámina de cemento-asbesto) de James Hardie definió la construcción suburbana de la posguerra, y Wittenoom en Australia Occidental fue el mayor sitio contaminado con asbesto del hemisferio sur. La campaña de Bernie Banton expuso el fondo de compensación insuficiente de James Hardie, lo que llevó al establecimiento del Fondo de Compensación por Lesiones por Asbesto (AICF) en 2007.",
     "exceptions": [],
     "timeline": [
       {
-        "year": 1978,
-        "event": "Wittenoom crocidolite mine (Western Australia) closes after over 5,000 worker illness cases documented",
-        "event_es": "La mina de crocidolita de Wittenoom (Australia Occidental) cierra tras documentarse más de 5,000 casos de enfermedad entre los trabajadores",
+        "year": 1937,
+        "event": "Wittenoom crocidolite (blue asbestos) mine opens in Western Australia, operated by Australian Blue Asbestos Ltd. CSR takes over in 1943. During the 1950s, Wittenoom is Australia's only supplier of blue asbestos and the Pilbara's largest town.",
+        "event_es": "La mina de crocidolita (asbesto azul) de Wittenoom abre en Australia Occidental, operada por Australian Blue Asbestos Ltd. CSR toma el control en 1943. Durante la década de 1950, Wittenoom es el único proveedor de asbesto azul de Australia y la ciudad más grande del Pilbara.",
         "type": "other",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://asbestosdiseases.org.au/information/wittenoom-overview/"
       },
       {
-        "year": 1986,
-        "event": "Crocidolite (blue asbestos) banned nationwide; major mining operations cease",
-        "event_es": "La crocidolita (asbesto azul) es prohibida en todo el país; las principales operaciones mineras cesan",
-        "type": "ban",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "year": 1966,
+        "event": "Wittenoom mine closes — officially due to unprofitability. The contaminated town and 3 million tonnes of asbestos tailings in local gorges remain, creating what will become the largest asbestos contaminated site in the southern hemisphere.",
+        "event_es": "La mina de Wittenoom cierra — oficialmente por no ser rentable. La ciudad contaminada y 3 millones de toneladas de residuos de asbesto en los barrancos locales permanecen, creando lo que se convertirá en el mayor sitio contaminado con asbesto del hemisferio sur.",
+        "type": "other",
+        "source_url": "https://asbestosdiseases.org.au/information/wittenoom-overview/"
       },
       {
-        "year": 2003,
-        "event": "Safe Work Australia phases out remaining asbestos product categories ahead of full ban",
-        "event_es": "Safe Work Australia elimina gradualmente las categorías restantes de productos de asbesto antes de la prohibición total",
+        "year": 1978,
+        "event": "Western Australian Government begins encouraging Wittenoom residents to relocate due to airborne asbestos health risks. Buildings are demolished between 1986–1992.",
+        "event_es": "El gobierno de Australia Occidental comienza a alentar a los residentes de Wittenoom a reubicarse debido a los riesgos de salud por asbesto en el aire. Los edificios son demolidos entre 1986 y 1992.",
+        "type": "other",
+        "source_url": "https://www.australianasbestosnetwork.org.au/asbestos-history/asbestos-wittenoom/closure-wittenoom/"
+      },
+      {
+        "year": 2001,
+        "event": "NOHSC resolves to ban chrysotile import and use by end of 2003. James Hardie establishes the underfunded Medical Research and Compensation Foundation (MRCF) while reincorporating in Netherlands to distance from asbestos liabilities.",
+        "event_es": "La NOHSC resuelve prohibir la importación y uso del crisotilo para finales de 2003. James Hardie establece el fondo de compensación médica e investigación (MRCF) insuficientemente financiado mientras se reincorpora en los Países Bajos para distanciarse de sus responsabilidades por asbesto.",
         "type": "regulation",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://www.ibasecretariat.org/lka_aus_ends_asb_use.php"
       },
       {
         "year": 2004,
-        "event": "Complete ban effective January 1, 2004: all asbestos manufacture, import, use, and sale prohibited",
-        "event_es": "Prohibición total efectiva desde el 1 de enero de 2004: se prohíbe toda fabricación, importación, uso y venta de asbesto",
+        "event": "Complete ban effective January 1, 2004: all asbestos manufacture, import, use, reuse, transport, storage and sale prohibited. Jackson Commission of Inquiry exposes James Hardie's underfunded compensation fund — company found to have 'behaved wrongfully.'",
+        "event_es": "Prohibición total efectiva desde el 1 de enero de 2004: se prohíbe toda fabricación, importación, uso, reutilización, transporte, almacenamiento y venta de asbesto. La Comisión de Investigación Jackson expone el fondo de compensación insuficiente de James Hardie — la empresa fue declarada culpable de 'actuar de manera incorrecta'.",
         "type": "ban",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://www.ibasecretariat.org/lka_australian_ban.php"
+      },
+      {
+        "year": 2007,
+        "event": "Asbestos Injuries Compensation Fund (AICF) finalized — James Hardie commits to unlimited-duration compensation at up to 35% of annual cash flow. Bernie Banton, the face of the campaign, receives NSW Senior Australian of the Year, then dies November 27 at age 61.",
+        "event_es": "Se finaliza el Fondo de Compensación por Lesiones por Asbesto (AICF) — James Hardie se compromete a una compensación de duración ilimitada de hasta el 35% del flujo de caja anual. Bernie Banton, el rostro de la campaña, recibe el Premio al Australiano Mayor del Año de NSW, y luego muere el 27 de noviembre a los 61 años.",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/lka_james_hardie_cond.php"
+      },
+      {
+        "year": 2007,
+        "event": "Wittenoom officially degazetted — name removed from official maps and road signs. Town declared a contaminated site under the Contaminated Sites Act 2003.",
+        "event_es": "Wittenoom queda oficialmente desgazetada — su nombre es eliminado de los mapas oficiales y señales viales. La ciudad es declarada sitio contaminado bajo la Ley de Sitios Contaminados de 2003.",
+        "type": "other",
+        "source_url": "https://www.asbestos.com/news/2023/05/17/australia-cemetery-asbestos-town-demolished/"
       },
       {
         "year": 2014,
-        "event": "Asbestos Safety and Eradication Agency (ASEA) established with dedicated federal mandate for remediation",
-        "event_es": "Se establece la Agencia de Seguridad y Erradicación del Asbesto (ASEA) con un mandato federal dedicado a la remediación",
+        "event": "ASEA (Asbestos Safety and Eradication Agency) established under federal mandate for asbestos safety and eradication. Renamed ASSEA (including silica) in December 2023.",
+        "event_es": "Se establece ASEA (Agencia de Seguridad y Erradicación del Asbesto) con mandato federal para la seguridad y erradicación del asbesto. Renombrada ASSEA (incluyendo sílice) en diciembre de 2023.",
         "type": "regulation",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://www.asbestossafety.gov.au/"
+      },
+      {
+        "year": 2024,
+        "event": "Asbestos National Strategic Plan Phase 3 (2024-2030) endorsed by all Australian governments — targeting safe, proactive removal of ~6 million tonnes of asbestos from the built environment, projected to prevent up to 27,000 deaths by 2068.",
+        "event_es": "La Fase 3 del Plan Estratégico Nacional de Asbesto (2024-2030) es respaldada por todos los gobiernos australianos — apuntando a la remoción segura y proactiva de ~6 millones de toneladas de asbesto del entorno construido, proyectando prevenir hasta 27.000 muertes para 2068.",
+        "type": "regulation",
+        "source_url": "https://www.asbestossafety.gov.au/research-publications/phase-three-asbestos-national-strategic-plan-2024-2030"
       }
     ],
     "peak_usage_era": "1950s-1980s",
     "common_materials": [
+      "fibro (asbestos-cement sheet) — James Hardie brand",
       "asbestos-cement roofing sheets",
-      "asbestos-cement flat sheets",
-      "pipe insulation",
-      "vinyl-asbestos floor tiles",
-      "asbestos insulating board"
+      "asbestos-cement flat sheets (eaves, walls, fences)",
+      "Mr Fluffy loose-fill asbestos insulation (ACT/NSW)",
+      "pipe and thermal insulation (Bradford/CSR)",
+      "vinyl-asbestos floor tiles"
     ],
     "common_materials_es": [
+      "fibro (lámina de cemento-asbesto) — marca James Hardie",
       "láminas de techo de cemento-asbesto",
-      "láminas planas de cemento-asbesto",
-      "aislamiento de tuberías",
-      "baldosas de vinilo-asbesto",
-      "tablero aislante de asbesto"
+      "láminas planas de cemento-asbesto (aleros, paredes, cercas)",
+      "aislamiento de asbesto suelto 'Mr Fluffy' (ACT/NSW)",
+      "aislamiento de tuberías y térmico (Bradford/CSR)",
+      "baldosas de vinilo-asbesto"
     ],
-    "estimated_buildings_at_risk": "~1 in 3 Australian homes built before 1990",
+    "estimated_buildings_at_risk": "~1 in 3 Australian homes built before 1990; ~6 million tonnes total in built environment (2024)",
     "mesothelioma_rate": 31,
     "mesothelioma_source_year": 2020,
     "priority": "high",
@@ -809,9 +925,48 @@
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
         "accessed": "2026-03-13"
+      },
+      {
+        "name": "AIHW — Mesothelioma in Australia 2024",
+        "url": "https://www.aihw.gov.au/reports/cancer/mesothelioma-in-australia-2024/contents/summary",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "ASSEA — Asbestos National Strategic Plan 2024-2030",
+        "url": "https://www.asbestossafety.gov.au/research-publications/phase-three-asbestos-national-strategic-plan-2024-2030",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "IBAS — Two Decades After Australia Banned Asbestos",
+        "url": "https://www.ibasecretariat.org/lka-two-decades-after-australia-banned-asbestos.php",
+        "accessed": "2026-03-28"
       }
     ],
-    "last_updated": "2026-03-13"
+    "resistance_stories": [
+      {
+        "name": "Bernie Banton AM",
+        "years": "1946–2007",
+        "role_type": "advocate",
+        "role": "Former James Hardie worker and leading advocate for asbestos compensation in Australia",
+        "role_es": "Ex trabajador de James Hardie y principal defensor de la compensación por asbesto en Australia",
+        "achievement": "Bernie Banton worked making asbestos lagging at James Hardie Industries and was diagnosed with asbestosis and asbestos-related pleural disease in January 1999. He became the widely recognized face of the campaign to expose James Hardie's underfunded Medical Research and Compensation Foundation (MRCF), established in 2001. His sustained public pressure — including testifying before the 2004 Jackson Commission of Inquiry — produced the Asbestos Injuries Compensation Fund (AICF), which committed James Hardie to unlimited-duration compensation. Despite requiring an oxygen tank, he continued campaigning until weeks before his death. He received the Member of the Order of Australia in 2005 and was named NSW Senior Australian of the Year in 2007. He died November 27, 2007, 103 days after being diagnosed with terminal peritoneal mesothelioma.",
+        "achievement_es": "Bernie Banton trabajó fabricando revestimientos de asbesto en James Hardie Industries y fue diagnosticado con asbestosis y enfermedad pleural relacionada con el asbesto en enero de 1999. Se convirtió en el rostro reconocido de la campaña para exponer el fondo de compensación insuficiente de James Hardie (MRCF). Su presión pública sostenida — incluido su testimonio ante la Comisión de Investigación Jackson de 2004 — produjo el Fondo de Compensación por Lesiones por Asbesto (AICF), que comprometió a James Hardie con una compensación de duración ilimitada. Recibió la Orden de Australia en 2005 y fue nombrado Australiano Mayor del Año de NSW en 2007. Murió el 27 de noviembre de 2007, 103 días después de ser diagnosticado con mesotelioma peritoneal terminal.",
+        "source_url": "https://en.wikipedia.org/wiki/Bernie_Banton"
+      },
+      {
+        "name": "Melita Markey",
+        "years": "2000s–present",
+        "role_type": "advocate",
+        "role": "CEO, Asbestos Diseases Society of Australia (ADSA) — advocate for asbestos disease victims in Western Australia",
+        "role_es": "CEO de la Asbestos Diseases Society of Australia (ADSA) — defensora de las víctimas de enfermedades por asbesto en Australia Occidental",
+        "achievement": "Melita Markey leads ADSA, the primary support and advocacy organization for asbestos disease sufferers in Western Australia — including the legacy community of Wittenoom workers and their families. Under her leadership, ADSA maintains national visibility for the unfinished asbestos removal agenda. She has been a consistent public voice calling for action on the approximately 6 million tonnes of asbestos remaining in Australian buildings and on the ongoing human cost of the Wittenoom legacy.",
+        "achievement_es": "Melita Markey dirige ADSA, la principal organización de apoyo y defensa para los afectados por enfermedades de asbesto en Australia Occidental — incluida la comunidad heredada de los trabajadores de Wittenoom y sus familias. Bajo su liderazgo, ADSA mantiene visibilidad nacional para la agenda de remoción de asbesto inconclusa.",
+        "quote": "People haven't stopped dying, and they won't, as long as asbestos remains in our community.",
+        "quote_source": "IBAS — Two Decades After Australia Banned Asbestos, November 21, 2023 (https://www.ibasecretariat.org/lka-two-decades-after-australia-banned-asbestos.php)",
+        "source_url": "https://asbestosdiseases.org.au/"
+      }
+    ],
+    "last_updated": "2026-03-28"
   },
   {
     "slug": "japan",
@@ -1046,6 +1201,7 @@
   },
   {
     "slug": "south-africa",
+    "hero_pattern": "mining",
     "name": "South Africa",
     "name_es": "Sudáfrica",
     "iso2": "ZA",
@@ -1053,71 +1209,184 @@
     "region": "Africa",
     "ban_status": "full_ban",
     "ban_year": 2008,
-    "ban_details": "Full ban under Asbestos Regulations (Government Gazette No. 30891) in 2008, removing all remaining exceptions from the partial ban implemented in 2003.",
-    "ban_details_es": "Prohibición total bajo los Reglamentos de Asbesto (Gaceta Oficial No. 30891) en 2008, eliminando todas las excepciones restantes de la prohibición parcial implementada en 2003.",
+    "ban_details": "Complete ban on all asbestos enacted March 28, 2008, under Regulations No. R. 341 — Prohibition of the Use, Manufacturing, Import and Export of Asbestos and Asbestos Containing Materials. South Africa had been the world's largest supplier of crocidolite and the sole commercial producer of amosite; mining operations spanned over a century (1895–2002), producing more than 10 million tonnes.",
+    "ban_details_es": "Prohibición total de todo el asbesto promulgada el 28 de marzo de 2008 mediante el Reglamento No. R. 341 — Prohibición del Uso, Fabricación, Importación y Exportación del Asbesto y Materiales que Contienen Asbesto. Sudáfrica había sido el mayor proveedor mundial de crocidolita y el único productor comercial de amosita; las operaciones mineras abarcaron más de un siglo (1895–2002), produciendo más de 10 millones de toneladas.",
     "exceptions": [],
     "timeline": [
       {
-        "year": 1977,
-        "event": "Occupational Diseases in Mines and Works Act introduces first health protections for asbestos mine workers",
-        "event_es": "La Ley de Enfermedades Ocupacionales en Minas y Obras introduce las primeras protecciones sanitarias para los mineros de asbesto",
-        "type": "regulation",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "year": 1895,
+        "event": "Commercial asbestos mining begins; Cape Asbestos Company opens Koegas mine near Prieska, Northern Cape — later becomes one of the world's largest crocidolite operations",
+        "event_es": "Comienza la minería comercial de asbesto; la Cape Asbestos Company abre la mina Koegas cerca de Prieska, Cabo del Norte — más tarde se convierte en una de las mayores operaciones de crocidolita del mundo",
+        "type": "other",
+        "source_url": "https://ibasecretariat.org/prof_sa.php"
       },
       {
-        "year": 1984,
-        "event": "Crocidolite mining in Northern Cape phased out following high incidence of mesothelioma among workers",
-        "event_es": "La extracción de crocidolita en la Provincia del Cabo del Norte se abandona gradualmente tras la alta incidencia de mesotelioma entre los trabajadores",
+        "year": 1977,
+        "event": "Asbestos production peaks at 380,000 tonnes — South Africa is the third-largest global producer; supplies ~97% of world crocidolite and virtually all commercially mined amosite",
+        "event_es": "La producción de asbesto alcanza un máximo de 380.000 toneladas — Sudáfrica es el tercer mayor productor mundial; suministra ~97% del crocidolito mundial y prácticamente toda la amosita explotada comercialmente",
         "type": "other",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://ibasecretariat.org/prof_sa.php"
+      },
+      {
+        "year": 1997,
+        "event": "Mrs. Lubbe and four other South African asbestos victims file the first English High Court claim against Cape plc — alleging workers were exposed to 30 times the British legal limit without protection",
+        "event_es": "La Sra. Lubbe y otros cuatro sudafricanos afectados presentan la primera demanda ante el Tribunal Superior inglés contra Cape plc, alegando que los trabajadores fueron expuestos a 30 veces el límite legal británico sin protección",
+        "type": "court_ruling",
+        "source_url": "https://www.leighday.co.uk/news/cases-and-testimonials/cases/cape-plc/"
+      },
+      {
+        "year": 1998,
+        "event": "National Asbestos Summit in Johannesburg — government, industry, and civil society begin planning a ban",
+        "event_es": "Cumbre Nacional del Asbesto en Johannesburgo — gobierno, industria y sociedad civil comienzan a planificar una prohibición",
+        "type": "regulation",
+        "source_url": "https://ibasecretariat.org/lka_sa_leg.php"
+      },
+      {
+        "year": 2000,
+        "event": "Lubbe v Cape plc: House of Lords rules (July 20) that English courts can hear claims from foreign plaintiffs against UK parent companies — landmark corporate accountability ruling; ~7,500 claimants joined",
+        "event_es": "Lubbe v Cape plc: la Cámara de los Lores falla (20 de julio) que los tribunales ingleses pueden conocer demandas de demandantes extranjeros contra matrices del Reino Unido — fallo histórico de responsabilidad corporativa; ~7.500 demandantes se unieron",
+        "type": "court_ruling",
+        "source_url": "https://ibasecretariat.org/lka_lords.php"
+      },
+      {
+        "year": 2001,
+        "event": "Asbestos Regulations 2001 (Dept. of Labour) establish occupational exposure controls; last South African asbestos mines close (2001–2002)",
+        "event_es": "Los Reglamentos de Asbesto de 2001 (Ministerio de Trabajo) establecen controles de exposición ocupacional; cierran las últimas minas de asbesto de Sudáfrica (2001–2002)",
+        "type": "regulation",
+        "source_url": "https://www.saflii.org/za/legis/consol_reg/ar2001222/"
       },
       {
         "year": 2003,
-        "event": "Prohibition on import, manufacture, and sale of asbestos products with scheduled exceptions until 2008",
-        "event_es": "Prohibición de importación, fabricación y venta de productos de asbesto con excepciones programadas hasta 2008",
-        "type": "partial_ban",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "event": "Cape plc pays £7.5 million to ~7,500 claimants; Gencor establishes £35 million Asbestos Relief Trust for South African victims",
+        "event_es": "Cape plc paga £7,5 millones a ~7.500 reclamantes; Gencor establece el Asbestos Relief Trust de £35 millones para las víctimas sudafricanas",
+        "type": "court_ruling",
+        "source_url": "https://ibasecretariat.org/lka_cape_comp_forgn_pla_0303.php"
+      },
+      {
+        "year": 2006,
+        "event": "Becon AG (Switzerland) settlement establishes Kgalagadi Relief Trust for Danielskuil and Kuruman claimants",
+        "event_es": "El acuerdo con Becon AG (Suiza) establece el Kgalagadi Relief Trust para los reclamantes de Danielskuil y Kuruman",
+        "type": "court_ruling",
+        "source_url": "https://asbestostrust.co.za/krt/"
       },
       {
         "year": 2008,
-        "event": "Full Asbestos Regulations under OHSA: all remaining exceptions removed — complete nationwide ban",
-        "event_es": "Reglamentos Completos de Asbesto bajo la OHSA: se eliminan todas las excepciones restantes — prohibición nacional total",
+        "event": "Complete ban takes effect March 28: Regulations No. R. 341 prohibit all use, manufacture, import, and export of asbestos and asbestos-containing materials",
+        "event_es": "La prohibición total entra en vigor el 28 de marzo: el Reglamento No. R. 341 prohíbe todo uso, fabricación, importación y exportación de asbesto y materiales que lo contengan",
         "type": "ban",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://www.ibasecretariat.org/lka_sa_asb_ban_08.php"
       },
       {
         "year": 2020,
-        "event": "Asbestos Roadmap developed; government estimates 5 million buildings contain asbestos across the country",
-        "event_es": "Se desarrolla una Hoja de Ruta del Asbesto; el gobierno estima que 5 millones de edificios en el país contienen asbesto",
+        "event": "Asbestos Abatement Regulations 2020 promulgated — mandatory identification, assessment, and removal requirements for asbestos-containing materials in workplaces and properties",
+        "event_es": "Se promulgan los Reglamentos de Abatimiento del Asbesto de 2020 — requisitos obligatorios de identificación, evaluación y eliminación de materiales que contienen asbesto en lugares de trabajo y propiedades",
         "type": "regulation",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://www.occhealth.co.za/_assets/articles/345/2342.pdf"
+      },
+      {
+        "year": 2024,
+        "event": "Asbestos Abatement Regulations amended (July 12, Government Gazette No. 50930): power tool restrictions strengthened; new prohibition on installing fittings onto asbestos-containing materials",
+        "event_es": "Los Reglamentos de Abatimiento del Asbesto son modificados (12 de julio, Gaceta Oficial No. 50930): se refuerzan las restricciones sobre herramientas eléctricas; nueva prohibición de instalar accesorios sobre materiales con asbesto",
+        "type": "regulation",
+        "source_url": "https://affsaf.co.za/wp-content/uploads/2025/05/AAR-Notice-50930reg11718gon5042.pdf"
       }
     ],
-    "peak_usage_era": "1960s-2000s",
+    "peak_usage_era": "1950s-1990s",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement flat sheets",
+      "asbestos-cement pipes",
       "asbestos insulating board",
-      "pipe insulation"
+      "pipe insulation (mines and railways)",
+      "asbestos textile products"
     ],
     "common_materials_es": [
       "láminas de techo de cemento-asbesto",
       "láminas planas de cemento-asbesto",
+      "tuberías de cemento-asbesto",
       "tablero aislante de asbesto",
-      "aislamiento de tuberías"
+      "aislamiento de tuberías (minas y ferrocarriles)",
+      "productos textiles de asbesto"
     ],
-    "estimated_buildings_at_risk": "~5 million buildings",
+    "estimated_buildings_at_risk": "~5 million buildings; 82+ mine dumps in Northern Cape alone",
     "mesothelioma_rate": 6.8,
     "mesothelioma_source_year": 2018,
     "priority": "high",
+    "resistance_stories": [
+      {
+        "name": "Richard Spoor",
+        "years": "1990s–present",
+        "role_type": "legal",
+        "role": "Human rights attorney, Richard Spoor Inc. Attorneys, White River, Mpumalanga",
+        "role_es": "Abogado de derechos humanos, Richard Spoor Inc. Attorneys, White River, Mpumalanga",
+        "achievement": "Richard Spoor is a South African human rights attorney who spent more than 25 years representing asbestos mining communities from the Northern Cape and Limpopo Province. His work resulted in two landmark compensation trust funds: the Asbestos Relief Trust, established through a 2003 Gencor settlement, and the Kgalagadi Relief Trust, established through a 2006 Becon AG (Switzerland) settlement. Together, these trusts have paid more than R540 million in compensation to over 6,000 claimants. The ART operates as an open settlement until 2028 to account for asbestos diseases' long latency period, ensuring that victims developing disease decades after exposure are not excluded.",
+        "achievement_es": "Richard Spoor es un abogado sudafricano de derechos humanos que pasó más de 25 años representando a comunidades mineras de asbesto de la Provincia del Cabo del Norte y Limpopo. Su trabajo resultó en dos fondos fiduciarios de compensación históricos: el Asbestos Relief Trust, establecido mediante un acuerdo con Gencor en 2003, y el Kgalagadi Relief Trust, establecido mediante un acuerdo con Becon AG (Suiza) en 2006. Juntos, estos fondos han pagado más de R540 millones a más de 6.000 reclamantes.",
+        "source_url": "https://rsinc.co.za/about/"
+      },
+      {
+        "name": "Schalk Willem Burger Lubbe (and the Lubbe claimants)",
+        "years": "1997–2003",
+        "role_type": "legal",
+        "role": "Lead plaintiff in Lubbe v Cape plc; representative of approximately 7,500 South African asbestos victims",
+        "role_es": "Demandante principal en Lubbe v Cape plc; representante de aproximadamente 7.500 víctimas sudafricanas del asbesto",
+        "achievement": "Mrs. Lubbe was among five South Africans who filed the first English High Court claim against Cape plc in February 1997, alleging that Cape exposed workers at its South African mines to 30 times the British legal limit without protective gear. After her death, her husband Schalk Willem Burger Lubbe continued the action. On July 20, 2000, the UK House of Lords ruled unanimously that English courts could hear claims from foreign plaintiffs injured by UK companies' overseas subsidiaries — a ruling that fundamentally expanded international corporate accountability law. By 2003, a settlement provided £7.5 million to approximately 7,500 claimants and established a £35 million trust fund. The Lubbe ruling is now cited globally in cases of multinational harm in lower-income countries.",
+        "achievement_es": "La Sra. Lubbe estuvo entre los cinco sudafricanos que presentaron la primera demanda ante el Tribunal Superior inglés contra Cape plc en febrero de 1997. Tras su fallecimiento, su esposo Schalk Willem Burger Lubbe continuó la acción. El 20 de julio de 2000, la Cámara de los Lores del Reino Unido falló por unanimidad que los tribunales ingleses podían conocer las demandas de extranjeros perjudicados por filiales de empresas del Reino Unido en el extranjero — ampliando fundamentalmente el alcance de la responsabilidad corporativa internacional.",
+        "source_url": "https://ibasecretariat.org/lka_lords.php"
+      },
+      {
+        "name": "Asbestos Interest Group (AIG), Kuruman",
+        "years": "2006–present",
+        "role_type": "network",
+        "role": "Community advocacy organization documenting asbestos contamination, Kuruman, Northern Cape",
+        "role_es": "Organización de defensa comunitaria que documenta la contaminación por asbesto, Kuruman, Cabo del Norte",
+        "achievement": "The Asbestos Interest Group is a citizens' organization in Kuruman, Northern Cape, representing communities living among 82 documented asbestos mine dumps. AIG documented asbestos contamination at multiple local schools — including Gamopedi Primary, Reitemogetse Primary, Sedibeng Primary, and Khiba Middle School — years before authorities acted. Their sustained advocacy contributed to the closure of Khiba Middle School in October 2014, where 200 students had been exposed, eight years after the Department of Environmental Affairs first documented the contamination in 2006. AIG's work has attracted international attention, including solidarity letters from the UK All-Party Parliamentary Group on Occupational Safety and Health in 2015.",
+        "achievement_es": "El Asbestos Interest Group es una organización ciudadana en Kuruman, Cabo del Norte, que representa a comunidades que viven entre 82 depósitos mineros documentados de asbesto. AIG documentó la contaminación de asbesto en múltiples escuelas locales — incluyendo la Escuela Primaria Gamopedi, la Escuela Primaria Reitemogetse, la Escuela Primaria Sedibeng y la Escuela Media Khiba — años antes de que las autoridades actuaran, contribuyendo al cierre de la Escuela Media Khiba en octubre de 2014.",
+        "source_url": "https://ibasecretariat.org/lka-south-africas-asbestos-crisis.php"
+      }
+    ],
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
         "accessed": "2026-03-13"
+      },
+      {
+        "name": "IBAS: South Africa Profile",
+        "url": "https://ibasecretariat.org/prof_sa.php",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "IBAS: South Africa's Asbestos Legacy",
+        "url": "https://ibasecretariat.org/lka_sa_leg.php",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "IBAS: House of Lords Victory for Human Rights",
+        "url": "https://ibasecretariat.org/lka_lords.php",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "IBAS: SA Asbestos Ban 2008",
+        "url": "https://www.ibasecretariat.org/lka_sa_asb_ban_08.php",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "PMC: Asbestos-Related Disease in South Africa",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1522094/",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "Asbestos Relief Trust",
+        "url": "https://asbestostrust.co.za/asbestos-relief-trust/",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "Kgalagadi Relief Trust",
+        "url": "https://asbestostrust.co.za/krt/",
+        "accessed": "2026-03-28"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-28"
   },
   {
     "slug": "canada",
@@ -1717,6 +1986,7 @@
   },
   {
     "slug": "colombia",
+    "hero_pattern": "urban",
     "name": "Colombia",
     "name_es": "Colombia",
     "iso2": "CO",
@@ -1765,10 +2035,17 @@
       },
       {
         "year": 2021,
-        "event": "Complete asbestos ban takes effect January 1 — all exploitation, production, commercialization, use, import, distribution, and export prohibited",
-        "event_es": "La prohibición total del asbesto entra en vigor el 1 de enero — toda explotación, producción, comercialización, uso, importación, distribución y exportación queda prohibida",
+        "event": "Complete asbestos ban takes effect January 1; National Commission for Asbestos Substitution (CNSA) required to be operational but remains unformed; no public awareness campaign, no air quality monitoring, no replacement public policy launched",
+        "event_es": "La prohibición total del asbesto entra en vigor el 1 de enero; la Comisión Nacional para la Sustitución del Asbesto (CNSA) debe estar operativa pero no se ha conformado; no se lanza campaña de concienciación pública, ni monitoreo de calidad del aire, ni política pública de sustitución",
         "type": "ban",
         "source_url": "https://ibasecretariat.org/mtt-colombia-has-a-ban-asbestos-law-in-name-but-not-in-fact.php"
+      },
+      {
+        "year": 2024,
+        "event": "Definitive CNSA applicant list published (April 11); national conference 'Asbestos in Colombia 2024: Challenges After the Ban' held in Bogotá — reviewing implementation of the Ana Cecilia Niño Law",
+        "event_es": "Se publica la lista definitiva de candidatos a la CNSA (11 de abril); se celebra en Bogotá la conferencia nacional 'Asbesto en Colombia 2024: Retos tras la prohibición' — revisando la implementación de la Ley Ana Cecilia Niño",
+        "type": "regulation",
+        "source_url": "https://www.minambiente.gov.co/sustitucion-del-asbesto/"
       }
     ],
     "peak_usage_era": "1970s-2000s",
@@ -1787,9 +2064,33 @@
       "juntas y empaques"
     ],
     "estimated_buildings_at_risk": null,
-    "mesothelioma_rate": null,
-    "mesothelioma_source_year": null,
+    "mesothelioma_rate": 0.59,
+    "mesothelioma_source_year": 2022,
     "priority": "high",
+    "resistance_stories": [
+      {
+        "name": "Ana Cecilia Niño Robles",
+        "years": "2014–2017",
+        "role_type": "journalist",
+        "role": "Journalist and co-founder of Colombia sin Asbesto; died of mesothelioma from environmental exposure in Sibaté",
+        "role_es": "Periodista y cofundadora de Colombia sin Asbesto; falleció de mesotelioma por exposición ambiental en Sibaté",
+        "achievement": "Ana Cecilia Niño was a journalist who grew up in Sibaté — home to Colombia's largest asbestos-cement factory — and never worked with asbestos. Diagnosed with mesothelioma in September 2014, a year after giving birth to her first child, she co-founded Colombia sin Asbesto with her husband Daniel Pineda and launched a national campaign while undergoing treatment. She collected over 50,000 signatures for an asbestos ban, produced media campaigns, held educational events at schools and universities, and with Daniel filed a complaint at the Inter-American Commission on Human Rights. She died January 8, 2017, aged 42. In October 2017, the Senate approved the ban. President Duque signed Law 1968 into law in July 2019. The law bears her name.",
+        "achievement_es": "Ana Cecilia Niño era una periodista que creció en Sibaté — sede de la mayor fábrica de cemento-asbesto de Colombia — y nunca trabajó con asbesto. Diagnosticada con mesotelioma en septiembre de 2014, un año después de dar a luz a su primer hijo, cofundó Colombia sin Asbesto con su esposo Daniel Pineda y lanzó una campaña nacional mientras recibía tratamiento. Recopiló más de 50.000 firmas para la prohibición y junto a Daniel presentó una denuncia ante la Comisión Interamericana de Derechos Humanos. Falleció el 8 de enero de 2017, a los 42 años. La ley lleva su nombre.",
+        "quote": "They removed a lung, my pericardium, and my left internal muscles, but they will never take away my hope of seeing a Colombia without asbestos.",
+        "quote_source": "2016 social media post, documented in Confront Power investigative report (https://confrontpower.org/colombia-asbestos-campaign/)",
+        "source_url": "https://confrontpower.org/colombia-asbestos-campaign/"
+      },
+      {
+        "name": "Daniel Pineda",
+        "years": "2014–present",
+        "role_type": "advocate",
+        "role": "Co-founder of Colombia sin Asbesto; continued the campaign after Ana Cecilia Niño's death",
+        "role_es": "Cofundador de Colombia sin Asbesto; continuó la campaña tras la muerte de Ana Cecilia Niño",
+        "achievement": "Daniel Pineda co-founded Colombia sin Asbesto with his wife Ana Cecilia Niño in 2014 and led the campaign after her death in January 2017. Together they had built a coalition of asbestos victims, scientists, and advocates that maintained sustained pressure through three Senate rejections, an Inter-American Commission on Human Rights complaint, and a 50,000-signature petition. Daniel carried this work through the October 2017 Senate approval, the July 2019 signing by President Duque, and the ongoing struggle for full enforcement of the Ana Cecilia Niño Law. His testimony as a widower who watched the asbestos industry lobby against protections during his wife's illness became central to the campaign's public narrative.",
+        "achievement_es": "Daniel Pineda cofundó Colombia sin Asbesto con su esposa Ana Cecilia Niño en 2014 y dirigió la campaña tras su fallecimiento en enero de 2017. Juntos habían construido una coalición de víctimas del asbesto, científicos y defensores que mantuvo una presión sostenida a través de tres rechazos del Senado, una denuncia ante la Comisión Interamericana de Derechos Humanos y una petición de 50.000 firmas.",
+        "source_url": "https://confrontpower.org/colombia-asbestos-campaign/"
+      }
+    ],
     "sources": [
       {
         "name": "IBAS Ban List",
@@ -1820,9 +2121,24 @@
         "name": "Mesothelioma mortality in Colombia 1997-2022 (PMC)",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12111391/",
         "accessed": "2026-03-24"
+      },
+      {
+        "name": "IBAS: Colombia ban in name but not in fact (2021)",
+        "url": "https://ibasecretariat.org/mtt-colombia-has-a-ban-asbestos-law-in-name-but-not-in-fact.php",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "MinAmbiente: Sustitución del asbesto (2024)",
+        "url": "https://www.minambiente.gov.co/sustitucion-del-asbesto/",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "ADAO: Remembering Ana Cecilia Niño Robles",
+        "url": "https://www.asbestosdiseaseawareness.org/newsroom/blogs/en-memoria-carinosa-remembering-mesothelioma-warrior-ana-ceclia-nino-robles/",
+        "accessed": "2026-03-28"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-28"
   },
   {
     "slug": "croatia",
@@ -2121,6 +2437,7 @@
   },
   {
     "slug": "france",
+    "hero_pattern": "industry",
     "name": "France",
     "name_es": "Francia",
     "iso2": "FR",
@@ -2128,29 +2445,133 @@
     "region": "Europe",
     "ban_status": "full_ban",
     "ban_year": 1997,
-    "ban_details": "Complete ban on all asbestos including chrysotile under Decree No. 96-1133 of 1996, effective January 1, 1997.",
+    "ban_details": "Complete ban on all asbestos including chrysotile under Decree No. 96-1133 of December 26, 1996, effective January 1, 1997. France was the first major industrial nation to unilaterally ban chrysotile. The ban followed a 1996 French Medical Research Council report showing 2,000+ annual asbestos cancer deaths, two decades of organizing by Henri Pézerat and ANDEVA, and the 1994–1996 crisis at Jussieu University — Europe's largest asbestos-contaminated site. France won a 2000 WTO case upholding the ban, setting a global precedent for national asbestos bans.",
+    "ban_details_es": "Prohibición total de todo el asbesto incluido el crisotilo bajo el Decreto No. 96-1133 del 26 de diciembre de 1996, vigente desde el 1 de enero de 1997. Francia fue la primera nación industrial importante en prohibir unilateralmente el crisotilo. La prohibición siguió a un informe de 1996 del Consejo de Investigación Médica francés que mostraba más de 2.000 muertes anuales por cáncer de asbesto, dos décadas de organización de Henri Pézerat y ANDEVA, y la crisis de 1994-1996 en la Universidad de Jussieu — el mayor sitio contaminado con asbesto de Europa. Francia ganó un caso de la OMC en 2000 que respaldó la prohibición, sentando un precedente mundial.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 1977,
+        "event": "France enacts first occupational asbestos exposure regulations — the first meaningful regulation, introduced 46 years after the UK and 31 years after the US. Many hazardous exposures remain uncontrolled.",
+        "event_es": "Francia promulga las primeras regulaciones de exposición laboral al asbesto — la primera regulación significativa, introducida 46 años después del Reino Unido y 31 años después de EE. UU. Muchas exposiciones peligrosas permanecen sin control.",
+        "type": "regulation",
+        "source_url": "https://www.anses.fr/en/content/asbestos-still-very-topical-problem"
+      },
+      {
+        "year": 1995,
+        "event": "ANDEVA (Association Nationale de Défense des Victimes de l'Amiante) founded by Henri Pézerat and others, uniting asbestos-exposed textile workers, Jussieu University teachers and students, and trade union representatives. Ban Asbestos France co-founded same year.",
+        "event_es": "ANDEVA (Asociación Nacional de Defensa de las Víctimas del Amianto) fundada por Henri Pézerat y otros, uniendo a trabajadores textiles expuestos al asbesto, profesores y estudiantes de la Universidad de Jussieu y representantes sindicales. Ban Asbestos France co-fundada el mismo año.",
+        "type": "other",
+        "source_url": "https://andeva.fr/index.php?option=com_content&view=article&id=24&catid=9&Itemid=149"
+      },
+      {
+        "year": 1996,
+        "event": "French Medical Research Council (INSERM) publishes report calculating 2,000+ annual asbestos cancer deaths. Government announces complete ban the following day. Decree 96-1133 signed December 26, 1996.",
+        "event_es": "El Consejo de Investigación Médica francés (INSERM) publica informe que calcula más de 2.000 muertes anuales por cáncer de asbesto. El gobierno anuncia la prohibición total al día siguiente. El Decreto 96-1133 se firma el 26 de diciembre de 1996.",
+        "type": "regulation",
+        "source_url": "https://ibasecretariat.org/prof_france.php"
+      },
+      {
+        "year": 1997,
+        "event": "Complete ban on chrysotile and all asbestos-containing products takes effect January 1, 1997 — France becomes the first major industrial nation to unilaterally ban chrysotile.",
+        "event_es": "La prohibición total del crisotilo y todos los productos que contienen asbesto entra en vigor el 1 de enero de 1997 — Francia se convierte en la primera nación industrial importante en prohibir unilateralmente el crisotilo.",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/lka_can_wto_appeal_res.php"
+      },
+      {
+        "year": 2000,
+        "event": "WTO Appellate Body upholds France's right to ban chrysotile, rejecting Canada's trade challenge (WT/DS135/AB/R). Ruling establishes precedent supporting other nations' rights to ban asbestos.",
+        "event_es": "El Órgano de Apelación de la OMC confirma el derecho de Francia a prohibir el crisotilo, rechazando el desafío comercial de Canadá (WT/DS135/AB/R). El fallo establece un precedente que respalda el derecho de otras naciones a prohibir el asbesto.",
+        "type": "court_ruling",
+        "source_url": "https://www.ibasecretariat.org/lka_can_wto_appeal_res.php"
+      },
+      {
+        "year": 2001,
+        "event": "FIVA (Fonds d'Indemnisation des Victimes de l'Amiante) established — a national no-fault compensation fund covering all asbestos victims regardless of whether exposure was occupational or environmental. Has paid €6.7+ billion cumulatively by 2023.",
+        "event_es": "Se establece FIVA (Fondo de Indemnización de las Víctimas del Amianto) — un fondo nacional de compensación sin culpa que cubre a todas las víctimas del asbesto independientemente de si la exposición fue laboral o ambiental. Ha pagado más de €6.700 millones acumulados hasta 2023.",
+        "type": "regulation",
+        "source_url": "https://www.service-public.fr/particuliers/vosdroits/F174?lang=en"
+      },
+      {
+        "year": 2010,
+        "event": "Court of Cassation recognizes préjudice d'anxiété (anxiety damage) — asbestos workers not yet ill can claim compensation for the psychological burden of waiting for disease to develop. Extended to all toxic exposures in 2019.",
+        "event_es": "La Corte de Casación reconoce el préjudice d'anxiété (daño por ansiedad) — los trabajadores del asbesto que aún no están enfermos pueden reclamar compensación por la carga psicológica de esperar el desarrollo de la enfermedad. Extendido a todas las exposiciones tóxicas en 2019.",
+        "type": "court_ruling",
+        "source_url": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000038373557/"
+      }
+    ],
     "peak_usage_era": "1950s-1970s",
     "common_materials": [
-      "asbestos insulating board",
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement pipes",
+      "spray-applied fireproofing (flocage)",
       "pipe insulation",
       "vinyl-asbestos floor tiles",
-      "asbestos-cement flat sheets",
-      "spray-applied fireproofing"
+      "asbestos friction materials (brake linings)"
     ],
-    "estimated_buildings_at_risk": null,
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "láminas planas de cemento-asbesto",
+      "tuberías de cemento-asbesto",
+      "ignifugación proyectada (flocage)",
+      "aislamiento de tuberías",
+      "baldosas de vinilo-asbesto",
+      "materiales de fricción de asbesto (forros de frenos)"
+    ],
+    "estimated_buildings_at_risk": ">1/3 of French schools contain asbestos; ~70% of Paris public schools affected (2023)",
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
         "accessed": "2026-03-13"
+      },
+      {
+        "name": "IBAS — Asbestos Profile: France",
+        "url": "https://ibasecretariat.org/prof_france.php",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "Santé publique France — Mésothéliome",
+        "url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/cancers/mesotheliomes",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "Service-Public.fr — FIVA Compensation",
+        "url": "https://www.service-public.fr/particuliers/vosdroits/F174?lang=en",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "IBAS — Asbestos Scandal in France 2023",
+        "url": "https://www.ibasecretariat.org/lka-asbestos-scandal-in-france-2023.php",
+        "accessed": "2026-03-28"
       }
     ],
-    "last_updated": "2026-03-13"
+    "resistance_stories": [
+      {
+        "name": "Henri Pézerat",
+        "years": "1928–2009",
+        "role_type": "scientist",
+        "role": "CNRS research director, toxicologist, and founder of France's anti-asbestos movement",
+        "role_es": "Director de investigación del CNRS, toxicólogo y fundador del movimiento antiasbesto de Francia",
+        "achievement": "Henri Pézerat was a toxicologist at the CNRS who discovered asbestos contamination in his Jussieu University laboratory in 1973. He coordinated the first anti-asbestos actions at Jussieu in 1975, building coalitions between student protesters, trade unions, and asbestos factory workers. He co-founded ANDEVA and Ban Asbestos France in 1995, creating the pressure that produced France's 1997 ban. His scientific publications demolished industry claims about chrysotile safety, including a posthumous paper on biopersistence data manipulation. He received the June Hancock Award in 2000. He died February 16, 2009.",
+        "achievement_es": "Henri Pézerat era toxicólogo del CNRS que descubrió la contaminación por asbesto en su laboratorio de la Universidad de Jussieu en 1973. Coordinó las primeras acciones antiasbesto en Jussieu en 1975, construyendo coaliciones entre estudiantes, sindicatos y trabajadores de fábricas de asbesto. Co-fundó ANDEVA y Ban Asbestos France en 1995, creando la presión que produjo la prohibición francesa de 1997. Sus publicaciones científicas demolieron las afirmaciones de la industria sobre la seguridad del crisotilo. Recibió el Premio June Hancock en 2000. Murió el 16 de febrero de 2009.",
+        "source_url": "https://ibasecretariat.org/mem_henri_pezerat.php"
+      },
+      {
+        "name": "ANDEVA",
+        "years": "1995–present",
+        "role_type": "network",
+        "role": "National association defending asbestos victims in France — 32 local branches, 14,600 members",
+        "role_es": "Asociación nacional de defensa de las víctimas del amianto en Francia — 32 secciones locales, 14.600 miembros",
+        "achievement": "ANDEVA was founded in 1995 by Henri Pézerat and others, uniting asbestos-exposed textile workers from the Amisol factory, teachers and students from Jussieu University, and trade union representatives. ANDEVA's campaign directly produced France's 1997 ban and the creation of FIVA — a national compensation fund that has paid over €6.7 billion cumulatively. The organization has documented 21,350 cases of employer gross negligence. In 2023, following an investigative documentary revealing asbestos in over 700,000 students' schools, ANDEVA called for emergency protective measures. As of 2026, ANDEVA operates 32 local associations with 14,600 members and donors.",
+        "achievement_es": "ANDEVA fue fundada en 1995 por Henri Pézerat y otros, uniendo a trabajadores textiles expuestos al asbesto de la fábrica Amisol, profesores y estudiantes de la Universidad de Jussieu, y representantes sindicales. La campaña de ANDEVA produjo directamente la prohibición francesa de 1997 y la creación de FIVA — un fondo de compensación nacional que ha pagado más de €6.700 millones acumulados. La organización ha documentado 21.350 casos de negligencia patronal grave. En 2023, ANDEVA exigió medidas de protección urgentes tras conocerse que más de 700.000 estudiantes asisten a escuelas con asbesto.",
+        "source_url": "https://andeva.fr/index.php?option=com_content&view=article&id=24&catid=9&Itemid=149"
+      }
+    ],
+    "last_updated": "2026-03-28"
   },
   {
     "slug": "gabon",
@@ -2546,6 +2967,7 @@
   },
   {
     "slug": "italy",
+    "hero_pattern": "coastal",
     "name": "Italy",
     "name_es": "Italia",
     "iso2": "IT",
@@ -2553,29 +2975,157 @@
     "region": "Europe",
     "ban_status": "full_ban",
     "ban_year": 1992,
-    "ban_details": "Complete ban on all asbestos production and use under Law 257 of March 27, 1992.",
+    "ban_details": "Complete ban on all asbestos production and use under Law 257 of March 27, 1992 (Legge 27 marzo 1992, n. 257). Prohibits extraction, import, export, marketing and production of asbestos or asbestos-containing products. Italy was the world's largest asbestos producer in the 19th century and home to Europe's largest chrysotile mine (Balangero, 1917–1990). The Casale Monferrato Eternit factory (1907–1986) became the center of Italy's asbestos epidemic and the global symbol of corporate accountability through the landmark Eternit criminal trial.",
+    "ban_details_es": "Prohibición total de toda producción y uso del asbesto bajo la Ley 257 del 27 de marzo de 1992 (Legge 27 marzo 1992, n. 257). Prohíbe la extracción, importación, exportación, comercialización y producción de asbesto o productos que lo contengan. Italia fue el mayor productor mundial de asbesto en el siglo XIX y sede de la mayor mina de crisotilo de Europa (Balangero, 1917–1990). La fábrica Eternit de Casale Monferrato (1907–1986) se convirtió en el centro de la epidemia de asbesto de Italia y en el símbolo mundial de la responsabilidad corporativa a través del histórico juicio penal Eternit.",
     "exceptions": [],
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 1907,
+        "event": "Eternit Italia opens its largest asbestos-cement factory in Casale Monferrato (Alessandria, Piedmont), beginning 79 years of industrial production that would contaminate the town and surrounding region.",
+        "event_es": "Eternit Italia abre su mayor fábrica de cemento-asbesto en Casale Monferrato (Alessandria, Piamonte), iniciando 79 años de producción industrial que contaminaría la ciudad y la región circundante.",
+        "type": "other",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6634471/"
+      },
+      {
+        "year": 1917,
+        "event": "Balangero chrysotile mine opens near Turin — will become the largest chrysotile (white asbestos) mine in Western Europe, producing 130,000–160,000 tons per year at peak output in the 1970s.",
+        "event_es": "La mina de crisotilo de Balangero abre cerca de Turín — se convertirá en la mayor mina de crisotilo (asbesto blanco) de Europa Occidental, con producción máxima de 130.000–160.000 toneladas anuales en la década de 1970.",
+        "type": "other",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/32358603/"
+      },
+      {
+        "year": 1987,
+        "event": "Mayor of Casale Monferrato issues a local ordinance banning asbestos in the municipality — the first public authority in Italy to take such action, five years before the national law.",
+        "event_es": "El alcalde de Casale Monferrato emite una ordenanza municipal que prohíbe el asbesto — la primera autoridad pública en Italia en tomar tal medida, cinco años antes de la ley nacional.",
+        "type": "regulation",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5708018/"
+      },
+      {
+        "year": 1990,
+        "event": "Balangero chrysotile mine closes after the operating company declares bankruptcy, leaving behind a 400-hectare site contaminated with asbestos tailings.",
+        "event_es": "La mina de crisotilo de Balangero cierra tras la quiebra de la empresa operadora, dejando un terreno de 400 hectáreas contaminado con residuos de asbesto.",
+        "type": "other",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5708018/"
+      },
+      {
+        "year": 1992,
+        "event": "Law 257 of March 27, 1992 enacts a complete ban on all asbestos — prohibiting extraction, import, export, marketing and production. Italy becomes one of the first countries to ban chrysotile (white asbestos). Effective April 13, 1992.",
+        "event_es": "La Ley 257 del 27 de marzo de 1992 establece una prohibición total del asbesto — prohibiendo la extracción, importación, exportación, comercialización y producción. Italia se convierte en uno de los primeros países en prohibir el crisotilo (asbesto blanco). Vigente desde el 13 de abril de 1992.",
+        "type": "ban",
+        "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Alegge%3A1992-03-27%3B257="
+      },
+      {
+        "year": 2012,
+        "event": "Turin court convicts Eternit executives Stephan Schmidheiny (Swiss) and Jean-Louis de Cartier (Belgian) for causing environmental disaster at four Italian plants including Casale Monferrato — 16-year sentences, later increased to 18 years on appeal.",
+        "event_es": "El tribunal de Turín condena a los ejecutivos de Eternit Stephan Schmidheiny (suizo) y Jean-Louis de Cartier (belga) por provocar un desastre ambiental en cuatro plantas italianas incluyendo Casale Monferrato — sentencias de 16 años, luego aumentadas a 18 en apelación.",
+        "type": "court_ruling",
+        "source_url": "https://www.business-humanrights.org/en/latest-news/lawsuit-against-eternit-re-asbestos-exposure-in-italy/"
+      },
+      {
+        "year": 2014,
+        "event": "Italian Supreme Court (Corte di Cassazione) overturns Eternit convictions — acquits Schmidheiny because the statute of limitations had expired. Victims and activists describe the ruling as a catastrophic failure of justice.",
+        "event_es": "La Corte Suprema italiana (Corte di Cassazione) revoca las condenas de Eternit — absuelve a Schmidheiny porque el plazo de prescripción había expirado. Las víctimas y activistas describen el fallo como un catastrófico fracaso de la justicia.",
+        "type": "court_ruling",
+        "source_url": "https://www.france24.com/en/20141120-outrage-italy-quashes-asbestos-conviction-trial-century-eternit-casale"
+      },
+      {
+        "year": 2023,
+        "event": "Novara court (Eternit Bis proceedings) convicts Schmidheiny of aggravated manslaughter for 392 deaths in Casale Monferrato — sentenced to 12 years. Turin appeals court reduces this to 9 years and 6 months for 147 deaths in April 2025.",
+        "event_es": "El tribunal de Novara (procedimiento Eternit Bis) condena a Schmidheiny por homicidio culposo agravado por 392 muertes en Casale Monferrato — sentenciado a 12 años. El tribunal de apelaciones de Turín reduce esto a 9 años y 6 meses por 147 muertes en abril de 2025.",
+        "type": "court_ruling",
+        "source_url": "https://www.leighday.co.uk/news/news/2023-news/italian-cement-factory-billionaire-convicted-in-deaths-of-asbestos-victims/"
+      }
+    ],
     "peak_usage_era": "1950s-1980s",
     "common_materials": [
-      "asbestos insulating board",
-      "pipe insulation",
-      "vinyl-asbestos floor tiles",
+      "asbestos-cement roofing sheets (lastre di eternit)",
       "asbestos-cement flat sheets",
-      "spray-applied fireproofing"
+      "asbestos-cement pipes",
+      "pipe and boiler insulation",
+      "spray-applied fireproofing",
+      "asbestos textiles",
+      "vinyl-asbestos floor tiles"
     ],
-    "estimated_buildings_at_risk": null,
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto (lastre di eternit)",
+      "láminas planas de cemento-asbesto",
+      "tuberías de cemento-asbesto",
+      "aislamiento de tuberías y calderas",
+      "ignifugación proyectada",
+      "textiles de asbesto",
+      "baldosas de vinilo-asbesto"
+    ],
+    "estimated_buildings_at_risk": "~75% of asbestos installed before 1992 remains in place as of early 2020s; ~2,500+ school buildings contaminated as of 2024",
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
         "accessed": "2026-03-13"
+      },
+      {
+        "name": "IBAS Asbestos Profile Italy",
+        "url": "https://www.ibasecretariat.org/prof_italy.php",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "IBAS — Asbestos Crime and Punishment in Italy 2025",
+        "url": "https://www.ibasecretariat.org/lka-asbestos-crime-and-punishment-in-italy-2025.php",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "PMC — Asbestos Ban in Italy: A Major Milestone, Not the Final Cut (2017)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5708018/",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "normattiva.it — Legge 257/1992",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Alegge%3A1992-03-27%3B257=",
+        "accessed": "2026-03-28"
+      },
+      {
+        "name": "Business & Human Rights — Eternit Italy trial",
+        "url": "https://www.business-humanrights.org/en/latest-news/lawsuit-against-eternit-re-asbestos-exposure-in-italy/",
+        "accessed": "2026-03-28"
       }
     ],
-    "last_updated": "2026-03-13"
+    "resistance_stories": [
+      {
+        "name": "Romana Blasotti Pavesi",
+        "years": "1929–2024",
+        "role_type": "advocate",
+        "role": "President of AFeVA (Association of Families and Victims of Asbestos), Casale Monferrato",
+        "role_es": "Presidenta de AFeVA (Associazione Familiari e Vittime dell'Amianto), Casale Monferrato",
+        "achievement": "Romana Blasotti Pavesi lost six family members to mesothelioma — her husband Mario, daughter Maria Rosa, son Ottavio, sister Libera, nephew Enrico, and cousin Anna — all from environmental exposure to Eternit asbestos dust in Casale Monferrato. In 1988 she became president of the predecessor organization to AFeVA, leading it through the landmark Eternit criminal prosecution that began in 2009. She wrote the preface to the IBAS monograph on the Eternit trial and built international solidarity networks with victim groups in France, Canada, the UK, and Brazil. The Italian government honored her with the title of Commendatore della Repubblica. She died September 11, 2024, at age 95.",
+        "achievement_es": "Romana Blasotti Pavesi perdió seis familiares por mesotelioma — su marido Mario, su hija Maria Rosa, su hijo Ottavio, su hermana Libera, su sobrino Enrico y su prima Anna — todos por exposición ambiental al polvo de asbesto de Eternit en Casale Monferrato. En 1988 se convirtió en presidenta de la organización predecesora de AFeVA, liderándola durante el histórico juicio penal de Eternit iniciado en 2009. El gobierno italiano la honró con el título de Commendatore della Repubblica. Falleció el 11 de septiembre de 2024, a los 95 años.",
+        "source_url": "https://ibasecretariat.org/lka-remembering-romana-lasotti-pavesi-1929-2024.php"
+      },
+      {
+        "name": "Bruno Pesce",
+        "years": "1970s–present",
+        "role_type": "advocate",
+        "role": "Trade union organizer, Camera del Lavoro (CGIL), Casale Monferrato; co-leader of the Eternit prosecution campaign",
+        "role_es": "Organizador sindical, Camera del Lavoro (CGIL), Casale Monferrato; co-líder de la campaña de enjuiciamiento de Eternit",
+        "achievement": "Bruno Pesce led the Camera del Lavoro (Labour Chamber) of Casale Monferrato and became the primary union organizer in the decades-long campaign against Eternit. Working with Nicola Pondrano and lawyers Sergio Bonetto and Bianca Guidetti Serra, he built the legal and evidentiary foundation that enabled Turin prosecutors to bring criminal charges against Eternit executives. He served as litigation coordinator for AFeVA and was honored by the Mayor of Turin as a key protagonist of the civil and judicial battle against asbestos. When the Italian Supreme Court overturned the 2012 conviction in 2014, he described it as a 'punch in the stomach' and continued fighting through the Eternit Bis proceedings.",
+        "achievement_es": "Bruno Pesce dirigió la Camera del Lavoro de Casale Monferrato y se convirtió en el principal organizador sindical en la campaña de décadas contra Eternit. Trabajando con Nicola Pondrano y los abogados Sergio Bonetto y Bianca Guidetti Serra, construyó la base jurídica y probatoria que permitió a los fiscales de Turín presentar cargos penales contra los ejecutivos de Eternit. Sirvió como coordinador de litigios de AFeVA y fue honrado por el alcalde de Turín como protagonista clave de la batalla civil y judicial contra el asbesto.",
+        "quote": "Asbestos is still killing.",
+        "quote_source": "France 24, November 2014 (https://www.france24.com/en/20141120-outrage-italy-quashes-asbestos-conviction-trial-century-eternit-casale)",
+        "source_url": "https://www.france24.com/en/20120213-asbestos-italy-trial-court-justice-eternit-casale-cancer"
+      },
+      {
+        "name": "Nicola Pondrano",
+        "years": "1974–present",
+        "role_type": "advocate",
+        "role": "Former Eternit worker and internal union organizer, Casale Monferrato plant",
+        "role_es": "Ex trabajador de Eternit y organizador sindical interno, planta de Casale Monferrato",
+        "achievement": "Nicola Pondrano joined the Eternit plant in Casale Monferrato in 1974 at age 24. In the late 1970s, he began documenting the pattern of premature deaths among his coworkers — funeral notices covering the factory wall for employees who had barely reached their fifties. He organized within the plant, collaborated with trade union leader Bruno Pesce externally, and became a key witness in the Eternit criminal prosecution. Despite facing intimidation — his car's windshield was smashed with a club after he began speaking publicly — he sustained the campaign through decades of legal proceedings. He was honored by the Mayor of Turin alongside Bruno Pesce as a co-protagonist of the judicial battle.",
+        "achievement_es": "Nicola Pondrano se incorporó a la planta de Eternit en Casale Monferrato en 1974, a los 24 años. A finales de la década de 1970 comenzó a documentar el patrón de muertes prematuras entre sus compañeros de trabajo. Organizó dentro de la planta, colaboró con el líder sindical Bruno Pesce y se convirtió en testigo clave en el proceso penal de Eternit. A pesar de enfrentar intimidaciones — alguien rompió el parabrisas de su auto a golpes después de que comenzó a hablar públicamente — mantuvo la campaña durante décadas de procedimientos judiciales.",
+        "source_url": "https://www.france24.com/en/20120213-asbestos-italy-trial-court-justice-eternit-casale-cancer"
+      }
+    ],
+    "last_updated": "2026-03-28"
   },
   {
     "slug": "ivory-coast",

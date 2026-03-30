@@ -22,6 +22,8 @@ export interface ResistanceStory {
   quote?: string;
   quote_source?: string;
   source_url: string;
+  photo_url?: string;
+  role_type?: "victim" | "advocate" | "legal" | "network" | "journalist" | "scientist";
 }
 
 export interface Country {
@@ -47,6 +49,7 @@ export interface Country {
   sources: Source[];
   resistance_stories?: ResistanceStory[];
   last_updated: string;
+  hero_pattern?: "parliament" | "industry" | "urban" | "mining" | "coastal" | "default";
 }
 
 export interface Material {

@@ -6,7 +6,10 @@ import countries from "@/data/countries.json";
 import type { Country } from "@/lib/types";
 import Timeline from "@/components/ui/Timeline";
 import ResistanceStories from "@/components/country/ResistanceStories";
-import { getBanStatusColor } from "@/lib/utils";
+import CountryHero from "@/components/country/CountryHero";
+import StatStrip from "@/components/country/StatStrip";
+import MaterialGuide from "@/components/country/MaterialGuide";
+import { SITE_URL } from "@/lib/constants";
 
 // ─── Static Generation ────────────────────────────────────────────────────────
 
@@ -18,8 +21,6 @@ export async function generateStaticParams() {
 }
 
 // ─── Metadata ─────────────────────────────────────────────────────────────────
-
-import { SITE_URL } from "@/lib/constants";
 
 const BASE_URL = SITE_URL;
 
@@ -169,25 +170,6 @@ export async function generateMetadata({
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-function getFlag(iso2: string): string {
-  return iso2
-    .toUpperCase()
-    .replace(/./g, (char) =>
-      String.fromCodePoint(127397 + char.charCodeAt(0))
-    );
-}
-
-function getBanStatusPillClass(status: Country["ban_status"]): string {
-  const classes: Record<Country["ban_status"], string> = {
-    full_ban: "text-safe bg-safe/10 border border-safe/20",
-    partial_ban: "text-warning bg-warning/10 border border-warning/20",
-    no_ban: "text-danger bg-danger/10 border border-danger/20",
-    de_facto_ban: "text-safe bg-safe/10 border border-safe/20",
-    unknown: "text-text-muted bg-bg-tertiary border border-bg-tertiary",
-  };
-  return classes[status];
-}
-
 type WhatToDoKey =
   | "what_to_do_full_ban"
   | "what_to_do_partial_ban"
@@ -205,6 +187,14 @@ function getWhatToDoKey(status: Country["ban_status"]): WhatToDoKey {
   return map[status];
 }
 
+// JSON-LD structured data component — content is server-generated (not user
+// input), serialized with JSON.stringify which escapes HTML special characters.
+function JsonLd({ data }: { data: Record<string, unknown> }) {
+  const json = JSON.stringify(data);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: json }} />;
+}
+
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default async function CountryPage({
@@ -215,26 +205,15 @@ export default async function CountryPage({
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  const country = (countries as Country[]).find((c) => c.slug === slug);
+  const allCountries = countries as Country[];
+  const country = allCountries.find((c) => c.slug === slug);
   if (!country) notFound();
 
   const t = await getTranslations("country");
-  const tBanStatus = await getTranslations("ban_status");
 
   const isHighPriority = country.priority === "high";
-  const flag = getFlag(country.iso2);
-  const pillClass = getBanStatusPillClass(country.ban_status);
   const whatToDoItems = t.raw(getWhatToDoKey(country.ban_status)) as string[];
-
-  const banDisplayDetails =
-    locale === "es"
-      ? (country.ban_details_es ?? country.ban_details)
-      : country.ban_details;
-
-  const displayMaterials =
-    locale === "es"
-      ? (country.common_materials_es ?? country.common_materials)
-      : country.common_materials;
+  const caseNumber = allCountries.findIndex((c) => c.slug === slug) + 1;
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -255,106 +234,18 @@ export default async function CountryPage({
   };
 
   return (
-    <main className="min-h-screen px-4 py-12 sm:py-16">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
-      <div className="mx-auto max-w-3xl">
+    <>
+      <JsonLd data={faqJsonLd} />
 
-        {/* ── Country Header ── */}
-        <header className="mb-10">
-          <div className="flex flex-wrap items-start gap-4 mb-3">
-            <span className="text-5xl sm:text-6xl leading-none" aria-hidden="true">
-              {flag}
-            </span>
-            <div className="flex-1 min-w-0">
-              <h1 className="font-sans font-bold text-3xl sm:text-4xl text-text-primary leading-tight mb-2">
-                {country.name}
-              </h1>
-              <div className="flex flex-wrap items-center gap-2">
-                <span
-                  className={`inline-flex items-center rounded-full px-3 py-1 text-sm font-medium ${pillClass}`}
-                >
-                  {tBanStatus(country.ban_status)}
-                </span>
-                <span className="text-sm text-text-muted">{country.region}</span>
-              </div>
-            </div>
-          </div>
+      {/* ── Full-width sections ── */}
+      <CountryHero country={country} caseNumber={caseNumber} />
+      <StatStrip country={country} />
 
-          {banDisplayDetails && (
-            <p className="text-text-secondary text-sm sm:text-base leading-relaxed mt-4 border-l-2 border-bg-tertiary pl-4">
-              {banDisplayDetails}
-            </p>
-          )}
-        </header>
-
-        {/* ── Stats Grid ── */}
-        <section className="mb-10" aria-labelledby="stats-heading">
-          <h2 id="stats-heading" className="sr-only">
-            Key Statistics
-          </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {/* Ban Year */}
-            <div className="rounded-lg bg-bg-secondary border border-bg-tertiary p-4">
-              <div
-                className="font-mono text-2xl font-bold tabular-nums mb-1"
-                style={{ color: getBanStatusColor(country.ban_status) }}
-              >
-                {country.ban_year ?? "—"}
-              </div>
-              <div className="text-xs text-text-muted uppercase tracking-wide">
-                {country.ban_year ? t("ban_year_label") : t("no_ban_year")}
-              </div>
-            </div>
-
-            {/* Mesothelioma Rate */}
-            <div className="rounded-lg bg-bg-secondary border border-bg-tertiary p-4">
-              <div className="font-mono text-2xl font-bold text-text-primary tabular-nums mb-1">
-                {country.mesothelioma_rate !== null
-                  ? country.mesothelioma_rate.toFixed(1)
-                  : "—"}
-              </div>
-              <div className="text-xs text-text-muted uppercase tracking-wide">
-                {country.mesothelioma_rate !== null
-                  ? t("mesothelioma_rate")
-                  : t("stat_unknown")}
-              </div>
-              {country.mesothelioma_rate !== null &&
-                country.mesothelioma_source_year && (
-                  <div className="text-xs text-text-muted mt-0.5">
-                    per million ({country.mesothelioma_source_year})
-                  </div>
-                )}
-            </div>
-
-            {/* Buildings at Risk */}
-            <div className="rounded-lg bg-bg-secondary border border-bg-tertiary p-4 col-span-2 sm:col-span-1">
-              <div className="font-mono text-xl font-bold text-text-primary tabular-nums mb-1 truncate">
-                {country.estimated_buildings_at_risk ?? "—"}
-              </div>
-              <div className="text-xs text-text-muted uppercase tracking-wide">
-                {country.estimated_buildings_at_risk
-                  ? t("buildings_at_risk")
-                  : t("stat_unknown")}
-              </div>
-            </div>
-          </div>
-
-          {/* Peak Usage Era */}
-          {country.peak_usage_era && (
-            <div className="mt-3 flex items-center gap-2 text-sm text-text-secondary">
-              <span className="text-text-muted">{t("peak_usage")}:</span>
-              <span className="font-mono text-text-primary">
-                {country.peak_usage_era}
-              </span>
-            </div>
-          )}
-        </section>
+      {/* ── Constrained content ── */}
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-10">
 
         {/* ── Regulatory Timeline ── */}
-        <section className="mb-10" aria-labelledby="timeline-heading">
+        <section aria-labelledby="timeline-heading">
           <h2
             id="timeline-heading"
             className="text-lg font-semibold text-text-primary mb-4"
@@ -381,34 +272,28 @@ export default async function CountryPage({
           <ResistanceStories stories={country.resistance_stories} />
         )}
 
-        {/* ── Common Materials ── */}
-        {displayMaterials.length > 0 && (
-          <section className="mb-10" aria-labelledby="materials-heading">
+        {/* ── Material Identification Guide ── */}
+        {country.common_materials.length > 0 && (
+          <section aria-labelledby="materials-heading">
             <h2
               id="materials-heading"
               className="text-lg font-semibold text-text-primary mb-1"
             >
-              {t("materials")}
+              {t("material_guide_title")}
             </h2>
             <p className="text-sm text-text-muted mb-4">
-              {t("common_materials_intro")}
+              {t("material_guide_subtitle")}
             </p>
-            <div className="flex flex-wrap gap-2">
-              {displayMaterials.map((material) => (
-                <span
-                  key={material}
-                  className="inline-flex items-center rounded-full bg-bg-secondary border border-bg-tertiary px-3 py-1.5 text-sm text-text-secondary"
-                >
-                  {material}
-                </span>
-              ))}
-            </div>
+            <MaterialGuide
+              materialNames={country.common_materials}
+              materialNamesEs={country.common_materials_es}
+            />
           </section>
         )}
 
         {/* ── What To Do ── */}
         <section
-          className="mb-10 rounded-lg bg-bg-secondary border border-bg-tertiary p-5 sm:p-6"
+          className="rounded-lg bg-bg-secondary border border-bg-tertiary p-5 sm:p-6"
           aria-labelledby="what-to-do-heading"
         >
           <h2
@@ -434,7 +319,7 @@ export default async function CountryPage({
 
         {/* ── CTA ── */}
         <section
-          className="mb-10 rounded-lg border border-warning/30 bg-warning/5 p-5 sm:p-6"
+          className="rounded-lg border border-warning/30 bg-warning/5 p-5 sm:p-6"
           aria-labelledby="cta-heading"
         >
           <h2
@@ -457,7 +342,7 @@ export default async function CountryPage({
 
         {/* ── Sources ── */}
         {country.sources.length > 0 && (
-          <section className="mb-8" aria-labelledby="sources-heading">
+          <section aria-labelledby="sources-heading">
             <h2
               id="sources-heading"
               className="text-lg font-semibold text-text-primary mb-3"
@@ -484,7 +369,7 @@ export default async function CountryPage({
 
         {/* ── Last Updated ── */}
         {country.last_updated && (
-          <p className="text-xs text-text-muted mb-6">
+          <p className="text-xs text-text-muted">
             {t("last_updated")}: {country.last_updated}
           </p>
         )}
@@ -501,7 +386,8 @@ export default async function CountryPage({
             {t("data_source_link")}
           </Link>
         </div>
+
       </div>
-    </main>
+    </>
   );
 }

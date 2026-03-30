@@ -4,6 +4,88 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v2.1.0] — 2026-03-29 — Country Page Editorial Redesign
+
+### New Components
+- **`CountryHero`** — Full-width cinematic hero with CSS generative patterns (6 variants: parliament, industry, urban, mining, coastal, default), glass-morphism stats card, and "SENTINEL ARCHIVE / CASE #XXX" editorial label
+- **`StatStrip`** — Full-width horizontal stat bar (ban year, meso rate, buildings at risk, peak era) below hero
+- **`MaterialGuide`** — Visual material identification guide replacing plain pill tags; keyword-matches `common_materials` strings to `materials.json` entries, renders CSS-pattern cards with risk badges and era ranges
+
+### Redesigned Components
+- **`Timeline`** — Enhanced vertical layout with colored left borders per event type, decade grouping headers, pulsing indicator for current-year events
+- **`ResistanceStories`** — Editorial full-width rows with initials avatars (colored by role_type), role type badges (PIONEER VICTIM, ADVOCACY LEADER, LEGAL WARRIOR, GLOBAL NETWORK, JOURNALIST, SCIENTIST), amber left border section
+
+### Layout Changes
+- Country page rewritten: fixed nested `<main>` HTML violation (layout already provides `<main>`)
+- Content container widened from `max-w-3xl` → `max-w-4xl`
+- Hero + StatStrip are full-width; all other content constrained
+
+### Data & Types
+- Added `hero_pattern` field to Country type and 7 priority countries (UK, Brazil, Australia, South Africa, Colombia, France, Italy)
+- Added `role_type` field to ResistanceStory type; assigned to all 18 existing resistance story entries
+- Added `photo_url` optional field to ResistanceStory (future use)
+- 18 new i18n keys per locale under `country.*` namespace
+
+### Technical
+- `getBanStatusPillClass` moved from `page.tsx` to `utils.ts` (shared by CountryHero)
+- Added 5 new utility functions: `getInitials`, `matchMaterialToId`, `getMaterialPatternClass`, `getRoleTypeColor`, `getBanStatusPillClass`
+- 10 CSS pattern classes added to `globals.css` (hero backgrounds + material card textures)
+- 426 static pages, 81 tests passing
+
+---
+
+## [v2.0.0] — 2026-03-29 — Full Re-Audit (Phase 9)
+
+### Audit Results
+- **Global score: 7.9/10** (up from 7.0 at v1.7.3)
+- Full audit report: `docs/FULL-AUDIT-V2.md` (14 sections, comparison with v1.7.3 baseline)
+- 9 auto-fixes applied, 13 files modified, 7 new i18n keys per locale
+
+### Auto-Fixes Applied
+- **`getFlag()` deduplication** — consolidated 7 duplicate implementations into single import from `@/lib/utils`
+- **i18n hardcoded strings** — fixed 5 English-only strings: "Skip to main content" (`layout.tsx`), "Key Statistics" (`country/page.tsx`), "per million (year)" (`country/page.tsx`), "Peak" (`RiskChecker.tsx`), "Error" (`ErrorBoundary.tsx`)
+- **RISK-LOGIC.md rewrite** — documentation now matches v2.1 weighted average formula with correct building factors from `risk-matrix.json`
+- **Stale date** — `CONTENT_MODIFIED_DATE` updated to 2026-03-29 in `constants.ts`
+- **Missing import** — added `getTranslations` to layout.tsx for skip-to-content i18n
+
+### Score Improvements (v1.7.3 → v2.0.0)
+- Architecture: 7 → 8 (ErrorBoundary, CI/CD, /countries SSG)
+- Error Handling: 5 → 7 (error boundaries + route error pages)
+- SEO: 8 → 9 (JSON-LD on all pages, ItemList schema, 420 sitemap routes)
+- Accessibility: 7 → 8 (skip-to-content, ARIA combobox, Lighthouse 90% enforcement)
+- Data Quality: 4 → 6 (37 timelines, 18 stories, 200 name_es, 7 research files)
+- Mobile UX: 7 → 8 (Globe3D smart loading, responsive /countries)
+- Security: 6 → 8 (DOMPurify, 7 headers, CSP Report-Only)
+- Test Coverage: 0 → 4 (81 tests, Vitest, CI enforcement)
+- Documentation: 7 → 8 (research files, RISK-LOGIC.md update)
+- Scalability: 5 → 7 (CI/CD pipeline, Lighthouse CI, calculator factory)
+
+### Files
+- `docs/FULL-AUDIT-V2.md` — new full audit report
+- `docs/RISK-LOGIC.md` — rewritten to match v2.1 formula
+- `src/messages/en.json`, `src/messages/es.json` — 7 new keys each (416 total)
+- 7 component/page files — `getFlag` import consolidated
+- `src/app/[locale]/layout.tsx` — i18n skip-to-content
+- `src/components/ui/ErrorBoundary.tsx` — i18n error label
+- `src/lib/constants.ts` — date update
+
+---
+
+## [v1.17.0] — 2026-03-29 — Lighthouse CI
+
+### Infrastructure
+- **Lighthouse CI** integrated into GitHub Actions as a separate `lighthouse` job that runs after `ci`
+- `.lighthouserc.js` — configured with 5 test URLs: `/en`, `/en/check`, `/en/country/united-states`, `/en/countries`, `/en/learn`
+- Assertions: performance ≥ 85 (warn), accessibility ≥ 90 (error), best-practices ≥ 85 (warn), SEO ≥ 90 (error)
+- Results uploaded as `lighthouse-results` CI artifact (30-day retention)
+- Uses `temporary-public-storage` upload target for public result links per run
+
+### Files
+- `.lighthouserc.js` — new Lighthouse CI config
+- `.github/workflows/ci.yml` — new `lighthouse` job added
+
+---
+
 ## [v1.15.0] — 2026-03-28 — Stories of Resistance
 
 ### New Feature

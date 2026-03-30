@@ -1,4 +1,4 @@
-import type { RiskLevel } from "./types";
+import type { RiskLevel, Country, ResistanceStory } from "./types";
 
 export function getRiskColor(level: RiskLevel): string {
   const colors: Record<RiskLevel, string> = {
@@ -41,4 +41,91 @@ export function getFlag(iso2: string): string {
     .split("")
     .map((c) => String.fromCodePoint(0x1f1e6 + c.charCodeAt(0) - 65))
     .join("");
+}
+
+// ─── Country Page Utilities ──────────────────────────────────────────────────
+
+export function getBanStatusPillClass(status: Country["ban_status"]): string {
+  const classes: Record<Country["ban_status"], string> = {
+    full_ban: "text-safe bg-safe/10 border border-safe/20",
+    partial_ban: "text-warning bg-warning/10 border border-warning/20",
+    no_ban: "text-danger bg-danger/10 border border-danger/20",
+    de_facto_ban: "text-safe bg-safe/10 border border-safe/20",
+    unknown: "text-text-muted bg-bg-tertiary border border-bg-tertiary",
+  };
+  return classes[status];
+}
+
+export function getInitials(name: string): string {
+  const parts = name.trim().split(/\s+/);
+  if (parts.length === 1) return parts[0][0].toUpperCase();
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
+
+// ─── Material Matching ───────────────────────────────────────────────────────
+
+const MATERIAL_KEYWORD_MAP: [string, string[]][] = [
+  ["popcorn-ceiling", ["artex", "textured coat", "textured ceiling"]],
+  ["asbestos-insulating-board-aib", ["insulating board", "aib"]],
+  ["cement-roofing", ["cement roofing", "roofing sheet", "cement sheet"]],
+  ["asbestos-cement-flat-sheets", ["flat sheet"]],
+  ["asbestos-cement-corrugated-roofing", ["corrugated"]],
+  ["pipe-insulation", ["pipe insulation", "lagging", "pipe and boiler", "boiler insulation"]],
+  ["vinyl-floor-tiles-9x9", ["floor tile", "vinyl-asbestos", "vinyl asbestos"]],
+  ["vinyl-floor-tiles-12x12", ["floor tile 12"]],
+  ["floor-tile-adhesive-mastic", ["adhesive", "mastic"]],
+  ["joint-compound", ["joint compound", "drywall"]],
+  ["acoustic-ceiling-tiles", ["acoustic", "ceiling tile"]],
+  ["thermal-insulation-board", ["thermal insulation", "marinite", "monokote"]],
+  ["spray-applied-fireproofing", ["fireproofing", "spray-applied", "spray applied"]],
+  ["asbestos-rope-gaskets", ["rope", "gasket"]],
+  ["roof-felt-underlayment", ["roof felt", "underlayment", "felt"]],
+  ["expansion-joints-caulk", ["expansion joint", "caulk"]],
+  ["laboratory-bench-tops", ["bench top", "laboratory"]],
+  ["fire-blankets-textiles", ["fire blanket", "textile"]],
+  ["brake-linings-friction", ["brake", "friction", "capasco"]],
+  ["asbestos-cement-water-pipes", ["water pipe", "sewer pipe"]],
+];
+
+export function matchMaterialToId(materialName: string): string | null {
+  const lower = materialName.toLowerCase();
+  for (const [id, keywords] of MATERIAL_KEYWORD_MAP) {
+    if (keywords.some((kw) => lower.includes(kw))) {
+      return id;
+    }
+  }
+  return null;
+}
+
+export function getMaterialPatternClass(materialId: string): string {
+  const map: Record<string, string> = {
+    "cement-roofing": "material-pattern-diagonal",
+    "asbestos-cement-flat-sheets": "material-pattern-diagonal",
+    "asbestos-cement-corrugated-roofing": "material-pattern-diagonal",
+    "popcorn-ceiling": "material-pattern-dots",
+    "joint-compound": "material-pattern-dots",
+    "spray-applied-fireproofing": "material-pattern-dots",
+    "vinyl-floor-tiles-9x9": "material-pattern-crosshatch",
+    "vinyl-floor-tiles-12x12": "material-pattern-crosshatch",
+    "floor-tile-adhesive-mastic": "material-pattern-crosshatch",
+    "acoustic-ceiling-tiles": "material-pattern-crosshatch",
+    "thermal-insulation-board": "material-pattern-crosshatch",
+    "asbestos-insulating-board-aib": "material-pattern-crosshatch",
+    "pipe-insulation": "material-pattern-wavy",
+    "asbestos-rope-gaskets": "material-pattern-wavy",
+    "fire-blankets-textiles": "material-pattern-wavy",
+  };
+  return map[materialId] ?? "material-pattern-dots";
+}
+
+export function getRoleTypeColor(roleType?: ResistanceStory["role_type"]): string {
+  const map: Record<string, string> = {
+    victim: "bg-danger/20 text-danger",
+    advocate: "bg-warning/20 text-warning",
+    legal: "bg-accent/20 text-accent",
+    network: "bg-safe/20 text-safe",
+    journalist: "bg-accent/20 text-accent",
+    scientist: "bg-safe/20 text-safe",
+  };
+  return map[roleType ?? ""] ?? "bg-warning/20 text-warning";
 }
