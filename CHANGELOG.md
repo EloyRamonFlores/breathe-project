@@ -4,6 +4,37 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v2.3.0] — 2026-03-30 — Educational Assets Library
+
+### Critical Content: 15 Educational Images
+- **`src/data/educational-assets.json`** (3.8 KB) — 15 high-quality Unsplash images organized by category
+- Images mapped to Learn pages: `/what-is-asbestos`, `/where-it-hides`, `/what-to-do`, `/history`
+
+### Image Categories & Coverage
+| Category | Count | Purpose | Examples |
+|----------|-------|---------|----------|
+| **Identification** | 2 | Visual recognition of asbestos | Fiber microscopy, friable crumbling |
+| **Health Effects** | 2 | Understanding diseases | Lung imaging, medical scans |
+| **Sources** | 6 | Where asbestos hides | Roof, ceiling, pipes, tiles, siding, HVAC |
+| **Safety** | 3 | Prevention & protection | Worker gear, inspection, building assessment |
+| **Regulations** | 1 | Historical context | Warning signs |
+| **History** | 1 | Industry timeline | Historical industrial settings |
+
+### Assets Ready for Component Integration
+- All 15 image URLs verified via Unsplash CDN
+- Responsive sizing: `?w=1280` parameter included
+- Accessibility: Alt text in English for all images
+- Page mapping: Each asset tagged with target Learn page(s)
+- Location tagging: Where-it-hides images mapped to building locations
+
+### Next Steps for Integration
+- Create `EducationalAssetGallery` component to render these images in Learn pages
+- Link images to relevant material cards in `/where-it-hides`
+- Add image lightbox/modal for enlarged viewing
+- Consider carousel for browsing fiber types and disease progression
+
+---
+
 ## [v2.2.0] — 2026-03-30 — Hero Images + Unsplash Integration
 
 ### Major Features

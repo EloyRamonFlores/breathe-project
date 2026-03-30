@@ -1,0 +1,144 @@
+[
+  {
+    "id": 1,
+    "name": "Asbestos Fiber Microscopy",
+    "search_query": "asbestos fiber microscope",
+    "unsplash_url": "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=1280",
+    "alt_text": "Asbestos fibers magnified under electron microscope showing needle-like structure",
+    "category": "identification",
+    "page": "/learn/what-is-asbestos"
+  },
+  {
+    "id": 2,
+    "name": "Deteriorating Material",
+    "search_query": "crumbling brittle material deterioration",
+    "unsplash_url": "https://images.unsplash.com/photo-1581092918484-8987c1d64718?w=1280",
+    "alt_text": "Friable material crumbling and deteriorating, releasing particles",
+    "category": "identification",
+    "page": "/learn/what-is-asbestos"
+  },
+  {
+    "id": 3,
+    "name": "Medical Lung Imaging",
+    "search_query": "chest x-ray lung medical imaging",
+    "unsplash_url": "https://images.unsplash.com/photo-1576091160550-112173f31c77?w=1280",
+    "alt_text": "Chest X-ray showing lung tissue and respiratory system",
+    "category": "health_effects",
+    "page": "/learn/what-is-asbestos"
+  },
+  {
+    "id": 4,
+    "name": "Deteriorated Roof",
+    "search_query": "old damaged roof shingles deteriorating",
+    "unsplash_url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1280",
+    "alt_text": "Deteriorated roof shingles showing age and damage",
+    "category": "sources",
+    "page": "/learn/where-it-hides",
+    "location": "roof"
+  },
+  {
+    "id": 5,
+    "name": "Popcorn Ceiling Texture",
+    "search_query": "acoustic ceiling popcorn texture",
+    "unsplash_url": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1280",
+    "alt_text": "Textured acoustic ceiling showing popcorn-like pattern",
+    "category": "sources",
+    "page": "/learn/where-it-hides",
+    "location": "ceiling"
+  },
+  {
+    "id": 6,
+    "name": "Industrial Pipes and Insulation",
+    "search_query": "industrial pipes insulation boiler",
+    "unsplash_url": "https://images.unsplash.com/photo-1581092162562-40038e57e399?w=1280",
+    "alt_text": "Industrial pipes with thermal insulation wrapping in basement or utility room",
+    "category": "sources",
+    "page": "/learn/where-it-hides",
+    "location": "utility_room"
+  },
+  {
+    "id": 7,
+    "name": "Vintage Floor Tiles",
+    "search_query": "old vinyl floor tiles pattern retro",
+    "unsplash_url": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1280",
+    "alt_text": "Vintage vinyl asbestos floor tiles with geometric pattern",
+    "category": "sources",
+    "page": "/learn/where-it-hides",
+    "location": "floor"
+  },
+  {
+    "id": 8,
+    "name": "Suspended Ceiling Installation",
+    "search_query": "drop ceiling acoustic tiles suspended",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "alt_text": "Acoustic ceiling tiles in suspended frame system",
+    "category": "sources",
+    "page": "/learn/where-it-hides",
+    "location": "ceiling"
+  },
+  {
+    "id": 9,
+    "name": "Medical Chest Scan",
+    "search_query": "medical imaging scan chest health",
+    "unsplash_url": "https://images.unsplash.com/photo-1576091160693-112d4754d442?w=1280",
+    "alt_text": "Medical scan showing interior chest cavity and lung structure",
+    "category": "health_effects",
+    "page": "/learn/what-is-asbestos"
+  },
+  {
+    "id": 10,
+    "name": "Construction Worker Safety",
+    "search_query": "construction worker protective gear safety mask",
+    "unsplash_url": "https://images.unsplash.com/photo-1581092918484-8987c1d64718?w=1280",
+    "alt_text": "Construction worker wearing protective equipment and respiratory protection mask",
+    "category": "safety",
+    "page": "/learn/what-to-do"
+  },
+  {
+    "id": 11,
+    "name": "Warning Sign",
+    "search_query": "warning danger caution sign industrial",
+    "unsplash_url": "https://images.unsplash.com/photo-1581092945685-8b8dff6e1c6a?w=1280",
+    "alt_text": "Yellow warning sign indicating hazardous material or danger",
+    "category": "regulations",
+    "page": "/learn/history"
+  },
+  {
+    "id": 12,
+    "name": "Building Exterior Siding",
+    "search_query": "old building facade exterior siding deteriorating",
+    "unsplash_url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1280",
+    "alt_text": "Exterior building siding showing age and deterioration from weather exposure",
+    "category": "sources",
+    "page": "/learn/where-it-hides",
+    "location": "exterior_walls"
+  },
+  {
+    "id": 13,
+    "name": "HVAC Ductwork",
+    "search_query": "ductwork ventilation air conditioning hvac system",
+    "unsplash_url": "https://images.unsplash.com/photo-1581092162562-40038e57e399?w=1280",
+    "alt_text": "HVAC ductwork and ventilation system in commercial building",
+    "category": "sources",
+    "page": "/learn/where-it-hides",
+    "location": "utility_room"
+  },
+  {
+    "id": 14,
+    "name": "Historical Industrial Setting",
+    "search_query": "industrial factory old mining equipment history",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "alt_text": "Historical industrial or mining facility showing vintage equipment",
+    "category": "history",
+    "page": "/learn/history"
+  },
+  {
+    "id": 15,
+    "name": "Professional Building Inspection",
+    "search_query": "building inspection professional assessment testing",
+    "unsplash_url": "https://images.unsplash.com/photo-1581092918484-8987c1d64718?w=1280",
+    "alt_text": "Professional inspector or technician conducting building assessment with testing equipment",
+    "category": "safety",
+    "page": "/learn/what-to-do"
+  }
+]
