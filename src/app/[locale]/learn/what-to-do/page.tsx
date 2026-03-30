@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import type { ScenarioData } from "@/lib/types";
 import { SITE_URL, CONTENT_PUBLISHED_DATE, CONTENT_MODIFIED_DATE } from "@/lib/constants";
+import educationalAssets from "@/data/educational-assets.json";
+import EducationalImage from "@/components/ui/EducationalImage";
 
 const BASE_URL = SITE_URL;
 
@@ -106,6 +108,19 @@ export default async function WhatToDoPage({
           </p>
         </header>
 
+        {/* ── Educational Image: Safety Gear ── */}
+        {(() => {
+          const asset = educationalAssets.find((a) => a.id === 10);
+          return asset ? (
+            <div className="mb-12">
+              <EducationalImage
+                url={asset.unsplash_url}
+                alt={asset.alt_text}
+              />
+            </div>
+          ) : null;
+        })()}
+
         {/* ── Three Scenarios ── */}
         <section className="mb-12" aria-labelledby="scenarios-heading">
           <h2
@@ -150,6 +165,19 @@ export default async function WhatToDoPage({
             ))}
           </div>
         </section>
+
+        {/* ── Educational Image: Professional Inspection ── */}
+        {(() => {
+          const asset = educationalAssets.find((a) => a.id === 15);
+          return asset ? (
+            <div className="mb-12">
+              <EducationalImage
+                url={asset.unsplash_url}
+                alt={asset.alt_text}
+              />
+            </div>
+          ) : null;
+        })()}
 
         {/* ── Do NOT List ── */}
         <section className="mb-12" aria-labelledby="do-not-heading">

@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import type { FiberTypeData, DiseaseData } from "@/lib/types";
 import { SITE_URL, CONTENT_PUBLISHED_DATE, CONTENT_MODIFIED_DATE } from "@/lib/constants";
+import educationalAssets from "@/data/educational-assets.json";
+import EducationalImage from "@/components/ui/EducationalImage";
 
 const BASE_URL = SITE_URL;
 
@@ -94,6 +96,20 @@ export default async function WhatIsAsbestosPage({
             {t("what_is_page.intro")}
           </p>
         </header>
+
+        {/* ── Educational Images Block 1: Identification ── */}
+        <div className="mb-12 grid sm:grid-cols-2 gap-4">
+          {[1, 2].map((id) => {
+            const asset = educationalAssets.find((a) => a.id === id);
+            return asset ? (
+              <EducationalImage
+                key={asset.id}
+                url={asset.unsplash_url}
+                alt={asset.alt_text}
+              />
+            ) : null;
+          })}
+        </div>
 
         {/* ── Fiber Types ── */}
         <section className="mb-12" aria-labelledby="fiber-types-heading">
@@ -196,6 +212,20 @@ export default async function WhatIsAsbestosPage({
             {t("what_is_page.mechanism_body")}
           </p>
         </section>
+
+        {/* ── Educational Images Block 2: Health Effects ── */}
+        <div className="mb-12 grid sm:grid-cols-2 gap-4">
+          {[3, 9].map((id) => {
+            const asset = educationalAssets.find((a) => a.id === id);
+            return asset ? (
+              <EducationalImage
+                key={asset.id}
+                url={asset.unsplash_url}
+                alt={asset.alt_text}
+              />
+            ) : null;
+          })}
+        </div>
 
         {/* ── Diseases ── */}
         <section className="mb-12" aria-labelledby="diseases-heading">

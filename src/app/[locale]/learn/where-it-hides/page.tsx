@@ -5,6 +5,8 @@ import materialsData from "@/data/materials.json";
 import type { Material, RiskLevel } from "@/lib/types";
 import { getRiskTailwindClass } from "@/lib/utils";
 import { SITE_URL, CONTENT_PUBLISHED_DATE, CONTENT_MODIFIED_DATE } from "@/lib/constants";
+import educationalAssets from "@/data/educational-assets.json";
+import EducationalImage from "@/components/ui/EducationalImage";
 
 const BASE_URL = SITE_URL;
 
@@ -141,6 +143,22 @@ export default async function WhereItHidesPage({
                 <span className="text-text-muted" aria-hidden="true">▸</span>
                 {t(`where_hides_page.location_labels.${loc}`)}
               </h2>
+
+              {/* Location image(s) */}
+              {(() => {
+                const locImages = educationalAssets.filter((a) => a.location?.includes(loc as any));
+                return locImages.length > 0 ? (
+                  <div className={`mb-6 grid gap-4 ${locImages.length > 1 ? "sm:grid-cols-2" : ""}`}>
+                    {locImages.map((asset) => (
+                      <EducationalImage
+                        key={asset.id}
+                        url={asset.unsplash_url}
+                        alt={asset.alt_text}
+                      />
+                    ))}
+                  </div>
+                ) : null;
+              })()}
 
               <div className="space-y-3">
                 {grouped[loc].map((material) => (

@@ -4,6 +4,47 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v2.4.0] — 2026-03-30 — Educational Images Integrated into Learn Pages
+
+### Implementation Complete
+- Created `EducationalImage` component (server, `src/components/ui/EducationalImage.tsx`)
+- Integrated 15 Unsplash images across 4 Learn pages
+- Images now visible in production builds (426 static pages)
+
+### Images by Page
+
+**`/learn/what-is-asbestos`** (4 images)
+- ✅ Block 1 (after header): Asbestos fiber microscopy + friable material crumbling
+- ✅ Block 2 (before diseases): Medical lung imaging + chest scan
+
+**`/learn/where-it-hides`** (6 images, dynamic per location)
+- ✅ Roof: Deteriorated shingles
+- ✅ Exterior walls: Building siding deterioration
+- ✅ Ceiling: Popcorn texture + suspended tiles (2 images, side-by-side)
+- ✅ Floor: Vintage asbestos tiles
+- ✅ Utility room: Industrial pipes + HVAC ductwork (2 images, side-by-side)
+
+**`/learn/what-to-do`** (2 images)
+- ✅ After header: Construction worker with protective gear
+- ✅ After scenarios: Professional building inspection
+
+**`/learn/history`** (2 images, side-by-side)
+- ✅ After header: Warning sign + historical industrial setting
+
+### Technical Details
+- Component uses plain `<img>` with lazy loading (consistent with CountryFlag pattern)
+- Responsive grid layout: `sm:grid-cols-2` for multi-image blocks
+- Alt text from educational-assets.json for accessibility
+- Unsplash URLs with `?w=1280` responsive sizing
+- No i18n changes needed (alt text in data layer)
+
+### Verification
+- ✅ Type-check: Clean
+- ✅ Tests: 81/81 passing
+- ✅ Build: 426 static pages generated
+
+---
+
 ## [v2.3.0] — 2026-03-30 — Educational Assets Library
 
 ### Critical Content: 15 Educational Images

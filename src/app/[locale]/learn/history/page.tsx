@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import type { HistoryEventData, HistoryEventType } from "@/lib/types";
 import { SITE_URL, CONTENT_PUBLISHED_DATE, CONTENT_MODIFIED_DATE } from "@/lib/constants";
+import educationalAssets from "@/data/educational-assets.json";
+import EducationalImage from "@/components/ui/EducationalImage";
 
 const BASE_URL = SITE_URL;
 
@@ -110,6 +112,20 @@ export default async function HistoryPage({
             {t("history_page.intro")}
           </p>
         </header>
+
+        {/* ── Educational Images: History Context ── */}
+        <div className="mb-12 grid sm:grid-cols-2 gap-4">
+          {[11, 14].map((id) => {
+            const asset = educationalAssets.find((a) => a.id === id);
+            return asset ? (
+              <EducationalImage
+                key={asset.id}
+                url={asset.unsplash_url}
+                alt={asset.alt_text}
+              />
+            ) : null;
+          })}
+        </div>
 
         {/* ── Timeline ── */}
         <section aria-label={t("history_page.timeline_aria_label")} className="mb-12">
