@@ -76,7 +76,8 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1485738422979-1472a3a81d71?w=1280"
   },
   {
     "slug": "india",
@@ -156,7 +157,8 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1514632595-4944ab0f1b00?w=1280"
   },
   {
     "slug": "china",
@@ -238,7 +240,8 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1280"
   },
   {
     "slug": "russia",
@@ -320,12 +323,13 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513933789142-f2b722e1f0eb?w=1280"
   },
   {
     "slug": "brazil",
     "hero_pattern": "urban",
-    "hero_image_url": "https://images.unsplash.com/photo-1518235506717-e1ed3306a89f?w=1400&h=700&fit=crop&q=80",
+    "hero_image_url": "https://images.unsplash.com/photo-1548525881-89cbb62ceadb?w=1280",
     "name": "Brazil",
     "name_es": "Brasil",
     "iso2": "BR",
@@ -551,7 +555,8 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1590080876-6b3c26d4f2a5?w=1280"
   },
   {
     "slug": "indonesia",
@@ -629,12 +634,13 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1537384294627-4d3e10a3ee0a?w=1280"
   },
   {
     "slug": "united-kingdom",
     "hero_pattern": "parliament",
-    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1400&h=700&fit=crop&q=80",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
     "name": "United Kingdom",
     "name_es": "Reino Unido",
     "iso2": "GB",
@@ -826,7 +832,7 @@
   {
     "slug": "australia",
     "hero_pattern": "mining",
-    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&h=700&fit=crop&q=80",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
     "name": "Australia",
     "name_es": "Australia",
     "iso2": "AU",
@@ -1046,7 +1052,8 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1567339374644-e5ea0d4e6c88?w=1280"
   },
   {
     "slug": "south-korea",
@@ -1123,7 +1130,8 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1611593437281-f6a51526145b?w=1280"
   },
   {
     "slug": "germany",
@@ -1200,12 +1208,13 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1560890291-58f22e4f3628?w=1280"
   },
   {
     "slug": "south-africa",
     "hero_pattern": "mining",
-    "hero_image_url": "https://images.unsplash.com/photo-1469022563149-aa64dbd37dda?w=1400&h=700&fit=crop&q=80",
+    "hero_image_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
     "name": "South Africa",
     "name_es": "Sudáfrica",
     "iso2": "ZA",
@@ -1472,7 +1481,8 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1280"
   },
   {
     "slug": "nigeria",
@@ -1550,7 +1560,8 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280"
   },
   {
     "slug": "algeria",
@@ -1642,7 +1653,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1553622519-50b5b016b371?w=1280"
   },
   {
     "slug": "argentina",
@@ -1732,7 +1744,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1542673286-c19150c3cb26?w=1280"
   },
   {
     "slug": "austria",
@@ -1986,12 +1999,13 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1493514789921-586cb221aeca?w=1280"
   },
   {
     "slug": "colombia",
     "hero_pattern": "urban",
-    "hero_image_url": "https://images.unsplash.com/photo-1535066543857-505cd0ae0a05?w=1400&h=700&fit=crop&q=80",
+    "hero_image_url": "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=1280",
     "name": "Colombia",
     "name_es": "Colombia",
     "iso2": "CO",
@@ -2375,7 +2389,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1509391366360-2e938aa1ef14?w=1280"
   },
   {
     "slug": "estonia",
@@ -2443,7 +2458,7 @@
   {
     "slug": "france",
     "hero_pattern": "industry",
-    "hero_image_url": "https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=1400&h=700&fit=crop&q=80",
+    "hero_image_url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1280",
     "name": "France",
     "name_es": "Francia",
     "iso2": "FR",
@@ -2874,7 +2889,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1570829460005-c840387bb1ca?w=1280"
   },
   {
     "slug": "iraq",
@@ -2974,7 +2990,7 @@
   {
     "slug": "italy",
     "hero_pattern": "coastal",
-    "hero_image_url": "https://images.unsplash.com/photo-1552832230-4e37b02d6fbb?w=1400&h=700&fit=crop&q=80",
+    "hero_image_url": "https://images.unsplash.com/photo-1552832860-cfb67165eaf0?w=1280",
     "name": "Italy",
     "name_es": "Italia",
     "iso2": "IT",
@@ -4164,7 +4180,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1599572291473-b63a0d90cddb?w=1280"
   },
   {
     "slug": "uruguay",
@@ -4285,7 +4302,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1545552537-8d9e23e8f5da?w=1280"
   },
   {
     "slug": "thailand",
@@ -4368,7 +4386,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1486899014055-e2219b814361?w=1280"
   },
   {
     "slug": "philippines",
@@ -4451,7 +4470,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1280"
   },
   {
     "slug": "vietnam",
@@ -4541,7 +4561,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280"
   },
   {
     "slug": "pakistan",
@@ -4624,7 +4645,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1485738422979-1472a3a81d71?w=1280"
   },
   {
     "slug": "bangladesh",
@@ -4714,7 +4736,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280"
   },
   {
     "slug": "kenya",
@@ -4795,7 +4818,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1280"
   },
   {
     "slug": "zimbabwe",
@@ -4949,7 +4973,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1498855926480-d98e83099315?w=1280"
   },
   {
     "slug": "angola",
@@ -5821,7 +5846,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1570829460005-c840387bb1ca?w=1280"
   },
   {
     "slug": "namibia",
@@ -6903,7 +6929,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1587595431973-160beaf913cb?w=1280"
   },
   {
     "slug": "saint-kitts-and-nevis",
@@ -7120,7 +7147,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280"
   },
   {
     "slug": "afghanistan",
@@ -7436,7 +7464,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1515632066063-d19dfb824134?w=1280"
   },
   {
     "slug": "maldives",
@@ -7699,7 +7728,8 @@
         "accessed": "2026-03-24"
       }
     ],
-    "last_updated": "2026-03-24"
+    "last_updated": "2026-03-24",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280"
   },
   {
     "slug": "syria",

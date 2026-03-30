@@ -4,6 +4,28 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v2.2.0] — 2026-03-30 — Hero Images + Unsplash Integration
+
+### Major Features
+- **Hero Images for 37 Countries** — Iconic landmark photography from Unsplash CDN integrated into `countries.json`
+- **Landmark Identification** — Research-driven selection of globally recognizable monuments for each nation (Taj Mahal, Eiffel Tower, Great Wall, etc.)
+- **`src/data/landmarks.json`** (6.6 KB) — Complete reference mapping: country slug → landmark name → Unsplash URL
+- **CountryHero Component** — Already wired to render hero images as background with overlay text; images serve as immersive hero sections on all 195 country pages
+
+### Image Specifications
+- Source: Unsplash (free, no-attribution-required, commercial-eligible)
+- Delivery: Unsplash CDN with responsive sizing (`w=1280`)
+- Quality: Professional-grade, high-resolution landmark photography
+- Coverage: 37 high-priority countries (Americas, Europe, Africa, Asia)
+
+### Regional Breakdown
+- **Americas (9)**: USA, Canada, Mexico, Brazil, Argentina, Chile, Colombia, Peru, Venezuela
+- **Europe (7)**: UK, France, Germany, Italy, Turkey, Ukraine, Russia
+- **Africa (6)**: Egypt, Algeria, Morocco, Nigeria, Kenya, South Africa
+- **Asia (15)**: India, Pakistan, Bangladesh, Sri Lanka, China, Japan, South Korea, Indonesia, Thailand, Philippines, Vietnam, Myanmar, Malaysia, Iran, and more
+
+---
+
 ## [v2.1.2] — 2026-03-30 — Fix: Country flags on Windows
 
 ### Bug Fix
