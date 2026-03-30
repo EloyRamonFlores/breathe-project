@@ -4,6 +4,16 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v2.1.2] — 2026-03-30 — Fix: Country flags on Windows
+
+### Bug Fix
+- **Country flags not rendering on Windows** — Unicode regional indicator emoji pairs (🇺🇸 etc.) are not supported by Windows browsers; replaced all usages with `<img>` tags served from `flagcdn.com`
+- Created `src/components/ui/CountryFlag.tsx` — universal flag image component using `https://flagcdn.com/w40/{iso2}.png` with 2x srcSet; sizes: sm (20px), md (32px), lg (40px)
+- Replaced `getFlag()` usages in 7 files: `CountryListPage`, `BanTicker`, `CountryPreviewCard`, `CountryHero`, `CountrySearch`, `CountrySearchSection`, `RiskChecker`, and `[locale]/page.tsx`
+- `getFlag()` in `utils.ts` retained (used by tests / non-visual contexts) but no longer called in any rendered component
+
+---
+
 ## [v2.1.1] — 2026-03-30 — Country Page Phase Completion
 
 ### New Components

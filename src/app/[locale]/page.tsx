@@ -11,7 +11,7 @@ import CountrySearchSection from "@/components/home/CountrySearchSection";
 import BanTicker from "@/components/home/BanTicker";
 import StatRotator from "@/components/home/StatRotator";
 import RegionSummary from "@/components/home/RegionSummary";
-import { getFlag } from "@/lib/utils";
+import CountryFlag from "@/components/ui/CountryFlag";
 
 const countries = countriesData as Country[];
 const noBanCount = countries.filter(
@@ -290,7 +290,7 @@ export default async function HomePage({
                         : "border-emerald-900/40 text-emerald-400/80"
                   }`}
                 >
-                  <span aria-hidden="true">{getFlag(country.iso2)}</span>
+                  <CountryFlag iso2={country.iso2} size="sm" />
                   <span className="font-mono text-[10px] uppercase tracking-wider opacity-60">
                     {country.ban_status === "no_ban" || country.ban_status === "unknown"
                       ? t("top_countries_no_ban")

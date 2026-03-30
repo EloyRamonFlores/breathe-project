@@ -5,7 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import countriesData from "@/data/countries.json";
 import type { Country } from "@/lib/types";
-import { getFlag } from "@/lib/utils";
+import CountryFlag from "@/components/ui/CountryFlag";
 
 const countries = countriesData as Country[];
 
@@ -116,7 +116,7 @@ export default function BanTicker() {
                 : "border-emerald-500/30 bg-emerald-500/5 text-emerald-400 hover:border-emerald-400/60 hover:bg-emerald-500/15 hover:shadow-emerald-500/10"
               }`}
           >
-            <span aria-hidden="true">{getFlag(item.country.iso2)}</span>
+            <CountryFlag iso2={item.country.iso2} size="sm" />
             <span className="font-mono text-[9px] uppercase tracking-wider opacity-60">
               {item.type === "no_ban"
                 ? t("top_countries_no_ban")

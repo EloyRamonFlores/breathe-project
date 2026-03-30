@@ -5,7 +5,7 @@ import { useRouter } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import countriesData from "@/data/countries.json";
 import type { Country } from "@/lib/types";
-import { getFlag } from "@/lib/utils";
+import CountryFlag from "@/components/ui/CountryFlag";
 
 const countries = countriesData as Country[];
 
@@ -246,9 +246,7 @@ export default function CountrySearch({ locale, onSelect }: CountrySearchProps) 
                     : "hover:bg-slate-800/50"
                 }`}
               >
-                <span className="text-xl leading-none" aria-hidden="true">
-                  {getFlag(country.iso2)}
-                </span>
+                <CountryFlag iso2={country.iso2} size="sm" />
                 <div className="flex-1 min-w-0">
                   <span className="block truncate text-sm font-medium text-white">
                     {getDisplayName(country)}

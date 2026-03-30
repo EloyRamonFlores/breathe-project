@@ -1,6 +1,7 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import type { Country } from "@/lib/types";
-import { getBanStatusColor, getBanStatusPillClass, getFlag } from "@/lib/utils";
+import { getBanStatusColor, getBanStatusPillClass } from "@/lib/utils";
+import CountryFlag from "@/components/ui/CountryFlag";
 
 interface CountryHeroProps {
   country: Country;
@@ -15,7 +16,6 @@ export default async function CountryHero({ country, caseNumber, heroImageUrl }:
     getLocale(),
   ]);
 
-  const flag = getFlag(country.iso2);
   const banStatusColor = getBanStatusColor(country.ban_status);
   const pillClass = getBanStatusPillClass(country.ban_status);
   const caseLabel = t("case_number", { number: String(caseNumber).padStart(3, "0") });
@@ -84,9 +84,7 @@ export default async function CountryHero({ country, caseNumber, heroImageUrl }:
             <div className="flex-1 min-w-0">
               {/* Flag + archive label */}
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-4xl leading-none" aria-hidden="true">
-                  {flag}
-                </span>
+                <CountryFlag iso2={country.iso2} size="lg" />
                 <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-text-muted">
                   {archiveLabel} / {caseLabel}
                 </span>

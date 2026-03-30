@@ -3,7 +3,7 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import type { Country } from "@/lib/types";
-import { getFlag } from "@/lib/utils";
+import CountryFlag from "@/components/ui/CountryFlag";
 
 interface CountryPreviewCardProps {
   country: Country;
@@ -28,9 +28,7 @@ export default function CountryPreviewCard({ country, onDismiss }: CountryPrevie
       {/* Header: flag + name + dismiss */}
       <div className="flex items-start justify-between gap-4">
         <div className="flex items-center gap-3">
-          <span className="text-4xl leading-none" aria-hidden="true">
-            {getFlag(country.iso2)}
-          </span>
+          <CountryFlag iso2={country.iso2} size="lg" />
           <div>
             <h3 className="text-xl font-bold text-white">{country.name}</h3>
             <p className="text-xs text-slate-500">{country.region}</p>

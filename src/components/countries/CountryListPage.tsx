@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Country } from "@/lib/types";
-import { getFlag } from "@/lib/utils";
+import CountryFlag from "@/components/ui/CountryFlag";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
@@ -198,9 +198,7 @@ export default function CountryListPage({
               href={`/country/${country.slug}`}
               className="group flex items-center gap-4 rounded-xl border border-bg-tertiary bg-bg-secondary p-4 transition-colors hover:border-text-muted/30 hover:bg-bg-tertiary/50"
             >
-              <span className="text-3xl" aria-hidden="true">
-                {getFlag(country.iso2)}
-              </span>
+              <CountryFlag iso2={country.iso2} size="md" />
               <div className="min-w-0 flex-1">
                 <p className="truncate font-medium text-text-primary group-hover:text-accent">
                   {locale === "es" ? country.name_es : country.name}

@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import CountrySearch from "@/components/search/CountrySearch";
 import CountryPreviewCard from "./CountryPreviewCard";
 import type { Country } from "@/lib/types";
-import { getFlag } from "@/lib/utils";
+import CountryFlag from "@/components/ui/CountryFlag";
 
 const popularCountries = [
   { slug: "india", name: "India", iso2: "IN" },
@@ -52,7 +52,7 @@ export default function CountrySearchSection({ locale }: CountrySearchSectionPro
                 href={`/country/${c.slug}`}
                 className="inline-flex items-center gap-1.5 rounded-full border border-slate-700/50 bg-slate-900/40 px-3 py-1.5 text-sm text-slate-300 transition-all duration-200 hover:border-slate-600 hover:bg-slate-800/60 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
               >
-                <span aria-hidden="true">{getFlag(c.iso2)}</span>
+                <CountryFlag iso2={c.iso2} size="sm" />
                 {c.name}
               </Link>
             ))}

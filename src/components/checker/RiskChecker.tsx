@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import countriesData from "@/data/countries.json";
 import type { Country, Era, BuildingType, RiskResult } from "@/lib/types";
 import { calculateRisk } from "@/lib/calculators";
-import { getFlag } from "@/lib/utils";
+import CountryFlag from "@/components/ui/CountryFlag";
 import RiskResults from "./RiskResults";
 
 const countries = (countriesData as Country[]).sort((a, b) =>
@@ -317,9 +317,7 @@ export default function RiskChecker() {
                         : "text-text-secondary hover:bg-bg-tertiary hover:text-text-primary"
                     }`}
                   >
-                    <span className="text-lg leading-none" aria-hidden="true">
-                      {getFlag(country.iso2)}
-                    </span>
+                    <CountryFlag iso2={country.iso2} size="sm" />
                     <span>{country.name}</span>
                   </li>
                 ))}
