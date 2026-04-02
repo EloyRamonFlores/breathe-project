@@ -3,7 +3,22 @@
 Listado completo de todas las imágenes que necesita el sitio.
 Cuando subas una imagen con el nombre exacto indicado a la carpeta correspondiente, avísame y actualizaré los JSON automáticamente.
 
-**Carpeta raíz:** `public/images/`
+**Nueva estructura (escalable por país):**
+```
+public/images/
+├── educational/              ← compartidas (todas las páginas /learn)
+├── materials/                ← compartidas (todas las páginas)
+└── countries/
+    ├── colombia/
+    │   ├── hero.jpg          (opcional, fondo country page)
+    │   └── resistance-stories/
+    │       ├── ana-cecilia-nino-robles.webp ✅
+    │       ├── daniel-pineda-ana-cecilia-juntos.webp ✅
+    │       └── daniel-pineda.webp ✅
+    ├── argentina/
+    │   └── resistance-stories/ (para futuro)
+    └── ... (37 países total)
+```
 
 ---
 
@@ -44,51 +59,51 @@ Usadas en las 4 páginas de `/learn/`. Deben mostrar el material o situación re
 
 ---
 
-## B — Imágenes de países (`public/images/countries/`)
+## B — Imágenes de países — Hero backgrounds (`public/images/countries/{slug}/hero.jpg`)
 
 Usadas como fondo de pantalla completa en las páginas `/country/[slug]`.
 Deben ser fotografías del monumento o paisaje más icónico del país.
 **Proporción ideal: 16:9 o más ancha. Mínimo 1280px.**
 
-| Estado | Nombre de archivo | Monumento / Paisaje a fotografiar | Página |
+| Estado | Ruta | Monumento / Paisaje a fotografiar | Página |
 |--------|-------------------|-----------------------------------|--------|
-| [ ] | `united-states.jpg` | Estatua de la Libertad, Nueva York | /country/united-states |
-| [ ] | `india.jpg` | Taj Mahal, Agra | /country/india |
-| [ ] | `china.jpg` | Gran Muralla China | /country/china |
-| [ ] | `russia.jpg` | Catedral de San Basilio, Plaza Roja, Moscú | /country/russia |
-| [ ] | `brazil.jpg` | Cristo Redentor, Río de Janeiro | /country/brazil |
-| [ ] | `mexico.jpg` | Chichén Itzá, Yucatán | /country/mexico |
-| [ ] | `indonesia.jpg` | Templo de Borobudur, Java | /country/indonesia |
-| [ ] | `united-kingdom.jpg` | Big Ben y Puente de Westminster, Londres | /country/united-kingdom |
-| [ ] | `australia.jpg` | Ópera de Sídney y Harbour Bridge | /country/australia |
-| [ ] | `japan.jpg` | Monte Fuji con cerezo en flor | /country/japan |
-| [ ] | `south-korea.jpg` | Palacio Gyeongbokgung, Seúl | /country/south-korea |
-| [ ] | `germany.jpg` | Puerta de Brandeburgo, Berlín | /country/germany |
-| [ ] | `south-africa.jpg` | Montaña de la Mesa, Ciudad del Cabo | /country/south-africa |
-| [ ] | `canada.jpg` | Cataratas del Niágara | /country/canada |
-| [ ] | `nigeria.jpg` | Skyline de Lagos o Centro de Conservación Lekki | /country/nigeria |
-| [ ] | `algeria.jpg` | Casbah de Argel — callejuelas azul y blanco | /country/algeria |
-| [ ] | `argentina.jpg` | Teatro Colón (Buenos Aires) o Glaciar Perito Moreno | /country/argentina |
-| [ ] | `chile.jpg` | Torres del Paine o Desierto de Atacama | /country/chile |
-| [ ] | `colombia.jpg` | Centro histórico de Cartagena — edificios coloniales | /country/colombia |
-| [ ] | `egypt.jpg` | Pirámides de Giza con la Esfinge | /country/egypt |
-| [ ] | `france.jpg` | Torre Eiffel, París | /country/france |
-| [ ] | `iran.jpg` | Ruinas de Persépolis | /country/iran |
-| [ ] | `italy.jpg` | Coliseo Romano, Roma | /country/italy |
-| [ ] | `turkey.jpg` | Mezquita Azul, Estambul | /country/turkey |
-| [ ] | `ukraine.jpg` | Catedral de Santa Sofía, Kiev | /country/ukraine |
-| [ ] | `thailand.jpg` | Gran Palacio, Bangkok | /country/thailand |
-| [ ] | `philippines.jpg` | Terrazas de arroz de Banaue, Ifugao | /country/philippines |
-| [ ] | `vietnam.jpg` | Bahía de Ha Long — karst de piedra caliza | /country/vietnam |
-| [ ] | `pakistan.jpg` | Mezquita Badshahi, Lahore | /country/pakistan |
-| [ ] | `bangladesh.jpg` | Bosque de manglares de los Sundarbans | /country/bangladesh |
-| [ ] | `kenya.jpg` | Sabana del Maasai Mara con fauna | /country/kenya |
-| [ ] | `myanmar.jpg` | Pagoda Shwedagon, Yangón | /country/myanmar |
-| [ ] | `morocco.jpg` | Mezquita Hassan II, Casablanca | /country/morocco |
-| [ ] | `peru.jpg` | Machu Picchu, Andes | /country/peru |
-| [ ] | `venezuela.jpg` | Salto Ángel, Canaima | /country/venezuela |
-| [ ] | `malaysia.jpg` | Torres Petronas, Kuala Lumpur | /country/malaysia |
-| [ ] | `sri-lanka.jpg` | Fortaleza roca de Sigiriya | /country/sri-lanka |
+| [ ] | `countries/united-states/hero.jpg` | Estatua de la Libertad, Nueva York | /country/united-states |
+| [ ] | `countries/india/hero.jpg` | Taj Mahal, Agra | /country/india |
+| [ ] | `countries/china/hero.jpg` | Gran Muralla China | /country/china |
+| [ ] | `countries/russia/hero.jpg` | Catedral de San Basilio, Plaza Roja, Moscú | /country/russia |
+| [ ] | `countries/brazil/hero.jpg` | Cristo Redentor, Río de Janeiro | /country/brazil |
+| [ ] | `countries/mexico/hero.jpg` | Chichén Itzá, Yucatán | /country/mexico |
+| [ ] | `countries/indonesia/hero.jpg` | Templo de Borobudur, Java | /country/indonesia |
+| [ ] | `countries/united-kingdom/hero.jpg` | Big Ben y Puente de Westminster, Londres | /country/united-kingdom |
+| [ ] | `countries/australia/hero.jpg` | Ópera de Sídney y Harbour Bridge | /country/australia |
+| [ ] | `countries/japan/hero.jpg` | Monte Fuji con cerezo en flor | /country/japan |
+| [ ] | `countries/south-korea/hero.jpg` | Palacio Gyeongbokgung, Seúl | /country/south-korea |
+| [ ] | `countries/germany/hero.jpg` | Puerta de Brandeburgo, Berlín | /country/germany |
+| [ ] | `countries/south-africa/hero.jpg` | Montaña de la Mesa, Ciudad del Cabo | /country/south-africa |
+| [ ] | `countries/canada/hero.jpg` | Cataratas del Niágara | /country/canada |
+| [ ] | `countries/nigeria/hero.jpg` | Skyline de Lagos o Centro de Conservación Lekki | /country/nigeria |
+| [ ] | `countries/algeria/hero.jpg` | Casbah de Argel — callejuelas azul y blanco | /country/algeria |
+| [ ] | `countries/argentina/hero.jpg` | Teatro Colón (Buenos Aires) o Glaciar Perito Moreno | /country/argentina |
+| [ ] | `countries/chile/hero.jpg` | Torres del Paine o Desierto de Atacama | /country/chile |
+| [ ] | `countries/colombia/hero.jpg` | Centro histórico de Cartagena — edificios coloniales | /country/colombia |
+| [ ] | `countries/egypt/hero.jpg` | Pirámides de Giza con la Esfinge | /country/egypt |
+| [ ] | `countries/france/hero.jpg` | Torre Eiffel, París | /country/france |
+| [ ] | `countries/iran/hero.jpg` | Ruinas de Persépolis | /country/iran |
+| [ ] | `countries/italy/hero.jpg` | Coliseo Romano, Roma | /country/italy |
+| [ ] | `countries/turkey/hero.jpg` | Mezquita Azul, Estambul | /country/turkey |
+| [ ] | `countries/ukraine/hero.jpg` | Catedral de Santa Sofía, Kiev | /country/ukraine |
+| [ ] | `countries/thailand/hero.jpg` | Gran Palacio, Bangkok | /country/thailand |
+| [ ] | `countries/philippines/hero.jpg` | Terrazas de arroz de Banaue, Ifugao | /country/philippines |
+| [ ] | `countries/vietnam/hero.jpg` | Bahía de Ha Long — karst de piedra caliza | /country/vietnam |
+| [ ] | `countries/pakistan/hero.jpg` | Mezquita Badshahi, Lahore | /country/pakistan |
+| [ ] | `countries/bangladesh/hero.jpg` | Bosque de manglares de los Sundarbans | /country/bangladesh |
+| [ ] | `countries/kenya/hero.jpg` | Sabana del Maasai Mara con fauna | /country/kenya |
+| [ ] | `countries/myanmar/hero.jpg` | Pagoda Shwedagon, Yangón | /country/myanmar |
+| [ ] | `countries/morocco/hero.jpg` | Mezquita Hassan II, Casablanca | /country/morocco |
+| [ ] | `countries/peru/hero.jpg` | Machu Picchu, Andes | /country/peru |
+| [ ] | `countries/venezuela/hero.jpg` | Salto Ángel, Canaima | /country/venezuela |
+| [ ] | `countries/malaysia/hero.jpg` | Torres Petronas, Kuala Lumpur | /country/malaysia |
+| [ ] | `countries/sri-lanka/hero.jpg` | Fortaleza roca de Sigiriya | /country/sri-lanka |
 
 ---
 
@@ -125,27 +140,27 @@ Usadas como miniatura (80×80px) dentro de cada tarjeta de material en `/learn/w
 
 ---
 
-## D — Resistance Stories (`public/images/resistance-stories/`)
+## D — Resistance Stories (`public/images/countries/{slug}/resistance-stories/`)
 
 Usadas como avatares 80×80px en las tarjetas de historias de resistencia en páginas de país.
 **Proporción: 1:1 (cuadrada). Mínimo 300px.**
 
-| Estado | Nombre de archivo | Quién aparece | Dónde |
-|--------|-------------------|--------------|-------|
-| [x] | `ana-cecilia-nino-robles.jpg` | Foto de perfil de Ana Cecilia Niño | Tarjeta Colombia (historia de resistencia) |
-| [x] | `daniel-pineda.jpg` | Foto de perfil de Daniel Pineda | Tarjeta Colombia (historia de resistencia) — fallback |
-| [x] | `daniel-pineda-ana-cecilia-juntos.jpg` | Foto de ambos juntos | Tarjeta Colombia (historia de resistencia — principal) |
+| Estado | Ruta | Quién aparece | Dónde |
+|--------|------|--------------|-------|
+| [x] | `countries/colombia/resistance-stories/ana-cecilia-nino-robles.webp` | Foto de perfil de Ana Cecilia Niño | Tarjeta Colombia (historia de resistencia) |
+| [x] | `countries/colombia/resistance-stories/daniel-pineda.webp` | Foto de perfil de Daniel Pineda | Tarjeta Colombia (historia de resistencia) — fallback |
+| [x] | `countries/colombia/resistance-stories/daniel-pineda-ana-cecilia-juntos.webp` | Foto de ambos juntos | Tarjeta Colombia (historia de resistencia — principal) |
 
 ---
 
 ## Resumen
 
-| Categoría | Carpeta | Total | Listos |
-|-----------|---------|-------|--------|
+| Categoría | Ubicación | Total | Listos |
+|-----------|-----------|-------|--------|
 | Educativas | `public/images/educational/` | 15 | 0/15 |
-| Países | `public/images/countries/` | 37 | 0/37 |
+| Países (hero) | `public/images/countries/{slug}/` | 37 | 0/37 |
 | Materiales | `public/images/materials/` | 20 | 0/20 |
-| Resistance Stories | `public/images/resistance-stories/` | 3 | 3/3 ✅ |
+| Resistance Stories | `public/images/countries/{slug}/resistance-stories/` | 3 | **3/3 ✅** |
 | **Total** | | **75** | **3/75** |
 
 ---
