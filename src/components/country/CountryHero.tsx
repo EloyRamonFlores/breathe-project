@@ -78,64 +78,41 @@ export default async function CountryHero({ country, caseNumber, heroImageUrl }:
       {/* Content */}
       <div className="relative z-10 flex min-h-[clamp(280px,40vh,500px)] sm:min-h-[60vh] flex-col justify-end">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 pb-10 sm:pb-16">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
-
-            {/* Left: main content */}
-            <div className="flex-1 min-w-0">
-              {/* Flag + archive label */}
-              <div className="flex items-center gap-3 mb-3">
-                <CountryFlag iso2={country.iso2} size="lg" />
-                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-text-muted">
-                  {archiveLabel} / {caseLabel}
-                </span>
-              </div>
-
-              {/* Country name */}
-              <h1 className="font-sans font-bold text-5xl sm:text-6xl lg:text-7xl text-text-primary leading-none mb-4">
-                {country.name}
-              </h1>
-
-              {/* Ban details */}
-              {banDetailsDisplay && (
-                <p className="text-text-secondary text-base sm:text-lg max-w-2xl leading-relaxed">
-                  {banDetailsDisplay}
-                </p>
-              )}
-
-              {/* Mobile: ban year + status inline */}
-              <div className="mt-4 flex items-center gap-3 sm:hidden">
-                <span
-                  className="font-mono text-3xl font-bold tabular-nums"
-                  style={{ color: banStatusColor }}
-                >
-                  {country.ban_year ?? "—"}
-                </span>
-                <span
-                  className={`inline-flex items-center rounded-full px-3 py-1 text-sm font-medium ${pillClass}`}
-                >
-                  {tBanStatus(country.ban_status)}
-                </span>
-              </div>
+          <div className="flex-1 min-w-0">
+            {/* Flag + archive label */}
+            <div className="flex items-center gap-3 mb-3">
+              <CountryFlag iso2={country.iso2} size="lg" />
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-text-muted">
+                {archiveLabel} / {caseLabel}
+              </span>
             </div>
 
-            {/* Right: glass card — desktop only */}
-            <div className="hidden sm:block flex-shrink-0 w-64 rounded-xl border border-bg-tertiary/50 bg-bg-secondary/70 backdrop-blur-sm p-5">
-              <div
-                className="font-mono text-4xl font-bold tabular-nums mb-2"
+            {/* Country name */}
+            <h1 className="font-sans font-bold text-5xl sm:text-6xl lg:text-7xl text-text-primary leading-none mb-4">
+              {country.name}
+            </h1>
+
+            {/* Ban details */}
+            {banDetailsDisplay && (
+              <p className="text-text-secondary text-base sm:text-lg max-w-2xl leading-relaxed">
+                {banDetailsDisplay}
+              </p>
+            )}
+
+            {/* Mobile: ban year + status inline */}
+            <div className="mt-4 flex items-center gap-3 sm:hidden">
+              <span
+                className="font-mono text-3xl font-bold tabular-nums"
                 style={{ color: banStatusColor }}
               >
                 {country.ban_year ?? "—"}
-              </div>
+              </span>
               <span
-                className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-medium mb-3 ${pillClass}`}
+                className={`inline-flex items-center rounded-full px-3 py-1 text-sm font-medium ${pillClass}`}
               >
                 {tBanStatus(country.ban_status)}
               </span>
-              <p className="text-xs text-text-muted leading-relaxed line-clamp-3">
-                {banDetailsDisplay}
-              </p>
             </div>
-
           </div>
         </div>
       </div>
