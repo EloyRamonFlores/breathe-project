@@ -77,14 +77,25 @@ export default function ResistanceStories({ stories }: ResistanceStoriesProps) {
               key={story.name}
               className={`flex flex-col sm:flex-row gap-4 py-6 ${!isLast ? "border-b border-bg-tertiary" : ""}`}
             >
-              {/* Avatar */}
+              {/* Avatar or Photo */}
               <div className="flex-shrink-0">
-                <div
-                  className={`w-12 h-12 rounded-full flex items-center justify-center font-mono text-sm font-bold ${avatarClass}`}
-                  aria-hidden="true"
-                >
-                  {initials}
-                </div>
+                {story.photo_url ? (
+                  <picture>
+                    <source srcSet={`${story.photo_url}`} type="image/webp" />
+                    <img
+                      src={story.photo_url.replace(".webp", ".jpg")}
+                      alt={story.name}
+                      className="w-12 h-12 rounded-full object-cover shadow-sm"
+                    />
+                  </picture>
+                ) : (
+                  <div
+                    className={`w-12 h-12 rounded-full flex items-center justify-center font-mono text-sm font-bold ${avatarClass}`}
+                    aria-hidden="true"
+                  >
+                    {initials}
+                  </div>
+                )}
               </div>
 
               {/* Content */}

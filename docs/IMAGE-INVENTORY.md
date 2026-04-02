@@ -123,6 +123,21 @@ Usadas como miniatura (80×80px) dentro de cada tarjeta de material en `/learn/w
 
 ---
 
+---
+
+## D — Resistance Stories (`public/images/resistance-stories/`)
+
+Usadas como avatares 80×80px en las tarjetas de historias de resistencia en páginas de país.
+**Proporción: 1:1 (cuadrada). Mínimo 300px.**
+
+| Estado | Nombre de archivo | Quién aparece | Dónde |
+|--------|-------------------|--------------|-------|
+| [x] | `ana-cecilia-nino-robles.jpg` | Foto de perfil de Ana Cecilia Niño | Tarjeta Colombia (historia de resistencia) |
+| [x] | `daniel-pineda.jpg` | Foto de perfil de Daniel Pineda | Tarjeta Colombia (historia de resistencia) — fallback |
+| [x] | `daniel-pineda-ana-cecilia-juntos.jpg` | Foto de ambos juntos | Tarjeta Colombia (historia de resistencia — principal) |
+
+---
+
 ## Resumen
 
 | Categoría | Carpeta | Total | Listos |
@@ -130,7 +145,8 @@ Usadas como miniatura (80×80px) dentro de cada tarjeta de material en `/learn/w
 | Educativas | `public/images/educational/` | 15 | 0/15 |
 | Países | `public/images/countries/` | 37 | 0/37 |
 | Materiales | `public/images/materials/` | 20 | 0/20 |
-| **Total** | | **72** | **0/72** |
+| Resistance Stories | `public/images/resistance-stories/` | 3 | 3/3 ✅ |
+| **Total** | | **75** | **3/75** |
 
 ---
 
