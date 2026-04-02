@@ -22,7 +22,8 @@
         "url": "https://www.epa.gov/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/cement-roofing-sheets.jpg"
   },
   {
     "id": "vinyl-floor-tiles-9x9",
@@ -47,7 +48,8 @@
         "url": "https://www.epa.gov/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/vinyl-floor-tiles-9x9.jpg"
   },
   {
     "id": "pipe-insulation",
@@ -72,7 +74,8 @@
         "url": "https://www.epa.gov/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/pipe-insulation-boiler.jpg"
   },
   {
     "id": "popcorn-ceiling",
@@ -97,7 +100,8 @@
         "url": "https://www.epa.gov/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/popcorn-ceiling-coating.jpg"
   },
   {
     "id": "asbestos-cement-flat-sheets",
@@ -127,7 +131,8 @@
         "url": "https://www.who.int/news-room/fact-sheets/detail/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/cement-flat-sheets.jpg"
   },
   {
     "id": "asbestos-cement-water-pipes",
@@ -157,7 +162,8 @@
         "url": "https://www.who.int/news-room/fact-sheets/detail/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/cement-water-pipes.jpg"
   },
   {
     "id": "vinyl-floor-tiles-12x12",
@@ -182,7 +188,8 @@
         "url": "https://www.epa.gov/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/vinyl-floor-tiles-12x12.jpg"
   },
   {
     "id": "floor-tile-adhesive-mastic",
@@ -207,7 +214,8 @@
         "url": "https://www.epa.gov/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/floor-tile-adhesive.jpg"
   },
   {
     "id": "joint-compound",
@@ -232,7 +240,8 @@
         "url": "https://www.epa.gov/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/joint-compound-drywall.jpg"
   },
   {
     "id": "acoustic-ceiling-tiles",
@@ -257,7 +266,8 @@
         "url": "https://www.epa.gov/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/acoustic-ceiling-tiles.jpg"
   },
   {
     "id": "thermal-insulation-board",
@@ -282,7 +292,8 @@
         "url": "https://www.epa.gov/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/thermal-insulation-board.jpg"
   },
   {
     "id": "spray-applied-fireproofing",
@@ -307,7 +318,8 @@
         "url": "https://www.epa.gov/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/spray-fireproofing.jpg"
   },
   {
     "id": "asbestos-rope-gaskets",
@@ -332,7 +344,8 @@
         "url": "https://www.epa.gov/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/asbestos-rope-gaskets.jpg"
   },
   {
     "id": "brake-linings-friction",
@@ -362,7 +375,8 @@
         "url": "https://www.who.int/news-room/fact-sheets/detail/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/brake-linings.jpg"
   },
   {
     "id": "asbestos-insulating-board-aib",
@@ -387,7 +401,8 @@
         "url": "https://www.hse.gov.uk/asbestos/index.htm",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/asbestos-insulating-board.jpg"
   },
   {
     "id": "roof-felt-underlayment",
@@ -412,7 +427,8 @@
         "url": "https://www.hse.gov.uk/asbestos/index.htm",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/roof-felt-underlayment.jpg"
   },
   {
     "id": "asbestos-cement-corrugated-roofing",
@@ -442,7 +458,8 @@
         "url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/corrugated-roofing-sheets.jpg"
   },
   {
     "id": "expansion-joints-caulk",
@@ -467,7 +484,8 @@
         "url": "https://www.epa.gov/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/expansion-joints-caulk.jpg"
   },
   {
     "id": "laboratory-bench-tops",
@@ -492,7 +510,8 @@
         "url": "https://www.epa.gov/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/lab-bench-tops.jpg"
   },
   {
     "id": "fire-blankets-textiles",
@@ -522,6 +541,7 @@
         "url": "https://www.who.int/news-room/fact-sheets/detail/asbestos",
         "accessed": "2026-03-13"
       }
-    ]
+    ],
+    "image_url": "/images/materials/fire-blankets-textiles.jpg"
   }
 ]

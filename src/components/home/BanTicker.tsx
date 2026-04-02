@@ -29,7 +29,7 @@ export default function BanTicker() {
       .sort((a, b) => {
         if (a.priority === "high" && b.priority !== "high") return -1;
         if (a.priority !== "high" && b.priority === "high") return 1;
-        return a.name.localeCompare(b.name);
+        return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
       })
       .slice(0, 15);
   }, []);

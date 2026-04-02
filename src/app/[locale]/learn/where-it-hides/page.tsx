@@ -167,7 +167,16 @@ export default async function WhereItHidesPage({
                     className="rounded-lg bg-bg-secondary border border-bg-tertiary p-4 sm:p-5"
                   >
                     {/* Material header */}
-                    <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
+                    <div className="flex gap-3 mb-3">
+                      {material.image_url && (
+                        <img
+                          src={material.image_url}
+                          alt={material.name}
+                          className="w-20 h-20 rounded-md object-cover flex-shrink-0 hidden sm:block"
+                          loading="lazy"
+                        />
+                      )}
+                      <div className="flex flex-wrap items-start justify-between gap-3 flex-1">
                       <h3 className="font-medium text-text-primary text-sm sm:text-base">
                         {material.name}
                       </h3>
@@ -190,6 +199,7 @@ export default async function WhereItHidesPage({
                             ? t("where_hides_page.friable_label")
                             : t("where_hides_page.non_friable_label")}
                         </span>
+                      </div>
                       </div>
                     </div>
 

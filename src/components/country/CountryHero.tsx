@@ -60,11 +60,11 @@ export default async function CountryHero({ country, caseNumber, heroImageUrl }:
         />
       )}
 
-      {/* Generative CSS pattern */}
-      <div className={patternClass} aria-hidden="true" />
+      {/* Generative CSS pattern — disabled while sourcing local images */}
+      {/* <div className={patternClass} aria-hidden="true" /> */}
 
-      {/* Noise texture */}
-      <div className="hero-noise" aria-hidden="true" />
+      {/* Noise texture — disabled while sourcing local images */}
+      {/* <div className="hero-noise" aria-hidden="true" /> */}
 
       {/* Bottom fade for content transition */}
       <div

@@ -71,6 +71,7 @@ export interface Material {
   recommendation_renovation: string;
   prevalence_regions: string[];
   sources: Source[];
+  image_url?: string;
 }
 
 export type RiskLevel = "low" | "moderate" | "high" | "critical";
