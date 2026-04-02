@@ -29,22 +29,22 @@ export default function JointStoryCard({ story }: JointStoryCardProps) {
 
       {/* Card */}
       <div className="rounded-xl border border-warning/20 bg-gradient-to-br from-warning/5 to-transparent overflow-hidden">
-        <div className="flex flex-col sm:flex-row">
+        <div className="flex flex-col">
 
-          {/* Photo — left side */}
-          <div className="sm:w-64 flex-shrink-0">
+          {/* Photo — top */}
+          <div className="w-full">
             <picture>
               <source srcSet={story.photo_url} type="image/webp" />
               <img
                 src={story.photo_url.replace(".webp", ".jpg")}
                 alt={story.people.map((p) => p.name).join(" & ")}
-                className="w-full h-56 sm:h-full object-cover object-center"
+                className="w-full h-64 sm:h-80 object-cover object-top"
               />
             </picture>
           </div>
 
-          {/* Content — right side */}
-          <div className="flex-1 p-5 sm:p-6">
+          {/* Content — below */}
+          <div className="p-4 sm:p-5">
             {/* Names + years */}
             <div className="flex flex-wrap items-baseline gap-2 mb-2">
               <h3 className="font-semibold text-text-primary text-base">

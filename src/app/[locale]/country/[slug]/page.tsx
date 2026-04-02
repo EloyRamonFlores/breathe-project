@@ -245,43 +245,49 @@ export default async function CountryPage({
       <StatStrip country={country} />
 
       {/* ── Constrained content ── */}
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-10">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-10">
+
+        {/* ── Timeline + Stories — two-column layout ── */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+
+          {/* Left: Regulatory Timeline */}
+          <section aria-labelledby="timeline-heading">
+            <h2
+              id="timeline-heading"
+              className="text-lg font-semibold text-text-primary mb-4"
+            >
+              {t("timeline")}
+            </h2>
+
+            {isHighPriority && country.timeline.length > 0 ? (
+              <Timeline events={country.timeline} />
+            ) : (
+              <div className="rounded-lg bg-bg-secondary border border-bg-tertiary p-5">
+                <p className="text-sm text-text-muted">{t("timeline_empty")}</p>
+                {!isHighPriority && (
+                  <p className="text-sm text-text-muted mt-2">
+                    {t("more_info_coming")}
+                  </p>
+                )}
+              </div>
+            )}
+          </section>
+
+          {/* Right: Resistance Stories + Joint Story */}
+          <div className="space-y-6">
+            {country.resistance_stories && country.resistance_stories.length > 0 && (
+              <ResistanceStories stories={country.resistance_stories} />
+            )}
+
+            {country.joint_resistance_story && (
+              <JointStoryCard story={country.joint_resistance_story} />
+            )}
+          </div>
+
+        </div>
 
         {/* ── Key Figures in Detail ── */}
         <KeyFigures country={country} />
-
-        {/* ── Regulatory Timeline ── */}
-        <section aria-labelledby="timeline-heading">
-          <h2
-            id="timeline-heading"
-            className="text-lg font-semibold text-text-primary mb-4"
-          >
-            {t("timeline")}
-          </h2>
-
-          {isHighPriority && country.timeline.length > 0 ? (
-            <Timeline events={country.timeline} />
-          ) : (
-            <div className="rounded-lg bg-bg-secondary border border-bg-tertiary p-5">
-              <p className="text-sm text-text-muted">{t("timeline_empty")}</p>
-              {!isHighPriority && (
-                <p className="text-sm text-text-muted mt-2">
-                  {t("more_info_coming")}
-                </p>
-              )}
-            </div>
-          )}
-        </section>
-
-        {/* ── Stories of Resistance ── */}
-        {country.resistance_stories && country.resistance_stories.length > 0 && (
-          <ResistanceStories stories={country.resistance_stories} />
-        )}
-
-        {/* ── Joint Resistance Story ── */}
-        {country.joint_resistance_story && (
-          <JointStoryCard story={country.joint_resistance_story} />
-        )}
 
         {/* ── Material Identification Guide ── */}
         {country.common_materials.length > 0 && (

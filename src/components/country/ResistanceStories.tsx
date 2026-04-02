@@ -126,14 +126,18 @@ export default function ResistanceStories({ stories }: ResistanceStoriesProps) {
                 </p>
 
                 {/* Quote */}
-                {story.quote && story.quote_source && (
-                  <blockquote className="border-l-2 border-warning/50 pl-3 mb-3 italic text-sm text-text-secondary">
-                    &ldquo;{story.quote}&rdquo;
-                    <cite className="block text-xs text-text-muted mt-1 not-italic">
-                      — {story.quote_source}
-                    </cite>
-                  </blockquote>
-                )}
+                {story.quote && story.quote_source && (() => {
+                  const quote = locale === "es" ? (story.quote_es ?? story.quote) : story.quote;
+                  const quoteSource = locale === "es" ? (story.quote_source_es ?? story.quote_source) : story.quote_source;
+                  return (
+                    <blockquote className="border-l-2 border-warning/50 pl-3 mb-3 italic text-sm text-text-secondary">
+                      &ldquo;{quote}&rdquo;
+                      <cite className="block text-xs text-text-muted mt-1 not-italic">
+                        — {quoteSource}
+                      </cite>
+                    </blockquote>
+                  );
+                })()}
 
                 {/* Source */}
                 <a

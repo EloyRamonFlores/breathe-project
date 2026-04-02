@@ -37,7 +37,9 @@ export interface ResistanceStory {
   achievement: string;
   achievement_es?: string;
   quote?: string;
+  quote_es?: string;
   quote_source?: string;
+  quote_source_es?: string;
   source_url: string;
   photo_url?: string;
   role_type?: "victim" | "advocate" | "legal" | "network" | "journalist" | "scientist";
