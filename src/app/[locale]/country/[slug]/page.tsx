@@ -6,6 +6,7 @@ import countries from "@/data/countries.json";
 import type { Country } from "@/lib/types";
 import Timeline from "@/components/ui/Timeline";
 import ResistanceStories from "@/components/country/ResistanceStories";
+import JointStoryCard from "@/components/country/JointStoryCard";
 import CountryHero from "@/components/country/CountryHero";
 import StatStrip from "@/components/country/StatStrip";
 import MaterialGuide from "@/components/country/MaterialGuide";
@@ -275,6 +276,11 @@ export default async function CountryPage({
         {/* ── Stories of Resistance ── */}
         {country.resistance_stories && country.resistance_stories.length > 0 && (
           <ResistanceStories stories={country.resistance_stories} />
+        )}
+
+        {/* ── Joint Resistance Story ── */}
+        {country.joint_resistance_story && (
+          <JointStoryCard story={country.joint_resistance_story} />
         )}
 
         {/* ── Material Identification Guide ── */}

@@ -2109,9 +2109,30 @@
         "achievement": "Daniel Pineda co-founded Colombia sin Asbesto with his wife Ana Cecilia Niño in 2014 and led the campaign after her death in January 2017. Together they had built a coalition of asbestos victims, scientists, and advocates that maintained sustained pressure through three Senate rejections, an Inter-American Commission on Human Rights complaint, and a 50,000-signature petition. Daniel carried this work through the October 2017 Senate approval, the July 2019 signing by President Duque, and the ongoing struggle for full enforcement of the Ana Cecilia Niño Law. His testimony as a widower who watched the asbestos industry lobby against protections during his wife's illness became central to the campaign's public narrative.",
         "achievement_es": "Daniel Pineda cofundó Colombia sin Asbesto con su esposa Ana Cecilia Niño en 2014 y dirigió la campaña tras su fallecimiento en enero de 2017. Juntos habían construido una coalición de víctimas del asbesto, científicos y defensores que mantuvo una presión sostenida a través de tres rechazos del Senado, una denuncia ante la Comisión Interamericana de Derechos Humanos y una petición de 50.000 firmas.",
         "source_url": "https://confrontpower.org/colombia-asbestos-campaign/",
-        "photo_url": "/images/countries/colombia/resistance-stories/daniel-pineda-ana-cecilia-juntos.webp"
+        "photo_url": "/images/countries/colombia/resistance-stories/daniel-pineda.webp"
       }
     ],
+    "joint_resistance_story": {
+      "title": "A family campaign that changed national law",
+      "title_es": "Una campaña familiar que cambió la ley nacional",
+      "people": [
+        {
+          "name": "Ana Cecilia Niño Robles",
+          "role": "Journalist & Co-founder",
+          "role_es": "Periodista y Cofundadora"
+        },
+        {
+          "name": "Daniel Pineda",
+          "role": "Advocate & Co-founder",
+          "role_es": "Defensor y Cofundador"
+        }
+      ],
+      "years": "2014–2019",
+      "narrative": "Ana Cecilia and Daniel built Colombia sin Asbesto together from their kitchen table in 2014 — she having been diagnosed with mesothelioma despite never working with asbestos, he a man watching his wife fight for her life while simultaneously fighting an industry. They collected 50,000 signatures, organized events at schools and universities, produced media campaigns, and filed a complaint at the Inter-American Commission on Human Rights. When Ana Cecilia died on January 8, 2017, aged 42, Daniel continued alone — carrying their shared work through the October 2017 Senate approval and the July 2019 signing of Law 1968 by President Duque. The law bears her name. He never stopped.",
+      "narrative_es": "Ana Cecilia y Daniel construyeron Colombia sin Asbesto juntos desde su mesa de cocina en 2014 — ella diagnosticada con mesotelioma pese a nunca haber trabajado con asbesto, él viendo a su esposa luchar por su vida mientras simultáneamente combatían a una industria. Recopilaron 50.000 firmas, organizaron eventos en colegios y universidades, produjeron campañas mediáticas y presentaron una denuncia ante la Comisión Interamericana de Derechos Humanos. Cuando Ana Cecilia falleció el 8 de enero de 2017, a los 42 años, Daniel continuó solo — llevando el trabajo de ambos hasta la aprobación del Senado en octubre de 2017 y la firma de la Ley 1968 por el presidente Duque en julio de 2019. La ley lleva su nombre. Él nunca se detuvo.",
+      "photo_url": "/images/countries/colombia/resistance-stories/daniel-pineda-ana-cecilia-juntos.webp",
+      "source_url": "https://confrontpower.org/colombia-asbestos-campaign/"
+    },
     "sources": [
       {
         "name": "IBAS Ban List",

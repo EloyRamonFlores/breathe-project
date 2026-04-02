@@ -12,6 +12,23 @@ export interface TimelineEvent {
   source_url: string;
 }
 
+export interface JointResistancePerson {
+  name: string;
+  role: string;
+  role_es?: string;
+}
+
+export interface JointResistanceStory {
+  title: string;
+  title_es?: string;
+  people: JointResistancePerson[];
+  years: string;
+  narrative: string;
+  narrative_es?: string;
+  photo_url: string;
+  source_url: string;
+}
+
 export interface ResistanceStory {
   name: string;
   years: string;
@@ -48,6 +65,7 @@ export interface Country {
   priority: "high" | "medium" | "low";
   sources: Source[];
   resistance_stories?: ResistanceStory[];
+  joint_resistance_story?: JointResistanceStory;
   last_updated: string;
   hero_pattern?: "parliament" | "industry" | "urban" | "mining" | "coastal" | "default";
   hero_image_url?: string;
