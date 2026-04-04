@@ -106,38 +106,83 @@ Look for pairs of activists who worked together on the same campaign (spouses, p
 
 ---
 
-## 3. Ban Status Verification (NEW — CRITICAL)
+## 3. Ban Status Verification (CRITICAL — DO THIS FIRST)
 
-Before writing any other sections, **verify and document the EXACT ban status** of the country:
+Before writing any other section, determine and lock the `ban_status`. Every other field in the profile flows from this decision.
 
-### Ban Status Categories
+### Ban Status Categories — Exact Definitions
 
-- **full_ban**: All forms of asbestos (chrysotile, crocidolite, amosite, etc.) prohibited by law
-- **partial_ban**: Some forms banned (e.g., crocidolite & amosite) but chrysotile still legal
-- **no_ban**: No national asbestos ban in force
-- **de_facto_ban**: No official law, but market has ceased (no imports, no use in 10+ years)
-- **unknown**: Regulatory status unclear from available sources
+| Status | Meaning | Common mistake |
+|--------|---------|----------------|
+| `full_ban` | ALL forms prohibited by law — chrysotile, crocidolite, amosite, tremolite, actinolite, anthophyllite | Calling a country `full_ban` when only amphiboles are banned |
+| `partial_ban` | Some forms banned, others legal (most often: amphiboles banned, chrysotile still allowed) | Calling this `no_ban` because "the main ban is not complete" |
+| `no_ban` | **Verified** that NO national restriction exists on any form | Using this when you simply found no information — that's `unknown` |
+| `de_facto_ban` | No formal law, but verified zero imports + zero domestic use for 10+ years | Only use with positive evidence of cessation, not assumption |
+| `unknown` | Regulatory status genuinely unclear after research | Default when in doubt — never assume `no_ban` |
+
+### ⚠️ The Chrysotile Trap (Most Common Error)
+
+**Chrysotile (white asbestos)** accounts for ~95% of global asbestos use. Many countries banned **amphibole fibers** (crocidolite = blue, amosite = brown, tremolite, etc.) years or decades before banning chrysotile — or never banned chrysotile at all. This creates a dangerous classification error:
+
+> "Country X banned asbestos in 1997" → might mean **only crocidolite** → `partial_ban`, not `full_ban`
+
+**Always ask:** Does the ban explicitly cover chrysotile/white asbestos? If no or unclear → `partial_ban` or `unknown`.
+
+Real cases discovered in ToxinFree data:
+- **Sri Lanka**: ban_details said "crocidolite banned 1997, chrysotile legal" but ban_status was `no_ban` → corrected to `partial_ban`
+- **Mexico**: shown as `no_ban` when crocidolite/amosite banned 2004 → corrected to `partial_ban`
 
 ### Verification Checklist
 
-For EVERY country, answer these questions with sources:
+Answer ALL 6 questions with source URLs before assigning `ban_status`:
 
-1. **What forms are banned?** (crocidolite, amosite, chrysotile, all, none?)
-   - Source: [IBAS page for {country}](https://www.ibasecretariat.org/alpha_ban_list.php)
-   
-2. **What year did the ban take effect?** (if applicable)
-   - Source: Government gazette or law text
-   
-3. **Is there evidence of enforcement?** (inspections, removals, prosecutions?)
-   - Source: Recent news, regulatory agency reports
-   
-4. **Are any forms still in use?** (check UN Comtrade imports if ban is partial or missing)
-   - Source: UN Comtrade data or trade data
-   
-5. **Does legislation match current practice?**
-   - Source: Cross-reference government claims vs. recent reports
+1. **Is this country on the IBAS full ban list?**
+   - Check: [IBAS Chronological Ban List](https://ibasecretariat.org/alpha_ban_list.php)
+   - If YES → likely `full_ban` (verify which forms)
+   - If NO → continue to question 2
 
-**Write this section BEFORE researching other topics — it determines the entire country profile.**
+2. **What specific asbestos forms are banned?**
+   - Amphiboles only (crocidolite, amosite) → `partial_ban`
+   - All forms including chrysotile → `full_ban`
+   - None confirmed → continue to question 3
+   - Source required: legislation text or official government page
+
+3. **Is chrysotile specifically addressed?**
+   - Legal → `partial_ban` (if amphiboles banned) or `no_ban` (if nothing banned)
+   - Banned → strengthens `full_ban` case
+   - Not mentioned → likely `partial_ban` if anything else is banned
+   - Check: UN Comtrade chrysotile import data for this country
+
+4. **What year did each restriction take effect?**
+   - Use the earliest restriction year for `ban_year` only if it's a `full_ban`
+   - For `partial_ban`, `ban_year` = year of first restriction
+   - Source: government gazette, law number/decree number
+
+5. **Is there evidence of enforcement?**
+   - Customs inspections? Factory closures? Prosecutions?
+   - No enforcement evidence ≠ `de_facto_ban` by itself
+   - Source: regulatory agency reports, news
+
+6. **Internal consistency check (run LAST, before writing JSON):**
+   - Does your `ban_status` match the `ban_details` text you wrote?
+   - Does your `ban_status` match the `type` fields in your timeline events?
+   - If a timeline event has `type: "partial_ban"` → `ban_status` cannot be `no_ban`
+   - If `ban_details` says "chrysotile remains legal" → `ban_status` cannot be `full_ban`
+   - **Any contradiction = stop and resolve before continuing**
+
+### Decision Tree
+
+```
+Has ANY asbestos restriction been legally enacted?
+├─ NO (verified via IBAS + gov sources) → no_ban
+├─ UNCLEAR (couldn't confirm either way) → unknown  ← DEFAULT WHEN IN DOUBT
+└─ YES → What forms?
+    ├─ All forms including chrysotile → full_ban
+    ├─ Only amphiboles / only some forms → partial_ban
+    └─ Unclear which forms → partial_ban (conservative) + note in Verification Notes
+```
+
+**Write this section BEFORE researching other topics — it determines the map color, the page header, and the risk calculator output for this country.**
 
 ---
 
@@ -294,15 +339,23 @@ At the end of your research, extract these fields for integration into the websi
 
 When researching, use these search patterns (adapt to each country):
 
+**Ban Status (run ALL — the chrysotile trap requires specific queries):**
+- `"{country}" site:ibasecretariat.org` (check if on IBAS ban list)
+- `"{country}" chrysotile asbestos legal banned`
+- `"{country}" crocidolite amosite ban`
+- `"{country}" asbestos legislation decree law number year`
+- `site:comtrade.un.org "{country}" asbestos` (import data to detect ongoing use)
+
 **Timeline:**
 - `"{country}" asbestos ban regulation history`
-- `"{country}" asbestos legislation chronology site:ibasecretariat.org`
+- `"{country}" asbestos legislation chronology`
 - `"{country}" asbestos ban law year`
 
 **Activism:**
 - `"{country}" asbestos activist victim movement`
 - `"{country}" asbestos ban campaign who fought`
 - `"{country}" mesothelioma victim advocacy`
+- `"{country}" asbestos couple family activism` (joint/paired stories)
 
 **Exposure sources:**
 - `"{country}" asbestos cement factory mine location`
@@ -323,19 +376,32 @@ When researching, use these search patterns (adapt to each country):
 
 ## Quality Checklist (Run Before Finishing)
 
-Before marking the research as complete, verify:
+Before marking the research as complete, verify every item:
 
+### 🔴 Ban Status Consistency (non-negotiable)
+- [ ] `ban_status` field matches what `ban_details` text says — if text says "chrysotile remains legal", status cannot be `full_ban`
+- [ ] `ban_status` field matches all `type` fields in timeline events — if any event has `type: "partial_ban"`, status cannot be `no_ban`
+- [ ] `no_ban` was assigned because no restriction was **positively verified** — NOT because no information was found (that's `unknown`)
+- [ ] Chrysotile specifically addressed — confirmed banned (→ `full_ban`) or confirmed legal (→ `partial_ban`/`no_ban`) or unclear (→ `partial_ban` conservatively)
+- [ ] `ban_year` corresponds to the ban event listed in the timeline
+
+### 🟡 Data Integrity
 - [ ] Every factual claim has a source URL
-- [ ] No quotes are fabricated — all are from published sources
-- [ ] Dates are specific (year minimum, month if available)
-- [ ] Names are spelled correctly (cross-referenced across sources)
-- [ ] Legal instrument names/numbers are included where they exist
-- [ ] Mortality data cites the specific year and database
-- [ ] Corporate section uses only court/regulatory/journalistic sources
-- [ ] "Current Status" section has sources from the last 2 years
-- [ ] All URLs are functional (at time of research)
-- [ ] Verification Notes section lists any gaps honestly
+- [ ] No quotes are fabricated — all are from published sources with URL
+- [ ] Dates are specific (year minimum, month if known)
+- [ ] Names are spelled correctly (cross-referenced across 2+ sources)
+- [ ] Legal instrument names and decree/law numbers included where they exist
+- [ ] Mortality data cites specific year and database (WHO, national registry)
+- [ ] Corporate section uses only court records, regulatory findings, or journalism — no assumptions
+
+### 🟢 Coverage
+- [ ] Section 3 (Ban Status Verification) completed FIRST with all 6 questions answered
+- [ ] Joint/Paired stories section checked — is there a couple or co-founders worth documenting?
+- [ ] "Current Status" section has at least one source dated 2024–2026
+- [ ] All URLs verified accessible at time of research
+- [ ] Verification Notes section honestly lists every gap and unresolved contradiction
 - [ ] The document could be read by the activists named in it without finding errors
+- [ ] Section 8 JSON block filled out and cross-checked against the narrative
 
 ## Language
 

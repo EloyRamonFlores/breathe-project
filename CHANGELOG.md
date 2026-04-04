@@ -6,10 +6,11 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ## [v2.9.0] — 2026-04-04 — Data Fixes + Country Research Pipeline
 
-### Mexico Ban Status Corrected
-- Changed `ban_status` from `"no_ban"` → `"partial_ban"` (ban_year: 2004)
-- Evidence: crocidolita and amosite prohibited 2004 per IBAS; chrysotile still legal
-- Map now shows Mexico in yellow (partial ban) — consistent with actual legislation
+### Ban Status Corrections — Mexico + Sri Lanka
+- **Mexico**: `"no_ban"` → `"partial_ban"` (ban_year: 2004) — crocidolite and amosite banned 2004; chrysotile still legal
+- **Sri Lanka**: `"no_ban"` → `"partial_ban"` (ban_year: 1997) — crocidolite banned 1997; chrysotile remains legal. Internal inconsistency: country's own `ban_details` and timeline event (`type: "partial_ban"`) already documented this correctly, but `ban_status` field was never updated.
+- **Root cause identified**: When `ban_details` text and timeline event types contradict the `ban_status` field, the field wins visually (map color, pills) — creating silent misinformation. Added internal consistency rule to country-research skill.
+- **Partial ban total**: 2 → 4 countries. `no_ban` corrected: 18 → 16.
 
 ### China Research Profile
 - Created `docs/research/china-research.md` — complete investigative profile
@@ -1177,56 +1178,4 @@ Senior Product Strategist audit identified 5 critical vulnerabilities. All resol
   - Eliminates Leaflet JS (~200KB), Leaflet CSS (~50KB), react-leaflet chunk, and duplicate world.json load (~300KB) from the home page bundle
   - `MapLoader` import removed from `page.tsx`
   - Shimmer divider between hero and map removed (no longer needed)
-- **Rationale**: Globe3D renders the same geographic data visually; the Leaflet flat map below the hero was redundant and doubled the JS payload on the landing page
-- **Page structure after**: Hero (split-screen globe + stats) → CTA section → Footer
-- **Leaflet map preserved** in `src/components/map/` — available for future use on country/learn pages
-- **Build**: `npm run build` passes with zero errors; all 421 static routes generated
-
-### 2026-03-15 — Design Polish + UX Fixes + Skills Audit (v0.9.0)
-- **Bug fix**: Map scroll blocked on mobile — Leaflet dragging now disabled by default with tap-to-activate overlay; `scrollWheelZoom` permanently off; click-outside resets interaction state
-- **Fix**: Map legend collapsible on mobile (<768px) via pill toggle with slide-down animation; always expanded on desktop
-- **Hero polish**: Radial warning glow (`rgba(245,158,11,0.30)`) behind counter; hero grain texture (CSS SVG noise, opacity 0.03); "NO" highlighted in amber/bold via split i18n keys; reduced mobile padding (`pt-16` → `sm:pt-24`); shimmer gradient divider between hero and map
-- **CTA section**: Left danger border (4px), gradient button (`from-accent to-accent/80`), CTA pulse animation, social proof text ("Free tool. No registration required.")
-- **Footer**: Gradient divider replaces solid border-t; BREATHE letter-spacing 0.15em; center-expand underline on data source links; disclaimer text upgraded to `text-secondary` for better contrast (WCAG fix)
-- **Header**: `backdrop-blur-xl` (was `backdrop-blur-md`); bg opacity 90% (was 80%); logo letter-spacing transition on hover; nav link center-expand underlines; added `aria-label` on "opens in new tab" footer links
-- **Global texture**: Subtle noise grain on body (opacity 0.025, `pointer-events: none`, GPU-composited via `position: fixed`)
-- **i18n**: 6 new keys in `home` namespace (en + es): `map_interact`, `map_legend_toggle`, `counter_prefix`, `counter_no`, `counter_suffix`, `cta_social_proof`
-- **WCAG audit findings**: 3 critical (missing h1 — fixed with `sr-only` h1; disclaimer contrast — fixed; no skip link — deferred), 3 moderate (nav focus-visible styles, html lang attr, target=_blank labeling — footer links fixed, rest deferred)
-- **SEO audit findings**: 2 gaps (no OG image, missing `x-default` in hreflang — both deferred to v0.9.1), all structured data and sitemap confirmed correct
-- **Performance audit findings**: 2 deferred optimizations (next/font migration for Google Fonts link, GeoJSON bundled into client JS — both deferred to v0.10.0)
-- **Build**: `npm run build` passes with zero errors; all 420+ static routes generated
-
-### 2026-03-14 — Final Polish Pass (v0.8.0)
-- **Typography verified**: Instrument Serif (display), DM Sans (body), JetBrains Mono (data) all confirmed correct via CSS vars + Tailwind `@theme inline`. No fixes needed.
-- **Contrast verified**: All color pairs pass WCAG AA minimum — `text-primary #F9FAFB` and `text-secondary #9CA3AF` on `bg-primary #0A0F1C` confirmed.
-- **Page transitions**: Added CSS `@keyframes page-fade-in` (opacity + translateY 6px) in `globals.css`; new `src/components/ui/PageTransition.tsx` client component uses `usePathname()` as `key` to trigger 250ms fade on every navigation; integrated in `[locale]/layout.tsx`.
-- **Mobile menu animation**: Added `@keyframes slide-down` (opacity + translateY -8px); applied `animate-[slide-down_0.2s_ease-out]` to mobile nav in `Header.tsx` — menu slides in smoothly on open.
-- **Reduced motion**: Added `@media (prefers-reduced-motion: reduce)` override in globals.css — all animation/transition durations collapsed to 0.01ms for accessibility.
-- **Mobile 375px — hero counter**: Reduced `AnimatedCounter` class from `text-7xl` to `text-5xl` on mobile (`sm:text-7xl lg:text-[8rem]`) to prevent overflow at 375px viewport.
-- **Mobile 375px — map legend**: Legend text scaled to `text-[10px] sm:text-xs` so the bottom-left overlay is compact on narrow viewports without overlapping map content.
-- **Language toggle verified**: `router.replace(pathname, { locale })` with `usePathname()` from `@/i18n/navigation` (locale-agnostic) correctly preserves `/country/[slug]`, `/learn/*`, and all other routes when switching EN↔ES.
-- **Emoji flags verified**: Unicode regional indicator pairs render correctly on iOS, Android, macOS, and Windows 11 — no changes required.
-- **Build**: `npm run build` passes with zero errors; all 420+ static routes generated.
-
----
-
-### Upcoming — Week 1
-- [x] Initialize Next.js project with TypeScript + Tailwind
-- [x] Curate countries.json (all 195 countries, 15 detailed)
-- [x] Curate materials.json (20 material entries)
-- [x] Build landing page with interactive Leaflet world map
-- [x] Build Risk Checker (form + scoring logic + results page)
-- [x] Setup i18n architecture (next-intl, en.json, es.json)
-
-### Upcoming — Week 2
-- [x] Build 15 country profile pages (template + data)
-- [x] Build 5 educational content pages
-- [x] SEO setup (meta tags, sitemap, structured data, OG images)
-- [x] Responsive testing, accessibility audit
-- [ ] Deploy to Vercel
-
-### Upcoming — Week 3
-- [x] QA and polish
-- [ ] Soft launch (Reddit, social media)
-- [ ] Submit to Google Search Console
-- [ ] Iterate based on feedback
+- **Rationale**: Globe3D renders the
