@@ -36,6 +36,7 @@
     "map_toggle_to_2d": "Mapa 2D",
     "globe_tooltip_banned": "Prohibido desde {year}",
     "globe_tooltip_partial_ban": "Prohibición parcial desde {year}",
+    "globe_tooltip_partial_ban_no_year": "Prohibición parcial",
     "globe_tooltip_no_ban": "Sin prohibición",
     "globe_tooltip_unknown": "Estado desconocido",
     "source_attribution": "Fuente: IBAS, EPA, OMS",
