@@ -79,9 +79,10 @@ Chronological list of every regulatory action related to asbestos in this countr
 
 ## 2. Historias de Resistencia (Activism Stories)
 
+### Individual Stories
 For each key figure or movement:
 
-### {Person/Movement Name}
+#### {Person/Movement Name}
 - **Who:** {Brief bio — occupation, connection to asbestos}
 - **The catalyst:** {What triggered their activism — specific event, diagnosis, discovery}
 - **What they did:** {Concrete actions — lawsuits filed, organizations founded, legislation pushed}
@@ -90,9 +91,57 @@ For each key figure or movement:
   - If no verified quote exists, write: *No verified direct quote found in public sources.*
 - **Sources:** [source1](url1), [source2](url2)
 
+### Joint/Paired Resistance Stories (NEW)
+Look for pairs of activists who worked together on the same campaign (spouses, partners, co-founders). If found:
+
+#### {Couple/Partnership Name}
+- **People:** {Person A} + {Person B} (relationship — spouses, co-founders, etc.)
+- **Years active together:** {Start–End}
+- **Joint narrative:** {2–3 sentences on their shared story — what they accomplished together before/if one passed away}
+- **Key achievement:** {One major win they achieved jointly}
+- **Joint photo:** {If available, note location — this will be used for visual display}
+- **Sources:** [source1](url1), [source2](url2)
+
+*Note: Only include if there is verified evidence of significant joint collaboration. Do not invent partnerships.*
+
 ---
 
-## 3. Exposure Sources ("Where Was It?")
+## 3. Ban Status Verification (NEW — CRITICAL)
+
+Before writing any other sections, **verify and document the EXACT ban status** of the country:
+
+### Ban Status Categories
+
+- **full_ban**: All forms of asbestos (chrysotile, crocidolite, amosite, etc.) prohibited by law
+- **partial_ban**: Some forms banned (e.g., crocidolite & amosite) but chrysotile still legal
+- **no_ban**: No national asbestos ban in force
+- **de_facto_ban**: No official law, but market has ceased (no imports, no use in 10+ years)
+- **unknown**: Regulatory status unclear from available sources
+
+### Verification Checklist
+
+For EVERY country, answer these questions with sources:
+
+1. **What forms are banned?** (crocidolite, amosite, chrysotile, all, none?)
+   - Source: [IBAS page for {country}](https://www.ibasecretariat.org/alpha_ban_list.php)
+   
+2. **What year did the ban take effect?** (if applicable)
+   - Source: Government gazette or law text
+   
+3. **Is there evidence of enforcement?** (inspections, removals, prosecutions?)
+   - Source: Recent news, regulatory agency reports
+   
+4. **Are any forms still in use?** (check UN Comtrade imports if ban is partial or missing)
+   - Source: UN Comtrade data or trade data
+   
+5. **Does legislation match current practice?**
+   - Source: Cross-reference government claims vs. recent reports
+
+**Write this section BEFORE researching other topics — it determines the entire country profile.**
+
+---
+
+## 4. Exposure Sources ("Where Was It?")
 
 ### Common asbestos-containing materials in {country}
 {What specific products, brands, or building materials were prevalent. Regional specifics — not generic global info.}
@@ -171,6 +220,74 @@ All sources used in this document, numbered for reference:
 ## Suggested Improvements
 
 {What additional research would strengthen this profile — specific people to contact, documents to obtain, data to request via FOI}
+
+---
+
+## 8. Data for countries.json (NEW — INTEGRATION GUIDE)
+
+At the end of your research, extract these fields for integration into the website database. This makes the transition from research → live site seamless.
+
+```json
+{
+  "slug": "country-slug-here",
+  "name": "Official Country Name",
+  "name_es": "Nombre oficial en español",
+  "ban_status": "full_ban|partial_ban|no_ban|de_facto_ban|unknown",
+  "ban_year": 2019,
+  "ban_details": "Detailed description of what was banned and when",
+  "ban_details_es": "Descripción detallada en español",
+  "peak_usage_era": "1960–1980",
+  "mesothelioma_rate": 0.6,
+  "mesothelioma_source_year": 2022,
+  "estimated_buildings_at_risk": "Description of at-risk buildings",
+  "priority": "high|medium|low",
+  "resistance_stories": [
+    {
+      "name": "Person Name",
+      "years": "2014–2017",
+      "role": "English role description",
+      "role_es": "Descripción del rol en español",
+      "achievement": "What they accomplished",
+      "achievement_es": "Lo que lograron",
+      "quote": "Exact verified quote",
+      "quote_es": "Cita traducida exacta",
+      "quote_source": "Publication, date",
+      "quote_source_es": "Publicación, fecha",
+      "role_type": "journalist|advocate|victim|scientist|legal|network",
+      "photo_url": "/images/countries/{slug}/resistance-stories/{name}.webp"
+    }
+  ],
+  "joint_resistance_story": {
+    "title": "English title for the joint story",
+    "title_es": "Título en español",
+    "people": [
+      {"name": "Person A", "role": "Role", "role_es": "Rol"},
+      {"name": "Person B", "role": "Role", "role_es": "Rol"}
+    ],
+    "years": "2014–2019",
+    "narrative": "Narrative of their joint work and impact",
+    "narrative_es": "Narrativa de su trabajo conjunto",
+    "photo_url": "/images/countries/{slug}/resistance-stories/{photo-filename}.webp",
+    "source_url": "https://source-url-here"
+  },
+  "timeline": [
+    {
+      "year": 1999,
+      "event": "English timeline event",
+      "event_es": "Evento de cronología en español",
+      "type": "ban|partial_ban|regulation|court_ruling|other",
+      "source_url": "https://source-url"
+    }
+  ]
+}
+```
+
+**Instructions:**
+- Only include fields you have verified sources for
+- Omit `_es` fields if Spanish translation is not yet available (translator will fill later)
+- For `role_type`, choose the primary role that best matches the person's main contribution
+- `priority` should be "high" if this is in ToxinFree's initial 15-country focus; "medium" or "low" otherwise
+- All URLs must be verified and accessible
 ```
 
 ## Search Strategy by Section
