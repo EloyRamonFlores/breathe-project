@@ -32,6 +32,7 @@ interface HeroSectionProps {
   statProductionValue: string;
   statProductionLabel: string;
   legendNoBan: string;
+  legendPartialBan: string;
   legendLimited: string;
   legendFullBan: string;
   heroTagline: string;
@@ -57,6 +58,7 @@ export default function HeroSection({
   statProductionValue,
   statProductionLabel,
   legendNoBan,
+  legendPartialBan,
   legendLimited,
   legendFullBan,
   heroTagline,
@@ -116,6 +118,10 @@ export default function HeroSection({
               <div className="flex items-center gap-1.5">
                 <div className="w-3 h-3 rounded-full bg-[#EF4444] shadow-[0_0_8px_rgba(239,68,68,0.5)]" />
                 <span className="text-slate-300">{legendNoBan}</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <div className="w-3 h-3 rounded-full bg-[#F59E0B]" />
+                <span className="text-slate-300">{legendPartialBan}</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <div className="w-3 h-3 rounded-full bg-[#4B5563]" />

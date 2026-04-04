@@ -157,6 +157,7 @@ export default function Globe3D() {
     };
 
     const tooltipBanned = (year: string) => t("globe_tooltip_banned", { year });
+    const tooltipPartialBan = (year: string) => t("globe_tooltip_partial_ban", { year });
     const tooltipNoBan = t("globe_tooltip_no_ban");
     const tooltipUnknown = t("globe_tooltip_unknown");
 
@@ -168,10 +169,9 @@ export default function Globe3D() {
         (typeof f.properties.NAME === "string" ? f.properties.NAME : "Unknown");
       const status = country?.ban_status ?? "unknown";
       let statusLine =
-        (status === "full_ban" ||
-          status === "de_facto_ban" ||
-          status === "partial_ban") &&
-        country?.ban_year
+        status === "partial_ban" && country?.ban_year
+          ? tooltipPartialBan(String(country.ban_year))
+          : (status === "full_ban" || status === "de_facto_ban") && country?.ban_year
           ? tooltipBanned(String(country.ban_year))
           : status === "no_ban"
           ? tooltipNoBan

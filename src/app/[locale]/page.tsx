@@ -110,6 +110,7 @@ export default async function HomePage({
         statProductionValue={activeSubstance.stats?.productionTons ?? "—"}
         statProductionLabel={t("stat_production_label")}
         legendNoBan={t("legend_no_ban")}
+        legendPartialBan={t("legend_partial_ban")}
         legendLimited={t("legend_limited")}
         legendFullBan={t("legend_full_ban")}
         heroTagline={t("hero_tagline")}
