@@ -4,6 +4,116 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v2.9.0] — 2026-04-04 — Data Fixes + Country Research Pipeline
+
+### Mexico Ban Status Corrected
+- Changed `ban_status` from `"no_ban"` → `"partial_ban"` (ban_year: 2004)
+- Evidence: crocidolita and amosite prohibited 2004 per IBAS; chrysotile still legal
+- Map now shows Mexico in yellow (partial ban) — consistent with actual legislation
+
+### China Research Profile
+- Created `docs/research/china-research.md` — complete investigative profile
+- Ban status: `de_facto_ban` — construction ban since 2011 (GB50574-2010), chrysotile legal for industrial/friction use
+- Mesothelioma: 2,773 deaths (2019) → projected 3,149 by 2029; highest global DALYs
+- World's 2nd largest asbestos consumer: 194,000 tons/year (98% imported from Russia)
+- Key gap: no documented named activists in English sources — requires Chinese-language research
+- Draft `countries.json` fields ready for integration
+
+### Country Research Skill Upgraded (`.skills/country-research/SKILL.md`)
+- **New: Joint/Paired Resistance Stories** — explicit section to research activist couples and co-founders (e.g., Colombia pattern)
+- **New: Ban Status Verification checklist** — mandatory first step for every country; documents which forms are banned, enforcement evidence, legislation-vs-practice gap
+- **New: Data for countries.json integration guide** — complete JSON template at end of every research file, ready to copy into the database
+
+---
+
+## [v2.8.0] — 2026-04-04 — Map Legend + Globe Tooltip Fixes
+
+### Globe Legend Now Shows All 4 Ban States
+- Added **Prohibición parcial** (yellow `#F59E0B`) to HeroSection globe legend
+- Previously: legend only showed Sin prohibición / Datos limitados / Prohibición total
+- Now: Sin prohibición · Prohibición parcial · Datos limitados · Prohibición total
+
+### Globe Tooltip Accuracy
+- `partial_ban` countries now show *"Prohibición parcial desde {year}"* (ES) / *"Partial ban since {year}"* (EN)
+- Previously: reused the same "Prohibido desde" text as full bans — factually incorrect
+- `full_ban` and `de_facto_ban` unchanged
+
+### i18n
+- Added keys: `legend_partial_ban`, `globe_tooltip_partial_ban` (EN + ES)
+
+---
+
+## [v2.7.0] — 2026-04-04 — Country Page Layout Redesign + Spanglish Fix
+
+### Two-Column Layout
+- Timeline (left) + Resistance Stories / Joint Story (right) displayed side-by-side at `lg:` breakpoint
+- Key Figures detail section moved below the two-column block
+- Container widened from `max-w-4xl` → `max-w-6xl` to reduce side margins
+
+### JointStoryCard Image Fix
+- Switched from side-by-side layout to stacked (image on top, content below)
+- Image height increased to `h-64`/`h-80` with `object-top` — both people fully visible
+- Previously: image stretched vertically when constrained to narrow right column
+
+### Spanglish Fix — Ana Cecilia Quote
+- Added `quote_es` and `quote_source_es` fields to `ResistanceStory` type
+- Ana Cecilia Niño's quote now served in Spanish on ES locale
+- `ResistanceStories` component updated to use locale-aware quote + source
+
+---
+
+## [v2.6.0] — 2026-04-04 — Image Pipeline + Colombia Hero
+
+### Image Optimization Pipeline
+- Created `scripts/optimize-images.js` — Sharp-based WebP conversion + resizing
+- `npm run optimize:images` command: processes shared (educational, materials) + nested country structure
+- Category-aware resizing: hero 1280×720, resistance stories 400×400, materials 800×600
+
+### Colombia Local Hero Image
+- Replaced Unsplash URL with local Cartagena landmark photo
+- Path: `/images/countries/colombia/hero.jpg` + `.webp`
+- Updated `hero_image_url` in `countries.json`
+
+### Colombia Resistance Story Photos
+- Added individual photos for Ana Cecilia Niño Robles and Daniel Pineda
+- Added joint photo (both together) for use in JointStoryCard
+- Folder: `/public/images/countries/colombia/resistance-stories/`
+- Scalable structure: `countries/{slug}/resistance-stories/` + `countries/{slug}/hero.*`
+
+---
+
+## [v2.5.0] — 2026-04-04 — JointStoryCard Component
+
+### New Component: `JointStoryCard`
+- `src/components/country/JointStoryCard.tsx` — paired resistance story with joint photo
+- Photo banner (top) + dual role badges + shared narrative + source link
+- Rendered after individual `<ResistanceStories>` on country pages
+- Locale-aware: all fields (title, narrative, role badges) switch EN/ES
+
+### New Types
+- `JointResistancePerson` — name + role + role_es
+- `JointResistanceStory` — title, people[], years, narrative, photo_url, source_url (all bilingual)
+- Added `joint_resistance_story?: JointResistanceStory` to `Country` interface
+
+### Colombia Data
+- Added `joint_resistance_story` object to Colombia in `countries.json`
+- Daniel Pineda avatar corrected to solo photo (was showing joint photo before)
+- Joint photo used exclusively in `JointStoryCard`
+
+### i18n
+- Added `joint_story_label`: "Joint Struggle" (EN) / "Lucha Conjunta" (ES)
+
+---
+
+## [v2.4.1] — 2026-03-31 — CountryHero Glass Card Removed
+
+### Visual Cleanup
+- Removed redundant right-column glass card from `CountryHero` that duplicated ban year and status
+- Ban year + status already visible in `StatStrip` below the hero — no information lost
+- Cleaner hero layout; more visual focus on the background image
+
+---
+
 ## [v2.4.0] — 2026-03-30 — Educational Images Integrated into Learn Pages
 
 ### Implementation Complete
