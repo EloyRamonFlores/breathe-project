@@ -4,6 +4,50 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v2.10.0] — 2026-04-05 — i18n Bug Sprint (5 ES Fixes)
+
+### Bug Fixes — Spanish Locale Coverage
+- **formatNumber() locale-aware** (`src/lib/utils.ts`): Added optional `locale` param (default `'en-US'`). `HeroSection` and `AnimatedCounter` now accept a `locale` prop and pass it through — ES users see `1.234` instead of `1,234`.
+- **Locale-aware 404 page** (`src/app/[locale]/not-found.tsx`): Created locale-scoped not-found that uses `useTranslations("errors")`. Added 3 new keys: `not_found_title`, `not_found_description`, `not_found_back`. Root `not-found.tsx` retained as fallback for `/`.
+- **Root OG image locale-aware** (`src/app/[locale]/opengraph-image.tsx`): Created new locale-scoped OG image using `getTranslations`. Replaces hardcoded "countries still have NO ban on asbestos" and "200 countries tracked" with i18n keys (`counter_prefix`, `counter_no`, `counter_suffix`, `og_countries_tracked`). Added `og_countries_tracked` to both locales.
+- **Country OG image ban labels** (`src/app/[locale]/country/[slug]/opengraph-image.tsx`): Replaced hardcoded `BAN_LABELS` map with `getTranslations({ locale, namespace: "ban_status" })`. ES users now see "Prohibición Total", "Sin Prohibición", etc.
+- **"Loading charts..." hardcoded** (`src/app/[locale]/learn/by-the-numbers/page.tsx:221`): Replaced with `t("charts_loading")`. Added `learn.charts_loading` to both locales.
+
+### i18n Keys Added
+- `en.json` / `es.json`: `errors.not_found_title`, `errors.not_found_description`, `errors.not_found_back`
+- `en.json` / `es.json`: `home.og_countries_tracked`
+- `en.json` / `es.json`: `learn.charts_loading`
+
+### Verification
+- 81 tests pass, build OK (426 static pages)
+
+---
+
+## [v2.9.2] — 2026-04-05 — Map Preference Persistence
+
+### Globe3DLoader — localStorage Persistence
+- User's 3D/2D map toggle is now saved to `localStorage` (`toxinfree_map_preference: '3d' | '2d'`)
+- On load, saved preference is restored before auto-detect runs — if a preference exists, it takes priority
+- If no preference is saved, auto-detect (WebGL, memory, connection, mobile) behaves exactly as before
+- All `localStorage` access wrapped in `try/catch` and guarded with `typeof window !== 'undefined'` for SSR safety
+- 81 tests pass, build clean
+
+---
+
+## [v2.9.1] — 2026-04-05 — China Data Integration
+
+### China countries.json Integration
+- **ban_status**: `no_ban` → `de_facto_ban` (ban_year: 2011) — construction ban since June 1, 2011 (GB50574-2010); chrysotile still legal for industrial/friction use
+- **Timeline**: replaced 5 placeholder events with 6 IBAS-sourced events (2002 crocidolite ban → 2003 friction materials ban → 2008 Olympics → 2011 GB50574-2010 → 2012 MIIT categorization → 2024 contamination incidents)
+- **mesothelioma_rate**: `null` → `1.9` (per 100k, 2019 data; source: National Cancer Center study)
+- **estimated_buildings_at_risk**: populated with provincial detail (Hebei, Shandong, Liaoning, Jilin, Gansu, Xinjiang)
+- **peak_usage_era**: `"1970s-present"` → `"1970–2010"` (construction ban effective 2011)
+- **sources**: 5 IBAS/academic sources replacing 2 placeholder sources
+- **resistance_stories**: `[]` — no named activists found in English sources (documented gap)
+- 81 tests pass
+
+---
+
 ## [v2.9.0] — 2026-04-04 — Data Fixes + Country Research Pipeline
 
 ### Ban Status Corrections — Mexico + Sri Lanka

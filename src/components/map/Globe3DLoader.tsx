@@ -19,6 +19,31 @@ export default function Globe3DLoader() {
     const mobile = window.innerWidth < 1024;
     setIsMobile(mobile);
 
+    // Check for saved user preference first
+    const saved =
+      typeof window !== "undefined"
+        ? (() => {
+            try {
+              return localStorage.getItem("toxinfree_map_preference");
+            } catch {
+              return null;
+            }
+          })()
+        : null;
+
+    if (saved === "3d") {
+      setUserWantsGlobe(true);
+      setState(mobile ? "map" : "globe");
+      return;
+    }
+    if (saved === "2d") {
+      setUserWantsGlobe(false);
+      setState("map");
+      return;
+    }
+
+    // No saved preference → auto-detect
+
     // Mobile / tablet → Leaflet by default (globe.gl is ~500KB, unusable on small screens)
     if (mobile) {
       setState("map");
@@ -79,13 +104,20 @@ export default function Globe3DLoader() {
 
       {showToggle && (
         <button
-          onClick={() =>
+          onClick={() => {
             setUserWantsGlobe((prev) => {
-              // Cycle: null (auto=2D) → true (3D) → false (2D) → true ...
-              if (prev === null) return true;
-              return !prev;
-            })
-          }
+              const next = prev === null ? true : !prev;
+              try {
+                localStorage.setItem(
+                  "toxinfree_map_preference",
+                  next ? "3d" : "2d"
+                );
+              } catch {
+                // localStorage may be unavailable (private mode, etc.)
+              }
+              return next;
+            });
+          }}
           className="absolute bottom-4 right-4 z-[1000] flex items-center gap-1.5 rounded-full border border-bg-tertiary bg-bg-primary/90 px-3 py-1.5 text-xs font-medium text-text-secondary backdrop-blur-sm transition-colors hover:bg-bg-secondary hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-bg-primary"
           aria-label={showGlobe ? t("map_toggle_to_2d") : t("map_toggle_to_3d")}
         >
