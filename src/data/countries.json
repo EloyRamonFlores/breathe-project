@@ -167,80 +167,107 @@
     "iso2": "CN",
     "iso3": "CHN",
     "region": "Asia",
-    "ban_status": "no_ban",
-    "ban_year": null,
-    "ban_details": "No comprehensive national ban. Chrysotile used extensively in cement products, friction materials, and construction. Domestic production in Xinjiang province.",
-    "ban_details_es": "Sin prohibición nacional integral. El crisotilo se utiliza extensamente en productos de cemento, materiales de fricción y construcción. Producción doméstica en la provincia de Xinjiang.",
+    "ban_status": "de_facto_ban",
+    "ban_year": 2011,
+    "ban_details": "Incremental restrictions: amphiboles banned 2002–2003; all asbestos banned from construction June 1, 2011 (GB50574-2010 standard); chrysotile listed as hazardous with available substitutes (2012). Chrysotile still legal for industrial/friction products. China is world's second-largest asbestos consumer (imports 98% from Russia); major exporter of asbestos-containing materials.",
+    "ban_details_es": "Restricciones incrementales: prohibición de anfíboles 2002–2003; prohibición de todo asbesto en construcción a partir del 1 de junio de 2011 (estándar GB50574-2010); crisotilo clasificado como sustancia peligrosa con sustitutos disponibles (2012). El crisotilo sigue siendo legal para productos industriales/de fricción. China es el segundo mayor consumidor mundial de asbesto (importa 98% de Rusia); exportador importante de materiales que contienen asbesto.",
     "exceptions": [],
     "timeline": [
       {
-        "year": 1970,
-        "event": "Rapid industrialization drives large-scale asbestos-cement construction across all provinces",
-        "event_es": "La rápida industrialización impulsa la construcción a gran escala con cemento-asbesto en todas las provincias",
-        "type": "other",
-        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
-      },
-      {
-        "year": 2001,
-        "event": "Some provinces begin restricting sprayed asbestos applications in public buildings",
-        "event_es": "Algunas provincias comienzan a restringir las aplicaciones de asbesto proyectado en edificios públicos",
-        "type": "regulation",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
-      },
-      {
-        "year": 2012,
-        "event": "China becomes world's top chrysotile consumer; Xinjiang province produces chrysotile domestically",
-        "event_es": "China se convierte en el mayor consumidor mundial de crisotilo; la provincia de Xinjiang produce crisotilo doméstico",
-        "type": "other",
-        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
-      },
-      {
-        "year": 2019,
-        "event": "Partial import restrictions on amphibole fibers (crocidolite, amosite) introduced; chrysotile remains unrestricted",
-        "event_es": "Se introducen restricciones parciales de importación para fibras anfíbolas (crocidolita, amosita); el crisotilo permanece sin restricciones",
+        "year": 2002,
+        "event": "Ban on crocidolite (blue asbestos) imports and use",
+        "event_es": "Prohibición de importación y uso de crocidolita (asbesto azul)",
         "type": "partial_ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
+        "year": 2003,
+        "event": "Ban on asbestos-containing automotive friction materials (brakes, clutches)",
+        "event_es": "Prohibición de materiales de fricción automotriz que contengan asbesto (frenos, embragues)",
+        "type": "partial_ban",
+        "source_url": "https://ibasecretariat.org/prof_china.php"
+      },
+      {
+        "year": 2008,
+        "event": "Asbestos banned from Beijing Olympics and 2010 Asian Games construction",
+        "event_es": "Prohibición de asbesto en la construcción de los Juegos Olímpicos de Pekín 2008 y los Juegos Asiáticos 2010",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/lka-beijing-we-have-a-problem.php"
+      },
+      {
+        "year": 2011,
+        "event": "Ban on all asbestos in siding and wall construction materials (GB50574-2010 standard, effective June 1)",
+        "event_es": "Prohibición de todo asbesto en materiales de revestimiento y muros (estándar GB50574-2010, efectivo 1 de junio)",
+        "type": "ban",
+        "source_url": "https://ibasecretariat.org/prof_china.php"
+      },
+      {
+        "year": 2012,
+        "event": "Asbestos officially categorized as toxic hazardous material with available substitutes by Ministry of Industry and Information Technology (MIIT)",
+        "event_es": "Asbesto categorizado oficialmente como material peligroso con sustitutos disponibles por el Ministerio de Industria y Tecnología de la Información",
+        "type": "regulation",
+        "source_url": "https://ibasecretariat.org/lka_china_expand_asb_ban.php"
+      },
+      {
         "year": 2024,
-        "event": "No comprehensive ban in place; chrysotile still used in friction products, cement goods, and construction",
-        "event_es": "Sin prohibición integral vigente; el crisotilo sigue utilizándose en productos de fricción, artículos de cemento y construcción",
+        "event": "Asbestos contamination detected in children's play sand exported to Australia/NZ and in lift brake pads from Chinese manufacturers; ongoing quality control gaps despite construction ban",
+        "event_es": "Contaminación por asbesto detectada en arena de juego para niños exportada a Australia/Nueva Zelanda y en pastillas de freno de ascensores de fabricantes chinos; brechas de control de calidad a pesar de la prohibición en construcción",
         "type": "other",
-        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+        "source_url": "https://www.ibasecretariat.org/lka-chinas-asbestos-conundrum.php"
       }
     ],
-    "peak_usage_era": "1970s-present",
+    "peak_usage_era": "1970–2010",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "asbestos-cement flat sheets",
       "brake linings",
       "friction materials",
-      "asbestos gaskets"
+      "asbestos gaskets",
+      "pipe insulation",
+      "boiler insulation"
     ],
     "common_materials_es": [
       "láminas de techo de cemento-asbesto",
       "láminas planas de cemento-asbesto",
       "forros de frenos",
       "materiales de fricción",
-      "empaquetaduras de asbesto"
+      "empaquetaduras de asbesto",
+      "aislamiento de tuberías",
+      "aislamiento de calderas"
     ],
-    "estimated_buildings_at_risk": null,
-    "mesothelioma_rate": null,
-    "mesothelioma_source_year": null,
+    "estimated_buildings_at_risk": "Millions of residential, commercial, and industrial buildings constructed 1950–2010 contain asbestos-cement roofing, insulation, and wall panels; particularly prevalent in Hebei, Shandong, Liaoning, Jilin, Gansu, and Xinjiang provinces",
+    "mesothelioma_rate": 1.9,
+    "mesothelioma_source_year": 2019,
     "priority": "high",
+    "resistance_stories": [],
     "sources": [
       {
-        "name": "IBAS Ban List",
+        "name": "IBAS — Asbestos Bans by Country (China)",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-04-04"
       },
       {
-        "name": "USGS Asbestos",
+        "name": "IBAS — China's Asbestos Conundrum",
+        "url": "https://www.ibasecretariat.org/lka-chinas-asbestos-conundrum.php",
+        "accessed": "2026-04-04"
+      },
+      {
+        "name": "Burden of Malignant Mesothelioma in China During 1990–2019 and Projections Through 2029",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2667005424000292",
+        "accessed": "2026-04-04"
+      },
+      {
+        "name": "Distribution of Asbestos Enterprises and Asbestosis Cases — China, 1997−2019",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8422206/",
+        "accessed": "2026-04-04"
+      },
+      {
+        "name": "USGS — Asbestos Mineral Commodity Summaries 2024",
         "url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf",
-        "accessed": "2026-03-13"
+        "accessed": "2026-04-04"
       }
     ],
-    "last_updated": "2026-03-13",
+    "last_updated": "2026-04-04",
     "hero_image_url": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1280"
   },
   {
@@ -7679,8 +7706,8 @@
     "iso2": "LK",
     "iso3": "LKA",
     "region": "Asia",
-    "ban_status": "no_ban",
-    "ban_year": null,
+    "ban_status": "partial_ban",
+    "ban_year": 1997,
     "ban_details": "No comprehensive ban. Blue asbestos (crocidolite) banned since 1997, but chrysotile remains legal. Sri Lanka has one of the highest per-capita chrysotile consumption rates globally — over 200,000 metric tonnes consumed between 2012-2016. A planned phase-out starting January 2018 with full ban by 2024 was derailed when Russia threatened to embargo all Sri Lankan tea imports in retaliation. 11% of Sri Lanka's tea exports go to Russia.",
     "ban_details_es": "Sin prohibición integral. El asbesto azul (crocidolita) fue prohibido desde 1997, pero el crisotilo sigue siendo legal. Sri Lanka tiene una de las tasas de consumo per cápita de crisotilo más altas del mundo — más de 200,000 toneladas métricas consumidas entre 2012-2016. Una eliminación planificada a partir de enero de 2018 con prohibición total para 2024 fue descarrilada cuando Rusia amenazó con embargar todas las importaciones de té de Sri Lanka en represalia. El 11% de las exportaciones de té de Sri Lanka van a Rusia.",
     "exceptions": [],
