@@ -7,12 +7,14 @@ interface AnimatedCounterProps {
   target: number;
   duration?: number;
   className?: string;
+  locale?: string;
 }
 
 export default function AnimatedCounter({
   target,
   duration = 2000,
   className = "",
+  locale = "en",
 }: AnimatedCounterProps) {
   const [count, setCount] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -64,7 +66,7 @@ export default function AnimatedCounter({
 
   return (
     <span ref={ref} className={className} aria-live="polite">
-      {formatNumber(count)}
+      {formatNumber(count, locale)}
     </span>
   );
 }

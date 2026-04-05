@@ -37,6 +37,7 @@ interface HeroSectionProps {
   legendFullBan: string;
   heroTagline: string;
   searchSlot?: ReactNode;
+  locale?: string;
 }
 
 export default function HeroSection({
@@ -63,6 +64,7 @@ export default function HeroSection({
   legendFullBan,
   heroTagline,
   searchSlot,
+  locale = "en",
 }: HeroSectionProps) {
   return (
     <section className="relative bg-[#0F172A]">
@@ -148,7 +150,7 @@ export default function HeroSection({
                 className="block font-mono text-[4rem] sm:text-[5.5rem] md:text-[6.5rem] font-bold leading-none tabular-nums"
                 style={{ color: activeColor }}
               >
-                {formatNumber(noBanCount)}
+                {formatNumber(noBanCount, locale)}
               </span>
             </div>
 

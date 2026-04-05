@@ -197,7 +197,7 @@ export default async function ByTheNumbersPage({
                 className="rounded-lg bg-bg-secondary border border-bg-tertiary p-5"
               >
                 <div className={`font-mono text-4xl font-bold tabular-nums mb-1 ${stat.color}`}>
-                  <AnimatedCounter target={stat.target} duration={2000} />
+                  <AnimatedCounter target={stat.target} duration={2000} locale={locale} />
                   {stat.unit && (
                     <span className="text-xl ml-1">{stat.unit}</span>
                   )}
@@ -218,7 +218,7 @@ export default async function ByTheNumbersPage({
           <Suspense
             fallback={
               <div className="h-64 rounded-lg bg-bg-secondary border border-bg-tertiary flex items-center justify-center">
-                <p className="text-sm text-text-muted">Loading charts...</p>
+                <p className="text-sm text-text-muted">{t("charts_loading")}</p>
               </div>
             }
           >

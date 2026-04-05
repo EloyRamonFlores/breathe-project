@@ -31,8 +31,8 @@ export function getBanStatusColor(status: string): string {
   return colors[status] ?? colors.unknown;
 }
 
-export function formatNumber(num: number): string {
-  return new Intl.NumberFormat("en-US").format(num);
+export function formatNumber(num: number, locale: string = "en-US"): string {
+  return new Intl.NumberFormat(locale).format(num);
 }
 
 export function getFlag(iso2: string): string {

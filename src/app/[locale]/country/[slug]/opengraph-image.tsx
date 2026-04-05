@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { getTranslations } from "next-intl/server";
 import countriesData from "@/data/countries.json";
 import type { Country } from "@/lib/types";
 
@@ -14,20 +15,13 @@ const BAN_COLORS: Record<Country["ban_status"], string> = {
   unknown: "#64748B",
 };
 
-const BAN_LABELS: Record<Country["ban_status"], string> = {
-  full_ban: "Full Ban",
-  de_facto_ban: "De Facto Ban",
-  partial_ban: "Partial Ban",
-  no_ban: "No Ban",
-  unknown: "Unknown",
-};
-
 export default async function Image({
   params,
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
+  const tBan = await getTranslations({ locale, namespace: "ban_status" });
   const country = (countriesData as Country[]).find((c) => c.slug === slug);
 
   if (!country) {
@@ -52,7 +46,7 @@ export default async function Image({
   }
 
   const banColor = BAN_COLORS[country.ban_status];
-  const banLabel = BAN_LABELS[country.ban_status];
+  const banLabel = tBan(country.ban_status);
 
   return new ImageResponse(
     (

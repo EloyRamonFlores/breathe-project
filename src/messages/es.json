@@ -121,7 +121,8 @@
     "region_latin_america": "América Latina",
     "region_north_america": "América del Norte",
     "region_oceania": "Oceanía",
-    "region_middle_east": "Medio Oriente"
+    "region_middle_east": "Medio Oriente",
+    "og_countries_tracked": "200 países rastreados"
   },
   "check": {
     "meta_title": "Herramienta de Evaluación de Riesgo de Asbesto — Gratis por País y Época",
@@ -268,6 +269,7 @@
     "key_figures_peak_description": "El período en que el asbesto se utilizó más intensamente en la construcción. Los edificios de esta era tienen la mayor probabilidad de contener materiales con asbesto."
   },
   "learn": {
+    "charts_loading": "Cargando gráficos...",
     "title": "Aprende Sobre el Asbesto",
     "subtitle": "Los peligros del asbesto, dónde se esconde en los hogares, la historia del encubrimiento y qué hacer si lo encuentras.",
     "page_description": "Información recopilada de fuentes públicas incluyendo EPA, OMS e IBAS. No es asesoría legal ni médica.",
@@ -673,6 +675,9 @@
     "page_message": "Ocurrió un error al cargar esta página.",
     "page_retry": "Intentar de nuevo",
     "page_home": "← Volver al Inicio",
-    "invalid_params": "Parámetros de enlace no válidos. Por favor, selecciona tus opciones a continuación."
+    "invalid_params": "Parámetros de enlace no válidos. Por favor, selecciona tus opciones a continuación.",
+    "not_found_title": "Página no encontrada",
+    "not_found_description": "Esta página no existe.",
+    "not_found_back": "Volver al inicio"
   }
 }

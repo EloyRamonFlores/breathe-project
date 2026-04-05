@@ -115,6 +115,7 @@ export default async function HomePage({
         legendFullBan={t("legend_full_ban")}
         heroTagline={t("hero_tagline")}
         searchSlot={<CountrySearchSection locale={locale} />}
+        locale={locale}
       />
 
       {/* Ban Timeline Ticker */}
