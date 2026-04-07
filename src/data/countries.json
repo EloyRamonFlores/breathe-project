@@ -279,78 +279,195 @@
     "region": "Europe",
     "ban_status": "no_ban",
     "ban_year": null,
-    "ban_details": "No ban on chrysotile asbestos. World's largest producer via Uralasbest (Asbest, Ural region). Russia actively promotes 'controlled use' internationally.",
-    "ban_details_es": "Sin prohibición del asbesto crisotilo. Mayor productor mundial a través de Uralasbest (Asbest, región de los Urales). Rusia promueve activamente el 'uso controlado' a nivel internacional.",
+    "ban_details": "No ban on any form of asbestos. Russia is the world's largest chrysotile producer via Uralasbest (Asbest, Sverdlovsk Oblast) and Orenburg Minerals. The city of Asbest — named for the mineral — sits atop the world's largest open-pit chrysotile mine, operating since 1896. Russia actively blocks international chrysotile restrictions at the Rotterdam Convention. SanPiN 2.2.3.2887-11 (2011) acknowledged occupational hazards but imposed only safety controls, not a ban. A 2024 Ministry of Health proposal to recognize asbestos cancers as occupational diseases faced industry opposition.",
+    "ban_details_es": "Sin prohibición de ninguna forma de asbesto. Rusia es el mayor productor mundial de crisotilo a través de Uralasbest (Asbest, óblast de Sverdlovsk) y Orenburg Minerals. La ciudad de Asbest — nombrada por el mineral — se asienta sobre la mayor mina de crisotilo a cielo abierto del mundo, en operación desde 1896. Rusia bloquea activamente las restricciones internacionales del crisotilo en la Convención de Rotterdam. SanPiN 2.2.3.2887-11 (2011) reconoció riesgos laborales pero impuso solo controles de seguridad, no una prohibición. Una propuesta del Ministerio de Salud de 2024 para reconocer los cánceres por asbesto como enfermedades laborales enfrentó oposición de la industria.",
     "exceptions": [],
     "timeline": [
       {
-        "year": 1950,
-        "event": "Soviet-era expansion of chrysotile mining in Ural mountains; Uralasbest becomes world's largest asbestos mine",
-        "event_es": "Expansión soviética de la minería de crisotilo en los montes Urales; Uralasbest se convierte en la mina de asbesto más grande del mundo",
+        "year": 1896,
+        "event": "First commercial chrysotile mining begins at Asbest site in the Ural Mountains; Uralasbest founded — what will become the world's largest asbestos mine",
+        "event_es": "Comienza la minería comercial de crisotilo en el sitio de Asbest en los montes Urales; fundación de Uralasbest — lo que se convertirá en la mina de asbesto más grande del mundo",
+        "type": "other",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4772512/"
+      },
+      {
+        "year": 1930,
+        "event": "Soviet-era massive expansion of chrysotile mining; city of Asbest built as planned industrial 'monotown' around the mine; 70,000 residents become dependent on asbestos industry",
+        "event_es": "Expansión masiva soviética de la minería de crisotilo; la ciudad de Asbest se construye como 'monociudad' industrial planeada alrededor de la mina; 70.000 residentes se vuelven dependientes de la industria del asbesto",
+        "type": "other",
+        "source_url": "https://www.icij.org/investigations/dangers-dust/russia-worlds-asbestos-behemoth/"
+      },
+      {
+        "year": 1975,
+        "event": "Soviet asbestos output surpasses Canadian mines for the first time; USSR becomes world's largest chrysotile producer",
+        "event_es": "La producción soviética de asbesto supera las minas canadienses por primera vez; la URSS se convierte en el mayor productor mundial de crisotilo",
+        "type": "other",
+        "source_url": "https://ibasecretariat.org/prof_russia.php"
+      },
+      {
+        "year": 1991,
+        "event": "Russia inherits world's largest chrysotile reserves and entire Soviet production infrastructure after USSR dissolution; production continues uninterrupted",
+        "event_es": "Rusia hereda las mayores reservas mundiales de crisotilo y toda la infraestructura de producción soviética tras la disolución de la URSS; la producción continúa sin interrupciones",
         "type": "other",
         "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
       },
       {
-        "year": 1990,
-        "event": "Russia inherits world's largest chrysotile reserves and production infrastructure after USSR dissolution",
-        "event_es": "Rusia hereda las mayores reservas de crisotilo del mundo y la infraestructura de producción tras la disolución de la URSS",
+        "year": 2006,
+        "event": "Russia begins blocking chrysotile asbestos listing at Rotterdam Convention Conference of Parties (COP); repeats this action at every COP through 2025, preventing international hazard designation",
+        "event_es": "Rusia comienza a bloquear la inclusión del asbesto crisotilo en la Convención de Rotterdam (COP); repite esta acción en cada COP hasta 2025, impidiendo la designación internacional de peligro",
         "type": "other",
-        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+        "source_url": "http://ibasecretariat.org/lka-rotterdam-convention-primer-2023.php"
+      },
+      {
+        "year": 2008,
+        "event": "Eco-Accord and Volgograd-Ecopress organize Russia's first impartial asbestos roundtable; industry lobbyists refuse to attend and threaten legal action against organizers",
+        "event_es": "Eco-Accord y Volgograd-Ecopress organizan la primera mesa redonda imparcial sobre asbesto en Rusia; los lobistas de la industria se niegan a asistir y amenazan con acciones legales",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/lka_landmark_asb_meeting_russia.php"
+      },
+      {
+        "year": 2009,
+        "event": "Prime Minister Vladimir Putin meets with Uralasbest union chairman Andrei Kholzakov; promises state support for chrysotile producers against international anti-asbestos 'political pressure'",
+        "event_es": "El primer ministro Vladimir Putin se reúne con el presidente del sindicato de Uralasbest, Andrei Kholzakov; promete apoyo estatal a los productores de crisotilo contra la 'presión política' internacional anti-asbesto",
+        "type": "other",
+        "source_url": "https://www.icij.org/investigations/dangers-dust/russia-worlds-asbestos-behemoth/"
+      },
+      {
+        "year": 2011,
+        "event": "Russian Justice Ministry promulgates SanPiN 2.2.3.2887-11 — first formal regulation acknowledging chrysotile as an occupational hazard; imposes safety controls but does not ban production or use",
+        "event_es": "El Ministerio de Justicia ruso promulga SanPiN 2.2.3.2887-11 — primer reglamento formal que reconoce el crisotilo como peligro laboral; impone controles de seguridad pero no prohíbe la producción ni el uso",
+        "type": "regulation",
+        "source_url": "https://ibasecretariat.org/lka-russian-asbestos-u-turn.php"
+      },
+      {
+        "year": 2011,
+        "event": "Russian Chrysotile Association appeals to Prime Minister Putin to block proposed ban on asbestos in vehicle brake pads; proposal defeated",
+        "event_es": "La Asociación Rusa del Crisotilo apela al primer ministro Putin para bloquear la propuesta de prohibición del asbesto en las pastillas de freno de vehículos; la propuesta es derrotada",
+        "type": "other",
+        "source_url": "https://www.kazanlaw.com/special-interests-looking-to-block-asbestos-ban-in-russia/"
       },
       {
         "year": 2012,
-        "event": "Russian chrysotile industry launches international 'controlled use' lobbying campaign to oppose global bans",
-        "event_es": "La industria rusa del crisotilo lanza una campaña internacional de cabildeo por el 'uso controlado' para oponerse a las prohibiciones globales",
+        "event": "Volgograd Workshop on Elimination of Asbestos-Related Diseases — first Russian civil society meeting bringing together government officials, medical experts, trade unions, WHO, and NGOs to discuss alternatives and compensation models",
+        "event_es": "Taller de Volgograd sobre Eliminación de Enfermedades por Asbesto — primera reunión de la sociedad civil rusa que reúne a funcionarios gubernamentales, expertos médicos, sindicatos, OMS y ONG para discutir alternativas y modelos de compensación",
         "type": "other",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://ibasecretariat.org/os-volgograd-workshop-report-sep2012.php"
       },
       {
-        "year": 2019,
-        "event": "Russia exports approximately 300,000 metric tons per year, primarily targeting Southeast Asia, Middle East, and Africa",
-        "event_es": "Rusia exporta aproximadamente 300,000 toneladas métricas por año, principalmente hacia el Sudeste Asiático, Oriente Medio y África",
+        "year": 2018,
+        "event": "Uralasbest brands asbestos pallets with President Trump's face bearing seal 'APPROVED BY DONALD TRUMP, 45TH PRESIDENT OF THE UNITED STATES' — targeting the U.S. market after Brazil (previously the main U.S. supplier) banned asbestos",
+        "event_es": "Uralasbest marca pallets de asbesto con la cara del presidente Trump bajo el sello 'APROBADO POR DONALD TRUMP, 45° PRESIDENTE DE LOS ESTADOS UNIDOS' — dirigido al mercado estadounidense después de que Brasil prohibiera el asbesto",
         "type": "other",
-        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+        "source_url": "https://www.washingtonpost.com/news/business/wp/2018/07/11/approved-by-donald-trump-asbestos-sold-by-russian-company-is-branded-with-the-presidents-face/"
+      },
+      {
+        "year": 2022,
+        "event": "Western sanctions following Russia's invasion of Ukraine cause a 5-fold drop in asbestos sales; Uralasbest loses nearly 1 billion rubles; exports still valued at $232 million USD",
+        "event_es": "Las sanciones occidentales tras la invasión rusa de Ucrania provocan una caída 5 veces mayor en ventas de asbesto; Uralasbest pierde casi mil millones de rublos; las exportaciones aún se valoran en 232 millones de dólares",
+        "type": "other",
+        "source_url": "https://ibasecretariat.org/lka-crisis-for-russia-s-asbestos-producers.php"
       },
       {
         "year": 2024,
-        "event": "No ban in place; Uralasbest remains operational as world's largest open-pit chrysotile mine",
-        "event_es": "Sin prohibición vigente; Uralasbest sigue operando como la mayor mina de crisotilo a cielo abierto del mundo",
-        "type": "other",
-        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+        "event": "Russia's Ministry of Health proposes adding asbestos-related occupational cancers to official industrial disease list; Uralasbest and Orenburg Minerals submit formal objections; revised list scheduled to take effect March 1, 2025",
+        "event_es": "El Ministerio de Salud de Rusia propone agregar cánceres laborales por asbesto a la lista oficial de enfermedades industriales; Uralasbest y Orenburg Minerals presentan objeciones formales; la lista revisada estaba programada para entrar en vigor el 1 de marzo de 2025",
+        "type": "regulation",
+        "source_url": "https://www.ibasecretariat.org/lka-russian-ministry-planning-action-on-asbestos-hazard.php"
       }
     ],
-    "peak_usage_era": "1950s-present",
+    "peak_usage_era": "1930s–present",
     "common_materials": [
+      "asbestos-cement corrugated roofing sheets",
       "asbestos-cement flat sheets",
-      "asbestos-cement roofing sheets",
-      "pipe insulation",
       "asbestos-cement water pipes",
-      "asbestos gaskets"
+      "pipe insulation",
+      "asbestos gaskets",
+      "vehicle brake pads and friction materials",
+      "boiler insulation"
     ],
     "common_materials_es": [
+      "láminas corrugadas de techo de cemento-asbesto",
       "láminas planas de cemento-asbesto",
-      "láminas de techo de cemento-asbesto",
-      "aislamiento de tuberías",
       "tuberías de agua de cemento-asbesto",
-      "empaquetaduras de asbesto"
+      "aislamiento de tuberías",
+      "empaquetaduras de asbesto",
+      "pastillas de freno y materiales de fricción para vehículos",
+      "aislamiento de calderas"
     ],
-    "estimated_buildings_at_risk": null,
+    "estimated_buildings_at_risk": "Tens of millions of Soviet-era residential, industrial, agricultural, and institutional buildings constructed with asbestos-cement roofing, wall panels, and pipes (1930s–1991); approximately 95,000 km of water infrastructure lined with asbestos-cement pipes; no national removal program exists",
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
     "priority": "high",
-    "sources": [
+    "resistance_stories": [
       {
-        "name": "IBAS Ban List",
-        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
-      },
-      {
-        "name": "USGS Asbestos",
-        "url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf",
-        "accessed": "2026-03-13"
+        "name": "Olga Speranskaya",
+        "years": "2008–2012",
+        "role": "Environmental chemist and Director of Chemical Safety at Eco-Accord (Moscow). Organized Russia's first impartial asbestos roundtable (2008) and the 2012 Volgograd Workshop on Asbestos Disease Elimination. Goldman Environmental Prize recipient. TIME Hero of the Environment 2009.",
+        "role_es": "Química ambiental y Directora de Seguridad Química en Eco-Accord (Moscú). Organizó la primera mesa redonda imparcial sobre asbesto en Rusia (2008) y el Taller de Volgograd de 2012 sobre Eliminación de Enfermedades por Asbesto. Premio Goldman del Medioambiente. Heroína del Medioambiente TIME 2009.",
+        "achievement": "Broke the asbestos industry's monopoly on public information in Russia by organizing the first independent asbestos roundtable in 2008 — the event where she challenged the industry's 'controlled use' narrative: 'If it is safe, why do you need to control it?'",
+        "achievement_es": "Rompió el monopolio de la industria del asbesto sobre la información pública en Rusia al organizar la primera mesa redonda independiente sobre asbesto en 2008, desafiando la narrativa del 'uso controlado' de la industria: '¿Si es seguro, por qué necesitan controlarlo?'",
+        "quote": "If it is safe, why do you need to control it?",
+        "quote_es": "¿Si es seguro, por qué necesitan controlarlo?",
+        "quote_source": "ICIJ — Russia: the World's Asbestos Behemoth",
+        "quote_source_url": "https://www.icij.org/investigations/dangers-dust/russia-worlds-asbestos-behemoth/",
+        "role_type": "advocate",
+        "source_url": "https://www.icij.org/investigations/dangers-dust/russia-worlds-asbestos-behemoth/",
+        "photo_url": "/images/countries/russia/resistance-stories/olga-speranskaya.webp"
       }
     ],
-    "last_updated": "2026-03-13",
+    "sources": [
+      {
+        "name": "IBAS — Russia Asbestos Profile",
+        "url": "https://ibasecretariat.org/prof_russia.php",
+        "accessed": "2026-04-06"
+      },
+      {
+        "name": "ICIJ — Russia: the World's Asbestos Behemoth",
+        "url": "https://www.icij.org/investigations/dangers-dust/russia-worlds-asbestos-behemoth/",
+        "accessed": "2026-04-06"
+      },
+      {
+        "name": "USGS — Asbestos Mineral Commodity Summaries 2024",
+        "url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf",
+        "accessed": "2026-04-06"
+      },
+      {
+        "name": "IARC — Asbest Chrysotile Cohort Study: Cancer Mortality Results",
+        "url": "https://www.iarc.who.int/news-events/cancer-mortality-in-chrysotile-miners-and-millers-russian-federation-main-results-asbest-chrysotile-cohort-study/",
+        "accessed": "2026-04-06"
+      },
+      {
+        "name": "PMC — Comparison of mortality in Asbest city and Sverdlovsk region 1997–2010",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4772512/",
+        "accessed": "2026-04-06"
+      },
+      {
+        "name": "PMC — Comparative study of asbestos disease burden: Brazil, China, Kazakhstan, Russia 1990–2019",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9632158/",
+        "accessed": "2026-04-06"
+      },
+      {
+        "name": "IBAS — Russian Ministry Planning Action on Asbestos Hazard (2024)",
+        "url": "https://www.ibasecretariat.org/lka-russian-ministry-planning-action-on-asbestos-hazard.php",
+        "accessed": "2026-04-06"
+      },
+      {
+        "name": "IBAS — Crisis for Russia's Asbestos Producers",
+        "url": "https://ibasecretariat.org/lka-crisis-for-russia-s-asbestos-producers.php",
+        "accessed": "2026-04-06"
+      },
+      {
+        "name": "IndustriALL — Rotterdam Convention discredited as chrysotile asbestos fails to be listed",
+        "url": "https://www.industriall-union.org/rotterdam-convention-discredited-as-chrysotile-asbestos-fails-to-be-listed",
+        "accessed": "2026-04-06"
+      },
+      {
+        "name": "Washington Post — Russian company brands asbestos with Trump's face",
+        "url": "https://www.washingtonpost.com/news/business/wp/2018/07/11/approved-by-donald-trump-asbestos-sold-by-russian-company-is-branded-with-the-presidents-face/",
+        "accessed": "2026-04-06"
+      }
+    ],
+    "last_updated": "2026-04-06",
     "hero_image_url": "https://images.unsplash.com/photo-1513933789142-f2b722e1f0eb?w=1280"
   },
   {
@@ -4913,28 +5030,123 @@
     "region": "Asia",
     "ban_status": "no_ban",
     "ban_year": null,
-    "ban_details": "No national ban. Kazakhstan has significant chrysotile asbestos deposits. Domestic production and consumption continues.",
+    "ban_details": "No ban on any form of asbestos. Kazakhstan is the world's second-largest chrysotile asbestos producer (~250,000 tonnes/year) and exporter (95–98% of output). Kostanay Minerals JSC operates the Zhitikara mine in the Kostanay region — the sole asbestos mine in Kazakhstan and Central Asia, with 37 million tonnes of reserves (4th largest globally). The government actively promotes chrysotile 'controlled use' and has led international efforts to block chrysotile listing in the Rotterdam Convention. Workplace dust limits exist (0.5 mg/m³) but are poorly enforced — 6 mg/m³ measured in 2014 (12x the limit). No restrictions on production, use, import, or export of any asbestos type.",
+    "ban_details_es": "Sin prohibición de ninguna forma de asbesto. Kazajistán es el segundo mayor productor mundial de asbesto crisotilo (~250.000 toneladas/año) y exportador (95–98% de la producción). Kostanay Minerals JSC opera la mina de Zhitikara en la región de Kostanay — la única mina de asbesto en Kazajistán y Asia Central, con 37 millones de toneladas de reservas (4ª mayor del mundo). El gobierno promueve activamente el 'uso controlado' del crisotilo y ha liderado esfuerzos internacionales para bloquear la inclusión del crisotilo en el Convenio de Róterdam. Existen límites de polvo laboral (0,5 mg/m³) pero se aplican deficientemente — 6 mg/m³ medidos en 2014 (12 veces el límite). Sin restricciones a la producción, uso, importación o exportación de ningún tipo de asbesto.",
     "exceptions": [],
-    "timeline": [],
-    "peak_usage_era": "1960s-present",
-    "common_materials": [
-      "asbestos-cement flat sheets",
-      "pipe insulation",
-      "asbestos-cement water pipes",
-      "asbestos gaskets"
-    ],
-    "estimated_buildings_at_risk": null,
-    "mesothelioma_rate": null,
-    "mesothelioma_source_year": null,
-    "priority": "medium",
-    "sources": [
+    "timeline": [
       {
-        "name": "IBAS Ban List",
-        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "year": 1965,
+        "event": "Kostanay Minerals JSC established at Zhitikara deposit in Kostanay region. Beginning of industrial-scale chrysotile asbestos mining in Kazakhstan",
+        "event_es": "Se establece Kostanay Minerals JSC en el yacimiento de Zhitikara, región de Kostanay. Inicio de la minería de crisotilo a escala industrial en Kazajistán",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/lka-what-is-going-on-in-kazakhstan.php"
+      },
+      {
+        "year": 2006,
+        "event": "Kazakhstan joins coalition blocking chrysotile asbestos listing in the Rotterdam Convention at COP3",
+        "event_es": "Kazajistán se une a la coalición que bloquea la inclusión del asbesto crisotilo en el Convenio de Róterdam en la COP3",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/lka_rott_meet_geneva_oct_06.php"
+      },
+      {
+        "year": 2009,
+        "event": "First International Asbestos Conference held in Astana. Astana Asbestos Resolution adopted unanimously, calling for transparency and chrysotile listing in Rotterdam Convention",
+        "event_es": "Primera Conferencia Internacional sobre Asbesto celebrada en Astaná. La Resolución de Astaná sobre Asbesto se adopta por unanimidad, pidiendo transparencia e inclusión del crisotilo en el Convenio de Róterdam",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/lka_first_int_asb_conf_kazakhstan.php"
+      },
+      {
+        "year": 2018,
+        "event": "UN calls for Kazakhstan to ban asbestos. Kazakhstan does not comply. Industry organizes conferences promoting 'safe use' and claiming zero disease diagnoses among workers",
+        "event_es": "La ONU pide a Kazajistán que prohíba el asbesto. Kazajistán no cumple. La industria organiza conferencias promoviendo el 'uso seguro' y alegando cero diagnósticos de enfermedades entre trabajadores",
+        "type": "other",
+        "source_url": "https://ibasecretariat.org/abs_archive_news.php?sel=c&c_val=Kazakhstan"
+      },
+      {
+        "year": 2022,
+        "event": "Kazakhstan delegation leads veto against chrysotile listing at Rotterdam Convention COP10. New export routes opened through Georgian ports after Russian ports blocked by sanctions",
+        "event_es": "La delegación de Kazajistán lidera el veto contra la inclusión del crisotilo en la COP10 del Convenio de Róterdam. Se abren nuevas rutas de exportación a través de puertos georgianos tras el bloqueo de puertos rusos por sanciones",
+        "type": "other",
+        "source_url": "https://www.ibasecretariat.org/lka-kazakh-producers-chasing-russian-asbestos-markets.php"
+      },
+      {
+        "year": 2023,
+        "event": "Rotterdam Convention COP11: Kazakhstan among 6 countries blocking chrysotile listing, overriding 159 parties who supported it. Annual production reaches ~260,000 tonnes",
+        "event_es": "Convenio de Róterdam COP11: Kazajistán entre 6 países que bloquean la inclusión del crisotilo, anulando a 159 partes que la apoyaban. La producción anual alcanza ~260.000 toneladas",
+        "type": "other",
+        "source_url": "https://en.wikipedia.org/wiki/Rotterdam_Convention"
+      },
+      {
+        "year": 2024,
+        "event": "First asbestos-cement façade panel factory opens. Zhitikara residents mobilize demanding environmental disaster zone recognition due to elevated cancer rates; Ministry of Ecology orders inspections",
+        "event_es": "Se inaugura la primera fábrica de paneles de fachada de asbesto-cemento. Residentes de Zhitikara se movilizan exigiendo reconocimiento como zona de desastre ambiental por elevadas tasas de cáncer; el Ministerio de Ecología ordena inspecciones",
+        "type": "other",
+        "source_url": "https://ibasecretariat.org/abs_archive_news.php?sel=c&c_val=Kazakhstan"
       }
     ],
-    "last_updated": "2026-03-13"
+    "peak_usage_era": "1965–present",
+    "common_materials": [
+      "asbestos-cement roofing sheets",
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes",
+      "asbestos-cement façade panels",
+      "pipe insulation",
+      "asbestos gaskets"
+    ],
+    "estimated_buildings_at_risk": "Approximately 50% of Kazakhstani homes are roofed with asbestos-containing materials. Soviet-era buildings (1960s–1991) extensively used asbestos cement products. Environmental contamination documented near Zhitikara mine — autopsy study found dust particles in 44.6% of non-occupationally-exposed residents.",
+    "mesothelioma_rate": 0.28,
+    "mesothelioma_source_year": 2016,
+    "priority": "high",
+    "resistance_stories": [
+      {
+        "name": "GreenWomen / WECF Coalition",
+        "years": "2009–2011",
+        "role": "Kazakh-European environmental coalition that organized the first public debate on chrysotile health risks in Kazakhstan's history",
+        "role_es": "Coalición ambiental kazajo-europea que organizó el primer debate público sobre los riesgos del crisotilo para la salud en la historia de Kazajistán",
+        "achievement": "Organized the 2009 Astana Asbestos Conference (75 participants) and secured unanimous adoption of the Astana Asbestos Resolution calling for transparency and chrysotile listing in the Rotterdam Convention",
+        "achievement_es": "Organizaron la Conferencia sobre Asbesto de Astaná 2009 (75 participantes) y lograron la adopción unánime de la Resolución de Astaná sobre Asbesto pidiendo transparencia e inclusión del crisotilo en el Convenio de Róterdam",
+        "source_url": "https://www.ibasecretariat.org/lka_first_int_asb_conf_kazakhstan.php",
+        "role_type": "network"
+      },
+      {
+        "name": "Zhitikara Residents",
+        "years": "2024–present",
+        "role": "Community of ~40,000 residents adjacent to Kazakhstan's sole asbestos mine who mobilized over elevated cancer rates",
+        "role_es": "Comunidad de ~40.000 residentes adyacente a la única mina de asbesto de Kazajistán que se movilizó por las elevadas tasas de cáncer",
+        "achievement": "Pressured the Ministry of Ecology to order inspections of industrial facilities in Zhitikara; demanded recognition as environmental disaster zone",
+        "achievement_es": "Presionaron al Ministerio de Ecología para ordenar inspecciones de instalaciones industriales en Zhitikara; exigieron reconocimiento como zona de desastre ambiental",
+        "source_url": "https://ibasecretariat.org/abs_archive_news.php?sel=c&c_val=Kazakhstan",
+        "role_type": "advocate"
+      }
+    ],
+    "sources": [
+      {
+        "name": "IBAS — What is going on in Kazakhstan?",
+        "url": "https://www.ibasecretariat.org/lka-what-is-going-on-in-kazakhstan.php",
+        "accessed": "2026-04-05"
+      },
+      {
+        "name": "IBAS News Archive — Kazakhstan",
+        "url": "https://ibasecretariat.org/abs_archive_news.php?sel=c&c_val=Kazakhstan",
+        "accessed": "2026-04-05"
+      },
+      {
+        "name": "PMC — Human Exposure to Asbestos in Central Asian Countries",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11734637/",
+        "accessed": "2026-04-05"
+      },
+      {
+        "name": "BMC Public Health — Disease burden in Brazil, China, Kazakhstan, Russia 1990–2019",
+        "url": "https://link.springer.com/article/10.1186/s12889-022-14437-6",
+        "accessed": "2026-04-05"
+      },
+      {
+        "name": "USGS — Mineral Commodity Summaries 2026 — Asbestos",
+        "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-asbestos.pdf",
+        "accessed": "2026-04-05"
+      }
+    ],
+    "last_updated": "2026-04-05"
   },
   {
     "slug": "kyrgyzstan",

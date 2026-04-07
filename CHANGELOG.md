@@ -4,6 +4,55 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v2.12.0] — 2026-04-06 — Russia Research Profile
+
+### Russia countries.json Integration
+- **ban_details** / **ban_details_es**: expanded from 1-line placeholder to full context: Uralasbest, city of Asbest, 130 years of uninterrupted production, Rotterdam Convention blocking, SanPiN 2.2.3.2887-11, 2024 MoH proposal
+- **timeline**: 5 generic events → 13 richly sourced events (1896 founding → 1930 Soviet expansion → 1975 global leader → 1991 USSR dissolution → 2006 Rotterdam blocking → 2008 first NGO roundtable → 2009 Putin/Kholzakov meeting → 2011 SanPiN regulation → 2011 brake-pad ban defeated → 2012 Volgograd workshop → 2018 Trump-face marketing campaign → 2022 sanctions crisis → 2024 MoH occupational disease proposal)
+- **estimated_buildings_at_risk**: `null` → populated (Soviet-era buildings + 95,000 km asbestos-cement water pipes, no removal program)
+- **peak_usage_era**: `"1950s-present"` → `"1930s–present"` (verified from ICIJ/IBAS sources)
+- **common_materials**: expanded from 5 → 7 items (added corrugated roofing, brake pads, boiler insulation)
+- **resistance_stories**: `[]` → 1 story (Olga Speranskaya, Eco-Accord; Goldman Prize recipient; TIME Hero of Environment 2009; organized Russia's first independent asbestos roundtable 2008)
+- **sources**: 2 → 10 (IBAS, ICIJ, USGS, IARC, PMC×2, IndustriALL, Washington Post, IBAS crisis/ministry articles)
+
+### Russia Research Profile
+- Created `docs/research/russia-research.md` — comprehensive investigative profile (37 sources)
+- Key findings: Uralasbest mine (7 miles × 1.5 miles, 1,000+ feet deep, 130 years operating); city of Asbest (70,000 residents, cancer rates 20–40% higher than surrounding region); ILO estimates 10,400 annual Russian asbestos deaths; WHO reports 0 mesothelioma deaths (systematic underreporting confirmed); Russia's global market share fell 66% → 48% (2020–2023); 2018 Trump-face branding campaign; Putin personally promised chrysotile industry protection (2009)
+- Critical gap documented: Russia reports zero mesothelioma deaths to WHO despite being world's largest producer — epidemiological models estimate ~50,000 excess deaths in Russian males (1998–2017)
+- IARC Asbest Chrysotile Cohort Study (30,445 workers, 1975–2015): confirmed dose-dependent mesothelioma and lung cancer increases — directly disproving industry's "controlled use is safe" claim
+
+### SEO Note
+- Russia ES version ranking at pos ~18 may reflect thin ban_details content; the new richly bilingual ban_details_es, timeline event_es fields, and resistance story should improve coverage
+
+### Verification
+- 81 tests pass (added `source_url` field to resistance story to satisfy data integrity test)
+
+---
+
+## [v2.11.0] — 2026-04-05 — Kazakhstan Research Profile
+
+### Kazakhstan countries.json Integration
+- **ban_status**: confirmed `no_ban` (world's 2nd largest chrysotile producer, ~250,000 tonnes/year, 95–98% exported)
+- **ban_details** / **ban_details_es**: expanded from 1-line placeholder to full production/export/regulatory context including Kostanay Minerals JSC, Zhitikara mine (37M tonnes reserves), Rotterdam Convention blocking, workplace dust limit violations
+- **timeline**: `[]` → 7 sourced events (1965 mine founding → 2006 Rotterdam blocking → 2009 Astana Resolution → 2018 UN ban call → 2022 COP10 veto → 2023 COP11 blocking → 2024 façade factory + Zhitikara mobilization)
+- **mesothelioma_rate**: `null` → `0.28` per 100,000 (2016 data; likely severely underreported — only 17 cases in 5 years for a major producing country)
+- **estimated_buildings_at_risk**: `null` → populated (50% of homes asbestos-roofed, environmental contamination near Zhitikara)
+- **resistance_stories**: `[]` → 2 stories (GreenWomen/WECF 2009 coalition, Zhitikara residents 2024 mobilization)
+- **common_materials**: expanded from 4 → 6 items (added roofing sheets, façade panels)
+- **peak_usage_era**: `"1960s-present"` → `"1965–present"` (precise founding year)
+- **priority**: `"medium"` → `"high"` (39 impressions, position ~3.5, world's 2nd largest producer)
+- **sources**: 1 → 5 (IBAS, PMC, BMC Public Health, USGS)
+
+### Kazakhstan Research Profile
+- Created `docs/research/kazakhstan-research.md` — comprehensive investigative profile (35 sources)
+- Key findings: Kostanay Minerals JSC (sole producer, owned by Kusto Group/Yerkin Tatishev), Project Spring corporate espionage operation (2012–2016) targeting anti-asbestos activists, Zhitikara residents' 2024 environmental disaster zone demand, mesothelioma underreporting (0.28/100k reported vs. ~433/year predicted)
+- Debunked false "2019 ban" claim found in secondary source — production increased after alleged ban date
+
+### Verification
+- 81 tests pass, build OK
+
+---
+
 ## [v2.10.0] — 2026-04-05 — i18n Bug Sprint (5 ES Fixes)
 
 ### Bug Fixes — Spanish Locale Coverage
