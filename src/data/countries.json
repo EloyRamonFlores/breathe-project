@@ -86,49 +86,49 @@
     "iso2": "IN",
     "iso3": "IND",
     "region": "Asia",
-    "ban_status": "no_ban",
-    "ban_year": null,
-    "ban_details": "No national ban. World's largest asbestos importer, primarily chrysotile for asbestos-cement roofing and construction products.",
-    "ban_details_es": "Sin prohibición nacional. El mayor importador mundial de asbesto, principalmente crisotilo para techos de cemento-asbesto y productos de construcción.",
+    "ban_status": "partial_ban",
+    "ban_year": 1993,
+    "ban_details": "India banned domestic asbestos mining effective 1993 (by ceasing renewal of mining leases) and banned asbestos waste in ship recycling in 2011. However, chrysotile asbestos imports and use in manufacturing remain fully legal. India is the world's largest asbestos importer, importing 485,182 tonnes (56% of global imports) in 2023, primarily for asbestos-cement roofing sheets used in low-income housing. In 2025, the Education Ministry banned asbestos in centrally-funded government schools (KVs and JNVs). No comprehensive national ban exists.",
+    "ban_details_es": "India prohibió la minería doméstica de asbesto a partir de 1993 (no renovando licencias de minería) y prohibió los residuos de asbesto en el reciclaje de barcos en 2011. Sin embargo, la importación y uso de crisotilo en fabricación sigue siendo legal. India es el mayor importador mundial de asbesto, importando 485.182 toneladas (56% de las importaciones mundiales) en 2023. En 2025, el Ministerio de Educación prohibió el asbesto en las escuelas gubernamentales centralmente financiadas. No existe una prohibición nacional integral.",
     "exceptions": [],
     "timeline": [
       {
-        "year": 1983,
-        "event": "WHO publishes evidence on chrysotile health hazards; India continues large-scale asbestos imports",
-        "event_es": "La OMS publica evidencia sobre los riesgos del crisotilo para la salud; India continúa importando asbesto a gran escala",
+        "year": 1934,
+        "event": "India's first asbestos factory established in Kymore, Madhya Pradesh, by Turner and Newall Plc (UK). The colonial-era industry creates the foundation for India's asbestos-cement manufacturing sector.",
+        "event_es": "Se establece la primera fábrica de asbesto de India en Kymore, Madhya Pradesh, por Turner and Newall Plc (Reino Unido). La industria de la era colonial crea la base del sector de fabricación de cemento-asbesto de India.",
         "type": "other",
-        "source_url": "https://www.who.int/news-room/fact-sheets/detail/asbestos"
+        "source_url": "https://ibasecretariat.org/km-legacy-of-european-asbestos-industry-continues-in-india.php"
+      },
+      {
+        "year": 1993,
+        "event": "Government of India ceases renewal of asbestos mining leases, effectively banning domestic asbestos mining. Chrysotile imports and manufacturing use remain fully legal.",
+        "event_es": "El Gobierno de India cesa la renovación de licencias de minería de asbesto, prohibiendo efectivamente la minería doméstica. Las importaciones de crisotilo y el uso en manufactura permanecen completamente legales.",
+        "type": "partial_ban",
+        "source_url": "https://elchemy.com/blogs/chemical-market/what-year-was-asbestos-banned-in-india"
+      },
+      {
+        "year": 2004,
+        "event": "India blocks consensus at Rotterdam Convention COP-1 to list chrysotile asbestos under Annex III (Prior Informed Consent procedure), the first of multiple blocking actions spanning two decades.",
+        "event_es": "India bloquea el consenso en la COP-1 del Convenio de Rotterdam para incluir el crisotilo en el Anexo III (procedimiento de Consentimiento Fundamentado Previo), la primera de múltiples acciones de bloqueo a lo largo de dos décadas.",
+        "type": "other",
+        "source_url": "https://www.cseindia.org/asbestos-and-endosulfan-at-rotterdam-convention-2710"
       },
       {
         "year": 2011,
-        "event": "Collegium Ramazzini files Supreme Court petition requesting a national asbestos ban; case remains pending",
-        "event_es": "El Collegium Ramazzini presenta una petición ante la Corte Suprema solicitando una prohibición nacional del asbesto; el caso permanece pendiente",
+        "event": "Supreme Court of India dismisses writ petition in Kalyaneshwari v. Union of India, declining to order a national asbestos ban. Court issues directions for strict adherence to existing regulations.",
+        "event_es": "La Corte Suprema de India desestima la petición de amparo en Kalyaneshwari v. Unión de India, negándose a ordenar una prohibición nacional del asbesto.",
         "type": "court_ruling",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://indiankanoon.org/doc/131981352/"
       },
       {
-        "year": 2013,
-        "event": "Chrysotile institute lobbying intensifies; India-Russia trade in chrysotile fibers grows significantly",
-        "event_es": "El cabildeo del Instituto del Crisotilo se intensifica; el comercio de fibras de crisotilo entre India y Rusia crece significativamente",
-        "type": "other",
-        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
-      },
-      {
-        "year": 2018,
-        "event": "Indian government formally declines to ban chrysotile, citing economic concerns in cement and construction industry",
-        "event_es": "El gobierno indio rechaza formalmente la prohibición del crisotilo, citando preocupaciones económicas en la industria del cemento y la construcción",
-        "type": "regulation",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
-      },
-      {
-        "year": 2023,
-        "event": "India remains world's largest asbestos importer at approximately 300,000 metric tons per year; no ban timeline announced",
-        "event_es": "India sigue siendo el mayor importador mundial de asbesto, con aproximadamente 300,000 toneladas métricas por año; no se ha anunciado un plazo de prohibición",
-        "type": "other",
-        "source_url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-asbestos.pdf"
+        "year": 2025,
+        "event": "Ministry of Education bans asbestos in new construction and refurbishment of Kendriya Vidyalayas and Jawahar Navodaya Vidyalayas (central government schools) — India's first formal sector-specific asbestos restriction.",
+        "event_es": "El Ministerio de Educación prohíbe el asbesto en la nueva construcción y renovación de las Kendriya Vidyalayas y Jawahar Navodaya Vidyalayas (escuelas gubernamentales centrales), la primera restricción sectorial formal del asbesto en India.",
+        "type": "partial_ban",
+        "source_url": "https://www.etvbharat.com/en/!bharat/education-ministry-issues-ban-on-using-asbestos-in-kvs-and-jnv-enn25040304301"
       }
     ],
-    "peak_usage_era": "1980s-present",
+    "peak_usage_era": "1980–present",
     "common_materials": [
       "asbestos-cement roofing sheets",
       "brake linings",
@@ -141,7 +141,7 @@
       "empaquetaduras",
       "tuberías de agua de cemento-asbesto"
     ],
-    "estimated_buildings_at_risk": null,
+    "estimated_buildings_at_risk": "Tens of millions of homes, schools, and industrial buildings with asbestos-cement roofing and sheeting; ~79% of Dalit households estimated to live under asbestos roofs",
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
     "priority": "high",
@@ -157,8 +157,23 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1514632595-4944ab0f1b00?w=1280"
+    "last_updated": "2026-04-07",
+    "hero_image_url": "https://images.unsplash.com/photo-1514632595-4944ab0f1b00?w=1280",
+    "resistance_stories": [
+      {
+        "name": "Gopal Krishna",
+        "years": "2000–present",
+        "role": "Co-founder of the Ban Asbestos Network of India (BANI) and Toxics Watch Alliance; environmental lawyer who used the RTI Act in 2008 to expose government asbestos health documents, and filed NHRC complaint in 2011",
+        "role_es": "Cofundador de la Red de Prohibición del Asbesto de India (BANI) y Toxics Watch Alliance; abogado ambiental que usó la Ley de RTI en 2008 para exponer documentos gubernamentales sobre el asbesto",
+        "achievement": "Led India's sustained civil society campaign against asbestos for 22+ years; secured the 2025 Education Ministry ban on asbestos in government schools — the first formal sector-specific restriction in India's history",
+        "achievement_es": "Lideró la campaña de la sociedad civil india contra el asbesto durante más de 22 años; logró la prohibición de 2025 del Ministerio de Educación del asbesto en las escuelas gubernamentales",
+        "quote": null,
+        "quote_es": null,
+        "quote_source": null,
+        "role_type": "advocate",
+        "photo_url": null
+      }
+    ]
   },
   {
     "slug": "china",
@@ -3890,28 +3905,195 @@
     "region": "Europe",
     "ban_status": "full_ban",
     "ban_year": 2005,
-    "ban_details": "Full ban on all asbestos under EU Directive 1999/77/EC (Commission Directive), in force March 2005. Chrysotile prohibited across all EU member states.",
+    "ban_details": "Full ban on all asbestos effective January 1, 2005, under EU Commission Directive 1999/77/EC; formally transposed into national law by Decreto-Lei nº 101/2005 of June 23, 2005. Portugal and Greece were the last two of the original 15 EU member states still using asbestos when the ban came into force — both used the full five-year derogation period granted to countries in active chrysotile use. Asbestos-cement (fibrocimento) dominated domestic industry for over 60 years, controlled by three companies: Lusalite (Cruz Quebrada, founded 1933), Cimianto (São Mamede de Infesta, founded 1942), and Novinco (Alhandra/Leça do Balio, founded 1945). An estimated 115,000 tonnes of asbestos were consumed in Portugal between 1930 and 2003. Post-ban: worker protection rules enacted (Decreto-Lei 266/2007), but Portugal missed the December 2025 EU deadline to update worker exposure limits under Directive 2022/2379/EU.",
+    "ban_details_es": "Prohibición total de todo el amianto en vigor desde el 1 de enero de 2005, bajo la Directiva CE 1999/77/EC; formalmente traspuesta a la legislación nacional por el Decreto-Ley n.º 101/2005 de 23 de junio de 2005. Portugal y Grecia fueron los dos últimos de los 15 estados miembros originales de la UE que aún usaban amianto cuando entró en vigor la prohibición — ambos agotaron el período de exención de cinco años. El fibrocemento dominó la industria nacional durante más de 60 años, controlado por tres empresas: Lusalite (Cruz Quebrada, fundada en 1933), Cimianto (São Mamede de Infesta, fundada en 1942) y Novinco (Alhandra/Leça do Balio, fundada en 1945). Se estima que entre 1930 y 2003 se consumieron en Portugal unas 115.000 toneladas de amianto. Tras la prohibición: se promulgaron normas de protección laboral (Decreto-Ley 266/2007), pero Portugal incumplió el plazo europeo de diciembre de 2025 para actualizar los límites de exposición de los trabajadores.",
     "exceptions": [],
-    "timeline": [],
-    "peak_usage_era": "1960s-1990s",
-    "common_materials": [
-      "asbestos-cement roofing sheets",
-      "asbestos-cement flat sheets",
-      "pipe insulation",
-      "vinyl-asbestos floor tiles"
-    ],
-    "estimated_buildings_at_risk": null,
-    "mesothelioma_rate": null,
-    "mesothelioma_source_year": null,
-    "priority": "medium",
-    "sources": [
+    "timeline": [
       {
-        "name": "IBAS Ban List",
-        "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "year": 1933,
+        "event": "Lusalite S.A. founded by Raúl Abecassis in Cruz Quebrada, Oeiras — beginning of Portugal's asbestos-cement industry. Factory beside the Lisbon-Cascais railway line. Employed 728 people by 1974.",
+        "event_es": "Se funda Lusalite S.A. por Raúl Abecassis en Cruz Quebrada, Oeiras — inicio de la industria portuguesa de fibrocemento. Fábrica junto a la línea de ferrocarril Lisboa-Cascais. Empleaba 728 personas en 1974.",
+        "type": "other",
+        "source_url": "https://restosdecoleccao.blogspot.com/2014/07/lusalite.html"
+      },
+      {
+        "year": 1942,
+        "event": "Cimianto founded in São Mamede de Infesta (Porto area). Together with Lusalite controlled over 75% of Portugal's asbestos-cement market. In 1945 both companies jointly created Novinco.",
+        "event_es": "Se funda Cimianto en São Mamede de Infesta (área de Oporto). Junto a Lusalite controlaba más del 75% del mercado portugués de fibrocemento. En 1945, ambas empresas crearon conjuntamente Novinco.",
+        "type": "other",
+        "source_url": "https://www.cgtp.pt/cgtp-in/areas-de-accao/seguranca-e-saude-no-trabalho/132-o-amianto-em-portugal"
+      },
+      {
+        "year": 1989,
+        "event": "Decreto-Lei 284/89 establishes formal worker protection framework for asbestos-exposed workers: mandatory health surveillance, exposure monitoring, and employer notification duties.",
+        "event_es": "El Decreto-Ley 284/89 establece un marco formal de protección laboral para trabajadores expuestos al amianto: vigilancia sanitaria obligatoria, control de la exposición y deberes de notificación del empleador.",
+        "type": "regulation",
+        "source_url": "https://www.dgs.pt/saude-publica1/amianto.aspx"
+      },
+      {
+        "year": 1999,
+        "event": "EU Directive 1999/77/EC bans chrysotile across all EU member states with a 5-year phase-out for countries still using it — including Portugal. Industry lobby AIPA uses the full derogation period.",
+        "event_es": "La Directiva 1999/77/CE de la UE prohíbe el crisotilo en todos los estados miembros con un período de transición de 5 años para los países que aún lo usan, incluido Portugal. El lobby industrial AIPA aprovecha todo el período de exención.",
+        "type": "partial_ban",
+        "source_url": "https://www.ibasecretariat.org/lka_eur_no_to_asb.php"
+      },
+      {
+        "year": 2003,
+        "event": "Parliamentary Resolution 24/2003 mandates national inventory of all public buildings containing asbestos — secured by CGTP-IN lobbying. Enforcement remained incomplete as late as 2019.",
+        "event_es": "La Resolución Parlamentaria 24/2003 ordena el inventario nacional de todos los edificios públicos con amianto — lograda por la presión de la CGTP-IN. El cumplimiento continuaba incompleto en 2019.",
+        "type": "regulation",
+        "source_url": "https://www.cgtp.pt/cgtp-in/areas-de-accao/seguranca-e-saude-no-trabalho/132-o-amianto-em-portugal"
+      },
+      {
+        "year": 2005,
+        "event": "Complete ban on all asbestos effective January 1, 2005. Decreto-Lei nº 101/2005 of June 23 formally transposes EU Directives 1999/77/EC and 2003/18/EC into Portuguese law. Portugal and Greece are the last original EU-15 members to reach this milestone.",
+        "event_es": "Prohibición total de todo el amianto en vigor desde el 1 de enero de 2005. El Decreto-Ley n.º 101/2005 de 23 de junio transpone formalmente las Directivas de la UE. Portugal y Grecia son los últimos miembros originales de la UE-15 en alcanzar este hito.",
+        "type": "ban",
+        "source_url": "https://www.europarl.europa.eu/doceo/document/E-9-2019-003944_EN.html"
+      },
+      {
+        "year": 2007,
+        "event": "Decreto-Lei 266/2007 of July 24 establishes worker protection rules for demolition and renovation work involving asbestos-containing materials: mandatory removal planning, air monitoring, and health surveillance.",
+        "event_es": "El Decreto-Ley 266/2007 de 24 de julio establece normas de protección laboral para obras de demolición y reforma con materiales de amianto: planificación obligatoria de la retirada, control del aire y vigilancia sanitaria.",
+        "type": "regulation",
+        "source_url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/266-2007-636752"
+      },
+      {
+        "year": 2016,
+        "event": "CGTP-IN and construction unions hold vigils at the three former asbestos factory sites — Lusalite (Cruz Quebrada), Novinco (Alhandra), and Cimianto (São Mamede de Infesta) — demanding occupational disease recognition and a state compensation fund.",
+        "event_es": "La CGTP-IN y los sindicatos de la construcción celebran vigilias en las tres antiguas fábricas de amianto — Lusalite (Cruz Quebrada), Novinco (Alhandra) y Cimianto (São Mamede de Infesta) — exigiendo reconocimiento de enfermedades profesionales y un fondo estatal de compensación.",
+        "type": "other",
+        "source_url": "https://www.abrilabril.pt/trabalho/o-problema-do-amianto-em-portugal"
+      },
+      {
+        "year": 2018,
+        "event": "SOS Amianto project launched — Portugal's first organization dedicated to asbestos victims, backed by Quercus and Fundação Portuguesa do Pulmão. Documents 97% underreporting of mesothelioma as occupational disease.",
+        "event_es": "Se lanza el proyecto SOS Amianto — la primera organización portuguesa dedicada a las víctimas del amianto, respaldada por Quercus y la Fundação Portuguesa do Pulmão. Documenta un 97% de infradeclaración del mesotelioma como enfermedad profesional.",
+        "type": "other",
+        "source_url": "https://oinstalador.com/Artigos/249381-SOS-AMIANTO-Grupo-de-Apoio-as-Vitimas-do-Amianto-em-Portugal.html"
+      },
+      {
+        "year": 2019,
+        "event": "European Parliament questions (E-003944/2019, E-003948/2019) flag Portugal's failure to enforce asbestos monitoring in schools and public buildings, and continued post-ban imports of asbestos-containing materials.",
+        "event_es": "Las preguntas parlamentarias europeas (E-003944/2019 y E-003948/2019) denuncian el incumplimiento de Portugal en el control del amianto en escuelas y edificios públicos, y la continuación de importaciones de materiales con amianto tras la prohibición de 2005.",
+        "type": "other",
+        "source_url": "https://www.europarl.europa.eu/doceo/document/E-9-2019-003948_EN.html"
+      },
+      {
+        "year": 2023,
+        "event": "SOS Amianto formally constituted as Associação Portuguesa de Proteção Contra o Amianto. Establishes partnership with Champalimaud Foundation for early mesothelioma diagnosis — Portugal's first dedicated asbestos screening initiative.",
+        "event_es": "SOS Amianto se constituye formalmente como Associação Portuguesa de Proteção Contra o Amianto. Establece una alianza con la Fundação Champalimaud para el diagnóstico precoz del mesotelioma — la primera iniciativa de cribado dedicada al amianto en Portugal.",
+        "type": "other",
+        "source_url": "https://sosamianto.pt/2023/04/27/formamos-a-sos-amianto-a-associacao-portuguesa-de-protecao-contra-o-amianto/"
+      },
+      {
+        "year": 2025,
+        "event": "Portugal misses December 2025 EU deadline to transpose Directive 2022/2379/EU reducing worker asbestos exposure limits 10-fold. Portuguese workers remain at risk levels 10 times higher than the updated EU standard.",
+        "event_es": "Portugal incumple el plazo europeo de diciembre de 2025 para transponer la Directiva 2022/2379/UE que reduce 10 veces los límites de exposición al amianto para los trabajadores. Los trabajadores portugueses permanecen expuestos a niveles 10 veces superiores al nuevo estándar europeo.",
+        "type": "regulation",
+        "source_url": "https://www.publico.pt/2025/12/23/sociedade/noticia/amianto-portugal-falha-prazo-europeu-reduzir-exposicao-trabalhadores-amianto-2158932"
       }
     ],
-    "last_updated": "2026-03-13"
+    "peak_usage_era": "1960s–2004",
+    "common_materials": [
+      "asbestos-cement corrugated roofing sheets (chapas onduladas)",
+      "asbestos-cement flat sheets and cladding panels",
+      "asbestos-cement water pipes",
+      "asbestos-cement prefabricated housing components",
+      "vinyl-asbestos floor tiles",
+      "asbestos pipe lagging and boiler insulation (shipyards)",
+      "asbestos gaskets and seals",
+      "asbestos friction materials (brake linings)"
+    ],
+    "common_materials_es": [
+      "láminas corrugadas de fibrocemento con amianto (chapas onduladas)",
+      "láminas planas y paneles de revestimiento de fibrocemento",
+      "tuberías de agua de cemento-amianto",
+      "componentes de vivienda prefabricada de fibrocemento",
+      "baldosas de vinilo-amianto",
+      "revestimiento de tuberías y aislamiento de calderas (astilleros)",
+      "juntas y sellos de amianto",
+      "materiales de fricción de amianto (forros de freno)"
+    ],
+    "estimated_buildings_at_risk": "Approximately 600,000 hectares of asbestos-containing fiber cement roofing remain in Portuguese buildings (housing, agricultural structures, industrial sheds, schools). An estimated 115,000 tonnes of asbestos were used in construction and industry between 1930 and 2003. No national removal program exists; a 2003 Parliamentary Resolution mandating inventory of all public buildings had not been fulfilled as of 2019.",
+    "mesothelioma_rate": 0.2,
+    "mesothelioma_source_year": 2020,
+    "priority": "high",
+    "resistance_stories": [
+      {
+        "name": "SOS Amianto",
+        "years": "2018–present",
+        "role": "Portugal's first asbestos victims' organization. Founded in 2018 by specialists with 30+ years in asbestos risk management; backed by Quercus (Portugal's largest environmental NGO) and Fundação Portuguesa do Pulmão. Formally constituted as Associação Portuguesa de Proteção Contra o Amianto in April 2023.",
+        "role_es": "La primera organización portuguesa dedicada a las víctimas del amianto. Fundada en 2018 por especialistas con más de 30 años en gestión de riesgos de amianto; respaldada por Quercus y la Fundação Portuguesa do Pulmão. Constituida formalmente como asociación en abril de 2023.",
+        "achievement": "Created Portugal's first public information platform for asbestos victims; documented 97% underreporting of mesothelioma as occupational disease; brokered a partnership with the Champalimaud Foundation for early mesothelioma diagnosis; participated in the 2024 EU consultation on the new asbestos worker protection directive.",
+        "achievement_es": "Creó la primera plataforma de información pública para víctimas del amianto en Portugal; documentó una infradeclaración del 97% del mesotelioma como enfermedad profesional; estableció una alianza con la Fundação Champalimaud para el diagnóstico precoz del mesotelioma; participó en la consulta de la UE de 2024 sobre la nueva directiva de protección.",
+        "source_url": "https://sosamianto.pt/en/inicio/",
+        "role_type": "network"
+      },
+      {
+        "name": "CGTP-IN — Confederação Geral dos Trabalhadores Portugueses",
+        "years": "2003–present",
+        "role": "Portugal's largest union confederation. Led the campaign that secured Parliamentary Resolution 24/2003 mandating public building inventory; organized vigils at the three former asbestos factory sites in 2016; continues to demand state compensation and occupational disease recognition for asbestos victims.",
+        "role_es": "La mayor confederación sindical de Portugal. Lideró la campaña que consiguió la Resolución Parlamentaria 24/2003 ordenando el inventario de edificios públicos; organizó vigilias en las tres antiguas fábricas de amianto en 2016; continúa exigiendo compensación estatal y reconocimiento de enfermedades profesionales.",
+        "achievement": "Secured Parliamentary Resolution 24/2003 mandating inventory of all public buildings containing asbestos. Led the 2016 factory vigils at Lusalite, Novinco, and Cimianto sites that renewed political and public attention to the asbestos legacy crisis.",
+        "achievement_es": "Logró la Resolución Parlamentaria 24/2003 que ordena el inventario de todos los edificios públicos con amianto. Lideró las vigilias en las fábricas Lusalite, Novinco y Cimianto en 2016, que renovaron la atención política y pública a la crisis del legado del amianto.",
+        "source_url": "https://www.cgtp.pt/cgtp-in/areas-de-accao/seguranca-e-saude-no-trabalho/132-o-amianto-em-portugal",
+        "role_type": "advocate"
+      }
+    ],
+    "sources": [
+      {
+        "name": "PMC — The Pleural Mesothelioma Cases and Mortality in Portugal in 2014–2020",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11171679/",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "CGTP-IN — O Amianto em Portugal",
+        "url": "https://www.cgtp.pt/cgtp-in/areas-de-accao/seguranca-e-saude-no-trabalho/132-o-amianto-em-portugal",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "IBAS — Europe Says No to Asbestos!",
+        "url": "https://www.ibasecretariat.org/lka_eur_no_to_asb.php",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "SOS Amianto — Associação Portuguesa de Proteção Contra o Amianto",
+        "url": "https://sosamianto.pt/en/inicio/",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "EU Parliament Q E-003944/2019 — Portuguese imports of asbestos-containing materials",
+        "url": "https://www.europarl.europa.eu/doceo/document/E-9-2019-003944_EN.html",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "EU Parliament Q E-003948/2019 — Asbestos in schools and public buildings in Portugal",
+        "url": "https://www.europarl.europa.eu/doceo/document/E-9-2019-003948_EN.html",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "Público — Portugal falha prazo europeu para reduzir exposição dos trabalhadores ao amianto (Dec 2025)",
+        "url": "https://www.publico.pt/2025/12/23/sociedade/noticia/amianto-portugal-falha-prazo-europeu-reduzir-exposicao-trabalhadores-amianto-2158932",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "AbrilAbril — O problema do amianto em Portugal",
+        "url": "https://www.abrilabril.pt/trabalho/o-problema-do-amianto-em-portugal",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "Restosdecoleccao — Lusalite",
+        "url": "https://restosdecoleccao.blogspot.com/2014/07/lusalite.html",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "Diário da República — Decreto-Lei nº 266/2007",
+        "url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/266-2007-636752",
+        "accessed": "2026-04-07"
+      }
+    ],
+    "last_updated": "2026-04-07"
   },
   {
     "slug": "qatar",
@@ -8122,20 +8304,43 @@
     "iso2": "AE",
     "iso3": "ARE",
     "region": "Middle East",
-    "ban_status": "unknown",
-    "ban_year": null,
-    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "ban_status": "partial_ban",
+    "ban_year": 2006,
+    "ban_details": "Federal Cabinet Resolution No. 39 of 2006 banned the import and production of asbestos panels and boards. However, the manufacture and use of asbestos-cement pipes — a major product category — was explicitly excluded from the ban and continued legally after 2006. In 2007, over 17,000 tonnes of chrysotile asbestos were imported for pipe manufacturing. Dubai Municipality (2022) and Abu Dhabi OSHAD (2014, updated 2026) publish guidelines for safe handling and removal, but no comprehensive ban covering all asbestos products exists at federal level.",
     "exceptions": [],
-    "timeline": [],
-    "peak_usage_era": "1970s-2000s",
+    "timeline": [
+      {
+        "year": 2006,
+        "event": "Federal Cabinet Resolution No. 39 of 2006 bans import and production of asbestos panels and boards. Asbestos-cement pipes remain unregulated and continue to be manufactured legally.",
+        "event_es": "La Resolución del Gabinete Federal No. 39 de 2006 prohíbe la importación y producción de paneles y placas de asbesto. Las tuberías de cemento-asbesto quedan sin regulación y continúan fabricándose legalmente.",
+        "type": "partial_ban",
+        "source_url": "https://meconstructionnews.com/31344/asbestos-fighting-a-silent-killer-in-the-uae"
+      },
+      {
+        "year": 2014,
+        "event": "Abu Dhabi OSHAD-SF Code of Practice 1.10 (Management of Asbestos Containing Materials) issued, requiring asbestos surveys, risk assessments, management plans, and licensed removal before demolition in Abu Dhabi emirate.",
+        "event_es": "El Código de Práctica OSHAD-SF 1.10 de Abu Dhabi (Gestión de Materiales que Contienen Asbesto) exige encuestas de asbesto, evaluaciones de riesgos y eliminación autorizada antes de la demolición en el emirato de Abu Dhabi.",
+        "type": "regulation",
+        "source_url": "https://www.adphc.gov.ae/-/media/Project/ADPHC/ADPHC/PDF/OSHAD-SF/Codes-of-Practise/1__1---Managament-of-Asbestos--Eng.pdf"
+      },
+      {
+        "year": 2022,
+        "event": "Dubai Municipality publishes revised Technical Guidelines for Safe Handling of Asbestos (DM-HSD-GU50-SHA2, Version 3.0), covering demolition, renovation, transport, storage, and disposal of asbestos-containing materials.",
+        "event_es": "El Municipio de Dubái publica las Directrices Técnicas revisadas para el Manejo Seguro del Asbesto (Versión 3.0), que cubren demolición, renovación, transporte, almacenamiento y eliminación de materiales que contienen asbesto.",
+        "type": "regulation",
+        "source_url": "https://www.dm.gov.ae/wp-content/uploads/2022/02/DM-HSD-GU50-SHA2_-Technical-Guidelines-for-Safe-Handling-of-Asbestos_V3.pdf"
+      }
+    ],
+    "peak_usage_era": "1970–2000",
     "common_materials": [
       "asbestos-cement roofing sheets",
-      "asbestos-cement flat sheets"
+      "asbestos-cement flat sheets",
+      "asbestos-cement water pipes"
     ],
-    "estimated_buildings_at_risk": null,
+    "estimated_buildings_at_risk": "Extensive legacy stock in pre-2006 residential villas, low-rise commercial buildings, and public infrastructure (asbestos-cement water distribution pipes)",
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "low",
+    "priority": "medium",
     "sources": [
       {
         "name": "IBAS Ban List",
@@ -8143,7 +8348,14 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-04-07",
+    "ban_details_es": "La Resolución Federal No. 39 de 2006 prohibió la importación y producción de paneles y placas de asbesto. Sin embargo, la fabricación y el uso de tuberías de cemento-asbesto quedaron explícitamente fuera de la prohibición y continuaron legalmente después de 2006. En 2007, más de 17.000 toneladas de crisotilo fueron importadas para la fabricación de tuberías. No existe una prohibición integral que cubra todos los productos de asbesto.",
+    "common_materials_es": [
+      "láminas de techo de cemento-asbesto",
+      "placas planas de cemento-asbesto",
+      "tuberías de agua de cemento-asbesto"
+    ],
+    "resistance_stories": []
   },
   {
     "slug": "uzbekistan",
