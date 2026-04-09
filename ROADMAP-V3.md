@@ -275,7 +275,7 @@ Actualizar CHANGELOG.md con v2.14.0.
 
 ---
 
-### PHASE 3E: UAE + India (v2.15.0) [PENDIENTE]
+### PHASE 3E: UAE + India (v2.15.0) ✅ COMPLETADO 2026-04-07
 **Por qué**: UAE tiene 19 impresiones, pos 7.37, y es el hub de búsqueda de toda la región MENA. India tiene una de las poblaciones más expuestas del mundo (~30,000 muertes/año estimadas) y está en posición ~9 con interés creciente.
 
 Lee .skills/country-research/SKILL.md
@@ -532,7 +532,7 @@ Compara scores contra docs/FULL-AUDIT-V2.md (7.9/10 baseline).
 | 3B. Russia research | v2.12.0 | 2h | Ninguna | 🟠 Alta | ✅ DONE 04-06 |
 | 3C. Portugal research | v2.13.0 | 2h | Ninguna | 🟡 Media | ✅ DONE 04-07 |
 | 3D. Turkey research | v2.14.0 | 2h | Ninguna | 🟡 Media | ⏳ PENDING |
-| 3E. UAE + India research | v2.15.0 | 3h | Ninguna | 🟡 Media | ⏳ PENDING |
+| 3E. UAE + India research | v2.15.0 | 3h | Ninguna | 🟡 Media | ✅ DONE 04-07 |
 | 3F. Taiwan + Namibia research | v2.16.0 | 2h | Ninguna | 🟡 Media | ✅ DONE 04-09 |
 | 4. Hero images (Search Console) | v2.17.0 | 2h | Ninguna | 🟡 Media | ⏳ PENDING |
 | 5. Hero images (todos) | v2.18.0 | 3-4h | Phase 4 | 🟢 Normal | ⏳ PENDING |
