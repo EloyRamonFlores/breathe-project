@@ -39,13 +39,13 @@
 
 ---
 
-## PHASE 1: Quick Wins (1h)
+## PHASE 1: Quick Wins (1h) ✅ COMPLETADO 2026-04-05
 **Version**: v2.9.1 + v2.9.2
 **Por qué primero**: Impacto inmediato en SEO y UX. China ya está investigado — solo falta integrar.
 
 ---
 
-### PHASE 1A: Integrar China a countries.json (20 min)
+### PHASE 1A: Integrar China a countries.json (20 min) ✅ COMPLETADO 2026-04-05
 **Version**: v2.9.1
 
 #### Contexto
@@ -77,11 +77,13 @@ Actualizar CHANGELOG.md con entrada v2.9.1.
 
 ---
 
-### PHASE 1B: Fix Preferencia 3D/2D en Mobile (20 min)
+### PHASE 1B: Fix Preferencia 3D/2D en Mobile (20 min) ✅ COMPLETADO 2026-04-05
 **Version**: v2.9.2
 
 #### Problema
+MAntener predeterminado globo 3d por defecto.
 Cuando el usuario alterna entre el globo 3D y el mapa 2D (Leaflet), al navegar a otra página o recargar, la selección se pierde y vuelve al estado por defecto. En mobile, donde el CTR es 7.51% (vs 1.10% desktop), esto interrumpe la experiencia del usuario más importante.
+
 
 #### Comportamiento esperado
 - Usuario activa globo 3D → se guarda preferencia
@@ -124,7 +126,7 @@ Actualizar CHANGELOG.md con entrada v2.9.2.
 
 ---
 
-## PHASE 2: Bug Sprint — i18n Pendientes (1-2h)
+## PHASE 2: Bug Sprint — i18n Pendientes (1-2h) ✅ COMPLETADO 2026-04-05
 **Version**: v2.10.0
 **Por qué ahora**: 5 bugs de baja severidad identificados en FULL-AUDIT-V2 que afectan la mitad de la audiencia (ES).
 
@@ -175,7 +177,7 @@ Actualizar CHANGELOG.md con entrada v2.10.0.
 
 ---
 
-## PHASE 3: Investigación SEO-Prioritaria de Países (8-12h)
+## PHASE 3: Investigación SEO-Prioritaria de Países (8-12h) ✅ COMPLETADO (3A-3F) 2026-04-09
 **Version**: v2.11.0 → v2.17.0
 **Orden basado en impresiones + posición + potencial de conversión.**
 
@@ -183,7 +185,7 @@ Usar el skill de country-research (`.skills/country-research/SKILL.md`) para cad
 
 ---
 
-### PHASE 3A: Kazakhstan (v2.11.0)
+### PHASE 3A: Kazakhstan (v2.11.0) ✅ COMPLETADO 2026-04-05
 **Por qué primero**: 39 impresiones, 1 clic, posición 3.45–4.18 — ya está casi en el top 3. Con un perfil enriquecido puede atraer clics consistentes. Contexto único: Rusia necesita el asbesto de Kazakhstan, que es el mayor exportador mundial.
 
 ```
@@ -206,7 +208,7 @@ Actualizar CHANGELOG.md con v2.11.0.
 
 ---
 
-### PHASE 3B: Russia (v2.12.0)
+### PHASE 3B: Russia (v2.12.0) ✅ COMPLETADO 2026-04-06
 **Por qué**: 46 impresiones EN LA VERSIÓN ES — hay audiencia hispanohablante buscando info de Rusia en español. Además "is asbestos banned in russia" está en pos 10 con 7 impresiones. Rusia es el mayor productor mundial de asbesto con ~700,000 toneladas/año — historia poderosa.
 
 ```
@@ -230,7 +232,7 @@ Actualizar CHANGELOG.md con v2.12.0.
 
 ---
 
-### PHASE 3C: Portugal (v2.13.0)
+### PHASE 3C: Portugal (v2.13.0) ✅ COMPLETADO 2026-04-07
 **Por qué**: 37 impresiones, pos 6.35 — a pasos de página 1. Portugal fue centro de producción industrial importante (Eternit Portugal) y tiene lazos con Brasil por el idioma.
 
 ```
@@ -251,18 +253,19 @@ Actualizar CHANGELOG.md con v2.13.0.
 
 ---
 
-### PHASE 3D: Turkey (v2.14.0)
+### PHASE 3D: Turkey (v2.14.0) [PENDIENTE]
 **Por qué**: 18 impresiones, pos 8.83. Ya tiene hero image. Turquía tiene el 4to depósito más grande de asbesto del mundo (Eskişehir), fue productor hasta 2010, y su transición es un caso de estudio importante.
 
 ```
 Model: opus | Thinking: high
 
+Lee .skills/country-research/SKILL.md
 Investiga Turquía:
 - Énfasis en: minas de Eskişehir (crisotilo), producción industrial 1930–2010,
   Regulation 2010 (ban) bajo presión de la UE para acceso, mortalidad ocupacional,
   comunidades afectadas en Anatolia
 
-Entregables:
+Entregables:.
 1. docs/research/turkey-research.md (30+ fuentes)
 2. countries.json: enriquecer timeline, datos de mortalidad, resistance_stories
 3. npm test
@@ -272,9 +275,10 @@ Actualizar CHANGELOG.md con v2.14.0.
 
 ---
 
-### PHASE 3E: UAE + India (v2.15.0)
+### PHASE 3E: UAE + India (v2.15.0) [PENDIENTE]
 **Por qué**: UAE tiene 19 impresiones, pos 7.37, y es el hub de búsqueda de toda la región MENA. India tiene una de las poblaciones más expuestas del mundo (~30,000 muertes/año estimadas) y está en posición ~9 con interés creciente.
 
+Lee .skills/country-research/SKILL.md
 ```
 Model: opus | Thinking: high
 
@@ -299,9 +303,10 @@ Actualizar CHANGELOG.md con v2.15.0.
 
 ---
 
-### PHASE 3F: Taiwan + Namibia (v2.16.0)
+### PHASE 3F: Taiwan + Namibia (v2.16.0) ✅ COMPLETADO 2026-04-09
 **Por qué**: Taiwan 13 impresiones pos 6.62 (cerca de página 1). Namibia 11 impresiones pos 7.36 — interesante porque fue parte del lobby pro-asbesto africano y tiene conexión con las minas de Sudáfrica.
 
+Lee .skills/country-research/SKILL.md
 ```
 Model: opus | Thinking: high
 
@@ -325,7 +330,7 @@ Actualizar CHANGELOG.md con v2.16.0.
 
 ---
 
-## PHASE 4: Hero Images — Países en Search Console sin Imagen (2-3h)
+## PHASE 4: Hero Images — Países en Search Console sin Imagen (2-3h) [PENDIENTE]
 **Version**: v2.17.0
 **Por qué**: Estos países ya están siendo buscados pero sus páginas muestran el patrón CSS genérico en lugar de una landmark reconocible. Una hero image icónica mejora el tiempo en página y las compartidas.
 
@@ -401,7 +406,7 @@ Actualizar CHANGELOG.md con v2.17.0.
 
 ---
 
-## PHASE 5: Hero Images — Países Restantes Completo (3-4h)
+## PHASE 5: Hero Images — Países Restantes Completo (3-4h) [PENDIENTE]
 **Version**: v2.18.0
 **Por qué**: Completar la cobertura total del sitio. Con ~163 países aún sin hero image, esto es el trabajo de contenido más visible pendiente.
 
@@ -464,7 +469,7 @@ Actualizar CHANGELOG.md con v2.18.0.
 
 ---
 
-## PHASE 6: Fix UK Español — Posición 71.5 (1h)
+## PHASE 6: Fix UK Español — Posición 71.5 (1h) [PENDIENTE]
 **Version**: v2.19.0
 **Por qué**: El Reino Unido tiene el perfil de investigación más rico del sitio (44 fuentes, 4 activistas) pero la versión ES está en posición 71.5 — página 7. La versión EN no aparece en el top de queries. Esto sugiere un problema técnico o de contenido específico de la versión ES.
 
@@ -494,7 +499,7 @@ Actualizar CHANGELOG.md con v2.19.0.
 
 ---
 
-## PHASE 7: Re-Auditoría Completa — v3.0.0 (1-2h)
+## PHASE 7: Re-Auditoría Completa — v3.0.0 (1-2h) [PENDIENTE]
 **Version**: v3.0.0
 **Por qué**: Baseline nuevo para el siguiente ciclo. Comparar contra FULL-AUDIT-V2.md (7.9/10).
 
@@ -518,21 +523,21 @@ Compara scores contra docs/FULL-AUDIT-V2.md (7.9/10 baseline).
 
 ## EJECUCIÓN
 
-| Fase | Versión | Tiempo est. | Dependencias | Prioridad |
-|------|---------|-------------|--------------|-----------|
-| 1A. China JSON integration | v2.9.1 | 20 min | Ninguna | 🔴 Crítica |
-| 1B. Mobile 3D/2D persistence | v2.9.2 | 20 min | Ninguna | 🔴 Crítica |
-| 2. i18n Bug Sprint | v2.10.0 | 1-2h | Ninguna | 🟠 Alta |
-| 3A. Kazakhstan research | v2.11.0 | 2h | Ninguna | 🟠 Alta |
-| 3B. Russia research | v2.12.0 | 2h | Ninguna | 🟠 Alta |
-| 3C. Portugal research | v2.13.0 | 2h | Ninguna | 🟡 Media |
-| 3D. Turkey research | v2.14.0 | 2h | Ninguna | 🟡 Media |
-| 3E. UAE + India research | v2.15.0 | 3h | Ninguna | 🟡 Media |
-| 3F. Taiwan + Namibia research | v2.16.0 | 2h | Ninguna | 🟡 Media |
-| 4. Hero images (Search Console) | v2.17.0 | 2h | Ninguna | 🟡 Media |
-| 5. Hero images (todos) | v2.18.0 | 3-4h | Phase 4 | 🟢 Normal |
-| 6. UK ES fix | v2.19.0 | 1h | Ninguna | 🟡 Media |
-| 7. Re-Auditoría | v3.0.0 | 1-2h | Todo lo anterior | 🟢 Normal |
+| Fase | Versión | Tiempo est. | Dependencias | Prioridad | Estado |
+|------|---------|-------------|--------------|-----------|--------|
+| 1A. China JSON integration | v2.9.1 | 20 min | Ninguna | 🔴 Crítica | ✅ DONE 04-05 |
+| 1B. Mobile 3D/2D persistence | v2.9.2 | 20 min | Ninguna | 🔴 Crítica | ✅ DONE 04-05 |
+| 2. i18n Bug Sprint | v2.10.0 | 1-2h | Ninguna | 🟠 Alta | ✅ DONE 04-05 |
+| 3A. Kazakhstan research | v2.11.0 | 2h | Ninguna | 🟠 Alta | ✅ DONE 04-05 |
+| 3B. Russia research | v2.12.0 | 2h | Ninguna | 🟠 Alta | ✅ DONE 04-06 |
+| 3C. Portugal research | v2.13.0 | 2h | Ninguna | 🟡 Media | ✅ DONE 04-07 |
+| 3D. Turkey research | v2.14.0 | 2h | Ninguna | 🟡 Media | ⏳ PENDING |
+| 3E. UAE + India research | v2.15.0 | 3h | Ninguna | 🟡 Media | ⏳ PENDING |
+| 3F. Taiwan + Namibia research | v2.16.0 | 2h | Ninguna | 🟡 Media | ✅ DONE 04-09 |
+| 4. Hero images (Search Console) | v2.17.0 | 2h | Ninguna | 🟡 Media | ⏳ PENDING |
+| 5. Hero images (todos) | v2.18.0 | 3-4h | Phase 4 | 🟢 Normal | ⏳ PENDING |
+| 6. UK ES fix | v2.19.0 | 1h | Ninguna | 🟡 Media | ⏳ PENDING |
+| 7. Re-Auditoría | v3.0.0 | 1-2h | Todo lo anterior | 🟢 Normal | ⏳ PENDING |
 
 **Total estimado**: ~22-26 horas de trabajo con Claude Code
 **Target score**: 8.5–9.0/10 (desde 7.9 actual)
@@ -543,15 +548,15 @@ Compara scores contra docs/FULL-AUDIT-V2.md (7.9/10 baseline).
 
 Al completar este roadmap, el proyecto debe tener:
 
-| Métrica | Hoy (v2.9.0) | Target (v3.0.0) |
-|---------|--------------|-----------------|
-| Países con research profundo | 8 | 16+ |
-| Países con hero image | 37 | 200 |
-| Score global auditoría | 7.9/10 | 8.5+/10 |
-| Posición China ("is asbestos banned in china") | 10.65 | <7 |
-| Posición UK ES | 71.5 | <20 |
-| Preferencia 3D/2D persistida | ❌ | ✅ |
-| Bugs i18n pendientes | 5 | 0 |
+| Métrica | Hoy (v2.9.0) | Actual (v2.16.0) | Target (v3.0.0) |
+|---------|-------------|---|-----------------|
+| Países con research profundo | 8 | 10 (KZ, RU, PT, TW, NA) | 16+ |
+| Países con hero image | 37 | 37 | 200 |
+| Score global auditoría | 7.9/10 | — | 8.5+/10 |
+| Posición China | 10.65 | — | <7 |
+| Posición UK ES | 71.5 | — | <20 |
+| Preferencia 3D/2D persistida | ❌ | ✅ | ✅ |
+| Bugs i18n pendientes | 5 | 0 | 0 |
 
 ---
 

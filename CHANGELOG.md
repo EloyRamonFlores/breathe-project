@@ -4,6 +4,93 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v2.16.0] — 2026-04-09 — Taiwan & Namibia Research Profiles (Phase 3F)
+
+### Taiwan countries.json Integration
+- **ban_year**: `2019` → `2018` (corrected — total ban effective January 1, 2018; confirmed via IBAS, PMC5664741, ChemLinked. The "2019" date in the previous entry likely referred to a specific import restriction, not the substantive use ban)
+- **ban_details** / **ban_details_es**: expanded from 1-line placeholder to full context: 668,000 tonnes consumed 1939–2015; crocidolite/amosite banned 1997; phased elimination 2012–2018; Kaohsiung world's largest shipbreaking center 1977–1988; 389 factories employing 183,560 workers; predicted 659 new mesothelioma cases 2017–2046; 2025 Typhoon Danas emergency cleanup (NT$1.487 billion, 27,978 tonnes removed); import ban May 2023
+- **timeline**: `[]` → 9 richly sourced events (1981 first PEL → 1989 TCSCA Class 2 designation → 1997 crocidolite/amosite ban → 2009 first Taipei Declaration → 2012 phased elimination schedule → 2015 TOSHLINK/Labor Front advocacy campaign → 2018 total ban → 2023 import ban → 2025 Typhoon Danas emergency)
+- **peak_usage_era**: `"1970s-2000s"` → `"1960s–1990s"` (aligned with foundational building boom and shipbreaking peak)
+- **common_materials**: 4 → 7 items (added thermal insulation, pipe lagging/gaskets, asbestos textiles, sealants/construction joint fillers)
+- **common_materials_es**: added parallel Spanish translations for all 7 materials
+- **estimated_buildings_at_risk**: `null` → populated (hundreds of thousands of 公寓 apartment buildings from 1960s–70s boom; 27,978 tonnes debris from Typhoon Danas; 668,000 tonnes total consumed)
+- **priority**: `"medium"` → `"high"` (13 GSC impressions, pos 6.62; rich research base; predicted mesothelioma epidemic)
+- **resistance_stories**: `[]` → 2 stories (Cheng Ya-wen — TOSHLINK director, NTU professor, led advocacy campaign; Jung-Der Wang — NCKU professor, led 29-year cohort study of 160,640 workers)
+- **sources**: 1 → 10 (IBAS, PMC×4, PLOS ONE, Taipei Times, Focus Taiwan, CHA.gov.tw, ChemLinked)
+
+### Namibia countries.json Integration
+- **ban_details** / **ban_details_es**: expanded from "No regulatory data available" to comprehensive context: Asbestos Regulations under Labour Act (GN 156 of 1997, Schedule 2); 1969 Windhoek Building Regulations recognized asbestos-cement as standard material; primary exposure via imported South African materials and migrant workers in Northern Cape crocidolite mines (Prieska–Kuruman belt); workers' disease experiences systematically excluded from SA statistics; 2024 Draft OSH Bill modernizes framework but no asbestos ban confirmed
+- **timeline**: `[]` → 4 events (1969 Windhoek Building Regulations → 1990 independence from SA → 1997 Asbestos Regulations under Labour Act → 2024 Draft OSH Bill)
+- **peak_usage_era**: `"1970s-2000s"` → `"1950s–1980s"` (aligned with South African administration period)
+- **common_materials**: 2 → 3 items (added thermal insulation in mining infrastructure; noted SA import origin)
+- **common_materials_es**: added parallel Spanish translations
+- **estimated_buildings_at_risk**: `null` → populated (unquantified; buildings from 1950s–80s SA administration in Windhoek, Walvis Bay, Swakopmund; 1969 regulations confirm asbestos-cement use; no national inventory)
+- **priority**: `"low"` → `"medium"` (11 GSC impressions, pos 7.36; unique SA migrant labor story)
+- **sources**: 1 → 7 (IBAS, PMC×2, NamibLII, Windhoek CC, ENSafrica, MOL.gov.na)
+
+### Taiwan Research Profile
+- Created `docs/research/taiwan-research.md` — comprehensive investigative profile (20 sources)
+- Key findings: 668,000 tonnes of asbestos consumed 1939–2015; 37-year regulatory journey (1981 first PEL → 2018 total ban); Kaohsiung was world's largest shipbreaking center 1977–1988 (65% of global obsolete vessels); 183,560 workers across 389 asbestos factories; 29-year cohort study found 2.65× SIR for mesothelioma (up to 258× in individual factories); predicted 659 new MPM cases 2017–2046; Bureau of Labor Insurance recognized <5 asbestos cases/year despite 160,000+ exposed workers; Cheng Ya-wen (NTU/TOSHLINK) and Jung-Der Wang (NCKU) led the scientific advocacy that drove the ban; two Taipei Declarations (2009, 2011); 2025 Typhoon Danas caused asbestos emergency — NT$1.487B budget, 27,978 tonnes cleared
+- Ban year corrected from 2019 → 2018 (verified via IBAS, PMC5664741, ChemLinked)
+
+### Namibia Research Profile
+- Created `docs/research/namibia-research.md` — investigative profile (17 sources)
+- Confidence: LOW — limited Namibia-specific sources; most data inferred from regional South African context
+- Key findings: Not on IBAS ban list; has Asbestos Regulations under Labour Act (GN 156/1997) but content unverifiable digitally; 1969 Windhoek Building Regulations explicitly accepted asbestos-cement as standard roofing; no domestic asbestos manufacturing — all imported from South Africa; Namibian migrant workers employed in SA Northern Cape crocidolite mines had disease experiences "systematically excluded from South African statistics" (McCulloch, 2005); natural crocidolite deposits in Kunene Region (Outjo) mined primarily for pietersite/tiger's eye; no mesothelioma mortality data available; 2024 Draft OSH Bill proposes framework overhaul but no asbestos-specific ban
+- Critical gap flagged: GN 156/1997 Schedule 2 Asbestos Regulations text needs physical access or Ministry of Labour contact to verify scope
+
+### Bug Fix
+- Fixed missing `source_url` on India's Gopal Krishna resistance_story entry (from v2.15.0) that caused data-integrity test failure
+
+### Verification
+- 81 tests pass
+
+---
+
+## [v2.13.1] — 2026-04-08 — Security Fix: JsonLd XSS
+
+### Security
+- **Fixed XSS vulnerability in `JsonLd` component** (`src/app/[locale]/country/[slug]/page.tsx`)
+  - `JSON.stringify` does not escape `<`, `>`, or `&` by default. If any country data value ever contained a sequence like `</script>`, it could break out of the JSON-LD `<script>` block and execute arbitrary HTML/JS.
+  - Fix: added `.replace()` calls after `JSON.stringify` to escape `<` → `\u003c`, `>` → `\u003e`, `&` → `\u0026` — the standard safe-JSON pattern used by frameworks like Express and Django.
+  - Corrected misleading comment that claimed `JSON.stringify` handled this escaping automatically.
+  - No behavior change for users; purely a hardening measure.
+
+### Verification
+- No regressions — existing 78 tests still pass (fix is in a rendering utility, not in calculator or data logic).
+
+---
+
+## [v2.13.0] — 2026-04-07 — Portugal Research Profile
+
+### Portugal countries.json Integration
+- **ban_details** / **ban_details_es**: expanded from 1-line placeholder to full industrial context: Lusalite (Cruz Quebrada, founded 1933), Cimianto (São Mamede de Infesta, founded 1942), Novinco (Alhandra/Leça do Balio, founded 1945); ~115,000 tonnes consumed 1930–2003; Portugal and Greece last EU-15 members using chrysotile at the Jan 1, 2005 deadline; missed December 2025 EU worker exposure limit deadline
+- **timeline**: `[]` → 12 richly sourced events (1933 Lusalite founding → 1942 Cimianto → 1989 DL 284/89 worker protection → 1999 EU phase-out derogation → 2003 Parliamentary Resolution 24/2003 → 2005 full ban DL 101/2005 → 2007 DL 266/2007 worker safety → 2016 CGTP-IN factory vigils → 2018 SOS Amianto founding → 2019 EU Parliament enforcement questions → 2023 SOS Amianto formal association → 2025 missed EU directive deadline)
+- **peak_usage_era**: `"1960s-1990s"` → `"1960s–2004"` (production continued to the ban date)
+- **common_materials**: 4 → 8 items (added chapas onduladas, cladding panels, prefabricated housing components, shipyard pipe lagging/boiler insulation, gaskets, friction materials)
+- **common_materials_es**: added parallel Spanish translations for all 8 materials
+- **estimated_buildings_at_risk**: `null` → populated (~600,000 hectares fiber cement roofing; 115,000 tonnes used 1930–2003; no national removal program)
+- **mesothelioma_rate**: `null` → `0.2` per 100,000 (crude rate, 2014–2020 avg.; 0.4 men, 0.1 women)
+- **mesothelioma_source_year**: `null` → `2020` (end of PMC study period)
+- **priority**: `"medium"` → `"high"` (37 GSC impressions, pos 6.35; rich industrial history; Brazil language connection)
+- **resistance_stories**: `[]` → 2 stories (SOS Amianto — first Portuguese asbestos victims' org, 2018; CGTP-IN — secured Parliamentary Resolution 24/2003, led 2016 factory vigils)
+- **sources**: 1 → 10 (PMC, CGTP-IN, IBAS, SOS Amianto, EU Parliament×2, Público, AbrilAbril, Restosdecoleccao, Diário da República)
+
+### Portugal Research Profile
+- Created `docs/research/portugal-research.md` — comprehensive investigative profile (37 sources)
+- Key findings: Portugal consumed 115,000 tonnes of asbestos 1930–2003 (2.04 kg/capita at 1980 peak); 315 pleural mesothelioma cases 2014–2020, 169 deaths; 97% underreporting of mesothelioma as occupational disease (2000–2011 study); Lisbon & Tagus Valley = 47% of all mesothelioma cases (consistent with Lisnave and Setenave shipyard occupational exposure); Lusalite (founded 1933 by Raúl Abecassis) was the dominant producer for 7 decades, closed 2000–2001 rather than convert to alternatives; three companies (Lusalite, Cimianto, Novinco) created AIPA industry lobby in 1980s to resist bans; SOS Amianto founded 2018 as Portugal's first dedicated victims' organization, formalized April 2023
+- Critical fact flagged: "Eternit Portugal (Amiantos SA)" named in research brief could not be confirmed in verified Portuguese sources — the five fibrocement companies are Lusalite, Cimianto, Novinco, Amiantit, and Fibrolite; human follow-up recommended via RNPC (Portuguese corporate registry)
+- Brazil connection documented: both countries used asbestos massively (shared language, both Eternit-linked industries, both had late bans vs. Northern Europe); Brazil's STF ban campaign resonates in Portuguese-speaking world
+- Current crisis: Portugal missed December 2025 EU directive transposition deadline; workers exposed at 10× higher risk than updated EU standard
+
+### SEO Note
+- Portugal ES content at pos 6.35 / 37 impressions: the new richly bilingual ban_details_es, 12 timeline event_es fields, and 2 resistance stories should materially improve ES page content depth and keyword coverage for "amianto Portugal"
+
+### Verification
+- 81 tests pass
+
+---
+
 ## [v2.12.0] — 2026-04-06 — Russia Research Profile
 
 ### Russia countries.json Integration

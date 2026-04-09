@@ -171,7 +171,8 @@
         "quote_es": null,
         "quote_source": null,
         "role_type": "advocate",
-        "photo_url": null
+        "photo_url": null,
+        "source_url": "https://www.ibasecretariat.org/india-asbestos-ban-campaign.php"
       }
     ]
   },
@@ -4419,29 +4420,177 @@
     "iso3": "TWN",
     "region": "Asia",
     "ban_status": "full_ban",
-    "ban_year": 2019,
-    "ban_details": "Complete ban on all asbestos-containing products effective February 1, 2019 under the Toxic Chemical Substances Control Act.",
+    "ban_year": 2018,
+    "ban_details": "Complete ban on all asbestos types effective January 1, 2018 under the Toxic Chemical Substances Control Act (TCSCA). Crocidolite and amosite banned since 1997; chrysotile and all remaining forms banned 2018. Phased elimination 2012–2018 covering cement panels, roof tiles, brake linings. Import of asbestos-containing products banned May 2023. Taiwan consumed 668,000 metric tons of asbestos (1939–2015), peaking in the 1980s. Kaohsiung was the world's largest shipbreaking center (1977–1988) with massive occupational exposure. 389 asbestos-related factories employed 183,560 workers. Predicted 659 new mesothelioma cases 2017–2046. In 2025, Typhoon Danas damaged aging asbestos roofing across central/southern Taiwan; NT$1.487 billion allocated for emergency cleanup.",
+    "ban_details_es": "Prohibición total de todos los tipos de asbesto desde el 1 de enero de 2018 bajo la Ley de Control de Sustancias Químicas Tóxicas (TCSCA). Crocidolita y amosita prohibidas desde 1997; crisotilo prohibido en 2018. Eliminación gradual 2012–2018 cubriendo paneles de cemento, tejas, pastillas de freno. Importación de productos con asbesto prohibida desde mayo 2023. Taiwán consumió 668.000 toneladas métricas de asbesto (1939–2015), con pico en los años 1980. Kaohsiung fue el mayor centro de desguace de barcos del mundo (1977–1988) con exposición ocupacional masiva. 389 fábricas relacionadas con asbesto emplearon 183.560 trabajadores. Se predicen 659 nuevos casos de mesotelioma 2017–2046. En 2025, el tifón Danas dañó techos de asbesto envejecidos en el centro/sur de Taiwán; NT$1.487 mil millones asignados para limpieza de emergencia.",
     "exceptions": [],
-    "timeline": [],
-    "peak_usage_era": "1970s-2000s",
+    "timeline": [
+      {
+        "year": 1981,
+        "event": "Ministry of Labor established first asbestos permissible exposure limit (PEL) at 5 fiber/cc",
+        "event_es": "Ministerio de Trabajo estableció el primer límite de exposición permisible (PEL) al asbesto de 5 fibras/cc",
+        "type": "regulation",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5664741/"
+      },
+      {
+        "year": 1989,
+        "event": "EPA designated asbestos as Class 2 toxic chemical substance under TCSCA; facilities handling ACMs ≥15% w/w must comply",
+        "event_es": "La EPA designó el asbesto como sustancia química tóxica Clase 2 bajo la TCSCA; instalaciones que manejan MCA ≥15% p/p deben cumplir",
+        "type": "regulation",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5664741/"
+      },
+      {
+        "year": 1997,
+        "event": "Banned crocidolite and amosite use (except R&D/testing/education); ACM threshold lowered to 1% w/w",
+        "event_es": "Prohibido el uso de crocidolita y amosita (excepto I+D/ensayos/educación); umbral de MCA reducido a 1% p/p",
+        "type": "partial_ban",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5664741/"
+      },
+      {
+        "year": 2009,
+        "event": "First Taipei Declaration signed by participants from 5 countries calling for Asian asbestos bans",
+        "event_es": "Primera Declaración de Taipéi firmada por participantes de 5 países pidiendo prohibiciones del asbesto en Asia",
+        "type": "other",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5664741/"
+      },
+      {
+        "year": 2012,
+        "event": "EPA announced phased elimination schedule: cement panels (Aug 2012), roof tiles (Feb 2013), brake linings (Jul 2018)",
+        "event_es": "La EPA anunció calendario de eliminación gradual: paneles de cemento (ago 2012), tejas (feb 2013), pastillas de freno (jul 2018)",
+        "type": "regulation",
+        "source_url": "https://www.kazanlaw.com/plan-to-fully-ban-asbestos-in-taiwan-underway/"
+      },
+      {
+        "year": 2015,
+        "event": "TOSHLINK and Taiwan Labor Front organized major advocacy campaign pressing for immediate total ban",
+        "event_es": "TOSHLINK y el Frente Laboral de Taiwán organizaron una campaña de defensa importante presionando por una prohibición total inmediata",
+        "type": "other",
+        "source_url": "https://www.taipeitimes.com/News/taiwan/archives/2015/12/22/2003635393"
+      },
+      {
+        "year": 2018,
+        "event": "Total ban on all asbestos use effective January 1. Taiwan became 62nd country with a national asbestos ban",
+        "event_es": "Prohibición total de todo uso de asbesto vigente desde el 1 de enero. Taiwán se convirtió en el país número 62 con prohibición nacional de asbesto",
+        "type": "ban",
+        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+      },
+      {
+        "year": 2023,
+        "event": "Import ban on asbestos-containing products effective May 2023; customs border inspections reinforced",
+        "event_es": "Prohibición de importación de productos con asbesto vigente desde mayo 2023; inspecciones aduaneras reforzadas",
+        "type": "ban",
+        "source_url": "https://focustaiwan.tw/business/202210040030"
+      },
+      {
+        "year": 2025,
+        "event": "Typhoon Danas damaged aging asbestos roofing across central/southern Taiwan; NT$1.487 billion allocated for emergency cleanup; 27,978 tonnes removed by Jan 2026",
+        "event_es": "El tifón Danas dañó techos de asbesto envejecidos en el centro/sur de Taiwán; NT$1.487 mil millones asignados para limpieza de emergencia; 27.978 toneladas removidas para enero de 2026",
+        "type": "other",
+        "source_url": "https://www.cha.gov.tw/cp-193-7031-7feae-2.html"
+      }
+    ],
+    "peak_usage_era": "1960s–1990s",
     "common_materials": [
       "asbestos-cement roofing sheets",
-      "asbestos-cement flat sheets",
-      "brake linings",
-      "friction materials"
+      "asbestos-cement flat sheets and roof tiles",
+      "brake linings and friction materials",
+      "thermal insulation",
+      "pipe lagging and gaskets",
+      "asbestos textiles",
+      "sealants and construction joint fillers"
     ],
-    "estimated_buildings_at_risk": null,
+    "common_materials_es": [
+      "láminas de techado de asbesto-cemento",
+      "láminas planas y tejas de asbesto-cemento",
+      "pastillas de freno y materiales de fricción",
+      "aislamiento térmico",
+      "revestimiento de tuberías y juntas",
+      "textiles de asbesto",
+      "selladores y materiales de juntas de construcción"
+    ],
+    "estimated_buildings_at_risk": "Hundreds of thousands of 4-5 story apartment buildings (公寓) built during 1960s-1970s foundational building boom contain asbestos-cement roofing and cladding; no national inventory exists. 2025 Typhoon Danas scattered 27,978 tonnes of asbestos waste across central/southern Taiwan. 668,000 tonnes consumed 1939–2015.",
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "medium",
+    "priority": "high",
+    "resistance_stories": [
+      {
+        "name": "Cheng Ya-wen",
+        "years": "2009–2018",
+        "role": "Director, Taiwan Occupational Safety and Health Link; Professor of Health Policy at National Taiwan University. Led advocacy campaign for total asbestos ban alongside international networks.",
+        "role_es": "Directora del Enlace de Seguridad y Salud Ocupacional de Taiwán; Profesora de Política de Salud en la Universidad Nacional de Taiwán. Lideró la campaña de defensa para la prohibición total del asbesto.",
+        "achievement": "Co-organized the advocacy movement that pressured EPA to maintain the 2018 ban deadline; documented the systemic invisibility of asbestos-related diseases in Taiwan's workers' compensation system.",
+        "achievement_es": "Coorganizó el movimiento de defensa que presionó a la EPA para mantener el plazo de prohibición de 2018; documentó la invisibilidad sistémica de las enfermedades relacionadas con el asbesto en el sistema de compensación laboral de Taiwán.",
+        "quote": "Asbestos is the primary cause of occupational cancer... the situation is ongoing and on the rise, but the government has not taken proper measures regarding workers' asbestos exposure and disease management.",
+        "quote_es": "El asbesto es la causa principal del cáncer ocupacional... la situación continúa y va en aumento, pero el gobierno no ha tomado medidas adecuadas respecto a la exposición de los trabajadores al asbesto y la gestión de enfermedades.",
+        "quote_source": "Taipei Times, December 22, 2015",
+        "quote_source_es": "Taipei Times, 22 de diciembre de 2015",
+        "source_url": "https://www.taipeitimes.com/News/taiwan/archives/2015/12/22/2003635393",
+        "role_type": "scientist"
+      },
+      {
+        "name": "Jung-Der Wang",
+        "years": "1980–2018",
+        "role": "Professor of Occupational and Environmental Medicine, National Cheng Kung University Hospital. Led the 29-year cohort study of 160,640 asbestos workers that provided the scientific evidence base for Taiwan's ban.",
+        "role_es": "Profesor de Medicina Ocupacional y Ambiental, Hospital Universitario Nacional Cheng Kung. Dirigió el estudio de cohorte de 29 años de 160.640 trabajadores de asbesto que proporcionó la base científica para la prohibición en Taiwán.",
+        "achievement": "Landmark epidemiological studies demonstrated 5.9-fold to 258-fold increased mesothelioma risk in specific industries; predicted 659 new mesothelioma cases in Taiwan over the next 30 years.",
+        "achievement_es": "Estudios epidemiológicos históricos demostraron un riesgo de mesotelioma aumentado de 5,9 a 258 veces en industrias específicas; predijo 659 nuevos casos de mesotelioma en Taiwán en los próximos 30 años.",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4531167/",
+        "role_type": "scientist"
+      }
+    ],
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
         "accessed": "2026-03-13"
+      },
+      {
+        "name": "PMC — Transnational Dynamics Amid Poor Regulations: Taiwan's Asbestos Ban (Cheng et al., 2017)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5664741/",
+        "accessed": "2026-04-09"
+      },
+      {
+        "name": "PMC — Increased SIR of MPM in Taiwanese Asbestos Workers (Lin et al., 2015)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4531167/",
+        "accessed": "2026-04-09"
+      },
+      {
+        "name": "PMC — Clustering of MPM in asbestos factories in Taiwan (Wu et al., 2018)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6303649/",
+        "accessed": "2026-04-09"
+      },
+      {
+        "name": "PubMed — Upcoming epidemic of asbestos-related MPM in Taiwan (Wu et al., 2018)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30072200/",
+        "accessed": "2026-04-09"
+      },
+      {
+        "name": "PLOS ONE — Cancer in Shipbreaking Workers (Wu et al., 2015)",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133128",
+        "accessed": "2026-04-09"
+      },
+      {
+        "name": "Taipei Times — Labor advocacy groups call for ban on asbestos (Dec 2015)",
+        "url": "https://www.taipeitimes.com/News/taiwan/archives/2015/12/22/2003635393",
+        "accessed": "2026-04-09"
+      },
+      {
+        "name": "Focus Taiwan — Imports of asbestos-containing products banned (Oct 2022)",
+        "url": "https://focustaiwan.tw/business/202210040030",
+        "accessed": "2026-04-09"
+      },
+      {
+        "name": "CHA.gov.tw — Ministry of Environment Asbestos Roof Tile Removal (2025)",
+        "url": "https://www.cha.gov.tw/cp-193-7031-7feae-2.html",
+        "accessed": "2026-04-09"
+      },
+      {
+        "name": "ChemLinked — Blanket Ban on Asbestos in Taiwan from 1 Jan 2018",
+        "url": "https://chemical.chemlinked.com/news/chemical-news/blanket-ban-asbestos-taiwan-1-jan-2018",
+        "accessed": "2026-04-09"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-04-09"
   },
   {
     "slug": "turkey",
@@ -6304,26 +6453,93 @@
     "region": "Africa",
     "ban_status": "unknown",
     "ban_year": null,
-    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "ban_details": "No national asbestos ban confirmed. Namibia has Asbestos Regulations under the Labour Act (Government Notice 156 of 1997, Schedule 2) that address occupational exposure, but their specific provisions could not be verified from public digital sources. Not on the IBAS ban list. The 1969 Windhoek Building Regulations listed asbestos-cement sheets as standard roofing material. Namibia's primary asbestos exposure came through imported South African building materials and through Namibian migrant workers employed in South African Northern Cape crocidolite mines (Prieska–Kuruman belt). These workers' disease experiences were systematically excluded from South African health statistics. A 2024 Draft OSH Bill proposes modernizing the occupational health framework but does not appear to include an asbestos ban.",
+    "ban_details_es": "No se confirma prohibición nacional del asbesto. Namibia tiene Regulaciones de Asbesto bajo la Ley Laboral (Aviso Gubernamental 156 de 1997, Anexo 2) que abordan la exposición ocupacional, pero sus disposiciones específicas no pudieron verificarse desde fuentes digitales públicas. No está en la lista de prohibiciones de IBAS. Las Regulaciones de Construcción de Windhoek de 1969 listaban láminas de asbesto-cemento como material estándar de techado. La principal exposición al asbesto en Namibia provino de materiales de construcción importados de Sudáfrica y de trabajadores migrantes namibios empleados en minas de crocidolita del Cabo Norte sudafricano (cinturón Prieska–Kuruman). Las experiencias de enfermedad de estos trabajadores fueron sistemáticamente excluidas de las estadísticas de salud sudafricanas. Un proyecto de Ley de SST de 2024 propone modernizar el marco de salud ocupacional pero no parece incluir una prohibición del asbesto.",
     "exceptions": [],
-    "timeline": [],
-    "peak_usage_era": "1970s-2000s",
-    "common_materials": [
-      "asbestos-cement roofing sheets",
-      "asbestos-cement flat sheets"
+    "timeline": [
+      {
+        "year": 1969,
+        "event": "Windhoek Building Regulations listed asbestos-cement sheets as standard roofing material for 'light roof construction'",
+        "event_es": "Las Regulaciones de Construcción de Windhoek listaron láminas de asbesto-cemento como material estándar de techado para 'construcción ligera de techos'",
+        "type": "other",
+        "source_url": "https://www.windhoekcc.org.na/wp-content/uploads/2023/11/Windhoek-Building-Regulations.pdf"
+      },
+      {
+        "year": 1990,
+        "event": "Namibia gains independence from South Africa, inheriting colonial regulatory framework for occupational health",
+        "event_es": "Namibia obtiene la independencia de Sudáfrica, heredando el marco regulatorio colonial para salud ocupacional",
+        "type": "other",
+        "source_url": "https://namiblii.org/akn/na/act/gn/1997/156/eng@1997-08-01"
+      },
+      {
+        "year": 1997,
+        "event": "Asbestos Regulations established under Labour Act as part of Health and Safety Regulations (GN 156 of 1997, Schedule 2)",
+        "event_es": "Regulaciones de Asbesto establecidas bajo la Ley Laboral como parte de las Regulaciones de Salud y Seguridad (AN 156 de 1997, Anexo 2)",
+        "type": "regulation",
+        "source_url": "https://namiblii.org/akn/na/act/gn/1997/156/eng@1997-08-01"
+      },
+      {
+        "year": 2024,
+        "event": "Draft Occupational Safety and Health Bill proposed to overhaul OSH framework; extends record-keeping to 45 years for accidents, 30 years for disease exposure",
+        "event_es": "Proyecto de Ley de Seguridad y Salud Ocupacional propuesto para reformar el marco de SST; extiende conservación de registros a 45 años para accidentes, 30 años para exposición a enfermedades",
+        "type": "regulation",
+        "source_url": "https://mol.gov.na/documents/53329/0/NAM+OSH+Bill+FIRST+DRAFT+2024+(1).pdf/14fe60f2-5069-1df5-1eda-d1e91c3f0166"
+      }
     ],
-    "estimated_buildings_at_risk": null,
+    "peak_usage_era": "1950s–1980s",
+    "common_materials": [
+      "asbestos-cement roofing sheets (imported from South Africa)",
+      "asbestos-cement flat sheets and pipes",
+      "thermal insulation in mining infrastructure"
+    ],
+    "common_materials_es": [
+      "láminas de techado de asbesto-cemento (importadas de Sudáfrica)",
+      "láminas planas y tuberías de asbesto-cemento",
+      "aislamiento térmico en infraestructura minera"
+    ],
+    "estimated_buildings_at_risk": "Unquantified. Buildings constructed during South African administration (1950s–1980s) in Windhoek, Walvis Bay, Swakopmund, and other urban centers used imported asbestos-cement roofing. The 1969 Windhoek Building Regulations listed asbestos-cement sheets as standard 'light roof construction' material. No national building inventory exists.",
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
-    "priority": "low",
+    "priority": "medium",
+    "resistance_stories": [],
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
         "accessed": "2026-03-13"
+      },
+      {
+        "name": "PMC — Asbestos-Related Disease in South Africa: Invisible Epidemic (McCulloch, 2005)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1522094/",
+        "accessed": "2026-04-09"
+      },
+      {
+        "name": "NamibLII — Health and Safety Regulations GN 156 of 1997",
+        "url": "https://namiblii.org/akn/na/act/gn/1997/156/eng@1997-08-01",
+        "accessed": "2026-04-09"
+      },
+      {
+        "name": "Windhoek City Council — Building Regulations (G/N 57 of 1969)",
+        "url": "https://www.windhoekcc.org.na/wp-content/uploads/2023/11/Windhoek-Building-Regulations.pdf",
+        "accessed": "2026-04-09"
+      },
+      {
+        "name": "ENSafrica — Namibia's OSH legal framework overhauled (2024)",
+        "url": "https://www.ensafrica.com/news/detail/10359/namibias-occupational-safety-and-health-legal",
+        "accessed": "2026-04-09"
+      },
+      {
+        "name": "MOL.gov.na — Draft OSH Bill (May 2024)",
+        "url": "https://mol.gov.na/documents/53329/0/NAM+OSH+Bill+FIRST+DRAFT+2024+(1).pdf/14fe60f2-5069-1df5-1eda-d1e91c3f0166",
+        "accessed": "2026-04-09"
+      },
+      {
+        "name": "PMC — Compensation for environmental asbestos-related diseases in South Africa (Braun et al., 2013)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3556709/",
+        "accessed": "2026-04-09"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-04-09"
   },
   {
     "slug": "niger",
