@@ -4601,86 +4601,189 @@
     "region": "Europe",
     "ban_status": "full_ban",
     "ban_year": 2010,
-    "ban_details": "Complete ban on all asbestos production, import, supply, and use effective December 31, 2010, under the Regulation on Health and Safety Measures Regarding the Use of Asbestos. A partial ban had been in place since 2005. Turkey was both a consumer and producer of asbestos, with natural deposits in Anatolia. The Cappadocia region experienced an unprecedented mesothelioma epidemic, with ~50% of deaths in three villages caused by mesothelioma. The ban aligned Turkey with EU standards.",
-    "ban_details_es": "Prohibición total de toda producción, importación, suministro y uso de asbesto a partir del 31 de diciembre de 2010, bajo el Reglamento sobre Medidas de Salud y Seguridad respecto al Uso de Asbesto. Una prohibición parcial existía desde 2005. Turquía fue tanto consumidor como productor de asbesto, con depósitos naturales en Anatolia. La región de Capadocia experimentó una epidemia de mesotelioma sin precedentes, con ~50% de las muertes en tres aldeas causadas por mesotelioma. La prohibición alineó a Turquía con los estándares de la UE.",
+    "ban_details": "Complete ban on all asbestos production, import, supply, and use effective December 31, 2010, under the Regulation on Health and Safety Measures Regarding the Use of Asbestos (Official Gazette, August 29, 2010) — fulfilling Turkey's EU accession candidacy obligations under Directive 1999/77/EC. Restrictions began with a crocidolite import ban in 1993; all amphibole forms were banned in 2001 under the Tehlikeli Kimyasallar Yönetmeliği (OG 24379); chrysotile was phased out from 2005 with a grace period for friction products. Turkey consumed an estimated 1.2 million tonnes of asbestos between 1900 and 2003. The Cappadocia region experienced an extraordinary mesothelioma epidemic: ~50% of deaths in three villages (Karain, Tuzkoy, Sarihidir) were caused by mesothelioma, primarily from erionite — a naturally occurring fibrous zeolite mineral rather than asbestos. National surveillance (TUNMES-EAECP, 2008–2012) identified 5,617 mesothelioma cases and 379 villages with continuing environmental asbestos/mineral fiber exposure affecting ~158,068 people. The February 2023 earthquakes generated 116–200 million tonnes of rubble from pre-ban buildings, releasing asbestos fibers with inadequate worker protection.",
+    "ban_details_es": "Prohibición total de toda producción, importación, suministro y uso de asbesto a partir del 31 de diciembre de 2010, bajo el Reglamento sobre Medidas de Salud y Seguridad en el Uso del Asbesto — cumpliendo con las obligaciones de candidatura a la UE según la Directiva 1999/77/CE. Las restricciones comenzaron con la prohibición de importar crocidolita en 1993; en 2001 se prohibieron todos los anfíboles bajo la Tehlikeli Kimyasallar Yönetmeliği; el crisotilo se eliminó gradualmente desde 2005. Turquía consumió aproximadamente 1,2 millones de toneladas de asbesto entre 1900 y 2003. La región de Capadocia vivió una epidemia de mesotelioma sin precedentes: ~50% de los fallecidos en tres aldeas murieron de mesotelioma, causado principalmente por erionita, un mineral zeolítico fibroso de origen geológico. El programa nacional TUNMES-EAECP (2008–2012) identificó 5.617 casos y 379 aldeas con exposición ambiental continua que afecta a ~158.068 personas. Los terremotos de febrero de 2023 generaron entre 116 y 200 millones de toneladas de escombros de edificios anteriores a la prohibición.",
     "exceptions": [],
     "timeline": [
       {
         "year": 1975,
-        "event": "Discovery of the Cappadocia mesothelioma epidemic in Karain village, where ~50% of all deaths were caused by mesothelioma from environmental erionite and asbestos exposure",
-        "event_es": "Descubrimiento de la epidemia de mesotelioma en Capadocia en la aldea de Karain, donde ~50% de todas las muertes eran causadas por mesotelioma debido a exposición ambiental a erionita y asbesto",
+        "event": "Prof. Y.I. Baris travels to Karain village, Cappadocia, and diagnoses 12 mesothelioma patients in a single visit — a rate roughly 1,000 times higher than comparable central Anatolian villages. The epidemic is later attributed primarily to erionite, a naturally occurring fibrous zeolite mineral, rather than asbestos.",
+        "event_es": "El prof. Y.I. Baris viaja a la aldea de Karain, Capadocia, y diagnostica 12 pacientes de mesotelioma en una sola visita, una tasa unas 1.000 veces superior a la de aldeas comparables de Anatolia central. La epidemia se atribuye posteriormente principalmente a la erionita, un mineral zeolítico fibroso de origen geológico.",
         "type": "other",
         "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5497117/"
       },
       {
         "year": 1978,
-        "event": "Professor Y.I. Baris publishes Cappadocia mesothelioma findings in Thorax journal, drawing international attention to Turkey's asbestos crisis",
-        "event_es": "El profesor Y.I. Baris publica hallazgos sobre mesotelioma en Capadocia en la revista Thorax, atrayendo atención internacional a la crisis de asbesto en Turquía",
+        "event": "Baris et al. publish the Cappadocia mesothelioma findings in Thorax, drawing international scientific attention. Findings ultimately change global understanding of mineral fiber carcinogenesis and inform IARC's Group 1 classification of erionite.",
+        "event_es": "Baris et al. publican los hallazgos sobre el mesotelioma de Capadocia en Thorax, atrayendo atención científica internacional. Los resultados cambian la comprensión global de la carcinogénesis por fibras minerales e informan la clasificación del erionita como Grupo 1 por la IARC.",
         "type": "other",
-        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5497117/"
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/28706907/"
+      },
+      {
+        "year": 1993,
+        "event": "Crocidolite (blue asbestos) prohibited from import under the Zararlı Kimyasal Madde ve Ürünlerin Kontrolü Yönetmeliği — Turkey's first statutory restriction on any asbestos form.",
+        "event_es": "La crocidolita (asbesto azul) queda prohibida de importar bajo la Zararlı Kimyasal Madde ve Ürünlerin Kontrolü Yönetmeliği — primera restricción estatutaria de Turquía sobre cualquier forma de asbesto.",
+        "type": "partial_ban",
+        "source_url": "https://www.csgb.gov.tr/isgum/asbest/"
       },
       {
         "year": 2001,
-        "event": "Ministry of Health approves relocation of Cappadocia villages (Karain, Tuzkoy, Sarihidir) affected by the mesothelioma epidemic",
-        "event_es": "El Ministerio de Salud aprueba la reubicación de aldeas de Capadocia (Karain, Tuzkoy, Sarihidir) afectadas por la epidemia de mesotelioma",
-        "type": "regulation",
-        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5497117/"
+        "event": "Tehlikeli Kimyasallar Yönetmeliği (Dangerous Chemicals Regulation, OG 24379) Article 37 bans extraction, production, and use of all amphibole asbestos fibers. Ministry of Health simultaneously approves relocation of three Cappadocia villages (Karain, Tuzkoy, Sarihidir) affected by the mesothelioma epidemic.",
+        "event_es": "El artículo 37 de la Tehlikeli Kimyasallar Yönetmeliği (Reglamento de Productos Químicos Peligrosos, BG 24379) prohíbe la extracción, producción y uso de todos los anfíboles. El Ministerio de Salud aprueba simultáneamente la reubicación de las tres aldeas de Capadocia afectadas por la epidemia de mesotelioma.",
+        "type": "partial_ban",
+        "source_url": "https://www.csgb.gov.tr/isgum/asbest/"
       },
       {
         "year": 2005,
-        "event": "Partial restrictions on asbestos use imposed, limiting certain applications while full ban is prepared",
-        "event_es": "Se imponen restricciones parciales al uso de asbesto, limitando ciertas aplicaciones mientras se prepara la prohibición total",
-        "type": "regulation",
+        "event": "Partial ban (August 16): amosite and crocidolite banned immediately; one-year grace period until August 2006 for chrysotile in friction products (brake linings, clutch pads), tremolite, anthophyllite, and actinolite.",
+        "event_es": "Prohibición parcial (16 de agosto): amosite y crocidolita prohibidas de inmediato; período de gracia de un año hasta agosto de 2006 para el crisotilo en productos de fricción (forros de freno, pastillas de embrague), tremolita, antofilita y actinolita.",
+        "type": "partial_ban",
         "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
       },
       {
+        "year": 2009,
+        "event": "Full relocation of Tuzkoy village completed: ~250 families moved to new settlement 'Yeni Tuzköy,' 1.6 km from the original village — away from erionite-bearing geological formations. State-subsidized relocation.",
+        "event_es": "Se completa la reubicación total de la aldea de Tuzkoy: ~250 familias trasladas a la nueva localidad 'Yeni Tuzköy', a 1,6 km de la aldea original, lejos de las formaciones geológicas con erionita. Reubicación subvencionada por el Estado.",
+        "type": "other",
+        "source_url": "https://eurasianet.org/turkey-end-in-sight-for-cancer-village/"
+      },
+      {
         "year": 2010,
-        "event": "Complete ban on asbestos production, import, supply, and use takes effect December 31 under the Regulation on Health and Safety Measures Regarding the Use of Asbestos, aligning with EU standards",
-        "event_es": "Prohibición total de producción, importación, suministro y uso de asbesto entra en vigor el 31 de diciembre bajo el Reglamento sobre Medidas de Salud y Seguridad, alineándose con estándares de la UE",
+        "event": "Complete ban on asbestos production, import, supply, and use effective December 31, 2010, under the Regulation on Health and Safety Measures Regarding the Use of Asbestos (OG, August 29, 2010). Turkey consumed ~1.2 million tonnes of asbestos between 1900 and 2003.",
+        "event_es": "Prohibición total de producción, importación, suministro y uso de asbesto a partir del 31 de diciembre de 2010, bajo el Reglamento sobre Medidas de Salud y Seguridad en el Uso del Asbesto (BO, 29 de agosto de 2010). Turquía consumió ~1,2 millones de toneladas de asbesto entre 1900 y 2003.",
         "type": "ban",
-        "source_url": "https://www.ibasecretariat.org/alpha_ban_list.php"
+        "source_url": "https://www.loc.gov/item/global-legal-monitor/2011-01-06/turkey-new-regulation-banning-asbestos-takes-effect/"
+      },
+      {
+        "year": 2013,
+        "event": "TUNMES-EAECP national survey identifies 5,617 mesothelioma cases (2008–2012), 379 villages with continuing asbestos/mineral fiber exposure, and ~158,068 people in high-risk rural areas. Projects 2,511 additional cases by 2033.",
+        "event_es": "La encuesta nacional TUNMES-EAECP identifica 5.617 casos de mesotelioma (2008–2012), 379 aldeas con exposición ambiental continua, y ~158.068 personas en zonas rurales de alto riesgo. Proyecta 2.511 casos adicionales para 2033.",
+        "type": "other",
+        "source_url": "https://www.mdpi.com/1660-4601/14/11/1293"
+      },
+      {
+        "year": 2015,
+        "event": "Kadıköy Municipality (Istanbul) becomes the first Turkish municipality to require an 'asbestos-free' certification for demolition licenses — requiring proper asbestos management before permits are granted.",
+        "event_es": "El Municipio de Kadıköy (Estambul) se convierte en el primer municipio turco en exigir una certificación 'libre de asbesto' para las licencias de demolición.",
+        "type": "regulation",
+        "source_url": "https://www.hurriyetdailynews.com/asbestos-in-istanbul-buildings-puts-lives-at-risk-129202"
+      },
+      {
+        "year": 2023,
+        "event": "February 6 earthquakes (Kahramanmaraş sequence) generate 116–200 million tonnes of rubble from pre-ban buildings across ten provinces. Asbestos fibers released during collapse and debris removal; international agencies publish formal asbestos risk assessments for earthquake zones.",
+        "event_es": "Los terremotos del 6 de febrero (secuencia de Kahramanmaraş) generan entre 116 y 200 millones de toneladas de escombros de edificios anteriores a la prohibición en diez provincias. Se liberan fibras de asbesto durante el derrumbe y la retirada de escombros; organismos internacionales publican evaluaciones formales de riesgo de asbesto.",
+        "type": "other",
+        "source_url": "https://reliefweb.int/report/turkiye/secondary-data-review-2023-turkiye-earthquake-asbestos-presence-earthquake-affected-southeast-turkiye-threats-and-suggested-solutions-march-2023"
       }
     ],
-    "peak_usage_era": "1960s-2000s",
+    "peak_usage_era": "1900–2010",
     "common_materials": [
-      "asbestos-cement roofing sheets",
-      "asbestos-cement flat sheets",
-      "pipe insulation",
-      "asbestos-cement water pipes"
+      "asbestos-cement corrugated roofing sheets",
+      "asbestos-cement flat sheets and cladding",
+      "asbestos-cement water pipes and sewer pipes",
+      "pipe insulation and boiler lagging (shipyards)",
+      "friction materials (brake linings and clutch pads)",
+      "asbestos textiles and protective clothing",
+      "acoustic ceiling systems",
+      "naturally occurring asbestos-bearing 'white soil' used as building material and whitewash in villages"
     ],
     "common_materials_es": [
-      "láminas de techo de cemento-asbesto",
-      "láminas planas de cemento-asbesto",
-      "aislamiento de tuberías",
-      "tuberías de agua de cemento-asbesto"
+      "láminas corrugadas de cemento-asbesto",
+      "láminas planas y revestimientos de cemento-asbesto",
+      "tuberías de agua y alcantarillado de cemento-asbesto",
+      "revestimiento de tuberías y calderas (astilleros)",
+      "materiales de fricción (forros de freno y pastillas de embrague)",
+      "textiles y ropa de protección de asbesto",
+      "sistemas de techo acústico",
+      "tierra blanca de origen geológico con asbesto usada como material de construcción y encalado en aldeas"
     ],
-    "estimated_buildings_at_risk": null,
-    "mesothelioma_rate": null,
-    "mesothelioma_source_year": null,
+    "estimated_buildings_at_risk": "22–24% of pre-ban buildings assessed in Istanbul and İzmir surveys contained asbestos-containing materials (385/1,594 Istanbul demolition buildings tested positive; 22% of İzmir residential buildings in a 2023 survey). The February 2023 earthquakes generated 116–200 million tonnes of rubble from pre-ban buildings in ten provinces. Additionally, 379 villages with geological asbestos/erionite deposits housing ~158,068 people retain legacy mineral fiber exposure.",
+    "mesothelioma_rate": 2.33,
+    "mesothelioma_source_year": 2012,
     "priority": "high",
+    "resistance_stories": [
+      {
+        "name": "Prof. Dr. Y.I. (Izzettin) Baris",
+        "years": "1975–2000s",
+        "role": "Pulmonary physician at Hacettepe University, Ankara. Discoverer of the Cappadocia mesothelioma epidemic. In 1975, diagnosed 12 mesothelioma patients in Karain village in a single visit — a rate ~1,000 times higher than comparable villages. Led a 23-year prospective study of 891 villagers documenting 372 deaths, 119 (32%) from mesothelioma.",
+        "role_es": "Médico neumólogo de la Universidad Hacettepe, Ankara. Descubridor de la epidemia de mesotelioma de Capadocia. En 1975, diagnosticó 12 pacientes de mesotelioma en la aldea de Karain en una sola visita. Dirigió un estudio prospectivo de 23 años con 891 aldeanos.",
+        "achievement": "Published the first scientific findings on the Cappadocia epidemic in Thorax (1978); changed global understanding of mineral fiber carcinogenesis; directly informed IARC's Group 1 classification of erionite; established a mesothelioma clinic in Tuzkoy village providing palliative care; work underpinned the state decision to relocate the affected villages.",
+        "achievement_es": "Publicó los primeros hallazgos científicos sobre la epidemia de Capadocia en Thorax (1978); cambió la comprensión global de la carcinogénesis por fibras minerales; informó directamente la clasificación del erionita como Grupo 1 por la IARC; estableció una clínica de mesotelioma en la aldea de Tuzkoy.",
+        "quote": null,
+        "quote_es": null,
+        "quote_source": null,
+        "role_type": "scientist",
+        "photo_url": null,
+        "source_url": "https://academic.oup.com/jnci/article/98/6/414/2522014"
+      },
+      {
+        "name": "Prof. Dr. Muzaffer Metintaş",
+        "years": "2012–present",
+        "role": "Chest physician at Eskişehir Osmangazi University; founder of APKAM (Applied Research Centre for Lung and Pleural Diseases) and organizer of the Turkish Mesothelioma Working Group. Established Turkey's national mesothelioma surveillance infrastructure when no registry or systematic data existed.",
+        "role_es": "Médico neumólogo en la Universidad Osmangazi de Eskişehir; fundador de APKAM y organizador del Grupo de Trabajo sobre Mesotelioma de Turquía. Estableció la infraestructura nacional de vigilancia del mesotelioma en Turquía cuando no existía ningún registro ni dato sistemático.",
+        "achievement": "Led the TUNMES-EAECP national survey (2013) identifying 5,617 mesothelioma cases across Turkey; identified 379 high-risk villages and 158,068 people in continuing environmental exposure; projected 2,511 additional cases to 2033. Created Turkey's first systematic national mesothelioma data that underpins current public health policy.",
+        "achievement_es": "Dirigió la encuesta nacional TUNMES-EAECP (2013) identificando 5.617 casos de mesotelioma en Turquía; identificó 379 aldeas de alto riesgo y 158.068 personas con exposición ambiental continua; proyectó 2.511 casos adicionales hasta 2033.",
+        "quote": null,
+        "quote_es": null,
+        "quote_source": null,
+        "role_type": "scientist",
+        "photo_url": null,
+        "source_url": "https://www.mdpi.com/1660-4601/14/11/1293"
+      }
+    ],
     "sources": [
       {
         "name": "IBAS Ban List",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-24"
+        "accessed": "2026-04-07"
       },
       {
-        "name": "The Cappadocia mesothelioma epidemic (PMC)",
+        "name": "Library of Congress — Turkey New Regulation Banning Asbestos (Jan 2011)",
+        "url": "https://www.loc.gov/item/global-legal-monitor/2011-01-06/turkey-new-regulation-banning-asbestos-takes-effect/",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "PMC — The Cappadocia mesothelioma epidemic: a review (2017)",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5497117/",
-        "accessed": "2026-03-24"
+        "accessed": "2026-04-07"
       },
       {
-        "name": "IBAS Chronology of Asbestos Bans",
-        "url": "https://www.ibasecretariat.org/chron_ban_list.php",
-        "accessed": "2026-03-24"
+        "name": "JNCI — 23-year prospective study Cappadocia villagers (Baris et al., 2006)",
+        "url": "https://academic.oup.com/jnci/article/98/6/414/2522014",
+        "accessed": "2026-04-07"
       },
       {
-        "name": "Asbestos Bans and Restrictions: Global Timeline",
-        "url": "https://www.completeasbestossurveys.co.uk/asbestos-bans-and-restrictions-the-global-timeline/",
-        "accessed": "2026-03-24"
+        "name": "MDPI IJERPH — Turkish national mesothelioma surveillance (2017)",
+        "url": "https://www.mdpi.com/1660-4601/14/11/1293",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "PMC — TUNMES-EAECP Turkish mesothelioma surveillance program",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5707932/",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "PMC — Post-earthquake asbestos exposure Turkey (2024)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11181204/",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "ReliefWeb — Asbestos in 2023 earthquake-affected Turkey",
+        "url": "https://reliefweb.int/report/turkiye/secondary-data-review-2023-turkiye-earthquake-asbestos-presence-earthquake-affected-southeast-turkiye-threats-and-suggested-solutions-march-2023",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "Springer — Asbestos in İzmir buildings survey (2023)",
+        "url": "https://link.springer.com/article/10.1007/s11356-023-31819-4",
+        "accessed": "2026-04-07"
+      },
+      {
+        "name": "Hürriyet Daily News — Asbestos in Istanbul buildings puts lives at risk (2017)",
+        "url": "https://www.hurriyetdailynews.com/asbestos-in-istanbul-buildings-puts-lives-at-risk-129202",
+        "accessed": "2026-04-07"
       }
     ],
-    "last_updated": "2026-03-24",
+    "last_updated": "2026-04-09",
     "hero_image_url": "https://images.unsplash.com/photo-1599572291473-b63a0d90cddb?w=1280"
   },
   {

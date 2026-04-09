@@ -190,10 +190,14 @@ function getWhatToDoKey(status: Country["ban_status"]): WhatToDoKey {
 }
 
 // JSON-LD structured data component — content is server-generated (not user
-// input), serialized with JSON.stringify which escapes HTML special characters.
+// input). JSON.stringify does NOT escape <, >, or & by default, so we manually
+// replace them with their Unicode escape equivalents to prevent script injection
+// if any country data value ever contains "</script>" or similar sequences.
 function JsonLd({ data }: { data: Record<string, unknown> }) {
-  const json = JSON.stringify(data);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const json = JSON.stringify(data)
+    .replace(/</g, "\\u003c")
+    .replace(/>/g, "\\u003e")
+    .replace(/&/g, "\\u0026");
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: json }} />;
 }
 

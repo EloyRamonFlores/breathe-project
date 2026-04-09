@@ -253,7 +253,7 @@ Actualizar CHANGELOG.md con v2.13.0.
 
 ---
 
-### PHASE 3D: Turkey (v2.14.0) [PENDIENTE]
+### PHASE 3D: Turkey (v2.14.0) ✅ COMPLETADO 2026-04-09
 **Por qué**: 18 impresiones, pos 8.83. Ya tiene hero image. Turquía tiene el 4to depósito más grande de asbesto del mundo (Eskişehir), fue productor hasta 2010, y su transición es un caso de estudio importante.
 
 ```
@@ -531,7 +531,7 @@ Compara scores contra docs/FULL-AUDIT-V2.md (7.9/10 baseline).
 | 3A. Kazakhstan research | v2.11.0 | 2h | Ninguna | 🟠 Alta | ✅ DONE 04-05 |
 | 3B. Russia research | v2.12.0 | 2h | Ninguna | 🟠 Alta | ✅ DONE 04-06 |
 | 3C. Portugal research | v2.13.0 | 2h | Ninguna | 🟡 Media | ✅ DONE 04-07 |
-| 3D. Turkey research | v2.14.0 | 2h | Ninguna | 🟡 Media | ⏳ PENDING |
+| 3D. Turkey research | v2.14.0 | 2h | Ninguna | 🟡 Media | ✅ DONE 04-09 |
 | 3E. UAE + India research | v2.15.0 | 3h | Ninguna | 🟡 Media | ✅ DONE 04-07 |
 | 3F. Taiwan + Namibia research | v2.16.0 | 2h | Ninguna | 🟡 Media | ✅ DONE 04-09 |
 | 4. Hero images (Search Console) | v2.17.0 | 2h | Ninguna | 🟡 Media | ⏳ PENDING |

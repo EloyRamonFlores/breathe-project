@@ -4,6 +4,31 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v2.17.0] — 2026-04-09 — Turkey Research Profile Integration (Phase 3D)
+
+### Turkey countries.json Integration
+- **ban_details** / **ban_details_es**: expanded from 2-sentence placeholder to full context: 1993 crocidolite import ban (Zararlı Kimyasal Madde Yönetmeliği); 2001 all amphiboles banned (Tehlikeli Kimyasallar Yönetmeliği, OG 24379); 2005 partial ban with chrysotile friction-products grace period; 1.2 million tonnes consumed 1900–2003; Cappadocia erionite epidemic (50% of village deaths from mesothelioma); TUNMES-EAECP national data (5,617 cases, 379 villages, 158,068 people); February 2023 earthquake rubble (116–200 million tonnes)
+- **timeline**: 5 generic events → 10 richly sourced events (1975 Baris discovery → 1978 Thorax publication → 1993 crocidolite ban → 2001 amphiboles ban + village relocation approval → 2005 partial ban → 2009 Tuzkoy relocation complete → 2010 total ban → 2013 TUNMES-EAECP survey → 2015 Kadıköy demolition certification → 2023 earthquake asbestos crisis)
+- **peak_usage_era**: `"1960s-2000s"` → `"1900–2010"` (aligned with century of documented consumption)
+- **common_materials**: 4 → 8 items (added friction materials, asbestos textiles, acoustic ceilings, naturally occurring geological "white soil" used as whitewash in Anatolian villages)
+- **common_materials_es**: added parallel Spanish translations for all 8 materials
+- **estimated_buildings_at_risk**: `null` → populated (22–24% of pre-ban buildings assessed in Istanbul/İzmir surveys positive; 116–200 million tonnes of 2023 earthquake rubble; 379 villages with 158,068 people in geological fiber exposure zones)
+- **mesothelioma_rate**: `null` → `2.33` per 100,000 (standardized incidence rate, TUNMES-EAECP 2008–2012)
+- **mesothelioma_source_year**: `null` → `2012` (end of TUNMES surveillance period)
+- **resistance_stories**: `[]` (field not present) → 2 stories added:
+  - Prof. Dr. Y.I. Baris — discoverer of Cappadocia epidemic (1975), led 23-year prospective cohort study; published in JNCI 2006
+  - Prof. Dr. Muzaffer Metintaş — APKAM founder, led TUNMES-EAECP creating Turkey's first national mesothelioma data infrastructure
+- **sources**: 4 → 10 (Library of Congress, JNCI, MDPI IJERPH, PMC TUNMES, PMC post-earthquake, ReliefWeb 2023, Springer 2023, Hürriyet Daily News)
+
+### Research Profiles Committed
+- Added `docs/research/turkey-research.md` to version control (40 sources; was untracked since creation)
+- Added `docs/research/portugal-research.md` to version control (was untracked since v2.13.0)
+
+### Verification
+- 81 tests pass
+
+---
+
 ## [v2.16.0] — 2026-04-09 — Taiwan & Namibia Research Profiles (Phase 3F)
 
 ### Taiwan countries.json Integration
