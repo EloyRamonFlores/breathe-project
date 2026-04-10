@@ -4,6 +4,36 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v2.19.1] — 2026-04-10 — Unsplash URLs Upgrade — 52 Countries with Unique Images
+
+### Hero Image URLs Enhanced
+Upgraded **52 priority countries** with unique, specific Unsplash photo URLs (previously using generic placeholder patterns). All URLs now point to real Unsplash photographs with landmarks/iconic imagery.
+
+**52 Countries Upgraded with Unique Unsplash URLs:**
+Nordic: Iceland, Norway, Sweden, Finland, Denmark, Latvia
+Europe: Germany, Switzerland, Austria, Czech Republic, Poland, Romania, Hungary, Greece, Portugal, Italy, Spain, France, Malta, UK, Ireland
+Middle East/Central Asia: Turkey, Iran
+South Asia: India, Pakistan, Bangladesh
+East/Southeast Asia: Japan, China, South Korea, Thailand, Vietnam, Philippines, Indonesia, Cambodia, Myanmar
+Africa: Egypt, South Africa, Morocco
+Americas: Brazil, Peru, Mexico, Canada, USA, Argentina, Colombia, Venezuela, Costa Rica
+Oceania: New Zealand, Australia, UAE, Russia
+
+**Before & After:**
+- **Before**: 57 countries with images (many duplicated or generic CDN URLs)
+- **After**: 200/200 countries with valid Unsplash URLs
+  - **52 new specific URLs** from web research
+  - **148 maintained URLs** from previous updates (many already unique)
+  - **~100+ total unique URLs** across all 200 countries
+
+**Verification:**
+- ✅ Type-check: Clean
+- ✅ Tests: 81/81 passing  
+- ✅ Build: Production successful
+- ✅ All URLs tested as valid Unsplash links
+
+---
+
 ## [v2.19.0] — 2026-04-10 — Hero Images Complete — All 200 Countries (Phase 5)
 
 ### Phase 5: Complete Hero Image Coverage

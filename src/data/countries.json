@@ -77,7 +77,8 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1485738422979-1472a3a81d71?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/A94bN7z4w0E",
+    "hero_pattern": "default"
   },
   {
     "slug": "india",
@@ -158,7 +159,7 @@
       }
     ],
     "last_updated": "2026-04-07",
-    "hero_image_url": "https://images.unsplash.com/photo-1514632595-4944ab0f1b00?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/iWMfiInivp4",
     "resistance_stories": [
       {
         "name": "Gopal Krishna",
@@ -174,7 +175,8 @@
         "photo_url": null,
         "source_url": "https://www.ibasecretariat.org/india-asbestos-ban-campaign.php"
       }
-    ]
+    ],
+    "hero_pattern": "default"
   },
   {
     "slug": "china",
@@ -284,7 +286,8 @@
       }
     ],
     "last_updated": "2026-04-04",
-    "hero_image_url": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/eb3oRAdbOak",
+    "hero_pattern": "default"
   },
   {
     "slug": "russia",
@@ -484,12 +487,13 @@
       }
     ],
     "last_updated": "2026-04-06",
-    "hero_image_url": "https://images.unsplash.com/photo-1513933789142-f2b722e1f0eb?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/4JGwsHzTWUA",
+    "hero_pattern": "default"
   },
   {
     "slug": "brazil",
     "hero_pattern": "urban",
-    "hero_image_url": "https://images.unsplash.com/photo-1548525881-89cbb62ceadb?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/OkiDIla7K8Q",
     "name": "Brazil",
     "name_es": "Brasil",
     "iso2": "BR",
@@ -716,7 +720,8 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1590080876-6b3c26d4f2a5?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/rXKP0Q4H1WQ",
+    "hero_pattern": "default"
   },
   {
     "slug": "indonesia",
@@ -795,12 +800,13 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1537384294627-4d3e10a3ee0a?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/mg7MS2-0MQ4",
+    "hero_pattern": "default"
   },
   {
     "slug": "united-kingdom",
     "hero_pattern": "parliament",
-    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/iXqTqC-f6jI",
     "name": "United Kingdom",
     "name_es": "Reino Unido",
     "iso2": "GB",
@@ -992,7 +998,7 @@
   {
     "slug": "australia",
     "hero_pattern": "mining",
-    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/inNzGtPrkHk",
     "name": "Australia",
     "name_es": "Australia",
     "iso2": "AU",
@@ -1213,7 +1219,8 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1567339374644-e5ea0d4e6c88?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/GbZsvIIi4Xw",
+    "hero_pattern": "default"
   },
   {
     "slug": "south-korea",
@@ -1291,7 +1298,8 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1611593437281-f6a51526145b?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/2Du-53nZKYs",
+    "hero_pattern": "default"
   },
   {
     "slug": "germany",
@@ -1369,12 +1377,13 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1560890291-58f22e4f3628?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/NYi-8tBLbl8",
+    "hero_pattern": "default"
   },
   {
     "slug": "south-africa",
     "hero_pattern": "mining",
-    "hero_image_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/6gn7jdejEoQ",
     "name": "South Africa",
     "name_es": "Sudáfrica",
     "iso2": "ZA",
@@ -1642,7 +1651,8 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/o181z-_ChuI",
+    "hero_pattern": "default"
   },
   {
     "slug": "nigeria",
@@ -1905,7 +1915,8 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1542673286-c19150c3cb26?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/PtX674rCdBs",
+    "hero_pattern": "default"
   },
   {
     "slug": "austria",
@@ -1938,7 +1949,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1516145497735-6520ee058388?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/w-BSFRpfTWk",
     "hero_pattern": "urban"
   },
   {
@@ -2175,7 +2186,7 @@
   {
     "slug": "colombia",
     "hero_pattern": "urban",
-    "hero_image_url": "/images/countries/colombia/hero.webp",
+    "hero_image_url": "https://unsplash.com/photos/gdcT7prXMzE",
     "name": "Colombia",
     "name_es": "Colombia",
     "iso2": "CO",
@@ -2451,7 +2462,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/OItoSaqVNGg",
     "hero_pattern": "urban"
   },
   {
@@ -2485,7 +2496,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/Yoz5EEuSmaM",
     "hero_pattern": "urban"
   },
   {
@@ -2595,7 +2606,8 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1509391366360-2e938aa1ef14?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/rxv2qwYPe6s",
+    "hero_pattern": "default"
   },
   {
     "slug": "estonia",
@@ -2661,13 +2673,13 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/5Qqkjn4PFPA",
     "hero_pattern": "default"
   },
   {
     "slug": "france",
     "hero_pattern": "industry",
-    "hero_image_url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/LsIZMAzldHk",
     "name": "France",
     "name_es": "Francia",
     "iso2": "FR",
@@ -2899,7 +2911,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/KERt5Ye0EpQ",
     "hero_pattern": "coastal"
   },
   {
@@ -2998,7 +3010,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/NYi-8tBLbl8",
     "hero_pattern": "urban"
   },
   {
@@ -3031,7 +3043,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/SevB0vWDmr4",
     "hero_pattern": "default"
   },
   {
@@ -3113,7 +3125,8 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1570829460005-c840387bb1ca?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/YwcMlX9XnM4",
+    "hero_pattern": "default"
   },
   {
     "slug": "iraq",
@@ -3179,7 +3192,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/SevB0vWDmr4",
     "hero_pattern": "coastal"
   },
   {
@@ -3219,7 +3232,7 @@
   {
     "slug": "italy",
     "hero_pattern": "coastal",
-    "hero_image_url": "https://images.unsplash.com/photo-1552832860-cfb67165eaf0?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/BFKstpwhRQk",
     "name": "Italy",
     "name_es": "Italia",
     "iso2": "IT",
@@ -3508,7 +3521,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/OItoSaqVNGg",
     "hero_pattern": "urban"
   },
   {
@@ -3673,7 +3686,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/NYi-8tBLbl8",
     "hero_pattern": "coastal"
   },
   {
@@ -3873,7 +3886,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/A94bN7z4w0E",
     "hero_pattern": "default"
   },
   {
@@ -3907,7 +3920,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/GvS1w7XE0sk",
     "hero_pattern": "coastal"
   },
   {
@@ -3974,7 +3987,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/2tNB3Qb4H6A",
     "hero_pattern": "urban"
   },
   {
@@ -4175,7 +4188,7 @@
       }
     ],
     "last_updated": "2026-04-07",
-    "hero_image_url": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/wBjdDQo0Iws",
     "hero_pattern": "coastal"
   },
   {
@@ -4242,7 +4255,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1516145497735-6520ee058388?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/w-BSFRpfTWk",
     "hero_pattern": "default"
   },
   {
@@ -4276,7 +4289,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/x3sSJ4yynRI",
     "hero_pattern": "urban"
   },
   {
@@ -4443,7 +4456,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/NYi-8tBLbl8",
     "hero_pattern": "urban"
   },
   {
@@ -4477,7 +4490,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/B8e8PAJ9JRM",
     "hero_pattern": "coastal"
   },
   {
@@ -4511,7 +4524,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/w-BSFRpfTWk",
     "hero_pattern": "default"
   },
   {
@@ -4888,7 +4901,8 @@
       }
     ],
     "last_updated": "2026-04-09",
-    "hero_image_url": "https://images.unsplash.com/photo-1599572291473-b63a0d90cddb?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/lsIq-oS3jBw",
+    "hero_pattern": "default"
   },
   {
     "slug": "uruguay",
@@ -5096,7 +5110,7 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/bhMTpo4lUIo",
     "hero_pattern": "urban"
   },
   {
@@ -5181,7 +5195,7 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/zPtDohQwgsc",
     "hero_pattern": "coastal"
   },
   {
@@ -5273,7 +5287,7 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_image_url": "https://unsplash.com/s/photos/halong-bay",
     "hero_pattern": "coastal"
   },
   {
@@ -5358,7 +5372,8 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1485738422979-1472a3a81d71?w=1280"
+    "hero_image_url": "https://unsplash.com/s/photos/faisal-mosque",
+    "hero_pattern": "default"
   },
   {
     "slug": "bangladesh",
@@ -5449,7 +5464,8 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/Cyph9RB5hAM",
+    "hero_pattern": "default"
   },
   {
     "slug": "kenya",
@@ -5788,7 +5804,8 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1498855926480-d98e83099315?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/xFnA1azNEws",
+    "hero_pattern": "default"
   },
   {
     "slug": "angola",
@@ -6715,7 +6732,8 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1570829460005-c840387bb1ca?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/UIwwV5GlyqY",
+    "hero_pattern": "default"
   },
   {
     "slug": "namibia",
@@ -7427,7 +7445,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1553279768-865429fa0078?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/zIUY52FQD0E",
     "hero_pattern": "default"
   },
   {
@@ -7931,7 +7949,7 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/65c5xq7Qgdk",
     "hero_pattern": "default"
   },
   {
@@ -8160,7 +8178,8 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280"
+    "hero_image_url": "https://unsplash.com/photos/uGKnfbWqDgU",
+    "hero_pattern": "default"
   },
   {
     "slug": "afghanistan",
@@ -8319,7 +8338,7 @@
       }
     ],
     "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1557821552-17105176677c?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/daClflufF3M",
     "hero_pattern": "default"
   },
   {
@@ -8958,7 +8977,7 @@
       "tuberías de agua de cemento-asbesto"
     ],
     "resistance_stories": [],
-    "hero_image_url": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1280",
+    "hero_image_url": "https://unsplash.com/photos/Xm95R2p5aVw",
     "hero_pattern": "urban"
   },
   {
