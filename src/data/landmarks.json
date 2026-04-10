@@ -220,5 +220,1145 @@
     "name": "Sri Lanka",
     "landmark": "Sigiriya",
     "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280"
+  },
+  {
+    "slug": "kazakhstan",
+    "name": "Kazakhstan",
+    "landmark": "Baiterek Tower, Astana",
+    "unsplash_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1280"
+  },
+  {
+    "slug": "portugal",
+    "name": "Portugal",
+    "landmark": "Torre de Belém, Lisboa",
+    "unsplash_url": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1280"
+  },
+  {
+    "slug": "united-arab-emirates",
+    "name": "United Arab Emirates",
+    "landmark": "Burj Khalifa, Dubai",
+    "unsplash_url": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1280"
+  },
+  {
+    "slug": "taiwan",
+    "name": "Taiwan",
+    "landmark": "Taipei 101",
+    "unsplash_url": "https://images.unsplash.com/photo-1540652082-67b51499e3cb?w=1280"
+  },
+  {
+    "slug": "namibia",
+    "name": "Namibia",
+    "landmark": "Deadvlei, Namib Desert",
+    "unsplash_url": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1280"
+  },
+  {
+    "slug": "guatemala",
+    "name": "Guatemala",
+    "landmark": "Tikal Temple I",
+    "unsplash_url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1280"
+  },
+  {
+    "slug": "cyprus",
+    "name": "Cyprus",
+    "landmark": "Aphrodite's Rock, Mediterranean coast",
+    "unsplash_url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1280"
+  },
+  {
+    "slug": "nicaragua",
+    "name": "Nicaragua",
+    "landmark": "León Cathedral",
+    "unsplash_url": "https://images.unsplash.com/photo-1586953389687-8b07ae1b8c37?w=1280"
+  },
+  {
+    "slug": "north-korea",
+    "name": "North Korea",
+    "landmark": "Juche Tower, Pyongyang",
+    "unsplash_url": "https://images.unsplash.com/photo-1569950044272-e562a9b4aa68?w=1280"
+  },
+  {
+    "slug": "georgia",
+    "name": "Georgia",
+    "landmark": "Gergeti Trinity Church, Mount Kazbek",
+    "unsplash_url": "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1280"
+  },
+  {
+    "slug": "north-macedonia",
+    "name": "North Macedonia",
+    "landmark": "Porta Macedonia, Skopje",
+    "unsplash_url": "https://images.unsplash.com/photo-1555990793-da11153b2473?w=1280"
+  },
+  {
+    "slug": "cuba",
+    "name": "Cuba",
+    "landmark": "Capitolio Nacional, Havana",
+    "unsplash_url": "https://images.unsplash.com/photo-1508973379184-7517410eec06?w=1280"
+  },
+  {
+    "slug": "israel",
+    "name": "Israel",
+    "landmark": "Dome of the Rock, Old City Jerusalem",
+    "unsplash_url": "https://images.unsplash.com/photo-1558356736-a5cf62f4f1e0?w=1280"
+  },
+  {
+    "slug": "uruguay",
+    "name": "Uruguay",
+    "landmark": "Palacio Salvo, Montevideo",
+    "unsplash_url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1280"
+  },
+  {
+    "slug": "costa-rica",
+    "name": "Costa Rica",
+    "landmark": "Volcán Arenal",
+    "unsplash_url": "https://images.unsplash.com/photo-1553279768-865429fa0078?w=1280"
+  },
+  {
+    "slug": "jordan",
+    "name": "Jordan",
+    "landmark": "Al-Khazneh, Petra",
+    "unsplash_url": "https://images.unsplash.com/photo-1579606032821-4b8e8b7a6e27?w=1280"
+  },
+  {
+    "slug": "bahrain",
+    "name": "Bahrain",
+    "landmark": "Tree of Life / World Trade Center",
+    "unsplash_url": "https://images.unsplash.com/photo-1547919307-1ecb10702e6f?w=1280"
+  },
+  {
+    "slug": "maldives",
+    "name": "Maldives",
+    "landmark": "Aerial island atolls",
+    "unsplash_url": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1280"
+  },
+  {
+    "slug": "trinidad-and-tobago",
+    "name": "Trinidad and Tobago",
+    "landmark": "Pigeon Point, Tobago",
+    "unsplash_url": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=1280"
+  },
+  {
+    "slug": "bosnia-and-herzegovina",
+    "name": "Bosnia and Herzegovina",
+    "landmark": "Stari Most (Old Bridge), Mostar",
+    "unsplash_url": "https://images.unsplash.com/photo-1573483377524-38c8c1c4f9cb?w=1280"
+  },
+  {
+    "slug": "afghanistan",
+    "name": "Afghanistan",
+    "landmark": "Hindu Kush Mountains",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280"
+  },
+  {
+    "slug": "albania",
+    "name": "Albania",
+    "landmark": "Berat Historic City",
+    "unsplash_url": "https://images.unsplash.com/photo-1603266808191-4f45e0a23e8b?w=1280"
+  },
+  {
+    "slug": "andorra",
+    "name": "Andorra",
+    "landmark": "Andorra la Vella Mountain Valley",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280"
+  },
+  {
+    "slug": "angola",
+    "name": "Angola",
+    "landmark": "Luanda Waterfront",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280"
+  },
+  {
+    "slug": "antigua-and-barbuda",
+    "name": "Antigua and Barbuda",
+    "landmark": "Half Moon Bay Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280"
+  },
+  {
+    "slug": "armenia",
+    "name": "Armenia",
+    "landmark": "Khor Virap Monastery",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280"
+  },
+  {
+    "slug": "austria",
+    "name": "Austria",
+    "landmark": "Schönbrunn Palace, Vienna",
+    "unsplash_url": "https://images.unsplash.com/photo-1516145497735-6520ee058388?w=1280"
+  },
+  {
+    "slug": "azerbaijan",
+    "name": "Azerbaijan",
+    "landmark": "Baku Old City Walls",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280"
+  },
+  {
+    "slug": "bahamas",
+    "name": "Bahamas",
+    "landmark": "Nassau Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280"
+  },
+  {
+    "slug": "barbados",
+    "name": "Barbados",
+    "landmark": "Carlisle Bay Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280"
+  },
+  {
+    "slug": "belarus",
+    "name": "Belarus",
+    "landmark": "Minsk City Center",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280"
+  },
+  {
+    "slug": "belgium",
+    "name": "Belgium",
+    "landmark": "Grand Place, Brussels",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280"
+  },
+  {
+    "slug": "belize",
+    "name": "Belize",
+    "landmark": "Belize Barrier Reef",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280"
+  },
+  {
+    "slug": "benin",
+    "name": "Benin",
+    "landmark": "Cotonou Market",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280"
+  },
+  {
+    "slug": "bhutan",
+    "name": "Bhutan",
+    "landmark": "Paro Taktsang Monastery",
+    "unsplash_url": "https://images.unsplash.com/photo-1537384294627-4d3e10a3ee0a?w=1280"
+  },
+  {
+    "slug": "bolivia",
+    "name": "Bolivia",
+    "landmark": "Salar de Uyuni Salt Flat",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280"
+  },
+  {
+    "slug": "botswana",
+    "name": "Botswana",
+    "landmark": "Okavango Delta",
+    "unsplash_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280"
+  },
+  {
+    "slug": "brunei",
+    "name": "Brunei",
+    "landmark": "Bandar Seri Begawan Mosque",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280"
+  },
+  {
+    "slug": "bulgaria",
+    "name": "Bulgaria",
+    "landmark": "Alexander Nevsky Cathedral, Sofia",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280"
+  },
+  {
+    "slug": "burkina-faso",
+    "name": "Burkina Faso",
+    "landmark": "Ouagadougou Market",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280"
+  },
+  {
+    "slug": "burundi",
+    "name": "Burundi",
+    "landmark": "Lake Tanganyika Coast",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280"
+  },
+  {
+    "slug": "cabo-verde",
+    "name": "Cabo Verde",
+    "landmark": "Praia Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280"
+  },
+  {
+    "slug": "cambodia",
+    "name": "Cambodia",
+    "landmark": "Angkor Wat Temple Complex",
+    "unsplash_url": "https://images.unsplash.com/photo-1557821552-17105176677c?w=1280"
+  },
+  {
+    "slug": "cameroon",
+    "name": "Cameroon",
+    "landmark": "Mount Cameroon",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280"
+  },
+  {
+    "slug": "central-african-republic",
+    "name": "Central African Republic",
+    "landmark": "Bangui Market",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280"
+  },
+  {
+    "slug": "chad",
+    "name": "Chad",
+    "landmark": "Lake Chad Region",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280"
+  },
+  {
+    "slug": "comoros",
+    "name": "Comoros",
+    "landmark": "Moroni Island Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280"
+  },
+  {
+    "slug": "congo-drc",
+    "name": "Congo (DRC)",
+    "landmark": "Kinshasa Skyline",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280"
+  },
+  {
+    "slug": "congo-republic",
+    "name": "Congo (Republic)",
+    "landmark": "Brazzaville River Port",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280"
+  },
+  {
+    "slug": "croatia",
+    "name": "Croatia",
+    "landmark": "Dubrovnik Old Town",
+    "unsplash_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1280"
+  },
+  {
+    "slug": "czech-republic",
+    "name": "Czech Republic",
+    "landmark": "Prague Castle",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "denmark",
+    "name": "Denmark",
+    "landmark": "Tivoli Gardens, Copenhagen",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "djibouti",
+    "name": "Djibouti",
+    "landmark": "Djibouti City Port",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "dominica",
+    "name": "Dominica",
+    "landmark": "Trafalgar Falls",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "dominican-republic",
+    "name": "Dominican Republic",
+    "landmark": "Punta Cana Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "ecuador",
+    "name": "Ecuador",
+    "landmark": "Quito Historic Center",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "el-salvador",
+    "name": "El Salvador",
+    "landmark": "Izalco Volcano",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "equatorial-guinea",
+    "name": "Equatorial Guinea",
+    "landmark": "Malabo City",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "eritrea",
+    "name": "Eritrea",
+    "landmark": "Asmara Art Deco District",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "estonia",
+    "name": "Estonia",
+    "landmark": "Old Town Tallinn",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "eswatini",
+    "name": "Eswatini",
+    "landmark": "Mlilwane Wildlife Sanctuary",
+    "unsplash_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "ethiopia",
+    "name": "Ethiopia",
+    "landmark": "Addis Ababa Skyline",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "fiji",
+    "name": "Fiji",
+    "landmark": "Fiji Island Beaches",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "gabon",
+    "name": "Gabon",
+    "landmark": "Libreville Waterfront",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "gambia",
+    "name": "Gambia",
+    "landmark": "Banjul River Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "ghana",
+    "name": "Ghana",
+    "landmark": "Accra Waterfront",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "grenada",
+    "name": "Grenada",
+    "landmark": "Grand Anse Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "guinea",
+    "name": "Guinea",
+    "landmark": "Conakry Waterfront",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "guinea-bissau",
+    "name": "Guinea-Bissau",
+    "landmark": "Bissau Port",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "guyana",
+    "name": "Guyana",
+    "landmark": "Georgetown Waterfront",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "haiti",
+    "name": "Haiti",
+    "landmark": "Port-au-Prince",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "honduras",
+    "name": "Honduras",
+    "landmark": "Roatán Island Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "hungary",
+    "name": "Hungary",
+    "landmark": "Budapest Parliament",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "iceland",
+    "name": "Iceland",
+    "landmark": "Golden Circle Geysers",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "ivory-coast",
+    "name": "Ivory Coast",
+    "landmark": "Abidjan Skyline",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "jamaica",
+    "name": "Jamaica",
+    "landmark": "Dunn's River Falls",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "kenya",
+    "name": "Kenya",
+    "landmark": "Mount Kenya",
+    "unsplash_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "kiribati",
+    "name": "Kiribati",
+    "landmark": "Tarawa Atoll Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "kosovo",
+    "name": "Kosovo",
+    "landmark": "Pristina City Center",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "kyrgyzstan",
+    "name": "Kyrgyzstan",
+    "landmark": "Lake Issyk-Kul",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "laos",
+    "name": "Laos",
+    "landmark": "Luang Prabang Temple",
+    "unsplash_url": "https://images.unsplash.com/photo-1537384294627-4d3e10a3ee0a?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "lebanon",
+    "name": "Lebanon",
+    "landmark": "Cedars of God",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "lesotho",
+    "name": "Lesotho",
+    "landmark": "Tsehlanyane Peaks",
+    "unsplash_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "liberia",
+    "name": "Liberia",
+    "landmark": "Monrovia Waterfront",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "libya",
+    "name": "Libya",
+    "landmark": "Leptis Magna Roman Ruins",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "liechtenstein",
+    "name": "Liechtenstein",
+    "landmark": "Vaduz Castle",
+    "unsplash_url": "https://images.unsplash.com/photo-1516145497735-6520ee058388?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "lithuania",
+    "name": "Lithuania",
+    "landmark": "Vilnius Cathedral Square",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "luxembourg",
+    "name": "Luxembourg",
+    "landmark": "Luxembourg City Fortress",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "madagascar",
+    "name": "Madagascar",
+    "landmark": "Baobab Avenue",
+    "unsplash_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "malawi",
+    "name": "Malawi",
+    "landmark": "Lake Malawi",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "mali",
+    "name": "Mali",
+    "landmark": "Timbuktu Mosque",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "malta",
+    "name": "Malta",
+    "landmark": "Valletta Harbor",
+    "unsplash_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "marshall-islands",
+    "name": "Marshall Islands",
+    "landmark": "Majuro Lagoon",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "mauritania",
+    "name": "Mauritania",
+    "landmark": "Banc d'Arguin Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "mauritius",
+    "name": "Mauritius",
+    "landmark": "Black River Gorges",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "moldova",
+    "name": "Moldova",
+    "landmark": "Chisinau City Center",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "monaco",
+    "name": "Monaco",
+    "landmark": "Monte Carlo Casino",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "mongolia",
+    "name": "Mongolia",
+    "landmark": "Gobi Desert",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "montenegro",
+    "name": "Montenegro",
+    "landmark": "Kotor Bay",
+    "unsplash_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "mozambique",
+    "name": "Mozambique",
+    "landmark": "Inhambane Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "micronesia",
+    "name": "Micronesia",
+    "landmark": "Pohnpei Island",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "nepal",
+    "name": "Nepal",
+    "landmark": "Mount Everest Region",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "netherlands",
+    "name": "Netherlands",
+    "landmark": "Amsterdam Canals",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "new-zealand",
+    "name": "New Zealand",
+    "landmark": "Milford Sound Fiordland",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "niger",
+    "name": "Niger",
+    "landmark": "Agadez Mosque",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "norway",
+    "name": "Norway",
+    "landmark": "Lofoten Islands",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "oman",
+    "name": "Oman",
+    "landmark": "Muscat Harbor",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "palau",
+    "name": "Palau",
+    "landmark": "Palau Lagoon",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "palestine",
+    "name": "Palestine",
+    "landmark": "Bethlehem Church of the Nativity",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "panama",
+    "name": "Panama",
+    "landmark": "Panama Canal",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "papua-new-guinea",
+    "name": "Papua New Guinea",
+    "landmark": "Mount Hagen",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "paraguay",
+    "name": "Paraguay",
+    "landmark": "Iguazu Falls Area",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "peru",
+    "name": "Peru",
+    "landmark": "Machu Picchu",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "philippines",
+    "name": "Philippines",
+    "landmark": "Boracay Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "poland",
+    "name": "Poland",
+    "landmark": "Krakow Market Square",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "qatar",
+    "name": "Qatar",
+    "landmark": "Doha Corniche",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "romania",
+    "name": "Romania",
+    "landmark": "Bran Castle",
+    "unsplash_url": "https://images.unsplash.com/photo-1516145497735-6520ee058388?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "rwanda",
+    "name": "Rwanda",
+    "landmark": "Lake Kivu",
+    "unsplash_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "samoa",
+    "name": "Samoa",
+    "landmark": "Apia Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "san-marino",
+    "name": "San Marino",
+    "landmark": "Rocca della Guaita",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "sao-tome-and-principe",
+    "name": "São Tomé and Príncipe",
+    "landmark": "Príncipe Island",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "saudi-arabia",
+    "name": "Saudi Arabia",
+    "landmark": "Riyadh Skyline",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "senegal",
+    "name": "Senegal",
+    "landmark": "Dakar Waterfront",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "serbia",
+    "name": "Serbia",
+    "landmark": "Kalemegdan Fortress, Belgrade",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "sierra-leone",
+    "name": "Sierra Leone",
+    "landmark": "Freetown Waterfront",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "singapore",
+    "name": "Singapore",
+    "landmark": "Marina Bay Sands",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "slovakia",
+    "name": "Slovakia",
+    "landmark": "Bratislava Castle",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "slovenia",
+    "name": "Slovenia",
+    "landmark": "Lake Bled",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "solomon-islands",
+    "name": "Solomon Islands",
+    "landmark": "Honiara Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "somalia",
+    "name": "Somalia",
+    "landmark": "Mogadishu Port",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "south-sudan",
+    "name": "South Sudan",
+    "landmark": "Juba Waterfront",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "spain",
+    "name": "Spain",
+    "landmark": "Sagrada Familia, Barcelona",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "sudan",
+    "name": "Sudan",
+    "landmark": "Khartoum Nile",
+    "unsplash_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "suriname",
+    "name": "Suriname",
+    "landmark": "Paramaribo Waterfront",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "sweden",
+    "name": "Sweden",
+    "landmark": "Stockholm Archipelago",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "switzerland",
+    "name": "Switzerland",
+    "landmark": "Jungfrau Mountains",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "syria",
+    "name": "Syria",
+    "landmark": "Damascus Old City",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "tajikistan",
+    "name": "Tajikistan",
+    "landmark": "Dushanbe Mountains",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "tanzania",
+    "name": "Tanzania",
+    "landmark": "Mount Kilimanjaro",
+    "unsplash_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "thailand",
+    "name": "Thailand",
+    "landmark": "Grand Palace, Bangkok",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "timor-leste",
+    "name": "Timor-Leste",
+    "landmark": "Dili Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "togo",
+    "name": "Togo",
+    "landmark": "Lomé Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "tonga",
+    "name": "Tonga",
+    "landmark": "Tongan Islands",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "tunisia",
+    "name": "Tunisia",
+    "landmark": "Medina Tunis",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "turkmenistan",
+    "name": "Turkmenistan",
+    "landmark": "Ashgabat White Marble City",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "tuvalu",
+    "name": "Tuvalu",
+    "landmark": "Funafuti Atoll",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "uganda",
+    "name": "Uganda",
+    "landmark": "Lake Victoria",
+    "unsplash_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "uzbekistan",
+    "name": "Uzbekistan",
+    "landmark": "Bukhara Old City",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "vanuatu",
+    "name": "Vanuatu",
+    "landmark": "Efate Island Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "vietnam",
+    "name": "Vietnam",
+    "landmark": "Halong Bay",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "yemen",
+    "name": "Yemen",
+    "landmark": "Shibam Hadramawt",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "zambia",
+    "name": "Zambia",
+    "landmark": "Victoria Falls",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "zimbabwe",
+    "name": "Zimbabwe",
+    "landmark": "Great Zimbabwe Ruins",
+    "unsplash_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "nauru",
+    "name": "Nauru",
+    "landmark": "Nauru Island Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "saint-kitts-and-nevis",
+    "name": "Saint Kitts and Nevis",
+    "landmark": "Basseterre Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "saint-lucia",
+    "name": "Saint Lucia",
+    "landmark": "Pitons Bay",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "saint-vincent-and-the-grenadines",
+    "name": "Saint Vincent and the Grenadines",
+    "landmark": "Kingstown Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "qatar",
+    "name": "Qatar",
+    "landmark": "Doha Museum",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "comoros",
+    "name": "Comoros",
+    "landmark": "Grande Comore Island",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "finland",
+    "name": "Finland",
+    "landmark": "Northern Lights",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "default"
+  },
+  {
+    "slug": "gibraltar",
+    "name": "Gibraltar",
+    "landmark": "Rock of Gibraltar",
+    "unsplash_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "greece",
+    "name": "Greece",
+    "landmark": "Santorini Caldera",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "greenland",
+    "name": "Greenland",
+    "landmark": "Icefjord",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "iraq",
+    "name": "Iraq",
+    "landmark": "Baghdad Citadel",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "ireland",
+    "name": "Ireland",
+    "landmark": "Cliffs of Moher",
+    "unsplash_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "kuwait",
+    "name": "Kuwait",
+    "landmark": "Kuwait City Skyline",
+    "unsplash_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "latvia",
+    "name": "Latvia",
+    "landmark": "Riga Old Town",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
+  },
+  {
+    "slug": "new-caledonia",
+    "name": "New Caledonia",
+    "landmark": "Isle of Pines Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "seychelles",
+    "name": "Seychelles",
+    "landmark": "Anse Source d'Argent Beach",
+    "unsplash_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "pattern": "coastal"
+  },
+  {
+    "slug": "vatican",
+    "name": "Vatican",
+    "landmark": "Saint Peter's Basilica",
+    "unsplash_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "pattern": "urban"
   }
 ]

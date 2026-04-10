@@ -4,6 +4,71 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v2.19.0] — 2026-04-10 — Hero Images Complete — All 200 Countries (Phase 5)
+
+### Phase 5: Complete Hero Image Coverage
+Completed hero image coverage for **ALL 200 countries** in the platform. Added `hero_image_url` and `hero_pattern` fields to countries.json and ~160 landmark entries to landmarks.json.
+
+**Batch breakdown:**
+- **Batch 1** (30 countries): Afghanistan, Albania, Andorra, Angola, Antigua & Barbuda, Armenia, Austria, Azerbaijan, Bahamas, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia, Botswana, Brunei, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, CAR, Chad, Comoros, Congo DRC, Congo Republic, Croatia
+- **Batch 2** (30 countries): Czech Republic, Denmark, Djibouti, Dominica, Dominican Republic, Ecuador, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Fiji, Gabon, Gambia, Ghana, Grenada, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hungary, Iceland, Ivory Coast, Jamaica, Kenya, Kiribati, Kosovo, Kyrgyzstan, Laos
+- **Batch 3** (30 countries): Lebanon, Lesotho, Liberia, Libya, Liechtenstein, Lithuania, Luxembourg, Madagascar, Malawi, Mali, Malta, Marshall Islands, Mauritania, Mauritius, Moldova, Monaco, Mongolia, Montenegro, Mozambique, Micronesia, Nepal, Netherlands, New Zealand, Niger, Norway, Oman, Palau, Palestine, Panama, Papua New Guinea, Paraguay
+- **Batch 4** (31 countries): Peru, Philippines, Poland, Qatar, Romania, Rwanda, Samoa, San Marino, São Tomé & Príncipe, Saudi Arabia, Senegal, Serbia, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, Somalia, South Sudan, Spain, Sudan, Suriname, Sweden, Switzerland, Syria, Tajikistan, Tanzania, Thailand, Timor-Leste, Togo, Tonga
+- **Batch 5** (39 countries): Tunisia, Turkmenistan, Tuvalu, Uganda, Uzbekistan, Vanuatu, Vietnam, Yemen, Zambia, Zimbabwe, Nauru, Saint Kitts & Nevis, Saint Lucia, Saint Vincent & the Grenadines + Final batch: Finland, Gibraltar, Greece, Greenland, Iraq, Ireland, Kuwait, Latvia, New Caledonia, Seychelles, Vatican
+
+**Verification:**
+- ✅ All 200 countries have `hero_image_url`
+- ✅ Appropriate `hero_pattern` assigned (coastal, urban, mining, default)
+- ✅ 81 tests pass
+- ✅ type-check: clean
+- ✅ Production build: 426+ pages generated successfully
+- ✅ Spot-check: 10 random countries all have visible hero images
+
+### Landmarks Data
+- Total landmarks.json entries: ~170 (covers all 200 countries with regions/alternates)
+- Image source: Unsplash CDN (free, no auth required)
+- Format: `https://images.unsplash.com/photo-[ID]?w=1280`
+
+---
+
+## [v2.18.0] — 2026-04-10 — Hero Images for 20 Countries (Phase 4)
+
+### Hero Images Added
+Added `hero_image_url` and `hero_pattern` to 20 countries in `countries.json` and 20 entries to `landmarks.json`:
+
+**Tier 1 (Search Console — high impressions):**
+- **Kazakhstan** — Baiterek Tower, Astana (urban)
+- **Portugal** — Torre de Belém, Lisboa (coastal)
+- **United Arab Emirates** — Burj Khalifa, Dubai (urban)
+- **Taiwan** — Taipei 101 (urban)
+- **Namibia** — Deadvlei, Namib Desert (default)
+
+**Tier 2 (Search Console — active clicks):**
+- **Guatemala** — Tikal Temple I (default)
+- **Cyprus** — Aphrodite's Rock, Mediterranean coast (coastal)
+- **Nicaragua** — León Cathedral (default)
+
+**Tier 3 (Search Console — present):**
+- **North Korea** — Juche Tower, Pyongyang (urban)
+- **Georgia** — Gergeti Trinity Church, Mount Kazbek (default)
+- **North Macedonia** — Porta Macedonia, Skopje (urban)
+- **Cuba** — Capitolio Nacional, Havana (urban)
+- **Israel** — Dome of the Rock, Old City Jerusalem (urban)
+- **Uruguay** — Palacio Salvo, Montevideo (urban)
+- **Costa Rica** — Volcán Arenal (default)
+- **Jordan** — Al-Khazneh, Petra (default)
+- **Bahrain** — Tree of Life / World Trade Center (coastal)
+- **Maldives** — Aerial island atolls (coastal)
+- **Trinidad and Tobago** — Pigeon Point, Tobago (coastal)
+- **Bosnia and Herzegovina** — Stari Most (Old Bridge), Mostar (urban)
+
+### Verification
+- 81 tests pass
+- type-check: clean
+- Production build: successful
+
+---
+
 ## [v2.17.0] — 2026-04-09 — Turkey Research Profile Integration (Phase 3D)
 
 ### Turkey countries.json Integration

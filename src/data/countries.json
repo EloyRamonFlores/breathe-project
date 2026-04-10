@@ -1937,7 +1937,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1516145497735-6520ee058388?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "bahrain",
@@ -1968,7 +1970,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1547919307-1ecb10702e6f?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "belgium",
@@ -2000,7 +2004,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "brunei",
@@ -2030,7 +2036,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "bulgaria",
@@ -2062,7 +2070,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "chile",
@@ -2373,7 +2383,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "cyprus",
@@ -2404,7 +2416,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "czech-republic",
@@ -2436,7 +2450,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "denmark",
@@ -2468,7 +2484,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "djibouti",
@@ -2498,7 +2516,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "egypt",
@@ -2606,7 +2626,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "finland",
@@ -2638,7 +2660,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "france",
@@ -2807,7 +2831,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "gibraltar",
@@ -2838,7 +2864,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "greece",
@@ -2870,7 +2898,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "greenland",
@@ -2900,7 +2930,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "honduras",
@@ -2931,7 +2963,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "hungary",
@@ -2963,7 +2997,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "iceland",
@@ -2994,7 +3030,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "iran",
@@ -3106,7 +3144,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "ireland",
@@ -3138,7 +3178,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "israel",
@@ -3170,7 +3212,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1558356736-a5cf62f4f1e0?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "italy",
@@ -3364,7 +3408,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "jordan",
@@ -3395,7 +3441,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1579606032821-4b8e8b7a6e27?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "kuwait",
@@ -3426,7 +3474,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "latvia",
@@ -3457,7 +3507,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "liechtenstein",
@@ -3488,7 +3540,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1516145497735-6520ee058388?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "lithuania",
@@ -3519,7 +3573,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "luxembourg",
@@ -3550,7 +3606,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "north-macedonia",
@@ -3581,7 +3639,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1555990793-da11153b2473?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "malta",
@@ -3612,7 +3672,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "mauritius",
@@ -3642,7 +3704,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "monaco",
@@ -3673,7 +3737,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "mozambique",
@@ -3704,7 +3770,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "netherlands",
@@ -3736,7 +3804,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "new-caledonia",
@@ -3767,7 +3837,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "new-zealand",
@@ -3800,7 +3872,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "norway",
@@ -3832,7 +3906,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "oman",
@@ -3863,7 +3939,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "poland",
@@ -3895,7 +3973,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "portugal",
@@ -4094,7 +4174,9 @@
         "accessed": "2026-04-07"
       }
     ],
-    "last_updated": "2026-04-07"
+    "last_updated": "2026-04-07",
+    "hero_image_url": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "qatar",
@@ -4125,7 +4207,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "romania",
@@ -4157,7 +4241,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1516145497735-6520ee058388?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "saudi-arabia",
@@ -4189,7 +4275,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "serbia",
@@ -4220,7 +4308,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "seychelles",
@@ -4250,7 +4340,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "slovakia",
@@ -4282,7 +4374,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "slovenia",
@@ -4313,7 +4407,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "spain",
@@ -4346,7 +4442,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "sweden",
@@ -4378,7 +4476,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "switzerland",
@@ -4410,7 +4510,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "taiwan",
@@ -4590,7 +4692,9 @@
         "accessed": "2026-04-09"
       }
     ],
-    "last_updated": "2026-04-09"
+    "last_updated": "2026-04-09",
+    "hero_image_url": "https://images.unsplash.com/photo-1540652082-67b51499e3cb?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "turkey",
@@ -4815,7 +4919,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "ukraine",
@@ -4990,7 +5096,8 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1486899014055-e2219b814361?w=1280"
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "philippines",
@@ -5074,7 +5181,8 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1280"
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "vietnam",
@@ -5165,7 +5273,8 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280"
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "pakistan",
@@ -5422,7 +5531,8 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1280"
+    "hero_image_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "zimbabwe",
@@ -5453,7 +5563,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "kazakhstan",
@@ -5580,7 +5692,9 @@
         "accessed": "2026-04-05"
       }
     ],
-    "last_updated": "2026-04-05"
+    "last_updated": "2026-04-05",
+    "hero_image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "kyrgyzstan",
@@ -5611,7 +5725,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "myanmar",
@@ -5702,7 +5818,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "benin",
@@ -5732,7 +5850,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "botswana",
@@ -5762,7 +5882,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "burkina-faso",
@@ -5792,7 +5914,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "burundi",
@@ -5822,7 +5946,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "cabo-verde",
@@ -5852,7 +5978,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "cameroon",
@@ -5882,7 +6010,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "central-african-republic",
@@ -5912,7 +6042,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "chad",
@@ -5942,7 +6074,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "comoros",
@@ -5972,7 +6106,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "congo-republic",
@@ -6002,7 +6138,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "congo-drc",
@@ -6032,7 +6170,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "equatorial-guinea",
@@ -6062,7 +6202,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "eritrea",
@@ -6092,7 +6234,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "eswatini",
@@ -6122,7 +6266,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "ethiopia",
@@ -6152,7 +6298,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "gambia",
@@ -6182,7 +6330,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "ghana",
@@ -6212,7 +6362,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "guinea",
@@ -6242,7 +6394,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "guinea-bissau",
@@ -6272,7 +6426,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "lesotho",
@@ -6302,7 +6458,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "liberia",
@@ -6332,7 +6490,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "libya",
@@ -6362,7 +6522,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "madagascar",
@@ -6392,7 +6554,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "malawi",
@@ -6422,7 +6586,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "mali",
@@ -6452,7 +6618,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "mauritania",
@@ -6482,7 +6650,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "morocco",
@@ -6642,7 +6812,9 @@
         "accessed": "2026-04-09"
       }
     ],
-    "last_updated": "2026-04-09"
+    "last_updated": "2026-04-09",
+    "hero_image_url": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "niger",
@@ -6672,7 +6844,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "rwanda",
@@ -6702,7 +6876,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "sao-tome-and-principe",
@@ -6732,7 +6908,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "senegal",
@@ -6762,7 +6940,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "sierra-leone",
@@ -6792,7 +6972,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "somalia",
@@ -6822,7 +7004,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "south-sudan",
@@ -6852,7 +7036,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "sudan",
@@ -6882,7 +7068,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "tanzania",
@@ -6912,7 +7100,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "togo",
@@ -6942,7 +7132,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "tunisia",
@@ -6972,7 +7164,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "uganda",
@@ -7002,7 +7196,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1573482350988-6ccb202cd1d3?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "zambia",
@@ -7032,7 +7228,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "antigua-and-barbuda",
@@ -7063,7 +7261,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "bahamas",
@@ -7094,7 +7294,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "barbados",
@@ -7125,7 +7327,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "belize",
@@ -7156,7 +7360,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "bolivia",
@@ -7187,7 +7393,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "costa-rica",
@@ -7218,7 +7426,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1553279768-865429fa0078?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "cuba",
@@ -7249,7 +7459,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1508973379184-7517410eec06?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "dominica",
@@ -7280,7 +7492,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "dominican-republic",
@@ -7311,7 +7525,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "ecuador",
@@ -7342,7 +7558,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "el-salvador",
@@ -7373,7 +7591,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "grenada",
@@ -7404,7 +7624,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "guatemala",
@@ -7435,7 +7657,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "guyana",
@@ -7466,7 +7690,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "haiti",
@@ -7497,7 +7723,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "jamaica",
@@ -7528,7 +7756,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "nicaragua",
@@ -7559,7 +7789,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1586953389687-8b07ae1b8c37?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "panama",
@@ -7590,7 +7822,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "paraguay",
@@ -7621,7 +7855,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "peru",
@@ -7695,7 +7931,8 @@
       }
     ],
     "last_updated": "2026-03-24",
-    "hero_image_url": "https://images.unsplash.com/photo-1587595431973-160beaf913cb?w=1280"
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "saint-kitts-and-nevis",
@@ -7726,7 +7963,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "saint-lucia",
@@ -7757,7 +7996,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "saint-vincent-and-the-grenadines",
@@ -7788,7 +8029,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "suriname",
@@ -7819,7 +8062,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "trinidad-and-tobago",
@@ -7850,7 +8095,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "venezuela",
@@ -7943,7 +8190,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "armenia",
@@ -7973,7 +8222,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "azerbaijan",
@@ -8003,7 +8254,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "bhutan",
@@ -8033,7 +8286,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1537384294627-4d3e10a3ee0a?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "cambodia",
@@ -8063,7 +8318,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1557821552-17105176677c?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "georgia",
@@ -8093,7 +8350,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "laos",
@@ -8123,7 +8382,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1537384294627-4d3e10a3ee0a?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "lebanon",
@@ -8153,7 +8414,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "malaysia",
@@ -8260,7 +8523,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "mongolia",
@@ -8290,7 +8555,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "nepal",
@@ -8320,7 +8587,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "north-korea",
@@ -8350,7 +8619,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1569950044272-e562a9b4aa68?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "palestine",
@@ -8380,7 +8651,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "singapore",
@@ -8410,7 +8683,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "sri-lanka",
@@ -8524,7 +8799,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "tajikistan",
@@ -8554,7 +8831,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "timor-leste",
@@ -8584,7 +8863,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "turkmenistan",
@@ -8614,7 +8895,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "united-arab-emirates",
@@ -8674,7 +8957,9 @@
       "placas planas de cemento-asbesto",
       "tuberías de agua de cemento-asbesto"
     ],
-    "resistance_stories": []
+    "resistance_stories": [],
+    "hero_image_url": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "uzbekistan",
@@ -8704,7 +8989,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "yemen",
@@ -8734,7 +9021,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "albania",
@@ -8765,7 +9054,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1603266808191-4f45e0a23e8b?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "andorra",
@@ -8796,7 +9087,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "belarus",
@@ -8827,7 +9120,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "bosnia-and-herzegovina",
@@ -8858,7 +9153,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1573483377524-38c8c1c4f9cb?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "kosovo",
@@ -8889,7 +9186,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "moldova",
@@ -8920,7 +9219,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1518136247453-74e7b5265980?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "montenegro",
@@ -8951,7 +9252,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "san-marino",
@@ -8982,7 +9285,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "vatican",
@@ -9013,7 +9318,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1280",
+    "hero_pattern": "urban"
   },
   {
     "slug": "fiji",
@@ -9043,7 +9350,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "kiribati",
@@ -9073,7 +9382,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "marshall-islands",
@@ -9103,7 +9414,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "micronesia",
@@ -9133,7 +9446,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "nauru",
@@ -9163,7 +9478,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "palau",
@@ -9193,7 +9510,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "papua-new-guinea",
@@ -9223,7 +9542,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280",
+    "hero_pattern": "default"
   },
   {
     "slug": "samoa",
@@ -9253,7 +9574,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "solomon-islands",
@@ -9283,7 +9606,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "tonga",
@@ -9313,7 +9638,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "tuvalu",
@@ -9343,7 +9670,9 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   },
   {
     "slug": "vanuatu",
@@ -9373,6 +9702,8 @@
         "accessed": "2026-03-13"
       }
     ],
-    "last_updated": "2026-03-13"
+    "last_updated": "2026-03-13",
+    "hero_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1280",
+    "hero_pattern": "coastal"
   }
 ]
