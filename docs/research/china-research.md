@@ -4,6 +4,8 @@
 **Date:** 2026-04-04
 **Status:** Draft — Pending human review and local expert fact-checking
 **Confidence:** MEDIUM — limited public activism data; strong regulatory and production data from IBAS and USGS
+**Used for:**
+- 2026-04-10: SEO meta description EN+ES — corrected factual errors (China ≠ largest producer; de_facto_ban since 2011, not no_ban), enriched with USGS production data (194,000 tonnes/year)
 
 ---
 

@@ -4,6 +4,8 @@
 **Date:** 2026-03-28
 **Status:** Draft — Pending human review
 **Confidence:** HIGH — Australia's asbestos history is among the best-documented in the world. The AIHW publishes annual mesothelioma statistics; ASSEA (formerly ASEA) maintains comprehensive industry data; the James Hardie and Wittenoom stories are extensively covered in legal records, journalism, and government inquiries.
+**Used for:**
+- 2026-04-10: SEO meta description EN+ES — corrected ban year (2003→2004, effective January 1, 2004), enriched with ASSEA data (1 in 3 homes pre-1990, 6 million tonnes in built environment)
 
 ---
 

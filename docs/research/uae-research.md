@@ -4,6 +4,7 @@
 **Date:** 2026-04-07
 **Status:** Draft — Pending human review
 **Confidence:** MEDIUM — The UAE's regulatory framework is documented in official federal and emirate-level instruments, and construction sector exposure data is well-documented. Key gaps: no national mesothelioma registry; no public-domain data on individual occupational compensation cases; IBAS does not list the UAE as a full-ban country due to ongoing asbestos-cement pipe production. The most important nuance in this profile is the **partial ban**: Federal Cabinet Resolution 39/2006 banned asbestos panels (boards) but explicitly left asbestos-cement pipes unregulated — and those pipes were actively manufactured and widely used in infrastructure for years after 2006.
+**Status de SEO:** Pendiente validación y enriquecimiento de meta descriptions
 
 ---
 

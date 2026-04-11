@@ -3,6 +3,8 @@
 **Date:** 2026-03-28
 **Status:** Draft — Pending human review
 **Confidence:** HIGH — Primary sources: STF court records, IBAS, PMC peer-reviewed journals, ICIJ, Al Jazeera
+**Used for:**
+- 2026-04-10: SEO meta description EN+ES — corrected ban year (2023→2017 STF ruling, 2023=confirmation), added asbestos-cement roofing angle for building legacy
 
 ---
 

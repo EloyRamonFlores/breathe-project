@@ -4,6 +4,8 @@
 **Date:** 2026-04-06
 **Status:** Draft — Pending human review
 **Confidence:** HIGH — extensive primary and secondary sources available; key gap is official Russian mesothelioma mortality (systematic underreporting confirmed)
+**Used for:**
+- 2026-04-10: SEO meta description EN+ES — replaced generic tonnage with Asbest city hook (70,000 people, world's largest chrysotile mine, ICIJ data)
 
 ---
 

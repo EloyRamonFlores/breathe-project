@@ -4,6 +4,8 @@
 **Date:** 2026-04-07
 **Status:** Draft — Pending human review
 **Confidence:** HIGH — Turkish national mesothelioma surveillance data (TUNMES-EAECP, 5,617 cases), peer-reviewed epidemiology from PubMed/PMC, IBAS regulatory records, Library of Congress legal monitor, and Turkish government regulatory archives provide solid sourcing. Key distinction: the celebrated Cappadocia epidemic is caused primarily by **erionite** (a fibrous zeolite mineral), not asbestos — this is scientifically established and important context. Key gap: no identified Turkish asbestos-specific civil society organization equivalent to Portugal's SOS Amianto; asbestos compensation litigation cases were not identified in public sources.
+**Used for:**
+- 2026-04-10: SEO meta description EN+ES — enriched with 379 villages / 158,068 people affected, and mesothelioma diagnosed 10 years earlier than European average; full_ban 2010 confirmed; added to PRIORITY_DESCRIPTIONS
 
 ---
 

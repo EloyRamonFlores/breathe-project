@@ -26,18 +26,18 @@ export async function generateStaticParams() {
 
 const BASE_URL = SITE_URL;
 
-// ─── Handcrafted descriptions for 15 priority countries ─────────────────────
+// ─── Handcrafted descriptions for 24 priority countries ─────────────────────
 const PRIORITY_DESCRIPTIONS: Record<string, string> = {
   "united-states":
     "Yes, the U.S. banned asbestos in 2024. Millions of pre-ban buildings still contain asbestos materials. Check if your home is at risk.",
   india:
-    "India has no national asbestos ban. The world's second-largest user, with millions exposed in construction and manufacturing. Check your building.",
+    "India has no asbestos use ban. The world's largest importer in 2023 — 485,000 tonnes. An estimated 200 million people live under asbestos roofs. Assess your exposure risk.",
   china:
-    "China has no asbestos ban and is the world's largest asbestos producer. Millions of buildings contain asbestos materials. Assess your exposure risk.",
+    "China banned asbestos from construction in 2011, but chrysotile remains legal. 194,000 tonnes consumed yearly. Check if your building contains asbestos.",
   russia:
-    "Russia has no asbestos ban and mines over 700,000 tons annually. Buildings across all eras contain asbestos materials. Use our free risk checker.",
+    "Russia has no asbestos ban — home to Asbest city, 70,000 people built around the world's largest chrysotile mine. All-era buildings may contain asbestos.",
   brazil:
-    "Yes, Brazil banned asbestos in 2023 after a decades-long fight. Pre-ban buildings may still contain materials. Check your property's risk now.",
+    "Brazil's Supreme Court banned asbestos in 2017, confirmed 2023. Millions of homes still have asbestos-cement roofing. Check your property's risk now.",
   mexico:
     "Mexico has no asbestos ban. Millions of homes and factories from 1960–2000 likely contain asbestos-cement materials. Check your risk now.",
   indonesia:
@@ -45,7 +45,7 @@ const PRIORITY_DESCRIPTIONS: Record<string, string> = {
   "united-kingdom":
     "Yes, the UK banned asbestos in 1999. Buildings built before 1999 may still contain it. Learn UK regulations and check your property's risk.",
   australia:
-    "Yes, Australia banned asbestos in 2003. Pre-2003 buildings from the 1960–1980 peak era may still contain asbestos materials. Check your risk.",
+    "Australia banned all asbestos on January 1, 2004. 1 in 3 homes built before 1990 contain asbestos — 6 million tonnes remain in the built environment. Check your risk.",
   japan:
     "Yes, Japan banned asbestos in 2012. Buildings built before the ban may still contain asbestos-cement, floor tiles, and insulation materials.",
   "south-korea":
@@ -53,32 +53,50 @@ const PRIORITY_DESCRIPTIONS: Record<string, string> = {
   germany:
     "Yes, Germany banned asbestos in 1993, one of the first countries to do so. Pre-1993 buildings remain a risk. Learn about German asbestos law.",
   "south-africa":
-    "Yes, South Africa banned asbestos in 2008. Once a major producer, the country has a legacy of contaminated buildings and sites. Check your risk.",
+    "South Africa banned asbestos in 2008. Formerly the world's sole amosite supplier — 82+ mine dumps remain in the Northern Cape. Check your property risk.",
   canada:
     "Yes, Canada banned asbestos in 2018 — despite being a former top producer. Pre-2018 buildings, especially 1960–1980 era, may still contain it.",
   nigeria:
     "Nigeria has no asbestos ban. Asbestos-cement roofing is still widely used in construction. Check if your building contains hazardous materials.",
+  italy:
+    "Italy banned asbestos in 1992. Casale Monferrato (pop. 35,000) still records ~50 mesothelioma deaths/year from legacy exposure. Check your pre-1992 building's risk.",
+  france:
+    "France banned asbestos in 1997. FIVA has paid over €6.7 billion in compensation — including to 60 teachers/year who developed mesothelioma. Check your building's risk.",
+  colombia:
+    "Colombia banned asbestos in 2019 (Law 1968, effective January 2021). Sibaté has mesothelioma mortality 65× the national average — 38 vs 0.6 per 100,000. Check pre-ban buildings for asbestos risk.",
+  kazakhstan:
+    "Kazakhstan has no asbestos ban — 248,000 tonnes produced yearly. Mining city Zhitikara has a lung cancer rate of 32.5 per 100,000. Assess your building's asbestos risk.",
+  portugal:
+    "Portugal banned asbestos in 2005. Of 115,000 tonnes used 1930–2003, 97% of resulting mesothelioma cases were never recognized as occupational diseases. Check your building.",
+  turkey:
+    "Turkey banned asbestos in 2010. 379 villages — 158,068 people — faced environmental asbestos exposure. Mesothelioma occurs 10 years earlier than the European average here.",
+  "united-arab-emirates":
+    "UAE banned asbestos panels in 2006 — but asbestos-cement pipes remain legal. 500,000+ migrant workers were exposed with little protection. Assess your building's risk.",
+  taiwan:
+    "Taiwan banned asbestos in 2018. Male mesothelioma cases grew 9-fold from 1979–2013. 659 new cases are projected through 2046. Check if your pre-2018 building contains asbestos.",
+  namibia:
+    "Namibia has no confirmed asbestos ban. Asbestos-cement was listed as standard roofing in 1969 regulations and remains in many older buildings. Assess your building risk.",
 };
 
 const PRIORITY_DESCRIPTIONS_ES: Record<string, string> = {
   "united-states":
     "Sí, EE.UU. prohibió el asbesto en 2024. Millones de edificios anteriores a la prohibición aún contienen materiales con asbesto. Verifica si tu hogar está en riesgo.",
   india:
-    "India no tiene una prohibición nacional del asbesto. Es el segundo mayor usuario mundial, con millones expuestos en la construcción y manufactura. Evalúa tu edificio.",
+    "India no tiene prohibición del uso de asbesto — mayor importador mundial en 2023 (485,000 toneladas). Unos 200 millones de personas viven bajo techos de cemento-asbesto. Evalúa tu riesgo.",
   china:
-    "China no tiene prohibición de asbesto y es el mayor productor mundial. Millones de edificios contienen materiales con asbesto. Evalúa tu riesgo de exposición.",
+    "China prohibió el asbesto en construcción en 2011, pero el crisotilo sigue siendo legal. 194,000 toneladas consumidas al año. Evalúa el riesgo de tu edificio.",
   russia:
-    "Rusia no tiene prohibición de asbesto y extrae más de 700,000 toneladas anuales. Los edificios de todas las épocas contienen materiales con asbesto. Usa nuestra herramienta gratuita.",
+    "Rusia no tiene prohibición del asbesto. Sede de Asbest — 70,000 personas junto a la mayor mina de crisotilo del mundo. Edificios de todas las épocas pueden contenerlo.",
   brazil:
-    "Sí, Brasil prohibió el asbesto en 2023 tras décadas de lucha. Los edificios anteriores a la prohibición pueden contener materiales. Verifica el riesgo de tu propiedad.",
+    "El Supremo de Brasil prohibió el asbesto en 2017, confirmado en 2023. Millones de hogares aún tienen techos de cemento-asbesto. Verifica el riesgo de tu propiedad.",
   mexico:
     "México no tiene una prohibición del asbesto. Millones de hogares y fábricas de 1960–2000 probablemente contienen materiales de cemento-asbesto. Verifica tu riesgo ahora.",
   indonesia:
     "Indonesia no tiene una prohibición del asbesto. Su uso generalizado en techos y construcción pone a millones en riesgo. Evalúa tu edificio con nuestra herramienta gratuita.",
   "united-kingdom":
-    "Sí, el Reino Unido prohibió el asbesto en 1999. Los edificios construidos antes de 1999 pueden contenerlo. Conoce la normativa del Reino Unido y verifica el riesgo de tu propiedad.",
+    "El Reino Unido prohibió el asbesto en 1999. El 80–90% de edificios anteriores a 1999 pueden contenerlo — incluido el 90%+ de hospitales NHS. Consulta la normativa CAR 2012 y evalúa el riesgo de tu propiedad.",
   australia:
-    "Sí, Australia prohibió el asbesto en 2003. Los edificios anteriores a 2003 de la era de máximo uso (1960–1980) pueden contener materiales con asbesto. Verifica tu riesgo.",
+    "Australia prohibió el asbesto el 1 de enero de 2004. 1 de cada 3 viviendas anteriores a 1990 lo contienen. 6 millones de toneladas siguen en el entorno construido. Verifica tu riesgo.",
   japan:
     "Sí, Japón prohibió el asbesto en 2012. Los edificios construidos antes de la prohibición pueden contener cemento-asbesto, baldosas y materiales de aislamiento.",
   "south-korea":
@@ -86,11 +104,29 @@ const PRIORITY_DESCRIPTIONS_ES: Record<string, string> = {
   germany:
     "Sí, Alemania prohibió el asbesto en 1993, siendo uno de los primeros países en hacerlo. Los edificios anteriores a 1993 siguen siendo un riesgo. Conoce la ley alemana sobre asbesto.",
   "south-africa":
-    "Sí, Sudáfrica prohibió el asbesto en 2008. Como antiguo gran productor, el país tiene un legado de edificios y sitios contaminados. Verifica tu riesgo.",
+    "Sudáfrica prohibió el asbesto en 2008. Antiguo proveedor mundial de amosita — más de 82 vertederos mineros persisten en el Cabo Norte. Verifica el riesgo de tu propiedad.",
   canada:
     "Sí, Canadá prohibió el asbesto en 2018, a pesar de ser un antiguo gran productor. Los edificios anteriores a 2018, especialmente de la era 1960–1980, pueden contenerlo.",
   nigeria:
     "Nigeria no tiene una prohibición del asbesto. Las cubiertas de cemento-asbesto aún se usan ampliamente en la construcción. Verifica si tu edificio contiene materiales peligrosos.",
+  italy:
+    "Italia prohibió el asbesto en 1992. Casale Monferrato (35,000 hab.) registra ~50 muertes por mesotelioma al año por exposición heredada. Evalúa el riesgo de tu propiedad.",
+  france:
+    "Francia prohibió el asbesto en 1997. FIVA ha pagado más de €6.700 millones en compensaciones — 60 profesores/año desarrollaron mesotelioma. Evalúa el riesgo de tu edificio.",
+  colombia:
+    "Colombia prohibió el asbesto en 2019 (Ley 1968, vigente desde enero de 2021). Sibaté tiene mortalidad por mesotelioma 65 veces superior a la media nacional (38 vs 0,6 por 100,000). Evalúa tu edificio.",
+  kazakhstan:
+    "Kazajistán no tiene prohibición del asbesto — produce 248,000 toneladas al año. Zhitikara tiene una tasa de cáncer de pulmón de 32,5 por 100,000. Evalúa tu riesgo.",
+  portugal:
+    "Portugal prohibió el asbesto en 2005. El 97% de los casos de mesotelioma derivados de 115,000 toneladas usadas desde 1930 nunca fueron reconocidos oficialmente. Evalúa tu riesgo.",
+  turkey:
+    "Turquía prohibió el asbesto en 2010. 379 pueblos — 158,068 personas — sufrieron exposición ambiental. El mesotelioma se diagnostica 10 años antes que la media europea.",
+  "united-arab-emirates":
+    "Los EAU prohibieron paneles de asbesto en 2006, pero las tuberías de cemento-asbesto siguen siendo legales. 500,000+ trabajadores migrantes estuvieron expuestos. Evalúa tu riesgo.",
+  taiwan:
+    "Taiwán prohibió el asbesto en 2018. Los casos masculinos de mesotelioma crecieron 9 veces entre 1979 y 2013. Se proyectan 659 nuevos casos hasta 2046. Evalúa tu edificio.",
+  namibia:
+    "Namibia no tiene prohibición confirmada del asbesto. El cemento-asbesto fue estándar en regulaciones de 1969 y persiste en muchos edificios. Evalúa el riesgo de tu propiedad.",
 };
 
 function getBanDescription(country: Country, locale: string): string {
@@ -121,13 +157,14 @@ function getBanDescription(country: Country, locale: string): string {
 
 function getCountryTitle(country: Country, locale: string): string {
   if (locale === "es") {
+    const displayName = country.name_es ?? country.name;
     if (country.ban_status === "full_ban" && country.ban_year) {
-      return `¿Está prohibido el asbesto en ${country.name}? Prohibido en ${country.ban_year} | ToxinFree`;
+      return `¿Está prohibido el asbesto en ${displayName}? Prohibido en ${country.ban_year} | ToxinFree`;
     }
     if (country.ban_status === "no_ban") {
-      return `¿Está prohibido el asbesto en ${country.name}? Sin prohibición nacional | ToxinFree`;
+      return `¿Está prohibido el asbesto en ${displayName}? Sin prohibición nacional | ToxinFree`;
     }
-    return `¿Está prohibido el asbesto en ${country.name}? | ToxinFree`;
+    return `¿Está prohibido el asbesto en ${displayName}? | ToxinFree`;
   }
   if (country.ban_status === "full_ban" && country.ban_year) {
     return `Is Asbestos Banned in ${country.name}? Banned ${country.ban_year} | ToxinFree`;
@@ -156,16 +193,19 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: {
+      canonical: `${BASE_URL}/${locale}/country/${slug}`,
+      languages: {
+        "x-default": `${BASE_URL}/en/country/${slug}`,
+        en: `${BASE_URL}/en/country/${slug}`,
+        es: `${BASE_URL}/es/country/${slug}`,
+      },
+    },
     openGraph: {
       title,
       description,
       type: "article",
-    },
-    alternates: {
-      languages: {
-        en: `${BASE_URL}/en/country/${slug}`,
-        es: `${BASE_URL}/es/country/${slug}`,
-      },
+      locale: locale === "es" ? "es_ES" : "en_US",
     },
   };
 }

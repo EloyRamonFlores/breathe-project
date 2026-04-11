@@ -4,6 +4,7 @@
 **Date:** 2026-03-28
 **Status:** Draft — Pending human review
 **Confidence:** HIGH — France's asbestos history is extensively documented in English through IBAS, peer-reviewed journals, and major journalism. The FIVA compensation fund data and Santé publique France surveillance program provide authoritative statistics.
+**Status de SEO:** Pendiente validación y enriquecimiento de meta descriptions
 
 ---
 

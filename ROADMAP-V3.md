@@ -469,7 +469,7 @@ Actualizar CHANGELOG.md con v2.18.0.
 
 ---
 
-## PHASE 6: Fix UK Español — Posición 71.5 (1h) [PENDIENTE]
+## PHASE 6: Fix UK Español — Posición 71.5 (1h) ✅ COMPLETADO 2026-04-10
 **Version**: v2.19.0
 **Por qué**: El Reino Unido tiene el perfil de investigación más rico del sitio (44 fuentes, 4 activistas) pero la versión ES está en posición 71.5 — página 7. La versión EN no aparece en el top de queries. Esto sugiere un problema técnico o de contenido específico de la versión ES.
 
@@ -496,6 +496,53 @@ contenido en español insuficiente en la página, o la meta description ES es de
 Ejecutar: npm run type-check && npm run build
 Actualizar CHANGELOG.md con v2.19.0.
 ```
+
+---
+
+## PHASE 6B: SEO Meta Descriptions — Research Integration ✅ COMPLETADO 2026-04-10
+**Version**: v2.19.2–v2.19.3
+**Por qué**: Los research files contienen datos únicos y verificados (tasas de mortalidad, nombres de ciudades, cifras específicas) que diferenciaban nuestras meta descriptions de cualquier competidor genérico. Además, varios countries.json tenían errores factuales en las descripciones hardcodeadas (Australia ban year 2003→2004, China "largest producer" error, India "second-largest user" error, Brazil "2023" vs 2017).
+
+### Proceso estandarizado (aplicar a cada nuevo país con research)
+
+Este proceso es el **nuevo estándar** para integrar cualquier research file al sitio:
+
+1. **Validar datos**: comparar research file vs countries.json (ban_status, ban_year, datos de mortalidad)
+2. **Corregir errores factuales** en PRIORITY_DESCRIPTIONS si existen
+3. **Añadir descripción prioritaria**: extraer 2-3 datos únicos del research (cifras específicas, nombres propios, comparaciones) — nunca usar texto genérico
+4. **Añadir campo `**Used for:**`** al research file documentando qué se extrajo y cuándo
+5. **Build**: `npm run type-check && npm run build`
+
+### Países completados en esta fase
+
+| País | Error corregido | Dato único usado |
+|------|----------------|-----------------|
+| UK | Título ES con "United Kingdom" en inglés | 80-90% edificios NHS, CAR 2012 |
+| China | "largest producer" → segundo mayor consumidor; no_ban → de_facto_ban | 194,000 tonnes/year |
+| South Africa | "major producer" genérico | sole amosite supplier, 82+ mine dumps |
+| Australia | 2003 → 2004 (ban efectivo) | 1 in 3 homes pre-1990, 6M tonnes |
+| Brazil | 2023 → 2017 STF (2023=confirmación) | asbestos-cement roofing legacy |
+| Russia | tonelaje genérico | Asbest city, 70,000 people, world's largest mine |
+| India | "second-largest user" → mayor importador mundial | 485,000 tonnes 2023, 200M under asbestos roofs |
+| Italy | — | ~50 mesothelioma deaths/year, Casale Monferrato 35,000 hab. |
+| France | — | FIVA €6.7B compensation, 60 teachers/year |
+| Colombia | — | Sibaté 65× national mortality average |
+| Kazakhstan | — | 248,000 tonnes/year, Zhitikara lung cancer 32.5/100k |
+| Portugal | — | 97% cases unrecognized, 115,000 tonnes 1930-2003 |
+| Turkey | — | 379 villages, 158,068 people, 10 years earlier diagnosis |
+| UAE | — | partial ban loophole (pipes legal), 500k+ migrant workers |
+| Taiwan | — | 9× male mesothelioma increase, 659 projected cases 2046 |
+| Namibia | — | 1969 building regulations, unknown ban status |
+
+**Total**: 16 países con PRIORITY_DESCRIPTIONS enriquecidas (de 15 genéricas a 24 basadas en research)
+
+### Para futuros países (obligatorio en cada research completado)
+
+Antes de marcar un research file como "done", siempre:
+- [ ] Añadir a PRIORITY_DESCRIPTIONS con dato único verificado en el research
+- [ ] Añadir campo `**Used for:**` al research file
+- [ ] Validar ban_status y ban_year contra countries.json
+- [ ] `npm run type-check && npm run build`
 
 ---
 

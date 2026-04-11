@@ -4,6 +4,7 @@
 **Date:** 2026-04-05
 **Status:** Draft — Pending human review
 **Confidence:** HIGH — Kazakhstan is one of the world's two largest asbestos producers. IBAS, USGS, and peer-reviewed epidemiological studies provide extensive documentation. Kostanay Minerals JSC publishes production data. Corporate espionage case is documented in UK court records.
+**Status de SEO:** Pendiente validación y enriquecimiento de meta descriptions
 
 ---
 

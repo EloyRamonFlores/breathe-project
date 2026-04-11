@@ -4,6 +4,7 @@
 **Date:** 2026-03-21
 **Status:** Draft — Pending human review
 **Confidence:** HIGH — UK is one of the most documented asbestos cases globally. HSE publishes annual statistics. IBAS is UK-based. Court records are publicly available.
+**Status de SEO:** Pendiente validación y enriquecimiento de meta descriptions
 
 ---
 

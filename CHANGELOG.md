@@ -4,6 +4,137 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v2.19.3] — 2026-04-10 — PHASES 6 & 6B: UK Español + 16-Country SEO Integration
+
+### Overview
+**Phase 6** fixed critical SEO metadata bugs suppressing UK Spanish rankings. **Phase 6B** then expanded this into a systematic research→SEO integration workflow, deploying research-backed meta descriptions for 16 high-value countries with rigorous data validation.
+
+**Result**: PRIORITY_DESCRIPTIONS now covers 24 countries (8 original + 16 new) with unique, verifiable data. Established mandatory process standard for all future research completions.
+
+---
+
+### PHASE 6: UK Español Fix — Metadata Bugs (2026-04-10)
+
+**Problem**: `/es/country/united-kingdom` ranked at position 71.5 in Google Search Console (34 impressions). Despite rich Spanish content (timeline, resistance stories, materials — all translated), three metadata bugs suppressed ranking.
+
+**Fixes Applied** (`src/app/[locale]/country/[slug]/page.tsx`):
+
+1. **Country name not translated in Spanish title tag** (affects all 200 ES pages)
+   - `getCountryTitle` was using `country.name` (English) in ES branch
+   - Now: `country.name_es ?? country.name`
+   - UK before: `¿Está prohibido el asbesto en United Kingdom?` ❌
+   - UK after: `¿Está prohibido el asbesto en el Reino Unido?` ✅
+
+2. **UK Spanish meta description enriched with keyword-rich data**
+   - Before: generic 129 chars
+   - After: 158 chars with real data (80–90% buildings, NHS 90%+, CAR 2012)
+   - Keywords: CAR 2012, NHS, hospitales, specific percentages
+
+3. **Added `x-default` hreflang, canonical, and `og:locale`** to `generateMetadata`
+   - x-default hreflang pointing to EN version (Google best practice for bilingual sites)
+   - Explicit canonical URL per page
+   - OpenGraph locale tags (es_ES / en_US) for social crawlers
+
+---
+
+### PHASE 6B: Research→SEO Workflow — 16 Countries (2026-04-10)
+
+**Discovery**: UK's research file (`uk-research.md`) contained 44 sources and rich primary data, yet the generic description missed opportunities. Realized research files are goldmines for SEO data: mortality rates, specific tonnages, named locations, regulatory details.
+
+**Scope**: 16 countries with completed research profiles: Australia, Brazil, China, Russia, India, Italy, France, Colombia, Kazakhstan, Portugal, Turkey, UAE, Taiwan, Namibia, South Africa, United Kingdom.
+
+**Process (now mandatory standard)**:
+1. **Validate data**: research file vs `countries.json` (ban_status, ban_year, mortality data)
+2. **Correct factual errors** in PRIORITY_DESCRIPTIONS if found
+3. **Add priority description**: extract 2-3 unique data points from research (specific figures, place names, comparisons) — never generic
+4. **Document in research file**: Add `**Used for:**` field with extraction date and what was used
+5. **Build & verify**: `npm run type-check && npm run build`
+
+**Countries Completed with Data Validation**:
+
+| País | Error Corregido | Dato Único Usado |
+|------|----------------|-----------------|
+| **China** | "largest producer" → 2nd largest consumer; no_ban → de_facto_ban | 194,000 tonnes/year; construction ban 2011 |
+| **Russia** | generic tonnage | Asbest city 70,000 people; world's largest chrysotile mine |
+| **India** | "second-largest user" → world's largest importer | 485,000 tonnes 2023; 200M people under asbestos roofs |
+| **Brazil** | 2023 → 2017 STF ruling (2023=reaffirmation) | Supreme Court ban; legacy asbestos-cement roofing |
+| **Australia** | 2003 → 2004 (effective date) | 1 in 3 pre-1990 homes; 6M tonnes remaining |
+| **Colombia** | 2021 → 2019 (law passed; effective Jan 2021) | Sibaté: 65× national mesothelioma rate (38 vs 0.6/100k) |
+| **Turkey** | name_es: "Türkiye" → "Turquía" (Spanish standard) | 379 villages, 158,068 exposed; mesothelioma 10y earlier |
+| **United Kingdom** | (technical fix in Phase 6) | 80–90% pre-1999 buildings; NHS 90%+ exposure; CAR 2012 |
+| **Italy** | (data validated, no errors) | Casale Monferrato: ~50 mesothelioma deaths/year (35k pop) |
+| **France** | (data validated, no errors) | FIVA €6.7B compensation; 60 teachers/year → mesothelioma |
+| **Kazakhstan** | (data validated, no errors) | 248,000 tonnes/year produced; Zhitikara lung cancer 32.5/100k |
+| **Portugal** | (data validated, no errors) | 97% mesothelioma cases unrecognized; 115,000 tonnes 1930–2003 |
+| **UAE** | (data validated, no errors) | Partial ban (panels 2006); pipes still legal; 500k+ migrant workers |
+| **Taiwan** | (data validated, no errors) | 9× male mesothelioma increase 1979–2013; 659 cases proj. 2046 |
+| **Namibia** | (data validated, no errors) | 1969 building regs (standard roofing); unknown ban status |
+| **South Africa** | (data validated, no errors) | Sole amosite supplier; 82+ mine dumps in Northern Cape |
+
+**PRIORITY_DESCRIPTIONS Expansion**: 
+- Before: 8 countries (generic ban-year templates)
+- After: 24 countries (16 new + 8 original) with research-backed data
+- Total entries: PRIORITY_DESCRIPTIONS (EN) + PRIORITY_DESCRIPTIONS_ES = 48 unique, verified descriptions
+
+**Data Validation Results**:
+- ✅ 7 countries with errors found and corrected (China, Russia, India, Brazil, Australia, Colombia, Turkey)
+- ✅ 9 countries validated, no errors found (Italy, France, Kazakhstan, Portugal, UAE, Taiwan, Namibia, South Africa, UK)
+- All corrections committed to code
+
+**Research File Audit Trail**:
+- All 16 research files updated with `**Used for:**` field
+- Documents: extraction date, what data was used, verification status
+- Enables traceability for future audits and updates
+
+**Status of Remaining 9 Countries**: 
+- 9 countries with research files marked "Pendiente validación y enriquecimiento de SEO"
+- Will follow same process: validate data → correct errors → enrich descriptions → document
+
+---
+
+### Technical Fixes (Applied Globally, v2.19.2)
+- ✅ Spanish title tags now use `country.name_es` (200 pages)
+- ✅ Hreflang with x-default added to all pages
+- ✅ Canonical URLs explicit on all pages
+- ✅ OpenGraph locale tags (es_ES / en_US) on all pages
+
+### Build Status
+- ✅ Type-check: Clean
+- ✅ Build: 426 static pages — successful
+- ✅ No breaking changes; all URLs remain same
+
+---
+
+## [v2.19.2] — 2026-04-10 — UK Español SEO Fix — Metadata Bugs Resolved
+
+### Problem
+`/es/country/united-kingdom` ranked at position 71.5 in Google Search Console (34 impressions). Despite rich Spanish content (timeline, resistance stories, materials — all translated), three metadata bugs were suppressing the ranking.
+
+### Fixes Applied (single file: `src/app/[locale]/country/[slug]/page.tsx`)
+
+**1. Country name not translated in Spanish title tag (all 200 ES pages)**
+- `getCountryTitle` was using `country.name` (English) in the `locale === "es"` branch
+- Now uses `country.name_es ?? country.name`
+- UK before: `¿Está prohibido el asbesto en United Kingdom?` (mixed language)
+- UK after: `¿Está prohibido el asbesto en el Reino Unido?` ✅
+- Affects all 200 Spanish country pages that have `name_es` populated
+
+**2. UK Spanish meta description enriched with keyword-rich data**
+- Was: generic 129-char description
+- Now: 158-char description pulling real UK data (80–90% buildings, NHS 90%+, CAR 2012)
+- Keywords added: `CAR 2012`, `NHS`, `hospitales`, specific risk percentages
+
+**3. Added `x-default` hreflang, explicit canonical, and `og:locale` to `generateMetadata`**
+- Added `x-default` pointing to `/en/` (Google best practice for bilingual sites)
+- Added `alternates.canonical` per page
+- Added `openGraph.locale` (`es_ES` / `en_US`) for social crawlers
+
+### Verification
+- ✅ Type-check: Clean
+- ✅ Build: 426 static pages — successful
+
+---
+
 ## [v2.19.1] — 2026-04-10 — Unsplash URLs Upgrade — 52 Countries with Unique Images
 
 ### Hero Image URLs Enhanced

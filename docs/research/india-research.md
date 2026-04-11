@@ -4,6 +4,9 @@
 **Date:** 2026-04-07
 **Status:** Draft — Pending human review
 **Confidence:** HIGH — India's asbestos situation is extensively documented through peer-reviewed epidemiology, Supreme Court records, parliamentary debates, investigative journalism (ICIJ, Al Jazeera, Scroll), and activist archives (BANI, ICIJ, Mongabay). The factual picture is clear: India is the world's largest asbestos importer, has blocked international chrysotile listing for years, and has no national ban on chrysotile import or use. Key gaps: no reliable national mesothelioma mortality figure (documented massive undercount); no comprehensive map of asbestos-containing buildings; occupational compensation data is near-zero despite documented large-scale worker harm.
+**Used for:**
+- 2026-04-10: SEO meta description EN+ES — corrected "second-largest user" → world's largest importer (485,000 tonnes, 2023), added 200 million people under asbestos roofs stat
+- 2026-04-10: Data validation — countries.json confirmed correct: `ban_status: "partial_ban"`, `ban_year: 1993` ✅ (research file had a stale flag — already updated)
 
 ---
 

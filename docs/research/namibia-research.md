@@ -4,6 +4,7 @@
 **Date:** 2026-04-09
 **Status:** Draft — Pending human review
 **Confidence:** LOW — limited Namibia-specific sources; most data inferred from regional (South African) context
+**Status de SEO:** Pendiente validación y enriquecimiento de meta descriptions
 
 ---
 

@@ -4,6 +4,7 @@
 **Date:** 2026-03-28
 **Status:** Draft — Pending human review
 **Confidence:** HIGH — Italy is one of the most extensively documented asbestos cases globally; the Eternit trial generated decades of journalism, legal records, and academic research. ReNaM provides one of the world's best national mesothelioma registries.
+**Status de SEO:** Pendiente validación y enriquecimiento de meta descriptions
 
 ---
 

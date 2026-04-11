@@ -4,6 +4,7 @@
 **Date:** 2026-04-09
 **Status:** Draft — Pending human review
 **Confidence:** HIGH — based on extensive peer-reviewed literature, IBAS listing, and government sources
+**Status de SEO:** Pendiente validación y enriquecimiento de meta descriptions
 
 ---
 

@@ -4,6 +4,7 @@
 **Date:** 2026-04-07
 **Status:** Draft — Pending human review
 **Confidence:** HIGH — Portuguese academic literature, EU regulatory records, union archives, and PMC peer-reviewed epidemiology provide solid primary sourcing. Key gap: no verified data on specific naval/shipyard occupational mesothelioma cohort; "Amiantos SA" and "Eternit Portugal" named in task brief could not be confirmed in verified sources (see Verification Notes).
+**Status de SEO:** Pendiente validación y enriquecimiento de meta descriptions
 
 ---
 

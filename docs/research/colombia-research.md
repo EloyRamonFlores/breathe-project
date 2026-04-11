@@ -3,6 +3,8 @@
 **Date:** 2026-03-28
 **Status:** Draft — Pending human review
 **Confidence:** HIGH — Primary sources: IBAS, PMC peer-reviewed studies, Confront Power investigative journalism, ADAO, Colombian Ministry of Environment
+**Used for:**
+- 2026-04-10: SEO meta description EN+ES — enriched with Sibaté mortality rate 65× national average (38.36 vs 0.59 per 100,000); full_ban 2021 confirmed; added to PRIORITY_DESCRIPTIONS
 
 ---
 
