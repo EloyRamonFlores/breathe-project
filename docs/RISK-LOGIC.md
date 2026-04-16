@@ -1,5 +1,34 @@
 # RISK-LOGIC.md — Risk Assessment Algorithm v2.1
 
+> **⚠ PENDING EXPERT REVIEW** — The factor values and weight assignments in this
+> model have not yet been independently validated by an occupational health
+> specialist or certified industrial hygienist. The algorithm is an evidence-informed
+> approximation based on publicly available EPA, WHO, and IBAS regulatory data.
+> It should not be treated as a clinical or legal standard until peer review is
+> complete. See [expert outreach tracking](expert-outreach-template.md).
+
+## Methodology Disclaimer
+
+The ToxinFree risk model is a **probabilistic screening tool**, not a diagnostic
+instrument. It estimates the *likelihood* that asbestos-containing materials were
+used in a building given three observable inputs: the country's regulatory history,
+the construction era, and the building type.
+
+**What the model cannot do:**
+- Confirm or rule out asbestos in any specific building
+- Account for renovation history, regional construction variations, or
+  import/export patterns in materials
+- Substitute for physical sampling and laboratory analysis
+
+**Basis for factor values:**
+Factor values are derived from patterns in published regulatory timelines (IBAS),
+EPA hazard assessments, and WHO guidance on chrysotile and amphibole asbestos.
+Individual multipliers (e.g., era weights, building-type factors) represent
+editorial judgement pending expert validation. Citations will be added to
+`risk-matrix.json` under the `citations` field as expert review is completed.
+
+---
+
 ## Overview
 The Risk Checker calculates a risk score (0.0 to 1.0) based on three inputs:
 1. Country (regulatory status at time of construction)

@@ -122,6 +122,8 @@ export interface RiskMatrix {
   era_factor: Record<Era, number>;
   building_factor: Record<BuildingType, number>;
   thresholds: Record<RiskLevel, [number, number]>;
+  /** Expert citations for individual factor values. Key = factor name (e.g. "era_factor"), value = sources supporting those values. Populated as expert review lands. */
+  citations?: Record<string, Source[]>;
 }
 
 // ─── Learn Section Types ──────────────────────────────────────────────────────
