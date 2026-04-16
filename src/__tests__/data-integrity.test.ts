@@ -98,6 +98,84 @@ describe("countries.json integrity", () => {
   });
 });
 
+// ─── Research-country timeline pins (Phase 6B additions) ──────────────────────
+
+const VALID_TIMELINE_TYPES = new Set([
+  "ban", "partial_ban", "regulation", "court_ruling", "other",
+]);
+
+/** Assert a country has an exact timeline length, valid entry types, and each
+ *  entry has the required fields (year, event, type, source_url). */
+function assertTimeline(slug: string, expectedLength: number) {
+  const country = countries.find((c) => c.slug === slug);
+  expect(country, `${slug} not found`).toBeDefined();
+  const tl = country!.timeline;
+  expect(tl, `${slug} timeline missing`).toBeDefined();
+  expect(tl).toHaveLength(expectedLength);
+  for (const entry of tl) {
+    expect(typeof entry.year, `${slug} entry.year`).toBe("number");
+    expect(entry.event, `${slug} entry.event`).toBeTruthy();
+    expect(
+      VALID_TIMELINE_TYPES.has(entry.type),
+      `${slug} invalid type: ${entry.type}`
+    ).toBe(true);
+    expect(entry.source_url, `${slug} entry.source_url`).toBeTruthy();
+  }
+}
+
+function assertStories(slug: string, expectedCount: number) {
+  const country = countries.find((c) => c.slug === slug);
+  expect(country, `${slug} not found`).toBeDefined();
+  expect(
+    country!.resistance_stories ?? [],
+    `${slug} resistance_stories`
+  ).toHaveLength(expectedCount);
+}
+
+describe("Phase 6B research-country data pins", () => {
+  it("kazakhstan has 7 timeline events and 2 resistance stories", () => {
+    assertTimeline("kazakhstan", 7);
+    assertStories("kazakhstan", 2);
+  });
+
+  it("russia has 13 timeline events and 1 resistance story", () => {
+    assertTimeline("russia", 13);
+    assertStories("russia", 1);
+  });
+
+  it("portugal has 12 timeline events and 2 resistance stories", () => {
+    assertTimeline("portugal", 12);
+    assertStories("portugal", 2);
+  });
+
+  it("turkey has 10 timeline events and 2 resistance stories", () => {
+    assertTimeline("turkey", 10);
+    assertStories("turkey", 2);
+  });
+
+  it("united-arab-emirates has 3 timeline events", () => {
+    assertTimeline("united-arab-emirates", 3);
+  });
+
+  it("india has 5 timeline events and 1 resistance story", () => {
+    assertTimeline("india", 5);
+    assertStories("india", 1);
+  });
+
+  it("taiwan has 9 timeline events and 2 resistance stories", () => {
+    assertTimeline("taiwan", 9);
+    assertStories("taiwan", 2);
+  });
+
+  it("namibia has 4 timeline events", () => {
+    assertTimeline("namibia", 4);
+  });
+
+  it("china has 6 timeline events", () => {
+    assertTimeline("china", 6);
+  });
+});
+
 // ─── materials.json ───────────────────────────────────────────────────────────
 
 describe("materials.json integrity", () => {

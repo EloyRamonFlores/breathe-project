@@ -7,9 +7,9 @@
  * Supports: shared categories (educational, materials) + country-specific (countries/{slug}/)
  */
 
-const fs = require("fs");
-const path = require("path");
-const sharp = require("sharp");
+import fs from "fs";
+import path from "path";
+import sharp from "sharp";
 
 // Shared categories with their target dimensions
 const sharedCategories = {
@@ -23,7 +23,7 @@ const countrySubdirs = {
   hero: { width: 1920, height: 1080, fit: "cover" }, // 16:9
 };
 
-const imagesDir = path.join(__dirname, "../public/images");
+const imagesDir = path.join(import.meta.dirname, "../public/images");
 
 async function optimizeDirectory(dirPath, dimensions, label) {
   const files = fs.readdirSync(dirPath);
