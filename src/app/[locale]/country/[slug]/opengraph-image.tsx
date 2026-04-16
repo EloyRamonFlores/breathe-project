@@ -21,7 +21,10 @@ export default async function Image({
   params: Promise<{ locale: string; slug: string }>;
 }) {
   const { locale, slug } = await params;
-  const tBan = await getTranslations({ locale, namespace: "ban_status" });
+  const [tBan, tCountry] = await Promise.all([
+    getTranslations({ locale, namespace: "ban_status" }),
+    getTranslations({ locale, namespace: "country" }),
+  ]);
   const country = (countriesData as Country[]).find((c) => c.slug === slug);
 
   if (!country) {
@@ -47,6 +50,7 @@ export default async function Image({
 
   const banColor = BAN_COLORS[country.ban_status];
   const banLabel = tBan(country.ban_status);
+  const displayName = locale === "es" ? (country.name_es ?? country.name) : country.name;
 
   return new ImageResponse(
     (
@@ -71,14 +75,14 @@ export default async function Image({
         <div style={{ display: "flex", flexDirection: "column", gap: "24px", marginBottom: "auto" }}>
           <div
             style={{
-              fontSize: country.name.length > 14 ? "56px" : "72px",
+              fontSize: displayName.length > 14 ? "56px" : "72px",
               fontWeight: 700,
               color: "#F9FAFB",
               lineHeight: 1.1,
               letterSpacing: "-1px",
             }}
           >
-            {country.name}
+            {displayName}
           </div>
 
           {/* Ban status badge */}
@@ -100,7 +104,7 @@ export default async function Image({
             </div>
             {country.ban_year && (
               <span style={{ fontSize: "24px", color: "#94A3B8", fontWeight: 500 }}>
-                since {country.ban_year}
+                {tCountry("og_since", { year: country.ban_year })}
               </span>
             )}
           </div>
@@ -109,7 +113,7 @@ export default async function Image({
         {/* Bottom row */}
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <span style={{ fontSize: "20px", color: "#64748B", fontFamily: "monospace" }}>
-            Is asbestos banned in {country.name}?
+            {tCountry("og_question", { name: displayName })}
           </span>
           <span style={{ fontSize: "18px", color: "#475569" }}>toxinfree.global</span>
         </div>

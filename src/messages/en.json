@@ -192,6 +192,8 @@
     "cta_description": "Enter your building's age and type for a personalized asbestos risk assessment.",
     "cta_button": "Check My Property's Risk",
     "page_disclaimer": "Information aggregated from public sources including IBAS, EPA, and WHO. Not legal or medical advice.",
+    "og_question": "Is asbestos banned in {name}?",
+    "og_since": "since {year}",
     "what_to_do_full_ban": [
       "Your country has banned asbestos, but older buildings may still contain legacy materials.",
       "Buildings built before the ban year may contain asbestos-containing materials.",
@@ -266,7 +268,17 @@
     "key_figures_buildings_title": "Buildings at Risk",
     "key_figures_buildings_description": "Estimated scope of asbestos-containing materials still present in the built environment.",
     "key_figures_peak_title": "Peak Usage Era",
-    "key_figures_peak_description": "The period when asbestos was most heavily used in construction. Buildings from this era have the highest probability of containing asbestos materials."
+    "key_figures_peak_description": "The period when asbestos was most heavily used in construction. Buildings from this era have the highest probability of containing asbestos materials.",
+    "exposure_zones_title": "Specific Exposure Zones",
+    "exposure_zones_subtitle": "Locations with documented historical asbestos contamination.",
+    "exposure_zones_source": "Source",
+    "exposure_zones_disclaimer": "These are historically documented exposure zones. Risk today depends on the condition of remaining materials and any remediation carried out. Consult local authorities for current guidance.",
+    "impl_title": "Law vs. Implementation",
+    "impl_subtitle": "The gap between a formal ban and actual enforcement on the ground.",
+    "impl_status_enforced": "Ban fully enforced",
+    "impl_status_partial": "Ban with implementation gaps",
+    "impl_status_ban_in_name_only": "Ban in law, not in practice",
+    "impl_status_unknown": "Implementation status unconfirmed"
   },
   "learn": {
     "charts_loading": "Loading charts...",

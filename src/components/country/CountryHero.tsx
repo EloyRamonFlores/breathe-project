@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations, getLocale } from "next-intl/server";
 import type { Country } from "@/lib/types";
 import { getBanStatusColor, getBanStatusPillClass } from "@/lib/utils";
@@ -26,31 +27,35 @@ export default async function CountryHero({ country, caseNumber, heroImageUrl }:
       ? (country.ban_details_es ?? country.ban_details)
       : country.ban_details;
 
-  const patternClass = `hero-pattern-${country.hero_pattern ?? "default"}`;
+  const displayName = locale === "es" ? (country.name_es ?? country.name) : country.name;
 
   return (
     <section
       className="relative w-full overflow-hidden"
       style={{ minHeight: "clamp(280px, 40vh, 500px)" }}
-      aria-label={`${country.name} country profile`}
+      aria-label={`${displayName} country profile`}
     >
       {/* Background image or gradient */}
-      <div
-        className="absolute inset-0"
-        style={
-          heroImageUrl
-            ? {
-                backgroundImage: `url('${heroImageUrl}')`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }
-            : {
-                background:
-                  "linear-gradient(135deg, #060b14 0%, #0a0f1c 40%, #0d1424 100%)",
-              }
-        }
-        aria-hidden="true"
-      />
+      {heroImageUrl ? (
+        <div className="absolute inset-0" aria-hidden="true">
+          <Image
+            src={heroImageUrl}
+            alt=""
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+      ) : (
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(135deg, #060b14 0%, #0a0f1c 40%, #0d1424 100%)",
+          }}
+          aria-hidden="true"
+        />
+      )}
 
       {/* Dark overlay for text readability over image */}
       {heroImageUrl && (
@@ -89,7 +94,7 @@ export default async function CountryHero({ country, caseNumber, heroImageUrl }:
 
             {/* Country name */}
             <h1 className="font-sans font-bold text-5xl sm:text-6xl lg:text-7xl text-text-primary leading-none mb-4">
-              {country.name}
+              {displayName}
             </h1>
 
             {/* Ban details */}

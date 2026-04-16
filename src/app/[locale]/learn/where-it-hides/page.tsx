@@ -146,7 +146,7 @@ export default async function WhereItHidesPage({
 
               {/* Location image(s) */}
               {(() => {
-                const locImages = educationalAssets.filter((a) => a.location?.includes(loc as any));
+                const locImages = educationalAssets.filter((a) => a.location === loc);
                 return locImages.length > 0 ? (
                   <div className={`mb-6 grid gap-4 ${locImages.length > 1 ? "sm:grid-cols-2" : ""}`}>
                     {locImages.map((asset) => (

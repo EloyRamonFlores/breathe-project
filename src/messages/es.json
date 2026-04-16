@@ -192,6 +192,8 @@
     "cta_description": "Ingresa la antigüedad y tipo de tu edificio para una evaluación personalizada de riesgo de asbesto.",
     "cta_button": "Evaluar Mi Propiedad",
     "page_disclaimer": "Información recopilada de fuentes públicas incluyendo IBAS, EPA y OMS. No es asesoría legal ni médica.",
+    "og_question": "¿Está prohibido el asbesto en {name}?",
+    "og_since": "desde {year}",
     "what_to_do_full_ban": [
       "Tu país ha prohibido el asbesto, pero edificios más antiguos pueden contener materiales legados.",
       "Edificios construidos antes del año de prohibición pueden contener materiales con asbesto.",
@@ -266,7 +268,17 @@
     "key_figures_buildings_title": "Edificios en Riesgo",
     "key_figures_buildings_description": "Alcance estimado de materiales con asbesto aún presentes en el entorno construido.",
     "key_figures_peak_title": "Era de Mayor Uso",
-    "key_figures_peak_description": "El período en que el asbesto se utilizó más intensamente en la construcción. Los edificios de esta era tienen la mayor probabilidad de contener materiales con asbesto."
+    "key_figures_peak_description": "El período en que el asbesto se utilizó más intensamente en la construcción. Los edificios de esta era tienen la mayor probabilidad de contener materiales con asbesto.",
+    "exposure_zones_title": "Zonas de Exposición",
+    "exposure_zones_subtitle": "Lugares con contaminación histórica documentada por asbesto.",
+    "exposure_zones_source": "Fuente",
+    "exposure_zones_disclaimer": "Estas son zonas de exposición documentadas históricamente. El riesgo actual depende del estado de los materiales remanentes y de las acciones de remediación realizadas. Consulta con las autoridades locales para obtener orientación actualizada.",
+    "impl_title": "Ley vs. Implementación",
+    "impl_subtitle": "La brecha entre la prohibición formal y su aplicación real sobre el terreno.",
+    "impl_status_enforced": "Prohibición plenamente aplicada",
+    "impl_status_partial": "Prohibición con vacíos de implementación",
+    "impl_status_ban_in_name_only": "Prohibida en la ley, no en la práctica",
+    "impl_status_unknown": "Estado de implementación no confirmado"
   },
   "learn": {
     "charts_loading": "Cargando gráficos...",

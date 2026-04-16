@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
-import { useSearchParams, useRouter } from "next/navigation";
+import { useSearchParams, useRouter, type ReadonlyURLSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import countriesData from "@/data/countries.json";
 import type { Country, Era, BuildingType, RiskResult } from "@/lib/types";
@@ -67,6 +67,22 @@ const BUILDING_TYPES: { type: BuildingType; emoji: string }[] = [
 
 type Step = 1 | 2 | 3 | "results";
 
+type ParsedUrlParams =
+  | { valid: true; country: Country; era: Era; buildingType: BuildingType; result: RiskResult }
+  | { valid: false; hasParams: boolean };
+
+function parseUrlParams(searchParams: ReadonlyURLSearchParams): ParsedUrlParams {
+  const countryParam = searchParams.get("country");
+  const eraParam = searchParams.get("era");
+  const typeParam = searchParams.get("type");
+  if (!countryParam || !eraParam || !typeParam) return { valid: false, hasParams: false };
+  const country = countries.find((c) => c.iso2.toLowerCase() === countryParam.toLowerCase());
+  const era = PARAM_TO_ERA[eraParam];
+  const buildingType = BUILDING_TYPES.find((b) => b.type === typeParam)?.type;
+  if (!country || !era || !buildingType) return { valid: false, hasParams: true };
+  return { valid: true, country, era, buildingType, result: calculateRisk(country, era, buildingType) };
+}
+
 export default function RiskChecker() {
   const t = useTranslations("check");
   const tEras = useTranslations("eras");
@@ -75,16 +91,35 @@ export default function RiskChecker() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
-  const [step, setStep] = useState<Step>(1);
-  const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
-  const [selectedEra, setSelectedEra] = useState<Era | null>(null);
-  const [selectedBuilding, setSelectedBuilding] = useState<BuildingType | null>(null);
+  // Lazy-init all URL-param-driven state on first render (no effect needed)
+  const [step, setStep] = useState<Step>(() => {
+    const p = parseUrlParams(searchParams);
+    return p.valid ? "results" : 1;
+  });
+  const [selectedCountry, setSelectedCountry] = useState<Country | null>(() => {
+    const p = parseUrlParams(searchParams);
+    return p.valid ? p.country : null;
+  });
+  const [selectedEra, setSelectedEra] = useState<Era | null>(() => {
+    const p = parseUrlParams(searchParams);
+    return p.valid ? p.era : null;
+  });
+  const [selectedBuilding, setSelectedBuilding] = useState<BuildingType | null>(() => {
+    const p = parseUrlParams(searchParams);
+    return p.valid ? p.buildingType : null;
+  });
   const [countryQuery, setCountryQuery] = useState("");
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
-  const [result, setResult] = useState<RiskResult | null>(null);
+  const [result, setResult] = useState<RiskResult | null>(() => {
+    const p = parseUrlParams(searchParams);
+    return p.valid ? p.result : null;
+  });
   const [visible, setVisible] = useState(false);
-  const [validationError, setValidationError] = useState<string | null>(null);
+  const [validationError, setValidationError] = useState<string | null>(() => {
+    const p = parseUrlParams(searchParams);
+    return !p.valid && p.hasParams ? tErrors("invalid_params") : null;
+  });
 
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
@@ -94,34 +129,6 @@ export default function RiskChecker() {
     const timer = setTimeout(() => setVisible(true), 50);
     return () => clearTimeout(timer);
   }, []);
-
-  // Read URL params on mount and auto-show results
-  useEffect(() => {
-    const countryParam = searchParams.get("country");
-    const eraParam = searchParams.get("era");
-    const typeParam = searchParams.get("type");
-
-    if (countryParam && eraParam && typeParam) {
-      const country = countries.find(
-        (c) => c.iso2.toLowerCase() === countryParam.toLowerCase()
-      );
-      const era = PARAM_TO_ERA[eraParam];
-      const buildingType = BUILDING_TYPES.find(
-        (b) => b.type === typeParam
-      )?.type;
-
-      if (country && era && buildingType) {
-        const calc = calculateRisk(country, era, buildingType);
-        setSelectedCountry(country);
-        setSelectedEra(era);
-        setSelectedBuilding(buildingType);
-        setResult(calc);
-        setStep("results");
-      } else {
-        setValidationError(tErrors("invalid_params"));
-      }
-    }
-  }, [searchParams, tErrors]);
 
   const filteredCountries = countries.filter((c) =>
     c.name.toLowerCase().includes(countryQuery.toLowerCase())

@@ -4,6 +4,62 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v3.0.0] — 2026-04-13 — FULL AUDIT V3 + i18n polish
+
+### Overview
+Phase 7 of ROADMAP-V2. Full re-audit against FULL-AUDIT-V2.md baseline (7.9/10). Output: `docs/FULL-AUDIT-V3.md`. **Global score 8.3/10** (up from 7.9). 4 auto-fixes applied during the audit.
+
+### Auto-fixes
+- **`CONTENT_MODIFIED_DATE` stale** (`src/lib/constants.ts:6`): `2026-03-29` → `2026-04-13`. Affects JSON-LD `dateModified` on learn pages.
+- **Country `<h1>` used English in ES locale** (`src/components/country/CountryHero.tsx`): Added `displayName = locale === "es" ? (country.name_es ?? country.name) : country.name`. Applied to `<h1>` and `aria-label`. Removes the last visible SEO regression on Spanish country pages after Phase 6 fixed the `<title>` tag. Also removed dead `patternClass` variable.
+- **Country OG image hardcoded English** (`src/app/[locale]/country/[slug]/opengraph-image.tsx`): Country name now uses `name_es` for ES. "since {year}" and "Is asbestos banned in {name}?" now localized via new `country.og_since` / `country.og_question` i18n keys.
+- **i18n keys added**: `country.og_question`, `country.og_since` in both `en.json` and `es.json`. Total keys: 460/460 (was 458/458), parity maintained.
+
+### Audit highlights
+- Data depth: timeline coverage 37 → 42, mesothelioma rate 11 → 15, buildings-at-risk 12 → 21, resistance stories 7 → 13, research files 7 → 16.
+- Hero images: 37 → **200 unique Unsplash URLs** (v2.20.0 — entry was missing from CHANGELOG).
+- i18n parity preserved; Spanish title tags now use `name_es`; country H1 fixed this audit.
+- Mobile UX: 3D/2D preference persists via `localStorage` (`toxinfree_map_preference`) — Phase 1B delivered.
+
+### Findings to act on
+- **HIGH — CI lint is red**: `npm run lint` fails with 9 errors (5× `react-hooks/set-state-in-effect` introduced by React 19, 3× `no-require-imports` in `scripts/optimize-images.js`, 1× `any` in `learn/where-it-hides/page.tsx`). Build + tests + type-check all pass.
+- **MEDIUM — Hero images bypass `next/image`**: rendered as CSS `background-image`, losing optimization/alt/srcset. LCP risk on country pages.
+- **MEDIUM — `ban_details_es` gap**: only 42/200 countries populated; 158 Spanish country heroes fall back to English text.
+- **Persistent V2 blocker**: risk-matrix weights still have 0 scientific citations.
+
+### Verification
+- `npm run type-check` → 0 errors
+- `npm test` → 81/81 passing
+- `npm run build` → 424+ static pages generated
+- `npm run lint` → 9 errors (flagged as Bug #1 in FULL-AUDIT-V3.md, pre-existing, not introduced by this audit)
+
+### Files modified
+- `src/lib/constants.ts`
+- `src/components/country/CountryHero.tsx`
+- `src/app/[locale]/country/[slug]/opengraph-image.tsx`
+- `src/messages/en.json`
+- `src/messages/es.json`
+- `docs/FULL-AUDIT-V3.md` (new)
+- `CHANGELOG.md` (this entry + retroactive v2.20.0)
+
+---
+
+## [v2.20.0] — 2026-04-11 — Hero Images: 200/200 Unique Unsplash URLs
+
+Retroactive entry — commit `333e8fc` on master; no CHANGELOG entry at the time.
+
+### Overview
+Completed Phase 5 of ROADMAP-V2: every one of the 200 country profiles now has a unique `hero_image_url` (Unsplash-sourced). Combined with the 52 added in v2.19.1 and 63 added in `ff6e6e7`, full 200/200 coverage was reached.
+
+### Data changes
+- `src/data/countries.json`: `hero_image_url` populated on all 200 entries; 0 duplicates across the 200-URL set.
+- `hero_pattern` field retained for legacy CSS-pattern fallback (not currently rendered — CSS pattern block is commented out in `CountryHero.tsx`).
+
+### Known follow-ups (tracked in FULL-AUDIT-V3.md)
+- Hero images served via CSS `background-image`, not `next/image` — Bug #2 in V3 audit.
+
+---
+
 ## [v2.19.3] — 2026-04-10 — PHASES 6 & 6B: UK Español + 16-Country SEO Integration
 
 ### Overview

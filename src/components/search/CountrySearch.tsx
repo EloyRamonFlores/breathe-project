@@ -128,15 +128,6 @@ export default function CountrySearch({ locale, onSelect }: CountrySearchProps) 
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Open dropdown when typing
-  useEffect(() => {
-    if (query.trim().length > 0 && filtered.length > 0) {
-      setIsOpen(true);
-      setActiveIndex(-1);
-    } else {
-      setIsOpen(false);
-    }
-  }, [query, filtered.length]);
 
   const statusColor = (status: Country["ban_status"]) => {
     switch (status) {
@@ -190,7 +181,12 @@ export default function CountrySearch({ locale, onSelect }: CountrySearchProps) 
           aria-label={t("search_placeholder")}
           placeholder={t("search_placeholder")}
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => {
+            const v = e.target.value;
+            setQuery(v);
+            setIsOpen(v.trim().length > 0);
+            setActiveIndex(-1);
+          }}
           onKeyDown={handleKeyDown}
           onFocus={() => {
             if (query.trim().length > 0 && filtered.length > 0) {

@@ -16,23 +16,17 @@ export default function AnimatedCounter({
   className = "",
   locale = "en",
 }: AnimatedCounterProps) {
-  const [count, setCount] = useState(0);
-  const [hasAnimated, setHasAnimated] = useState(false);
+  // Skip animation for users who prefer reduced motion — initialize to final value
+  const prefersReducedMotion =
+    typeof window !== "undefined" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const [count, setCount] = useState(() => (prefersReducedMotion ? target : 0));
+  const [hasAnimated, setHasAnimated] = useState(() => prefersReducedMotion);
   const ref = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     const element = ref.current;
     if (!element || hasAnimated) return;
-
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-
-    if (prefersReducedMotion) {
-      setCount(target);
-      setHasAnimated(true);
-      return;
-    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
