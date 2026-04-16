@@ -993,6 +993,70 @@
         "source_url": "https://www.ibasecretariat.org/about.htm"
       }
     ],
+    "exposure_zones": [
+      {
+        "name": "Clydeside",
+        "region": "Glasgow, Scotland",
+        "region_es": "Glasgow, Escocia",
+        "reason": "Shipyard workers sprayed asbestos-containing insulation in ship holds through the mid-20th century. West Dunbartonshire frequently tops UK tables for asbestos-related disease mortality.",
+        "reason_es": "Trabajadores de astilleros rociaron aislamiento con asbesto en bodegas de barcos durante mediados del siglo XX. West Dunbartonshire encabeza frecuentemente las estadísticas británicas de mortalidad por enfermedades relacionadas con el asbesto.",
+        "period": "1940s–1970s",
+        "source_url": "https://www.britsafe.org/safety-management/2025/asbestos-in-the-uk-how-the-past-inevitably-catches-up-with-us"
+      },
+      {
+        "name": "Rochdale",
+        "region": "Greater Manchester, England",
+        "region_es": "Gran Mánchester, Inglaterra",
+        "reason": "Site of Turner Brothers Asbestos (Turner & Newall), the UK's largest asbestos textile manufacturer. Spodden Valley contamination discovered in 2004–2005. Nellie Kershaw — the first documented UK asbestos death — worked here.",
+        "reason_es": "Sede de Turner Brothers Asbestos (Turner & Newall), el mayor fabricante textil de asbesto del Reino Unido. La contaminación del valle de Spodden se descubrió en 2004–2005. Nellie Kershaw — la primera muerte documentada por asbesto en el Reino Unido — trabajó aquí.",
+        "period": "1871–2001",
+        "source_url": "https://www.rochdale.gov.uk/environment-pests/contaminated-land/3"
+      },
+      {
+        "name": "Armley",
+        "region": "Leeds, England",
+        "region_es": "Leeds, Inglaterra",
+        "reason": "J.W. Roberts factory released asbestos dust into surrounding streets where children played. Site of the landmark June Hancock case (1995), which established environmental exposure liability in UK law.",
+        "reason_es": "La fábrica de J.W. Roberts liberó polvo de asbesto en las calles donde jugaban los niños. Escenario del caso histórico de June Hancock (1995) que estableció la responsabilidad por exposición ambiental en la ley británica.",
+        "period": "1874–1958",
+        "source_url": "https://www.itv.com/news/calendar/2023-06-09/june-hancock-the-hero-who-carried-the-fight-against-killer-factory"
+      },
+      {
+        "name": "Barking",
+        "region": "East London, England",
+        "region_es": "Este de Londres, Inglaterra",
+        "reason": "Cape Asbestos factory operated here from 1913. Documented history of industrial and environmental exposure affecting workers and neighbouring communities.",
+        "reason_es": "La fábrica de Cape Asbestos operó aquí desde 1913. Historia documentada de exposición industrial y ambiental que afectó a trabajadores y comunidades vecinas.",
+        "period": "1913–1968",
+        "source_url": "https://www.asbestosjustice.co.uk/cape-asbestos-barking-industrial-killing-machine/"
+      },
+      {
+        "name": "Hebden Bridge (Acre Mill)",
+        "region": "West Yorkshire, England",
+        "region_es": "West Yorkshire, Inglaterra",
+        "reason": "Cape Asbestos Acre Mill manufactured gas mask filters from blue asbestos (crocidolite) during WWII. Community exposure extended beyond factory workers.",
+        "reason_es": "Acre Mill de Cape Asbestos fabricó filtros de máscaras antigás con asbesto azul (crocidolita) durante la Segunda Guerra Mundial. La exposición comunitaria se extendió más allá de los trabajadores.",
+        "period": "1939–1970",
+        "source_url": "https://www.asbestosjustice.co.uk/cape-asbestos-barking-industrial-killing-machine/"
+      },
+      {
+        "name": "Barrow-in-Furness",
+        "region": "Cumbria, England",
+        "region_es": "Cumbria, Inglaterra",
+        "reason": "Submarine and naval vessel construction using extensive asbestos insulation. Long-term occupational exposure among shipyard workers.",
+        "reason_es": "Construcción de submarinos y buques navales con uso extensivo de aislamiento de asbesto. Exposición ocupacional prolongada entre trabajadores de astilleros.",
+        "period": "1940s–1980s",
+        "source_url": "https://www.britsafe.org/safety-management/2025/asbestos-in-the-uk-how-the-past-inevitably-catches-up-with-us"
+      }
+    ],
+    "implementation_status": {
+      "status": "enforced",
+      "summary": "The 1999 total ban is fully enforced. The Control of Asbestos Regulations 2012 (CAR 2012) establishes a criminal 'duty to manage' asbestos in non-domestic premises — non-compliance carries unlimited fines and up to 2 years imprisonment. Current UK policy is 'manage in place' (keep intact materials rather than remove), and HSE concluded a public consultation in January 2026 on proposed improvements to survey quality and surveyor competence.",
+      "summary_es": "La prohibición total de 1999 está plenamente en vigor. El Reglamento de Control del Asbesto de 2012 (CAR 2012) establece la obligación penal de gestionar el asbesto en locales no domésticos — el incumplimiento conlleva multas ilimitadas y hasta 2 años de prisión. La política británica actual es 'gestionar in situ' (mantener los materiales intactos en vez de retirarlos), y el HSE concluyó una consulta pública en enero de 2026 sobre propuestas para mejorar la calidad de los estudios y la competencia de los inspectores.",
+      "source_name": "HSE Consultation — CAR 2012 Proposals",
+      "source_url": "https://consultations.hse.gov.uk/hse/proposals-control-of-asbestos-regs-2012/",
+      "source_date": "2026-01"
+    },
     "last_updated": "2026-03-21"
   },
   {
@@ -2317,6 +2381,25 @@
       "narrative_es": "Ana Cecilia y Daniel construyeron Colombia sin Asbesto juntos desde su mesa de cocina en 2014 — ella diagnosticada con mesotelioma pese a nunca haber trabajado con asbesto, él viendo a su esposa luchar por su vida mientras simultáneamente combatían a una industria. Recopilaron 50.000 firmas, organizaron eventos en colegios y universidades, produjeron campañas mediáticas y presentaron una denuncia ante la Comisión Interamericana de Derechos Humanos. Cuando Ana Cecilia falleció el 8 de enero de 2017, a los 42 años, Daniel continuó solo — llevando el trabajo de ambos hasta la aprobación del Senado en octubre de 2017 y la firma de la Ley 1968 por el presidente Duque en julio de 2019. La ley lleva su nombre. Él nunca se detuvo.",
       "photo_url": "/images/countries/colombia/resistance-stories/daniel-pineda-ana-cecilia-juntos.webp",
       "source_url": "https://confrontpower.org/colombia-asbestos-campaign/"
+    },
+    "exposure_zones": [
+      {
+        "name": "Sibaté",
+        "region": "Cundinamarca, near Bogotá",
+        "region_es": "Cundinamarca, cerca de Bogotá",
+        "reason": "Home to Eternit Colombiana's asbestos-cement factory from 1942. Documented environmental contamination across the town. Mesothelioma mortality 65× the national average. Ana Cecilia Niño — a journalist who grew up here and never worked with asbestos — died of mesothelioma from environmental exposure; the national ban law bears her name.",
+        "reason_es": "Sede de la fábrica de cemento-asbesto de Eternit Colombiana desde 1942. Contaminación ambiental documentada en todo el pueblo. Mortalidad por mesotelioma 65 veces superior al promedio nacional. Ana Cecilia Niño — periodista que creció aquí y nunca trabajó con asbesto — falleció de mesotelioma por exposición ambiental; la ley nacional de prohibición lleva su nombre.",
+        "period": "1942–2000s",
+        "source_url": "https://www.etui.org/topics/health-safety-working-conditions/hesamag/migrant-workers-in-fortress-europe/sibate-a-colombian-town-poisoned-by-asbestos"
+      }
+    ],
+    "implementation_status": {
+      "status": "ban_in_name_only",
+      "summary": "Law 1968 took effect January 1, 2021, but the National Commission for Asbestos Substitution (CNSA) required by the law remained unformed for years. As of 2021, IBAS publicly reported no public awareness campaign, no air quality monitoring, and no substitution policy had been launched. A definitive CNSA applicant list was published in April 2024, and a national conference reviewed implementation gaps in Bogotá that same year.",
+      "summary_es": "La Ley 1968 entró en vigor el 1 de enero de 2021, pero la Comisión Nacional para la Sustitución del Asbesto (CNSA) exigida por la ley permaneció sin conformarse durante años. En 2021, IBAS reportó públicamente que no se había lanzado campaña de concienciación, ni monitoreo de calidad del aire, ni política de sustitución. La lista definitiva de candidatos a la CNSA se publicó en abril de 2024, y ese mismo año una conferencia nacional revisó las brechas de implementación en Bogotá.",
+      "source_name": "IBAS: Colombia ban in name but not in fact",
+      "source_url": "https://ibasecretariat.org/mtt-colombia-has-a-ban-asbestos-law-in-name-but-not-in-fact.php",
+      "source_date": "2021"
     },
     "sources": [
       {

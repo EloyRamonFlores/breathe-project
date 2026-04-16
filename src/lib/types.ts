@@ -45,6 +45,32 @@ export interface ResistanceStory {
   role_type?: "victim" | "advocate" | "legal" | "network" | "journalist" | "scientist";
 }
 
+export interface ExposureZone {
+  name: string;
+  name_es?: string;
+  region: string;
+  region_es?: string;
+  reason: string;
+  reason_es?: string;
+  period?: string;
+  source_url: string;
+}
+
+export type ImplementationStatusLevel =
+  | "enforced"
+  | "partial"
+  | "ban_in_name_only"
+  | "unknown";
+
+export interface ImplementationStatus {
+  status: ImplementationStatusLevel;
+  summary: string;
+  summary_es?: string;
+  source_name: string;
+  source_url: string;
+  source_date: string;
+}
+
 export interface Country {
   slug: string;
   name: string;
@@ -68,6 +94,8 @@ export interface Country {
   sources: Source[];
   resistance_stories?: ResistanceStory[];
   joint_resistance_story?: JointResistanceStory;
+  exposure_zones?: ExposureZone[];
+  implementation_status?: ImplementationStatus;
   last_updated: string;
   hero_pattern?: "parliament" | "industry" | "urban" | "mining" | "coastal" | "default";
   hero_image_url?: string;

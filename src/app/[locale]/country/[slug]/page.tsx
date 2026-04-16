@@ -11,6 +11,8 @@ import CountryHero from "@/components/country/CountryHero";
 import StatStrip from "@/components/country/StatStrip";
 import MaterialGuide from "@/components/country/MaterialGuide";
 import KeyFigures from "@/components/country/KeyFigures";
+import ExposureZones from "@/components/country/ExposureZones";
+import ImplementationStatus from "@/components/country/ImplementationStatus";
 import { SITE_URL } from "@/lib/constants";
 
 // ─── Static Generation ────────────────────────────────────────────────────────
@@ -332,6 +334,16 @@ export default async function CountryPage({
 
         {/* ── Key Figures in Detail ── */}
         <KeyFigures country={country} />
+
+        {/* ── Law vs. Implementation (Layer 2) ── */}
+        {country.implementation_status && (
+          <ImplementationStatus status={country.implementation_status} />
+        )}
+
+        {/* ── Specific Exposure Zones (Layer 2) ── */}
+        {country.exposure_zones && country.exposure_zones.length > 0 && (
+          <ExposureZones zones={country.exposure_zones} />
+        )}
 
         {/* ── Material Identification Guide ── */}
         {country.common_materials.length > 0 && (
