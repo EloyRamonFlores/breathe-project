@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { getTranslations, getLocale } from "next-intl/server";
 import type { Country } from "@/lib/types";
 import { getBanStatusColor, getBanStatusPillClass } from "@/lib/utils";
@@ -36,26 +35,22 @@ export default async function CountryHero({ country, caseNumber, heroImageUrl }:
       aria-label={`${displayName} country profile`}
     >
       {/* Background image or gradient */}
-      {heroImageUrl ? (
-        <div className="absolute inset-0" aria-hidden="true">
-          <Image
-            src={heroImageUrl}
-            alt=""
-            fill
-            priority
-            className="object-cover"
-            sizes="100vw"
-          />
-        </div>
-      ) : (
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "linear-gradient(135deg, #060b14 0%, #0a0f1c 40%, #0d1424 100%)",
-          }}
-          aria-hidden="true"
-        />
-      )}
+      <div
+        className="absolute inset-0"
+        style={
+          heroImageUrl
+            ? {
+                backgroundImage: `url('${heroImageUrl}')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }
+            : {
+                background:
+                  "linear-gradient(135deg, #060b14 0%, #0a0f1c 40%, #0d1424 100%)",
+              }
+        }
+        aria-hidden="true"
+      />
 
       {/* Dark overlay for text readability over image */}
       {heroImageUrl && (
