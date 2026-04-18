@@ -4,6 +4,38 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v3.1.0] — 2026-04-17 — Layer 2 Credibility: Exposure Zones + Law vs. Implementation
+
+### Overview
+Closes the gap between deep research files and sparse country pages without alarmism. Introduces a 4-layer content model and two new Layer 2 sections on country pages: **Exposure Zones** (specific named hotspots with documented contamination) and **Law vs. Implementation** (formal ban vs. ground-level enforcement).
+
+### New components
+- **`ExposureZones`** (`src/components/country/ExposureZones.tsx`) — Server component. Renders a grid of named geographic hotspots with name, region, period, reason, and source link. EN/ES via next-intl. Renders only when `exposure_zones` data is present.
+- **`ImplementationStatus`** (`src/components/country/ImplementationStatus.tsx`) — Server component. Renders a badge + summary for enforcement status. Four levels: `enforced` / `partial` / `ban_in_name_only` / `unknown`. Color-coded via `safe/warning/danger` design tokens.
+
+### Data added (UK + Colombia — first two countries)
+- **UK**: 6 documented exposure zones (Clydeside, Rochdale, Armley, Barking, Hebden Bridge, Barrow-in-Furness) + `implementation_status: enforced` (HSE 2026 consultation source).
+- **Colombia**: Sibaté exposure zone (Eternit factory 1942–2000s; 65× national mesothelioma mortality) + `implementation_status: ban_in_name_only` (IBAS 2021 source).
+
+### Types extended
+- `ExposureZone` interface added to `src/lib/types.ts`
+- `ImplementationStatus` interface + `ImplementationStatusLevel` union added
+- `Country` extended with optional `exposure_zones?` and `implementation_status?` fields
+
+### i18n keys added (EN + ES)
+`exposure_zones_title`, `exposure_zones_subtitle`, `exposure_zones_source`, `exposure_zones_disclaimer`, `impl_title`, `impl_subtitle`, `impl_status_enforced`, `impl_status_partial`, `impl_status_ban_in_name_only`, `impl_status_unknown`. Total keys: 472/472 parity maintained.
+
+### Research infrastructure
+- `docs/research/README.md` — Documents the 4-layer content model: Essentials (hero) → Actionable Context (this feature) → Archivo Centinela (future `/country/X/archivo`) → Internal Notes (never public). Includes promotion/demotion rules for each layer.
+- `.skills/country-research/SKILL.md` v2 — Ban Status promoted to Section 1; renumbered 1–9 (fixes duplicate Section 4 bug); `scope: full|audit` parameter; `chrysotile_status` field; Principle #6 (resolve contradictions); Principle #7 (stat discipline: presence + condition + protection framing); null handling rule; `_es` fields removed (delegated to i18n pipeline).
+
+### Verification
+- `npm run type-check` → 0 errors
+- `npm test` → 109/109 passing
+- `npm run build` → 397+ static country pages generated
+
+---
+
 ## [v3.0.0] — 2026-04-13 — FULL AUDIT V3 + i18n polish
 
 ### Overview
