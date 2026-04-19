@@ -806,7 +806,7 @@
   {
     "slug": "united-kingdom",
     "hero_pattern": "parliament",
-    "hero_image_url": "https://unsplash.com/photos/iXqTqC-f6jI",
+    "hero_image_url": "/images/countries/united-kingdom/hero.webp",
     "name": "United Kingdom",
     "name_es": "Reino Unido",
     "iso2": "GB",
@@ -960,7 +960,8 @@
         "role_es": "Primera muerte reconocida por asbesto en el Reino Unido",
         "achievement": "A textile worker at Turner Brothers Asbestos in Rochdale, her death at age 33 became the first documented case of asbestos-caused death. Dr. W.E. Cooke published her case in the BMJ in 1927, coining the term 'pulmonary asbestosis' — though Turner & Newall denied all responsibility.",
         "achievement_es": "Trabajadora textil en Turner Brothers Asbestos en Rochdale, su muerte a los 33 años se convirtió en el primer caso documentado de muerte causada por asbesto. El Dr. W.E. Cooke publicó su caso en el BMJ en 1927, acuñando el término 'asbestosis pulmonar', aunque Turner & Newall negó toda responsabilidad.",
-        "source_url": "https://pubmed.ncbi.nlm.nih.gov/1825122/"
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/1825122/",
+        "photo_url": "/images/countries/united-kingdom/resistance-stories/nellie-kershaw.webp"
       },
       {
         "name": "Nancy Tait",
@@ -970,7 +971,8 @@
         "role_es": "Fundadora de SPAID, el primer grupo de víctimas del asbesto del mundo",
         "achievement": "After her husband died of mesothelioma in 1968, she published 'Asbestos Kills' in 1976 — a pioneering booklet documenting the hazards of all asbestos types. In 1978 she founded the Society for the Prevention of Asbestos and Industrial Diseases (SPAID), the world's first asbestos victims' pressure group.",
         "achievement_es": "Tras la muerte de su esposo por mesotelioma en 1968, publicó 'Asbestos Kills' en 1976, un folleto pionero que documentaba los peligros de todos los tipos de asbesto. En 1978 fundó la Sociedad para la Prevención del Asbesto y las Enfermedades Industriales (SPAID), el primer grupo de presión de víctimas del asbesto del mundo.",
-        "source_url": "https://ibasecretariat.org/mem_nancy_tait.php"
+        "source_url": "https://ibasecretariat.org/mem_nancy_tait.php",
+        "photo_url": "/images/countries/united-kingdom/resistance-stories/nancy-tait.webp"
       },
       {
         "name": "June Hancock",
@@ -980,7 +982,8 @@
         "role_es": "Ganó un caso histórico de exposición ambiental",
         "achievement": "A resident of Armley, Leeds who never worked with asbestos, she won the first UK case establishing environmental exposure liability for mesothelioma in 1995 — awarded £115,000 in damages against Cape plc. The June Hancock Mesothelioma Research Fund, created in her name, has raised over £1.5 million for research.",
         "achievement_es": "Residente de Armley, Leeds, que nunca trabajó con asbesto, ganó en 1995 el primer caso en el Reino Unido que estableció responsabilidad por exposición ambiental al mesotelioma, con una indemnización de £115,000 contra Cape plc. El Fondo de Investigación del Mesotelioma June Hancock, creado en su nombre, ha recaudado más de £1.5 millones para la investigación.",
-        "source_url": "https://www.irwinmitchell.com/news-and-insights/newsandmedia/2020/october/legacy-of-remarkable-leeds-woman-june-hancock-lives-on-through-research-into-asbestos-cancer"
+        "source_url": "https://www.irwinmitchell.com/news-and-insights/newsandmedia/2020/october/legacy-of-remarkable-leeds-woman-june-hancock-lives-on-through-research-into-asbestos-cancer",
+        "photo_url": "/images/countries/united-kingdom/resistance-stories/june-hancock.webp"
       },
       {
         "name": "Laurie Kazan-Allen",
@@ -990,7 +993,8 @@
         "role_es": "Fundadora y coordinadora de IBAS",
         "achievement": "Founded the International Ban Asbestos Secretariat (IBAS) in 1999, building the world's most comprehensive database of asbestos ban chronology and country regulations. Over 25 years of research and advocacy, she helped launch ban networks across Asia and coordinates the global asbestos ban movement.",
         "achievement_es": "Fundó el Secretariado Internacional para la Prohibición del Asbesto (IBAS) en 1999, creando la base de datos más completa del mundo sobre la cronología de prohibiciones y regulaciones por país. Con más de 25 años de investigación y activismo, ayudó a lanzar redes de prohibición en Asia y coordina el movimiento global de prohibición del asbesto.",
-        "source_url": "https://www.ibasecretariat.org/about.htm"
+        "source_url": "https://www.ibasecretariat.org/about.htm",
+        "photo_url": "/images/countries/united-kingdom/resistance-stories/laurie-kazan-allen.webp"
       }
     ],
     "exposure_zones": [
@@ -2252,7 +2256,7 @@
   {
     "slug": "colombia",
     "hero_pattern": "urban",
-    "hero_image_url": "https://unsplash.com/photos/gdcT7prXMzE",
+    "hero_image_url": "/images/countries/colombia/hero.webp",
     "name": "Colombia",
     "name_es": "Colombia",
     "iso2": "CO",

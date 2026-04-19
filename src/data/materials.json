@@ -381,9 +381,9 @@
   {
     "id": "asbestos-insulating-board-aib",
     "name": "Asbestos Insulating Board (AIB)",
-    "description": "Semi-rigid boards made primarily of asbestos fiber and calcium silicate. Used extensively in the UK and Europe for fire protection, partition walls, ceiling tiles, and fire doors. Contains 16–40% asbestos. Commonly found in buildings constructed 1930–1980. Among the highest-risk materials found in commercial buildings.",
-    "era_start": 1930,
-    "era_end": 1980,
+    "description": "Semi-rigid boards made from asbestos fibers (commonly brown amosite, 20–40% content) bonded with calcium silicate. Used massively from 1950 to the mid-1980s for fire protection, partition walls, ceiling tiles, fire doors, lift linings, and steel column cladding. Fully prohibited in 1999. Among the highest-risk asbestos materials in commercial buildings because it blends into its surroundings — it was often painted or plastered over.",
+    "era_start": 1950,
+    "era_end": 1999,
     "peak_decade": "1960s-1970s",
     "risk_when_intact": "moderate",
     "risk_when_damaged": "critical",
@@ -393,7 +393,18 @@
     "building_types": ["commercial", "industrial", "school", "residential"],
     "recommendation_intact": "Do not drill, cut, or sand. Even minor disturbance releases significant fiber concentrations.",
     "recommendation_damaged": "Evacuate and restrict access immediately. This is a licensed contractor job — no DIY options.",
-    "recommendation_renovation": "AIB is the most frequently encountered high-risk asbestos material in UK/European commercial demolition.",
+    "recommendation_renovation": "AIB is the most frequently encountered high-risk asbestos material in UK/European commercial demolition. Survey required before any work.",
+    "identification_tips": [
+      "Color: pale grey, off-white or cream when unpainted — chalky and matte to the touch",
+      "Texture: broken edges look 'furry' or dusty, leaving a fine powdery residue",
+      "Fragility: very brittle — snaps cleanly but crumbles at the break point",
+      "Thickness: boards are typically 6–12 mm thick",
+      "Location: office partitions, ceiling tiles, fire doors, lift shaft linings, panels under stairs, garage soffits, and behind boilers",
+      "Camouflage: often painted or plastered — visual inspection alone cannot confirm it; only lab sampling is definitive"
+    ],
+    "danger_passive": "If the board is undamaged and fully encapsulated (painted or plastered), risk is low. Fibers remain bound in the matrix.",
+    "danger_active": "AIB is highly friable — drilling, sanding, or breaking it releases dense fiber clouds instantly. Inhalation can cause mesothelioma, asbestosis, lung cancer, and pleural thickening. This is one of the most dangerous asbestos materials to disturb.",
+    "management_note": "Encapsulation: if the board is intact and undamaged, sealing it with specialist coatings is a valid alternative to removal. Removal: if damaged or renovation is planned, removal must be performed by a contractor holding a specific HSE licence for licensed asbestos work. Never attempt DIY removal.",
     "prevalence_regions": ["europe", "north_america"],
     "sources": [
       {
@@ -402,7 +413,7 @@
         "accessed": "2026-03-13"
       }
     ],
-    "image_url": "/images/materials/asbestos-insulating-board.jpg"
+    "image_url": "/images/materials/asbestos-insulating-board-aib.webp"
   },
   {
     "id": "roof-felt-underlayment",
@@ -543,5 +554,40 @@
       }
     ],
     "image_url": "/images/materials/fire-blankets-textiles.jpg"
+  },
+  {
+    "id": "artex-textured-coating",
+    "name": "Artex Textured Coating",
+    "description": "Decorative textured wall and ceiling coating extremely popular in UK homes between 1960 and 1990. Applied in swirl, stipple, or spike patterns. Asbestos was added until 1984 for durability and fire resistance — it was fully prohibited in 1999. Any property built or renovated before 1999 may contain it.",
+    "era_start": 1960,
+    "era_end": 1999,
+    "peak_decade": "1960s-1980s",
+    "risk_when_intact": "low",
+    "risk_when_damaged": "high",
+    "risk_when_disturbed": "critical",
+    "friability": "friable",
+    "location": ["ceiling", "walls"],
+    "building_types": ["residential", "commercial"],
+    "recommendation_intact": "If the surface is undamaged and in good condition, leave it in place. Do not sand, drill, or scrape.",
+    "recommendation_damaged": "Do not disturb. Isolate the area and contact a licensed asbestos removal company.",
+    "recommendation_renovation": "Never attempt to remove old Artex yourself. Professional sampling is the only safe way to confirm asbestos content.",
+    "identification_tips": [
+      "Textured patterns: raised swirls, stippling, or spike shapes on ceilings or walls",
+      "Age: properties built or renovated between the 1960s and 1990s",
+      "Surface feel: uneven, bumpy, or rough texture — unlike smooth plaster",
+      "Confirmation: only professional lab sampling can confirm asbestos — never assume it is safe by appearance alone"
+    ],
+    "danger_passive": "If the surface is untouched and intact, health risk is very low. The fibers remain bound in the coating.",
+    "danger_active": "Sanding, drilling, or demolishing releases asbestos fibers into the air. Inhalation can cause mesothelioma, asbestosis, lung cancer, and pleural thickening.",
+    "management_note": "If asbestos is confirmed, removal must be carried out by a licensed contractor (e.g. a company licensed by the HSE in the UK). Encapsulation — sealing the surface with specialist paint — is an alternative to full removal in low-risk scenarios.",
+    "prevalence_regions": ["europe"],
+    "sources": [
+      {
+        "name": "HSE Asbestos: Artex and Textured Coatings",
+        "url": "https://www.hse.gov.uk/asbestos/index.htm",
+        "accessed": "2026-04-19"
+      }
+    ],
+    "image_url": "/images/materials/artex-textured-coating.webp"
   }
 ]

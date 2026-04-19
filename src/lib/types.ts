@@ -120,6 +120,10 @@ export interface Material {
   prevalence_regions: string[];
   sources: Source[];
   image_url?: string;
+  identification_tips?: string[];
+  danger_passive?: string;
+  danger_active?: string;
+  management_note?: string;
 }
 
 export type RiskLevel = "low" | "moderate" | "high" | "critical";

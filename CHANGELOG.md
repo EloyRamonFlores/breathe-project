@@ -4,6 +4,47 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v3.2.0] — 2026-04-19 — Hero Images + Material Detail Modals
+
+### Overview
+Two parallel tracks: (1) replacing placeholder Unsplash URLs with real local hero images for Colombia and UK, and (2) implementing click-to-expand material detail modals with rich identification guides starting with Artex and AIB.
+
+### Hero images — local assets
+- **Colombia**: replaced Unsplash placeholder with `hero.webp` (309 KB, 1920×1080). `countries.json` `hero_image_url` updated to `/images/countries/colombia/hero.webp`.
+- **UK**: replaced Unsplash placeholder with `hero.webp` (168 KB, 1920×1080). `countries.json` `hero_image_url` updated to `/images/countries/united-kingdom/hero.webp`.
+- Images processed via `npm run optimize:images` (Sharp, 1920×1080 cover, WebP 80% + JPG 85%).
+
+### Resistance story portraits — UK
+Four portrait images added and wired to `photo_url` fields in `countries.json` for UK resistance stories:
+- Nellie Kershaw (7 KB WebP, 300×300)
+- Nancy Tait (8.3 KB WebP, 300×300)
+- June Hancock (8.9 KB WebP, 300×300)
+- Laurie Kazan-Allen (11 KB WebP, 300×300)
+
+### Material detail modals
+- **`MaterialGuide.tsx`** upgraded: cards with rich detail data are now clickable and open a full modal (`MaterialDetailModalInner`) showing: material photo, description, risk badge, identification tips, passive/active danger levels, and management guidance.
+- **Image fallback**: `onError` handler added — cards whose `image_url` is missing or broken silently fall back to the CSS pattern strip instead of showing a broken icon.
+- Modal: `scrollbar-width: none` applied cross-browser (webkit + ms + standard) so the panel scrolls without a visible scrollbar.
+
+### New material: Artex Textured Coating
+- New entry `artex-textured-coating` added to `materials.json` with UK-specific data (1960–1999, amosite, friable, critical when disturbed).
+- Fields added: `identification_tips` (4 items), `danger_passive`, `danger_active`, `management_note`, `image_url`.
+- `MATERIAL_KEYWORD_MAP` in `utils.ts` updated: "artex" now maps to `artex-textured-coating` (previously mapped to generic `popcorn-ceiling`).
+- Image: `artex-textured-coating.webp` added to `/public/images/materials/`.
+
+### Material enriched: Asbestos Insulating Board (AIB)
+- Existing `asbestos-insulating-board-aib` entry enriched with: `identification_tips` (6 items including camouflage warning), `danger_passive`, `danger_active`, `management_note`.
+- `image_url` updated to new local asset `asbestos-insulating-board-aib.webp` (14.6 KB, 300×300).
+- Description expanded to include amosite content percentage and key locations.
+
+### Types extended
+- `Material` interface in `src/lib/types.ts` extended with optional fields: `identification_tips?: string[]`, `danger_passive?: string`, `danger_active?: string`, `management_note?: string`.
+
+### Verification
+- `npm run type-check` → 0 errors
+
+---
+
 ## [v3.1.0] — 2026-04-17 — Layer 2 Credibility: Exposure Zones + Law vs. Implementation
 
 ### Overview

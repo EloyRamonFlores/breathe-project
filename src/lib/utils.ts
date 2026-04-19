@@ -65,7 +65,8 @@ export function getInitials(name: string): string {
 // ─── Material Matching ───────────────────────────────────────────────────────
 
 const MATERIAL_KEYWORD_MAP: [string, string[]][] = [
-  ["popcorn-ceiling", ["artex", "textured coat", "textured ceiling"]],
+  ["artex-textured-coating", ["artex"]],
+  ["popcorn-ceiling", ["textured coat", "textured ceiling"]],
   ["asbestos-insulating-board-aib", ["insulating board", "aib"]],
   ["cement-roofing", ["cement roofing", "roofing sheet", "cement sheet"]],
   ["asbestos-cement-flat-sheets", ["flat sheet"]],
@@ -102,6 +103,7 @@ export function getMaterialPatternClass(materialId: string): string {
     "cement-roofing": "material-pattern-diagonal",
     "asbestos-cement-flat-sheets": "material-pattern-diagonal",
     "asbestos-cement-corrugated-roofing": "material-pattern-diagonal",
+    "artex-textured-coating": "material-pattern-dots",
     "popcorn-ceiling": "material-pattern-dots",
     "joint-compound": "material-pattern-dots",
     "spray-applied-fireproofing": "material-pattern-dots",
