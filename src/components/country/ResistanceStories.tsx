@@ -35,9 +35,7 @@ function getRoleBadgeClass(roleType: RoleType): string {
     journalist: "text-accent bg-accent/10 border border-accent/20",
     scientist: "text-safe bg-safe/10 border border-safe/20",
   };
-  return roleType
-    ? (map[roleType] ?? "text-warning bg-warning/10 border border-warning/20")
-    : "text-warning bg-warning/10 border border-warning/20";
+  return roleType ? (map[roleType] ?? "text-warning bg-warning/10 border border-warning/20") : "text-warning bg-warning/10 border border-warning/20";
 }
 
 export default function ResistanceStories({ stories }: ResistanceStoriesProps) {
@@ -47,10 +45,10 @@ export default function ResistanceStories({ stories }: ResistanceStoriesProps) {
   if (!stories || stories.length === 0) return null;
 
   return (
-    <section aria-labelledby="resistance-heading">
+    <section className="mb-10" aria-labelledby="resistance-heading">
       <h2
         id="resistance-heading"
-        className="text-xl font-bold text-text-primary mb-1"
+        className="text-lg font-semibold text-text-primary mb-1"
       >
         {t("resistance_title")}
       </h2>
@@ -58,8 +56,9 @@ export default function ResistanceStories({ stories }: ResistanceStoriesProps) {
         {t("resistance_subtitle")}
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {stories.map((story) => {
+      {/* Amber left border editorial container */}
+      <div className="border-l-2 border-warning pl-4 sm:pl-6 space-y-0">
+        {stories.map((story, i) => {
           const role =
             locale === "es" ? (story.role_es ?? story.role) : story.role;
           const achievement =
@@ -71,43 +70,39 @@ export default function ResistanceStories({ stories }: ResistanceStoriesProps) {
           const avatarClass = getRoleTypeColor(story.role_type);
           const roleLabel = getRoleLabel(story.role_type, t);
           const roleBadgeClass = getRoleBadgeClass(story.role_type);
+          const isLast = i === stories.length - 1;
 
           return (
             <article
               key={story.name}
-              className="rounded-xl bg-bg-secondary border border-bg-tertiary overflow-hidden group hover:border-warning/30 transition-colors"
+              className={`flex flex-col sm:flex-row gap-4 py-6 ${!isLast ? "border-b border-bg-tertiary" : ""}`}
             >
-              {/* Photo or fallback */}
-              <div className="relative">
+              {/* Avatar or Photo */}
+              <div className="flex-shrink-0">
                 {story.photo_url ? (
-                  <div className="relative h-44 w-full overflow-hidden">
-                    <picture>
-                      <source srcSet={story.photo_url} type="image/webp" />
-                      <img
-                        src={story.photo_url.replace(".webp", ".jpg")}
-                        alt={story.name}
-                        className="w-full h-full object-cover object-top"
-                      />
-                    </picture>
-                    <div className="absolute inset-0 bg-gradient-to-t from-bg-secondary via-transparent to-transparent" />
-                  </div>
+                  <picture>
+                    <source srcSet={`${story.photo_url}`} type="image/webp" />
+                    <img
+                      src={story.photo_url.replace(".webp", ".jpg")}
+                      alt={story.name}
+                      className="w-12 h-12 rounded-full object-cover shadow-sm"
+                    />
+                  </picture>
                 ) : (
-                  <div className="h-20 w-full bg-gradient-to-br from-bg-tertiary/50 to-bg-secondary flex items-center justify-center">
-                    <div
-                      className={`w-14 h-14 rounded-full flex items-center justify-center font-mono text-lg font-bold ${avatarClass}`}
-                      aria-hidden="true"
-                    >
-                      {initials}
-                    </div>
+                  <div
+                    className={`w-12 h-12 rounded-full flex items-center justify-center font-mono text-sm font-bold ${avatarClass}`}
+                    aria-hidden="true"
+                  >
+                    {initials}
                   </div>
                 )}
               </div>
 
               {/* Content */}
-              <div className="p-4 sm:p-5">
-                {/* Name + badges */}
+              <div className="flex-1 min-w-0">
+                {/* Name + role badge + years */}
                 <div className="flex flex-wrap items-baseline gap-2 mb-1">
-                  <h3 className="font-bold text-text-primary text-base">
+                  <h3 className="font-semibold text-text-primary text-base">
                     {story.name}
                   </h3>
                   {roleLabel && (
@@ -117,26 +112,29 @@ export default function ResistanceStories({ stories }: ResistanceStoriesProps) {
                       {roleLabel}
                     </span>
                   )}
+                  <span className="font-mono text-xs text-text-muted">
+                    {story.years}
+                  </span>
                 </div>
 
-                <p className="font-mono text-xs text-text-muted mb-2">
-                  {story.years}
-                </p>
+                {/* Role description */}
+                <p className="text-sm text-text-muted mb-2">{role}</p>
 
-                {/* Role */}
-                <p className="text-sm font-medium text-text-secondary mb-2">{role}</p>
-
-                {/* Achievement — clamp on card, full in detail */}
-                <p className="text-sm text-text-secondary/80 leading-relaxed line-clamp-4">
+                {/* Achievement */}
+                <p className="text-sm text-text-secondary leading-relaxed mb-3">
                   {achievement}
                 </p>
 
                 {/* Quote */}
-                {story.quote && (() => {
+                {story.quote && story.quote_source && (() => {
                   const quote = locale === "es" ? (story.quote_es ?? story.quote) : story.quote;
+                  const quoteSource = locale === "es" ? (story.quote_source_es ?? story.quote_source) : story.quote_source;
                   return (
-                    <blockquote className="mt-3 border-l-2 border-warning/50 pl-3 italic text-sm text-text-secondary/80 line-clamp-3">
+                    <blockquote className="border-l-2 border-warning/50 pl-3 mb-3 italic text-sm text-text-secondary">
                       &ldquo;{quote}&rdquo;
+                      <cite className="block text-xs text-text-muted mt-1 not-italic">
+                        — {quoteSource}
+                      </cite>
                     </blockquote>
                   );
                 })()}
@@ -146,9 +144,8 @@ export default function ResistanceStories({ stories }: ResistanceStoriesProps) {
                   href={story.source_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-1.5 text-xs text-text-muted hover:text-accent transition-colors"
+                  className="text-xs text-text-muted hover:text-accent transition-colors"
                 >
-                  <span aria-hidden="true">↗</span>
                   {t("source_link_label")}
                 </a>
               </div>
