@@ -179,8 +179,8 @@ describe("Phase 6B research-country data pins", () => {
 // ─── materials.json ───────────────────────────────────────────────────────────
 
 describe("materials.json integrity", () => {
-  it("has exactly 20 entries", () => {
-    expect(materials).toHaveLength(20);
+  it("has exactly 21 entries", () => {
+    expect(materials).toHaveLength(21);
   });
 
   it("all entries have valid risk_when_damaged values", () => {

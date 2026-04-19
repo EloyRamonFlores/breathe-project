@@ -21,13 +21,12 @@ const TYPE_BORDER_CLASS: Record<TimelineEvent["type"], string> = {
   other: "border-l-text-muted",
 };
 
-// Unicode icons for each event type — instant visual scanning
 const TYPE_ICON: Record<TimelineEvent["type"], string> = {
-  ban: "\u2696\uFE0F",         // ⚖️ scales — legislation
-  partial_ban: "\u26A0\uFE0F", // ⚠️ warning — partial
-  regulation: "\u{1F4DC}",     // 📜 scroll — regulation
-  court_ruling: "\u{1F528}",   // 🔨 gavel — court ruling
-  other: "\u{1F4CD}",          // 📍 pin — event/milestone
+  ban: "\u2696\uFE0F",
+  partial_ban: "\u26A0\uFE0F",
+  regulation: "\u{1F4DC}",
+  court_ruling: "\u{1F528}",
+  other: "\u{1F4CD}",
 };
 
 function getTypeLabel(
@@ -61,84 +60,115 @@ export default async function Timeline({ events }: TimelineProps) {
     decades.get(decade)!.push(event);
   }
 
+  const decadeEntries = Array.from(decades.entries());
   const lastEvent = sorted[sorted.length - 1];
+  const lastDecade = decadeEntries[decadeEntries.length - 1]?.[0];
 
   return (
-    <ol aria-label={t("timeline")} className="space-y-0">
-      {Array.from(decades.entries()).map(([decade, decadeEvents]) => (
-        <li key={decade}>
-          {/* Decade header */}
-          <h3 className="font-mono text-xs uppercase tracking-widest text-text-muted mt-6 mb-3 first:mt-0 pb-1 border-b border-bg-tertiary">
-            {decade}s
-          </h3>
+    <ol aria-label={t("timeline")} className="space-y-2">
+      {decadeEntries.map(([decade, decadeEvents]) => {
+        // Most recent decade is open by default
+        const isLastDecade = decade === lastDecade;
 
-          <ol className="space-y-2">
-            {decadeEvents.map((event, i) => {
-              const isLast = event === lastEvent;
-              const isPulsing = isLast && event.year >= currentYear;
-              const borderClass =
-                TYPE_BORDER_CLASS[event.type] ?? "border-l-text-muted";
-              const badgeClass =
-                TYPE_BADGE_CLASS[event.type] ?? "text-text-muted bg-bg-tertiary border-bg-tertiary";
-              const icon = TYPE_ICON[event.type] ?? "📍";
+        return (
+          <li key={decade}>
+            <details
+              open={isLastDecade}
+              className="group rounded-lg border border-bg-tertiary overflow-hidden"
+            >
+              {/* Decade summary — clickable accordion header */}
+              <summary className="flex items-center justify-between gap-3 px-4 py-3 cursor-pointer bg-bg-secondary hover:bg-bg-tertiary/50 transition-colors select-none list-none [&::-webkit-details-marker]:hidden">
+                <div className="flex items-center gap-3">
+                  <span className="font-mono text-sm font-bold text-text-primary tabular-nums">
+                    {decade}s
+                  </span>
+                  <span className="font-mono text-[10px] text-text-muted uppercase tracking-wider">
+                    {decadeEvents.length} {decadeEvents.length === 1 ? "event" : "events"}
+                  </span>
+                  {/* Type indicators — colored dots showing what kinds of events */}
+                  <div className="hidden sm:flex items-center gap-1">
+                    {decadeEvents.map((e, i) => {
+                      const dotColor: Record<TimelineEvent["type"], string> = {
+                        ban: "bg-safe",
+                        partial_ban: "bg-warning",
+                        regulation: "bg-accent",
+                        court_ruling: "bg-warning",
+                        other: "bg-text-muted",
+                      };
+                      return (
+                        <span
+                          key={i}
+                          className={`w-1.5 h-1.5 rounded-full ${dotColor[e.type]}`}
+                          aria-hidden="true"
+                        />
+                      );
+                    })}
+                  </div>
+                </div>
 
-              return (
-                <li key={i}>
-                  <article
-                    className={`rounded-lg bg-bg-secondary border border-bg-tertiary border-l-4 ${borderClass} p-4`}
-                  >
-                    <div className="flex flex-wrap items-center gap-2 mb-2">
-                      {/* Icon */}
-                      <span className="text-base" aria-hidden="true">
-                        {icon}
-                      </span>
+                {/* Chevron */}
+                <span className="text-text-muted transition-transform group-open:rotate-180" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </span>
+              </summary>
 
-                      {/* Year — large and bold as visual anchor */}
-                      <span className="font-mono text-xl sm:text-2xl font-bold text-text-primary tabular-nums leading-none flex items-center gap-1.5">
-                        {event.year}
-                        {isPulsing && (
-                          <span
-                            className="inline-block w-2 h-2 rounded-full bg-safe animate-pulse"
-                            aria-label="Ongoing"
-                          />
+              {/* Events inside decade */}
+              <ol className="space-y-2 p-2 pt-0">
+                {decadeEvents.map((event, i) => {
+                  const isLast = event === lastEvent;
+                  const isPulsing = isLast && event.year >= currentYear;
+                  const borderClass = TYPE_BORDER_CLASS[event.type] ?? "border-l-text-muted";
+                  const badgeClass = TYPE_BADGE_CLASS[event.type] ?? "text-text-muted bg-bg-tertiary border-bg-tertiary";
+                  const icon = TYPE_ICON[event.type] ?? "\u{1F4CD}";
+
+                  return (
+                    <li key={i}>
+                      <article
+                        className={`rounded-lg bg-bg-primary border border-bg-tertiary border-l-4 ${borderClass} p-4`}
+                      >
+                        <div className="flex flex-wrap items-center gap-2 mb-2">
+                          <span className="text-base" aria-hidden="true">{icon}</span>
+                          <span className="font-mono text-lg font-bold text-text-primary tabular-nums leading-none flex items-center gap-1.5">
+                            {event.year}
+                            {isPulsing && (
+                              <span
+                                className="inline-block w-2 h-2 rounded-full bg-safe animate-pulse"
+                                aria-label="Ongoing"
+                              />
+                            )}
+                          </span>
+                          <span className={`inline-flex items-center rounded border px-1.5 py-0.5 text-xs font-medium ${badgeClass}`}>
+                            {getTypeLabel(event.type, t)}
+                          </span>
+                        </div>
+
+                        <p className="text-sm text-text-secondary leading-relaxed">
+                          {locale === "es" && event.event_es ? event.event_es : event.event}
+                        </p>
+
+                        {event.source_url && (
+                          <a
+                            href={event.source_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-2 inline-flex items-center gap-1.5 rounded bg-bg-tertiary/50 px-2.5 py-1 text-xs text-text-muted hover:text-accent hover:bg-accent/10 transition-colors"
+                            aria-label={`Source for ${event.year} event`}
+                          >
+                            <span aria-hidden="true">↗</span>
+                            {t("source_link_label")}
+                          </a>
                         )}
-                      </span>
-
-                      {/* Type badge */}
-                      <span
-                        className={`inline-flex items-center rounded border px-1.5 py-0.5 text-xs font-medium ${badgeClass}`}
-                      >
-                        {getTypeLabel(event.type, t)}
-                      </span>
-                    </div>
-
-                    {/* Description */}
-                    <p className="text-sm text-text-secondary leading-relaxed">
-                      {locale === "es" && event.event_es
-                        ? event.event_es
-                        : event.event}
-                    </p>
-
-                    {/* Source — larger click target */}
-                    {event.source_url && (
-                      <a
-                        href={event.source_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-2 inline-flex items-center gap-1.5 rounded bg-bg-tertiary/50 px-2.5 py-1 text-xs text-text-muted hover:text-accent hover:bg-accent/10 transition-colors"
-                        aria-label={`Source for ${event.year} event`}
-                      >
-                        <span aria-hidden="true">↗</span>
-                        {t("source_link_label")}
-                      </a>
-                    )}
-                  </article>
-                </li>
-              );
-            })}
-          </ol>
-        </li>
-      ))}
+                      </article>
+                    </li>
+                  );
+                })}
+              </ol>
+            </details>
+          </li>
+        );
+      })}
     </ol>
   );
 }

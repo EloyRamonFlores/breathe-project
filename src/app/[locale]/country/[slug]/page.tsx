@@ -10,7 +10,7 @@ import JointStoryCard from "@/components/country/JointStoryCard";
 import CountryHero from "@/components/country/CountryHero";
 import StatStrip from "@/components/country/StatStrip";
 import MaterialGuide from "@/components/country/MaterialGuide";
-import KeyFigures from "@/components/country/KeyFigures";
+// KeyFigures removed — data already shown in StatStrip
 import ExposureZones from "@/components/country/ExposureZones";
 import ImplementationStatus from "@/components/country/ImplementationStatus";
 import { SITE_URL } from "@/lib/constants";
@@ -291,70 +291,29 @@ export default async function CountryPage({
       <StatStrip country={country} />
 
       {/* ── Constrained content ── */}
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-10">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14 space-y-14">
 
-        {/* ── Timeline + Stories — two-column layout ── */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        {/* ── 1. Resistance Stories (prominent, full-width) ── */}
+        <div className="space-y-6">
+          {country.resistance_stories && country.resistance_stories.length > 0 && (
+            <ResistanceStories stories={country.resistance_stories} />
+          )}
 
-          {/* Left: Regulatory Timeline */}
-          <section aria-labelledby="timeline-heading">
-            <h2
-              id="timeline-heading"
-              className="text-lg font-semibold text-text-primary mb-4"
-            >
-              {t("timeline")}
-            </h2>
-
-            {isHighPriority && country.timeline.length > 0 ? (
-              <Timeline events={country.timeline} />
-            ) : (
-              <div className="rounded-lg bg-bg-secondary border border-bg-tertiary p-5">
-                <p className="text-sm text-text-muted">{t("timeline_empty")}</p>
-                {!isHighPriority && (
-                  <p className="text-sm text-text-muted mt-2">
-                    {t("more_info_coming")}
-                  </p>
-                )}
-              </div>
-            )}
-          </section>
-
-          {/* Right: Resistance Stories + Joint Story */}
-          <div className="space-y-6">
-            {country.resistance_stories && country.resistance_stories.length > 0 && (
-              <ResistanceStories stories={country.resistance_stories} />
-            )}
-
-            {country.joint_resistance_story && (
-              <JointStoryCard story={country.joint_resistance_story} />
-            )}
-          </div>
-
+          {country.joint_resistance_story && (
+            <JointStoryCard story={country.joint_resistance_story} />
+          )}
         </div>
 
-        {/* ── Key Figures in Detail ── */}
-        <KeyFigures country={country} />
-
-        {/* ── Law vs. Implementation (Layer 2) ── */}
-        {country.implementation_status && (
-          <ImplementationStatus status={country.implementation_status} />
-        )}
-
-        {/* ── Specific Exposure Zones (Layer 2) ── */}
-        {country.exposure_zones && country.exposure_zones.length > 0 && (
-          <ExposureZones zones={country.exposure_zones} />
-        )}
-
-        {/* ── Material Identification Guide ── */}
+        {/* ── 2. Material Identification Guide (actionable — moved up) ── */}
         {country.common_materials.length > 0 && (
           <section aria-labelledby="materials-heading">
             <h2
               id="materials-heading"
-              className="text-lg font-semibold text-text-primary mb-1"
+              className="text-xl font-bold text-text-primary mb-1"
             >
               {t("material_guide_title")}
             </h2>
-            <p className="text-sm text-text-muted mb-4">
+            <p className="text-sm text-text-muted mb-5">
               {t("material_guide_subtitle")}
             </p>
             <MaterialGuide
@@ -364,100 +323,130 @@ export default async function CountryPage({
           </section>
         )}
 
-        {/* ── What To Do ── */}
-        <section
-          className="rounded-lg bg-bg-secondary border border-bg-tertiary p-5 sm:p-6"
-          aria-labelledby="what-to-do-heading"
-        >
-          <h2
-            id="what-to-do-heading"
-            className="text-lg font-semibold text-text-primary mb-4"
-          >
-            {t("what_to_do")}
-          </h2>
-          <ul className="space-y-2" role="list">
-            {whatToDoItems.map((item, i) => (
-              <li key={i} className="flex gap-3 text-sm text-text-secondary">
-                <span
-                  className="mt-0.5 flex-shrink-0 text-warning"
-                  aria-hidden="true"
-                >
-                  ›
-                </span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
+        {/* ── 3. Exposure Zones ── */}
+        {country.exposure_zones && country.exposure_zones.length > 0 && (
+          <ExposureZones zones={country.exposure_zones} />
+        )}
 
-        {/* ── CTA ── */}
-        <section
-          className="rounded-lg border border-warning/30 bg-warning/5 p-5 sm:p-6"
-          aria-labelledby="cta-heading"
-        >
-          <h2
-            id="cta-heading"
-            className="text-lg font-semibold text-text-primary mb-1"
-          >
-            {t("cta_title")}
-          </h2>
-          <p className="text-sm text-text-secondary mb-4">
-            {t("cta_description")}
-          </p>
-          <Link
-            href={`/check?country=${country.iso2.toLowerCase()}`}
-            className="inline-flex items-center gap-2 rounded-lg bg-warning px-4 py-2.5 text-sm font-semibold text-bg-primary transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-warning"
-          >
-            {t("cta_button")}
-            <span aria-hidden="true">→</span>
-          </Link>
-        </section>
+        {/* ── 4. Law vs. Implementation ── */}
+        {country.implementation_status && (
+          <ImplementationStatus status={country.implementation_status} />
+        )}
 
-        {/* ── Sources ── */}
-        {country.sources.length > 0 && (
-          <section aria-labelledby="sources-heading">
+        {/* ── 5. What To Do + CTA — combined ── */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <section
+            className="rounded-xl bg-bg-secondary border border-bg-tertiary p-5 sm:p-6"
+            aria-labelledby="what-to-do-heading"
+          >
             <h2
-              id="sources-heading"
-              className="text-lg font-semibold text-text-primary mb-3"
+              id="what-to-do-heading"
+              className="text-lg font-bold text-text-primary mb-4"
             >
-              {t("sources")}
+              {t("what_to_do")}
             </h2>
             <ul className="space-y-2" role="list">
-              {country.sources.map((source, i) => (
-                <li key={i}>
-                  <a
-                    href={source.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 rounded-lg bg-bg-secondary border border-bg-tertiary px-4 py-3 text-sm text-text-secondary hover:text-accent hover:border-accent/30 hover:bg-accent/5 transition-colors group"
-                  >
-                    <span className="flex-shrink-0 text-text-muted group-hover:text-accent transition-colors" aria-hidden="true">↗</span>
-                    <span className="flex-1 min-w-0 truncate">{source.name}</span>
-                  </a>
+              {whatToDoItems.map((item, i) => (
+                <li key={i} className="flex gap-3 text-sm text-text-secondary">
+                  <span className="mt-0.5 flex-shrink-0 text-warning" aria-hidden="true">›</span>
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
           </section>
-        )}
 
-        {/* ── Last Updated ── */}
-        {country.last_updated && (
-          <p className="text-xs text-text-muted">
-            {t("last_updated")}: {country.last_updated}
-          </p>
-        )}
-
-        {/* ── Disclaimer ── */}
-        <div className="rounded-lg bg-bg-secondary border border-bg-tertiary p-4">
-          <p className="text-xs text-text-muted leading-relaxed">
-            {t("page_disclaimer")}
-          </p>
-          <Link
-            href="/learn/methodology"
-            className="mt-2 inline-flex items-center font-mono text-xs text-accent hover:underline"
+          <section
+            className="rounded-xl border border-warning/30 bg-warning/5 p-5 sm:p-6 flex flex-col justify-between"
+            aria-labelledby="cta-heading"
           >
-            {t("data_source_link")}
-          </Link>
+            <div>
+              <h2
+                id="cta-heading"
+                className="text-lg font-bold text-text-primary mb-1"
+              >
+                {t("cta_title")}
+              </h2>
+              <p className="text-sm text-text-secondary mb-4">
+                {t("cta_description")}
+              </p>
+            </div>
+            <Link
+              href={`/check?country=${country.iso2.toLowerCase()}`}
+              className="inline-flex items-center gap-2 rounded-lg bg-warning px-4 py-2.5 text-sm font-semibold text-bg-primary transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-warning self-start"
+            >
+              {t("cta_button")}
+              <span aria-hidden="true">→</span>
+            </Link>
+          </section>
+        </div>
+
+        {/* ── 6. Regulatory Timeline (collapsible, moved down) ── */}
+        <section aria-labelledby="timeline-heading">
+          <h2
+            id="timeline-heading"
+            className="text-xl font-bold text-text-primary mb-4"
+          >
+            {t("timeline")}
+          </h2>
+
+          {isHighPriority && country.timeline.length > 0 ? (
+            <Timeline events={country.timeline} />
+          ) : (
+            <div className="rounded-lg bg-bg-secondary border border-bg-tertiary p-5">
+              <p className="text-sm text-text-muted">{t("timeline_empty")}</p>
+              {!isHighPriority && (
+                <p className="text-sm text-text-muted mt-2">
+                  {t("more_info_coming")}
+                </p>
+              )}
+            </div>
+          )}
+        </section>
+
+        {/* ── 7. Sources ── */}
+        {country.sources.length > 0 && (
+          <section aria-labelledby="sources-heading">
+            <h2
+              id="sources-heading"
+              className="text-lg font-bold text-text-primary mb-3"
+            >
+              {t("sources")}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {country.sources.map((source, i) => (
+                <a
+                  key={i}
+                  href={source.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 rounded-lg bg-bg-secondary border border-bg-tertiary px-4 py-3 text-sm text-text-secondary hover:text-accent hover:border-accent/30 hover:bg-accent/5 transition-colors group"
+                >
+                  <span className="flex-shrink-0 text-text-muted group-hover:text-accent transition-colors" aria-hidden="true">↗</span>
+                  <span className="flex-1 min-w-0 truncate">{source.name}</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* ── Footer meta ── */}
+        <div className="space-y-3">
+          {country.last_updated && (
+            <p className="text-xs text-text-muted">
+              {t("last_updated")}: {country.last_updated}
+            </p>
+          )}
+          <div className="rounded-lg bg-bg-secondary border border-bg-tertiary p-4">
+            <p className="text-xs text-text-muted leading-relaxed">
+              {t("page_disclaimer")}
+            </p>
+            <Link
+              href="/learn/methodology"
+              className="mt-2 inline-flex items-center font-mono text-xs text-accent hover:underline"
+            >
+              {t("data_source_link")}
+            </Link>
+          </div>
         </div>
 
       </div>
