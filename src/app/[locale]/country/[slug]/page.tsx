@@ -319,7 +319,7 @@ export default async function CountryPage({
             )}
           </section>
 
-          {/* Right: Stories + contextual sections flowing down to fill space */}
+          {/* Right: Resistance Stories — balanced against the timeline */}
           <div className="space-y-8">
             {country.resistance_stories && country.resistance_stories.length > 0 && (
               <ResistanceStories stories={country.resistance_stories} />
@@ -328,22 +328,20 @@ export default async function CountryPage({
             {country.joint_resistance_story && (
               <JointStoryCard story={country.joint_resistance_story} />
             )}
-
-            {/* Key Figures flow into right column */}
-            <KeyFigures country={country} />
-
-            {/* Law vs. Implementation */}
-            {country.implementation_status && (
-              <ImplementationStatus status={country.implementation_status} />
-            )}
-
-            {/* Exposure Zones */}
-            {country.exposure_zones && country.exposure_zones.length > 0 && (
-              <ExposureZones zones={country.exposure_zones} />
-            )}
           </div>
 
         </div>
+
+        {/* ── Full-width contextual sections below the grid ── */}
+        <KeyFigures country={country} />
+
+        {country.implementation_status && (
+          <ImplementationStatus status={country.implementation_status} />
+        )}
+
+        {country.exposure_zones && country.exposure_zones.length > 0 && (
+          <ExposureZones zones={country.exposure_zones} />
+        )}
 
         {/* ── Material Identification Guide ── */}
         {country.common_materials.length > 0 && (
