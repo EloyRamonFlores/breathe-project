@@ -35,6 +35,7 @@ export async function generateMetadata({
       type: "website",
     },
     alternates: {
+      canonical: `${BASE_URL}/${locale}/countries`,
       languages: {
         en: `${BASE_URL}/en/countries`,
         es: `${BASE_URL}/es/countries`,

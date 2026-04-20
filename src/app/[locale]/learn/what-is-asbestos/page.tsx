@@ -28,6 +28,7 @@ export async function generateMetadata({
       type: "article",
     },
     alternates: {
+      canonical: `${BASE_URL}/${locale}/learn/what-is-asbestos`,
       languages: {
         en: `${BASE_URL}/en/learn/what-is-asbestos`,
         es: `${BASE_URL}/es/learn/what-is-asbestos`,

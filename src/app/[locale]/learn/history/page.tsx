@@ -28,6 +28,7 @@ export async function generateMetadata({
       type: "article",
     },
     alternates: {
+      canonical: `${BASE_URL}/${locale}/learn/history`,
       languages: {
         en: `${BASE_URL}/en/learn/history`,
         es: `${BASE_URL}/es/learn/history`,

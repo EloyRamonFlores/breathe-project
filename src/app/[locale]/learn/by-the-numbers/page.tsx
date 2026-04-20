@@ -30,6 +30,7 @@ export async function generateMetadata({
       type: "article",
     },
     alternates: {
+      canonical: `${BASE_URL}/${locale}/learn/by-the-numbers`,
       languages: {
         en: `${BASE_URL}/en/learn/by-the-numbers`,
         es: `${BASE_URL}/es/learn/by-the-numbers`,
