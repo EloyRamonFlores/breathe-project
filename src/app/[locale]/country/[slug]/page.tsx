@@ -294,51 +294,33 @@ export default async function CountryPage({
       {/* ── Constrained content ── */}
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-10">
 
-        {/* ── Two-column layout: Timeline (left) + Content flow (right) ── */}
+        {/* ── Single adaptive 2-col grid: primary content + collapsibles flow naturally ── */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
 
-          {/* Left: Regulatory Timeline */}
-          <section aria-labelledby="timeline-heading">
-            <h2
-              id="timeline-heading"
-              className="text-lg font-semibold text-text-primary mb-4"
-            >
-              {t("timeline")}
-            </h2>
+          {/* Left column: Timeline → Key Figures */}
+          <div className="space-y-6">
+            <section aria-labelledby="timeline-heading">
+              <h2
+                id="timeline-heading"
+                className="text-lg font-semibold text-text-primary mb-4"
+              >
+                {t("timeline")}
+              </h2>
 
-            {isHighPriority && country.timeline.length > 0 ? (
-              <Timeline events={country.timeline} />
-            ) : (
-              <div className="rounded-lg bg-bg-secondary border border-bg-tertiary p-5">
-                <p className="text-sm text-text-muted">{t("timeline_empty")}</p>
-                {!isHighPriority && (
-                  <p className="text-sm text-text-muted mt-2">
-                    {t("more_info_coming")}
-                  </p>
-                )}
-              </div>
-            )}
-          </section>
+              {isHighPriority && country.timeline.length > 0 ? (
+                <Timeline events={country.timeline} />
+              ) : (
+                <div className="rounded-lg bg-bg-secondary border border-bg-tertiary p-5">
+                  <p className="text-sm text-text-muted">{t("timeline_empty")}</p>
+                  {!isHighPriority && (
+                    <p className="text-sm text-text-muted mt-2">
+                      {t("more_info_coming")}
+                    </p>
+                  )}
+                </div>
+              )}
+            </section>
 
-          {/* Right: Resistance Stories — balanced against the timeline */}
-          <div className="space-y-8">
-            {country.resistance_stories && country.resistance_stories.length > 0 && (
-              <ResistanceStories stories={country.resistance_stories} />
-            )}
-
-            {country.joint_resistance_story && (
-              <JointStoryCard story={country.joint_resistance_story} />
-            )}
-          </div>
-
-        </div>
-
-        {/* ── Contextual sections — collapsible 2-col grid ── */}
-        {(country.mesothelioma_rate !== null ||
-          country.estimated_buildings_at_risk ||
-          country.implementation_status ||
-          (country.exposure_zones && country.exposure_zones.length > 0)) && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
             {(country.mesothelioma_rate !== null ||
               country.estimated_buildings_at_risk) && (
               <CollapsibleSection
@@ -347,6 +329,17 @@ export default async function CountryPage({
               >
                 <KeyFigures country={country} hideHeader />
               </CollapsibleSection>
+            )}
+          </div>
+
+          {/* Right column: Stories → Implementation → Exposure Zones */}
+          <div className="space-y-6">
+            {country.resistance_stories && country.resistance_stories.length > 0 && (
+              <ResistanceStories stories={country.resistance_stories} />
+            )}
+
+            {country.joint_resistance_story && (
+              <JointStoryCard story={country.joint_resistance_story} />
             )}
 
             {country.implementation_status && (
@@ -362,20 +355,16 @@ export default async function CountryPage({
             )}
 
             {country.exposure_zones && country.exposure_zones.length > 0 && (
-              <div className="md:col-span-2">
-                <CollapsibleSection
-                  title={t("exposure_zones_title")}
-                  preview={t("exposure_zones_subtitle")}
-                >
-                  <ExposureZones
-                    zones={country.exposure_zones}
-                    hideHeader
-                  />
-                </CollapsibleSection>
-              </div>
+              <CollapsibleSection
+                title={t("exposure_zones_title")}
+                preview={t("exposure_zones_subtitle")}
+              >
+                <ExposureZones zones={country.exposure_zones} hideHeader />
+              </CollapsibleSection>
             )}
           </div>
-        )}
+
+        </div>
 
         {/* ── Material Identification Guide ── */}
         {country.common_materials.length > 0 && (
