@@ -6,6 +6,7 @@ import type {
 
 interface ImplementationStatusProps {
   status: ImplementationStatusData;
+  hideHeader?: boolean;
 }
 
 function getStatusStyling(level: ImplementationStatusLevel): {
@@ -44,6 +45,7 @@ function getStatusStyling(level: ImplementationStatusLevel): {
 
 export default async function ImplementationStatus({
   status,
+  hideHeader = false,
 }: ImplementationStatusProps) {
   const t = await getTranslations("country");
   const locale = await getLocale();
@@ -54,15 +56,19 @@ export default async function ImplementationStatus({
 
   return (
     <section aria-labelledby="implementation-heading">
-      <h2
-        id="implementation-heading"
-        className="text-lg font-semibold text-text-primary mb-1"
-      >
-        {t("impl_title")}
-      </h2>
-      <p className="text-sm text-text-muted mb-4">
-        {t("impl_subtitle")}
-      </p>
+      {!hideHeader && (
+        <>
+          <h2
+            id="implementation-heading"
+            className="text-lg font-semibold text-text-primary mb-1"
+          >
+            {t("impl_title")}
+          </h2>
+          <p className="text-sm text-text-muted mb-4">
+            {t("impl_subtitle")}
+          </p>
+        </>
+      )}
 
       <div className="rounded-lg bg-bg-secondary border border-bg-tertiary p-5">
         <div className="flex items-start gap-3 mb-3">

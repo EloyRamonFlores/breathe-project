@@ -4,9 +4,10 @@ import { getBanStatusColor } from "@/lib/utils";
 
 interface KeyFiguresProps {
   country: Country;
+  hideHeader?: boolean;
 }
 
-export default async function KeyFigures({ country }: KeyFiguresProps) {
+export default async function KeyFigures({ country, hideHeader = false }: KeyFiguresProps) {
   const t = await getTranslations("country");
   const banStatusColor = getBanStatusColor(country.ban_status);
 
@@ -45,15 +46,19 @@ export default async function KeyFigures({ country }: KeyFiguresProps) {
 
   return (
     <section aria-labelledby="key-figures-heading">
-      <h2
-        id="key-figures-heading"
-        className="text-lg font-semibold text-text-primary mb-1"
-      >
-        {t("key_figures_title")}
-      </h2>
-      <p className="text-sm text-text-muted mb-4">
-        {t("key_figures_subtitle")}
-      </p>
+      {!hideHeader && (
+        <>
+          <h2
+            id="key-figures-heading"
+            className="text-lg font-semibold text-text-primary mb-1"
+          >
+            {t("key_figures_title")}
+          </h2>
+          <p className="text-sm text-text-muted mb-4">
+            {t("key_figures_subtitle")}
+          </p>
+        </>
+      )}
 
       <div className="grid gap-4 sm:grid-cols-2">
         {/* Ban Year Card */}

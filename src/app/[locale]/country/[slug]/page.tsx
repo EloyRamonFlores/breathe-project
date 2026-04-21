@@ -13,6 +13,7 @@ import MaterialGuide from "@/components/country/MaterialGuide";
 import KeyFigures from "@/components/country/KeyFigures";
 import ExposureZones from "@/components/country/ExposureZones";
 import ImplementationStatus from "@/components/country/ImplementationStatus";
+import CollapsibleSection from "@/components/ui/CollapsibleSection";
 import { SITE_URL } from "@/lib/constants";
 
 // ─── Static Generation ────────────────────────────────────────────────────────
@@ -332,15 +333,48 @@ export default async function CountryPage({
 
         </div>
 
-        {/* ── Full-width contextual sections below the grid ── */}
-        <KeyFigures country={country} />
+        {/* ── Contextual sections — collapsible 2-col grid ── */}
+        {(country.mesothelioma_rate !== null ||
+          country.estimated_buildings_at_risk ||
+          country.implementation_status ||
+          (country.exposure_zones && country.exposure_zones.length > 0)) && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
+            {(country.mesothelioma_rate !== null ||
+              country.estimated_buildings_at_risk) && (
+              <CollapsibleSection
+                title={t("key_figures_title")}
+                preview={t("key_figures_subtitle")}
+              >
+                <KeyFigures country={country} hideHeader />
+              </CollapsibleSection>
+            )}
 
-        {country.implementation_status && (
-          <ImplementationStatus status={country.implementation_status} />
-        )}
+            {country.implementation_status && (
+              <CollapsibleSection
+                title={t("impl_title")}
+                preview={t("impl_subtitle")}
+              >
+                <ImplementationStatus
+                  status={country.implementation_status}
+                  hideHeader
+                />
+              </CollapsibleSection>
+            )}
 
-        {country.exposure_zones && country.exposure_zones.length > 0 && (
-          <ExposureZones zones={country.exposure_zones} />
+            {country.exposure_zones && country.exposure_zones.length > 0 && (
+              <div className="md:col-span-2">
+                <CollapsibleSection
+                  title={t("exposure_zones_title")}
+                  preview={t("exposure_zones_subtitle")}
+                >
+                  <ExposureZones
+                    zones={country.exposure_zones}
+                    hideHeader
+                  />
+                </CollapsibleSection>
+              </div>
+            )}
+          </div>
         )}
 
         {/* ── Material Identification Guide ── */}

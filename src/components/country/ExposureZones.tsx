@@ -3,9 +3,10 @@ import type { ExposureZone } from "@/lib/types";
 
 interface ExposureZonesProps {
   zones: ExposureZone[];
+  hideHeader?: boolean;
 }
 
-export default async function ExposureZones({ zones }: ExposureZonesProps) {
+export default async function ExposureZones({ zones, hideHeader = false }: ExposureZonesProps) {
   const t = await getTranslations("country");
   const locale = await getLocale();
   const isEs = locale === "es";
@@ -14,15 +15,19 @@ export default async function ExposureZones({ zones }: ExposureZonesProps) {
 
   return (
     <section aria-labelledby="exposure-zones-heading">
-      <h2
-        id="exposure-zones-heading"
-        className="text-lg font-semibold text-text-primary mb-1"
-      >
-        {t("exposure_zones_title")}
-      </h2>
-      <p className="text-sm text-text-muted mb-4">
-        {t("exposure_zones_subtitle")}
-      </p>
+      {!hideHeader && (
+        <>
+          <h2
+            id="exposure-zones-heading"
+            className="text-lg font-semibold text-text-primary mb-1"
+          >
+            {t("exposure_zones_title")}
+          </h2>
+          <p className="text-sm text-text-muted mb-4">
+            {t("exposure_zones_subtitle")}
+          </p>
+        </>
+      )}
 
       <ul className="grid gap-3 sm:grid-cols-2" role="list">
         {zones.map((zone, i) => {
