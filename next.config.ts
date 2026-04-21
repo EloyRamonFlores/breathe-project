@@ -13,6 +13,23 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      // www → non-www (permanent)
+      {
+        source: "/:path*",
+        has: [{ type: "host" as const, value: "www.toxinfree.global" }],
+        destination: "https://toxinfree.global/:path*",
+        permanent: true,
+      },
+      // /country/:slug (no locale) → /en/country/:slug
+      {
+        source: "/country/:slug",
+        destination: "/en/country/:slug",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
