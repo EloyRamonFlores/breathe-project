@@ -294,75 +294,63 @@ export default async function CountryPage({
       {/* ── Constrained content ── */}
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-10">
 
-        {/* ── Single adaptive 2-col grid: primary content + collapsibles flow naturally ── */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        {/* ── Adaptive masonry: CSS columns auto-balance content, no fixed left/right ── */}
+        <div className="columns-1 lg:columns-2 gap-8 [column-fill:balance]">
 
-          {/* Left column: Timeline → Key Figures */}
-          <div className="space-y-6">
-            <section id="section-timeline" aria-labelledby="timeline-heading">
-              <h2
-                id="timeline-heading"
-                className="text-lg font-semibold text-text-primary mb-4"
-              >
-                {t("timeline")}
-              </h2>
+          <section
+            id="section-timeline"
+            aria-labelledby="timeline-heading"
+            className="break-inside-avoid mb-6"
+          >
+            <h2
+              id="timeline-heading"
+              className="text-lg font-semibold text-text-primary mb-4"
+            >
+              {t("timeline")}
+            </h2>
+            {isHighPriority && country.timeline.length > 0 ? (
+              <Timeline events={country.timeline} />
+            ) : (
+              <div className="rounded-lg bg-bg-secondary border border-bg-tertiary p-5">
+                <p className="text-sm text-text-muted">{t("timeline_empty")}</p>
+                {!isHighPriority && (
+                  <p className="text-sm text-text-muted mt-2">
+                    {t("more_info_coming")}
+                  </p>
+                )}
+              </div>
+            )}
+          </section>
 
-              {isHighPriority && country.timeline.length > 0 ? (
-                <Timeline events={country.timeline} />
-              ) : (
-                <div className="rounded-lg bg-bg-secondary border border-bg-tertiary p-5">
-                  <p className="text-sm text-text-muted">{t("timeline_empty")}</p>
-                  {!isHighPriority && (
-                    <p className="text-sm text-text-muted mt-2">
-                      {t("more_info_coming")}
-                    </p>
-                  )}
-                </div>
-              )}
-            </section>
+          {country.resistance_stories && country.resistance_stories.length > 0 && (
+            <div className="break-inside-avoid mb-6">
+              <ResistanceStories stories={country.resistance_stories} />
+            </div>
+          )}
 
-            {(country.mesothelioma_rate !== null ||
-              country.estimated_buildings_at_risk) && (
+          {country.joint_resistance_story && (
+            <div className="break-inside-avoid mb-6">
+              <JointStoryCard story={country.joint_resistance_story} />
+            </div>
+          )}
+
+          {(country.mesothelioma_rate !== null ||
+            country.estimated_buildings_at_risk) && (
+            <div className="break-inside-avoid mb-4">
               <CollapsibleSection
                 sectionId="section-key-figures"
-                prevId="section-timeline"
                 title={t("key_figures_title")}
                 preview={t("key_figures_subtitle")}
               >
                 <KeyFigures country={country} hideHeader />
               </CollapsibleSection>
-            )}
-          </div>
+            </div>
+          )}
 
-          {/* Right column: Stories → Implementation → Exposure Zones */}
-          <div className="space-y-6">
-            {country.resistance_stories && country.resistance_stories.length > 0 && (
-              <div id="section-stories">
-                <ResistanceStories stories={country.resistance_stories} />
-              </div>
-            )}
-
-            {country.joint_resistance_story && (
-              <div id="section-joint">
-                <JointStoryCard story={country.joint_resistance_story} />
-              </div>
-            )}
-
-            {country.implementation_status && (
+          {country.implementation_status && (
+            <div className="break-inside-avoid mb-4">
               <CollapsibleSection
                 sectionId="section-implementation"
-                prevId={
-                  country.joint_resistance_story
-                    ? "section-joint"
-                    : country.resistance_stories?.length
-                      ? "section-stories"
-                      : undefined
-                }
-                nextId={
-                  country.exposure_zones && country.exposure_zones.length > 0
-                    ? "section-zones"
-                    : undefined
-                }
                 title={t("impl_title")}
                 preview={t("impl_subtitle")}
               >
@@ -371,27 +359,20 @@ export default async function CountryPage({
                   hideHeader
                 />
               </CollapsibleSection>
-            )}
+            </div>
+          )}
 
-            {country.exposure_zones && country.exposure_zones.length > 0 && (
+          {country.exposure_zones && country.exposure_zones.length > 0 && (
+            <div className="break-inside-avoid mb-4">
               <CollapsibleSection
                 sectionId="section-zones"
-                prevId={
-                  country.implementation_status
-                    ? "section-implementation"
-                    : country.joint_resistance_story
-                      ? "section-joint"
-                      : country.resistance_stories?.length
-                        ? "section-stories"
-                        : undefined
-                }
                 title={t("exposure_zones_title")}
                 preview={t("exposure_zones_subtitle")}
               >
                 <ExposureZones zones={country.exposure_zones} hideHeader />
               </CollapsibleSection>
-            )}
-          </div>
+            </div>
+          )}
 
         </div>
 
