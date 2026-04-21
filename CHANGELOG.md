@@ -4,6 +4,36 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v3.3.0] — 2026-04-20 — SEO Technical Fixes (Google Search Console)
+
+### Overview
+Full audit of Google Search Console coverage issues (~1 month after launch). Four technical problems identified and fixed: missing canonical tags, trailing slash redirect inconsistency, locale-less 404 URLs, and inverted www/non-www domain configuration in Vercel.
+
+### Issue 1 — Duplicate canonical (34 pages) → Fixed
+- **Root cause**: All non-country pages had `alternates.languages` in `generateMetadata` but were missing `alternates.canonical`. Next.js only generates `<link rel="canonical">` when that field is present — without it, Google treated EN/ES versions of each page as duplicates with no canonical signal.
+- **Fix**: Added `alternates.canonical: \`${BASE_URL}/${locale}${path}\`` to all 10 affected page types: home, check, countries, learn (index + 6 subpages). Country pages already had canonical — unaffected.
+
+### Issue 2 — Page with redirect (20 pages) → Fixed
+- **Root cause**: Sitemap URLs had no trailing slash (e.g. `toxinfree.global/en`) but Vercel/Next.js was serving pages with trailing slash, causing a redirect on every static URL. 10 page types × 2 locales = exactly 20 redirect entries in GSC.
+- **Fix**: Added `trailingSlash: false` explicitly to `next.config.ts` to enforce consistent URL format across the site.
+
+### Issue 3 — Not found 404 (15 pages) → Fixed
+- **Root cause**: Google found early-crawled URLs in two broken formats: (a) `/country/:slug` without locale prefix (Next.js App Router requires `/:locale/country/:slug`), and (b) `www.toxinfree.global/country/:slug` hitting the www domain which served production but had no locale routing.
+- **Fix**: Added two permanent redirect rules to `next.config.ts`: `www.toxinfree.global/*` → `toxinfree.global/*` (301) and `/country/:slug` → `/en/country/:slug` (301).
+
+### Issue 4 — www/non-www domain inversion → Fixed (Vercel)
+- **Root cause**: Vercel had `toxinfree.global` configured as a 307 (temporary) redirect to `www.toxinfree.global`, which was the actual Production domain. This contradicted all SEO metadata (`SITE_URL`, sitemap, canonical tags) which use non-www as canonical. Google was indexing `www.*` URLs while canonicals declared `toxinfree.global`.
+- **Fix**: Inverted the Vercel domain configuration — `toxinfree.global` is now Production (canonical), `www.toxinfree.global` redirects to it with 301. Sitemap re-submitted in GSC.
+
+### Country page layout — balance fix
+- Right column in the 2-column grid (`timeline` ↔ `content`) was too heavy. Moved `KeyFigures`, `ImplementationStatus`, and `ExposureZones` out of the right column to render full-width below the grid. Right column now holds only `ResistanceStories` + `JointStoryCard`, balancing visually against the timeline.
+
+### Verification
+- `npm run type-check` → 0 errors
+- GSC sitemap re-submitted post-deploy
+
+---
+
 ## [v3.2.0] — 2026-04-19 — Hero Images + Material Detail Modals
 
 ### Overview
