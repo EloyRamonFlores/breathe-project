@@ -45,10 +45,12 @@ export default function CollapsibleSection({
       </button>
 
       <div
-        className={`grid transition-[grid-template-rows] duration-300 ease-out ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+        className={`grid transition-[grid-template-rows] duration-500 ease-in-out ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
       >
         <div className="overflow-hidden">
-          <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-4 border-t border-bg-tertiary">
+          <div
+            className={`px-4 sm:px-5 pb-4 sm:pb-5 pt-4 border-t border-bg-tertiary transition-opacity duration-500 ease-in-out ${isOpen ? "opacity-100" : "opacity-0"}`}
+          >
             {children}
           </div>
         </div>
