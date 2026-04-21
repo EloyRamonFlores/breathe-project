@@ -299,7 +299,7 @@ export default async function CountryPage({
 
           {/* Left column: Timeline → Key Figures */}
           <div className="space-y-6">
-            <section aria-labelledby="timeline-heading">
+            <section id="section-timeline" aria-labelledby="timeline-heading">
               <h2
                 id="timeline-heading"
                 className="text-lg font-semibold text-text-primary mb-4"
@@ -324,6 +324,8 @@ export default async function CountryPage({
             {(country.mesothelioma_rate !== null ||
               country.estimated_buildings_at_risk) && (
               <CollapsibleSection
+                sectionId="section-key-figures"
+                prevId="section-timeline"
                 title={t("key_figures_title")}
                 preview={t("key_figures_subtitle")}
               >
@@ -335,15 +337,32 @@ export default async function CountryPage({
           {/* Right column: Stories → Implementation → Exposure Zones */}
           <div className="space-y-6">
             {country.resistance_stories && country.resistance_stories.length > 0 && (
-              <ResistanceStories stories={country.resistance_stories} />
+              <div id="section-stories">
+                <ResistanceStories stories={country.resistance_stories} />
+              </div>
             )}
 
             {country.joint_resistance_story && (
-              <JointStoryCard story={country.joint_resistance_story} />
+              <div id="section-joint">
+                <JointStoryCard story={country.joint_resistance_story} />
+              </div>
             )}
 
             {country.implementation_status && (
               <CollapsibleSection
+                sectionId="section-implementation"
+                prevId={
+                  country.joint_resistance_story
+                    ? "section-joint"
+                    : country.resistance_stories?.length
+                      ? "section-stories"
+                      : undefined
+                }
+                nextId={
+                  country.exposure_zones && country.exposure_zones.length > 0
+                    ? "section-zones"
+                    : undefined
+                }
                 title={t("impl_title")}
                 preview={t("impl_subtitle")}
               >
@@ -356,6 +375,16 @@ export default async function CountryPage({
 
             {country.exposure_zones && country.exposure_zones.length > 0 && (
               <CollapsibleSection
+                sectionId="section-zones"
+                prevId={
+                  country.implementation_status
+                    ? "section-implementation"
+                    : country.joint_resistance_story
+                      ? "section-joint"
+                      : country.resistance_stories?.length
+                        ? "section-stories"
+                        : undefined
+                }
                 title={t("exposure_zones_title")}
                 preview={t("exposure_zones_subtitle")}
               >

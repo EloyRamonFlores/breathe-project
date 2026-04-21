@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* BREATHE Design System — docs/DESIGN.md */
 :root {
   /* Primary (Dark Theme) */
