@@ -7799,14 +7799,14 @@
       "asbestos-cement water pipes (historical municipal distribution)",
       "asbestos laminated gasket sheets (industrial, power, sugar-mill use)",
       "vehicle brake linings and clutch plates",
-      "thermal insulation and pipe lagging (historical industrial use)"
+      "motor and pressure-vessel gaskets"
     ],
     "common_materials_es": [
       "láminas onduladas de fibrocemento con asbesto para techos",
       "tuberías de agua de fibrocemento (distribución municipal histórica)",
       "láminas prensadas de asbesto para empaques (uso industrial, eléctrico y en ingenios azucareros)",
       "forros de frenos y platos de embrague para vehículos",
-      "aislamiento térmico y recubrimiento de tuberías (uso industrial histórico)"
+      "empaques de motores y recipientes a presión"
     ],
     "estimated_buildings_at_risk": "Post-1976-earthquake housing (4 February 1976 M 7.5 quake, ~23,000 deaths; hundreds of thousands of homes rebuilt with asbestos-cement corrugated roofing) represents the largest identified cohort of likely asbestos-containing roofing. No national building inventory exists.",
     "mesothelioma_rate": null,
