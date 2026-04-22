@@ -7737,36 +7737,144 @@
   },
   {
     "slug": "guatemala",
+    "hero_pattern": "default",
+    "hero_image_url": "/images/countries/guatemala/hero.webp",
     "name": "Guatemala",
     "name_es": "Guatemala",
     "iso2": "GT",
     "iso3": "GTM",
     "region": "Latin America",
-    "ban_status": "unknown",
+    "ban_status": "no_ban",
     "ban_year": null,
-    "ban_details": "No regulatory data available. Asbestos use and restrictions unknown.",
+    "ban_details": "Guatemala has no national asbestos ban. Chrysotile and asbestos-containing products — laminated sheets, fibrocement roofing, gaskets, and brake linings — remain legally imported, manufactured, distributed, and used. The only asbestos-specific domestic obligation is workplace waste handling under Acuerdo Gubernativo 229-2014 (Reglamento de Salud y Seguridad Ocupacional, 23 July 2014, reformed by AG 33-2016 and AG 57-2022). Guatemala ratified ILO Convention 162 (Asbestos, 1986) in April 1989 and acceded to the Rotterdam Convention in 2010, but neither instrument requires a national ban and neither has been implemented through prohibitive domestic legislation.",
+    "ban_details_es": "Guatemala no cuenta con una prohibición nacional del asbesto. El crisotilo y los productos que contienen asbesto — láminas prensadas, techos de fibrocemento, empaques y forros de frenos — siguen siendo importados, fabricados, distribuidos y utilizados legalmente. La única obligación específica sobre asbesto en el país es el manejo de residuos en el lugar de trabajo bajo el Acuerdo Gubernativo 229-2014 (Reglamento de Salud y Seguridad Ocupacional, 23 de julio de 2014, reformado por los AG 33-2016 y AG 57-2022). Guatemala ratificó el Convenio 162 de la OIT (Asbesto, 1986) en abril de 1989 y se adhirió al Convenio de Rotterdam en 2010, pero ninguno exige una prohibición nacional ni ha sido implementado mediante legislación doméstica prohibitiva.",
     "exceptions": [],
-    "timeline": [],
-    "peak_usage_era": "1960s-1990s",
-    "common_materials": [
-      "asbestos-cement roofing sheets",
-      "asbestos-cement water pipes",
-      "vinyl-asbestos floor tiles"
+    "timeline": [
+      {
+        "year": 1976,
+        "event": "Magnitude 7.5 earthquake (4 February) kills approximately 23,000 people; reconstruction drives widespread adoption of corrugated asbestos-cement roofing as the default low-cost material",
+        "event_es": "Terremoto de magnitud 7.5 (4 de febrero) deja aproximadamente 23.000 muertos; la reconstrucción impulsa la adopción masiva de láminas onduladas de fibrocemento con asbesto como material de techo de bajo costo por defecto",
+        "type": "other",
+        "source_url": "https://documents1.worldbank.org/curated/en/191871468030644719/text/Guatemala-Earthquake-Reconstruction-Project.txt"
+      },
+      {
+        "year": 1989,
+        "event": "Guatemala ratifies ILO Convention 162 (Asbestos, 1986), committing to workplace protection measures but without requiring a national ban",
+        "event_es": "Guatemala ratifica el Convenio 162 de la OIT (Asbesto, 1986), comprometiéndose a medidas de protección laboral sin exigir una prohibición nacional",
+        "type": "regulation",
+        "source_url": "https://www.ilo.org/resource/c162-asbestos-convention-1986"
+      },
+      {
+        "year": 2010,
+        "event": "Guatemala accedes to the Rotterdam Convention on Prior Informed Consent via Decreto 33-2009 (entry into force 18 July 2010); chrysotile remains blocked from Annex III",
+        "event_es": "Guatemala se adhiere al Convenio de Rotterdam sobre Consentimiento Fundamentado Previo mediante el Decreto 33-2009 (entrada en vigor el 18 de julio de 2010); el crisotilo continúa bloqueado del Anexo III",
+        "type": "regulation",
+        "source_url": "http://ww2.oj.gob.gt/es/QueEsOJ/EstructuraOJ/UnidadesAdministrativas/CentroAnalisisDocumentacionJudicial/cds/CDs%20de%20leyes/2009/pdfs/decretos/D033-2009.pdf"
+      },
+      {
+        "year": 2014,
+        "event": "Acuerdo Gubernativo 229-2014 (Reglamento de Salud y Seguridad Ocupacional, 23 July 2014) imposes asbestos-waste handling duties on employers; it does not prohibit asbestos use, import, or sale",
+        "event_es": "El Acuerdo Gubernativo 229-2014 (Reglamento de Salud y Seguridad Ocupacional, 23 de julio de 2014) impone obligaciones de manejo de residuos de asbesto a los empleadores; no prohíbe el uso, la importación ni la venta del asbesto",
+        "type": "regulation",
+        "source_url": "https://www.mintrabajo.gob.gt/images/Documentacion/Leyes_Ordinarias/Acuerdos_Gubernativos/Acdo_Gub_Reglamento_de_Salud_y_Seguridad_Ocupacional_229-2014.pdf"
+      },
+      {
+        "year": 2016,
+        "event": "First reform to AG 229-2014 enacted via Acuerdo Gubernativo 33-2016",
+        "event_es": "Primera reforma al AG 229-2014 mediante el Acuerdo Gubernativo 33-2016",
+        "type": "regulation",
+        "source_url": "https://www.igssgt.org/wp-content/uploads/2022/04/Acuerdo-Gubernativo-229-2014-y-Reformas-Acuerdo-Gubernativo-33-2016.pdf"
+      },
+      {
+        "year": 2022,
+        "event": "Second reform to AG 229-2014 enacted via Acuerdo Gubernativo 57-2022; asbestos remains legal",
+        "event_es": "Segunda reforma al AG 229-2014 mediante el Acuerdo Gubernativo 57-2022; el asbesto continúa siendo legal",
+        "type": "regulation",
+        "source_url": "https://consortiumlegal.com/2022/03/04/guatemala-reformas-al-reglamento-de-salud-y-seguridad-ocupacional-acuerdo-gubernativo-no-229-2014/"
+      }
     ],
-    "estimated_buildings_at_risk": null,
+    "peak_usage_era": "1970s-1990s",
+    "common_materials": [
+      "corrugated asbestos-cement roofing sheets (láminas de fibrocemento)",
+      "asbestos-cement water pipes (historical municipal distribution)",
+      "asbestos laminated gasket sheets (industrial, power, sugar-mill use)",
+      "vehicle brake linings and clutch plates",
+      "motor and pressure-vessel gaskets"
+    ],
+    "common_materials_es": [
+      "láminas onduladas de fibrocemento con asbesto para techos",
+      "tuberías de agua de fibrocemento (distribución municipal histórica)",
+      "láminas prensadas de asbesto para empaques (uso industrial, eléctrico y en ingenios azucareros)",
+      "forros de frenos y platos de embrague para vehículos",
+      "empaques de motores y recipientes a presión"
+    ],
+    "estimated_buildings_at_risk": "Post-1976-earthquake housing (4 February 1976 M 7.5 quake, ~23,000 deaths; hundreds of thousands of homes rebuilt with asbestos-cement corrugated roofing) represents the largest identified cohort of likely asbestos-containing roofing. No national building inventory exists.",
     "mesothelioma_rate": null,
     "mesothelioma_source_year": null,
     "priority": "low",
     "sources": [
       {
-        "name": "IBAS Ban List",
+        "name": "IBAS — Current Asbestos Bans (alphabetical)",
         "url": "https://www.ibasecretariat.org/alpha_ban_list.php",
-        "accessed": "2026-03-13"
+        "accessed": "2026-04-21"
+      },
+      {
+        "name": "IBAS — Chronology of Asbestos Bans and Restrictions",
+        "url": "https://www.ibasecretariat.org/chron_ban_list.php",
+        "accessed": "2026-04-21"
+      },
+      {
+        "name": "ILO C162 — Asbestos Convention, 1986",
+        "url": "https://www.ilo.org/resource/c162-asbestos-convention-1986",
+        "accessed": "2026-04-21"
+      },
+      {
+        "name": "MINTRAB — Acuerdo Gubernativo 229-2014 (official PDF)",
+        "url": "https://www.mintrabajo.gob.gt/images/Documentacion/Leyes_Ordinarias/Acuerdos_Gubernativos/Acdo_Gub_Reglamento_de_Salud_y_Seguridad_Ocupacional_229-2014.pdf",
+        "accessed": "2026-04-21"
+      },
+      {
+        "name": "IGSS — AG 229-2014 and reforms consolidated text",
+        "url": "https://www.igssgt.org/wp-content/uploads/2022/04/Acuerdo-Gubernativo-229-2014-y-Reformas-Acuerdo-Gubernativo-33-2016.pdf",
+        "accessed": "2026-04-21"
+      },
+      {
+        "name": "Consortium Legal — Reformas al Reglamento SSO 229-2014 (4 March 2022)",
+        "url": "https://consortiumlegal.com/2022/03/04/guatemala-reformas-al-reglamento-de-salud-y-seguridad-ocupacional-acuerdo-gubernativo-no-229-2014/",
+        "accessed": "2026-04-21"
+      },
+      {
+        "name": "Organismo Judicial — Decreto 33-2009 (Rotterdam Convention accession)",
+        "url": "http://ww2.oj.gob.gt/es/QueEsOJ/EstructuraOJ/UnidadesAdministrativas/CentroAnalisisDocumentacionJudicial/cds/CDs%20de%20leyes/2009/pdfs/decretos/D033-2009.pdf",
+        "accessed": "2026-04-21"
+      },
+      {
+        "name": "GBD 2019 — Global burden of mesothelioma 1990–2019 (Central Latin America regional figures)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11133219/",
+        "accessed": "2026-04-21"
+      },
+      {
+        "name": "TrendEconomy — Guatemala Asbestos trade (HS 2524)",
+        "url": "https://trendeconomy.com/data/h2/Guatemala/2524",
+        "accessed": "2026-04-21"
+      },
+      {
+        "name": "Orion Guatemala — Asbesto Laminado catalog",
+        "url": "https://orionguatemala.com/es/dt_gallery/galeria/asbesto-laminado-2/",
+        "accessed": "2026-04-21"
+      },
+      {
+        "name": "World Bank — Guatemala Earthquake Reconstruction Project",
+        "url": "https://documents1.worldbank.org/curated/en/191871468030644719/text/Guatemala-Earthquake-Reconstruction-Project.txt",
+        "accessed": "2026-04-21"
+      },
+      {
+        "name": "PAHO — Proyecto del Atlas del Asbesto de las Américas",
+        "url": "https://www3.paho.org/hq/index.php?option=com_content&view=article&id=11917:asbestos&Itemid=1511&lang=es",
+        "accessed": "2026-04-21"
       }
     ],
-    "last_updated": "2026-03-13",
-    "hero_image_url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1280",
-    "hero_pattern": "default"
+    "last_updated": "2026-04-21"
   },
   {
     "slug": "guyana",

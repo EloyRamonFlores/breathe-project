@@ -4,6 +4,42 @@ All notable changes, decisions, and progress for the ToxinFree platform.
 
 ---
 
+## [v3.4.0] — 2026-04-21 — Guatemala Country Profile (Research + Live Data)
+
+### Overview
+Full `scope: full` country research run for Guatemala under `.skills/country-research/SKILL.md`. Upgraded the `countries.json` entry from a `ban_status: "unknown"` placeholder to a fully verified `no_ban` profile with a 6-event regulatory timeline, Spanish translations on every user-facing field, 12 verified sources, and a local hero image.
+
+### Research artifact
+- New file: `docs/research/guatemala-research.md` (~480 lines, 9-section profile)
+- Confidence: **MEDIUM** — HIGH on ban status and regulatory timeline (multiple Tier 1 sources: IBAS, ILO, MINTRAB, IGSS, Organismo Judicial, Consortium Legal); LOW on mortality (only GBD 2019 regional aggregate — Central Latin America ASMR 0.19/100k) and activism (no individual Guatemalan activist identified despite targeted searches across Prensa Libre, Soy502, El Periódico, RELAC, Virtual-AR).
+- Verification Notes section flags 9 residual gaps: ILO NORMLEX ratification date (1989) needs primary confirmation (403'd during research); AG 229-2014 exact asbestos article numbers (image-only PDF); contradictory panelsandwich.gt vendor claim of prohibition (Tier 3, unsupported by IBAS or decree); Duralita Guatemala SKU composition.
+
+### Ban-status finding
+- `no_ban` / `chrysotile: legal` / `ban_year: null` — verified via (a) Guatemala's absence from both IBAS ban lists (alphabetical + chronological; Honduras 2004 is the only Central American country listed), (b) no asbestos-ban initiative in Congreso de la República records for 2023–2025, (c) ORION Representaciones Internacionales still actively marketing asbestos laminated sheets since 1958, (d) 2021 UN Comtrade/TrendEconomy data showing continued HS 2524 raw asbestos imports.
+
+### Live data integration (`src/data/countries.json`)
+- Guatemala entry (previously lines 7738-7770 with generic "No regulatory data available" placeholder) replaced with full profile following the Colombia template:
+  - `ban_status: "no_ban"`, `ban_details` (EN + ES) — Guatemala's only asbestos-specific domestic obligation is workplace waste handling under AG 229-2014 (+ AG 33-2016, AG 57-2022 reforms); neither ILO C162 (1989) nor Rotterdam (2010) triggered a ban.
+  - 6-event timeline (EN + ES `event_es`): 1976 earthquake → reconstruction-driven AC roofing, 1989 ILO C162 ratification, 2010 Rotterdam accession via Decreto 33-2009, 2014 AG 229-2014, 2016 AG 33-2016, 2022 AG 57-2022.
+  - 5 common materials (EN + ES `common_materials_es`): corrugated fibrocement roofing, AC water pipes, laminated gasket sheets, brake linings, motor/pressure-vessel gaskets.
+  - `peak_usage_era: "1970s-1990s"`, `estimated_buildings_at_risk` set to the post-1976-earthquake cohort narrative.
+  - 12 verified sources with `accessed: "2026-04-21"`.
+  - `mesothelioma_rate` and `mesothelioma_source_year` remain `null` (no country-specific public data; only GBD regional aggregate exists) — per skill rule, unverified numerics use `null`, not `0` or `"Unknown"`.
+  - `resistance_stories` / `joint_resistance_story` deliberately omitted — no individual Guatemalan asbestos activist identified in open sources (documented absence, not a gap to fabricate).
+  - `priority: "low"` (not in the initial focus-15).
+
+### Hero image
+- User-supplied `Guatemala_hero.png` processed via `npm run optimize:images` (Sharp, 1920×1080 cover, WebP q80 + JPG q85).
+- Outputs: `public/images/countries/guatemala/hero.webp` (110 KB) + `hero.jpg` (218 KB).
+- `countries.json` → `hero_image_url: "/images/countries/guatemala/hero.webp"`, `hero_pattern: "default"`.
+
+### Verification
+- `npm run type-check` → 0 errors
+- `npm test` → 109/109 passing (62 risk-calculator + 28 data-integrity + 12 CountrySearch + 7 RiskChecker)
+- Guatemala page will render at `/en/country/guatemala` and `/es/country/guatemala` with the full research payload once Vercel deploy completes.
+
+---
+
 ## [v3.3.0] — 2026-04-20 — SEO Technical Fixes (Google Search Console)
 
 ### Overview
